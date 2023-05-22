@@ -1,0 +1,8 @@
+description: |
+  Тип кода подтверждения ЭАПП:
+  - MERCHANT_TO_COURIER — продавец передает код курьеру.
+  - COURIER_TO_MERCHANT — курьер передает код продавцу.
+type: string
+enum:
+  - MERCHANT_TO_COURIER
+  - COURIER_TO_MERCHANT

@@ -1,0 +1,4 @@
+description: В запросе не указаны авторизационные данные.
+type: object
+allOf:
+  - $ref: ./ApiErrorResponse.yaml

@@ -1,0 +1,13 @@
+description: Запрос на обновление изменение параметров прайс-листа.
+type: object
+required:
+  - parameters
+properties:
+  parameters:
+    description: |
+      Параметры прайс-листа.
+
+      Обязательный параметр.
+    type: array
+    items:
+      $ref: ./FeedParameterDTO.yaml

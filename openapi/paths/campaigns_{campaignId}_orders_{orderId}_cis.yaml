@@ -1,0 +1,62 @@
+put:
+  tags:
+    - orders
+    - fbs
+    - dbs
+    - express
+    - noindex
+  operationId: provideOrderItemCis
+  summary: Передача кодов «Честного знака»
+  description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Пожалуйста, пользуйтесь вместо него [PUT
+    campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).
+
+
+    {% endnote %}
+
+
+    Передает Маркету коды маркировки для товаров в указанном заказе.
+
+
+    Для каждой позиции в заказе, требующей маркировки, нужно передать список
+    кодов — по одному для каждой единицы товара. Например, если в заказе две
+    пары тапочек и одна пара туфель, получится список из двух кодов для первой
+    позиции и список из одного кода для второй.
+
+
+    |**⚙️ Лимит:** 1 000 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/ProvideOrderItemCisRequest.yaml
+  responses:
+    '200':
+      description: >-
+        Ответ 200 обозначает, что коды маркировки успешно записались. Ответ
+        содержит краткие сведения о промаркированных товарах.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ProvideOrderItemCisResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

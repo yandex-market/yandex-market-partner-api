@@ -1,0 +1,23 @@
+type: object
+description: Информация об адресе доставки
+properties:
+  country:
+    type: string
+    description: Страна
+    example: Россия
+  city:
+    type: string
+    description: Город
+    example: Москва
+  street:
+    type: string
+    description: Улица
+    example: Стрелецкая улица
+  house:
+    type: string
+    description: Номер дома
+    example: 9к2
+  postcode:
+    type: string
+    description: Почтовый индекс
+    example: 123518

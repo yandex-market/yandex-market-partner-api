@@ -1,0 +1,10 @@
+description: Результаты поиска магазинов.
+type: object
+properties:
+  campaigns:
+    description: Список с информацией по каждому магазину.
+    type: array
+    items:
+      $ref: ./CampaignDTO.yaml
+  pager:
+    $ref: ./FlippingPagerDTO.yaml

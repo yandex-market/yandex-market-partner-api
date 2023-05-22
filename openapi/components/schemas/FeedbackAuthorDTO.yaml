@@ -1,0 +1,12 @@
+description: |
+  Информация об авторе отзыва.
+
+  Если отзыв оставлен анонимно, параметр не возвращается.
+type: object
+properties:
+  name:
+    description: Имя автора отзыва.
+    type: string
+  region:
+    description: Информация о регионе автора отзыва.
+    $ref: ./RegionDTO.yaml

@@ -1,0 +1,12 @@
+description: Ответ на запрос информации о точках продаж.
+type: object
+properties:
+  outlets:
+    description: Информация о точках продаж.
+    type: array
+    items:
+      $ref: ./FullOutletDTO.yaml
+  paging:
+    $ref: ./ScrollingPagerDTO.yaml
+  pager:
+    $ref: ./FlippingPagerDTO.yaml

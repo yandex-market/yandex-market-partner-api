@@ -1,0 +1,6 @@
+description: Информация о трек-номерах.
+type: object
+properties:
+  trackCode:
+    description: Трек-код почтового отправления.
+    type: string

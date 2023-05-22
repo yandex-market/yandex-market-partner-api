@@ -1,0 +1,9 @@
+description: |
+  Тип автора ответа:
+
+  * `USER` — пользователь.
+  * `SHOP` — магазин.
+type: string
+enum:
+  - USER
+  - SHOP

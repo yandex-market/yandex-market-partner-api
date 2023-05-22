@@ -1,0 +1,12 @@
+description: Информация о тарифах, по которым нужно заплатить за услуги Маркета.
+type: object
+properties:
+  type:
+    description: Услуга Маркета, за которую начисляется тариф.
+    $ref: ./GoodsStatsTariffType.yaml
+  percent:
+    description: Значение тарифа в процентах.
+    type: number
+  amount:
+    description: Значение тарифа в рублях.
+    type: number

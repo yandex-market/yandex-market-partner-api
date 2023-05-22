@@ -1,0 +1,34 @@
+get:
+  tags:
+    - feeds
+    - dbs
+  operationId: getFeeds
+  summary: Список прайс-листов магазина
+  description: >
+    Возвращает список прайс-листов, размещенных на Маркете для магазина. Также
+    ресурс возвращает результаты автоматических проверок прайс-листов.
+
+    |**⚙️ Лимит:** 5 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  responses:
+    '200':
+      description: Список прайс-листов
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetFeedsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

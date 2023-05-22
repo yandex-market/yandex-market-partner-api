@@ -1,0 +1,5 @@
+description: Ответ на запрос информации о прайс-листе.
+type: object
+properties:
+  feed:
+    $ref: ./FeedDTO.yaml

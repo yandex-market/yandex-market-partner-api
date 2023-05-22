@@ -1,0 +1,32 @@
+description: |
+  Cтатус возврата средств:
+
+  * STARTED_BY_USER — создан клиентом из личного кабинета.
+
+  * REFUND_IN_PROGRESS — ждет решение о возврате средств.
+
+  * REFUNDED — по возврату проведены все возвратные денежные транзакции.
+
+  * FAILED — невозможно провести возврат покупателю.
+
+  * WAITING_FOR_DECISION — ожидает решения.
+
+  * DECISION_MADE — по возврату принято решение.
+
+  * REFUNDED_WITH_BONUSES — возврат осуществлен баллами Плюса или промокодом.
+
+  * REFUNDED_BY_SHOP — магазин сделал самостоятельно возврат средств.
+
+  * CANCELLED — возврат отменен.
+type: string
+enum:
+  - STARTED_BY_USER
+  - REFUND_IN_PROGRESS
+  - REFUNDED
+  - FAILED
+  - WAITING_FOR_DECISION
+  - DECISION_MADE
+  - REFUNDED_WITH_BONUSES
+  - REFUNDED_BY_SHOP
+  - CANCELLED
+  - UNKNOWN

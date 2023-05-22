@@ -1,0 +1,45 @@
+description: Информация об отгрузке
+type: object
+properties:
+  id:
+    description: Идентификатор отгрузки.
+    format: int64
+    type: integer
+  planIntervalFrom:
+    description: Начало планового интервала отгрузки.
+    format: date-time
+    type: string
+  planIntervalTo:
+    description: Конец планового интервала отгрузки.
+    format: date-time
+    type: string
+  shipmentType:
+    description: Способ отгрузки заказов.
+    $ref: ./ShipmentType.yaml
+  warehouse:
+    description: Данные о складе отправления.
+    $ref: ./PartnerShipmentWarehouseDTO.yaml
+  warehouseTo:
+    description: Данные о складе назначения.
+    $ref: ./PartnerShipmentWarehouseDTO.yaml
+  deliveryService:
+    description: Служба доставки.
+    $ref: ./DeliveryServiceDTO.yaml
+  palletsCount:
+    description: Данные о палетах в отгрузке.
+    $ref: ./PalletsCountDTO.yaml
+  currentStatus:
+    description: Статус отгрузки.
+    $ref: ./ShipmentStatusChangeDTO.yaml
+  orderIds:
+    description: Идентификаторы заказов в отгрузке.
+    type: array
+    items:
+      type: integer
+      format: int64
+  availableActions:
+    description: Доступные действия над отгрузкой.
+    type: array
+    uniqueItems: true
+    items:
+      $ref: ./ShipmentActionType.yaml

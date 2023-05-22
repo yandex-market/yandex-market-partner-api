@@ -1,0 +1,34 @@
+description: Решения по позиции в возврате
+type: object
+required:
+  - returnItemId
+  - decisionType
+properties:
+  returnItemId:
+    description: Идентификатор позиции в возврате
+    type: integer
+    format: int64
+  decisionType:
+    description: Решение по позиции
+    $ref: ./ReturnRequestDecisionType.yaml
+  comment:
+    description: >
+      Комментарий к решению.
+
+
+      Для решения `REFUND_MONEY_INCLUDING_SHIPMENT` укажите стоимость обратной
+      пересылки,
+
+
+      для `REPAIR` — когда вы устраните недостатки товара,
+
+
+      для `DECLINE_REFUND` — причину отказа,
+
+
+      для `OTHER_DECISION` следует передать, какое решение вы предлагаете.
+    type: string
+example:
+  returnItemId: 1
+  decisionType: REFUND_MONEY_INCLUDING_SHIPMENT
+  comment: Вернуть 149 рублей за пересылку

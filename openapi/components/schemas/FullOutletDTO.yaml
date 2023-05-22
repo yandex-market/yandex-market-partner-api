@@ -1,0 +1,22 @@
+type: object
+description: Информация о точке продаж.
+allOf:
+  - $ref: ./OutletDTO.yaml
+  - properties:
+      id:
+        description: Идентификатор точки продаж, присвоенный Яндекс Маркетом.
+        type: integer
+        format: int64
+      status:
+        $ref: ./OutletStatusType.yaml
+      region:
+        $ref: ./RegionDTO.yaml
+      shopOutletId:
+        description: Идентификатор точки продаж, заданный магазином.
+        type: string
+      workingTime:
+        description: Рабочее время.
+        type: string
+      moderationReason:
+        description: Статус модерации.
+        type: string

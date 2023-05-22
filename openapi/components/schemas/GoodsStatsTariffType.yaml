@@ -1,0 +1,33 @@
+description: >
+  Услуга Маркета, за которую начисляется тариф:
+
+
+  * `AGENCY_COMMISSION` — прием и перечисление денег от покупателя (агентское
+  вознаграждение).
+
+
+  * `FULFILLMENT` — обработка товара на складе Маркета.
+
+
+  * `STORAGE` — хранение товара на складе Маркета в течение суток.
+
+
+  * `SURPLUS` — хранение излишков на складе Маркета.
+
+
+  * `WITHDRAW` — вывоз товара со склада Маркета.
+
+
+  * `FEE` — размещение товара на Маркете.
+
+
+  Все тарифы описаны [в Справке для
+  продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
+type: string
+enum:
+  - AGENCY_COMMISSION
+  - FULFILLMENT
+  - STORAGE
+  - WITHDRAW
+  - SURPLUS
+  - FEE

@@ -1,0 +1,7 @@
+description: Ответ на запрос информации об отгрузках.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./SearchShipmentsResponseDTO.yaml

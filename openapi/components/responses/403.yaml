@@ -1,0 +1,5 @@
+description: Данные для авторизации неверны или доступ к ресурсу запрещен.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiForbiddenErrorResponse.yaml

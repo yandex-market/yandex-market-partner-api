@@ -1,0 +1,17 @@
+name: currency
+description: |
+  Валюта, в которой указана цена предложения.
+
+  Возможные значения:
+
+  * `BYN` — белорусский рубль.
+
+  * `KZT` — казахстанский тенге.
+
+  * `RUR` — российский рубль.
+
+  * `UAH` — украинская гривна.
+in: query
+required: false
+schema:
+  $ref: ../schemas/CurrencyType.yaml

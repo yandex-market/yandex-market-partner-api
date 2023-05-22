@@ -1,0 +1,19 @@
+description: >
+  Начальная дата для фильтрации заказов по дате отгрузки в службу доставки
+  (параметр `shipmentDate`).
+
+
+  Формат даты: `ДД-ММ-ГГГГ`.
+
+
+  Между начальной и конечной датой (параметр `supplierShipmentDateTo`) должно
+  быть не больше 30 дней.
+
+
+  Начальная дата включается в интервал для фильтрации.
+name: supplierShipmentDateFrom
+in: query
+required: false
+schema:
+  type: string
+  format: date

@@ -1,0 +1,14 @@
+description: >
+  Фильтрация заказов с долгой доставкой (31-60 дней) по подтвержденной дате
+  доставки:
+
+
+  * `true` — возвращаются только заказы с неподтвержденной датой доставки.
+
+  * `false` — фильтрация не применяется.
+name: onlyEstimatedDelivery
+in: query
+required: false
+schema:
+  type: boolean
+default: false

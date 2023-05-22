@@ -1,0 +1,9 @@
+description: Тип подъема заказа на этаж
+type: string
+enum:
+  - NOT_NEEDED
+  - MANUAL
+  - ELEVATOR
+  - CARGO_ELEVATOR
+  - FREE
+  - UNKNOWN

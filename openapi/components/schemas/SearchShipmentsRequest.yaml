@@ -1,0 +1,30 @@
+description: Запрос информации об отгрузках.
+type: object
+properties:
+  dateFrom:
+    description: |
+      Начальная дата для фильтрации по дате отгрузки (включительно).
+
+      Формат даты: `ДД-ММ-ГГГГ`.
+    type: string
+    format: date
+  dateTo:
+    description: |
+      Конечная дата для фильтрации по дате отгрузки (включительно).
+
+      Формат даты: `ДД-ММ-ГГГГ`.
+    type: string
+    format: date
+  statuses:
+    description: Список статусов отгрузок.
+    type: array
+    items:
+      description: Статус отгрузки
+      $ref: ./ShipmentStatusType.yaml
+  orderIds:
+    description: Список идентификаторов заказов из отгрузок.
+    type: array
+    items:
+      description: Идентификатор заказа.
+      type: integer
+      format: int64

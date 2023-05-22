@@ -1,0 +1,122 @@
+post:
+  tags:
+    - outlets
+    - dbs
+  operationId: createOutlet
+  summary: Создание точки продаж
+  description: >
+    Создает точку продаж магазина на Маркете.
+
+
+    В течение суток этим и другими запросами о точках продаж, кроме запроса `GET
+    /delivery/services`, можно получить и изменить информацию об определенном
+    суммарном количестве точек продаж. Оно зависит от количества точек продаж
+    магазина.
+
+
+    |**⚙️ Лимит:** 100 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/ChangeOutletRequest.yaml
+  responses:
+    '200':
+      description: Информация о созданной точке продаж.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/CreateOutletResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
+get:
+  tags:
+    - outlets
+    - dbs
+  operationId: getOutlets
+  summary: Информация о точках продаж
+  description: >
+    Возвращает список точек продаж магазина.
+
+
+    В течение суток этим и другими запросами о точках продаж, кроме запроса `GET
+    /delivery/services`, можно получить и изменить информацию об определенном
+    суммарном количестве точек продаж. Оно зависит от количества точек продаж
+    магазина.
+
+
+    |**⚙️ Лимит:** 100 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - description: >
+        Идентификатор региона.
+
+        Если задать идентификатор родительского региона любого уровня, в
+        выходных данных будут отображены точки продаж всех дочерних регионов.
+
+        Идентификатор региона можно получить c помощью метода `GET /regions`.
+      name: region_id
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int64
+    - description: Идентификатор точки продаж, присвоенный магазином.
+      name: shop_outlet_code
+      in: query
+      required: false
+      schema:
+        type: string
+    - description: >
+        {% note alert %}
+
+
+        Параметр устарел и не рекомендуется к использованию. Идентификатор
+        региона укажите в параметре `region_id`.
+
+
+        {% endnote %}
+      name: regionId
+      deprecated: true
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int64
+  responses:
+    '200':
+      description: Информация о точках продаж.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOutletsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

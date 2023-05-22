@@ -1,0 +1,64 @@
+description: |
+  Адрес точки продаж.
+  Обязательный параметр.
+type: object
+required:
+  - regionId
+properties:
+  regionId:
+    description: >
+      Идентификатор региона.
+
+      Идентификатор можно получить c помощью запроса `GET /regions`.
+
+
+      {% note alert %}
+
+
+      При создании и редактировании точек продаж можно указывать только регионы
+      типов `TOWN` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район
+      субъекта федерации). Тип региона указан в выходных параметрах type
+      запросов `GET /regions` и `GET /regions/{regionId}`.
+
+
+      {% endnote %}
+
+
+      Обязательный параметр.
+    type: integer
+    format: int64
+  street:
+    description: Улица.
+    type: string
+  number:
+    description: Номер дома.
+    type: string
+  building:
+    description: Номер строения.
+    type: string
+  estate:
+    description: Номер владения.
+    type: string
+  block:
+    description: Номер корпуса.
+    type: string
+  additional:
+    description: Дополнительная информация.
+    type: string
+  km:
+    description: >-
+      Порядковый номер километра дороги, на котором располагается точка продаж,
+      если отсутствует улица.
+    type: integer
+    format: int32
+  city:
+    description: >
+      {% note alert %}
+
+
+      Параметр устарел и не рекомендуется к использованию. Город или населенный
+      пункт возвращается в параметре `regionId`.
+
+
+      {% endnote %}
+    type: string

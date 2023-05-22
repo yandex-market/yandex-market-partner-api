@@ -1,0 +1,15 @@
+description: |
+  Единица измерения времени:
+
+  * `HOUR` — час;
+  * `DAY` — сутки;
+  * `WEEK` — неделя;
+  * `MONTH` — месяц;
+  * `YEAR` — год.
+type: string
+enum:
+  - HOUR
+  - DAY
+  - WEEK
+  - MONTH
+  - YEAR

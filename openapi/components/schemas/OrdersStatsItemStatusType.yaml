@@ -1,0 +1,10 @@
+description: |
+  Статус товара:
+
+  * `REJECTED` — товар был добавлен в созданный заказ, но не был оплачен.
+
+  * `RETURNED` — товар вернули.
+type: string
+enum:
+  - REJECTED
+  - RETURNED

@@ -1,0 +1,60 @@
+get:
+  tags:
+    - feed-categories
+    - dbs
+  operationId: getCampaignFeedCategories
+  summary: Категории магазина
+  description: >
+    Возвращает список категорий предложений для магазина по всем прайс-листам
+    этого магазина, размещенным на Маркете. Информация о категориях для
+    отключенных прайс-листов не предоставляется.
+
+
+    В ответе на запрос для каждой категории указывается название, ее
+    идентификатор и идентификатор родительской категории. Список сортируется
+    сначала по возрастанию идентификатора прайс-листа, а затем по возрастанию
+    идентификатора категории. Если категорий много, результаты выдаются
+    постранично.
+
+
+    Для методов `GET /campaigns/{campaignId}/feeds/categories` и `GET
+    /campaigns/{campaignId}/feeds/{feedId}/categories` действует групповое
+    ресурсное ограничение. Ограничение вводится на суммарное количество
+    категорий, информация о которых запрошена при помощи этих методов.
+
+
+    В течение суток можно выполнить не более 50 000 запросов. Точное количество
+    доступных запросов рассчитывается индивидуально и зависит от количества
+    категорий.
+
+
+    {% note info %}
+
+
+    Количество категорий берется за предыдущий день.
+
+
+    {% endnote %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/PageNum.yaml
+    - $ref: ../components/parameters/PageSize.yaml
+  responses:
+    '200':
+      description: Категории магазина
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetCampaignCategoriesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

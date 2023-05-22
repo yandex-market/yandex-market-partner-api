@@ -1,0 +1,8 @@
+description: Товар, для которого требуется получить цены для продвижения.
+type: object
+properties:
+  offerId:
+    description: Идентификатор предложения из прайс-листа.
+    $ref: ./ShopSku.yaml
+  marketSku:
+    $ref: ./MarketSku.yaml

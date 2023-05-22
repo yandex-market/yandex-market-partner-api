@@ -1,0 +1,12 @@
+description: Информация о ценах на модель товара.
+type: object
+properties:
+  avg:
+    description: Средняя цена предложения для модели в регионе.
+    type: number
+  max:
+    description: Максимальная цена предложения для модели в регионе.
+    type: number
+  min:
+    description: Минимальная цена предложения для модели в регионе.
+    type: number

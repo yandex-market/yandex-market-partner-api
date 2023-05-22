@@ -1,0 +1,4 @@
+description: Список предложений.
+type: object
+allOf:
+  - $ref: ./OffersDTO.yaml

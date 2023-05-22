@@ -1,0 +1,10 @@
+description: |
+  Идентификатор региона.
+
+  Идентификатор региона можно получить c помощью запроса `GET /regions`.
+name: regionId
+in: query
+required: true
+schema:
+  type: integer
+  format: int64

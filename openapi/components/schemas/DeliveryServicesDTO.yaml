@@ -1,0 +1,8 @@
+description: Информация о службах доставки.
+type: object
+properties:
+  deliveryService:
+    description: Информация о службе доставки.
+    type: array
+    items:
+      $ref: ./DeliveryServiceInfoDTO.yaml

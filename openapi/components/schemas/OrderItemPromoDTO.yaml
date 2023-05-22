@@ -1,0 +1,37 @@
+description: >-
+  Информация о вознаграждениях партнеру за скидки на товар по промокодам,
+  купонам и акциям.
+type: object
+required:
+  - type
+properties:
+  type:
+    description: |
+      Тип скидки.
+    $ref: ./OrderPromoType.yaml
+  discount:
+    description: |
+      Размер пользовательской скидки в валюте покупателя.
+    type: number
+    format: decimal
+  subsidy:
+    description: >
+      Вознаграждение партнеру за скидку.
+
+
+      Передается в валюте заказа, для отделения целой части от дробной
+      используется точка.
+    type: number
+    format: decimal
+  shopPromoId:
+    description: |
+      Идентификатор акции поставщика.
+    type: string
+  marketPromoId:
+    description: >
+      Идентификатор акции в рамках соглашения на оказание услуг по продвижению
+      сервиса между маркетплейсом Яндекс Маркета и партнером.
+
+
+      Параметр передается, только если параметр `type=MARKET_DEAL`.
+    type: string

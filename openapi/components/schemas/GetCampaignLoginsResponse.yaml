@@ -1,0 +1,9 @@
+description: Ответ на запрос списка логинов, связанных с магазином.
+type: object
+properties:
+  logins:
+    description: Список логинов.
+    type: array
+    items:
+      description: Логин.
+      type: string

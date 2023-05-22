@@ -1,0 +1,13 @@
+description: |
+  Направление сортировки по цене.
+
+  Возможные значения:
+  * `ASC` — сортировка по возрастанию.
+  * `DESC` — сортировка по убыванию.
+
+  Значение по умолчанию: предложения выводятся в произвольном порядке.
+name: orderByPrice
+in: query
+required: false
+schema:
+  $ref: ../schemas/SortOrderType.yaml

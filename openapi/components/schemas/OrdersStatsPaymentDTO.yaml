@@ -1,0 +1,27 @@
+description: Информация о денежных переводах по заказу.
+type: object
+properties:
+  id:
+    description: Идентификатор денежного перевода.
+    type: string
+  date:
+    description: |
+      Дата денежного перевода.
+      Формат даты: `ГГГГ-ММ-ДД`.
+    type: string
+    format: date
+  type:
+    description: Тип денежного перевода.
+    $ref: ./OrdersStatsPaymentType.yaml
+  source:
+    description: Способ денежного перевода.
+    $ref: ./OrdersStatsPaymentSourceType.yaml
+  total:
+    description: |
+      Сумма денежного перевода.
+      Значение указывается в рублях независимо от способа денежного перевода.
+      Точность — два знака после запятой.
+    type: number
+  paymentOrder:
+    description: Информация о платежном получении.
+    $ref: ./OrdersStatsPaymentOrderDTO.yaml

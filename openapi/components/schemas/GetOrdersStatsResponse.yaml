@@ -1,0 +1,6 @@
+description: Ответ на запрос отчета по заказам.
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./OrdersStatsDTO.yaml

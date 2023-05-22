@@ -1,0 +1,90 @@
+get:
+  tags:
+    - shipments
+    - fbs
+  operationId: downloadShipmentReceptionTransferAct
+  summary: Подтверждение ближайшей отгрузки и получение акта приема-передачи для нее
+  description: "Запрос подтверждает ближайшую отгрузку и возвращает акт приема-передачи в формате PDF. Можно запросить акт в день отгрузки или накануне — в зависимости от указанного времени формирования отгрузки в личном кабинете.\n\n{% note warning %}\n\nЕсли ваш магазин подключен к экспресс‑доставке и вы отгружаете заказы курьерам [Яндекс Go](https://go.yandex/), подготавливать акт приема‑передачи не нужно.\n\n{% endnote %}\n\nВ акт входят собранные и готовые к отправке заказы, которые отгружаются в сортировочный центр / пункт приема или курьерам Маркета.\n\nПри формировании акта Маркет автоматически находит и подставляет в шаблон следующие данные:\n\n{% cut \"Данные, из которых Маркет формирует акт\" %}\n\n| Данные в акте\t | Описание  |\n| ----------- | ----------- |\n| Отправитель\t| Название вашего юридического лица, указанное в личном кабинете магазина.   |\n| Исполнитель | Название юридического лица сортировочного центра или службы доставки.  |\n| № отправления в системе заказчика | Ваш идентификатор заказа, который вы указали в ответе на запрос `POST /order/accept` от Маркета.  |\n| № отправления в системе исполнителя (субподрядчика) | Идентификатор заказа на Маркете, как в выходных данных запроса `GET /campaigns/{campaignId}/orders.`  |\n| Объявленная ценность  | Общая сумма заказа без учета стоимости доставки, как в выходных данных запроса `GET /campaigns/{campaignId}/orders` или `GET /campaigns/{campaignId}/orders/{orderId}.`  |\n| Стоимость всех товаров в заказе  | Стоимость всех заказанных товаров.  |\n| Вес  | Масса брутто грузового места (суммарная масса упаковки и содержимого), как в выходных данных запроса `GET /campaigns/{campaignId}/orders` или `GET /campaigns/{campaignId}/orders/{orderId}.` |\n| Количество мест  | Количество грузовых мест в заказе, как в выходных данных запроса `GET /campaigns/{campaignId}/orders` или `GET /campaigns/{campaignId}/orders/{orderId}.` |\n\n{% endcut %}\n\nОстальные поля нужно заполнить самостоятельно в распечатанном акте.\n|**⚙️ Лимит:** 200 запросов в час|\n|-|\n"
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - description: Идентификатор склада
+      in: query
+      name: warehouse_id
+      required: false
+      example: 123123
+      schema:
+        type: integer
+        format: int32
+  responses:
+    '200':
+      description: Акт приема-передачи в формате pdf
+      content:
+        application/pdf:
+          schema:
+            type: string
+            format: binary
+    '400':
+      description: >
+        |
+        Описание                                                                                                                
+        |
+        Пояснение                                                                       
+        | Способы
+        решения                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        |
+
+        |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+        | No orders for closest shipment
+        found.                                                                                   
+        | Нет заказов в ближайшей
+        отгрузке.                                                | Проверьте,
+        что у заказов параметр `status` имеет значение `PROCESSING`, а параметр
+        `substatus` — `READY_TO_SHIP`. Получить статусы и даты отгрузки заказов
+        можно с помощью запросов [GET
+        campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) и
+        [GET
+        campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md),
+        изменить статусы заказов — с помощью запросов [PUT
+        campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md)
+        и [POST
+        campaigns/{campaignId}/orders/status‑update](../../reference/orders/updateOrderStatuses.md).
+        |
+
+        | Closest shipment for reception transfer act generation not
+        found.                                                        | Отгрузки
+        в статусе **Можно обрабатывать** не найдены.                           
+        | Создайте заявку на поставку или дождитесь перехода существующей заявки
+        в нужный
+        статус.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        |
+
+        | Some orders have not been processed yet. Please change the status of
+        orders to READY_TO_SHIP and try again. {orders id}. | Идентификаторы
+        заказов в ближайшей отгрузке, которые еще не обработаны.          |
+        Передайте для заказов с указанными идентификаторами `status: PROCESSING`
+        и `substatus: READY_TO_SHIP` и попробуйте еще раз. Изменить статусы
+        заказов можно с помощью запросов [PUT
+        campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md)
+        и [POST
+        campaigns/{campaignId}/orders/status‑update](../../reference/orders/updateOrderStatuses.md).                                                                                                                                                                                                                  
+        |
+
+        | Some orders are in the process of being excluded from shipment {orders
+        id}. Please wait up to 30 minutes and try again.  | Идентификаторы
+        заказов в ближайшей отгрузке, которые в процессе удаления из нее. |
+        Перенос заказов может занимать до 30 минут. Дождитесь окончания переноса
+        и попробуйте
+        снова.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        |
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

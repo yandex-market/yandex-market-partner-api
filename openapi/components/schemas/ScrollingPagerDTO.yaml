@@ -1,0 +1,8 @@
+description: Информация о страницах результатов.
+type: object
+allOf:
+  - $ref: ./ForwardScrollingPagerDTO.yaml
+  - properties:
+      prevPageToken:
+        description: Идентификатор предыдущей страницы результатов.
+        type: string

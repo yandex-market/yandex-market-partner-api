@@ -1,0 +1,33 @@
+description: Параметр прайс-листа.
+type: object
+required:
+  - name
+properties:
+  deleted:
+    description: |
+      Удалить ли значение параметра.
+
+      Возможное значение:
+      * `true` — удалить значение параметра.
+
+      Используется вместе с параметром `name`.
+    type: boolean
+  name:
+    $ref: ./FeedParameterName.yaml
+  values:
+    description: |
+      Значения параметра.
+
+      Используется вместе с параметром `name`.
+    type: array
+    items:
+      description: |
+        Значение параметра.
+        Возможное значение:
+        - Для `name=reparseIntervalMinutes` — минуты.
+        Минимальное значение: `20`.
+        Максимальное значение: `1440`. Рекомендуем указывать это значение.
+
+        Для формата JSON указывается в виде числа.
+      type: integer
+      format: int32

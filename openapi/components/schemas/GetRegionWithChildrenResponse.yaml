@@ -1,0 +1,6 @@
+type: object
+properties:
+  pager:
+    $ref: ./FlippingPagerDTO.yaml
+  regions:
+    $ref: ./RegionDTO.yaml

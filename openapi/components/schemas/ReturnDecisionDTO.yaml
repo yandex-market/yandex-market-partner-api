@@ -1,0 +1,33 @@
+description: Решения по возвратам.
+type: object
+properties:
+  returnItemId:
+    description: Идентификатор товара в возврате.
+    type: integer
+    format: int64
+  count:
+    description: Количество товаров.
+    type: integer
+    format: int32
+  comment:
+    description: Комментарий.
+    type: string
+  reasonType:
+    $ref: ./ReturnDecisionReasonType.yaml
+  subreasonType:
+    $ref: ./ReturnDecisionSubreasonType.yaml
+  decisionType:
+    $ref: ./ReturnDecisionType.yaml
+  refundAmount:
+    description: Сумма возврата.
+    type: integer
+    format: int64
+  partnerCompensation:
+    description: Компенсация за обратную доставку.
+    type: integer
+    format: int64
+  images:
+    description: Список хеш-кодов фотографий товара от покупателя.
+    type: array
+    items:
+      type: string

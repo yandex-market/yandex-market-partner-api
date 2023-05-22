@@ -1,0 +1,9 @@
+description: Запрос на обновление срока хранения заказа в ПВЗ
+type: object
+required:
+  - newDate
+properties:
+  newDate:
+    description: Новый срок хранения в ПВЗ для заказа
+    type: string
+    format: date

@@ -1,0 +1,23 @@
+description: >
+  Информация об ошибке, произошедшей во время индексации прайс-листа.
+
+
+  Выводится, если во время индексации произошли ошибки (`index-log-record
+  status=ERROR`).
+type: object
+properties:
+  httpStatusCode:
+    description: |
+      HTTP-код ошибки индексации прайс-листа.
+
+      Выводится, если `type=DOWNLOAD_HTTP_ERROR`.
+    type: integer
+    format: int32
+  type:
+    $ref: ./FeedIndexLogsErrorType.yaml
+  description:
+    description: |
+      Описание ошибки.
+
+      Выводится, если `type=DOWNLOAD_ERROR`.
+    type: string

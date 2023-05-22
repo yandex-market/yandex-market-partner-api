@@ -1,0 +1,45 @@
+get:
+  tags:
+    - order-labels
+    - fbs
+    - dbs
+    - express
+  operationId: generateOrderLabels
+  summary: Ярлыки‑наклейки на все грузовые места в заказе
+  description: >
+    Возвращает PDF-файл с ярлыками, которые нужно наклеить на посылки перед
+    отгрузкой. Подробно о том, зачем они нужны и как выглядят, рассказано [в
+    Справке](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).
+
+
+    На вход нужно передать идентификатор заказа и один необязательный параметр,
+    который управляет версткой PDF-файла.
+
+
+    |**⚙️ Лимит:** 1 000 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+    - $ref: ../components/parameters/PageFormat.yaml
+  responses:
+    '200':
+      description: PDF‑файл с ярлыками на все грузовые места.
+      content:
+        application/pdf:
+          schema:
+            type: string
+            format: binary
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -1,0 +1,10 @@
+description: Информация о складе, на котором хранится товар.
+type: object
+properties:
+  id:
+    description: Идентификатор склада.
+    type: integer
+    format: int64
+  name:
+    description: Название склада.
+    type: string

@@ -1,0 +1,19 @@
+description: |
+  День недели:
+
+  * MONDAY — понедельник;
+  * TUESDAY — вторник;
+  * WEDNESDAY — среда;
+  * THURSDAY — четверг;
+  * FRIDAY — пятница;
+  * SATURDAY — суббота;
+  * SUNDAY — воскресенье.
+type: string
+enum:
+  - MONDAY
+  - TUESDAY
+  - WEDNESDAY
+  - THURSDAY
+  - FRIDAY
+  - SATURDAY
+  - SUNDAY

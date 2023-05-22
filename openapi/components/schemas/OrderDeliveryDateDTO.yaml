@@ -1,0 +1,9 @@
+description: Информация о новой дате доставки заказа.
+type: object
+required:
+  - toDate
+properties:
+  toDate:
+    description: Новая дата доставки заказа.
+    type: string
+    format: date

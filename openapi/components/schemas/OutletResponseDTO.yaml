@@ -1,0 +1,9 @@
+description: |
+  Результат выполнения запроса.
+  Выводится, если `status="OK"`.
+type: object
+properties:
+  id:
+    description: Идентификатор точки продаж, присвоенный Яндекс Маркетом.
+    type: integer
+    format: int64

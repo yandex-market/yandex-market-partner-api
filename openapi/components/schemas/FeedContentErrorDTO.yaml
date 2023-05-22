@@ -1,0 +1,7 @@
+description: |
+  Информация об ошибке в содержимом прайс-листа.
+  Выводится, если параметр `content status=ERROR`.
+type: object
+properties:
+  type:
+    $ref: ./FeedContentErrorType.yaml

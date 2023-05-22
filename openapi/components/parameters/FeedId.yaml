@@ -1,0 +1,7 @@
+description: Идентификатор прайс-листа.
+name: feedId
+in: path
+required: true
+schema:
+  type: integer
+  format: int64

@@ -1,0 +1,53 @@
+post:
+  tags:
+    - order-delivery
+    - dbs
+  operationId: setOrderDeliveryTrackCode
+  summary: Передача трек‑номера посылки
+  description: >
+    Передает Маркету трек‑номер, по которому покупатель может отследить посылку
+    со своим заказом через службу доставки.
+
+
+    Вы можете использовать запрос, чтобы повысить лояльность покупателей. Если
+    они могут узнать, на каком этапе доставки находятся их заказы, доверие
+    покупателей к вашему магазину может возрасти.
+
+
+    Передать трек‑номер можно, только если заказ находится в статусе
+    `PROCESSING`, `DELIVERY` или `PICKUP`.
+
+
+    |**⚙️ Лимит:** 1 000 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/SetOrderDeliveryTrackCodeRequest.yaml
+  responses:
+    '200':
+      description: >-
+        Трек‑номер посылки и идентификатор службы доставки были успешно
+        переданы.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -1,0 +1,7 @@
+description: |
+  Ссылка на следующую страницу.
+type: object
+properties:
+  nextPageToken:
+    description: Идентификатор следующей страницы результатов.
+    type: string

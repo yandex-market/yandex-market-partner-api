@@ -1,0 +1,22 @@
+description: Информация о проверке содержимого прайс-листа, загруженного на Маркет.
+type: object
+properties:
+  rejectedOffersCount:
+    description: >
+      Количество предложений, в которых найдены ошибки на этапе загрузки
+      прайс-листа.
+
+      Выводится, если параметр `content status=OK`.
+    type: integer
+    format: int64
+  status:
+    description: Статус проверки содержимого прайс-листа.
+    $ref: ./FeedStatusType.yaml
+  totalOffersCount:
+    description: |
+      Количество предложений в прайс-листе.
+      Выводится, если параметр `content status=OK`.
+    type: integer
+    format: int64
+  error:
+    $ref: ./FeedContentErrorDTO.yaml

@@ -1,0 +1,8 @@
+description: Результат запроса цен для продвижения.
+type: object
+properties:
+  offers:
+    description: Список товаров с ценами для продвижения.
+    type: array
+    items:
+      $ref: ./PriceSuggestOfferDTO.yaml

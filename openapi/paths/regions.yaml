@@ -1,0 +1,49 @@
+get:
+  tags:
+    - regions
+    - fby
+    - fbs
+    - dbs
+  operationId: searchRegionsByName
+  summary: Метод для поиска регионов по их имени
+  description: >
+    Возвращает информацию о регионе, удовлетворяющем заданным в запросе условиям
+    поиска.
+
+
+    Если найдено несколько регионов, удовлетворяющих условиям поиска,
+    возвращается информация по каждому найденному региону (но не более десяти
+    регионов) для возможности определения нужного региона по родительским
+    регионам.
+
+
+    Для методов `GET /regions`, `GET /regions/{regionId}` и `GET
+    /regions/{regionId}/children` действует групповое ресурсное ограничение.
+    Ограничение вводится на суммарное количество регионов, информация о которых
+    запрошена при помощи этих методов (не более 100 000 регионов).
+
+
+    Объем запросов к ресурсу, который возможно выполнить в течение суток,
+    зависит от суммарного количества регионов.
+
+
+    |**⚙️ Лимит:** 50 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/RegionName.yaml
+  responses:
+    '200':
+      description: Список найденных регионов
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetRegionsResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

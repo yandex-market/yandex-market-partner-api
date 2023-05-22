@@ -1,0 +1,11 @@
+description: Запрос на получение списка цен для продвижения.
+type: object
+required:
+  - offers
+properties:
+  offers:
+    description: Список товаров
+    type: array
+    items:
+      $ref: ./SuggestOfferPriceDTO.yaml
+    maxItems: 1000

@@ -1,0 +1,69 @@
+put:
+  tags:
+    - order-delivery
+    - express
+  operationId: verifyOrderEac
+  summary: Передача кода проверки
+  description: >
+    Отправляет Маркету код подтверждения для его проверки.
+
+
+    Код подтверждает передачу заказа или невыкупа:
+
+
+    * курьеру — курьер должен назвать магазину код;
+
+    * магазину — магазин называет код курьеру.
+
+
+    Если магазин получает невыкупленный заказ, то ему нужно назвать курьеру код
+    из личного кабинета или приложения.
+
+
+    Если у магазина настроена работа с кодами подтверждения, в запросах [POST
+    /order/status](https://yandex.ru/dev/market/partner-api/doc/ru/pushapi/reference/post-order-status),
+    [PUT
+    campaigns/{campaignId}/orders/{orderId}/status](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus),
+    [GET
+    campaigns/{campaignId}/orders](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrders),
+    [GET
+    campaigns/{campaignId}/orders/{orderId}](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrder)
+    в параметре `delivery`, вложенном в `order` будет возвращаться параметр
+    `eacType` с типом `Enum` — тип кода подтверждения для передачи заказа.
+
+
+    Возможные значения: `MERCHANT_TO_COURIER` — магазин называет код курьеру,
+    `COURIER_TO_MERCHANT` — курьер называет код магазину.
+
+
+    Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`,
+    `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в
+    других статусах, параметр может отсутствовать.
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/VerifyOrderEacRequest.yaml
+  responses:
+    '200':
+      description: Проверка кода выполнена успешно
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/VerifyOrderEacResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

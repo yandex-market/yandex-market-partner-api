@@ -1,0 +1,39 @@
+description: Комментарий к отзыву на магазин.
+type: object
+properties:
+  id:
+    description: Идентификатор ответа.
+    type: integer
+    format: int64
+  parentId:
+    description: Идентификатор родительского ответа.
+    type: integer
+    format: int64
+  body:
+    description: Текст ответа.
+    type: string
+  createdAt:
+    description: >
+      Дата и время создания ответа.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00+03:00`.
+    type: string
+    format: date-time
+  updatedAt:
+    description: >
+      Дата и время изменения ответа.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00+03:00`.
+    type: string
+    format: date-time
+  author:
+    $ref: ./FeedbackCommentAuthorDTO.yaml
+  children:
+    description: Дочерние ответы.
+    type: array
+    items:
+      $ref: ./FeedbackCommentDTO.yaml

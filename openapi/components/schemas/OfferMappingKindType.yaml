@@ -1,0 +1,5 @@
+description: Вид маппинга.
+type: string
+enum:
+  - ACTIVE
+  - ALL

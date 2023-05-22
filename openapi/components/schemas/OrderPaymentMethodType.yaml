@@ -1,0 +1,65 @@
+description: >
+  Способ оплаты заказа.
+
+
+  Возможные значения, если выбрана оплата при оформлении заказа (`"paymentType":
+  "PREPAID"`):
+
+
+  * `YANDEX` — банковской картой.
+
+
+  * `APPLE_PAY` — Apple Pay.
+
+
+  * `GOOGLE_PAY` — Google Pay.
+
+
+  * `CREDIT` — в кредит.
+
+
+  * `TINKOFF_CREDIT` — в кредит в Тинькофф Банке.
+
+
+  * `TINKOFF_INSTALLMENTS` — рассрочка в Тинькофф Банке.
+
+
+  * `EXTERNAL_CERTIFICATE` — подарочным сертификатом (например, из приложения
+  «Сбербанк Онлайн»).
+
+
+  * `SBP` — через систему быстрых платежей.
+
+
+  Возможные значения, если выбрана оплата при получении заказа (`"paymentType":
+  "POSTPAID"`):
+
+
+  * `CARD_ON_DELIVERY` — банковской картой.
+
+
+  * `CASH_ON_DELIVERY` — наличными.
+
+
+  Значение по умолчанию: `CASH_ON_DELIVERY`.
+
+
+  * `B2B_ACCOUNT_PREPAYMENT` — заказ оплачивает организация.
+type: string
+enum:
+  - SHOP_PREPAID
+  - BANK_CARD
+  - YANDEX_MONEY
+  - CASH_ON_DELIVERY
+  - CARD_ON_DELIVERY
+  - YANDEX
+  - APPLE_PAY
+  - EXTERNAL_CERTIFICATE
+  - CREDIT
+  - INSTALLMENT
+  - GOOGLE_PAY
+  - TINKOFF_CREDIT
+  - SBP
+  - TINKOFF_INSTALLMENTS
+  - B2B_ACCOUNT_PREPAYMENT
+  - UNKNOWN

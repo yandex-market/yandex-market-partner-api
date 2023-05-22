@@ -1,0 +1,5 @@
+description: Ответ на запрос информации о точке продаж.
+type: object
+properties:
+  outlet:
+    $ref: ./FullOutletDTO.yaml

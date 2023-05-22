@@ -1,0 +1,24 @@
+description: Ключ цифрового товара.
+type: object
+required:
+  - id
+  - code
+  - slip
+  - activate_till
+properties:
+  id:
+    description: Идентификатор позиции в заказе.
+    type: integer
+    format: int64
+  code:
+    description: Сам ключ.
+    type: string
+  slip:
+    description: Инструкция по активации.
+    type: string
+  activate_till:
+    description: >-
+      Дата, до которой нужно активировать ключ. Если ключ действует бессрочно,
+      укажите любую дату в отдаленном будущем.
+    type: string
+    format: date

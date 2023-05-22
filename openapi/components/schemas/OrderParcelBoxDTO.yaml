@@ -1,0 +1,10 @@
+description: Информация о грузоместе
+type: object
+properties:
+  id:
+    description: Идентификатор грузоместа
+    type: integer
+    format: int64
+  fulfilmentId:
+    description: Идентификатор грузового места в информационной системе магазина
+    type: string

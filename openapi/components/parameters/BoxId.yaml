@@ -1,0 +1,7 @@
+description: Идентификатор коробки
+name: boxId
+in: path
+required: true
+schema:
+  type: integer
+  format: int64

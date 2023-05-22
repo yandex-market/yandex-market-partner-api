@@ -1,0 +1,11 @@
+type: object
+description: Модель для ответа API списка информации по заказам.
+properties:
+  pager:
+    $ref: ./FlippingPagerDTO.yaml
+  orders:
+    description: |
+      Модель заказа.
+    type: array
+    items:
+      $ref: ./OrderDTO.yaml

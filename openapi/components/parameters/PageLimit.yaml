@@ -1,0 +1,9 @@
+name: limit
+description: |
+  Количество товаров в выходных данных.
+in: query
+required: false
+example: 20
+schema:
+  type: integer
+  format: int32

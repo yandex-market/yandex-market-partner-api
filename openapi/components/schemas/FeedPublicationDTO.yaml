@@ -1,0 +1,10 @@
+description: Информация о последней публикации предложений из прайс-листа на Маркете.
+type: object
+properties:
+  status:
+    description: Статус последней публикации предложений из прайс-листа.
+    $ref: ./FeedStatusType.yaml
+  full:
+    $ref: ./FeedPublicationFullDTO.yaml
+  priceAndStockUpdate:
+    $ref: ./FeedPublicationPriceAndStockUpdateDTO.yaml

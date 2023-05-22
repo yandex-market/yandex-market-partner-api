@@ -1,0 +1,35 @@
+get:
+  tags:
+    - shipments
+    - fbs
+  operationId: getShipmentOrdersInfo
+  summary: Получение информации о ярлыках
+  description: >
+    Возвращает информацию о возможности печати ярлыков-наклеек для заказов в
+    отгрузке.
+
+    |**⚙️ Лимит:** 200 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/params_ShipmentId.yaml
+  responses:
+    '200':
+      description: Информация по годным/негодным для печати ярлыков заказам в отгрузке
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetShipmentOrdersInfoResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -1,0 +1,21 @@
+description: Список товаров и ставок на них.
+type: object
+required:
+  - sku
+  - bid
+properties:
+  sku:
+    description: SKU товара, которому соответствует ставка из параметра `bid`.
+    $ref: ./ShopSku.yaml
+  bid:
+    description: >
+      Значение ставки для товара из параметра `sku`, от 50 до 9999.
+
+
+      Указывается в процентах от стоимости товара и умножается на 100. Например,
+      ставка 5% обозначается как 500.
+    type: integer
+    format: int32
+    minimum: 0
+    maximum: 9999
+    example: 570

@@ -1,0 +1,25 @@
+type: object
+description: Описание пункта вывоза для возврата
+properties:
+  id:
+    type: integer
+    format: int64
+    description: Идентификатор пункта вывоза
+  name:
+    type: string
+    description: Название пункта вывоза
+  address:
+    description: Адрес пункта вывоза
+    $ref: ./PickupAddressDTO.yaml
+  instruction:
+    description: Дополнительные инструкции к вывозу
+    type: string
+  type:
+    description: Тип логистической точки
+    $ref: ./LogisticPointType.yaml
+  logisticPartnerId:
+    type: integer
+    format: int64
+    description: >-
+      Идентификатор логистического партнера, к которому относится логистическая
+      точка

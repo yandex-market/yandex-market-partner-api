@@ -1,0 +1,92 @@
+description: Информация о доставке.
+type: object
+properties:
+  id:
+    description: >
+      Идентификатор доставки, присвоенный магазином.
+
+
+      Указывается, только если магазин передал данный идентификатор в ответе на
+      запрос методом `POST /cart`.
+    type: string
+  type:
+    description: |
+      Способ доставки заказа.
+    $ref: ./OrderDeliveryType.yaml
+  serviceName:
+    description: Наименование службы доставки.
+    type: string
+  price:
+    description: |
+      Стоимость доставки в валюте заказа.
+
+      Для отделения целой части от дробной используется точка.
+    type: number
+    format: decimal
+  deliveryPartnerType:
+    description: >
+      Тип сотрудничества со службой доставки в рамках конкретного заказа:
+
+
+      Принимает значение `YANDEX_MARKET` — магазин работает со службой доставки
+      через Маркет.
+    $ref: ./OrderDeliveryPartnerType.yaml
+  courier:
+    $ref: ./OrderCourierDTO.yaml
+  dates:
+    $ref: ./OrderDeliveryDatesDTO.yaml
+  region:
+    $ref: ./RegionDTO.yaml
+  address:
+    $ref: ./OrderDeliveryAddressDTO.yaml
+  vat:
+    $ref: ./OrderVatType.yaml
+  deliveryServiceId:
+    description: Идентификатор службы доставки
+    type: integer
+    format: int64
+  liftType:
+    $ref: ./OrderLiftType.yaml
+  liftPrice:
+    description: Стоимость подъема на этаж
+    type: number
+    format: decimal
+  outletCode:
+    description: >
+      Идентификатор пункта самовывоза, выбранного покупателем для получения
+      заказа.
+
+
+      Идентификатор указывается:
+
+
+      * в личном кабинете магазина при создании или редактировании точки продаж.
+
+
+      Параметр указывается, если `type=PICKUP`.
+    type: string
+  outletStorageLimitDate:
+    description: Ближайшая дата доставки
+    $ref: ./DateDdMmYyyy.yaml
+  dispatchType:
+    $ref: ./OrderDeliveryDispatchType.yaml
+  tracks:
+    description: Информация для отслеживания перемещений посылки
+    type: array
+    items:
+      $ref: ./OrderTrackDTO.yaml
+  shipments:
+    description: Информация о посылках
+    type: array
+    items:
+      $ref: ./OrderShipmentDTO.yaml
+  estimated:
+    description: Приблизительная ли дата доставки
+    type: boolean
+  eacType:
+    description: Тип кода подтверждения ЭАПП
+    $ref: ./OrderDeliveryEacType.yaml
+  eacCode:
+    description: |
+      Код подтверждения ЭАПП (для типа MERCHANT_TO_COURIER)
+    type: string

@@ -1,0 +1,19 @@
+name: page_token
+description: >
+  Идентификатор страницы c результатами.
+
+
+  Если параметр не указан, возвращается самая старая страница.
+
+
+  Рекомендуется передавать значение выходного параметра `nextPageToken`,
+  полученное при последнем запросе.
+
+
+  Если задан `page_token`, параметры `offset`, `page_number` и `page_size`
+  игнорируются.
+in: query
+required: false
+example: eyBuZXh0SWQ6IDIzNDIgfQ==
+schema:
+  type: string

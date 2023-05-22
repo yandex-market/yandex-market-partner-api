@@ -1,0 +1,7 @@
+description: Список предложений с пагинатором.
+type: object
+allOf:
+  - $ref: ./OffersDTO.yaml
+  - properties:
+      pager:
+        $ref: ./FlippingPagerDTO.yaml

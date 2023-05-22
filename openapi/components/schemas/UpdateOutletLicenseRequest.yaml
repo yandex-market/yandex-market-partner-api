@@ -1,0 +1,15 @@
+description: Запрос на создание или изменение лицензий для точек продаж.
+type: object
+required:
+  - licenses
+properties:
+  licenses:
+    description: >
+      Список лицензий.
+
+      Обязательный параметр, должен содержать информацию хотя бы об одной
+      лицензии.
+    type: array
+    minItems: 1
+    items:
+      $ref: ./OutletLicenseDTO.yaml

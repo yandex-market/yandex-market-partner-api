@@ -1,0 +1,56 @@
+get:
+  tags:
+    - prices
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: getPrices
+  summary: Список цен
+  description: >
+    Возвращает список цен, установленных вами на товары любым способом:
+    например, через партнерский API или в файле с каталогом.
+
+
+    Количество товаров, о которых можно получить информацию в течение суток,
+    определяется по формуле:
+
+
+    ```(количество товаров партнера на витрине) * 25```
+
+
+    {% note info %}
+
+
+    Общее количество товаров считается по данным за последние семь дней (не
+    включая сегодня) и не может быть выше 2 миллионов.
+
+
+    {% endnote %}
+
+
+    Способы установки цен описаны [в Справке для
+    продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  responses:
+    '200':
+      description: Ответ на запрос списка цен.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetPricesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

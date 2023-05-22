@@ -1,0 +1,37 @@
+description: >
+  Габариты упаковки и вес товара.
+
+
+  Если товар занимает несколько коробок, перед измерением размеров сложите их
+  компактно.
+
+
+  ![Схема измерения многоместных
+  грузов](../../_images/reference/boxes-measure.png)
+type: object
+required:
+  - length
+  - width
+  - height
+  - weight
+properties:
+  length:
+    description: |
+      Длина упаковки в см.
+    example: 65.55
+    type: number
+  width:
+    description: |
+      Ширина упаковки в см.
+    example: 50.7
+    type: number
+  height:
+    description: |
+      Высота упаковки в см.
+    example: 20
+    type: number
+  weight:
+    description: |
+      Вес товара в кг с учетом упаковки (брутто).
+    example: 1.001
+    type: number

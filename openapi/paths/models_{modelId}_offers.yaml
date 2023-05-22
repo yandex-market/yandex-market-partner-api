@@ -1,0 +1,77 @@
+get:
+  tags:
+    - models
+    - dbs
+  operationId: getModelOffers
+  summary: Список предложений для модели
+  description: >
+    Возвращает информацию о первых десяти предложениях, расположенных на
+    карточке модели.
+
+
+    Предложения выдаются для определенного региона и располагаются в том же
+    порядке, в котором они показываются в выдаче Маркета на карточке модели.
+
+
+    Для групповых моделей метод не поддерживается. Идентификатор групповой
+    модели игнорируется.
+
+
+    Для методов `GET /models/{modelId}/offers` и `POST /models/offers` действует
+    групповое ресурсное ограничение. Ограничение вводится на суммарное
+    количество моделей, информация о которых запрошена при помощи этих методов.
+
+
+    Объем запросов к ресурсу, который возможно выполнить в течение суток,
+    рассчитывается индивидуально и зависит от следующих показателей:
+
+
+    * количество предложений на карточках моделей;
+
+
+    * количество активных магазинов клиента.
+
+
+    {% note info %}
+
+
+    Количество предложений считается по данным за последние семь дней (не
+    включая сегодня).
+
+
+    Для новых магазинов, еще не разместивших предложения, ограничение равно 0 и
+    пересчитывается на следующий день после размещения первых предложений.
+
+
+    {% endnote %}
+
+
+    Для клиентов с несколькими магазинами ограничение рассчитывается с учетом
+    количества предложений, являющегося максимальным среди всех магазинов
+    клиента. Для агентств ограничение суммируется по всем субклиентам агентства.
+  parameters:
+    - $ref: ../components/parameters/ModelId.yaml
+    - $ref: ../components/parameters/ModelRegionId.yaml
+    - $ref: ../components/parameters/Currency.yaml
+    - $ref: ../components/parameters/OrderByPrice.yaml
+    - $ref: ../components/parameters/ModelPageCount.yaml
+    - $ref: ../components/parameters/PageNum.yaml
+  responses:
+    '200':
+      description: Список предложений для модели.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetModelsOffersResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

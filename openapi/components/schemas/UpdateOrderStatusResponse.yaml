@@ -1,0 +1,5 @@
+description: Информация об изменении статуса заказа
+type: object
+properties:
+  order:
+    $ref: ./OrderDTO.yaml

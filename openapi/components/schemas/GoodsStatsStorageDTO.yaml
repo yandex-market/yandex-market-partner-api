@@ -1,0 +1,20 @@
+description: Информация об условиях хранения и обработки товара на складе.
+type: object
+properties:
+  type:
+    description: Тип условий хранения и обработки товара на складе.
+    $ref: ./GoodsStatsStorageType.yaml
+  count:
+    description: >-
+      Количество товара для указанного типа условий хранения и обработки товара
+      на складе.
+    type: integer
+    format: int64
+  includedTypes:
+    description: >-
+      Дополнительная информация о том, для скольких товаров заканчивается срок
+      действия текущего тарифа и для скольких товаров действует повышенный
+      тариф.
+    type: array
+    items:
+      $ref: ./GoodsStatsIncludedTypeDTO.yaml

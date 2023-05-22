@@ -1,0 +1,8 @@
+description: Ответ на запрос списка прайс-листов.
+type: object
+properties:
+  feeds:
+    description: Список прайс-листов.
+    type: array
+    items:
+      $ref: ./FeedDTO.yaml

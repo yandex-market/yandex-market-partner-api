@@ -1,0 +1,10 @@
+description: Причины, по которым товар не прошел модерацию
+type: object
+properties:
+  type:
+    description: Тип причины, по которой товар не прошел модерацию.
+    $ref: ./OfferProcessingNoteType.yaml
+  payload:
+    description: |
+      Дополнительная информация о причине отклонения товара.
+    type: string

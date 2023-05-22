@@ -1,0 +1,68 @@
+description: >
+  Список товаров в заказе после возможных изменений.
+
+
+  В ходе обработки заказа Маркет может удалить из него единицы товаров — при
+  проблемах на складе или по инициативе пользователя.
+
+
+  * Если из заказа удалены все единицы товара, его не будет в списке `items` —
+  только в списке `initialItems`.
+
+
+  * Если в заказе осталась хотя бы одна единица товара, он будет и в списке
+  `items` (с уменьшенным количеством единиц `count`), и в списке `initialItems`
+  (с первоначальным количеством единиц `initialCount`).
+type: object
+properties:
+  offerName:
+    description: Название товара.
+    type: string
+  marketSku:
+    $ref: ./MarketSku.yaml
+  shopSku:
+    description: Ваш SKU.
+    $ref: ./ShopSku.yaml
+  count:
+    description: >
+      Количество единиц товара с учетом удаленных единиц.
+
+
+      Если из заказа удалены все единицы товара, он попадет только в список
+      `initialItems`.
+    type: integer
+    format: int32
+  prices:
+    description: Цена или скидки на товар.
+    type: array
+    items:
+      $ref: ./OrdersStatsPriceDTO.yaml
+  warehouse:
+    description: Информация о складе, на котором хранится товар.
+    $ref: ./OrdersStatsWarehouseDTO.yaml
+  details:
+    description: Информация об удалении товара из заказа.
+    type: array
+    items:
+      $ref: ./OrdersStatsDetailsDTO.yaml
+  cisList:
+    description: Список кодов идентификации товара в системе «Честный ЗНАК».
+    type: array
+    items:
+      type: string
+  initialCount:
+    description: Первоначальное количество единиц товара.
+    type: integer
+    format: int32
+  bidFee:
+    description: >
+      Списанная ставка ближайшего конкурента.
+
+
+      Указывается в процентах от стоимости товара и умножается на 100. Например,
+      ставка 5% обозначается как 500.
+    type: integer
+    format: int32
+    minimum: 0
+    maximum: 10000
+    example: 570

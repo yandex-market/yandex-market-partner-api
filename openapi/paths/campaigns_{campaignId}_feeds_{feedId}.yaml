@@ -1,0 +1,36 @@
+get:
+  tags:
+    - feeds
+    - dbs
+  operationId: getFeed
+  summary: Информация о прайс-листе
+  description: >
+    Возвращает информацию о прайс-листе, размещенном на Маркете для заданного
+    магазина. Также ресурс возвращает результаты автоматических проверок
+    прайс-листа.
+
+    |**⚙️ Лимит:** 5 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/FeedId.yaml
+  responses:
+    '200':
+      description: Информация о прайс-листе
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetFeedResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

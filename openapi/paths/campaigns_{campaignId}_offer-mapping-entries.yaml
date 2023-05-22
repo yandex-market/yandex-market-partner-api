@@ -1,0 +1,69 @@
+get:
+  tags:
+    - offer-mappings
+    - fby
+    - fbs
+    - express
+  operationId: getOfferMappingEntries
+  summary: Список товаров в каталоге
+  description: >
+    Для каждого товара, который вы размещаете на Маркете, возвращается
+    информация о карточках Маркета, к которым привязан этот товар:
+
+
+    * Идентификатор текущей карточки (marketSku), карточки, которая проходит
+    модерацию и последней отклоненной карточки.
+
+    * Описание товара, которое указано на карточке Маркета. Например, размер
+    упаковки и вес товара.
+
+
+    Результаты возвращаются постранично. Выходные данные содержат идентификатор
+    следующей страницы.
+
+
+    Количество товаров, о которых можно получить информацию в течение суток,
+    определяется по формуле:
+
+
+    ```(количество товаров в каталоге магазина) * 25```
+
+
+    {% note info %}
+
+
+    Количество товаров в каталоге магазина считается по данным за последние семь
+    дней (не включая сегодня).
+
+
+    {% endnote %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OfferIds.yaml
+    - $ref: ../components/parameters/OfferShopSkus.yaml
+    - $ref: ../components/parameters/OfferMappingKind.yaml
+    - $ref: ../components/parameters/OfferProcessingStatuses.yaml
+    - $ref: ../components/parameters/OfferAvailabilityStatuses.yaml
+    - $ref: ../components/parameters/CategoryIds.yaml
+    - $ref: ../components/parameters/VendorNames.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  responses:
+    '200':
+      description: Информация о товарах в каталоге
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOfferMappingEntriesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

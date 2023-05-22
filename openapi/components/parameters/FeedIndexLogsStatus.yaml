@@ -1,0 +1,17 @@
+description: >
+  Статус индексации и проверки прайс-листа на соответствие техническим
+  требованиям.
+
+
+  Возможные значения:
+
+  * `ERROR` — произошли ошибки.
+
+  * `OK` — обработан без ошибок.
+
+  * `WARNING` — наблюдались некритичные проблемы.
+name: status
+in: query
+required: false
+schema:
+  $ref: ../schemas/FeedIndexLogsStatusType.yaml

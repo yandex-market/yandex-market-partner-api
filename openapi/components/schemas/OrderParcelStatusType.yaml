@@ -1,0 +1,8 @@
+description: Статус заказа в партнерской службе доставки
+type: string
+enum:
+  - NEW
+  - CREATED
+  - READY_TO_SHIP
+  - ERROR
+  - UNKNOWN

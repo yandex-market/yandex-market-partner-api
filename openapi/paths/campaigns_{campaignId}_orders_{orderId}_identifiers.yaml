@@ -1,0 +1,70 @@
+put:
+  tags:
+    - orders
+    - fbs
+    - dbs
+    - express
+  operationId: provideOrderItemIdentifiers
+  summary: Передача уникальных кодов маркировки единиц товара
+  description: >
+    Передает Маркету коды маркировки для единиц товара в указанном заказе.
+
+
+    Принимаются коды двух типов:
+
+
+    * Коды «Честного знака».
+
+    * УИН для ювелирных изделий.
+
+
+    {% note warning %}
+
+
+    Прежде чем работать с этим методом, обязательно прочтите [статью о работе с
+    маркируемыми
+    товарами](https://yandex.ru/support/marketplace/orders/cz.html).
+
+
+    {% endnote %}
+
+
+    Для каждой позиции в заказе, требующей маркировки, нужно передать список
+    кодов — по одному для каждой единицы товара. Например, если в заказе две
+    пары тапочек и одна пара туфель, получится список из двух кодов для первой
+    позиции и список из одного кода для второй.
+
+
+    |**⚙️ Лимит:** 1 000 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/ProvideOrderItemIdentifiersRequest.yaml
+  responses:
+    '200':
+      description: >-
+        Ответ 200 обозначает, что коды успешно записались. Ответ содержит
+        краткие сведения о промаркированных товарах.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ProvideOrderItemIdentifiersResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

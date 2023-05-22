@@ -1,0 +1,12 @@
+description: Модель товара.
+type: object
+properties:
+  id:
+    description: Идентификатор модели товара.
+    type: integer
+    format: int64
+  name:
+    description: Название модели товара.
+    type: string
+  prices:
+    $ref: ./ModelPriceDTO.yaml

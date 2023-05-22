@@ -1,0 +1,22 @@
+description: |
+  Список режимов работы точки продаж.
+  Обязательный параметр.
+type: object
+required:
+  - scheduleItems
+properties:
+  workInHoliday:
+    description: |
+      Признак, работает ли точка продаж в дни государственных праздников.
+      Возможные значения:
+      * `false` — точка продаж не работает в дни государственных праздников.
+      * `true` — точка продаж работает в дни государственных праздников.
+    type: boolean
+  scheduleItems:
+    description: |
+      Список расписаний работы точки продаж.
+      Обязательный параметр.
+    type: array
+    minItems: 1
+    items:
+      $ref: ./OutletWorkingScheduleItemDTO.yaml

@@ -1,0 +1,42 @@
+description: Список отчетов по индексации прайс-листа.
+type: object
+properties:
+  downloadTime:
+    description: >
+      Дата и время загрузки прайс-листа.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:42:42+03:00`.
+    type: string
+    format: date-time
+  fileTime:
+    description: >
+      Дата и время, которые магазин указал в прайс-листе.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:42:42+03:00`.
+    type: string
+    format: date-time
+  generationId:
+    description: Идентификатор индексации.
+    type: integer
+    format: int64
+  indexType:
+    $ref: ./FeedIndexLogsIndexType.yaml
+  publishedTime:
+    description: >
+      Дата и время публикации предложений из прайс-листа на Яндекс Маркете.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:42:42+03:00`.
+    type: string
+    format: date-time
+  status:
+    $ref: ./FeedIndexLogsStatusType.yaml
+  error:
+    $ref: ./FeedIndexLogsErrorDTO.yaml
+  offers:
+    $ref: ./FeedIndexLogsOffersDTO.yaml

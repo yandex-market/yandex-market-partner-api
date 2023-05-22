@@ -1,0 +1,17 @@
+description: Тип остатка на складе
+type: string
+enum:
+  - FIT
+  - DEFECT
+  - ANOMALY
+  - SURPLUS
+  - EXPIRED
+  - MISGRADING
+  - UNDEFINED
+  - INCORRECT_IMEI
+  - INCORRECT_SERIAL_NUMBER
+  - INCORRECT_CIS
+  - PART_MISSING
+  - NON_COMPLIENT
+  - NOT_ACCEPTABLE
+  - UNKNOWN

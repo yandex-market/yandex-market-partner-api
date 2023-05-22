@@ -1,0 +1,82 @@
+description: Информация о точке продаж.
+type: object
+required:
+  - name
+  - type
+  - address
+  - phones
+  - workingSchedule
+properties:
+  name:
+    description: |
+      Название точки продаж.
+      Обязательный параметр.
+    type: string
+  type:
+    $ref: ./OutletType.yaml
+  coords:
+    description: >
+      Координаты точки продаж.
+
+
+      Формат: долгота, широта. Разделители: запятая и / или пробел. Например,
+      `20.4522144, 54.7104264`.
+
+
+      Если параметр не передан, координаты будут определены по значениям
+      параметров, вложенных в `address`.
+    type: string
+  isMain:
+    description: |
+      Признак основной точки продаж.
+      Возможные значения:
+      * `false` — неосновная точка продаж.
+      * `true` — основная точка продаж.
+    type: boolean
+  shopOutletCode:
+    description: Идентификатор точки продаж, присвоенный магазином.
+    type: string
+  visibility:
+    $ref: ./OutletVisibilityType.yaml
+  address:
+    $ref: ./OutletAddressDTO.yaml
+  phones:
+    description: |
+      Номера телефонов точки продаж.
+      Обязательный параметр.
+    type: array
+    minItems: 1
+    items:
+      description: Номер телефона точки продаж.
+      type: string
+      minLength: 1
+  workingSchedule:
+    $ref: ./OutletWorkingScheduleDTO.yaml
+  deliveryRules:
+    description: |
+      Информация об условиях доставки для данной точки продаж.
+      Обязательный параметр, если параметр `type=DEPOT` или `type=MIXED`.
+    type: array
+    items:
+      $ref: ./OutletDeliveryRuleDTO.yaml
+  emails:
+    description: |
+      Адрес электронной почты точки продаж.
+      Может содержать только один параметр `email`.
+    type: array
+    maxItems: 1
+    items:
+      description: >
+        Адрес электронной почты точки продаж.
+
+        Допускается любой адрес электронной почты, соответствующий стандарту RFC
+        2822.
+
+        Выводится в виде строки.
+      type: string
+  storagePeriod:
+    description: >-
+      Срок хранения заказа в собственном пункте выдачи заказов. Считается в
+      днях.
+    type: integer
+    format: int64

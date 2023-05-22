@@ -1,0 +1,56 @@
+post:
+  tags:
+    - feeds
+    - dbs
+  operationId: setFeedParams
+  summary: Изменение параметров прайс-листа
+  description: >
+    Позволяет магазину изменить параметры прайс-листа.
+
+
+    Чтобы отредактировать параметр прайс-листа, передайте в теле запроса: `name`
+    (название параметра) и `value` (значение параметра).
+
+
+    Чтобы отменить установленное значение, передайте в теле запроса: `name`
+    (название параметра) и `delete=true` (удалить значение).
+
+
+    {% note info %}
+
+
+    В течение часа магазин может выполнить запрос **не более трех** раз для
+    одного прайс-листа.
+
+
+    {% endnote %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/FeedId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/SetFeedParamsRequest.yaml
+  responses:
+    '200':
+      description: Статус выполнения операции
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

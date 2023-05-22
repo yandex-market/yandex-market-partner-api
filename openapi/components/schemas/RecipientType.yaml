@@ -1,0 +1,13 @@
+description: |
+  Способ возврата товара покупателем:
+
+  * `SHOP` — в точку возврата магазина.
+
+  * `DELIVERY_SERVICE` — отправить курьером.
+
+  * `POST` — почта.
+type: string
+enum:
+  - SHOP
+  - DELIVERY_SERVICE
+  - POST

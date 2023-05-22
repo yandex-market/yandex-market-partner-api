@@ -1,0 +1,8 @@
+description: Найденные предложения магазина.
+type: object
+properties:
+  offers:
+    description: Список предложений магазина.
+    type: array
+    items:
+      $ref: ./OfferDTO.yaml

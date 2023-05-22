@@ -1,0 +1,2 @@
+allOf:
+  - $ref: ./OutletDTO.yaml

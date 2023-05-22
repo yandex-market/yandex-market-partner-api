@@ -1,0 +1,9 @@
+description: |
+  Краткие сведения о промаркированных товарах — возвращаются, если ответ `OK`.
+type: object
+properties:
+  items:
+    description: Список позиций в заказе, подлежащих маркировке.
+    type: array
+    items:
+      $ref: ./BriefOrderItemDTO.yaml

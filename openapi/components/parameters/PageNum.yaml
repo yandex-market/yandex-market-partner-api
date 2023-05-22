@@ -1,0 +1,15 @@
+name: page
+description: |
+  Номер страницы результатов.
+
+  Значение по умолчанию: 1.
+
+  Используется вместе с параметром page_size.
+
+  `page_number` игнорируется, если задан `page_token`, `limit` или `offset`.
+in: query
+required: false
+schema:
+  type: integer
+  format: int32
+  default: 1

@@ -1,0 +1,44 @@
+get:
+  tags:
+    - order-labels
+    - fbs
+    - dbs
+    - express
+  operationId: generateOrderLabel
+  summary: Ярлык‑наклейка на отдельное грузовое место в заказе
+  description: >
+    Формирует ярлык‑наклейку на отдельное грузовое место в заказе и возвращает
+    ярлык в PDF‑файле.
+
+
+    |**⚙️ Лимит:** 1 000 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+    - $ref: ../components/parameters/generateOrderLabel_ShipmentId.yaml
+    - $ref: ../components/parameters/BoxId.yaml
+    - $ref: ../components/parameters/PageFormat.yaml
+  responses:
+    '200':
+      description: >-
+        PDF‑файл с ярлыками на отдельное грузовое место. Файл содержит одну
+        страницу с ярлыком.
+      content:
+        application/pdf:
+          schema:
+            type: string
+            format: binary
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

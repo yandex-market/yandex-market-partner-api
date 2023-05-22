@@ -1,0 +1,57 @@
+post:
+  tags:
+    - goods-stats
+    - fby
+    - fbs
+    - express
+  operationId: getGoodsStats
+  summary: Отчет по товарам
+  description: >
+    Возвращает подробный отчет по товарам, которые вы разместили на Маркете. С
+    помощью отчета вы можете узнать, например, о скрытии ваших предложений на
+    Маркете, об остатках на складе, об условиях хранения ваших товаров и т. д.
+
+
+    Количество товаров, по которым можно получить отчет с помощью запроса,
+    ограничено. Действуют три правила:
+
+
+    1. Ограничения действуют и обновляются каждые 24 часа.
+
+
+    2. В одном запросе — не более 500 товаров.
+
+
+    3. Общее количество товаров в запросах за последние 24 часа зависит от того,
+    сколько у вас товаров на витрине:
+
+         * Меньше 10 000 — максимум 50 000 товаров в запросах.
+         * От 10 000 до 400 000 — в 5 раз больше количества ваших товаров, но максимум 2 000 000 товаров в запросах.
+         * Больше 400 000 — максимум 2 000 000 товаров.
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetGoodsStatsRequest.yaml
+  responses:
+    '200':
+      description: Отчёт по заказам
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetGoodsStatsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

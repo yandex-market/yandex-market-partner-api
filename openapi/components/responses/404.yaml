@@ -1,0 +1,5 @@
+description: Запрашиваемый ресурс не найден.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiNotFoundErrorResponse.yaml

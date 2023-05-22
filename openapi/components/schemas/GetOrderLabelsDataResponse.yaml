@@ -1,0 +1,7 @@
+description: Ответ с информацией для печати ярлыков
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./OrderLabelDTO.yaml

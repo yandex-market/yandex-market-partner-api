@@ -1,0 +1,206 @@
+post:
+  tags:
+    - hidden-offers
+    - fby
+    - fbs
+    - dbs
+  operationId: addHiddenOffers
+  summary: Скрытие товаров и настройки скрытия
+  description: >
+    Метод позволяет:
+
+
+    1. Скрыть товары магазина на Маркете на указанное время. В теле запроса
+    можно передать от одного до 500 товаров.
+
+
+    2. Установить приоритет скрытия через API над скрытием в личном кабинете.
+
+       Для этого передайте в теле запроса параметр `priority="true"`.
+       Возобновить показ в этом случае можно только с помощью запроса `DELETE /campaigns/{campaignId}/hidden-offers`.
+
+    3. Для скрытий, установленных с приоритетом, можно изменить время скрытия
+    товаров и комментарии.
+
+       Чтобы внести изменения, передайте в теле запроса идентификатор уже скрытого товара и новые значения параметров `comment` и / или `ttlInHours`. При этом предыдущие значения этих параметров будут удалены.
+
+    В одном запросе можно скрыть или изменить параметры скрытия не более чем 500
+    товаров.
+
+
+    В течение минуты можно скрыть или изменить параметры скрытия определенного
+    количества товаров на витрине. Если у магазина:
+
+
+    * не более 200 000 товаров — 1000 товаров;
+
+
+    * более 200 000 товаров — ограничение определяется по формуле:
+
+
+    ```(количество товаров на витрине) / 200```
+
+
+    {% note info %}
+
+
+    Примечание. Количество товаров магазина считается по данным за последние
+    семь дней (не включая сегодня).
+
+
+    {% endnote %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    description: Запрос на скрытие оферов.
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/AddHiddenOffersRequest.yaml
+  responses:
+    '200':
+      description: Статус выполнения операции.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
+get:
+  tags:
+    - hidden-offers
+    - fby
+    - fbs
+    - dbs
+  operationId: getHiddenOffers
+  summary: Информация о скрытых товарах
+  description: >
+    Возвращает список скрытых товаров магазина. Товары отсортированы в
+    лексикографическом порядке по возрастанию SKU на Маркете.
+
+
+    Результаты возвращаются постранично. Выходные данные содержат идентификаторы
+    предыдущей и следующей страницы.
+
+
+    В одном запросе можно получить информацию не более чем о 500 товарах.
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/params_OfferIds.yaml
+    - $ref: ../components/parameters/FeedIds.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - description: |
+        Количество скрытых товаров в выходных данных.
+
+        Минимальное значение: 1.
+
+        Максимальное значение: 500.
+
+        Значение по умолчанию: 500.
+
+        Используется вместе с параметром `page_token` или `offset`.
+
+        Если задан `limit`, параметры `page_number` и `page_size` игнорируются.
+      $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/PageOffset.yaml
+    - $ref: ../components/parameters/PageNum.yaml
+    - $ref: ../components/parameters/PageSize.yaml
+  responses:
+    '200':
+      description: Список скрытых товаров
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetHiddenOffersResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
+delete:
+  tags:
+    - hidden-offers
+    - fby
+    - fbs
+    - dbs
+  operationId: deleteHiddenOffers
+  summary: Возобновление показа товаров
+  description: >
+    Возобновляет показ товаров магазина на Маркете, скрытых через партнерский
+    API запросом `POST /campaigns/{campaignId}/hidden-offers`. Если предложение
+    не отображается по другой причине (например, удалено из прайс-листа или не
+    соответствует требованиям Маркета), оно не начнет показываться.
+
+
+    В теле запроса можно передать от одного до 500 товаров.
+
+
+    В одном запросе можно возобновить показы не более чем 500 товаров.
+
+
+    В течение минуты можно возобновить показы определенного количества товаров
+    на витрине. Если у магазина:
+
+
+    * не более 200 000 товаров — 1000 товаров;
+
+    * более 200 000 товаров — ограничение определяется по формуле:
+
+
+    ```(количество товаров на витрине) / 200```
+
+
+    {% note info %}
+
+
+    Количество товаров магазина считается по данным за последние семь дней (не
+    включая сегодня).
+
+
+    {% endnote %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    description: Запрос на возобновление показа оферов.
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/DeleteHiddenOffersRequest.yaml
+  responses:
+    '200':
+      description: Статус выполнения операции.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

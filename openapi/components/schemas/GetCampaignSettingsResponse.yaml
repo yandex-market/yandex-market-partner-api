@@ -1,0 +1,5 @@
+description: Ответ на запрос настроек магазина.
+type: object
+properties:
+  settings:
+    $ref: ./CampaignSettingsDTO.yaml

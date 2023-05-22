@@ -1,0 +1,5 @@
+type: object
+description: Стандартная обертка для ответов сервера.
+properties:
+  status:
+    $ref: ./ApiResponseStatusType.yaml

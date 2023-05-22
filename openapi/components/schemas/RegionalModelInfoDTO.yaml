@@ -1,0 +1,15 @@
+description: Региональная информация.
+type: object
+properties:
+  currency:
+    $ref: ./CurrencyType.yaml
+  regionId:
+    description: >
+      Идентификатор региона, для которого выводится информация о предложениях
+      модели (доставляемых в этот регион).
+
+
+      Информацию о регионе по идентификатору можно получить с помощью запроса
+      `GET /regions/{regionId}`.
+    type: integer
+    format: int64

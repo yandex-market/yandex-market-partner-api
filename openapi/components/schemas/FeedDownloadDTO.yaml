@@ -1,0 +1,8 @@
+description: Информация о последней загрузке прайс-листа.
+type: object
+properties:
+  status:
+    description: Статус последней загрузки прайс-листа.
+    $ref: ./FeedStatusType.yaml
+  error:
+    $ref: ./FeedDownloadErrorDTO.yaml

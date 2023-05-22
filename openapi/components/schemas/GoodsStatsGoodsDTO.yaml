@@ -1,0 +1,62 @@
+description: Информация о товаре.
+type: object
+properties:
+  shopSku:
+    description: Ваш SKU.
+    $ref: ./ShopSku.yaml
+  marketSku:
+    description: SKU на Маркете — идентификатор карточки товара на Маркете.
+    $ref: ./MarketSku.yaml
+  name:
+    description: Название товара.
+    type: string
+  price:
+    description: Цена на товар, выставленная партнером.
+    type: number
+  categoryId:
+    description: Идентификатор категории товара на Маркете.
+    type: integer
+    format: int64
+  categoryName:
+    description: Название категории товара на Маркете.
+    type: string
+  weightDimensions:
+    description: >
+      Информация о весе и габаритах товара.
+
+      Если товар уже привязан к карточке (`marketSku`), в ответе вернутся
+      габариты из карточки Маркета, а не размеры, которые вы передаете.
+    $ref: ./GoodsStatsWeightDimensionsDTO.yaml
+  hidingReasons:
+    description: >
+      Информация о скрытии вашего предложения на Маркете.
+
+      Если ваше предложение не скрыто, параметр не будет возвращаться.
+
+      Вы можете скрыть ваш товар на Маркете через партнерский API с помощью
+      запроса `POST /campaigns/{campaignId}/hidden-offers` или через каталог
+      товаров. Также ваш товар может быть скрыт из‑за нарушения правил
+      размещения, ошибок в описании предложения партнера и т. д.
+    type: array
+    items:
+      $ref: ./GoodsStatsHidingDTO.yaml
+  warehouses:
+    description: Информация о складах, на которых хранится товар.
+    type: array
+    items:
+      $ref: ./GoodsStatsWarehouseDTO.yaml
+  storage:
+    description: Информация об условиях хранения и обработки товара на складе.
+    type: array
+    items:
+      $ref: ./GoodsStatsStorageDTO.yaml
+  tariffs:
+    description: Информация о тарифах, по которым нужно заплатить за услуги Маркета.
+    type: array
+    items:
+      $ref: ./GoodsStatsTariffDTO.yaml
+  pictures:
+    description: Ссылки (URL) изображений товара в хорошем качестве.
+    type: array
+    items:
+      type: string

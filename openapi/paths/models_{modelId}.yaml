@@ -1,0 +1,65 @@
+get:
+  tags:
+    - models
+    - dbs
+  operationId: getModel
+  summary: Информация о модели
+  description: >
+    Возвращает информацию о модели товара.
+
+
+    Для методов `GET /models`, `GET /models/{modelId}` и `POST /models`
+    действует групповое ресурсное ограничение. Ограничение вводится на суммарное
+    количество моделей, информация о которых запрошена при помощи этих методов.
+
+
+    Объем запросов к ресурсу, который возможно выполнить в течение суток,
+    рассчитывается индивидуально и зависит от следующих показателей:
+
+
+    * количество предложений на карточках моделей;
+
+
+    * количество активных магазинов клиента.
+
+
+    {% note info %}
+
+
+    Количество предложений считается по данным за последние семь дней (не
+    включая сегодня).
+
+
+    Для новых магазинов, еще не разместивших предложения, ограничение равно 0 и
+    пересчитывается на следующий день после размещения первых предложений.
+
+
+    {% endnote %}
+
+
+    Для клиентов с несколькими магазинами ограничение рассчитывается с учетом
+    количества предложений, являющегося максимальным среди всех магазинов
+    клиента. Для агентств ограничение суммируется по всем субклиентам агентства.
+  parameters:
+    - $ref: ../components/parameters/ModelId.yaml
+    - $ref: ../components/parameters/ModelRegionId.yaml
+    - $ref: ../components/parameters/Currency.yaml
+  responses:
+    '200':
+      description: Информация о модели.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetModelsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -1,0 +1,5 @@
+description: Запрос содержит неправильные данные.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiClientDataErrorResponse.yaml

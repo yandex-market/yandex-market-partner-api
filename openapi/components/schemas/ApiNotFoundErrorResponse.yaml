@@ -1,0 +1,4 @@
+description: Запрашиваемый ресурс не найден.
+type: object
+allOf:
+  - $ref: ./ApiErrorResponse.yaml

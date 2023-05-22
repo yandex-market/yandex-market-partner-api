@@ -1,0 +1,10 @@
+description: Информация о регионе доставки.
+type: object
+properties:
+  id:
+    description: Идентификатор региона доставки.
+    type: integer
+    format: int64
+  name:
+    description: Название региона доставки.
+    type: string

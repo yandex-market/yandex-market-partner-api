@@ -1,0 +1,10 @@
+description: Список заказов.
+type: object
+required:
+  - orders
+properties:
+  orders:
+    description: Список заказов.
+    type: array
+    items:
+      $ref: ./OrderStateDTO.yaml

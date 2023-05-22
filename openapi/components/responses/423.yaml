@@ -1,0 +1,5 @@
+description: К ресурсу нельзя применить указанный метод.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiLockedErrorResponse.yaml

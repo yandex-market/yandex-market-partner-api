@@ -1,0 +1,36 @@
+get:
+  tags:
+    - returns
+    - fbs
+    - dbs
+    - express
+  operationId: getReturn
+  summary: Информация о возврате или невыкупе
+  description: |
+    Получает информацию по одному возврату или невыкупу.
+
+    |**⚙️ Лимит:** 10 000 запросов в час|
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+    - $ref: ../components/parameters/ReturnId.yaml
+  responses:
+    '200':
+      description: Детали возврата.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetReturnResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

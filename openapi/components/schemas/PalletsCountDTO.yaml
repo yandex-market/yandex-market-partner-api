@@ -1,0 +1,11 @@
+type: object
+description: Количество палет в отгрузке.
+properties:
+  planned:
+    description: Количество палет, которое заявил продавец.
+    type: integer
+    format: int32
+  fact:
+    description: Количество палет, которое приняли в сортировочном центре.
+    type: integer
+    format: int32

@@ -1,0 +1,13 @@
+description: Информация о предложениях прайс-листа.
+type: object
+properties:
+  rejectedCount:
+    description: >-
+      Количество предложений, который не опубликованы на Маркете из-за найденных
+      ошибок.
+    type: integer
+    format: int64
+  totalCount:
+    description: Количество предложений в прайс-листе.
+    type: integer
+    format: int64

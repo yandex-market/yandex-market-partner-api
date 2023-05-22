@@ -1,0 +1,10 @@
+description: Информация об остатках товаров на складе.
+type: object
+properties:
+  type:
+    description: Тип остатков товаров на складе.
+    $ref: ./GoodsStatsWarehouseStockType.yaml
+  count:
+    description: Количество товара для указанного типа остатков на складе.
+    type: integer
+    format: int64

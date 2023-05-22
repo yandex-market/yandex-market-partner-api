@@ -1,0 +1,124 @@
+description: Список товаров в заказе.
+type: object
+properties:
+  id:
+    description: Идентификатор товара в заказе.
+    type: integer
+    format: int64
+  feedId:
+    description: Идентификатор каталога товаров.
+    type: integer
+    format: int64
+  offerId:
+    description: >-
+      Идентификатор вашего товарного предложения для определенного товара.
+      [Описание поля в Справке для
+      продавцов](https://yandex.ru/support/marketplace/assortment/fields/index.html#sku)
+    $ref: ./ShopSku.yaml
+  feedCategoryId:
+    description: Идентификатор категории, указанный в каталоге.
+    type: string
+  offerName:
+    description: Название товара.
+    type: string
+  price:
+    description: >
+      Цена товара в валюте заказа без учета вознаграждения партнеру за скидки по
+      промокодам, купонам и акциям (параметр `subsidy`).
+
+
+      Для отделения целой части от дробной используется точка.
+    type: number
+    format: decimal
+  buyerPrice:
+    description: |
+      Цена товара в валюте покупателя. В цене уже учтены скидки по:
+
+      * акциям;
+      * купонам;
+      * промокодам.
+
+      Для отделения целой части от дробной используется точка.
+    type: number
+    format: decimal
+  buyerPriceBeforeDiscount:
+    description: |
+      Стоимость товара в валюте покупателя до применения скидок.
+
+      Для отделения целой части от дробной используется точка.
+    type: number
+    format: decimal
+  count:
+    description: Количество товара.
+    type: integer
+  vat:
+    description: Ставка налога на добавленную стоимость (НДС) на товар.
+    $ref: ./OrderVatType.yaml
+  shopSku:
+    description: |
+      Ваш SKU.
+    $ref: ./ShopSku.yaml
+  subsidy:
+    description: >
+      Общее вознаграждение партнеру за все скидки на товар:
+
+
+      * по промокодам;
+
+      * по купонам;
+
+      * по баллам кешбэка по подписке Яндекс Плюс;
+
+      * по акциям.
+
+
+      Передается в валюте заказа, для отделения целой части от дробной
+      используется точка.
+    type: number
+    format: decimal
+  partnerWarehouseId:
+    description: >
+      Идентификатор склада в системе партнера, на который сформирован заказ.
+
+
+      {% note alert %}
+
+
+      Параметр устарел, временно поддерживается, но не доступен для ввода и
+      редактирования.
+
+
+      {% endnote %}
+    type: string
+  promos:
+    description: >-
+      Информация о вознаграждениях партнеру за скидки на товар по промокодам,
+      купонам и акциям.
+    type: array
+    items:
+      $ref: ./OrderItemPromoDTO.yaml
+  instances:
+    description: >
+      Информация о маркировке единиц товара.
+
+
+      Возвращаются данные для маркировки, переданные в запросе `PUT
+      /campaigns/{campaignId}/orders/{orderId}/cis`.
+
+
+      Если магазин еще не передавал коды для этого заказа, `instances`
+      отсутствует.
+    type: array
+    items:
+      $ref: ./OrderItemInstanceDTO.yaml
+  details:
+    description: |
+      Информация об удалении товара из заказа.
+    type: array
+    items:
+      $ref: ./OrderItemDetailDTO.yaml
+  subsidies:
+    description: Список субсидий по типам
+    type: array
+    items:
+      $ref: ./OrderItemSubsidyDTO.yaml

@@ -1,0 +1,61 @@
+post:
+  tags:
+    - feeds
+    - dbs
+  operationId: refreshFeed
+  summary: Сообщить, что прайс-лист обновился
+  description: >
+    Позволяет сообщить, что магазин обновил прайс-лист. После этого Маркет
+    начнет обновление данных на сервисе.
+
+    1. Магазин обновляет прайс-лист, ссылку на который он указал в личном
+    кабинете.
+
+    2. Магазин отправляет Маркету запрос методом `POST
+    /campaigns/{campaignId}/feeds/{feedId}/refresh`.
+
+    3. Маркет начинает обновление данных магазина на сервисе.
+
+
+    {% note alert %}
+
+
+    Запрос работает только для включенных магазинов. Если магазин выключен,
+    данные на Маркете не обновятся, даже если HTTP-код — `200 OK`. Проверить
+    статус магазина можно с помощью базовых запросов или на странице
+    бизнес-аккаунта.
+
+
+    {% endnote %}
+
+
+    {% note info %}
+
+
+    В течение часа магазин может выполнить запрос **не более трех раз** для
+    одного прайс-листа.
+
+
+    {% endnote %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/FeedId.yaml
+  responses:
+    '200':
+      description: Пустой ответ
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

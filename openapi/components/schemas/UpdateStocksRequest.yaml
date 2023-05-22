@@ -1,0 +1,14 @@
+description: Запрос на изменение информации по стокам.
+type: object
+required:
+  - skus
+properties:
+  skus:
+    description: |
+      Данные об остатках товаров.
+    type: array
+    minItems: 1
+    maxItems: 2000
+    uniqueItems: true
+    items:
+      $ref: ./StockDTO.yaml

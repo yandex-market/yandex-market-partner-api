@@ -1,0 +1,8 @@
+description: Запрос рекомендованных карточек товара
+type: object
+properties:
+  offers:
+    description: Список товаров
+    type: array
+    items:
+      $ref: ./MappingsOfferDTO.yaml

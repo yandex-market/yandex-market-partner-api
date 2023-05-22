@@ -1,0 +1,5 @@
+description: Информация о доставке в своем регионе магазина.
+type: object
+properties:
+  schedule:
+    $ref: ./CampaignSettingsScheduleDTO.yaml

@@ -1,0 +1,18 @@
+description: |
+  Информация об ошибке при загрузке прайс-листа.
+  Выводится, если параметр `download status=ERROR`.
+type: object
+properties:
+  httpStatusCode:
+    description: |
+      HTTP-код ошибки индексации прайс-листа.
+      Выводится, если `type=DOWNLOAD_HTTP_ERROR`.
+    type: integer
+    format: int32
+  type:
+    $ref: ./FeedDownloadErrorType.yaml
+  description:
+    description: |
+      Описание ошибки.
+      Выводится, если `type=DOWNLOAD_ERROR`.
+    type: string

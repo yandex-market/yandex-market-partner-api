@@ -1,0 +1,12 @@
+type: object
+required:
+  - trackCode
+  - deliveryServiceId
+properties:
+  trackCode:
+    description: Трек‑номер посылки.
+    type: string
+  deliveryServiceId:
+    description: Идентификатор службы доставки.
+    type: integer
+    format: int64

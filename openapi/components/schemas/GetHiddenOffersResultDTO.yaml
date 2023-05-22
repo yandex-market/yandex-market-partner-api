@@ -1,0 +1,16 @@
+description: |
+  Результат работы метода.
+
+  Возвращается, если параметр `status="OK"`.
+type: object
+properties:
+  total:
+    description: Общее количество скрытых товаров магазина.
+    type: integer
+  paging:
+    $ref: ./ScrollingPagerDTO.yaml
+  hiddenOffers:
+    description: Список скрытых товаров.
+    type: array
+    items:
+      $ref: ./HiddenOfferDTO.yaml

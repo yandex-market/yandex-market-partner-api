@@ -1,0 +1,7 @@
+description: Идентификатор позиции в возврате
+name: itemId
+in: path
+required: true
+schema:
+  type: integer
+  format: int64

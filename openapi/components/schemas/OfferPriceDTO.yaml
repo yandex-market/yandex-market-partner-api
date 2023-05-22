@@ -1,0 +1,32 @@
+description: Товар с информацией о новой цене на него.
+type: object
+properties:
+  offerId:
+    description: Идентификатор предложения.
+    $ref: ./ShopSku.yaml
+  id:
+    description: >-
+      Идентификатор предложения из прайс-листа. Поле устарело, временно
+      поддерживается, но в будущем будет отключено.
+    deprecated: true
+    type: string
+  feed:
+    description: >-
+      Информация о прайс-листе. Поле устарело, временно поддерживается, но в
+      будущем будет отключено.
+    deprecated: true
+    $ref: ./OfferPriceFeedDTO.yaml
+  price:
+    $ref: ./PriceDTO.yaml
+  marketSku:
+    description: >-
+      SKU на Маркете. Поле устарело, временно поддерживается, но в будущем будет
+      отключено.
+    deprecated: true
+    $ref: ./MarketSku.yaml
+  shopSku:
+    description: >-
+      SKU товара. Поле устарело, временно поддерживается, но в будущем будет
+      отключено.
+    deprecated: true
+    $ref: ./ShopSku.yaml

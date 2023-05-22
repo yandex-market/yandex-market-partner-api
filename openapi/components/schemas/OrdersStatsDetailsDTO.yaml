@@ -1,0 +1,20 @@
+description: Информация об удалении товара из заказа.
+type: object
+properties:
+  itemStatus:
+    description: Статус товара.
+    $ref: ./OrdersStatsItemStatusType.yaml
+  itemCount:
+    description: Количество товара со статусом, указанном в параметре `itemStatus`.
+    type: integer
+    format: int64
+  updateDate:
+    description: |
+      Дата, когда товар получил статус, указанный в параметре `itemStatus`.
+
+      Формат даты: `ГГГГ-ММ-ДД`.
+    type: string
+    format: date
+  stockType:
+    description: Тип стока.
+    $ref: ./OrdersStatsStockType.yaml

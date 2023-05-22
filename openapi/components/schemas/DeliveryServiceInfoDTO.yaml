@@ -1,0 +1,13 @@
+description: Информация о службе доставки
+type: object
+required:
+  - id
+  - name
+properties:
+  id:
+    description: Идентификатор службы доставки.
+    type: integer
+    format: int64
+  name:
+    description: Наименование службы доставки.
+    type: string

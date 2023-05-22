@@ -1,0 +1,73 @@
+description: Отзыв пользователя Яндекс.Маркета об указанном магазине.
+type: object
+properties:
+  id:
+    description: Идентификатор отзыва.
+    type: integer
+    format: int64
+  createdAt:
+    description: >
+      Дата и время создания отзыва.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00+03:00`.
+    type: string
+    format: date-time
+  text:
+    description: Комментарий автора отзыва.
+    type: string
+  state:
+    $ref: ./FeedbackStateType.yaml
+  author:
+    $ref: ./FeedbackAuthorDTO.yaml
+  pro:
+    description: Достоинства магазина, описанные в отзыве.
+    type: string
+  contra:
+    description: Недостатки магазина, описанные в отзыве.
+    type: string
+  comments:
+    description: Переписка автора отзыва с магазином.
+    type: array
+    items:
+      $ref: ./FeedbackCommentDTO.yaml
+  shop:
+    $ref: ./FeedbackShopDTO.yaml
+  resolved:
+    description: >
+      Решена ли проблема автора отзыва:
+
+
+      * `true` — да.
+
+      * `false` — нет.
+
+
+      Если проблема решена, около отзыва на странице магазина появляется
+      соответствующая надпись.
+    type: boolean
+  verified:
+    description: |
+      Является ли отзыв рекомендованным:
+
+      * `true` — да.
+      * `false` — нет.
+
+      {% note alert %}
+
+      Параметр устарел и не рекомендуется к использованию.
+
+      {% endnote %}
+    type: boolean
+  recommend:
+    description: |
+      Купил бы автор отзыва в магазине снова:
+
+      * `true` — да.
+      * `false` — нет.
+    type: boolean
+  grades:
+    $ref: ./FeedbackGradesDTO.yaml
+  order:
+    $ref: ./FeedbackOrderDTO.yaml

@@ -1,0 +1,11 @@
+description: Информация о статусе публикации товара на Маркете.
+type: object
+properties:
+  status:
+    description: Статус публикации товара
+    $ref: ./OfferProcessingStatusType.yaml
+  notes:
+    description: Причины, по которым товар не прошел модерацию.
+    type: array
+    items:
+      $ref: ./OfferProcessingNoteDTO.yaml

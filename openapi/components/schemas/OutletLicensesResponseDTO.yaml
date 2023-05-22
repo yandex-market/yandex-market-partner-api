@@ -1,0 +1,8 @@
+description: Ответ на запрос информации о лицензиях для точек продаж.
+type: object
+properties:
+  licenses:
+    description: Список лицензий.
+    type: array
+    items:
+      $ref: ./FullOutletLicenseDTO.yaml

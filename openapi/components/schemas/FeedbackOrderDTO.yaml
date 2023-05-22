@@ -1,0 +1,9 @@
+description: Информация о заказе, указанная в отзыве.
+type: object
+properties:
+  shopOrderId:
+    description: Номер заказа, указанный в отзыве.
+    type: string
+  delivery:
+    description: Способ покупки, указанный в отзыве.
+    $ref: ./FeedbackDeliveryType.yaml

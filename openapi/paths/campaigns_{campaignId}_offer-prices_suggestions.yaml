@@ -1,0 +1,67 @@
+post:
+  tags:
+    - prices
+    - fby
+    - fbs
+    - express
+  operationId: getSuggestedPrices
+  summary: Цены для продвижения товаров
+  description: >
+    Возвращает цены для продвижения товаров, которые вы размещаете на Маркете.
+
+
+    Товары, для которых нужно получить цены, передаются в теле POST-запроса.
+
+
+    Цены для продвижения зависят от цен, установленных на товары другими
+    партнерами. Если один товар поставляют несколько партнеров, на Маркете
+    сначала продается товар с более низкой ценой. Когда закончится товар по
+    низкой цене, начнет продаваться товар по более высокой цене.
+
+
+    Выходные данные содержат для каждого товара несколько цен, соответствующих
+    разным типам продвижения.
+
+
+    Установить цены на товары можно с помощью запроса `POST
+    /campaigns/{campaignId}/offer-prices/updates` или другими способами:
+    например, указать их в файле с каталогом. Также вы можете использовать
+    стратегии для автоматической установки рекомендованных цен или минимальных
+    цен на Маркете.
+
+
+    В одном запросе можно получить цены не более чем для 1000 товаров.
+
+
+    В течение часа можно получить цены не более чем для 100 000 товаров.
+
+
+    Подробно об автоматическом управлении ценами рассказано [в Справке для
+    продавцов](https://yandex.ru/support/marketplace/marketing/prices.html).
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/SuggestPricesRequest.yaml
+  responses:
+    '200':
+      description: Список цен для продвижения на Маркете
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/SuggestPricesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

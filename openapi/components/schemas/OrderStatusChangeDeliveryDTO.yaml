@@ -1,0 +1,5 @@
+description: Информация о доставке.
+type: object
+properties:
+  dates:
+    $ref: ./OrderStatusChangeDeliveryDatesDTO.yaml

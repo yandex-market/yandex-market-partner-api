@@ -1,0 +1,15 @@
+description: Информация о складе.
+type: object
+properties:
+  id:
+    description: Идентификатор склада.
+    type: integer
+    format: int64
+  name:
+    description: Название склада.
+    type: string
+  stocks:
+    description: Информация об остатках товаров на складе.
+    type: array
+    items:
+      $ref: ./GoodsStatsWarehouseStockDTO.yaml

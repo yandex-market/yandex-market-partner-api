@@ -1,0 +1,31 @@
+description: |
+  Список товаров.
+
+  В теле запроса можно передать от одного до 500 товаров.
+
+  Обязательный параметр.
+type: object
+properties:
+  offer:
+    description: Информация о товаре из каталога.
+    $ref: ./MappingsOfferDTO.yaml
+  mapping:
+    description: >
+      Информация о карточке товара на Маркете.
+
+
+      Если параметр не указан, сотрудники Маркета сами подберут или создадут
+      подходящую карточку товара, либо у него появится статус NEED_CONTENT
+      (нужно найти карточку или создать ее самостоятельно) в выходных данных
+      запроса `GET /campaigns/{campaignId}/offer-mapping-entries`.
+    $ref: ./OfferMappingDTO.yaml
+  awaitingModerationMapping:
+    description: >-
+      Информация о карточке товара на Маркете, проходящей модерацию для данного
+      товара
+    $ref: ./OfferMappingDTO.yaml
+  rejectedMapping:
+    description: >-
+      Информация о последней карточке товара на Маркете, отклоненной на
+      модерации для данного товара
+    $ref: ./OfferMappingDTO.yaml

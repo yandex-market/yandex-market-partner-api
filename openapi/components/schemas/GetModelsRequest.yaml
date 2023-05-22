@@ -1,0 +1,10 @@
+description: Запрос информации о моделях.
+type: object
+properties:
+  models:
+    description: Список моделей.
+    type: array
+    items:
+      description: Идентификатор модели.
+      type: integer
+      format: int64

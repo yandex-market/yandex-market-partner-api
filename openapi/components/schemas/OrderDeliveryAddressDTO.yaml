@@ -1,0 +1,66 @@
+description: |
+  Адрес доставки.
+
+  Указывается, если `type=DELIVERY` или `type=POST`.
+type: object
+properties:
+  country:
+    description: |
+      Страна.
+
+      Обязательный параметр.
+    type: string
+  postcode:
+    description: |
+      Почтовый индекс.
+
+      Указывается, если выбрана доставка почтой (`delivery type=POST`).
+    type: string
+  city:
+    description: |
+      Город или населенный пункт.
+
+      Обязательный параметр.
+    type: string
+  subway:
+    description: Станция метро.
+    type: string
+  street:
+    description: |
+      Улица.
+
+      Обязательный параметр.
+    type: string
+  house:
+    description: |
+      Дом или владение.
+
+      Обязательный параметр.
+    type: string
+  block:
+    description: Корпус или строение.
+    type: string
+  entrance:
+    description: Подъезд.
+    type: string
+  entryphone:
+    description: Код домофона.
+    type: string
+  floor:
+    description: Этаж.
+    type: string
+  apartment:
+    description: Квартира или офис.
+    type: string
+  phone:
+    description: |
+      Телефон получателя заказа.
+
+      Обязательный параметр.
+    type: string
+  recipient:
+    description: |
+      Фамилия, имя и отчество получателя заказа.
+
+      Обязательный параметр.
+    type: string

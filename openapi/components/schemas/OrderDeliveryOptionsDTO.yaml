@@ -1,0 +1,11 @@
+description: Список опций доставки
+type: object
+required:
+  - deliveryOptions
+properties:
+  deliveryOptions:
+    description: |
+      Список опций доставки.
+    type: array
+    items:
+      $ref: ./OrderDeliveryOptionDTO.yaml

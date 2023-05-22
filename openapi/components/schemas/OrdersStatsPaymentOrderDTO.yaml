@@ -1,0 +1,12 @@
+description: Информация о платежном получении.
+type: object
+properties:
+  id:
+    description: Номер платежного поручения.
+    type: string
+  date:
+    description: |
+      Дата платежного поручения.
+      Формат даты: `ГГГГ‑ММ‑ДД`.
+    type: string
+    format: date

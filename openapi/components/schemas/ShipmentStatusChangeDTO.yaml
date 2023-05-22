@@ -1,0 +1,13 @@
+description: Статус отгрузки.
+type: object
+properties:
+  status:
+    description: Статус отгрузки.
+    $ref: ./ShipmentStatusType.yaml
+  description:
+    description: Описание статуса отгрузки.
+    type: string
+  updateTime:
+    description: Время последнего изменения статуса отгрузки.
+    format: date-time
+    type: string

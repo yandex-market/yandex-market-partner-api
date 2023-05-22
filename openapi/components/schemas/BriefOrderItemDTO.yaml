@@ -1,0 +1,37 @@
+description: Информация о маркированной позиции.
+type: object
+properties:
+  id:
+    description: Идентификатор позиции.
+    type: integer
+    format: int64
+  vat:
+    description: Ставка налога на добавленную стоимость (НДС) на услугу доставки заказа.
+    $ref: ./OrderVatType.yaml
+  count:
+    description: Количество единиц товара.
+    type: integer
+    format: int32
+  price:
+    description: >
+      Цена на товар. Указана в той валюте, которая была задана в каталоге.
+      Разделитель целой и дробной части — точка.
+    type: number
+  feedId:
+    description: Идентификатор каталога, в котором указан товар.
+    type: integer
+    format: int64
+  feedCategoryId:
+    description: Идентификатор категории, в которую входит товар.
+    type: string
+  offerName:
+    description: Название товара.
+    type: string
+  offerId:
+    description: Ваш идентификатор товара.
+    $ref: ./ShopSku.yaml
+  instances:
+    description: Переданные вами коды маркировки.
+    type: array
+    items:
+      $ref: ./OrderItemInstanceDTO.yaml

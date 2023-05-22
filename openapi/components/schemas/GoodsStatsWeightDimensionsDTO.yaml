@@ -1,0 +1,20 @@
+description: >
+  Информация о весе и габаритах товара.
+
+
+  Если товар уже привязан к карточке (`marketSku`), в ответе вернутся габариты
+  из карточки Маркета, а не размеры, которые вы передаете.
+type: object
+properties:
+  length:
+    description: Длина товара в сантиметрах.
+    type: number
+  width:
+    description: Ширина товара в сантиметрах.
+    type: number
+  height:
+    description: Высота товара в сантиметрах.
+    type: number
+  weight:
+    description: Вес товара в килограммах.
+    type: number

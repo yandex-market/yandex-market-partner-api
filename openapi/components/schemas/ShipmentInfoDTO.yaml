@@ -1,0 +1,44 @@
+description: Список с информацией об отгрузках.
+type: object
+properties:
+  id:
+    description: Идентификатор отгрузки.
+    format: int64
+    type: integer
+  planIntervalFrom:
+    description: Начало планового интервала отгрузки.
+    format: date-time
+    type: string
+  planIntervalTo:
+    description: Конец планового интервала отгрузки.
+    format: date-time
+    type: string
+  shipmentType:
+    description: Способ отгрузки заказов.
+    $ref: ./ShipmentType.yaml
+  externalId:
+    description: >-
+      Идентификатор отгрузки в вашей системе. Если вы еще не передавали
+      идентификатор, вернется идентификатор из параметра `id`.
+    type: string
+  status:
+    description: Статус отгрузки.
+    $ref: ./ShipmentStatusType.yaml
+  statusDescription:
+    description: Описание статуса отгрузки.
+    type: string
+  deliveryService:
+    description: Служба доставки.
+    $ref: ./DeliveryServiceDTO.yaml
+  draftCount:
+    description: Количество заказов, запланированных к отгрузке.
+    type: integer
+    format: int32
+  plannedCount:
+    description: Количество отгруженных заказов.
+    type: integer
+    format: int32
+  factCount:
+    description: Количество заказов, принятых в сортировочном центре или пункте приема.
+    type: integer
+    format: int32

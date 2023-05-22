@@ -1,0 +1,35 @@
+description: Информация о покупателе.
+type: object
+properties:
+  id:
+    description: Идентификатор покупателя.
+    type: string
+  lastName:
+    description: Фамилия покупателя.
+    type: string
+  firstName:
+    description: Имя покупателя.
+    type: string
+  middleName:
+    description: Отчество покупателя.
+    type: string
+  phone:
+    description: |
+      Номер телефона покупателя.
+
+      Формат номера: `+<код_страны><код_региона><номер_телефона>`.
+    type: string
+  email:
+    description: >
+      Адрес электронной почты покупателя.
+
+
+      Допускается любой адрес электронной почты, соответствующий стандарту RFC
+      2822.
+    type: string
+  type:
+    description: >
+      Кто покупатель: физическое лицо или организация. Этот параметр
+      используется FBS-магазинами, размещающими товары на витрине
+      business.market.yandex.ru.
+    $ref: ./OrderBuyerType.yaml

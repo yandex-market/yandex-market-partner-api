@@ -1,0 +1,9 @@
+description: Тип цены.
+type: object
+properties:
+  type:
+    description: Тип цены.
+    $ref: ./PriceSuggestType.yaml
+  price:
+    description: Цена в рублях.
+    type: number

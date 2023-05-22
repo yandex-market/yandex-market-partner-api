@@ -1,0 +1,63 @@
+post:
+  tags:
+    - prices
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: updatePrices
+  summary: Установка цен на товары
+  description: >
+    Устанавливает цены на товары.
+
+
+    В течение минуты можно установить цены для определенного количества товаров
+    на витрине. Если у магазина:
+
+
+    * не более 100 000 товаров — 500 товаров;
+
+
+    * более 100 000 товаров — ограничение определяется по формуле:
+
+
+    ```(количество товаров на витрине) / 200```
+
+
+    {% note info %}
+
+
+    Количество товаров магазина считается по данным за последние семь дней (не
+    включая сегодня).
+
+
+    {% endnote %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdatePricesRequest.yaml
+  responses:
+    '200':
+      description: Пустой ответ.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

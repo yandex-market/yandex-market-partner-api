@@ -1,0 +1,62 @@
+put:
+  tags:
+    - orders
+    - dbs
+  operationId: acceptOrderCancellation
+  summary: Отмена заказа покупателем
+  description: >
+    Подтверждает или отклоняет запрос покупателя на отмену заказа, который
+    передан службе доставки.
+
+
+    Покупатель может отменить заказ в течение его обработки или доставки. Если
+    заказ еще обрабатывается (имеет статус PROCESSING), вам не нужно
+    подтверждать отмену заказа — он будет отменен автоматически.
+
+
+    Если заказ уже передан службе доставки (принимает статус `DELIVERY` или
+    `PICKUP`) и пользователь отменил его, вы можете предупредить службу об
+    отмене в течение 48 часов. Если служба доставки узнала об отмене до передачи
+    заказа покупателю, подтвердите отмену с помощью запроса `PUT
+    /campaigns/{campaignId}/orders/{orderId}/cancellation/accept`. Если заказ
+    уже доставлен, отклоните отмену с помощью этого же запроса. Тогда у
+    покупателя останется заказ, и деньги за него возвращаться не будут.
+
+
+    Чтобы узнать, какие заказы были отменены в статусе `DELIVERY` или `PICKUP`,
+    отправьте запрос `GET /campaigns/{campaignId}/orders`. В его URL добавьте
+    входной параметр `onlyWaitingForCancellationApprove=true`. Вы также можете
+    узнать об отмененных заказах через личный кабинет или почту — на нее придет
+    уведомление об отмене.
+
+
+    Если в течение 48 часов вы не подтвердите или отклоните отмену, заказ будет
+    отменен автоматически.
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/AcceptOrderCancellationRequest.yaml
+  responses:
+    '200':
+      description: Ответ на отмену заказа был успешно передан.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

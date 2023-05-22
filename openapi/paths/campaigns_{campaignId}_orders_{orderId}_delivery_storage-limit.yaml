@@ -1,0 +1,50 @@
+put:
+  tags:
+    - order-delivery
+    - dbs
+  operationId: updateOrderStorageLimit
+  summary: Продление срока хранения заказа
+  description: >
+    Продлевает срок хранения заказа в пункте выдачи продавца.
+
+
+    Заказ должен быть в статусе `PICKUP`. Продлить срок можно только один раз,
+    не больше чем на 30 дней.
+
+
+    Новый срок хранения можно получить в параметре `outletStorageLimitDate`
+    запроса [GET
+    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+
+
+    |**⚙️ Лимит:** 1 000 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateOrderStorageLimitRequest.yaml
+  responses:
+    '200':
+      description: Пустой ответ
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

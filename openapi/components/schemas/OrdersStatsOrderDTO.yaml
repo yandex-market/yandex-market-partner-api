@@ -1,0 +1,59 @@
+description: Информация о заказе.
+type: object
+properties:
+  id:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  creationDate:
+    description: |
+      Дата создания заказа.
+      Формат даты: `ГГГГ-ММ-ДД`.
+    type: string
+    format: date
+  statusUpdateDate:
+    description: >
+      Дата и время, когда статус заказа был изменен в последний раз.
+
+      Формат даты и времени: ISO 8601. Например, `2017-11-21T00:00:00`. Часовой
+      пояс — UTC+03:00 (Москва).
+    type: string
+    format: date-time
+  status:
+    $ref: ./OrderStatsStatusType.yaml
+  partnerOrderId:
+    description: Идентификатор заказа в информационной системе магазина.
+    type: string
+  paymentType:
+    description: Тип оплаты заказа.
+    $ref: ./OrdersStatsOrderPaymentType.yaml
+  fake:
+    description: |
+      Тип заказа:
+
+      * false — заказ покупателя.
+
+      * true — тестовый заказ Маркета.
+    type: boolean
+  deliveryRegion:
+    $ref: ./OrdersStatsDeliveryRegionDTO.yaml
+  items:
+    description: Список товаров в заказе после возможных изменений.
+    type: array
+    items:
+      $ref: ./OrdersStatsItemDTO.yaml
+  initialItems:
+    description: Список товаров в заказе до изменений.
+    type: array
+    items:
+      $ref: ./OrdersStatsItemDTO.yaml
+  payments:
+    description: Информация о денежных переводах по заказу.
+    type: array
+    items:
+      $ref: ./OrdersStatsPaymentDTO.yaml
+  commissions:
+    description: Информация о комиссиях за заказ.
+    type: array
+    items:
+      $ref: ./OrdersStatsCommissionDTO.yaml

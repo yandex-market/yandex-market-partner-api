@@ -1,0 +1,24 @@
+description: Заказ, который надо создать.
+type: object
+required:
+  - shopOrderId
+  - items
+  - delivery
+  - buyer
+properties:
+  shopOrderId:
+    description: Идентификатор заказа.
+    type: string
+  items:
+    description: |
+      Список товарных позиций.
+    type: array
+    items:
+      $ref: ./OrderCreateItemDTO.yaml
+  delivery:
+    $ref: ./OrderCreateDeliveryDTO.yaml
+  buyer:
+    $ref: ./OrderCreateBuyerDTO.yaml
+  notes:
+    description: Примечание к заказу.
+    type: string

@@ -1,0 +1,10 @@
+description: Отчет по заказам.
+type: object
+properties:
+  orders:
+    description: Список заказов.
+    type: array
+    items:
+      $ref: ./OrdersStatsOrderDTO.yaml
+  paging:
+    $ref: ./ForwardScrollingPagerDTO.yaml

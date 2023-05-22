@@ -1,0 +1,44 @@
+description: |
+  Список посылок.
+
+  В параметре может указываться несколько посылок.
+type: object
+properties:
+  id:
+    description: Идентификатор посылки, присвоенный Маркетом.
+    type: integer
+    format: int64
+  status:
+    $ref: ./OrderParcelStatusType.yaml
+  shipmentDate:
+    description: >
+      День, в который нужно отгрузить заказ службе доставки.
+
+
+      Формат даты: `ДД-ММ-ГГГГ`.
+
+
+      Если заказ сделан организацией, параметр не возвращается до согласования
+      даты доставки.
+    $ref: ./DateDdMmYyyy.yaml
+  shipmentTime:
+    description: >
+      Время, когда нужно отгрузить заказы службе доставки.
+
+
+      Формат времени: 24-часовой, `ЧЧ:ММ`.
+
+
+      Если заказ сделан организацией, параметр не возвращается до согласования
+      даты доставки.
+    type: string
+  tracks:
+    description: Информация для отслеживания перемещений посылки
+    type: array
+    items:
+      $ref: ./OrderTrackDTO.yaml
+  boxes:
+    description: Список грузовых мест.
+    type: array
+    items:
+      $ref: ./OrderParcelBoxDTO.yaml

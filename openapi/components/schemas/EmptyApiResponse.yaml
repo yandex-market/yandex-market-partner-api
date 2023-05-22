@@ -1,0 +1,4 @@
+type: object
+description: Пустой ответ сервера.
+allOf:
+  - $ref: ./ApiResponse.yaml

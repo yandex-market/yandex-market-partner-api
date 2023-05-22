@@ -1,0 +1,15 @@
+description: |
+  Способ доставки заказа:
+
+  * `DELIVERY` — курьерская доставка.
+
+  * `PICKUP` — самовывоз.
+
+  * `POST` — почта.
+type: string
+enum:
+  - DELIVERY
+  - PICKUP
+  - POST
+  - DIGITAL
+  - UNKNOWN

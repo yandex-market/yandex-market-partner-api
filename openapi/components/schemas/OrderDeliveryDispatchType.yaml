@@ -1,0 +1,9 @@
+description: Способ отгрузки
+type: string
+enum:
+  - UNKNOWN
+  - BUYER
+  - MARKET_PARTNER_OUTLET
+  - MARKET_BRANDED_OUTLET
+  - SHOP_OUTLET
+  - DROPOFF

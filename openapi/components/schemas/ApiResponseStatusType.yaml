@@ -1,0 +1,5 @@
+type: string
+description: Тип ответа.
+enum:
+  - OK
+  - ERROR

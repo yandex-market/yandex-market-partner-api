@@ -1,0 +1,42 @@
+put:
+  tags:
+    - order-delivery
+    - dbs
+  operationId: setOrderDeliveryDate
+  summary: Изменение даты доставки заказа
+  description: >
+    Метод изменяет дату доставки заказа в статусе PROCESSING или DELIVERY. Для
+    заказов с другими статусами дату доставки изменить нельзя.
+
+
+    |**⚙️ Лимит:** 1 000 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/SetOrderDeliveryDateRequest.yaml
+  responses:
+    '200':
+      description: Успешное изменение даты доставки.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

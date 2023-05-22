@@ -1,0 +1,5 @@
+description: Возвращенный или невыкупленный товар
+type: string
+enum:
+  - REJECTED
+  - RETURNED

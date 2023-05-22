@@ -1,0 +1,138 @@
+description: Заказ.
+type: object
+properties:
+  id:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  status:
+    $ref: ./OrderStatusType.yaml
+  substatus:
+    $ref: ./OrderSubstatusType.yaml
+  creationDate:
+    description: >
+      Дата и время оформления заказа.
+
+
+      Формат даты и времени: `ДД-ММ-ГГГГ ЧЧ:ММ:СС`. Часовой пояс — UTC+03:00
+      (Москва).
+    $ref: ./DateDdMmYyyyHhMmSs.yaml
+  currency:
+    description: |
+      Валюта, в которой указаны цены товаров в заказе.
+
+      Принимает значение RUR — российский рубль.
+    $ref: ./CurrencyType.yaml
+  itemsTotal:
+    description: >
+      Общая сумма заказа в валюте заказа без учета стоимости доставки и
+      вознаграждения партнеру за скидки по промокодам, купонам и акциям
+      (параметр subsidyTotal).
+
+
+      Для отделения целой части от дробной используется точка.
+    type: number
+    format: decimal
+  total:
+    description: >
+      Общая сумма заказа в валюте заказа с учетом стоимости доставки, но без
+      учета вознаграждения партнеру за скидки по промокодам, купонам, кешбэку и
+      акциям (параметр `subsidyTotal`).
+
+
+      Для отделения целой части от дробной используется точка.
+    type: number
+    format: decimal
+  deliveryTotal:
+    description: Стоимость доставки в валюте заказа
+    type: number
+    format: decimal
+  subsidyTotal:
+    description: |
+      Общее вознаграждение партнеру за скидки:
+
+      * по промокодам;
+      * по купонам;
+      * по баллам кешбэка по подписке Яндекс Плюс;
+      * по акциям.
+
+      Передается в валюте, указанной в параметре `currency`.
+
+      Для отделения целой части от дробной используется точка.
+    type: number
+    format: decimal
+  totalWithSubsidy:
+    description: >-
+      Сумма стоимости всех товаров в заказе и вознаграждения за них в валюте
+      магазина (сумма параметров total и subsidyTotal)
+    type: number
+    format: decimal
+  buyerItemsTotal:
+    description: >-
+      Стоимость всех товаров в заказе в валюте покупателя после применения
+      скидок и без учета стоимости доставки
+    type: number
+    format: decimal
+  buyerTotal:
+    description: >-
+      Стоимость всех товаров в заказе в валюте покупателя после применения
+      скидок и с учетом стоимости доставки
+    type: number
+    format: decimal
+  buyerItemsTotalBeforeDiscount:
+    description: >-
+      Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
+      без учета стоимости доставки
+    type: number
+    format: decimal
+  buyerTotalBeforeDiscount:
+    description: >-
+      Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
+      с учетом стоимости доставки
+    type: number
+    format: decimal
+  paymentType:
+    $ref: ./OrderPaymentType.yaml
+  paymentMethod:
+    $ref: ./OrderPaymentMethodType.yaml
+  fake:
+    description: |
+      Тип заказа:
+
+      * false — заказ покупателя.
+
+      * true — тестовый заказ Маркета.
+    type: boolean
+  items:
+    description: Список товаров в заказе.
+    type: array
+    items:
+      $ref: ./OrderItemDTO.yaml
+  subsidies:
+    description: Список субсидий по типам
+    type: array
+    items:
+      $ref: ./OrderItemSubsidyDTO.yaml
+  delivery:
+    $ref: ./OrderDeliveryDTO.yaml
+  buyer:
+    $ref: ./OrderBuyerDTO.yaml
+  notes:
+    description: Комментарий к заказу.
+    type: string
+  taxSystem:
+    $ref: ./OrderTaxSystemType.yaml
+  cancelRequested:
+    description: Запрошена ли отмена
+    type: boolean
+  expiryDate:
+    description: >
+      Дата, после которой загруженный прайс-лист считается не актуальным и
+      требует обновления.
+
+
+      Формат даты: `ДД-ММ-ГГГГ`.
+
+
+      Параметр возвращается при размещении прайс-листа на сервере Маркета.
+    $ref: ./DateDdMmYyyyHhMmSs.yaml

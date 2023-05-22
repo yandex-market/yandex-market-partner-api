@@ -1,0 +1,68 @@
+description: Информация о ярлыке для грузового места
+type: object
+required:
+  - url
+  - supplierName
+  - deliveryServiceName
+  - orderId
+  - orderNum
+  - recipientName
+  - fulfilmentId
+  - place
+  - weight
+  - deliveryServiceId
+properties:
+  url:
+    description: >
+      Соответствует URL, по которому выполняется запрос `GET
+      /campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label`.
+    type: string
+  supplierName:
+    description: Юридическое название магазина.
+    type: string
+  deliveryServiceName:
+    description: Юридическое название службы доставки.
+    type: string
+  orderId:
+    description: Идентификатор заказа в системе Маркета.
+    type: integer
+    format: int64
+  orderNum:
+    description: >
+      Идентификатор заказа в информационной системе магазина.
+
+
+      Совпадает с `orderId`, если Маркету неизвестен номер заказа в системе
+      магазина.
+    type: string
+  recipientName:
+    description: Фамилия и инициалы получателя заказа.
+    type: string
+  fulfilmentId:
+    description: >
+      Идентификатор грузового места в информационной системе магазина.
+
+
+      Возвращается в формате: номер заказа на Маркете-номер грузового места.
+      Например, 7206821‑1, 7206821‑2 и т. д.
+    type: string
+  place:
+    description: >
+      Номер грузового места в заказе. Возвращается в формате: номер места/общее
+      количество мест.
+    type: string
+  weight:
+    description: |
+      Устаревший параметр.
+
+      Общая масса всех товаров в заказе. Возвращается в формате: 'weight' кг.
+    type: string
+  deliveryServiceId:
+    description: Идентификатор службы доставки.
+    type: string
+  deliveryAddress:
+    description: Адрес получателя.
+    type: string
+  shipmentDate:
+    description: Дата отгрузки в формате dd.MM.yyyy.
+    type: string

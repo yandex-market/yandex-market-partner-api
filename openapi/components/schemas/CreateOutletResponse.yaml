@@ -1,0 +1,7 @@
+description: Ответ на запрос о создании точки продаж.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./OutletResponseDTO.yaml

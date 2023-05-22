@@ -1,0 +1,41 @@
+post:
+  tags:
+    - shipments
+    - fbs
+  operationId: confirmShipment
+  summary: Подтверждение отгрузки
+  description: >
+    Подтверждает отгрузку товаров в сортировочный центр или пункт приема
+    заказов.
+
+    |**⚙️ Лимит:** 200 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/params_ShipmentId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/ConfirmShipmentRequest.yaml
+  responses:
+    '200':
+      description: Пустой ответ
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

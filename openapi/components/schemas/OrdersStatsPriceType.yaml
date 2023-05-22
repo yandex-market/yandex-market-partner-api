@@ -1,0 +1,12 @@
+description: |
+  Тип скидки или цена на товар:
+  - `BUYER` — цена на товар с учетом скидок, в том числе купонов.
+  - `CASHBACK` — баллы кешбэка по подписке Яндекс Плюс.
+  - `MARKETPLACE` — купоны.
+  - `SPASIBO` — бонусы СберСпасибо.
+type: string
+enum:
+  - BUYER
+  - CASHBACK
+  - MARKETPLACE
+  - SPASIBO

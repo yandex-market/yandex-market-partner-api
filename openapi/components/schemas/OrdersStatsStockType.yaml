@@ -1,0 +1,17 @@
+description: |
+  Тип товара:
+
+  * `DEFECT` — товар бракованный.
+
+  * `FIT` — товар надлежащего качества.
+type: string
+enum:
+  - FIT
+  - FREEZE
+  - AVAILABLE
+  - QUARANTINE
+  - UTILIZATION
+  - DEFECT
+  - EXPIRED
+  - TRANSIT
+  - SUGGEST

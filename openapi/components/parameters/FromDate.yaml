@@ -1,0 +1,7 @@
+description: Начальная дата обновления отзывов
+name: from_date
+in: query
+required: false
+schema:
+  type: string
+  format: date

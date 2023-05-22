@@ -1,0 +1,7 @@
+description: Ответ на запрос опций доставки
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./OrderDeliveryOptionsDTO.yaml

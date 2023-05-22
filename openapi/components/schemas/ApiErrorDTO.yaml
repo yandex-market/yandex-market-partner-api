@@ -1,0 +1,11 @@
+type: object
+description: Общий формат ошибки.
+required:
+  - code
+properties:
+  code:
+    description: Код ошибки.
+    type: string
+  message:
+    description: Описание ошибки.
+    type: string

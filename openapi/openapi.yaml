@@ -1,0 +1,202 @@
+openapi: 3.0.3
+info:
+  title: Партнерский API Маркета
+  description: >
+    API Яндекс Маркета помогает продавцам автоматизировать и упростить работу с
+    маркетплейсом.
+
+
+    В числе возможностей интеграции:
+
+
+    * управление каталогом товаров и витриной,
+
+
+    * обработка заказов,
+
+
+    * изменение настроек магазина,
+
+
+    * получение отчетов.
+  version: LATEST
+  license:
+    name: BSD 3-Clause
+    url: https://opensource.org/license/bsd-3-clause/
+servers:
+  - url: https://api.partner.market.yandex.ru
+components:
+  securitySchemes:
+    OAuth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://oauth.yandex.ru/authorize
+          scopes:
+            market:partner-api: API Яндекс.Маркета / Поиска по товарам для партнеров
+security:
+  - OAuth:
+      - market:partner-api
+externalDocs:
+  description: Документация API
+  url: https://yandex.ru/dev/market/partner-api/doc/
+paths:
+  /campaigns:
+    $ref: paths/campaigns.yaml
+  /campaigns/{campaignId}:
+    $ref: paths/campaigns_{campaignId}.yaml
+  /campaigns/{campaignId}/logins:
+    $ref: paths/campaigns_{campaignId}_logins.yaml
+  /campaigns/{campaignId}/settings:
+    $ref: paths/campaigns_{campaignId}_settings.yaml
+  /campaigns/by_login/{login}:
+    $ref: paths/campaigns_by_login_{login}.yaml
+  /campaigns/{campaignId}/region:
+    $ref: paths/campaigns_{campaignId}_region.yaml
+  /campaigns/{campaignId}/orders/{orderId}:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}.yaml
+  /campaigns/{campaignId}/orders:
+    $ref: paths/campaigns_{campaignId}_orders.yaml
+  /campaigns/{campaignId}/orders/{orderId}/cis:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_cis.yaml
+  /campaigns/{campaignId}/orders/{orderId}/identifiers:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_identifiers.yaml
+  /campaigns/{campaignId}/orders/{orderId}/items:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_items.yaml
+  /campaigns/{campaignId}/orders/{orderId}/status:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_status.yaml
+  /campaigns/{campaignId}/orders/status-update:
+    $ref: paths/campaigns_{campaignId}_orders_status-update.yaml
+  /campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes:
+    $ref: >-
+      paths/campaigns_{campaignId}_orders_{orderId}_delivery_shipments_{shipmentId}_boxes.yaml
+  /campaigns/{campaignId}/orders/{orderId}/cancellation/accept:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_cancellation_accept.yaml
+  /campaigns/{campaignId}/orders/{orderId}/deliverDigitalGoods:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_deliverDigitalGoods.yaml
+  /campaigns/{campaignId}/orders/{orderId}/delivery/date:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_delivery_date.yaml
+  /campaigns/{campaignId}/orders/{orderId}/delivery/track:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_delivery_track.yaml
+  /campaigns/{campaignId}/orders/{orderId}/buyer:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_buyer.yaml
+  /campaigns/{campaignId}/delivery/get-options:
+    $ref: paths/campaigns_{campaignId}_delivery_get-options.yaml
+  /campaigns/{campaignId}/orders/{orderId}/verifyEac:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_verifyEac.yaml
+  /campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_delivery_storage-limit.yaml
+  /campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label:
+    $ref: >-
+      paths/campaigns_{campaignId}_orders_{orderId}_delivery_shipments_{shipmentId}_boxes_{boxId}_label.yaml
+  /campaigns/{campaignId}/orders/{orderId}/delivery/labels:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_delivery_labels.yaml
+  /campaigns/{campaignId}/orders/{orderId}/delivery/labels/data:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_delivery_labels_data.yaml
+  /campaigns/{campaignId}/returns:
+    $ref: paths/campaigns_{campaignId}_returns.yaml
+  /campaigns/{campaignId}/orders/{orderId}/returns/{returnId}:
+    $ref: paths/campaigns_{campaignId}_orders_{orderId}_returns_{returnId}.yaml
+  /campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision:
+    $ref: >-
+      paths/campaigns_{campaignId}_orders_{orderId}_returns_{returnId}_decision.yaml
+  /campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit:
+    $ref: >-
+      paths/campaigns_{campaignId}_orders_{orderId}_returns_{returnId}_decision_submit.yaml
+  /campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/application:
+    $ref: >-
+      paths/campaigns_{campaignId}_orders_{orderId}_returns_{returnId}_application.yaml
+  /campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/{itemId}/image/{imageHash}:
+    $ref: >-
+      paths/campaigns_{campaignId}_orders_{orderId}_returns_{returnId}_decision_{itemId}_image_{imageHash}.yaml
+  /regions:
+    $ref: paths/regions.yaml
+  /regions/{regionId}:
+    $ref: paths/regions_{regionId}.yaml
+  /regions/{regionId}/children:
+    $ref: paths/regions_{regionId}_children.yaml
+  /campaigns/{campaignId}/shipments/reception-transfer-act:
+    $ref: paths/campaigns_{campaignId}_shipments_reception-transfer-act.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}:
+    $ref: paths/campaigns_{campaignId}_first-mile_shipments_{shipmentId}.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/orders/info:
+    $ref: >-
+      paths/campaigns_{campaignId}_first-mile_shipments_{shipmentId}_orders_info.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/confirm:
+    $ref: >-
+      paths/campaigns_{campaignId}_first-mile_shipments_{shipmentId}_confirm.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/act:
+    $ref: paths/campaigns_{campaignId}_first-mile_shipments_{shipmentId}_act.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/inbound-act:
+    $ref: >-
+      paths/campaigns_{campaignId}_first-mile_shipments_{shipmentId}_inbound-act.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/transportation-waybill:
+    $ref: >-
+      paths/campaigns_{campaignId}_first-mile_shipments_{shipmentId}_transportation-waybill.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/discrepancy-act:
+    $ref: >-
+      paths/campaigns_{campaignId}_first-mile_shipments_{shipmentId}_discrepancy-act.yaml
+  /campaigns/{campaignId}/first-mile/shipments:
+    $ref: paths/campaigns_{campaignId}_first-mile_shipments.yaml
+  /campaigns/{campaignId}/offer-mapping-entries:
+    $ref: paths/campaigns_{campaignId}_offer-mapping-entries.yaml
+  /campaigns/{campaignId}/offer-mapping-entries/updates:
+    $ref: paths/campaigns_{campaignId}_offer-mapping-entries_updates.yaml
+  /campaigns/{campaignId}/offer-mapping-entries/suggestions:
+    $ref: paths/campaigns_{campaignId}_offer-mapping-entries_suggestions.yaml
+  /campaigns/{campaignId}/offer-prices/updates:
+    $ref: paths/campaigns_{campaignId}_offer-prices_updates.yaml
+  /campaigns/{campaignId}/offer-prices:
+    $ref: paths/campaigns_{campaignId}_offer-prices.yaml
+  /campaigns/{campaignId}/offer-prices/suggestions:
+    $ref: paths/campaigns_{campaignId}_offer-prices_suggestions.yaml
+  /campaigns/{campaignId}/hidden-offers:
+    $ref: paths/campaigns_{campaignId}_hidden-offers.yaml
+  /campaigns/{campaignId}/warehouses/{warehouseId}/stocks/actual:
+    $ref: paths/campaigns_{campaignId}_warehouses_{warehouseId}_stocks_actual.yaml
+  /campaigns/{campaignId}/offers/stocks:
+    $ref: paths/campaigns_{campaignId}_offers_stocks.yaml
+  /delivery/services:
+    $ref: paths/delivery_services.yaml
+  /campaigns/{campaignId}/stats/orders:
+    $ref: paths/campaigns_{campaignId}_stats_orders.yaml
+  /campaigns/{campaignId}/stats/skus:
+    $ref: paths/campaigns_{campaignId}_stats_skus.yaml
+  /campaigns/{campaignId}/outlets:
+    $ref: paths/campaigns_{campaignId}_outlets.yaml
+  /campaigns/{campaignId}/outlets/{outletId}:
+    $ref: paths/campaigns_{campaignId}_outlets_{outletId}.yaml
+  /campaigns/{campaignId}/outlets/licenses:
+    $ref: paths/campaigns_{campaignId}_outlets_licenses.yaml
+  /campaigns/{campaignId}/feedback/updates:
+    $ref: paths/campaigns_{campaignId}_feedback_updates.yaml
+  /campaigns/{campaignId}/offers:
+    $ref: paths/campaigns_{campaignId}_offers.yaml
+  /campaigns/{campaignId}/offers/all:
+    $ref: paths/campaigns_{campaignId}_offers_all.yaml
+  /campaigns/{campaignId}/feeds/{feedId}:
+    $ref: paths/campaigns_{campaignId}_feeds_{feedId}.yaml
+  /campaigns/{campaignId}/feeds:
+    $ref: paths/campaigns_{campaignId}_feeds.yaml
+  /campaigns/{campaignId}/feeds/{feedId}/index-logs:
+    $ref: paths/campaigns_{campaignId}_feeds_{feedId}_index-logs.yaml
+  /campaigns/{campaignId}/feeds/{feedId}/params:
+    $ref: paths/campaigns_{campaignId}_feeds_{feedId}_params.yaml
+  /campaigns/{campaignId}/feeds/{feedId}/refresh:
+    $ref: paths/campaigns_{campaignId}_feeds_{feedId}_refresh.yaml
+  /campaigns/{campaignId}/feeds/{feedId}/categories:
+    $ref: paths/campaigns_{campaignId}_feeds_{feedId}_categories.yaml
+  /campaigns/{campaignId}/feeds/categories:
+    $ref: paths/campaigns_{campaignId}_feeds_categories.yaml
+  /models:
+    $ref: paths/models.yaml
+  /models/{modelId}:
+    $ref: paths/models_{modelId}.yaml
+  /models/offers:
+    $ref: paths/models_offers.yaml
+  /models/{modelId}/offers:
+    $ref: paths/models_{modelId}_offers.yaml
+  /businesses/{businessId}/bids:
+    $ref: paths/businesses_{businessId}_bids.yaml
+  /campaigns/{campaignId}/bids:
+    $ref: paths/campaigns_{campaignId}_bids.yaml

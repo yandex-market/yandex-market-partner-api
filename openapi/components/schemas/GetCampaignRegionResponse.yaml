@@ -1,0 +1,5 @@
+description: Ответ на запрос региона магазина.
+type: object
+properties:
+  region:
+    $ref: ./RegionDTO.yaml

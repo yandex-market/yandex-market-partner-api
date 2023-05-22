@@ -1,0 +1,5 @@
+allOf:
+  - $ref: ./GetModelsResponse.yaml
+  - properties:
+      pager:
+        $ref: ./FlippingPagerDTO.yaml

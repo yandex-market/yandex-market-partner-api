@@ -1,0 +1,15 @@
+description: Результат выполнения запроса
+type: object
+properties:
+  verificationResult:
+    description: Статус проверки кода подтверждения.
+    $ref: ./EacVerificationStatusType.yaml
+  attemptsLeft:
+    description: |
+      Количество оставшихся попыток проверки кода.
+
+      Возвращается, если магазин отправил некорректный код.
+
+      Когда все попытки будут исчерпаны, код обновится.
+    type: integer
+    format: int32

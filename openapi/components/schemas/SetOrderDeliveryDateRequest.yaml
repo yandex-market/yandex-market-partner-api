@@ -1,0 +1,11 @@
+type: object
+required:
+  - dates
+  - reason
+properties:
+  dates:
+    description: Информация о новой дате доставки заказа.
+    $ref: ./OrderDeliveryDateDTO.yaml
+  reason:
+    description: Причина переноса доставки заказа.
+    $ref: ./OrderDeliveryDateReasonType.yaml

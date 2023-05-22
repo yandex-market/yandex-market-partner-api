@@ -1,0 +1,39 @@
+get:
+  tags:
+    - campaigns
+    - dbs
+    - express
+    - fbs
+    - fby
+  operationId: getCampaignsByLogin
+  summary: Магазины, доступные логину
+  description: >
+    Возвращает список магазинов, к которым у пользователя с указанным логином
+    есть доступ.
+
+    |**⚙️ Лимит:** 5 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/Login.yaml
+    - $ref: ../components/parameters/PageNum.yaml
+    - $ref: ../components/parameters/PageSize.yaml
+  responses:
+    '200':
+      description: Информация о магазинах.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetCampaignsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

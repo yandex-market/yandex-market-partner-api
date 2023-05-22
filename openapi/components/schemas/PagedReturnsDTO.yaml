@@ -1,0 +1,11 @@
+description: Возвраты
+type: object
+properties:
+  paging:
+    description: Информация о страницах с результатами.
+    $ref: ./ForwardScrollingPagerDTO.yaml
+  returns:
+    description: Список возвратов.
+    type: array
+    items:
+      $ref: ./ReturnDTO.yaml

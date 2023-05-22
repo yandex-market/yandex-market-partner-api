@@ -1,0 +1,7 @@
+description: Идентификатор заказа.
+name: orderId
+in: path
+required: true
+schema:
+  type: integer
+  format: int64

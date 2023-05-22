@@ -1,0 +1,16 @@
+description: Информация о своем регионе магазина.
+type: object
+properties:
+  id:
+    description: Идентификатор региона.
+    type: integer
+    format: int64
+  name:
+    description: Название региона.
+    type: string
+  type:
+    $ref: ./RegionType.yaml
+  deliveryOptionsSource:
+    $ref: ./CampaignSettingsScheduleSourceType.yaml
+  delivery:
+    $ref: ./CampaignSettingsDeliveryDTO.yaml

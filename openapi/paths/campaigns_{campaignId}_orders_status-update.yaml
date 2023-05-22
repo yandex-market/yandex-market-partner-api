@@ -1,0 +1,68 @@
+post:
+  tags:
+    - orders
+    - fbs
+    - dbs
+    - express
+  operationId: updateOrderStatuses
+  summary: Изменение статусов заказа
+  description: >
+    Изменяет статусы нескольких заказов. Максимальное количество заказов, у
+    которых можно изменить статус в одном запросе, — 30.
+
+
+    Возможные изменения статусов:
+
+
+    * Если магазин подтвердил и подготовил заказ к отправке, то заказ из статуса
+    `"status": "PROCESSING"`и этапа обработки `"substatus": "STARTED"` нужно
+    перевести в статус `"status": "PROCESSING"` и этап обработки `"substatus":
+    "READY_TO_SHIP"`.
+
+    * Если магазин подтвердил заказ, но не может его выполнить (например, товар
+    числится в базе, но отсутствует на складе или нет нужного цвета), то заказ
+    из статуса `"status": "PROCESSING"` и этапа обработки `"substatus":
+    "STARTED"` нужно перевести в статус `"status": "CANCELLED"` с причиной
+    отмены заказа `"substatus": "SHOP_FAILED"`.
+
+    * Если магазин подготовил заказ к отгрузке, но не может его выполнить
+    (например, последний товар был поврежден или оказался с браком), то заказ из
+    статуса `"status": "PROCESSING"` и этапа обработки `"substatus":
+    "READY_TO_SHIP"` нужно перевести в статус `"status": "CANCELLED"` с причиной
+    отмены заказа `"substatus": "SHOP_FAILED"`.
+
+
+    Максимальное количество заказов, у которых можно изменить статус в одном
+    запросе, — 30.
+
+
+    |**⚙️ Лимит:** 1 000 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateOrderStatusesRequest.yaml
+  responses:
+    '200':
+      description: Возвращается информация об обновленных статусах заказов
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdateOrderStatusesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -1,0 +1,14 @@
+description: >
+  Фильтрация заказов по наличию запросов покупателей на отмену:
+
+
+  * `true` — возвращаются только заказы, которые находятся в статусе `DELIVERY`
+  или `PICKUP` и которые пользователи решили отменить. Чтобы подтвердить или
+  отклонить отмену, отправьте запрос [PUT
+  campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation).
+name: onlyWaitingForCancellationApprove
+in: query
+required: false
+schema:
+  type: boolean
+default: false

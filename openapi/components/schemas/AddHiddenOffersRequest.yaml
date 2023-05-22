@@ -1,0 +1,13 @@
+description: Запрос на скрытие оферов.
+type: object
+required:
+  - hiddenOffers
+properties:
+  hiddenOffers:
+    description: |
+      Список скрытых товаров.
+    type: array
+    minItems: 1
+    maxItems: 500
+    items:
+      $ref: ./HiddenOfferDTO.yaml

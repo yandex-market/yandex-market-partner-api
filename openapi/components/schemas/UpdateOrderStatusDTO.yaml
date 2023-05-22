@@ -1,0 +1,22 @@
+description: Список заказов.
+type: object
+properties:
+  id:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  status:
+    $ref: ./OrderStatusType.yaml
+  substatus:
+    $ref: ./OrderSubstatusType.yaml
+  updateStatus:
+    description: Статус обновления
+    $ref: ./OrderUpdateStatusType.yaml
+  errorDetails:
+    description: >
+      Ошибка при изменении статуса заказа. Содержит описание ошибки и
+      идентификатор заказа.
+
+
+      Возвращается, если параметр `updateStatus` принимает значение `ERROR`.
+    type: string

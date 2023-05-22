@@ -1,0 +1,14 @@
+description: Результат работы метода получения списка цен.
+type: object
+properties:
+  offers:
+    description: Список товаров.
+    type: array
+    items:
+      $ref: ./OfferPriceResponseDTO.yaml
+  paging:
+    $ref: ./ScrollingPagerDTO.yaml
+  total:
+    description: Количество всех цен магазина, измененных через API.
+    type: integer
+    format: int32

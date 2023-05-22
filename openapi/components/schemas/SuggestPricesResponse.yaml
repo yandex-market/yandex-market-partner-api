@@ -1,0 +1,7 @@
+description: Ответ на запрос списка цен для продвижения
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./SuggestPricesResultDTO.yaml

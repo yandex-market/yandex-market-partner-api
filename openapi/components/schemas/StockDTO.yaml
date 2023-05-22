@@ -1,0 +1,33 @@
+description: Информация об остатках одного товара на одном из складов.
+type: object
+required:
+  - sku
+  - warehouseId
+  - items
+properties:
+  sku:
+    description: |
+      Ваш SKU товара.
+    $ref: ./ShopSku.yaml
+  warehouseId:
+    description: >
+      Идентификатор склада.
+
+
+      Узнать идентификатор склада вы можете в личном кабинете в разделе
+      **Логистика → Склады**. Он указан в поле ID склада.
+
+
+      Если вы работаете с общими остатками, вы можете посмотреть идентификатор
+      склада в личном кабинете в разделе **Настройки → Настройки API** в блоке
+      **Вы работаете с общими остатками**.
+    format: int64
+    type: integer
+  items:
+    description: |
+      Информация об остатке товара на данном складе.
+    type: array
+    minItems: 1
+    maxItems: 1
+    items:
+      $ref: ./StockItemDTO.yaml

@@ -1,0 +1,8 @@
+description: Диапазон дат доставки.
+type: object
+properties:
+  realDeliveryDate:
+    description: |
+      Фактическая дата доставки.
+    type: string
+    format: date

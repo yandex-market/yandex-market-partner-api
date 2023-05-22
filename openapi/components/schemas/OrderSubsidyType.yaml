@@ -1,0 +1,7 @@
+description: Тип субсидии
+type: string
+enum:
+  - NOT_SUBSIDY
+  - SBER_SPASIBO
+  - YANDEX_CASHBACK
+  - SUBSIDY

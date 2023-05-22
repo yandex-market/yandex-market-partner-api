@@ -1,0 +1,18 @@
+description: >-
+  Временной отрезок с комментарием. Требования к содержанию комментария зависят
+  от контекста использования параметра и указаны в описании поля, которое его
+  содержит.
+type: object
+required:
+  - timePeriod
+  - timeUnit
+properties:
+  timePeriod:
+    description: Продолжительность в указанных единицах.
+    type: integer
+  timeUnit:
+    description: Единица измерения.
+    $ref: ./TimeUnitType.yaml
+  comment:
+    description: Комментарий.
+    type: string

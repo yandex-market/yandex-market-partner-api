@@ -1,0 +1,18 @@
+description: Годные/негодные ярлыки по заказам в отгрузке.
+type: object
+required:
+  - orderIdsWithLabels
+  - orderIdsWithoutLabels
+properties:
+  orderIdsWithLabels:
+    description: Идентификаторы заказов в отгрузке, для которых можно распечатать ярлыки.
+    type: array
+    items:
+      type: integer
+      format: int64
+  orderIdsWithoutLabels:
+    description: Идентификаторы заказов в отгрузке, для которых нельзя распечатать ярлыки.
+    type: array
+    items:
+      type: integer
+      format: int64

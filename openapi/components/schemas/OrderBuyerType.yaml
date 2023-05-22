@@ -1,0 +1,9 @@
+description: |
+  Кто покупатель:
+
+  * `PERSON` — физическое лицо;
+  * `BUSINESS` — организация.
+type: string
+enum:
+  - PERSON
+  - BUSINESS

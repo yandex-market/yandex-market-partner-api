@@ -1,0 +1,46 @@
+description: Информация о прайс-листе.
+type: object
+properties:
+  id:
+    description: Идентификатор прайс-листа.
+    type: integer
+    format: int64
+  login:
+    description: >
+      Логин для авторизации при скачивании прайс-листа.
+
+      Параметр выводится при размещении прайс-листа на сайте магазина и в случае
+      ограничения доступа к нему.
+    type: string
+  name:
+    description: |
+      Имя файла, содержащего прайс-лист.
+      Параметр выводится при размещении прайс-листа на сервере Маркета.
+    type: string
+  password:
+    description: >
+      Пароль для авторизации при скачивании прайс-листа.
+
+      Параметр выводится при размещении прайс-листа на сайте магазина и в случае
+      ограничения доступа к нему.
+    type: string
+  uploadDate:
+    description: |
+      Дата загрузки прайс-листа на Маркет.
+      Формат даты: `ДД-ММ-ГГГГ`.
+      Параметр выводится при размещении прайс-листа на сервере Маркета.
+    type: string
+    format: date-time
+  url:
+    description: |
+      URL прайс-листа.
+      Параметр выводится при размещении прайс-листа на сайте магазина.
+    type: string
+  content:
+    $ref: ./FeedContentDTO.yaml
+  download:
+    $ref: ./FeedDownloadDTO.yaml
+  placement:
+    $ref: ./FeedPlacementDTO.yaml
+  publication:
+    $ref: ./FeedPublicationDTO.yaml

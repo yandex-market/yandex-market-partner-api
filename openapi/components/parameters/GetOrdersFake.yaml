@@ -1,0 +1,12 @@
+description: |
+  Фильтрация заказов по типам:
+
+  * `false` — заказ пользователя.
+
+  * `true` — тестовый заказ Маркета.
+name: fake
+in: query
+required: false
+schema:
+  type: boolean
+default: false

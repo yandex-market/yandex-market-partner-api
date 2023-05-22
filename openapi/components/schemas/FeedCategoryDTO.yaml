@@ -1,0 +1,18 @@
+description: Список категорий.
+type: object
+properties:
+  feedId:
+    description: Идентификатор прайс-листа.
+    type: integer
+    format: int64
+  id:
+    description: Идентификатор категории.
+    type: string
+  name:
+    description: Название категории.
+    type: string
+  parentId:
+    description: |
+      Идентификатор родительской категории.
+      Не выводится, если категория — корневая.
+    type: string

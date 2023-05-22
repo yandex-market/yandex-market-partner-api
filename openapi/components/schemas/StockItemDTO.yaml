@@ -1,0 +1,32 @@
+description: |
+  Информация об остатке товара.
+type: object
+required:
+  - count
+  - type
+  - updatedAt
+properties:
+  count:
+    description: >
+      Количество доступного товара с учетом резерва. О том, как учитывать
+      резерв, рассказано в статье [Как управлять
+      остатками](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#reserved)
+      в Справке для продавцов.
+    format: int64
+    type: integer
+    minimum: 0
+    maximum: 2000000000
+  type:
+    description: >
+      Этот параметр пока не используется. Всегда передавайте одно значение —
+      `FIT`.
+    $ref: ./StockType.yaml
+  updatedAt:
+    description: >
+      Дата и время последнего обновления информации об остатках указанного типа.
+
+
+      Формат даты и времени: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:42:42+03:00`.
+    type: string
+    format: date-time

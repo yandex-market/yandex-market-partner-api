@@ -1,0 +1,40 @@
+description: >
+  Тип скидки:
+
+
+  * `MARKET_COUPON` — скидка по промокоду от Маркета.
+
+  * `MARKET_DEAL` — скидка в рамках соглашения на оказание услуг по продвижению
+  сервиса между маркетплейсом Яндекс Маркета и партнером.
+
+  * `MARKET_COIN` — скидка по купонам.
+type: string
+enum:
+  - DIRECT_DISCOUNT
+  - BLUE_SET
+  - BLUE_FLASH
+  - GENERIC_BUNDLE
+  - MARKET_COUPON
+  - MARKET_PROMOCODE
+  - MARKET_DEAL
+  - MARKET_BLUE
+  - MARKET_PRIME
+  - YANDEX_PLUS
+  - BERU_PLUS
+  - MARKET_COIN
+  - YANDEX_EMPLOYEE
+  - LIMITED_FREE_DELIVERY_PROMO
+  - FREE_DELIVERY_THRESHOLD
+  - MULTICART_DISCOUNT
+  - PRICE_DROP_AS_YOU_SHOP
+  - FREE_DELIVERY_FOR_LDI
+  - FREE_DELIVERY_FOR_LSC
+  - SECRET_SALE
+  - FREE_PICKUP
+  - CHEAPEST_AS_GIFT
+  - CASHBACK
+  - SUPPLIER_MULTICART_DISCOUNT
+  - SPREAD_DISCOUNT_COUNT
+  - SPREAD_DISCOUNT_RECEIPT
+  - ANNOUNCEMENT_PROMO
+  - UNKNOWN

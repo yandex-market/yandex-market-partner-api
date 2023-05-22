@@ -1,0 +1,15 @@
+description: >
+  Список идентификаторов точек продаж, для которых нужно получить информацию о
+  лицензиях. Идентификаторы указываются через запятую.
+
+  В запросе должен быть либо параметр `outletIds`, либо параметр `ids`. Запрос с
+  обоими параметрами или без них приведет к ошибке.
+name: outletIds
+in: query
+required: false
+schema:
+  type: array
+  uniqueItems: true
+  items:
+    type: integer
+    format: int64

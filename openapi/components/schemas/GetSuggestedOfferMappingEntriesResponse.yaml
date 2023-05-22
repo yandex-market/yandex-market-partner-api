@@ -1,0 +1,7 @@
+description: Ответ со списком рекомендованных карточек товара
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./OfferMappingSuggestionsListDTO.yaml

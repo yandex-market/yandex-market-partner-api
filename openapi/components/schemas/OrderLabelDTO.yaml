@@ -1,0 +1,29 @@
+description: Данные для печати ярлыка
+type: object
+required:
+  - orderId
+  - placesNumber
+  - labelsUrl
+  - parcelBoxLabels
+properties:
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  placesNumber:
+    description: Количество грузовых мест в заказе.
+    type: integer
+    format: int32
+  url:
+    description: >
+      URL файла с ярлыками‑наклейками на все грузовые места в заказе.
+
+
+      Соответствует URL, по которому выполняется запрос `GET
+      /campaigns/{campaignId}/orders/{orderId}/delivery/labels`.
+    type: string
+  parcelBoxLabels:
+    description: Информация на ярлыке.
+    type: array
+    items:
+      $ref: ./ParcelBoxLabelDTO.yaml

@@ -1,0 +1,85 @@
+post:
+  tags:
+    - offer-mappings
+    - fby
+    - fbs
+    - express
+  operationId: updateOfferMappingEntries
+  summary: Добавление и редактирование товаров в каталоге
+  description: >
+    Добавляет товары, указанные в запросе, в ваш каталог товаров и редактирует
+    уже имеющиеся товары.
+
+
+    Информацию о товарах нужно передать в теле POST-запроса.
+
+
+    У каждого товара должен быть ваш SKU — уникальный код, который вы
+    используете для идентификации товара:
+
+
+    * Чтобы добавить в каталог новый товар, укажите в параметре `shopSku` ваш
+    SKU, которого еще нет в каталоге.
+
+    * Чтобы отредактировать товар из каталога, укажите в параметре `shopSku` ваш
+    SKU этого товара в каталоге.
+
+
+    В обоих случаях в запросе нужно передать полное описание товара, даже если
+    вы хотите изменить только несколько характеристик.
+
+
+    Если вы знаете, какой карточке товара на Маркете соответствует ваш товар,
+    укажите ее идентификатор (SKU на Маркете) во входном параметре mapping.
+    Получить SKU на Маркете рекомендованной карточки товара можно с помощью
+    запроса [POST
+    campaigns/{campaignId}/offer-mapping-entries/suggestions](../../reference/offer-mappings/getSuggestedOfferMappingEntries.md)
+    или через личный кабинет. Если SKU на Маркете не указан, сотрудники Маркета
+    сами подберут или создадут подходящую карточку товара, либо у него появится
+    статус `NEED_CONTENT` (нужно найти карточку или создать ее самостоятельно) в
+    выходных данных запроса [GET
+    campaigns/{campaignId}/offer-mapping-entries](../../reference/offer-mappings/getOfferMappingEntries.md).
+
+
+    Перед публикацией товары проходят модерацию. Если в одном из отправленных
+    товаров найдена ошибка, ответ на запрос будет иметь HTTP-код 400 Bad
+    Request, и ни один из товаров не отправится на модерацию. При этом если вы
+    не передадите все обязательные параметры для какого‑либо товара, после
+    модерации у него появится статус `NEED_INFO` (в описании товара не хватает
+    информации) в выходных данных запроса [GET
+    campaigns/{campaignId}/offer-mapping-entries](../../reference/offer-mappings/getOfferMappingEntries.md).
+
+
+    В одном запросе можно добавить не более 500 товаров.
+
+
+    В течение минуты можно добавить не более 5000 товаров.
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateOfferMappingEntryRequest.yaml
+  responses:
+    '200':
+      description: Статус выполнения операции
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -1,0 +1,5 @@
+description: Ответ на запрос списка служб доставки.
+type: object
+properties:
+  result:
+    $ref: ./DeliveryServicesDTO.yaml

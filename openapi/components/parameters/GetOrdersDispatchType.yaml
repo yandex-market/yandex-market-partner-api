@@ -1,0 +1,6 @@
+description: Способ отгрузки
+name: dispatchType
+in: query
+required: false
+schema:
+  $ref: ../schemas/OrderDeliveryDispatchType.yaml

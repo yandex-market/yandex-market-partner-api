@@ -1,0 +1,14 @@
+description: Информация о лицензии.
+type: object
+allOf:
+  - $ref: ./OutletLicenseDTO.yaml
+  - properties:
+      checkStatus:
+        $ref: ./LicenseCheckStatusType.yaml
+      checkComment:
+        description: >
+          Причина, по которой лицензия не прошла проверку.
+
+          Параметр возвращается, только если параметр `checkStatus` имеет
+          значение `FAIL`.
+        type: string

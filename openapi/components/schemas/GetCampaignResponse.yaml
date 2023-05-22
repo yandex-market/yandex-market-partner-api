@@ -1,0 +1,5 @@
+description: Информация о магазине к данным id кампании.
+type: object
+properties:
+  campaign:
+    $ref: ./CampaignDTO.yaml

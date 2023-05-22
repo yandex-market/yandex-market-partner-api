@@ -1,0 +1,12 @@
+description: description
+type: object
+required:
+  - bids
+properties:
+  bids:
+    description: Список товаров и ставки для продвижения, которые на них нужно установить.
+    type: array
+    minItems: 1
+    maxItems: 1500
+    items:
+      $ref: ./SkuBidItemDTO.yaml

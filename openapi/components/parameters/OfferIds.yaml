@@ -1,0 +1,8 @@
+description: Идентификатор товара в каталоге.
+name: offer_id
+in: query
+required: false
+schema:
+  type: array
+  items:
+    type: string

@@ -1,0 +1,27 @@
+description: Модель для пагинации.
+type: object
+properties:
+  total:
+    type: integer
+    format: int32
+    description: Сколько всего найдено элементов.
+  from:
+    type: integer
+    format: int32
+    description: Начальный номер найденного элемента на странице.
+  to:
+    type: integer
+    format: int32
+    description: Конечный номер найденного элемента на странице.
+  currentPage:
+    type: integer
+    format: int32
+    description: Текущая страница.
+  pagesCount:
+    type: integer
+    format: int32
+    description: Общее количество страниц.
+  pageSize:
+    type: integer
+    format: int32
+    description: Размер страницы.

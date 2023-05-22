@@ -1,0 +1,5 @@
+description: Превышено ограничение на доступ к ресурсу.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiLimitErrorResponse.yaml

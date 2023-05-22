@@ -1,0 +1,4 @@
+description: Ресурс из запроса заблокирован от применения к нему указанного метода.
+type: object
+allOf:
+  - $ref: ./ApiErrorResponse.yaml

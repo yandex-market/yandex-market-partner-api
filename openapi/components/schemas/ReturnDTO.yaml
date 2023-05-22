@@ -1,0 +1,42 @@
+description: Возврат заказа
+type: object
+properties:
+  id:
+    description: Идентификатор возврата.
+    format: int64
+    type: integer
+  orderId:
+    description: Номер заказа.
+    format: int64
+    type: integer
+  creationDate:
+    description: Дата создания возврата клиентом.
+    type: string
+    format: date-time
+  updateDate:
+    description: Дата обновления заказа.
+    type: string
+    format: date-time
+  refundStatus:
+    $ref: ./RefundStatusType.yaml
+  logisticPickupPoint:
+    description: Пункт вывоза
+    $ref: ./LogisticPickupPointDTO.yaml
+  shipmentRecipientType:
+    description: Способ возврата товара покупателем
+    $ref: ./RecipientType.yaml
+  shipmentStatus:
+    description: Статус передачи возврата.
+    $ref: ./ReturnShipmentStatusType.yaml
+  refundAmount:
+    description: Сумма возврата.
+    type: integer
+    format: int64
+  items:
+    description: Список товаров в возврате.
+    type: array
+    items:
+      $ref: ./ReturnItemDTO.yaml
+  returnType:
+    description: Тип возврата.
+    $ref: ./ReturnType.yaml

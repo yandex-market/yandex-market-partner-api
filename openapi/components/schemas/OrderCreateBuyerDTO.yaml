@@ -1,0 +1,24 @@
+description: Информация о покупателе.
+type: object
+required:
+  - firstName
+  - phone
+properties:
+  lastName:
+    description: Фамилия.
+    type: string
+  firstName:
+    description: Имя.
+    minLength: 1
+    type: string
+  middleName:
+    description: Отчество.
+    type: string
+  phone:
+    description: |
+      Номер телефона в формате: `+<код страны><код региона><номер телефона>`.
+    minLength: 1
+    type: string
+  email:
+    description: E-mail адрес.
+    type: string

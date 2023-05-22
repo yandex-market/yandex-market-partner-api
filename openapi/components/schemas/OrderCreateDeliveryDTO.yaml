@@ -1,0 +1,15 @@
+description: Информация о доставке.
+type: object
+required:
+  - address
+properties:
+  address:
+    $ref: ./OrderCreateAddressDTO.yaml
+  dates:
+    $ref: ./OrderDeliverySlotDTO.yaml
+  leaveAtTheDoor:
+    description: Оставить у двери.
+    type: boolean
+  doNotCall:
+    description: Не звонить.
+    type: boolean

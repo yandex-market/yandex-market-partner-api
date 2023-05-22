@@ -1,0 +1,12 @@
+description: Запрос для подтверждения отгрузки.
+type: object
+properties:
+  externalShipmentId:
+    description: Идентификатор отгрузки в системе поставщика.
+    type: string
+  orderIds:
+    description: Список идентификаторов заказов в отгрузке.
+    type: array
+    items:
+      type: integer
+      format: int64

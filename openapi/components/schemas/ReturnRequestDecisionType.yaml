@@ -1,0 +1,10 @@
+description: Решение по возврату
+type: string
+enum:
+  - REFUND_MONEY
+  - REFUND_MONEY_INCLUDING_SHIPMENT
+  - REPAIR
+  - REPLACE
+  - SEND_TO_EXAMINATION
+  - DECLINE_REFUND
+  - OTHER_DECISION

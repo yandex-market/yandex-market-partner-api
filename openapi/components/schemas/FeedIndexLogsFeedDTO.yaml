@@ -1,0 +1,7 @@
+description: Информация о прайс-листе.
+type: object
+properties:
+  id:
+    description: Идентификатор прайс-листа.
+    type: integer
+    format: int64

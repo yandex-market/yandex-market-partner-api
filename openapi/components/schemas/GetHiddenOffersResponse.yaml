@@ -1,0 +1,7 @@
+description: Ответ на запрос списка скрытий.
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - type: object
+    properties:
+      result:
+        $ref: ./GetHiddenOffersResultDTO.yaml

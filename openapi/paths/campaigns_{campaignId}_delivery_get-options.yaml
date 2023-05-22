@@ -1,0 +1,38 @@
+post:
+  tags:
+    - order-delivery
+    - fby
+  operationId: getOrderDeliveryOptions
+  summary: >-
+    Метод для получения слотов доставки по адресу и товарным позициям для
+    создания FaaS-заказа
+  description: >
+    Метод для получения слотов доставки по адресу и товарным позициям для
+    создания FaaS-заказа
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetOrderDeliveryOptionsRequest.yaml
+  responses:
+    '200':
+      description: Слоты доставки
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOrderDeliveryOptionsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

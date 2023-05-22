@@ -1,0 +1,7 @@
+description: Идентификатор кампании партнера.
+name: feed_id
+in: query
+schema:
+  type: array
+  items:
+    $ref: ../schemas/FeedId.yaml

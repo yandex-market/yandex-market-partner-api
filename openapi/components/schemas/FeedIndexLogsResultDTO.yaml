@@ -1,0 +1,14 @@
+description: Результат выполнения запроса отчета по индексации прайс-листа.
+type: object
+properties:
+  feed:
+    $ref: ./FeedIndexLogsFeedDTO.yaml
+  indexLogRecords:
+    description: Список отчетов по индексации прайс-листа.
+    type: array
+    items:
+      $ref: ./FeedIndexLogsRecordDTO.yaml
+  total:
+    description: Количество отчетов на всех страницах выходных данных.
+    type: integer
+    format: int64

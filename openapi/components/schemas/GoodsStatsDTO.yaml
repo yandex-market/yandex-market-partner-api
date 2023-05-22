@@ -1,0 +1,8 @@
+description: Отчет по товарам.
+type: object
+properties:
+  shopSkus:
+    description: Список товаров.
+    type: array
+    items:
+      $ref: ./GoodsStatsGoodsDTO.yaml

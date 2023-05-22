@@ -1,0 +1,11 @@
+description: |
+  Статус отзыва:
+
+  * `LAST` — актуален.
+  * `PREVIOUS` — устарел.
+  * `DELETED` — удален.
+type: string
+enum:
+  - LAST
+  - PREVIOUS
+  - DELETED

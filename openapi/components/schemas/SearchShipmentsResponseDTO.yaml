@@ -1,0 +1,11 @@
+description: Информация об отгрузках.
+type: object
+properties:
+  shipments:
+    description: Список с информацией об отгрузках.
+    type: array
+    items:
+      $ref: ./ShipmentInfoDTO.yaml
+  paging:
+    description: Страницы с результатами поиска.
+    $ref: ./ForwardScrollingPagerDTO.yaml

@@ -1,0 +1,5 @@
+description: Внутренняя ошибка сервера.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiServerErrorResponse.yaml

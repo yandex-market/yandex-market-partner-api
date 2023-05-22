@@ -1,0 +1,32 @@
+description: |
+  Статус отгрузки:
+
+  * `OUTBOUND_CREATED` — формируется.
+  * `OUTBOUND_READY_FOR_CONFIRMATION` — можно обрабатывать.
+  * `OUTBOUND_CONFIRMED` — подтверждена и готова к отправке.
+  * `OUTBOUND_SIGNED` — по ней подписан электронный акт приема-передачи.
+  * `ACCEPTED` — принята в сортировочном центре или пункте приема.
+  * `ACCEPTED_WITH_DISCREPANCIES` — принята с расхождениями.
+  * `FINISHED` — завершена.
+  * `ERROR` — отменена из-за ошибки.
+type: string
+enum:
+  - OUTBOUND_PLANNED
+  - OUTBOUND_CREATED
+  - OUTBOUND_READY_FOR_CONFIRMATION
+  - OUTBOUND_CONFIRMED
+  - OUTBOUND_SIGNED
+  - FINISHED
+  - ACCEPTED
+  - ACCEPTED_WITH_DISCREPANCIES
+  - ERROR
+  - MOVEMENT_COURIER_FOUND
+  - MOVEMENT_HANDED_OVER
+  - MOVEMENT_DELIVERING
+  - MOVEMENT_DELIVERED
+  - INBOUND_ARRIVED
+  - INBOUND_ACCEPTANCE
+  - INBOUND_ACCEPTED
+  - INBOUND_SHIPPED
+  - FINISHED_WITHOUT_MATCH
+  - WAITING_DEPARTURE

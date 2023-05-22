@@ -1,0 +1,45 @@
+description: >
+  Список товаров в заказе.
+
+
+  Если магазин не передал информацию о товаре во входных данных, он будет удален
+  из заказа.
+
+
+  Обязательный параметр.
+type: object
+properties:
+  id:
+    description: >
+      Идентификатор товара в рамках заказа.
+
+
+      Получить идентификатор можно с помощью ресурсов `GET
+      /campaigns/{campaignId}/orders` или `GET
+      /campaigns/{campaignId}/orders/{orderId}`.
+
+
+      Обязательный параметр.
+    type: integer
+    format: int64
+  count:
+    description: Новое количество товара.
+    type: integer
+    format: int32
+    minimum: 0
+  instances:
+    description: >
+      Информация о маркировке единиц товара.
+
+
+      Передавайте в запросе все единицы товара, который подлежит маркировке.
+
+
+      Обязательный параметр, если в заказе есть товары, подлежащие маркировке в
+      системе «Честный ЗНАК».
+    type: array
+    items:
+      $ref: ./BriefOrderItemInstanceDTO.yaml
+required:
+  - id
+  - count

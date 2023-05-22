@@ -1,0 +1,10 @@
+description: |
+  Состояние точки продаж.
+  Возможные значения:
+  * `HIDDEN` — точка продаж выключена.
+  * `VISIBLE` — точка продаж включена.
+type: string
+enum:
+  - HIDDEN
+  - VISIBLE
+  - UNKNOWN

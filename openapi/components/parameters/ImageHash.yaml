@@ -1,0 +1,6 @@
+description: Хеш ссылки изображения для загрузки
+name: imageHash
+in: path
+required: true
+schema:
+  type: string

@@ -1,0 +1,5 @@
+description: В запросе не указаны данные для авторизации.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiUnauthorizedErrorResponse.yaml

@@ -1,0 +1,44 @@
+description: |
+  Текущий статус заказа:
+
+  * `CANCELLED_BEFORE_PROCESSING` — заказ отменен до начала его обработки.
+
+  * `CANCELLED_IN_DELIVERY` — заказ отменен во время его доставки.
+
+  * `CANCELLED_IN_PROCESSING` — заказ отменен во время его обработки.
+
+  * `DELIVERY` — заказ передан службе доставки.
+
+  * `DELIVERED` — заказ доставлен.
+
+  * `PARTIALLY_RETURNED` — заказ частично возвращен покупателем.
+
+  * `PICKUP` — заказ доставлен в пункт выдачи.
+
+      * Значение по умолчанию: `PICKUP_SERVICE_RECEIVED`.
+
+      * `PICKUP_USER_RECEIVED` – покупатель получил заказ.
+
+  * `PROCESSING` — заказ в обработке.
+
+  * `REJECTED` — заказ создан, но не оплачен.
+
+  * `RETURNED` — заказ полностью возвращен покупателем.
+
+  * `UNKNOWN` — неизвестный статус заказа.
+type: string
+enum:
+  - CANCELLED_BEFORE_PROCESSING
+  - CANCELLED_IN_DELIVERY
+  - CANCELLED_IN_PROCESSING
+  - DELIVERY
+  - DELIVERED
+  - PARTIALLY_RETURNED
+  - PENDING
+  - PICKUP
+  - PROCESSING
+  - RESERVED
+  - RETURNED
+  - REJECTED
+  - UNKNOWN
+  - UNPAID

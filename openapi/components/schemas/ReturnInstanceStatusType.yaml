@@ -1,0 +1,14 @@
+description: Логистический статус конкретного товара
+type: string
+enum:
+  - CREATED
+  - RECEIVED
+  - IN_TRANSIT
+  - READY_FOR_PICKUP
+  - PICKED
+  - RECEIVED_ON_FULFILLMENT
+  - CANCELLED
+  - LOST
+  - UTILIZED
+  - PREPARED_FOR_UTILIZATION
+  - NOT_IN_DEMAND

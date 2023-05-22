@@ -1,0 +1,13 @@
+description: >-
+  Информация о размещении предложений из прайс-листа на Маркете на момент
+  выполнения запроса.
+type: object
+properties:
+  status:
+    $ref: ./FeedStatusType.yaml
+  totalOffersCount:
+    description: >-
+      Количество предложений из прайс-листа, которые размещаются на Яндекс
+      Маркете в момент выполнения запроса.
+    type: integer
+    format: int32

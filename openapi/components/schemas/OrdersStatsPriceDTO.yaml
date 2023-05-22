@@ -1,0 +1,18 @@
+description: Цена или скидки на товар.
+type: object
+properties:
+  type:
+    description: Тип скидки или цена на товар.
+    $ref: ./OrdersStatsPriceType.yaml
+  costPerItem:
+    description: |
+      Цена или скидка на единицу товара в заказе.
+      Указана в рублях.
+      Точность — два знака после запятой.
+    type: number
+  total:
+    description: |
+      Суммарная цена или скидка на все единицы товара в заказе.
+      Указана в рублях.
+      Точность — два знака после запятой.
+    type: number

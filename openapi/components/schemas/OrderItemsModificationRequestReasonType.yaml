@@ -1,0 +1,5 @@
+description: Причина обновления состава заказа
+type: string
+enum:
+  - PARTNER_REQUESTED_REMOVE
+  - USER_REQUESTED_REMOVE

@@ -1,0 +1,7 @@
+description: Запрос на создание заказа.
+type: object
+required:
+  - order
+properties:
+  order:
+    $ref: ./OrderCreateDTO.yaml

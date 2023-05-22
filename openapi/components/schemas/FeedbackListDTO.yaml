@@ -1,0 +1,13 @@
+description: Отзывы пользователей Яндекс.Маркета об указанном магазине.
+type: object
+properties:
+  paging:
+    $ref: ./ScrollingPagerDTO.yaml
+  feedbackList:
+    description: |
+      Список отзывов.
+
+      Содержит не более 20 отзывов.
+    type: array
+    items:
+      $ref: ./FeedbackDTO.yaml
