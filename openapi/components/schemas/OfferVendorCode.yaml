@@ -1,0 +1,3 @@
+description: Артикул товара от производителя.
+example: VNDR-0005A
+type: string

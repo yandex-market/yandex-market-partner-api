@@ -1,8 +1,8 @@
-description: Результат работы метода получения списка цен.
+description: Список цен на товары.
 type: object
 properties:
   offers:
-    description: Список товаров.
+    description: Страница списка.
     type: array
     items:
       $ref: ./OfferPriceResponseDTO.yaml

@@ -6,9 +6,19 @@ post:
     - dbs
     - express
   operationId: updatePrices
-  summary: Установка цен на товары
+  summary: Установка цен на товары в конкретном магазине.
   description: >
-    Устанавливает цены на товары.
+    Устанавливает цены на товары в магазине.
+
+
+    {% note warning %}
+
+
+    Этот метод не работает с новыми магазинами. Вместо него используйте [POST
+    businesses/{businessId}/offer-prices/updates](../prices/updateBusinessPrices.md).
+
+
+    {% endnote %}
 
 
     В течение минуты можно установить цены для определенного количества товаров
@@ -42,7 +52,7 @@ post:
           $ref: ../components/schemas/UpdatePricesRequest.yaml
   responses:
     '200':
-      description: Пустой ответ.
+      description: Маркет принял информацию о новых ценах.
       content:
         application/json:
           schema:
@@ -58,6 +68,14 @@ post:
     '420':
       $ref: ../components/responses/420.yaml
     '423':
+      description: >
+        Возможны две причины такой ошибки.
+
+
+        * В кабинете используются основные цены, установить цену для отдельного
+        магазина не получится.
+
+        * Магазин находится в процессе переноса в другой кабинет.
       $ref: ../components/responses/423.yaml
     '500':
       $ref: ../components/responses/500.yaml

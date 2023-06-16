@@ -15,7 +15,17 @@ get:
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletIds.yaml
-    - $ref: ../components/parameters/LicenseIds.yaml
+    - description: >
+        Список идентификаторов лицензий, информацию о которых нужно получить.
+
+
+        Идентификаторы указываются через запятую. Идентификатор лицензии
+        присваивается Маркетом. Не путайте его с номером, указанным на лицензии.
+
+
+        В запросе должен быть либо параметр `outletIds`, либо параметр `ids`.
+        Запрос с обоими параметрами или без них приведет к ошибке.
+      $ref: ../components/parameters/LicenseIds.yaml
   responses:
     '200':
       description: Найденная отгрузка
@@ -51,7 +61,13 @@ delete:
     магазина.
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/LicenseIds.yaml
+    - description: >
+        Список идентификаторов лицензий, информацию о которых нужно удалить.
+
+
+        Идентификаторы указываются через запятую. Идентификатор лицензии
+        присваивается Маркетом. Не путайте его с номером, указанным на лицензии.
+      $ref: ../components/parameters/LicenseIds.yaml
   responses:
     '200':
       description: Пустой ответ

@@ -5,28 +5,46 @@ properties:
     description: Идентификатор предложения.
     $ref: ./ShopSku.yaml
   id:
-    description: >-
-      Идентификатор предложения из прайс-листа. Поле устарело, временно
-      поддерживается, но в будущем будет отключено.
+    description: |
+      {% note alert "Это поле устарело" %}
+
+      Не используйте его — это может привести к ошибкам.
+
+      {% endnote %} 
+
+      Идентификатор предложения из прайс-листа.
     deprecated: true
     type: string
   feed:
-    description: >-
-      Информация о прайс-листе. Поле устарело, временно поддерживается, но в
-      будущем будет отключено.
+    description: |
+      {% note alert "Это поле устарело" %}
+
+      Не используйте его — это может привести к ошибкам.
+
+      {% endnote %} 
+
+      Информация о прайс-листе.
     deprecated: true
     $ref: ./OfferPriceFeedDTO.yaml
   price:
     $ref: ./PriceDTO.yaml
   marketSku:
-    description: >-
-      SKU на Маркете. Поле устарело, временно поддерживается, но в будущем будет
-      отключено.
+    description: |
+      {% note alert "Это поле устарело" %}
+
+      Не используйте его — это может привести к ошибкам.
+
+      {% endnote %}
+
+      SKU на Маркете.
     deprecated: true
     $ref: ./MarketSku.yaml
   shopSku:
-    description: >-
-      SKU товара. Поле устарело, временно поддерживается, но в будущем будет
-      отключено.
+    description: |
+      {% note alert "Это поле устарело" %}
+
+      Не используйте его — это может привести к ошибкам.
+
+      {% endnote %}
     deprecated: true
     $ref: ./ShopSku.yaml

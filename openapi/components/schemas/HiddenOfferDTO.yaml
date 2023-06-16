@@ -2,7 +2,7 @@ description: Информация о скрытии.
 type: object
 properties:
   feedId:
-    description: Идентификатор кампании партнера.
+    description: Идентификатор прайс-листа.
     $ref: ./FeedId.yaml
   offerId:
     description: |
@@ -10,6 +10,12 @@ properties:
     $ref: ./ShopSku.yaml
   ttlInHours:
     description: |
+      {% note alert "Это поле устарело" %}
+
+      Не используйте его — это может привести к ошибкам.
+
+      {% endnote %} 
+
       Количество часов до возобновления показа товара.
 
       Минимальное значение — `1`.
@@ -19,9 +25,19 @@ properties:
       Значение по умолчанию — `48`.
 
       Используется только совместно с параметром `priority="true"`.
+    deprecated: true
     type: integer
   comment:
     description: >
+      {% note alert "Это поле устарело" %}
+
+
+      Не используйте его — это может привести к ошибкам.
+
+
+      {% endnote %}
+
+
       Комментарий магазина.
 
 
@@ -30,10 +46,17 @@ properties:
 
       Используется только совместно с параметром `priority="true"`. Если скрытие
       было без приоритета, комментарий не вернется в ответе.
+    deprecated: true
     type: string
   marketSku:
     description: >
-      Поле устарело, временно поддерживается, но в будущем будет отключено.
+      {% note alert "Это поле устарело" %}
+
+
+      Не используйте его — это может привести к ошибкам.
+
+
+      {% endnote %} 
 
 
       SKU на Маркете.
@@ -44,7 +67,17 @@ properties:
     deprecated: true
     $ref: ./MarketSku.yaml
   priority:
-    description: >-
+    description: >
+      {% note alert "Это поле устарело" %}
+
+
+      Не используйте его — это может привести к ошибкам.
+
+
+      {% endnote %} 
+
+
       Приоритет скрытия предложений через API над скрытием в личном кабинете.
       Параметр принимает только значение true.
+    deprecated: true
     type: boolean

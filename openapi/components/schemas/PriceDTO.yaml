@@ -1,4 +1,4 @@
-description: Информация о новой цене на товар.
+description: Цена с указанием скидки, валюты и времени последнего обновления.
 type: object
 properties:
   value:
@@ -13,6 +13,7 @@ properties:
 
       Возможно только значение RUR — российский рубль.
     type: string
+    example: RUR
   vat:
     description: >
       Идентификатор ставки НДС, применяемой для товара:
