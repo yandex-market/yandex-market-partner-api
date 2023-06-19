@@ -57,8 +57,6 @@ paths:
     $ref: paths/campaigns_{campaignId}_orders_{orderId}.yaml
   /campaigns/{campaignId}/orders:
     $ref: paths/campaigns_{campaignId}_orders.yaml
-  /campaigns/{campaignId}/orders/{orderId}/cis:
-    $ref: paths/campaigns_{campaignId}_orders_{orderId}_cis.yaml
   /campaigns/{campaignId}/orders/{orderId}/identifiers:
     $ref: paths/campaigns_{campaignId}_orders_{orderId}_identifiers.yaml
   /campaigns/{campaignId}/orders/{orderId}/items:
