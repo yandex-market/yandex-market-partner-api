@@ -1,0 +1,11 @@
+description: Информация о товарах.
+type: object
+properties:
+  paging:
+    description: Ссылка на следующую страницу.
+    $ref: ./ScrollingPagerDTO.yaml
+  offerMappings:
+    description: Информация о товарах.
+    type: array
+    items:
+      $ref: ./GetOfferMappingDTO.yaml

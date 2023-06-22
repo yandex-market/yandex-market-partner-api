@@ -1,0 +1,7 @@
+description: Результат удаления товаров.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./DeleteCampaignOffersDTO.yaml

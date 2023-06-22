@@ -1,0 +1,9 @@
+description: Время последнего обновления.
+type: object
+required:
+  - updatedAt
+properties:
+  updatedAt:
+    description: Время последнего обновления.
+    type: string
+    format: date-time

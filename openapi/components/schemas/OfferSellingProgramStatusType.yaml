@@ -1,0 +1,9 @@
+description: |
+  Информация о доступности или недоступности.
+
+  * `FINE` — доступно.
+  * `REJECT` — недоступно.
+type: string
+enum:
+  - FINE
+  - REJECT

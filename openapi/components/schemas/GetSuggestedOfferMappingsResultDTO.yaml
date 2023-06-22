@@ -1,0 +1,8 @@
+description: Подобранные карточки на Маркете.
+type: object
+properties:
+  offers:
+    description: Список товаров.
+    type: array
+    items:
+      $ref: ./SuggestedOfferMappingDTO.yaml

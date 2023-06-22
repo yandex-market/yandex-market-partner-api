@@ -1,0 +1,46 @@
+description: Параметры товара.
+type: object
+allOf:
+  - $ref: ./BaseOfferDTO.yaml
+  - properties:
+      basicPrice:
+        description: |
+          Цена.
+        $ref: ./GetPriceWithDiscountDTO.yaml
+      purchasePrice:
+        description: >
+          Себестоимость — затраты на самостоятельное производство товара или
+          закупку у производителя или поставщиков.
+        $ref: ./GetPriceDTO.yaml
+      additionalExpenses:
+        description: |
+          Дополнительные расходы на товар. Например, на доставку или упаковку.
+        $ref: ./GetPriceDTO.yaml
+      cofinancePrice:
+        description: >
+          Цена для скидок с Маркетом
+
+
+          Маркет может компенсировать до половины скидки. Назначьте минимальную
+          цену до вычета тарифов, по которой готовы продавать товар, а мы
+          рассчитаем скидку и размер софинансирования.
+
+
+          Если Маркет не готов софинансировать скидку, покупатель её не увидит.
+        $ref: ./GetPriceDTO.yaml
+      cardStatus:
+        description: |
+          Статус карточки товара.
+        $ref: ./OfferCardStatusType.yaml
+      campaigns:
+        description: |
+          Список магазинов, в которых размещен товар.
+        type: array
+        items:
+          $ref: ./OfferCampaignStatusDTO.yaml
+      sellingPrograms:
+        description: |
+          Информация о том, какие для товара доступны модели размещения.
+        type: array
+        items:
+          $ref: ./OfferSellingProgramDTO.yaml

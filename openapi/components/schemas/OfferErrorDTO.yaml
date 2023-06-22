@@ -1,0 +1,9 @@
+description: Сообщение об ошибке, связанной с размещением товара.
+type: object
+properties:
+  message:
+    description: Тип ошибки.
+    type: string
+  comment:
+    description: Пояснение.
+    type: string

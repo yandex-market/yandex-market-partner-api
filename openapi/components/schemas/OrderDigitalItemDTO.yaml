@@ -17,8 +17,11 @@ properties:
     description: Инструкция по активации.
     type: string
   activate_till:
-    description: >-
+    description: >
       Дата, до которой нужно активировать ключ. Если ключ действует бессрочно,
       укажите любую дату в отдаленном будущем.
+
+
+      Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date

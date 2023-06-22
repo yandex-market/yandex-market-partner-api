@@ -1,0 +1,11 @@
+description: Информация о товаре.
+type: object
+required:
+  - offer
+properties:
+  offer:
+    description: Параметры товара.
+    $ref: ./UpdateOfferDTO.yaml
+  mapping:
+    description: Информация о карточке товара на Маркете.
+    $ref: ./UpdateMappingDTO.yaml

@@ -1,0 +1,7 @@
+description: Запрос списка цен.
+properties:
+  offerIds:
+    description: Список SKU.
+    type: array
+    items:
+      $ref: ./ShopSku.yaml

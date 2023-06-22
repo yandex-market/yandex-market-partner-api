@@ -1,0 +1,48 @@
+description: >
+  Фильтрации товаров
+
+
+  В запросе можно указать либо фильтр offerIds, либо любые другие фильтры
+  товаров. Совместное использование фильтра offerIds с другими фильтрациями
+  приведет к ошибке.
+type: object
+properties:
+  offerIds:
+    description: >-
+      Идентификаторы товаров, информация о которых нужна. ⚠️ Не используйте это
+      поле одновременно с фильтрами по статусам карточек, категориям, брендам
+      или тегам. Если вы хотите воспользоваться фильтрами, оставьте поле пустым.
+    type: array
+    items:
+      $ref: ./ShopSku.yaml
+  cardStatuses:
+    description: >
+      Фильтр по статусам карточек.
+
+
+      [Что такое карточка
+      товара](https://yandex.ru/support/marketplace/assortment/content/index.html)
+    type: array
+    items:
+      $ref: ./OfferCardStatusType.yaml
+  categoryIds:
+    description: >
+      Фильтр по категориям на Маркете.
+
+
+      Чтобы узнать идентификатор категории, откройте ее страницу на
+      [market.yandex.ru](https://market.yandex.ru/). Идентификатор — это число
+      после `?hid=` в URL страницы.
+    type: array
+    items:
+      type: integer
+  vendorNames:
+    description: Фильтр по брендам.
+    type: array
+    items:
+      type: string
+  tags:
+    description: Фильтр по тегам.
+    type: array
+    items:
+      type: string

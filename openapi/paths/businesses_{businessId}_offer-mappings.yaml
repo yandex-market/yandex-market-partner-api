@@ -1,0 +1,47 @@
+post:
+  tags:
+    - business-offer-mappings
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: getOfferMappings
+  summary: Информация о товарах в каталоге
+  description: |
+    Возвращает список товаров в каталоге с параметрами каждого товара.
+
+    В запросе можно использовать фильтры.
+
+    Результаты возвращаются постранично.
+
+    |**⚙️ Лимит:** ```(количество товаров в каталоге) * 25``` товаров в сутки|
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetOfferMappingsRequest.yaml
+  responses:
+    '200':
+      description: Информация о товарах в каталоге.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOfferMappingsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

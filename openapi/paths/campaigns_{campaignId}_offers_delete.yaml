@@ -1,0 +1,60 @@
+post:
+  tags:
+    - offers
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: deleteCampaignOffers
+  summary: Удаление товаров из ассортимента магазина
+  description: >
+    Удаляет заданные товары из заданного магазина.
+
+
+    {% note warning "Запрос удаляет товары именно из конкретного магазина" %}
+
+
+    На продажи в других магазинах и на наличие товара в общем каталоге он не
+    влияет.
+
+
+    {% endnote %}
+
+
+    Товар не получится удалить, если он хранится на складах Маркета.
+
+
+    |**⚙️ Лимит:** 5000 товаров в минуту, не более 200 товаров в одном запросе|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/DeleteCampaignOffersRequest.yaml
+  responses:
+    '200':
+      description: >-
+        Если удалось удалить не все товары, с ответом 200 вернется список тех,
+        что были в запросе, но остались в магазине.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/DeleteCampaignOffersResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

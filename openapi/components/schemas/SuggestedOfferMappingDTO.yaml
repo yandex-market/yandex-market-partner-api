@@ -1,0 +1,9 @@
+description: Товар с соответствующей карточкой на Маркете.
+type: object
+properties:
+  offer:
+    description: Информация о товаре.
+    $ref: ./SuggestedOfferDTO.yaml
+  mapping:
+    description: Информация о карточке на Маркете.
+    $ref: ./GetMappingDTO.yaml

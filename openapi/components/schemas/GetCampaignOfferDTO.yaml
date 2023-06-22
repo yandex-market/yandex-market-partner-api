@@ -1,0 +1,27 @@
+description: Параметры размещения товара в магазине.
+type: object
+allOf:
+  - $ref: ./BaseCampaignOfferDTO.yaml
+  - properties:
+      basicPrice:
+        description: Основная цена на товар.
+        $ref: ./GetPriceWithDiscountDTO.yaml
+      campaignPrice:
+        description: Цена, установленная в магазине.
+        $ref: ./GetPriceWithVatDTO.yaml
+      status:
+        description: |
+          Статус товара.
+        $ref: ./OfferCampaignStatusType.yaml
+      errors:
+        description: |
+          Ошибки, препятствующие размещению товара на витрине.
+        type: array
+        items:
+          $ref: ./OfferErrorDTO.yaml
+      warnings:
+        description: |
+          Предупреждения, не препятствующие размещению товара на витрине.
+        type: array
+        items:
+          $ref: ./OfferErrorDTO.yaml

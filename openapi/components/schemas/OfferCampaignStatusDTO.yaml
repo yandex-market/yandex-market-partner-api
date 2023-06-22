@@ -1,0 +1,15 @@
+description: Статус товара в магазине.
+type: object
+required:
+  - campaignId
+  - status
+properties:
+  campaignId:
+    description: |
+      Идентификатор кампании.
+    type: integer
+    format: int64
+  status:
+    description: |
+      Статус товара.
+    $ref: ./OfferCampaignStatusType.yaml

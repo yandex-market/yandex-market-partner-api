@@ -1,0 +1,11 @@
+description: |
+  Внешний вид товара:
+
+  * `PERFECT` — идеальный.
+  * `EXCELLENT` — отличный.
+  * `GOOD` — хороший.
+type: string
+enum:
+  - PERFECT
+  - EXCELLENT
+  - GOOD

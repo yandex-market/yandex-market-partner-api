@@ -1,0 +1,14 @@
+description: Информация о том, по каким моделям можно продавать товар, а по каким нельзя.
+type: object
+required:
+  - sellingProgram
+  - status
+properties:
+  sellingProgram:
+    description: |
+      Модель размещения.
+    $ref: ./SellingProgramType.yaml
+  status:
+    description: |
+      Информация о том, можно ли по этой модели продавать товар.
+    $ref: ./OfferSellingProgramStatusType.yaml

@@ -1,0 +1,16 @@
+description: Характеристика товара.
+type: object
+required:
+  - name
+  - value
+properties:
+  name:
+    description: |
+      Название.
+    example: Wi-Fi
+    type: string
+  value:
+    description: |
+      Значение.
+    example: есть
+    type: string

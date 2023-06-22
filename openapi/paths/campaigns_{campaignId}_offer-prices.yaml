@@ -54,3 +54,59 @@ get:
       $ref: ../components/responses/420.yaml
     '500':
       $ref: ../components/responses/500.yaml
+post:
+  tags:
+    - prices
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: getPricesByOfferIds
+  summary: Просмотр установленных в магазине цен
+  description: >
+    Возвращает список установленных вами цен на заданные товары в заданном
+    магазине.
+
+
+    {% note warning %}
+
+
+    Этот метод не работает с новыми магазинами. Вместо него используйте [POST
+    businesses/{businessId}/offer-mappings](../business-offer-mappings/getOfferMappings.md).
+
+
+    {% endnote %}
+
+
+    |**⚙️ Лимит:** `(количество товаров на витрине) * 25` товаров в сутки|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetPricesByOfferIdsRequest.yaml
+  responses:
+    '200':
+      description: Список товаров с установленными для заданного магазина ценами.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetPricesByOfferIdsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

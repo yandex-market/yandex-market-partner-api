@@ -1,0 +1,13 @@
+description: Товар в карантине.
+type: object
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  currentPrice:
+    description: |
+      Новая цена.
+    $ref: ./BasePriceDTO.yaml
+  lastValidPrice:
+    description: |
+      Последняя цена до попадания в карантин.
+    $ref: ./BasePriceDTO.yaml

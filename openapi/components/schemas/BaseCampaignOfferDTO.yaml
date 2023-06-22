@@ -1,0 +1,16 @@
+description: Информация о новой цене на товар.
+type: object
+required:
+  - offerId
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  quantum:
+    description: >-
+      Настройка продажи квантами. [Что это
+      значит?](https://yandex.ru/support/marketplace/assortment/fields/quantum.html)
+    $ref: ./QuantumDTO.yaml
+  available:
+    description: |
+      Есть ли товар в продаже.
+    type: boolean

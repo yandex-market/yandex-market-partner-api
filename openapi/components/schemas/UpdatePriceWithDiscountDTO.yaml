@@ -1,0 +1,10 @@
+description: Цена с указанием скидки.
+type: object
+allOf:
+  - $ref: ./BasePriceDTO.yaml
+  - properties:
+      discountBase:
+        description: Цена до скидки.
+        type: number
+        minimum: 0
+        exclusiveMinimum: true

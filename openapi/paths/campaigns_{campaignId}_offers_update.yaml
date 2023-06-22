@@ -1,0 +1,48 @@
+post:
+  tags:
+    - offers
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: updateCampaignOffers
+  summary: Настройка размещения товаров в магазине
+  description: >
+    Изменяет параметры размещения товаров в конкретном магазине: доступность
+    товара, условия доставки и самовывоза, применяемую ставку НДС.
+
+
+    |**⚙️ Лимит:** 5000 товаров в минуту, не более 500 товаров в одном запросе|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateCampaignOffersRequest.yaml
+  responses:
+    '200':
+      description: >-
+        Ответ 200 обозначает, что новые параметры получены Маркетом и скоро
+        вступят в силу.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

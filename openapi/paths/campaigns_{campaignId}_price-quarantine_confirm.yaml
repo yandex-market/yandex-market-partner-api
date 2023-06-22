@@ -1,0 +1,54 @@
+post:
+  tags:
+    - price-quarantine
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: confirmCampaignPrices
+  summary: Подтверждение цены товара, попавшего в карантин (цена в магазине)
+  description: >
+    Подтверждает в заданном магазине цену товаров, попавших в карантин.
+
+
+    Товар попадает в карантин, если его цена меняется слишком резко. [Как
+    настроить
+    карантин](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)
+
+
+    Чтобы увидеть список товаров, попавших в карантин, используйте запрос [POST
+    campaigns/{campaignId}/price-quarantine](getCampaignQuarantineOffers.md).
+
+
+    |**⚙️ Лимит:** 5000 товаров в минуту, не более 200 товаров в одном запросе|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/ConfirmPricesRequest.yaml
+  responses:
+    '200':
+      description: Ответ 200 обозначает, что цены подтверждены.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

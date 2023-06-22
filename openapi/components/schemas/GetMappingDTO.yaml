@@ -1,0 +1,41 @@
+description: Информация о товарах в каталоге.
+type: object
+allOf:
+  - description: |
+      Идентификатор карточки на Маркете.
+
+      Может отсутствовать в ответе.
+    $ref: ./UpdateMappingDTO.yaml
+  - properties:
+      marketSkuName:
+        description: |
+          Название карточки на Маркете.
+
+          Может отсутствовать в ответе.
+        type: string
+      marketModelId:
+        description: |
+          Идентификатор модели на Маркете.
+
+          Может отсутствовать в ответе.
+        type: integer
+        format: int64
+      marketModelName:
+        description: |
+          Название модели на Маркете.
+
+          Может отсутствовать в ответе.
+        type: string
+      marketCategoryId:
+        description: |
+          Идентификатор категории карточки на Маркете.
+
+          Может отсутствовать в ответе.
+        type: integer
+        format: int64
+      marketCategoryName:
+        description: |
+          Название категории карточки на Маркете.
+
+          Может отсутствовать в ответе.
+        type: string

@@ -14,8 +14,4 @@ properties:
 
       Указывается в процентах от стоимости товара и умножается на 100. Например,
       ставка 5% обозначается как 500.
-    type: integer
-    format: int32
-    minimum: 0
-    maximum: 9999
-    example: 570
+    $ref: ./Bid.yaml

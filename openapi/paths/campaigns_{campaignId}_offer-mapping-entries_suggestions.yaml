@@ -7,6 +7,16 @@ post:
   operationId: getSuggestedOfferMappingEntries
   summary: Рекомендованные карточки для ваших товаров
   description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Пожалуйста, пользуйтесь вместо него [POST
+    businesses/{businessId}/offer-mappings/suggestions](../../reference/business-assortment/getSuggestedOfferMappings.md).
+
+
+    {% endnote %}
+
+
     Возвращает идентификаторы карточек товаров на Маркете, рекомендованных для
     ваших товаров.
 

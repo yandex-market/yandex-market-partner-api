@@ -1,0 +1,11 @@
+description: Товар с новой ценой.
+type: object
+required:
+  - offerId
+  - price
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  price:
+    description: Новая цена.
+    $ref: ./UpdatePriceWithDiscountDTO.yaml

@@ -1,0 +1,16 @@
+description: |
+  Особый тип товара:
+
+  * `MEDICINE` — лекарства.
+  * `BOOK` — книги.
+  * `AUDIOBOOK` — аудиокниги.
+  * `ARTIST_TITLE` — музыкальная и видеопродукция.
+  * `ON_DEMAND` — товары на заказ.
+type: string
+enum:
+  - DEFAULT
+  - MEDICINE
+  - BOOK
+  - AUDIOBOOK
+  - ARTIST_TITLE
+  - ON_DEMAND

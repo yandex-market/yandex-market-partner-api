@@ -1,0 +1,10 @@
+description: >-
+  Список товаров, которые не удалось удалить, потому что они хранятся на складе
+  Маркета.
+type: object
+properties:
+  notDeletedOfferIds:
+    description: Список SKU товаров, которые не удалось удалить.
+    type: array
+    items:
+      $ref: ./ShopSku.yaml

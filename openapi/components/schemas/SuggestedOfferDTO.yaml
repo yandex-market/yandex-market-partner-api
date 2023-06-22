@@ -1,0 +1,21 @@
+description: Информация о товаре.
+type: object
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  name:
+    $ref: ./OfferName.yaml
+  category:
+    $ref: ./OfferCategory.yaml
+  vendor:
+    $ref: ./OfferVendor.yaml
+  barcodes:
+    $ref: ./OfferBarcodes.yaml
+  description:
+    $ref: ./OfferDescription.yaml
+  vendorCode:
+    $ref: ./OfferVendorCode.yaml
+  basicPrice:
+    description: |
+      Цена товара
+    $ref: ./BasePriceDTO.yaml

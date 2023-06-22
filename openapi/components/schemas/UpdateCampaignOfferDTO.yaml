@@ -1,0 +1,25 @@
+description: Параметры размещения товара в магазине.
+type: object
+required:
+  - offerId
+allOf:
+  - $ref: ./BaseCampaignOfferDTO.yaml
+  - properties:
+      vat:
+        description: >
+          Ставка НДС, применяемая для товара. Задается цифрой:
+
+
+          * 2 — 10%.
+
+          * 5 — 0%.
+
+          * 6 — не облагается НДС.
+
+          * 7 — 20%.
+
+
+          Если параметр не указан, используется ставка НДС, установленная в
+          личном кабинете магазина.
+        type: integer
+        format: int32

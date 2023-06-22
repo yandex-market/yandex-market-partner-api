@@ -4,6 +4,9 @@ required:
   - toDate
 properties:
   toDate:
-    description: Новая дата доставки заказа.
+    description: |
+      Новая дата доставки заказа.
+
+      Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date

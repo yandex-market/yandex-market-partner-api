@@ -1,0 +1,5 @@
+description: Цена с указанием ставки НДС и времени последнего обновления.
+type: object
+allOf:
+  - $ref: ./PriceDTO.yaml
+  - $ref: ./UpdateTimeDTO.yaml

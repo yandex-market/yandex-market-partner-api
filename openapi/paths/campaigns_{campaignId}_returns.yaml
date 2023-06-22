@@ -28,12 +28,12 @@ get:
       in: query
       name: orderIds
       required: false
-      example: 123543,432321
       schema:
         type: array
         items:
           type: integer
           format: int64
+          example: 123543
     - description: |
         Статусы возвратов или невыкупов — для фильтрации результатов.
 

@@ -1,0 +1,70 @@
+post:
+  tags:
+    - price-quarantine
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: getCampaignQuarantineOffers
+  summary: Список товаров, находящихся в карантине (цена в магазине)
+  description: >
+    Возвращает список товаров, которые находятся на карантине по цене,
+    установленной в заданном магазине.
+
+
+    Проверьте цену каждого из товаров, попавших в карантин. Если ошибки нет и
+    цена правильная, подтвердите ее с помощью запроса [POST
+    campaigns/{campaignId}/price-quarantine/confirm](confirmCampaignPrices.md).
+    Если цена в самом деле ошибочная, установите верную с помощью запроса [POST
+    campaigns/{campaignId}/offer-prices/updates](../prices/updatePrices.md).
+
+
+    {% note info "𝓠 Что такое карантин?" %}
+
+
+    𝓐 Товар попадает в карантин, если его цена меняется слишком резко. [Как
+    настроить порог
+    срабатывания](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)
+
+
+    {% endnote %}
+
+
+    В запросе можно использовать фильтры.
+
+
+    Результаты возвращаются постранично.
+
+
+    |**⚙️ Лимит:** 5000 товаров в минуту, не более 500 товаров в одном запросе|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetQuarantineOffersRequest.yaml
+  responses:
+    '200':
+      description: Список товаров в карантине.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetQuarantineOffersResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

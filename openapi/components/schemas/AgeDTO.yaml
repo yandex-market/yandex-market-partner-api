@@ -1,0 +1,15 @@
+description: Возраст в заданных единицах измерения.
+type: object
+required:
+  - value
+  - ageUnit
+properties:
+  value:
+    description: |
+      Значение.
+    type: number
+    minimum: 0
+  ageUnit:
+    description: |
+      Единица измерения.
+    $ref: ./AgeUnitType.yaml

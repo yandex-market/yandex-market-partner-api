@@ -7,6 +7,15 @@ post:
   operationId: getSuggestedPrices
   summary: Цены для продвижения товаров
   description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Не используйте его.
+
+
+    {% endnote %}
+
+
     Возвращает цены для продвижения товаров, которые вы размещаете на Маркете.
 
 

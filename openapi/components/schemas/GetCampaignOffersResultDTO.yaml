@@ -1,0 +1,10 @@
+description: Список товаров в заданном магазине.
+type: object
+properties:
+  paging:
+    $ref: ./ScrollingPagerDTO.yaml
+  offers:
+    description: Страница списка товаров.
+    type: array
+    items:
+      $ref: ./GetCampaignOfferDTO.yaml

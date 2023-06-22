@@ -1,0 +1,5 @@
+description: Цена с указанием времени последнего обновления.
+type: object
+allOf:
+  - $ref: ./BasePriceDTO.yaml
+  - $ref: ./UpdateTimeDTO.yaml

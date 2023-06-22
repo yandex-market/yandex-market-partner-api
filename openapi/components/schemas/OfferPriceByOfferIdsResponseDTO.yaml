@@ -1,0 +1,11 @@
+description: Информация об установленной цене.
+type: object
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  price:
+    $ref: ./PriceDTO.yaml
+  updatedAt:
+    description: Дата и время последнего обновления цены.
+    type: string
+    format: date-time

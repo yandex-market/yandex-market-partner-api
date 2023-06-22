@@ -7,6 +7,16 @@ post:
   operationId: updateOfferMappingEntries
   summary: Добавление и редактирование товаров в каталоге
   description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Пожалуйста, пользуйтесь вместо него [POST
+    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
+
+
+    {% endnote %}
+
+
     Добавляет товары, указанные в запросе, в ваш каталог товаров и редактирует
     уже имеющиеся товары.
 

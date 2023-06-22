@@ -1,0 +1,9 @@
+description: |
+  Единицы измерения возраста:
+
+  * `YEAR` — год.
+  * `MONTH` — месяц.
+type: string
+enum:
+  - YEAR
+  - MONTH

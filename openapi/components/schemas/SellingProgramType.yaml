@@ -1,0 +1,13 @@
+description: |
+  Модель размещения:
+
+  * `FBY` — FBY.
+  * `FBS` — FBS.
+  * `DBS` — DBS.
+  * `EXPRESS` — Экспресс.
+type: string
+enum:
+  - FBY
+  - FBS
+  - DBS
+  - EXPRESS

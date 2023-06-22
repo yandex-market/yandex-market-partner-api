@@ -1,0 +1,7 @@
+description: Ответ на запрос списка товаров в карантине
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GetQuarantineOffersResultDTO.yaml

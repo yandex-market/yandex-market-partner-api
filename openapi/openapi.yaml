@@ -136,18 +136,36 @@ paths:
       paths/campaigns_{campaignId}_first-mile_shipments_{shipmentId}_discrepancy-act.yaml
   /campaigns/{campaignId}/first-mile/shipments:
     $ref: paths/campaigns_{campaignId}_first-mile_shipments.yaml
+  /businesses/{businessId}/offer-mappings/delete:
+    $ref: paths/businesses_{businessId}_offer-mappings_delete.yaml
+  /businesses/{businessId}/offer-mappings:
+    $ref: paths/businesses_{businessId}_offer-mappings.yaml
+  /businesses/{businessId}/offer-mappings/update:
+    $ref: paths/businesses_{businessId}_offer-mappings_update.yaml
+  /businesses/{businessId}/offer-mappings/suggestions:
+    $ref: paths/businesses_{businessId}_offer-mappings_suggestions.yaml
   /campaigns/{campaignId}/offer-mapping-entries:
     $ref: paths/campaigns_{campaignId}_offer-mapping-entries.yaml
   /campaigns/{campaignId}/offer-mapping-entries/updates:
     $ref: paths/campaigns_{campaignId}_offer-mapping-entries_updates.yaml
   /campaigns/{campaignId}/offer-mapping-entries/suggestions:
     $ref: paths/campaigns_{campaignId}_offer-mapping-entries_suggestions.yaml
+  /businesses/{businessId}/offer-prices/updates:
+    $ref: paths/businesses_{businessId}_offer-prices_updates.yaml
   /campaigns/{campaignId}/offer-prices/updates:
     $ref: paths/campaigns_{campaignId}_offer-prices_updates.yaml
   /campaigns/{campaignId}/offer-prices:
     $ref: paths/campaigns_{campaignId}_offer-prices.yaml
   /campaigns/{campaignId}/offer-prices/suggestions:
     $ref: paths/campaigns_{campaignId}_offer-prices_suggestions.yaml
+  /businesses/{businessId}/price-quarantine:
+    $ref: paths/businesses_{businessId}_price-quarantine.yaml
+  /businesses/{businessId}/price-quarantine/confirm:
+    $ref: paths/businesses_{businessId}_price-quarantine_confirm.yaml
+  /campaigns/{campaignId}/price-quarantine:
+    $ref: paths/campaigns_{campaignId}_price-quarantine.yaml
+  /campaigns/{campaignId}/price-quarantine/confirm:
+    $ref: paths/campaigns_{campaignId}_price-quarantine_confirm.yaml
   /campaigns/{campaignId}/hidden-offers:
     $ref: paths/campaigns_{campaignId}_hidden-offers.yaml
   /campaigns/{campaignId}/warehouses/{warehouseId}/stocks/actual:
@@ -170,6 +188,10 @@ paths:
     $ref: paths/campaigns_{campaignId}_feedback_updates.yaml
   /campaigns/{campaignId}/offers:
     $ref: paths/campaigns_{campaignId}_offers.yaml
+  /campaigns/{campaignId}/offers/update:
+    $ref: paths/campaigns_{campaignId}_offers_update.yaml
+  /campaigns/{campaignId}/offers/delete:
+    $ref: paths/campaigns_{campaignId}_offers_delete.yaml
   /campaigns/{campaignId}/offers/all:
     $ref: paths/campaigns_{campaignId}_offers_all.yaml
   /campaigns/{campaignId}/feeds/{feedId}:
