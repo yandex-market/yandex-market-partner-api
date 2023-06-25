@@ -6,6 +6,7 @@ put:
     - fby
     - express
   operationId: putBidsForBusiness
+  x-go-name: BusinessesBusinessIdBids
   summary: Включение буста продаж и установка ставок
   description: >
     Запускает буст продаж — создает и включает кампанию, добавляет в нее товары
