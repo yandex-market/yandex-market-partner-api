@@ -25,15 +25,6 @@ info:
     url: https://opensource.org/license/bsd-3-clause/
 servers:
   - url: https://api.partner.market.yandex.ru
-components:
-  securitySchemes:
-    OAuth:
-      type: oauth2
-      flows:
-        implicit:
-          authorizationUrl: https://oauth.yandex.ru/authorize
-          scopes:
-            market:partner-api: API Яндекс.Маркета / Поиска по товарам для партнеров
 security:
   - OAuth:
       - market:partner-api
@@ -220,3 +211,12 @@ paths:
     $ref: paths/businesses_{businessId}_bids.yaml
   /campaigns/{campaignId}/bids:
     $ref: paths/campaigns_{campaignId}_bids.yaml
+components:
+  securitySchemes:
+    OAuth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://oauth.yandex.ru/authorize
+          scopes:
+            market:partner-api: API Яндекс.Маркета / Поиска по товарам для партнеров

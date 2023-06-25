@@ -1,4 +1,5 @@
 description: Ответ на запрос информации о моделях.
+type: object
 allOf:
   - properties:
       models:

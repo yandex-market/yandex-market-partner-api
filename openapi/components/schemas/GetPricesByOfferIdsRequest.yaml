@@ -1,4 +1,5 @@
 description: Запрос списка цен.
+type: object
 properties:
   offerIds:
     description: Список SKU.

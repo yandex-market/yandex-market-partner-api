@@ -1,4 +1,5 @@
 description: Ответ на запрос отчета по заказам.
+type: object
 allOf:
   - $ref: ./ApiResponse.yaml
   - properties:

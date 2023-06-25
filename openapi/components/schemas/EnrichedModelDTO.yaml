@@ -1,4 +1,5 @@
 description: Модель товара.
+type: object
 allOf:
   - $ref: ./ModelDTO.yaml
   - properties:
