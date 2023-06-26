@@ -5,6 +5,15 @@ get:
   operationId: getFeedIndexLogs
   summary: Отчет по индексации прайс-листа
   description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Не используйте его.
+
+
+    {% endnote %}
+
+
     Возвращает отчет по индексации прайс-листа для заданного магазина. Отчет
     позволяет получить статистику загрузки прайс-листа и результаты его
     автоматических проверок.
@@ -17,6 +26,7 @@ get:
     |**⚙️ Лимит:** 1 000 запросов в час|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/FeedId.yaml

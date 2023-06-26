@@ -5,6 +5,15 @@ post:
   operationId: setFeedParams
   summary: Изменение параметров прайс-листа
   description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Не используйте его.
+
+
+    {% endnote %}
+
+
     Позволяет магазину изменить параметры прайс-листа.
 
 
@@ -24,6 +33,7 @@ post:
 
 
     {% endnote %}
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/FeedId.yaml

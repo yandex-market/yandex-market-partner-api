@@ -64,6 +64,7 @@ post:
 
 
     В течение минуты можно добавить не более 5000 товаров.
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

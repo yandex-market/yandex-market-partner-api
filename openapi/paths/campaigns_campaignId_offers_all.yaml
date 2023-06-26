@@ -5,6 +5,15 @@ get:
   operationId: getAllOffers
   summary: Все предложения магазина
   description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Не используйте его.
+
+
+    {% endnote %}
+
+
     Позволяет максимально быстро получить информацию обо всех предложениях
     магазина, размещенных на Маркете. Возвращает результат в виде сегментов
     нефиксированного размера.
@@ -35,6 +44,7 @@ get:
 
 
     {% endnote %}
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OffersFeedId.yaml

@@ -47,6 +47,7 @@ post:
 
     Подробно об автоматическом управлении ценами рассказано [в Справке для
     продавцов](https://yandex.ru/support/marketplace/marketing/prices.html).
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

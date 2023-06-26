@@ -4,11 +4,11 @@ type: object
 properties:
   type:
     description: |
-      Внешний вид товара.
+      Тип уценки.
     $ref: ./OfferConditionType.yaml
   quality:
     description: |
-      Тип уценки.
+      Внешний вид товара.
     $ref: ./OfferConditionQualityType.yaml
   reason:
     description: >

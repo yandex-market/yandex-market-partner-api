@@ -4,6 +4,7 @@ post:
     - fby
     - fbs
     - express
+    - dbs
   operationId: getGoodsStats
   summary: Отчет по товарам
   description: >

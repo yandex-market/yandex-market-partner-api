@@ -1,0 +1,74 @@
+get:
+  tags:
+    - feed-categories
+    - dbs
+  operationId: getFeedCategories
+  summary: Категории прайс-листа
+  description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Не используйте его.
+
+
+    {% endnote %}
+
+
+    Возвращает список категорий предложений из прайс-листа, размещенного на
+    Маркете для заданного магазина. Информация о категориях для отключенных
+    прайс-листов не предоставляется.
+
+
+    В ответе на запрос для каждой категории возвращается ее название,
+    идентификатор и идентификатор родительской категории. Список сортируется по
+    возрастанию идентификатора категории. Если категорий много, результаты
+    выдаются постранично.
+
+
+    Для методов `GET /campaigns/{campaignId}/feeds/categories` и `GET
+    /campaigns/{campaignId}/feeds/{feedId}/categories` действует групповое
+    ресурсное ограничение. Ограничение вводится на суммарное количество
+    категорий, информация о которых запрошена при помощи этих методов.
+
+
+    В течение суток можно выполнить не более 50 000 запросов. Точное количество
+    доступных запросов рассчитывается индивидуально и зависит от количества
+    категорий.
+
+
+    {% note info %}
+
+
+    Количество категорий берется за предыдущий день.
+
+
+    {% endnote %}
+  deprecated: true
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/FeedId.yaml
+    - $ref: ../components/parameters/PageNum.yaml
+    - $ref: ../components/parameters/PageSize.yaml
+  responses:
+    '200':
+      description: >
+        Возвращается ее название, идентификатор и идентификатор родительской
+        категории. Список сортируется по возрастанию идентификатора категории.
+
+        Если категорий много, результаты выдаются постранично.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetFeedCategoriesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -47,6 +47,7 @@ get:
 
 
     {% endnote %}
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OfferIds.yaml

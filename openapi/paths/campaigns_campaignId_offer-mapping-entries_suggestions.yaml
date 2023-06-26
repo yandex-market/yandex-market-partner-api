@@ -43,6 +43,7 @@ post:
 
 
     В течение часа можно получить не более 100 000 рекомендаций.
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

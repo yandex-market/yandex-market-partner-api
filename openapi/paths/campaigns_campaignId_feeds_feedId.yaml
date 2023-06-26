@@ -5,6 +5,15 @@ get:
   operationId: getFeed
   summary: Информация о прайс-листе
   description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Не используйте его.
+
+
+    {% endnote %}
+
+
     Возвращает информацию о прайс-листе, размещенном на Маркете для заданного
     магазина. Также ресурс возвращает результаты автоматических проверок
     прайс-листа.
@@ -12,6 +21,7 @@ get:
     |**⚙️ Лимит:** 5 000 запросов в час|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/FeedId.yaml
