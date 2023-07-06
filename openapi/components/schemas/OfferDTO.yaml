@@ -103,13 +103,13 @@ properties:
       * `UAH` — украинская гривна.
     $ref: ./CurrencyType.yaml
   bid:
-    description: Ставка на клик. deprecated
+    description: Ставка на клик. deprecated.
     type: number
   cbid:
-    description: Ставка на клик. deprecated
+    description: Ставка на клик. deprecated.
     type: number
   fee:
-    description: Процент комиссии на товар при продаже по CPA. deprecated
+    description: Процент комиссии на товар при продаже по CPA. deprecated.
     type: number
   blocked:
     description: >

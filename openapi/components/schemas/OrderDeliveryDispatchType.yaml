@@ -1,4 +1,4 @@
-description: Способ отгрузки
+description: Способ отгрузки.
 type: string
 enum:
   - UNKNOWN

@@ -1,4 +1,4 @@
-description: Решение по возврату
+description: Решение по возврату.
 type: string
 enum:
   - REFUND_MONEY

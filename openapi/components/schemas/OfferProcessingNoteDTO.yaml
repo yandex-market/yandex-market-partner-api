@@ -1,4 +1,4 @@
-description: Причины, по которым товар не прошел модерацию
+description: Причины, по которым товар не прошел модерацию.
 type: object
 properties:
   type:

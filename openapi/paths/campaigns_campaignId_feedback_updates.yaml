@@ -12,7 +12,9 @@ get:
     отзывов. Выходные данные содержат идентификатор следующей страницы.
 
 
-    В течение часа можно отправить не более 100 запросов.
+    |**⚙️ Лимит:** 100 запросов в час|
+
+    |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml

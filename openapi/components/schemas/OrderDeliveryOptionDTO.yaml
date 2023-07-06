@@ -1,4 +1,4 @@
-description: Опции доставки
+description: Опции доставки.
 type: object
 required:
   - dates

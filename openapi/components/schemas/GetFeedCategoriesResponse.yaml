@@ -1,4 +1,4 @@
-description: Ответ на запрос списка категорий прайс-листа
+description: Ответ на запрос списка категорий прайс-листа.
 type: object
 properties:
   categories:

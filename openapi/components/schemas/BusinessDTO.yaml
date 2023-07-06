@@ -1,0 +1,10 @@
+description: Информацию о бизнесе.
+type: object
+properties:
+  id:
+    description: Идентификатор бизнеса.
+    type: integer
+    format: int64
+  name:
+    description: Название бизнеса.
+    type: string

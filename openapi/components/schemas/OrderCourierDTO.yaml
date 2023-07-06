@@ -1,18 +1,18 @@
-description: Информация о курьере
+description: Информация о курьере.
 type: object
 properties:
   fullName:
-    description: Полное имя курьера
+    description: Полное имя курьера.
     type: string
   phone:
-    description: Номер телефона курьера
+    description: Номер телефона курьера.
     type: string
   phoneExtension:
-    description: Добавочный номер телефона
+    description: Добавочный номер телефона.
     type: string
   vehicleNumber:
-    description: Номер транспортного средства
+    description: Номер транспортного средства.
     type: string
   vehicleDescription:
-    description: Полное имя курьера
+    description: Полное имя курьера.
     type: string

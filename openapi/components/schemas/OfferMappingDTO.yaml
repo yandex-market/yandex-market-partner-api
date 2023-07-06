@@ -1,4 +1,4 @@
-description: Информация о текущей карточке товара на Маркете
+description: Информация о текущей карточке товара на Маркете.
 type: object
 properties:
   marketSku:

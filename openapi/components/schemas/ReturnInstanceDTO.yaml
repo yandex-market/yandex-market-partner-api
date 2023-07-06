@@ -1,15 +1,15 @@
-description: Логистическая информация по возврату
+description: Логистическая информация по возврату.
 type: object
 properties:
   stockType:
-    description: Тип остатка на складе
+    description: Тип остатка на складе.
     $ref: ./ReturnInstanceStockType.yaml
   status:
-    description: Логистический статус конкретного товара
+    description: Логистический статус конкретного товара.
     $ref: ./ReturnInstanceStatusType.yaml
   cis:
-    description: Контрольный идентификационный знак
+    description: Контрольный идентификационный знак.
     type: string
   imei:
-    description: Международный идентификатор мобильного оборудования
+    description: Международный идентификатор мобильного оборудования.
     type: string

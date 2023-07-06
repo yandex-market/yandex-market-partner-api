@@ -12,7 +12,11 @@ get:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:
     '200':
-      description: Регион магазина
+      description: |
+        Возвращает регион, в котором находится магазин.
+
+        |**⚙️ Лимит:** 1000 запросов в час|
+        |-|
       content:
         application/json:
           schema:

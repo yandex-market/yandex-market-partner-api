@@ -1,4 +1,4 @@
-description: Тип субсидии
+description: Тип субсидии.
 type: string
 enum:
   - NOT_SUBSIDY

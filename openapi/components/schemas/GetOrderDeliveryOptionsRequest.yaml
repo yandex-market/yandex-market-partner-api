@@ -1,4 +1,4 @@
-description: Запрос опций доставки
+description: Запрос опций доставки.
 type: object
 required:
   - items

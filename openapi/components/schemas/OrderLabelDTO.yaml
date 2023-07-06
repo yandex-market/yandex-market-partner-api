@@ -1,4 +1,4 @@
-description: Данные для печати ярлыка
+description: Данные для печати ярлыка.
 type: object
 required:
   - orderId

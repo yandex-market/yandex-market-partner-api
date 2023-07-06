@@ -12,3 +12,7 @@ properties:
     description: Идентификатор плательщика в Яндекс Балансе.
     type: integer
     format: int64
+  business:
+    $ref: ./BusinessDTO.yaml
+  placementType:
+    $ref: ./PlacementType.yaml

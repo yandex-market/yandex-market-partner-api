@@ -1,5 +1,5 @@
 type: object
-description: Модель для ответа API создания FaaS заказа
+description: Модель для ответа API создания FaaS заказа.
 properties:
   order:
     $ref: ./OrderDTO.yaml

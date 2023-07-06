@@ -9,7 +9,7 @@ get:
   summary: Информация о магазине
   description: |
     Возвращает информацию о магазине.
-    |**⚙️ Лимит:** 5 000 запросов в час|
+    |**⚙️ Лимит:** 1000 запросов в час|
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

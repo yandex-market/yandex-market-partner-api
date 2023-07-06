@@ -1,4 +1,4 @@
-description: Возвращенный или невыкупленный товар
+description: Возвращенный или невыкупленный товар.
 type: string
 enum:
   - REJECTED

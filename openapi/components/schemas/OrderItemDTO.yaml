@@ -48,6 +48,13 @@ properties:
       Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
+  priceBeforeDiscount:
+    description: |
+      Стоимость товара в валюте магазина до применения скидок.
+
+      Для отделения целой части от дробной используется точка.
+    type: number
+    format: decimal
   count:
     description: Количество товара.
     type: integer
@@ -118,7 +125,7 @@ properties:
     items:
       $ref: ./OrderItemDetailDTO.yaml
   subsidies:
-    description: Список субсидий по типам
+    description: Список субсидий по типам.
     type: array
     items:
       $ref: ./OrderItemSubsidyDTO.yaml

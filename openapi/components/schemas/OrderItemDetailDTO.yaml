@@ -1,8 +1,8 @@
-description: Детали по товару в заказе
+description: Детали по товару в заказе.
 type: object
 properties:
   itemCount:
-    description: Количество единиц товара
+    description: Количество единиц товара.
     type: integer
     format: int64
   itemStatus:

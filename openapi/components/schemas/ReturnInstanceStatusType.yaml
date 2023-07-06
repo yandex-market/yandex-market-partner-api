@@ -1,4 +1,4 @@
-description: Логистический статус конкретного товара
+description: Логистический статус конкретного товара.
 type: string
 enum:
   - CREATED

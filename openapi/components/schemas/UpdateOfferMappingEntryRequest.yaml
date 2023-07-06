@@ -1,10 +1,10 @@
-description: Запрос на обновление товаров
+description: Запрос на обновление товаров.
 type: object
 required:
   - offerMappingEntries
 properties:
   offerMappingEntries:
-    description: Информация о товарах в каталоге
+    description: Информация о товарах в каталоге.
     type: array
     minItems: 1
     maxItems: 500

@@ -1,4 +1,4 @@
-description: Запрос на обновление срока хранения заказа в ПВЗ
+description: Запрос на обновление срока хранения заказа в ПВЗ.
 type: object
 required:
   - newDate

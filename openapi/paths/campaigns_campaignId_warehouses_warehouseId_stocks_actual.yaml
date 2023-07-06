@@ -19,6 +19,12 @@ get:
 
 
     Запрашивает актуальную информацию по остаткам товаров на складе Маркета.
+
+
+    |**⚙️ Лимит:** ```(количество товаров на витрине) / 200```, но не менее 1000
+    товаров в минуту|
+
+    |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/WarehouseId.yaml

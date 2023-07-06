@@ -1,4 +1,4 @@
-description: Информация об изменении статуса заказа
+description: Информация об изменении статуса заказа.
 type: object
 properties:
   order:

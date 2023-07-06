@@ -1,23 +1,23 @@
 type: object
-description: Информация об адресе доставки
+description: Информация об адресе доставки.
 properties:
   country:
     type: string
-    description: Страна
+    description: Страна.
     example: Россия
   city:
     type: string
-    description: Город
+    description: Город.
     example: Москва
   street:
     type: string
-    description: Улица
+    description: Улица.
     example: Стрелецкая улица
   house:
     type: string
-    description: Номер дома
+    description: Номер дома.
     example: 9к2
   postcode:
     type: string
-    description: Почтовый индекс
+    description: Почтовый индекс.
     example: 123518

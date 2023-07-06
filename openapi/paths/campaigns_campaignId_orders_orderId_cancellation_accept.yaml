@@ -32,6 +32,11 @@ put:
 
     Если в течение 48 часов вы не подтвердите или отклоните отмену, заказ будет
     отменен автоматически.
+
+
+    |**⚙️ Лимит:** 500 запросов в час|
+
+    |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

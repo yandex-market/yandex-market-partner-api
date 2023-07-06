@@ -1,4 +1,4 @@
-description: Возврат заказа
+description: Возврат заказа.
 type: object
 properties:
   id:

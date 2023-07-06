@@ -19,7 +19,7 @@ description: >
   * `DELIVERY_SERVICE_UNDELIVERED` — служба доставки не смогла доставить заказ.
 
 
-  * `PROCESSING_EXPIRED` — магазин не обработал заказ в течение семи дней.
+  * `PROCESSING_EXPIRED` — значение более не используется.
 
 
   * `REPLACING_ORDER` — покупатель решил заменить товар другим по собственной

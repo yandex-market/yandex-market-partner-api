@@ -1,4 +1,4 @@
-description: Возвраты
+description: Возвраты.
 type: object
 properties:
   paging:

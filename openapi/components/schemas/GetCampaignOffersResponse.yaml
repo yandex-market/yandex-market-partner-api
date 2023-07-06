@@ -1,4 +1,4 @@
-description: Ответ на запрос списка товаров в магазине
+description: Ответ на запрос списка товаров в магазине.
 type: object
 allOf:
   - $ref: ./ApiResponse.yaml

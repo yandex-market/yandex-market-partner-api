@@ -1,8 +1,8 @@
-description: Список заказов, статус которых обновился
+description: Список заказов, статус которых обновился.
 type: object
 properties:
   orders:
-    description: Список с обновленными заказами
+    description: Список с обновленными заказами.
     type: array
     items:
       $ref: ./UpdateOrderStatusDTO.yaml

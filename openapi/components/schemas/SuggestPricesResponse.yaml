@@ -1,4 +1,4 @@
-description: Ответ на запрос списка цен для продвижения
+description: Ответ на запрос списка цен для продвижения.
 type: object
 allOf:
   - $ref: ./ApiResponse.yaml

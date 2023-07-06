@@ -1,4 +1,4 @@
-description: Служба доставки
+description: Служба доставки.
 type: object
 properties:
   id:

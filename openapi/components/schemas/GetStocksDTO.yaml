@@ -1,8 +1,8 @@
-description: Информация по актуальным стокам
+description: Информация по актуальным стокам.
 type: object
 properties:
   skus:
-    description: Информация о стоках
+    description: Информация о стоках.
     type: array
     items:
       $ref: ./StockDTO.yaml

@@ -1,4 +1,4 @@
-description: Информация о рекомендованных карточках товаров
+description: Информация о рекомендованных карточках товаров.
 type: object
 allOf:
   - $ref: ./MappingsOfferDTO.yaml

@@ -18,6 +18,6 @@ properties:
   type:
     $ref: ./OrderSubsidyType.yaml
   amount:
-    description: Сумма субсидии
+    description: Сумма субсидии.
     type: number
     format: decimal

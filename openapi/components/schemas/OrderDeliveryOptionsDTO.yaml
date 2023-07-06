@@ -1,4 +1,4 @@
-description: Список опций доставки
+description: Список опций доставки.
 type: object
 required:
   - deliveryOptions

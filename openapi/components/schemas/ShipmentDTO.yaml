@@ -1,4 +1,4 @@
-description: Информация об отгрузке
+description: Информация об отгрузке.
 type: object
 properties:
   id:

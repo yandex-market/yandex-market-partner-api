@@ -1,10 +1,10 @@
-description: Информация о трек-номерах
+description: Информация о трек-номерах.
 type: object
 properties:
   trackCode:
-    description: Трек‑номер посылки
+    description: Трек‑номер посылки.
     type: string
   deliveryServiceId:
-    description: Идентификатор службы доставки
+    description: Идентификатор службы доставки.
     type: integer
     format: int64

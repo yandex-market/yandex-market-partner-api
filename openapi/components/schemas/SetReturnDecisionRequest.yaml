@@ -1,15 +1,15 @@
-description: Решения по позиции в возврате
+description: Решения по позиции в возврате.
 type: object
 required:
   - returnItemId
   - decisionType
 properties:
   returnItemId:
-    description: Идентификатор позиции в возврате
+    description: Идентификатор позиции в возврате.
     type: integer
     format: int64
   decisionType:
-    description: Решение по позиции
+    description: Решение по позиции.
     $ref: ./ReturnRequestDecisionType.yaml
   comment:
     description: >

@@ -33,7 +33,7 @@ properties:
       даты доставки.
     type: string
   tracks:
-    description: Информация для отслеживания перемещений посылки
+    description: Информация для отслеживания перемещений посылки.
     type: array
     items:
       $ref: ./OrderTrackDTO.yaml

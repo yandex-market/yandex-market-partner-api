@@ -42,13 +42,13 @@ properties:
   vat:
     $ref: ./OrderVatType.yaml
   deliveryServiceId:
-    description: Идентификатор службы доставки
+    description: Идентификатор службы доставки.
     type: integer
     format: int64
   liftType:
     $ref: ./OrderLiftType.yaml
   liftPrice:
-    description: Стоимость подъема на этаж
+    description: Стоимость подъема на этаж.
     type: number
     format: decimal
   outletCode:
@@ -66,27 +66,27 @@ properties:
       Параметр указывается, если `type=PICKUP`.
     type: string
   outletStorageLimitDate:
-    description: Ближайшая дата доставки
+    description: Ближайшая дата доставки.
     $ref: ./DateDdMmYyyy.yaml
   dispatchType:
     $ref: ./OrderDeliveryDispatchType.yaml
   tracks:
-    description: Информация для отслеживания перемещений посылки
+    description: Информация для отслеживания перемещений посылки.
     type: array
     items:
       $ref: ./OrderTrackDTO.yaml
   shipments:
-    description: Информация о посылках
+    description: Информация о посылках.
     type: array
     items:
       $ref: ./OrderShipmentDTO.yaml
   estimated:
-    description: Приблизительная ли дата доставки
+    description: Приблизительная ли дата доставки.
     type: boolean
   eacType:
-    description: Тип кода подтверждения ЭАПП
+    description: Тип кода подтверждения ЭАПП.
     $ref: ./OrderDeliveryEacType.yaml
   eacCode:
     description: |
-      Код подтверждения ЭАПП (для типа MERCHANT_TO_COURIER)
+      Код подтверждения ЭАПП (для типа MERCHANT_TO_COURIER).
     type: string

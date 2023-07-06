@@ -1,0 +1,13 @@
+description: |
+  Модель, по которой работает магазин:
+
+  * `ADV` — ADV;
+  * `FBS` — FBS или Экспресс;
+  * `FBY` — FBY;
+  * `DBS` — DBS.
+type: string
+enum:
+  - ADV
+  - FBS
+  - FBY
+  - DBS

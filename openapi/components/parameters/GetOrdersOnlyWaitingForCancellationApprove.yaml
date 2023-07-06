@@ -11,4 +11,4 @@ in: query
 required: false
 schema:
   type: boolean
-default: false
+  default: false

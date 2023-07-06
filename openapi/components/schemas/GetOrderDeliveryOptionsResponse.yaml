@@ -1,4 +1,4 @@
-description: Ответ на запрос опций доставки
+description: Ответ на запрос опций доставки.
 type: object
 allOf:
   - $ref: ./ApiResponse.yaml

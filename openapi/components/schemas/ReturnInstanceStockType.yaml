@@ -1,4 +1,4 @@
-description: Тип остатка на складе
+description: Тип остатка на складе.
 type: string
 enum:
   - FIT

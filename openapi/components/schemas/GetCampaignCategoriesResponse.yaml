@@ -1,4 +1,4 @@
-description: Ответ на запрос списка категорий магазина
+description: Ответ на запрос списка категорий магазина.
 type: object
 properties:
   categories:

@@ -1,5 +1,5 @@
 description: |
-  Запрос на подтверждение цены
+  Запрос на подтверждение цены.
 type: object
 required:
   - offerIds

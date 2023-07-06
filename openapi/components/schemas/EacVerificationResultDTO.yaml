@@ -1,4 +1,4 @@
-description: Результат выполнения запроса
+description: Результат выполнения запроса.
 type: object
 properties:
   verificationResult:

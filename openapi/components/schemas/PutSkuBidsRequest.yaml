@@ -1,4 +1,4 @@
-description: description
+description: description.
 type: object
 required:
   - bids

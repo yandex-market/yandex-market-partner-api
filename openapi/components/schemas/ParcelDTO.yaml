@@ -1,4 +1,4 @@
-description: Информация о грузовых местах в заказе
+description: Информация о грузовых местах в заказе.
 type: object
 required:
   - boxes

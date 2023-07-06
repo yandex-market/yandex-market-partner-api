@@ -1,4 +1,4 @@
-description: Информация о службе доставки
+description: Информация о службе доставки.
 type: object
 required:
   - id

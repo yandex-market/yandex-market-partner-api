@@ -1,7 +1,7 @@
 type: object
 properties:
   offers:
-    description: Список товаров
+    description: Список товаров.
     type: array
     items:
       $ref: ./SuggestedOfferDTO.yaml

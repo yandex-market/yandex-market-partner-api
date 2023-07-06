@@ -66,6 +66,11 @@ put:
 
 
     В одном запросе может быть максимум 1500 товаров.
+
+
+    |**⚙️ Лимит:** 1000 запросов в минуту|
+
+    |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

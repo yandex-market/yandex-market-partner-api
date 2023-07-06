@@ -44,7 +44,7 @@ properties:
     type: number
     format: decimal
   deliveryTotal:
-    description: Стоимость доставки в валюте заказа
+    description: Стоимость доставки в валюте заказа.
     type: number
     format: decimal
   subsidyTotal:
@@ -70,25 +70,25 @@ properties:
   buyerItemsTotal:
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя после применения
-      скидок и без учета стоимости доставки
+      скидок и без учета стоимости доставки.
     type: number
     format: decimal
   buyerTotal:
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя после применения
-      скидок и с учетом стоимости доставки
+      скидок и с учетом стоимости доставки.
     type: number
     format: decimal
   buyerItemsTotalBeforeDiscount:
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
-      без учета стоимости доставки
+      без учета стоимости доставки.
     type: number
     format: decimal
   buyerTotalBeforeDiscount:
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
-      с учетом стоимости доставки
+      с учетом стоимости доставки.
     type: number
     format: decimal
   paymentType:
@@ -109,7 +109,7 @@ properties:
     items:
       $ref: ./OrderItemDTO.yaml
   subsidies:
-    description: Список субсидий по типам
+    description: Список субсидий по типам.
     type: array
     items:
       $ref: ./OrderItemSubsidyDTO.yaml
@@ -123,7 +123,7 @@ properties:
   taxSystem:
     $ref: ./OrderTaxSystemType.yaml
   cancelRequested:
-    description: Запрошена ли отмена
+    description: Запрошена ли отмена.
     type: boolean
   expiryDate:
     description: >

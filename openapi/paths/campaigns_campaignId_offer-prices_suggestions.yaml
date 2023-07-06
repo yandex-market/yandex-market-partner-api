@@ -42,11 +42,13 @@ post:
     В одном запросе можно получить цены не более чем для 1000 товаров.
 
 
-    В течение часа можно получить цены не более чем для 100 000 товаров.
-
-
     Подробно об автоматическом управлении ценами рассказано [в Справке для
     продавцов](https://yandex.ru/support/marketplace/marketing/prices.html).
+
+
+    |**⚙️ Лимит:** 100 000 товаров в час|
+
+    |-|
   deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

@@ -1,4 +1,4 @@
-description: Информация о ярлыке для грузового места
+description: Информация о ярлыке для грузового места.
 type: object
 required:
   - url

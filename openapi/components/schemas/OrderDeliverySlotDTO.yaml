@@ -1,4 +1,4 @@
-description: Слот доставки
+description: Слот доставки.
 type: object
 required:
   - fromDate
