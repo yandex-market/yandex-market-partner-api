@@ -1,4 +1,4 @@
-description: description.
+description: Значение ставки.
 type: integer
 format: int32
 minimum: 0
