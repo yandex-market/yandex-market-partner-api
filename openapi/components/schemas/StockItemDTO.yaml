@@ -1,5 +1,5 @@
 description: |
-  Информация об остатке товара.
+  Информация об остатках товара.
 type: object
 required:
   - count
