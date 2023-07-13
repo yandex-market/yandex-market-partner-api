@@ -211,6 +211,8 @@ paths:
     $ref: paths/businesses_businessId_bids.yaml
   /campaigns/{campaignId}/bids:
     $ref: paths/campaigns_campaignId_bids.yaml
+  /businesses/{businessId}/bids/info:
+    $ref: paths/businesses_businessId_bids_info.yaml
 components:
   securitySchemes:
     OAuth:

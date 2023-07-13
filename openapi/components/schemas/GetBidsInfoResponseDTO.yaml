@@ -1,0 +1,12 @@
+description: Список товаров с указанными ставками.
+type: object
+required:
+  - bids
+properties:
+  bids:
+    description: Страница списка товаров.
+    type: array
+    items:
+      $ref: ./SkuBidItemDTO.yaml
+  paging:
+    $ref: ./ForwardScrollingPagerDTO.yaml
