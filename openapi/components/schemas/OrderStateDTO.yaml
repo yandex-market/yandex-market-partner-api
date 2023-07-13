@@ -3,7 +3,6 @@ type: object
 required:
   - id
   - status
-  - substatus
 properties:
   id:
     description: Идентификатор заказа.
