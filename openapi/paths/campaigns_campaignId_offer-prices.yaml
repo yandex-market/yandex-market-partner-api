@@ -77,9 +77,12 @@ post:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** `(количество товаров на витрине) * 25` товаров в сутки|
+    |**⚙️ Лимит:** рассчитывается по [формуле](*rule)|
 
     |-|
+
+
+    [//]: <> (rule: суточный лимит товаров — количество товаров на витрине * 25)
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
