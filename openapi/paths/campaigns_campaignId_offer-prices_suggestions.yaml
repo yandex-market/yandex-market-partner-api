@@ -7,15 +7,6 @@ post:
   operationId: getSuggestedPrices
   summary: Цены для продвижения товаров
   description: >
-    {% note alert "Deprecated" %}
-
-
-    Этот метод устарел. Не используйте его.
-
-
-    {% endnote %}
-
-
     Возвращает цены для продвижения товаров, которые вы размещаете на Маркете.
 
 
@@ -49,7 +40,6 @@ post:
     |**⚙️ Лимит:** 100 000 товаров в час|
 
     |-|
-  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:
