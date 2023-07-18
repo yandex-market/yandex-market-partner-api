@@ -1,0 +1,13 @@
+description: Информация о складах и группах складов.
+type: object
+properties:
+  warehouses:
+    description: Список складов, не входящих в группы.
+    type: array
+    items:
+      $ref: ./WarehouseDTO.yaml
+  warehouseGroups:
+    description: Список групп складов.
+    type: array
+    items:
+      $ref: ./WarehouseGroupDTO.yaml

@@ -1,0 +1,42 @@
+get:
+  tags:
+    - warehouses
+    - fbs
+    - dbs
+    - express
+  operationId: getWarehouses
+  summary: Информация о складах
+  description: >
+    Возвращает список складов и, если склады объединены, список групп складов.
+    [Что такое группы складов и зачем они
+    нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks)
+
+
+    Среди прочего запрос позволяет определить идентификатор, который нужно
+    использовать при передаче остатков для группы складов.
+
+
+    |**⚙️ Лимит:** 100 запросов в минуту|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  responses:
+    '200':
+      description: Список складов и групп складов.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetWarehousesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

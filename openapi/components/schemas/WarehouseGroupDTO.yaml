@@ -1,0 +1,21 @@
+description: Информация о группе складов.
+type: object
+required:
+  - name
+  - mainWarehouse
+  - warehouses
+properties:
+  name:
+    description: Название группы складов.
+    type: string
+  mainWarehouse:
+    description: >-
+      Склад, индентификатор которого нужно использовать для передачи остатков по
+      всей группе.
+    $ref: ./WarehouseDTO.yaml
+  warehouses:
+    description: Список складов, входящих в группу.
+    type: array
+    items:
+      description: Склад.
+      $ref: ./WarehouseDTO.yaml

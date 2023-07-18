@@ -1,0 +1,18 @@
+description: Информация о складе.
+type: object
+required:
+  - id
+  - name
+  - campaignId
+properties:
+  id:
+    description: Идентификатор склада.
+    type: integer
+    format: int64
+  name:
+    description: Название склада.
+    type: string
+  campaignId:
+    description: Идентификатор кампании в API и идентификатор магазина.
+    type: integer
+    format: int64
