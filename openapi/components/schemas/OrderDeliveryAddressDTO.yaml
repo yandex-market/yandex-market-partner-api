@@ -64,3 +64,11 @@ properties:
 
       Обязательный параметр.
     type: string
+  lat:
+    type: number
+    format: decimal
+    description: GPS-координаты, широта.
+  lon:
+    type: number
+    format: decimal
+    description: GPS-координаты, долгота.
