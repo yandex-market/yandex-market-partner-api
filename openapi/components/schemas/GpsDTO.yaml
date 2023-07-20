@@ -1,0 +1,15 @@
+description: |
+  GPS-координаты широты и долготы.
+type: object
+required:
+  - latitude
+  - longitude
+properties:
+  latitude:
+    type: number
+    format: decimal
+    description: Широта.
+  longitude:
+    type: number
+    format: decimal
+    description: Долгота.
