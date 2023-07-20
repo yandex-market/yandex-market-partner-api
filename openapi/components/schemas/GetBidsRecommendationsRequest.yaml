@@ -1,0 +1,13 @@
+description: description.
+type: object
+required:
+  - skus
+properties:
+  skus:
+    description: |
+      Список товаров, для которых нужно получить рекомендации по ставкам.
+    type: array
+    minItems: 1
+    maxItems: 1500
+    items:
+      $ref: ./ShopSku.yaml

@@ -1,0 +1,10 @@
+description: Список товаров с рекомендованными ставками.
+type: object
+required:
+  - recommendations
+properties:
+  recommendations:
+    description: Список товаров с рекомендованными ставками.
+    type: array
+    items:
+      $ref: ./SkuBidRecommendationItemDTO.yaml

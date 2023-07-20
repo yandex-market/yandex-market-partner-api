@@ -1,0 +1,23 @@
+description: Список товаров с рекомендованными ставками.
+type: object
+required:
+  - sku
+  - bid
+properties:
+  sku:
+    description: SKU товара, которому соответствует ставка из параметра `bid`.
+    $ref: ./ShopSku.yaml
+  bid:
+    description: >
+      Значение рекомендованной ставки для товара из параметра `sku`, от 50 до
+      9999.
+
+
+      Указывается в процентах от стоимости товара и умножается на 100. Например,
+      ставка 5% обозначается как 500.
+    $ref: ./Bid.yaml
+  priceRecommendations:
+    description: Рекомендованные цены.
+    type: array
+    items:
+      $ref: ./PriceRecommendationItemDTO.yaml

@@ -1,0 +1,18 @@
+description: Рекомендованная цена.
+type: object
+required:
+  - campaignId
+  - price
+properties:
+  campaignId:
+    description: Идентификатор магазина.
+    type: integer
+    format: int64
+  price:
+    description: >
+      Рекомендованная цена товара. Чтобы продвижение хорошо работало, цена
+      товара должна быть не выше этого значения. [Подробно о рекомендованных
+      ценах](https://yandex.ru/support/marketplace/marketing/campaigns.html#prices)
+    type: number
+    format: decimal
+    minimum: 1

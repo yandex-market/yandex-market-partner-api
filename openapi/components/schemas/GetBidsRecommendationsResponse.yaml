@@ -1,0 +1,7 @@
+description: description.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GetBidsRecommendationsResponseDTO.yaml

@@ -213,6 +213,8 @@ paths:
     $ref: paths/campaigns_campaignId_bids.yaml
   /businesses/{businessId}/bids/info:
     $ref: paths/businesses_businessId_bids_info.yaml
+  /businesses/{businessId}/bids/recommendations:
+    $ref: paths/businesses_businessId_bids_recommendations.yaml
   /businesses/{businessId}/warehouses:
     $ref: paths/businesses_businessId_warehouses.yaml
 components:

@@ -1,0 +1,53 @@
+post:
+  tags:
+    - bids
+    - dbs
+    - fbs
+    - fby
+    - express
+  operationId: getBidsRecommendations
+  summary: Рекомендованные ставки для заданных товаров
+  description: >
+    Возвращает рекомендованные ставки для заданных товаров — такие ставки
+    обеспечивают вашим предложениям максимальную долю показов, если цена не
+    превышает рекомендованную.
+
+
+    Если товар только добавлен в каталог, но пока не продается, рекомендованной
+    ставки для него не будет.
+
+
+    В одном запросе может быть максимум 1500 товаров.
+
+
+    |**⚙️ Лимит:** 1000 запросов в минуту|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    description: description.
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetBidsRecommendationsRequest.yaml
+  responses:
+    '200':
+      description: Рекомендованные ставки для заданных товаров.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetBidsRecommendationsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
