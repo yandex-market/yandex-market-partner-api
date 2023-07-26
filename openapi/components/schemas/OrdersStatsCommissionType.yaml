@@ -1,25 +1,39 @@
 description: >
-  Тип комиссии:
+  Услуга:
 
 
-  * `AGENCY` — прием и перечисление денег от покупателя (агентское
-  вознаграждение).
+  * `FEE` — размещение товара на Маркете;
 
+  * `FULFILLMENT` — складская обработка;
 
-  * `FEE` — комиссия за размещение товара на Маркете.
+  * `LOYALTY_PARTICIPATION_FEE` — участие в программе лояльности и отзывы за
+  баллы, если они подключены;
 
+  * `AUCTION_PROMOTION` — буст продаж;
 
-  * `FULFILLMENT` — комиссия за хранение товара на складе Маркета.
+  * `INSTALLMENT` — рассрочка;
+
+  * `DELIVERY_TO_CUSTOMER` — доставка покупателю;
+
+  * `EXPRESS_DELIVERY_TO_CUSTOMER` — экспресс-доставка покупателю;
+
+  * `AGENCY` — прием платежа покупателя;
+
+  * `PAYMENT_TRANSFER` — перевод платежа покупателя;
+
+  * `RETURNED_ORDERS_STORAGE` — хранение невыкупов и возвратов;
+
+  * `SORTING` — обработка заказа.
 type: string
 enum:
-  - AGENCY
   - FEE
   - FULFILLMENT
+  - LOYALTY_PARTICIPATION_FEE
   - AUCTION_PROMOTION
+  - INSTALLMENT
   - DELIVERY_TO_CUSTOMER
   - EXPRESS_DELIVERY_TO_CUSTOMER
-  - INSTALLMENT
-  - LOYALTY_PARTICIPATION_FEE
+  - AGENCY
   - PAYMENT_TRANSFER
   - RETURNED_ORDERS_STORAGE
   - SORTING
