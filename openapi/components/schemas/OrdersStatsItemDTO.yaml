@@ -68,16 +68,17 @@ properties:
     example: 570
   cofinanceThreshold:
     description: >
-      Ваш порог снижения цены для участия в софинансировании на момент
-      оформления заказа, руб.
+      Порог для скидок с Маркетом на момент оформления заказа. [Что это
+      такое?](https://yandex.ru/support/marketplace/marketing/smart-pricing.html#sponsored-discounts)
 
-      Указана в рублях.
 
-      Точность — два знака после запятой.
+      Указан в рублях. Точность — два знака после запятой.
     type: number
   cofinanceValue:
-    description: |
-      Ваша скидка, если товар участвовал в софинансировании, руб.
-      Указана в рублях.
-      Точность — два знака после запятой.
+    description: >
+      Скидка с Маркетом. [Что это
+      такое?](https://yandex.ru/support/marketplace/marketing/smart-pricing.html#sponsored-discounts)
+
+
+      Указана в рублях. Точность — два знака после запятой.
     type: number
