@@ -7,11 +7,8 @@ required:
   - updatedAt
 properties:
   count:
-    description: >
-      Количество доступного товара с учетом резерва. О том, как учитывать
-      резерв, рассказано в статье [Как управлять
-      остатками](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#reserved)
-      в Справке для продавцов.
+    description: |
+      Количество доступного товара.
     format: int64
     type: integer
     minimum: 0
