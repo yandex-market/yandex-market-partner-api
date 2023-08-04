@@ -1,0 +1,42 @@
+get:
+  tags:
+    - reports
+    - fby
+    - dbs
+    - fbs
+    - express
+  operationId: getReportInfo
+  summary: Статус генерации и скачивание готовых отчетов
+  description: >
+    Возвращает статус генерации заданного отчета и, если отчет готов, ссылку для
+    скачивания.
+
+
+    Чтобы воспользоваться этим запросом, вначале нужно запустить генерацию
+    отчета. [Инструкция](../../step-by-step/reports.md)
+
+
+    |**⚙️ Лимит:** 100 запросов в минуту|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/ReportId.yaml
+  responses:
+    '200':
+      description: "Статус генерации отчета и ссылка, если она уже есть.\n\n{% note tip %}\n\nЕсли статус генерации отчета — `FAILED` или `NO_DATA`, проверьте корректность запроса на генерацию. Например, верно ли указан идентификатор магазина, период или номер платежного поручения.\n\n{% endnote %}\n\n\_\n"
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetReportInfoResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

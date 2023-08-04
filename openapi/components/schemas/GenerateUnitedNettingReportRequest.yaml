@@ -1,0 +1,44 @@
+description: >
+  Данные, необходимые для генерации отчета: идентификатор магазина, период, за
+  который нужен отчет, а также фильтры.
+type: object
+required:
+  - businessId
+properties:
+  businessId:
+    description: Идентификатор бизнеса.
+    format: int64
+    type: integer
+  dateTimeFrom:
+    description: Начало периода, включительно.
+    format: date-time
+    type: string
+  dateTimeTo:
+    description: Конец периода, включительно. Максимальный период — 1 год.
+    format: date-time
+    type: string
+  bankOrderId:
+    description: Номер платежного поручения.
+    format: int64
+    type: integer
+  bankOrderDateTime:
+    description: Дата платежного поручения.
+    format: date-time
+    type: string
+  placementPrograms:
+    description: |
+      Список моделей, которые нужны в отчете.
+    type: array
+    items:
+      $ref: ./PlacementType.yaml
+  inns:
+    description: Список ИНН, которые нужны в отчете.
+    type: array
+    items:
+      type: string
+  campaignIds:
+    description: Список магазинов, которые нужны в отчете.
+    type: array
+    items:
+      type: integer
+      format: int64

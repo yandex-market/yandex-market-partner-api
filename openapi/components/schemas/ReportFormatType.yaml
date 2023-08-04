@@ -1,0 +1,7 @@
+description: |
+  Формат отчета:
+
+  - `FILE` — файл с электронной таблицей.
+type: string
+enum:
+  - FILE

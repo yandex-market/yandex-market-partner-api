@@ -1,0 +1,23 @@
+description: >
+  Данные, необходимые для генерации отчета: идентификатор магазина и период, за
+  который нужен отчет.
+type: object
+required:
+  - campaignId
+  - year
+  - month
+properties:
+  campaignId:
+    description: Идентификатор магазина.
+    type: integer
+    format: int64
+  year:
+    description: Год.
+    type: integer
+    format: int32
+  month:
+    description: Номер месяца.
+    type: integer
+    format: int32
+    minimum: 1
+    maximum: 12

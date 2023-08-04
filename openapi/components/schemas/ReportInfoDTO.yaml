@@ -1,0 +1,23 @@
+description: Статус генерации и ссылка на готовый отчет.
+type: object
+required:
+  - status
+  - generationRequestedAt
+properties:
+  status:
+    $ref: ./ReportStatusType.yaml
+  generationRequestedAt:
+    description: Дата и время запроса на генерацию.
+    type: string
+    format: date-time
+  generationFinishedAt:
+    description: Дата и время завершения генерации.
+    type: string
+    format: date-time
+  file:
+    description: Ссылка на готовый отчет.
+    type: string
+  estimatedGenerationTime:
+    description: Ожидаемая продолжительность генерации в миллисекундах.
+    type: integer
+    format: int64

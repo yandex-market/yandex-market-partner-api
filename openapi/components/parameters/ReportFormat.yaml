@@ -1,0 +1,8 @@
+description: >-
+  Формат отчета. Пока отчеты доступны только в одном формате — они
+  предоставляются в виде электронной таблицы.
+name: format
+in: query
+required: false
+schema:
+  $ref: ../schemas/ReportFormatType.yaml

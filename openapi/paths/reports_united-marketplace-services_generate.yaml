@@ -1,0 +1,65 @@
+post:
+  tags:
+    - reports
+    - fby
+    - dbs
+    - fbs
+    - express
+  operationId: generateUnitedMarketplaceServicesReport
+  summary: Отчет по стоимости услуг
+  description: >
+    Запускает генерацию **отчета по стоимости услуг** за заданный период. [Что
+    это за отчет](https://yandex.ru/support/marketplace/analytics/reports.html)
+
+
+    Тип отчета зависит от того, какие поля заполнены в запросе:
+
+
+    |Тип отчета               |Какие поля нужны             |
+
+    |-------------------------|-----------------------------|
+
+    |По дате начисления услуги|`dateTimeFrom` и `dateTimeTo`|
+
+    |По дате формирования акта|`year` и `month`             |
+
+
+    Заказать отчеты обоих типов одним запросом нельзя.
+
+
+    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
+    запроса [GET
+    reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+
+    |**⚙️ Лимит:** 100 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/ReportFormat.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: >-
+            ../components/schemas/GenerateUnitedMarketplaceServicesReportRequest.yaml
+  responses:
+    '200':
+      description: >-
+        В ответ приходит идентификатор, который позволяет узнавать статус
+        генерации и скачать готовый отчет.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GenerateReportResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

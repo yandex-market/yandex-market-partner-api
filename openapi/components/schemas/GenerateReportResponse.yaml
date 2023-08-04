@@ -1,0 +1,7 @@
+description: Ответ на запрос генерации отчёта.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GenerateReportDTO.yaml

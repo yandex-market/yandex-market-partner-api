@@ -169,6 +169,14 @@ paths:
     $ref: paths/campaigns_campaignId_stats_orders.yaml
   /campaigns/{campaignId}/stats/skus:
     $ref: paths/campaigns_campaignId_stats_skus.yaml
+  /reports/info/{reportId}:
+    $ref: paths/reports_info_reportId.yaml
+  /reports/united-netting/generate:
+    $ref: paths/reports_united-netting_generate.yaml
+  /reports/united-marketplace-services/generate:
+    $ref: paths/reports_united-marketplace-services_generate.yaml
+  /reports/goods-realization/generate:
+    $ref: paths/reports_goods-realization_generate.yaml
   /campaigns/{campaignId}/outlets:
     $ref: paths/campaigns_campaignId_outlets.yaml
   /campaigns/{campaignId}/outlets/{outletId}:

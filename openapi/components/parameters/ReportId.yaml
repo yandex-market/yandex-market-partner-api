@@ -1,0 +1,7 @@
+description: |
+  Идентификатор отчета, который вы получили после запуска генерации.
+name: reportId
+in: path
+required: true
+schema:
+  type: string

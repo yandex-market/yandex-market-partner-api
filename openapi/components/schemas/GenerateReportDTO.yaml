@@ -1,0 +1,17 @@
+description: >-
+  Идентификатор, который понадобится для отслеживания статуса генерации и
+  получения готового отчета.
+type: object
+required:
+  - reportId
+  - estimatedGenerationTime
+properties:
+  reportId:
+    description: >-
+      Идентификатор, который понадобится для отслеживания статуса генерации и
+      получения готового отчета.
+    type: string
+  estimatedGenerationTime:
+    description: Ожидаемая продолжительность генерации в миллисекундах.
+    type: integer
+    format: int64
