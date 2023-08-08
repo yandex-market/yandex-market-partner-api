@@ -13,5 +13,3 @@ enum:
   - UTILIZATION
   - DEFECT
   - EXPIRED
-  - TRANSIT
-  - SUGGEST

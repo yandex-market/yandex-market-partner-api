@@ -25,13 +25,6 @@ description: >
 
 
   * `UTILIZATION` — товар, который будет утилизирован.
-
-
-  * `SUGGEST` — товар, который рекомендуется поставить на склад (могут заказать
-  в ближайшие две недели).
-
-
-  * `TRANSIT` (соответствует типу «Продан») — проданный товар.
 type: string
 enum:
   - FIT
@@ -41,5 +34,3 @@ enum:
   - UTILIZATION
   - DEFECT
   - EXPIRED
-  - TRANSIT
-  - SUGGEST
