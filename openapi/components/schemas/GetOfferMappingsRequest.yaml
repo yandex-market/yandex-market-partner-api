@@ -5,6 +5,7 @@ properties:
     type: array
     items:
       $ref: ./ShopSku.yaml
+    maxItems: 200
   cardStatuses:
     description: >
       Фильтр по статусам карточек.
