@@ -22,6 +22,9 @@ properties:
 
       Обязательный параметр.
     type: string
+  district:
+    description: Район.
+    type: string
   subway:
     description: Станция метро.
     type: string
