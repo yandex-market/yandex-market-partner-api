@@ -66,7 +66,7 @@ properties:
       Параметр указывается, если `type=PICKUP`.
     type: string
   outletStorageLimitDate:
-    description: Ближайшая дата доставки.
+    description: Дата, до которой заказ будет храниться в пункте выдачи.
     $ref: ./DateDdMmYyyy.yaml
   dispatchType:
     $ref: ./OrderDeliveryDispatchType.yaml
