@@ -15,7 +15,7 @@ post:
 
 
     Этот метод не работает с новыми магазинами. Вместо него используйте [POST
-    businesses/{businessId}/offer-prices/updates](../prices/updateBusinessPrices.md).
+    businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
 
 
     {% endnote %}

@@ -71,7 +71,7 @@ post:
 
 
     Этот метод не работает с новыми магазинами. Вместо него используйте [POST
-    businesses/{businessId}/offer-mappings](../business-offer-mappings/getOfferMappings.md).
+    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
 
 
     {% endnote %}

@@ -15,9 +15,9 @@ post:
 
     Проверьте цену каждого из товаров, попавших в карантин. Если ошибки нет и
     цена правильная, подтвердите ее с помощью запроса [POST
-    businesses/{businessId}/price-quarantine/confirm](confirmBusinessPrices.md).
+    businesses/{businessId}/price-quarantine/confirm](../../reference/business-assortment/confirmBusinessPrices.md).
     Если цена в самом деле ошибочная, установите верную с помощью запроса [POST
-    businesses/{businessId}/offer-prices/updates](../prices/updateBusinessPrices.md).
+    businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
 
 
     {% note info "𝓠 Что такое карантин?" %}
