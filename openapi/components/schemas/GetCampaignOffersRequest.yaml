@@ -22,13 +22,7 @@ properties:
     items:
       $ref: ./OfferCampaignStatusType.yaml
   categoryIds:
-    description: >
-      Фильтр по категориям на Маркете.
-
-
-      Чтобы узнать идентификатор категории, откройте ее страницу на
-      [market.yandex.ru](https://market.yandex.ru/). Идентификатор — это число
-      после `?hid=` в URL страницы.
+    description: Фильтр по категориям на Маркете.
     type: array
     items:
       type: integer
