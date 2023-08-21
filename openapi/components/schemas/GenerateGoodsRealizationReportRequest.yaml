@@ -8,7 +8,7 @@ required:
   - month
 properties:
   campaignId:
-    description: Идентификатор магазина.
+    description: Идентификатор кампании.
     type: integer
     format: int64
   year:
