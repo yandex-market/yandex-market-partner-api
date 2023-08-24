@@ -6,5 +6,7 @@ properties:
   orders:
     description: Список заказов.
     type: array
+    minItems: 1
+    maxItems: 30
     items:
       $ref: ./OrderStateDTO.yaml
