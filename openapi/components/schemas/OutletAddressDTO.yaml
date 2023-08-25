@@ -30,18 +30,23 @@ properties:
   street:
     description: Улица.
     type: string
+    maxLength: 512
   number:
     description: Номер дома.
     type: string
+    maxLength: 256
   building:
     description: Номер строения.
     type: string
+    maxLength: 32
   estate:
     description: Номер владения.
     type: string
+    maxLength: 16
   block:
     description: Номер корпуса.
     type: string
+    maxLength: 16
   additional:
     description: Дополнительная информация.
     type: string
@@ -61,4 +66,5 @@ properties:
 
 
       {% endnote %}
+    maxLength: 200
     type: string
