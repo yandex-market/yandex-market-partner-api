@@ -23,7 +23,7 @@ post:
     - $ref: ../components/parameters/PageToken.yaml
     - $ref: ../components/parameters/PageLimit.yaml
   requestBody:
-    required: true
+    required: false
     content:
       application/json:
         schema:
