@@ -1,0 +1,33 @@
+description: >-
+  Состояние процесса создания/привязки карточки для оффера, а также показатели
+  заполненности.
+type: object
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  mapping:
+    $ref: ./GetMappingDTO.yaml
+  cardStatus:
+    description: Статус карточки
+    $ref: ./OfferCardStatusType.yaml
+  contentRating:
+    description: Рейтинг заполненности карточки.
+    type: integer
+    format: int32
+  recommendations:
+    description: Список рекомендаций к заполнению товара для карточки.
+    type: array
+    items:
+      $ref: ./RecommendationDTO.yaml
+  errors:
+    description: |
+      Ошибки, препятствующие размещению товара на витрине.
+    type: array
+    items:
+      $ref: ./OfferErrorDTO.yaml
+  warnings:
+    description: |
+      Предупреждения, не препятствующие размещению товара на витрине.
+    type: array
+    items:
+      $ref: ./OfferErrorDTO.yaml

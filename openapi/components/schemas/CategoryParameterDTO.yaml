@@ -1,0 +1,43 @@
+description: Параметр категории.
+type: object
+properties:
+  id:
+    description: Идентификатор параметра.
+    type: integer
+    format: int64
+  name:
+    description: Наименование параметра.
+    type: string
+  type:
+    description: Тип параметра.
+    $ref: ./ParameterType.yaml
+  description:
+    description: Описание параметра.
+    type: string
+  groups:
+    description: Список групп параметров, к которым параметр относится.
+    type: array
+    items:
+      $ref: ./ParameterGroupType.yaml
+  isRequired:
+    description: Обязательность параметра.
+    type: boolean
+  isFiltering:
+    description: Необходимость заполнения параметра для попадания в фильтр.
+    type: boolean
+  isDistinctive:
+    description: Является ли параметр определяющим для SKU.
+    type: boolean
+  isMultivalue:
+    description: Допускает ли параметр множественные значения.
+    type: boolean
+  allowCustomValues:
+    description: >-
+      Допускает ли параметр ввод собственных значений в дополнение к списку
+      допустимых.
+    type: boolean
+  values:
+    description: Список допустимых значений параметра.
+    type: array
+    items:
+      $ref: ./ParameterValueDTO.yaml

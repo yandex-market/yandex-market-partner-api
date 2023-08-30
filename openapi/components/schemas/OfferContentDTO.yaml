@@ -1,0 +1,12 @@
+description: Товар с параметрами для сохранения.
+type: object
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  categoryId:
+    $ref: ./CategoryId.yaml
+  parameterValues:
+    description: Список заполняемых характеристик и их значения.
+    type: array
+    items:
+      $ref: ./ParameterValuesDTO.yaml

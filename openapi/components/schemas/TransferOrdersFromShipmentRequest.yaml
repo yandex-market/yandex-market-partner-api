@@ -1,0 +1,14 @@
+description: Запрос переноса заказов из отгрузки.
+type: object
+required:
+  - orderIds
+properties:
+  orderIds:
+    description: Список заказов, которые вы не успеваете подготовить.
+    type: array
+    minItems: 1
+    maxItems: 500
+    items:
+      description: Идентификатор заказа.
+      type: integer
+      format: int64

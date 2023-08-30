@@ -1,0 +1,7 @@
+description: Тип параметра.
+type: string
+enum:
+  - TEXT
+  - ENUM
+  - BOOLEAN
+  - NUMERIC

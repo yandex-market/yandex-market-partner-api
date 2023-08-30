@@ -1,0 +1,8 @@
+description: Запрос на установку новых значений для параметров.
+type: object
+properties:
+  offerContentStatuses:
+    description: Список состояний с заполненными параметрами товаров для сохранения.
+    type: array
+    items:
+      $ref: ./OfferContentDTO.yaml

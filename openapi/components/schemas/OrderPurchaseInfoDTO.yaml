@@ -1,0 +1,12 @@
+description: Заказ.
+type: object
+properties:
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  items:
+    description: Список товаров в заказе.
+    type: array
+    items:
+      $ref: ./OrderItemPurchaseInfoDTO.yaml

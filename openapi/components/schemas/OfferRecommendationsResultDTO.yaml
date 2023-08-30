@@ -1,0 +1,10 @@
+description: Список товаров с порогами и рекомендациями.
+type: object
+properties:
+  paging:
+    $ref: ./ScrollingPagerDTO.yaml
+  offerRecommendations:
+    description: Страница списка товаров.
+    type: array
+    items:
+      $ref: ./OfferRecommendationDTO.yaml

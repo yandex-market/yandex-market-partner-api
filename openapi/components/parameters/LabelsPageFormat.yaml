@@ -1,0 +1,9 @@
+name: format
+in: query
+required: true
+schema:
+  $ref: ../schemas/LabelPageFormatType.yaml
+description: |
+  Формат страницы сгенерированных ярлыков:
+  * `A4` — формат страницы A4, вмещает в себя 16 ярлыков.
+  * `A8` — формат страницы A8, 1 ярлык на маленькой странице.

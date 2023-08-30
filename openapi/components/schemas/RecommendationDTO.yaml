@@ -1,0 +1,8 @@
+description: Рекомендации к заполнению полей товара для карточки.
+type: object
+properties:
+  parameterGroup:
+    $ref: ./ParameterGroupType.yaml
+  message:
+    description: Текст рекомендации к заполнению товара для карточки.
+    type: string

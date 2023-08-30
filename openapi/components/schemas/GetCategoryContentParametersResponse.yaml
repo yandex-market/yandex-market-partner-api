@@ -1,0 +1,10 @@
+description: Ответ со списком параметров категории и их допустимыми значениями.
+type: object
+properties:
+  categoryId:
+    $ref: ./CategoryId.yaml
+  parameters:
+    description: Список параметров категории.
+    type: array
+    items:
+      $ref: ./CategoryParameterDTO.yaml
