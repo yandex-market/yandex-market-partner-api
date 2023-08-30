@@ -1,8 +1,0 @@
-description: Порог для скидок с Маркетом.
-type: object
-properties:
-  offerId:
-    $ref: ./ShopSku.yaml
-  cofinancePrice:
-    description: Значение порога.
-    $ref: ./GetPriceDTO.yaml

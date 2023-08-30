@@ -1,9 +1,0 @@
-description: Рекомендованные пороги для цены товара.
-type: object
-properties:
-  optimalPrice:
-    description: Порог с оптимальной ценой.
-    $ref: ./BasePriceDTO.yaml
-  averagePrice:
-    description: Порог со средней ценой.
-    $ref: ./BasePriceDTO.yaml

@@ -1,7 +1,0 @@
-description: Маркировка единицы товара.
-type: object
-required:
-  - cis
-properties:
-  cis:
-    $ref: ./Cis.yaml
