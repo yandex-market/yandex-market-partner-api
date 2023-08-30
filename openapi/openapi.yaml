@@ -127,6 +127,9 @@ paths:
       paths/campaigns_campaignId_first-mile_shipments_shipmentId_discrepancy-act.yaml
   /campaigns/{campaignId}/first-mile/shipments:
     $ref: paths/campaigns_campaignId_first-mile_shipments.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/orders/transfer:
+    $ref: >-
+      paths/campaigns_campaignId_first-mile_shipments_shipmentId_orders_transfer.yaml
   /businesses/{businessId}/offer-mappings/delete:
     $ref: paths/businesses_businessId_offer-mappings_delete.yaml
   /businesses/{businessId}/offer-mappings:
@@ -193,6 +196,8 @@ paths:
     $ref: paths/campaigns_campaignId_offers_delete.yaml
   /campaigns/{campaignId}/offers/all:
     $ref: paths/campaigns_campaignId_offers_all.yaml
+  /businesses/{businessId}/offers/recommendations:
+    $ref: paths/businesses_businessId_offers_recommendations.yaml
   /campaigns/{campaignId}/feeds/{feedId}:
     $ref: paths/campaigns_campaignId_feeds_feedId.yaml
   /campaigns/{campaignId}/feeds:

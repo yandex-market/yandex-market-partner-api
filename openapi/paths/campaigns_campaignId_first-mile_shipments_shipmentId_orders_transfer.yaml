@@ -1,0 +1,68 @@
+post:
+  tags:
+    - shipments
+    - fbs
+  operationId: transferOrdersFromShipment
+  summary: Перенос заказов в следующую отгрузку
+  description: >
+    Переносит указанные заказы из указанной отгрузки в следующую отгрузку. [Что
+    такое
+    отгрузка?](https://yandex.ru/support/marketplace/orders/fbs/process.html#ship)
+
+
+    Используйте этот запрос, если не успеваете собрать и упаковать заказы
+    вовремя.
+
+
+    {% note warning "Такие переносы снижают индекс качества магазина" %}
+
+
+    Этот запрос предназначен для исключительных случаев. Если вы будете
+    переносить заказы слишком часто, магазин столкнется с ограничениями. [Что за
+    ограничения?](https://yandex.ru/support/marketplace/quality/score/fbs.html)
+
+
+    {% endnote %}
+
+
+    Переносить заказы можно, если до формирования отгрузки осталось больше
+    получаса.
+
+
+    Перенос происходит не мгновенно, а занимает несколько минут.
+
+
+    |**⚙️ Лимит:** 200 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/params_ShipmentId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/TransferOrdersFromShipmentRequest.yaml
+  responses:
+    '200':
+      description: >-
+        Запрос на перенос заказов проверен и принят, и они будут перенесены
+        спустя несколько минут.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      description: "Ошибка 400 обозначает, что в переданном вами списке заказов что-то не так — например, не все они относятся к заданной отгрузке. В сообщении об ошибке будут все подробности.\n\n{% note warning \"Частичное выполнение запроса невозможно\" %}\n\nЕсли в списке есть хотя бы один проблемный идентификатор, не будет перенесен ни один заказ из списка.\n\n{% endnote %}\n\n\_\n"
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

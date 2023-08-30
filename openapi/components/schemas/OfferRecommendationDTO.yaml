@@ -1,0 +1,11 @@
+description: >
+  Информация о пороге цены для скидки с Маркетом: какой указан сейчас и какой
+  рекомендуется.
+type: object
+properties:
+  offer:
+    description: Порог, указанный в каталоге.
+    $ref: ./OfferForRecommendationDTO.yaml
+  recommendation:
+    description: Рекомендованный порог.
+    $ref: ./OfferRecommendationInfoDTO.yaml
