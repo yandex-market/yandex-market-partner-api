@@ -43,7 +43,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/GetStocksResponse.yaml
+            $ref: ../components/schemas/GetActualStocksResponse.yaml
     '400':
       $ref: ../components/responses/400.yaml
     '401':

@@ -3,4 +3,4 @@ allOf:
   - $ref: ./ApiResponse.yaml
   - properties:
       result:
-        $ref: ./GetStocksDTO.yaml
+        $ref: ./GetActualStocksDTO.yaml
