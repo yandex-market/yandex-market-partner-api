@@ -6,6 +6,3 @@ properties:
   recommendedCofinancePrice:
     description: Рекомендованное значение порога.
     $ref: ./BasePriceDTO.yaml
-  recommendedPriceThresholds:
-    description: Рекомендованные пороги для цены товара.
-    $ref: ./OfferPriceRecommendedThresholdsDTO.yaml

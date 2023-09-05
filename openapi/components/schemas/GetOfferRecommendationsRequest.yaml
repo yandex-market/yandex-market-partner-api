@@ -18,6 +18,3 @@ properties:
       Фильтр, выводящий товары, для которых рассчитаны (`SPECIFIED`)
       рекомендации или товары, для которых не рассчитаны (`EMPTY`) рекомендации.
     $ref: ./FieldStateType.yaml
-  recommendedPriceThresholdFilter:
-    description: Фильтр, выводящий товары, цена которых попадает в рекомендованный порог.
-    $ref: ./RecommendedPriceThresholdType.yaml
