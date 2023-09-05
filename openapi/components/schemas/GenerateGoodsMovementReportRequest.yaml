@@ -1,0 +1,22 @@
+description: Данные, необходимые для генерации отчета.
+type: object
+required:
+  - campaignId
+  - dateFrom
+  - dateTo
+properties:
+  campaignId:
+    description: Идентификатор кампании.
+    type: integer
+    format: int64
+  dateFrom:
+    description: Начало периода, включительно.
+    type: string
+    format: date
+  dateTo:
+    description: Конец периода, включительно.
+    type: string
+    format: date
+  shopSku:
+    description: Фильтр по SKU.
+    $ref: ./ShopSku.yaml
