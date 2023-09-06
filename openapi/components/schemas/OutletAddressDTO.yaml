@@ -38,7 +38,7 @@ properties:
   building:
     description: Номер строения.
     type: string
-    maxLength: 32
+    maxLength: 16
   estate:
     description: Номер владения.
     type: string
