@@ -1,0 +1,10 @@
+description: |
+  Данные, необходимые для генерации отчета.
+type: object
+required:
+  - campaignId
+properties:
+  campaignId:
+    description: Идентификатор магазина.
+    type: integer
+    format: int64
