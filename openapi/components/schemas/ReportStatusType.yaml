@@ -1,15 +1,13 @@
 description: |
   Статус генерации отчета:
 
-  * `PENDING` - отчет ожидает генерации;
+  * `PENDING` — отчет ожидает генерации;
   * `PROCESSING` — отчет генерируется;
   * `FAILED` — во время генерации произошла ошибка;
-  * `DONE` — отчет готов;
-  * `NO_DATA` — для такого отчета нет данных.
+  * `DONE` — отчет готов.
 type: string
 enum:
   - PENDING
   - PROCESSING
   - FAILED
   - DONE
-  - NO_DATA

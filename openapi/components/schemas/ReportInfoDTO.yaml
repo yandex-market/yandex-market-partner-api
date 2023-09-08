@@ -6,6 +6,8 @@ required:
 properties:
   status:
     $ref: ./ReportStatusType.yaml
+  subStatus:
+    $ref: ./ReportSubStatusType.yaml
   generationRequestedAt:
     description: Дата и время запроса на генерацию.
     type: string
