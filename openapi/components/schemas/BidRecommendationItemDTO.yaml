@@ -1,0 +1,22 @@
+description: Рекомендованная ставка и возможная доля показов.
+type: object
+required:
+  - bid
+  - showPercent
+properties:
+  bid:
+    description: >
+      Значение рекомендованной ставки для товара из параметра `sku`, от 50 до
+      9999.
+
+
+      Указывается в процентах от стоимости товара и умножается на 100. Например,
+      ставка 5% обозначается как 500.
+    $ref: ./Bid.yaml
+  showPercent:
+    description: |
+      Доля показов.
+    type: integer
+    format: int64
+    minimum: 0
+    maximum: 100
