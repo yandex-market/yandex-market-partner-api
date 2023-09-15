@@ -1,13 +1,13 @@
-description: Информация об остатках товаров на складе.
+description: Информация об остатках товара.
 type: object
 required:
   - type
   - count
 properties:
   type:
-    description: Тип остатков товаров на складе.
+    description: Тип остатков.
     $ref: ./WarehouseStockType.yaml
   count:
-    description: Количество товара для указанного типа остатков на складе.
+    description: Значение остатков.
     type: integer
     format: int64
