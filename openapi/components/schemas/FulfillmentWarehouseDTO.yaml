@@ -1,0 +1,13 @@
+description: Склад Маркета (FBY).
+type: object
+required:
+  - id
+  - name
+properties:
+  id:
+    description: Идентификатор склада.
+    type: integer
+    format: int64
+  name:
+    description: Название склада.
+    type: string

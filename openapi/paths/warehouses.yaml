@@ -1,0 +1,30 @@
+get:
+  tags:
+    - warehouses
+    - fby
+  operationId: getFulfillmentWarehouses
+  summary: Идентификаторы складов Маркета (FBY)
+  description: |
+    Возвращает список складов Маркета (FBY) с их идентификаторами.
+
+    |**⚙️ Лимит:** 100 запросов в минуту|
+    |-|
+  responses:
+    '200':
+      description: Список складов.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetFulfillmentWarehousesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

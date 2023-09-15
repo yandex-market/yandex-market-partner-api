@@ -1,0 +1,8 @@
+description: Список складов Маркета (FBY).
+type: object
+properties:
+  warehouses:
+    description: Список складов Маркета (FBY).
+    type: array
+    items:
+      $ref: ./FulfillmentWarehouseDTO.yaml

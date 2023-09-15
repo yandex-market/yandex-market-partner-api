@@ -234,6 +234,8 @@ paths:
     $ref: paths/businesses_businessId_bids_recommendations.yaml
   /businesses/{businessId}/warehouses:
     $ref: paths/businesses_businessId_warehouses.yaml
+  /warehouses:
+    $ref: paths/warehouses.yaml
 components:
   securitySchemes:
     OAuth:

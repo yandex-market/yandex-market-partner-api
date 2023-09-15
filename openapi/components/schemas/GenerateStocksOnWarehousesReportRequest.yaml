@@ -8,3 +8,18 @@ properties:
     description: Идентификатор магазина.
     type: integer
     format: int64
+  warehouseIds:
+    description: >-
+      Фильтр по идентификаторам складов (только FBY). Чтобы узнать
+      идентификатор, воспользуйтесь запросом [GET
+      warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).
+    type: array
+    items:
+      type: integer
+      format: int64
+  reportDate:
+    description: >-
+      Фильтр по дате (для FBY). В отчет попадут данные за **предшествующий**
+      дате день.
+    type: string
+    format: date
