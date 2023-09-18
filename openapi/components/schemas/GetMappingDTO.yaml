@@ -9,7 +9,7 @@ allOf:
   - properties:
       marketSkuName:
         description: |
-          Название карточки на Маркете.
+          Название карточки товара.
 
           Может отсутствовать в ответе.
         type: string
