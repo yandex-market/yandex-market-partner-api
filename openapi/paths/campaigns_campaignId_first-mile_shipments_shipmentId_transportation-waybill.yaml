@@ -5,7 +5,7 @@ get:
   operationId: downloadShipmentTransportationWaybill
   summary: Скачать транспортную накладную
   description: |
-    Возвращает транспортную накладную для заданной отгрузки в формате pdf.
+    Возвращает транспортную накладную для заданной отгрузки в формате xlsx.
     |**⚙️ Лимит:** 200 запросов в час|
     |-|
   parameters:
@@ -13,9 +13,9 @@ get:
     - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
-      description: Транспортная накладная в формате pdf.
+      description: Транспортная накладная в формате xlsx.
       content:
-        application/pdf:
+        application/vnd.ms-excel:
           schema:
             type: string
             format: binary
