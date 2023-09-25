@@ -6,7 +6,6 @@ description: |
   * `DBS` — DBS.
 type: string
 enum:
-  - ADV
   - FBS
   - FBY
   - DBS
