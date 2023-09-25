@@ -1,0 +1,13 @@
+description: Причина попадания товара в карантин.
+type: object
+properties:
+  type:
+    description: Тип карантина.
+    $ref: ./PriceQuarantineVerdictType.yaml
+  params:
+    description: >-
+      Цена, из-за которой товар попал в карантин, и значения для сравнения.
+      Конкретный набор параметров зависит от типа карантина.
+    type: array
+    items:
+      $ref: ./PriceQuarantineVerdictParameterDTO.yaml

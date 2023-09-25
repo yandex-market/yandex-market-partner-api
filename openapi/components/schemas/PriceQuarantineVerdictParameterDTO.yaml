@@ -1,0 +1,12 @@
+description: Параметр карантина.
+type: object
+properties:
+  name:
+    description: Название параметра.
+    $ref: ./PriceQuarantineVerdictParamNameType.yaml
+  value:
+    description: Значение параметра.
+    type: string
+required:
+  - name
+  - value
