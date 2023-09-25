@@ -129,3 +129,8 @@ properties:
     type: array
     items:
       $ref: ./OrderItemSubsidyDTO.yaml
+  requiredInstanceTypes:
+    description: Список необходимых маркировок товара.
+    type: array
+    items:
+      $ref: ./OrderItemInstanceType.yaml

@@ -1,0 +1,7 @@
+description: Вид маркировки товара.
+type: string
+enum:
+  - CIS
+  - UIN
+  - RNPT
+  - GTD
