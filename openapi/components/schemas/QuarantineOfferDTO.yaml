@@ -4,23 +4,31 @@ properties:
   offerId:
     $ref: ./ShopSku.yaml
   currentPrice:
-    description: |
+    description: >
       {% note alert "Deprecated" %}
 
-      Поле больше используется. Используйте значение из `verdicts` → `params`.
+
+      Поле больше не используется. Используйте значение из `verdicts` →
+      `params`.
+
 
       {% endnote %}
+
 
       Новая цена.
     deprecated: true
     $ref: ./BasePriceDTO.yaml
   lastValidPrice:
-    description: |
+    description: >
       {% note alert "Deprecated" %}
 
-      Поле больше используется. Используйте значение из `verdicts` → `params`.
+
+      Поле больше не используется. Используйте значение из `verdicts` →
+      `params`.
+
 
       {% endnote %}
+
 
       Последняя цена до попадания в карантин.
     deprecated: true
