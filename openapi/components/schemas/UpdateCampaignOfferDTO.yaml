@@ -1,7 +1,5 @@
 description: Параметры размещения товара в магазине.
 type: object
-required:
-  - offerId
 allOf:
   - $ref: ./BaseCampaignOfferDTO.yaml
   - properties:

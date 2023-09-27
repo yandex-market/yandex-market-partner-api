@@ -1,7 +1,5 @@
 description: Параметры товара.
 type: object
-required:
-  - offerId
 allOf:
   - $ref: ./BaseOfferDTO.yaml
   - properties:

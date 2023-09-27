@@ -1,5 +1,8 @@
 description: Список товаров в возврате.
 type: object
+required:
+  - shopSku
+  - count
 properties:
   marketSku:
     description: SKU товара на Маркете.
@@ -26,7 +29,3 @@ properties:
     type: array
     items:
       $ref: ./TrackDTO.yaml
-required:
-  - returnItemId
-  - shopSku
-  - count

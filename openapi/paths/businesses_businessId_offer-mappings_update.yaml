@@ -21,7 +21,7 @@ post:
 
 
     Для **новых товаров** обязательно укажите параметры: `offerId`, `name`,
-    `category`, `pictures`, `vendor`, `description`. 
+    `category`, `pictures`, `vendor`, `description`.
 
 
     Чтобы **отредактировать информацию о товаре**, передайте новые данные,
