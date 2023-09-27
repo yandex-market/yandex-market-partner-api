@@ -180,6 +180,8 @@ paths:
     $ref: paths/reports_united-marketplace-services_generate.yaml
   /reports/goods-realization/generate:
     $ref: paths/reports_goods-realization_generate.yaml
+  /reports/prices/generate:
+    $ref: paths/reports_prices_generate.yaml
   /reports/stocks-on-warehouses/generate:
     $ref: paths/reports_stocks-on-warehouses_generate.yaml
   /reports/goods-movement/generate:

@@ -1,0 +1,40 @@
+description: Данные, необходимые для генерации отчета.
+type: object
+properties:
+  businessId:
+    description: |
+      Идентификатор бизнеса.
+
+      В большинстве случаев обязателен. Не указывается, если задан `campaignId`.
+    type: integer
+    format: int64
+  campaignId:
+    description: >
+      Идентификатор кампании.
+
+
+      Как правило, не используется. Передавайте только если в кабинете есть
+      магазины с уникальными ценами и вы хотите получить отчет для них. В этом
+      случае передавать `businessId` не нужно.
+    type: integer
+    format: int64
+  categoryIds:
+    description: Фильтр по категориям на Маркете.
+    type: array
+    items:
+      type: integer
+      format: int64
+  creationDateFrom:
+    description: |
+      Фильтр по времени появления предложения — начало периода.
+
+      Формат даты: `ДД-ММ-ГГГГ`.
+    type: string
+    format: date
+  creationDateTo:
+    description: |
+      Фильтр по времени появления предложения — окончание периода.
+
+      Формат даты: `ДД-ММ-ГГГГ`.
+    type: string
+    format: date
