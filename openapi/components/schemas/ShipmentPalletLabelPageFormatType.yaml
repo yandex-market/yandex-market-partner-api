@@ -1,0 +1,9 @@
+description: |
+  Формат страницы:
+  * `A4` — формат страницы A4.
+  * `A8` — формат страницы A8.
+type: string
+default: A8
+enum:
+  - A4
+  - A8

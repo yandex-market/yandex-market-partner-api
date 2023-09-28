@@ -1,0 +1,10 @@
+type: object
+description: Запрос на передачу количества упаковок в отгрузке.
+properties:
+  placesCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество упаковок в отгрузке.
+required:
+  - placesCount

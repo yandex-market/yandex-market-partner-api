@@ -125,6 +125,12 @@ paths:
   /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/discrepancy-act:
     $ref: >-
       paths/campaigns_campaignId_first-mile_shipments_shipmentId_discrepancy-act.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets:
+    $ref: >-
+      paths/campaigns_campaignId_first-mile_shipments_shipmentId_pallets.yaml
+  /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels:
+    $ref: >-
+      paths/campaigns_campaignId_first-mile_shipments_shipmentId_pallet_labels.yaml
   /campaigns/{campaignId}/first-mile/shipments:
     $ref: paths/campaigns_campaignId_first-mile_shipments.yaml
   /campaigns/{campaignId}/first-mile/shipments/{shipmentId}/orders/transfer:
