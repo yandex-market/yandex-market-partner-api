@@ -1,0 +1,15 @@
+description: Сообщение об ошибке.
+type: object
+properties:
+  type:
+    $ref: ./OfferContentErrorType.yaml
+  parameterId:
+    description: Идентификатор характеристики, с которой связана ошибка.
+    type: integer
+    format: int64
+  message:
+    description: Сообщение об ошибке.
+    type: string
+required:
+  - type
+  - message

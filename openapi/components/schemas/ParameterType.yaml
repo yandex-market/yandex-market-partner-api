@@ -1,0 +1,13 @@
+description: |
+  Тип данных:
+
+  * `TEXT` — текст;
+  * `ENUM` — список возможных значений;
+  * `BOOLEAN` — `true` или `false`;
+  * `NUMERIC` — число.
+type: string
+enum:
+  - TEXT
+  - ENUM
+  - BOOLEAN
+  - NUMERIC

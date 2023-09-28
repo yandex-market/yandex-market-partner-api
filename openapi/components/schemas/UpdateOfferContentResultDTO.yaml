@@ -1,0 +1,17 @@
+description: Ошибки и предупреждения, касающиеся переданных характеристик товара.
+type: object
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  errors:
+    description: Ошибки, препятствующие отправке контента в каталог.
+    type: array
+    items:
+      $ref: ./OfferContentErrorDTO.yaml
+  warnings:
+    description: Предупреждения, не препятствующие отправке контента в каталог.
+    type: array
+    items:
+      $ref: ./OfferContentErrorDTO.yaml
+required:
+  - offerId

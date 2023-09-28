@@ -1,0 +1,19 @@
+description: >-
+  Значение ограничивающей характеристики и список допустимых значений
+  ограничиваемой характеристики.
+type: object
+required:
+  - limitingOptionValueId
+  - optionValueIds
+properties:
+  limitingOptionValueId:
+    description: Идентификатор значения ограничивающей характеристики.
+    type: integer
+    format: int64
+  optionValueIds:
+    description: |
+      Идентификаторы допустимых значений ограничиваемой характеристики.
+    type: array
+    items:
+      type: integer
+      format: int64

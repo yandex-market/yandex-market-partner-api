@@ -1,0 +1,21 @@
+description: Товар с указанными характеристиками.
+type: object
+required:
+  - offerId
+  - categoryId
+  - parameterValues
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  categoryId:
+    $ref: ./CategoryId.yaml
+  parameterValues:
+    description: |
+      Список характеристик с их значениями.
+      Обновляется всегда целиком.
+      Максимальное количество - 300.
+    type: array
+    maxItems: 300
+    minItems: 1
+    items:
+      $ref: ./ParameterValueDTO.yaml

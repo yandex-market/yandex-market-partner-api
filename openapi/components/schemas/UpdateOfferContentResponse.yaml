@@ -1,0 +1,15 @@
+description: Описывает проблемы, возникшие при сохранении товара.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      results:
+        description: >
+          Ошибки и предупреждения, возникшие при обработке переданных значений.
+          Каждый элемент списка соответствует одному товару.
+
+
+          Поле не передается, если все в порядке.
+        type: array
+        items:
+          $ref: ./UpdateOfferContentResultDTO.yaml

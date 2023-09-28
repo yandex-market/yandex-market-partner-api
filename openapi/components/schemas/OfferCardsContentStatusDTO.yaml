@@ -1,0 +1,11 @@
+description: Список товаров с информацией о состоянии карточек.
+type: object
+properties:
+  offerCards:
+    description: Страница списка товаров с информацией о состоянии карточек.
+    type: array
+    items:
+      $ref: ./OfferCardDTO.yaml
+  paging:
+    description: Ссылка на следующую страницу.
+    $ref: ./ForwardScrollingPagerDTO.yaml

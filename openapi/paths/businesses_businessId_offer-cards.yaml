@@ -1,0 +1,50 @@
+post:
+  tags:
+    - content
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: getOfferCardsContentStatus
+  summary: Получение информации о заполненности карточек
+  description: |
+    Возвращает сведения о состоянии контента для заданных товаров:
+
+    * создана ли карточка товара и в каком она статусе;
+    * заполненность карточки в процентах;
+    * есть ли ошибки или предупреждения, связанные с контентом;
+    * рекомендации по заполнению карточки.
+
+    |**⚙️ Лимит:** рассчитывается по [формуле](*rule)|
+    |-|
+
+    [//]: <> (rule: суточный лимит товаров — количество товаров в каталоге * 25)
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  requestBody:
+    required: false
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetOfferCardsContentStatusRequest.yaml
+  responses:
+    '200':
+      description: Информация о карточках указанных товаров.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOfferCardsContentStatusResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

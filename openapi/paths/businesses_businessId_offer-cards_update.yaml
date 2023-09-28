@@ -1,0 +1,93 @@
+post:
+  tags:
+    - content
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: updateOfferContent
+  summary: Редактирование категорийных характеристик товара
+  description: >
+    Редактирует характеристики товара, которые специфичны для категории, к
+    которой он относится.
+
+
+    {% note warning "Здесь только то, что относится к конкретной категории" %}
+
+
+    Если вам нужно изменить основные параметры товара (название, описание,
+    изображения, видео, производитель, штрихкод), воспользуйтесь запросом [POST
+    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
+
+
+    {% endnote %}
+
+
+    Всегда передавайте список характеристик и значений целиком, даже если нужно
+    изменить всего одну из них. Передача отсутствующего значения стирает
+    значение, сохраненное ранее.
+
+
+    |**⚙️ Лимит:** 5000 товаров в минуту, не более 100 товаров в одном запросе|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateOfferContentRequest.yaml
+  responses:
+    '200':
+      description: >
+        Запрос выполнен корректно, данные обработаны.
+
+
+        {% note warning "Ответ 200 сам по себе не значит, что переданные
+        значения корректны" %}
+
+
+        Обязательно посмотрите детали ответа: `status` и перечень ошибок, если
+        он есть.
+
+
+        Даже если ошибка допущена в характеристиках всего одного товара, никакие
+        изменения из запроса в каталог не попадут.
+
+
+        {% endnote %}
+
+
+        Если в `status` вернулось `ERROR`, убедитесь, что:
+
+
+        * все обязательные характеристики заполнены;
+
+        * характеристики действительно существуют в указанных категориях;
+
+        * значения соответствуют характеристикам;
+
+        * ваши собственные значения имеют нужный тип данных.
+
+
+        Найти проблемы помогут поля `errors` и `warnings`.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdateOfferContentResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

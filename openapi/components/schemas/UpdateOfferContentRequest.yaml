@@ -1,0 +1,12 @@
+description: Запрос на установку новых значений для параметров.
+type: object
+required:
+  - offersContent
+properties:
+  offersContent:
+    description: Список товаров с указанными характеристиками.
+    type: array
+    minItems: 1
+    maxItems: 100
+    items:
+      $ref: ./OfferContentDTO.yaml

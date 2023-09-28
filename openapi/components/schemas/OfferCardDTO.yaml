@@ -1,0 +1,45 @@
+description: >
+  Информация о состоянии карточки товара.
+
+
+  Если поле `mapping` отсутствует в ответе, Маркет еще не успел обработать
+  информацию о товаре. Чтобы определить категорию такого товара, повторите
+  запрос через несколько минут.
+type: object
+required:
+  - offerId
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  mapping:
+    description: Основная информация о карточке товара.
+    $ref: ./GetMappingDTO.yaml
+  cardStatus:
+    description: Статус карточки.
+    $ref: ./OfferCardStatusType.yaml
+  contentRating:
+    description: Процент заполненности карточки.
+    type: integer
+    format: int32
+  recommendations:
+    description: >
+      Список рекомендаций к заполнению карточки.
+
+
+      Рекомендации Маркета помогают заполнять карточку так, чтобы покупателям
+      было проще найти ваш товар и решиться на покупку.
+    type: array
+    items:
+      $ref: ./OfferCardRecommendationDTO.yaml
+  errors:
+    description: Ошибки в контенте, препятствующие размещению товара на витрине.
+    type: array
+    items:
+      $ref: ./OfferErrorDTO.yaml
+  warnings:
+    description: >-
+      Связанные с контентом предупреждения, не препятствующие размещению товара
+      на витрине.
+    type: array
+    items:
+      $ref: ./OfferErrorDTO.yaml

@@ -1,0 +1,50 @@
+post:
+  tags:
+    - content
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: getCategoryContentParameters
+  summary: Списки характеристик товаров по категориям
+  description: >
+    Возвращает список характеристик с допустимыми значениями для заданной
+    категории.
+
+
+    |**⚙️ Лимит:** 50 категорий в минуту |
+
+    |-|
+  parameters:
+    - in: path
+      name: categoryId
+      description: >
+        Идентификатор категории на Маркете.
+
+
+        Чтобы узнать идентификатор категории, к которой относится интересующий
+        вас товар, воспользуйтесь запросом [POST
+        /businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md).
+      required: true
+      schema:
+        format: int64
+        type: integer
+  responses:
+    '200':
+      description: Список характеристик товаров из заданной категории.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetCategoryContentParametersResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

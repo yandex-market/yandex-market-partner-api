@@ -1,0 +1,7 @@
+description: Ответ со списком характеристик для категории и их допустимыми значениями.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./CategoryContentParametersDTO.yaml

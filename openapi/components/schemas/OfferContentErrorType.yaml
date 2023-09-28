@@ -1,0 +1,27 @@
+description: >
+  Типы ошибок:
+
+
+  * `OFFER_NOT_FOUND` — такого товара нет в каталоге;
+
+  * `UNKNOWN_CATEGORY` — указана неизвестная категория;
+
+  * `CATEGORY_MISMATCH` — указанная категория не совпадает с категорией товара;
+
+  * `UNKNOWN_PARAMETER` — передана характеристика, отсутствующая среди
+  характеристик категории;
+
+  * `UNEXPECTED_BOOLEAN_VALUE` — вместо boolean-значения передано что-то другое;
+
+  * `NUMBER_FORMAT` — передана строка, не обозначающая число, вместо числа;
+
+  * `VALUE_BLANK` — передано пустое значение.
+type: string
+enum:
+  - OFFER_NOT_FOUND
+  - UNKNOWN_CATEGORY
+  - CATEGORY_MISMATCH
+  - UNKNOWN_PARAMETER
+  - UNEXPECTED_BOOLEAN_VALUE
+  - NUMBER_FORMAT
+  - VALUE_BLANK

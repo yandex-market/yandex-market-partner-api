@@ -238,6 +238,12 @@ paths:
     $ref: paths/businesses_businessId_warehouses.yaml
   /warehouses:
     $ref: paths/warehouses.yaml
+  /category/{categoryId}/parameters:
+    $ref: paths/category_categoryId_parameters.yaml
+  /businesses/{businessId}/offer-cards:
+    $ref: paths/businesses_businessId_offer-cards.yaml
+  /businesses/{businessId}/offer-cards/update:
+    $ref: paths/businesses_businessId_offer-cards_update.yaml
 components:
   securitySchemes:
     OAuth:

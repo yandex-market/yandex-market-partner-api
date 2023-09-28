@@ -1,0 +1,65 @@
+description: Характеристика товара.
+type: object
+required:
+  - id
+  - type
+  - required
+  - filtering
+  - distinctive
+  - multivalue
+  - allowCustomValues
+properties:
+  id:
+    description: Идентификатор характеристики.
+    type: integer
+    format: int64
+  name:
+    description: Название характеристики.
+    type: string
+  type:
+    description: Тип данных.
+    $ref: ./ParameterType.yaml
+  description:
+    description: Описание характеристики.
+    type: string
+  recommendationTypes:
+    description: >-
+      Перечень возможных рекомендаций по заполнению карточки, к которым
+      относится данная характеристика.
+    type: array
+    items:
+      $ref: ./OfferCardRecommendationType.yaml
+  required:
+    description: Обязательность характеристики.
+    type: boolean
+  filtering:
+    description: Используется ли характеристика в фильтре.
+    type: boolean
+  distinctive:
+    description: Является ли характеристика особенностью варианта.
+    type: boolean
+  multivalue:
+    description: Можно ли передать сразу несколько значений.
+    type: boolean
+  allowCustomValues:
+    description: >-
+      Можно ли передавать собственное значение, которого нет в списке вариантов
+      Маркета. Только для характеристик типа `ENUM`.
+    type: boolean
+  values:
+    description: >-
+      Список допустимых значений параметра. Только для характеристик типа
+      `ENUM`.
+    type: array
+    items:
+      $ref: ./ParameterValueOptionDTO.yaml
+  constraints:
+    description: Ограничения на значения. Только для характеристик типа `TEXT` и `NUMERIC`.
+    $ref: ./ParameterValueConstraintsDTO.yaml
+  valueRestrictions:
+    description: >-
+      Ограничения на значения, накладываемые другими характеристиками. Только
+      для характеристик типа `ENUM`.
+    type: array
+    items:
+      $ref: ./ValueRestrictionDTO.yaml

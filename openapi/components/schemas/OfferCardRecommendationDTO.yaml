@@ -1,0 +1,17 @@
+description: Рекомендация по заполнению карточки товара.
+type: object
+required:
+  - type
+properties:
+  type:
+    description: Рекомендация.
+    $ref: ./OfferCardRecommendationType.yaml
+  percent:
+    description: >-
+      Процент выполнения рекомендации. Указывается для рекомендаций некоторых
+      типов.
+    type: integer
+    format: int32
+    minimum: 0
+    maximum: 100
+    exclusiveMaximum: true

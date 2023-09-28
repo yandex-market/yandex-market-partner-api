@@ -1,0 +1,16 @@
+description: Значение характеристики.
+type: object
+required:
+  - id
+  - value
+properties:
+  id:
+    description: Идентификатор значения.
+    type: integer
+    format: int64
+  value:
+    description: Значение.
+    type: string
+  description:
+    description: Описание значения.
+    type: string

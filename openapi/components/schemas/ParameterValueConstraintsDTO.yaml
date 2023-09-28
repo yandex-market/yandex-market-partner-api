@@ -1,0 +1,15 @@
+description: Ограничения на значения характеристик.
+type: object
+properties:
+  minValue:
+    description: Минимальное число.
+    type: number
+    format: double
+  maxValue:
+    description: Максимальное число.
+    type: number
+    format: double
+  maxLength:
+    description: Максимальная длина текста.
+    type: integer
+    format: int32

@@ -1,0 +1,25 @@
+description: Значение характеристики.
+type: object
+required:
+  - parameterId
+  - value
+properties:
+  parameterId:
+    description: Идентификатор характеристики.
+    type: integer
+    format: int64
+  valueId:
+    description: >
+      Идентификатор значения.
+
+
+      Обязательно передавайте идентификатор, если передаете значение из перечня
+      допустимых значений, полученного от Маркета.
+
+
+      Только для характеристик типа `ENUM`.
+    type: integer
+    format: int64
+  value:
+    description: Значение.
+    type: string

@@ -1,0 +1,7 @@
+description: Ответ со списком состояний товаров и пагинацией.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./OfferCardsContentStatusDTO.yaml
