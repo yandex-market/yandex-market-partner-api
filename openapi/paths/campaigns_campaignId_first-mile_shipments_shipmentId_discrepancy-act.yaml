@@ -3,9 +3,9 @@ get:
     - shipments
     - fbs
   operationId: downloadShipmentDiscrepancyAct
-  summary: Скачать акт расхождений
+  summary: Получение акта расхождений
   description: |
-    Возвращает акт расхождений для заданной отгрузки в формате xlsx.
+    Возвращает акт расхождений для заданной отгрузки.
     |**⚙️ Лимит:** 200 запросов в час|
     |-|
   parameters:

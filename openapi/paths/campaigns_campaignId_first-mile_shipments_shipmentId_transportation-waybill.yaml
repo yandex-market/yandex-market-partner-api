@@ -3,10 +3,18 @@ get:
     - shipments
     - fbs
   operationId: downloadShipmentTransportationWaybill
-  summary: Скачать транспортную накладную
-  description: |
-    Возвращает транспортную накладную для заданной отгрузки в формате xlsx.
+  summary: Получение транспортной накладной
+  description: >
+    Возвращает транспортную накладную для заданной отгрузки.
+
+
+    Транспортная накладная понадобится, если вы отгружаете товары
+    непосредственно со своего склада. [Подробно об этом способе
+    отгрузки](https://yandex.ru/support/marketplace/orders/fbs/settings/shipment.html#at-your-warehouse)
+
+
     |**⚙️ Лимит:** 200 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
