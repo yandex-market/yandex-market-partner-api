@@ -1,0 +1,15 @@
+description: Информация об остатках товаров на складе.
+type: object
+required:
+  - warehouseId
+  - offers
+properties:
+  warehouseId:
+    description: Идентификатор склада.
+    type: integer
+    format: int64
+  offers:
+    description: Информация об остатках.
+    type: array
+    items:
+      $ref: ./WarehouseOfferDTO.yaml

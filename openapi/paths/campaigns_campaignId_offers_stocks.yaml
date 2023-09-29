@@ -48,3 +48,63 @@ put:
       $ref: ../components/responses/420.yaml
     '500':
       $ref: ../components/responses/500.yaml
+post:
+  tags:
+    - stocks
+    - fby
+    - fbs
+  operationId: getStocks
+  summary: Информация об остатках и оборачиваемости
+  description: >
+    Передает данные об остатках товаров на витрине (для моделей FBY, FBS и
+    Экспресс) и об [оборачиваемости](*turnover) товаров (для модели FBY).
+
+
+    {% note info "По умолчанию данные по оборачивамости не возращаются" %}
+
+
+    Чтобы они были в ответе, передавайте `true` в поле `withTurnover`.
+
+
+    {% endnote %}
+
+
+    |**⚙️ Лимит:** ```(количество товаров на витрине) / 200```, но не менее 1000
+    товаров в минуту|
+
+    |-|
+
+
+    [//]: <> (turnover: Среднее количество дней, за которое товар продается.
+    Подробно об оборачиваемости рассказано в Справке
+    https://yandex.ru/support/marketplace/analytics/turnover.html.)
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  requestBody:
+    required: false
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetWarehouseStocksRequest.yaml
+  responses:
+    '200':
+      description: |
+        Остатки товаров на складах.
+
+        В ответ попадают только товары с ненулевыми остатками.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetWarehouseStocksResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

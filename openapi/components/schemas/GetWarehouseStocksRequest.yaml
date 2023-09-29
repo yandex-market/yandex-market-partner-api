@@ -1,0 +1,20 @@
+description: |
+  Фильтры для запроса остатков.
+type: object
+properties:
+  withTurnover:
+    description: >
+      Возвращать ли информацию по оборачиваемости (FBY).
+
+
+      Значение по умолчанию — `false`. Передавайте `true`, если информация
+      нужна.
+    type: boolean
+    default: false
+  offerIds:
+    description: Фильтр по вашим SKU товаров.
+    type: array
+    uniqueItems: true
+    maxItems: 500
+    items:
+      $ref: ./ShopSku.yaml

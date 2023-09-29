@@ -1,0 +1,26 @@
+description: Информация об остатках товара.
+type: object
+required:
+  - offerId
+  - updatedAt
+  - stocks
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  turnoverSummary:
+    description: Информация об оборачиваемости.
+    $ref: ./TurnoverDTO.yaml
+  stocks:
+    description: Информация об остатках.
+    type: array
+    items:
+      $ref: ./WarehouseStockDTO.yaml
+  updatedAt:
+    description: >
+      Дата и время последнего обновления информации об остатках.
+
+
+      Формат даты и времени: ISO 8601 со смещением относительно UTC. Например,
+      `2023-11-21T00:42:42+03:00`.
+    type: string
+    format: date-time

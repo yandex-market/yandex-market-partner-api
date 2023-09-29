@@ -1,0 +1,14 @@
+description: Информация об оборачиваемости товара.
+type: object
+required:
+  - turnover
+properties:
+  turnover:
+    description: Оценка оборачиваемости.
+    $ref: ./TurnoverType.yaml
+  turnoverDays:
+    description: >-
+      Значение в днях. [Что это за
+      число?](https://yandex.ru/support/marketplace/analytics/turnover.html)
+    type: number
+    format: double
