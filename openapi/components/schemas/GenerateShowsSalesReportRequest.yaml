@@ -1,0 +1,38 @@
+description: Данные, необходимые для генерации отчета.
+type: object
+required:
+  - dateFrom
+  - dateTo
+  - grouping
+properties:
+  businessId:
+    description: >
+      Идентификатор бизнеса. 
+
+
+      Указывается, если нужно составить отчет по всем магазинам бизнеса. В
+      запросе обязательно должен быть либо `businessID`, либо `campaignId`, но
+      не оба сразу.
+    type: integer
+    format: int64
+  campaignId:
+    description: >
+      Идентификатор кампании. 
+
+
+      Указывается, если нужно составить отчет по конкретному магазину. В запросе
+      обязательно должен быть либо `businessID`, либо `campaignId`, но не оба
+      сразу.
+    type: integer
+    format: int64
+  dateFrom:
+    description: Начало периода, включительно.
+    type: string
+    format: date
+  dateTo:
+    description: Конец периода, включительно.
+    type: string
+    format: date
+  grouping:
+    description: Группировка данных отчета.
+    $ref: ./ShowsSalesGroupingType.yaml
