@@ -1,7 +1,0 @@
-description: Опции доставки.
-type: object
-required:
-  - dates
-properties:
-  dates:
-    $ref: ./OrderDeliverySlotDTO.yaml

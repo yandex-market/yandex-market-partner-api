@@ -69,8 +69,6 @@ paths:
     $ref: paths/campaigns_campaignId_orders_orderId_delivery_track.yaml
   /campaigns/{campaignId}/orders/{orderId}/buyer:
     $ref: paths/campaigns_campaignId_orders_orderId_buyer.yaml
-  /campaigns/{campaignId}/delivery/get-options:
-    $ref: paths/campaigns_campaignId_delivery_get-options.yaml
   /campaigns/{campaignId}/orders/{orderId}/verifyEac:
     $ref: paths/campaigns_campaignId_orders_orderId_verifyEac.yaml
   /campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit:
