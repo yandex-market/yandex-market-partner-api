@@ -1,0 +1,11 @@
+description: >-
+  Максимальные значения цены, при которых она является привлекательной или
+  умеренной.
+type: object
+properties:
+  optimalPrice:
+    description: Максимальная привлекательная цена.
+    $ref: ./BasePriceDTO.yaml
+  averagePrice:
+    description: Максимальная умеренная цена.
+    $ref: ./BasePriceDTO.yaml

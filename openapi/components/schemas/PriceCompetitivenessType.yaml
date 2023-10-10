@@ -1,0 +1,11 @@
+description: |
+  Привлекательность цены:
+
+  * `OPTIMAL` — привлекательная;
+  * `AVERAGE` — умеренная;
+  * `LOW` — непривлекательная.
+type: string
+enum:
+  - OPTIMAL
+  - AVERAGE
+  - LOW

@@ -1,4 +1,4 @@
-description: Список товаров с порогами и рекомендациями.
+description: Список товаров с рекомендациями.
 type: object
 properties:
   paging:

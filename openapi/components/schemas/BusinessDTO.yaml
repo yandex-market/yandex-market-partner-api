@@ -1,8 +1,8 @@
-description: Информацию о бизнесе.
+description: Информацию о кабинете.
 type: object
 properties:
   id:
-    description: Идентификатор бизнеса.
+    description: Идентификатор кабинета.
     type: integer
     format: int64
   name:

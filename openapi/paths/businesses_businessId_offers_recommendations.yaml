@@ -6,11 +6,26 @@ post:
     - fbs
     - express
   operationId: getOfferRecommendations
-  summary: Рекомендованные пороги для скидок с Маркетом
+  summary: Рекомендации Маркета, касающиеся цен
   description: >
-    Показывает, какие пороги нужно установить, чтобы получить максимальные шансы
-    на срабатывание скидок с Маркетом. [Как это
+    Метод возвращает рекомендации нескольких типов.
+
+
+    **1. Рекомендованные цены для участия в софинансировании скидок.**
+
+
+    Показывает, какие **цены для участия** нужно установить, чтобы получить
+    максимальные шансы на срабатывание скидок, софинансируемых Маркетом. [Как
+    это
     устроено](https://yandex.ru/support/marketplace/marketing/smart-pricing.html#sponsored-discounts)
+
+
+    **2. Оценка привлекательности цен на витрине.**
+
+
+    Привлекательность влияент на вероятность срабатывания скидок за счет
+    Маркета. [Как это
+    устроено](https://yandex.ru/support/marketplace/marketing/smart-pricing.html#validation)
 
 
     В запросе можно использовать фильтры.
@@ -34,7 +49,7 @@ post:
           $ref: ../components/schemas/GetOfferRecommendationsRequest.yaml
   responses:
     '200':
-      description: Список товаров с порогами и рекомендациями.
+      description: Список товаров с рекомендациями.
       content:
         application/json:
           schema:

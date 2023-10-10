@@ -11,6 +11,8 @@ description: |
 
   * `DELIVERED` — заказ доставлен;
 
+  * `PARTIALLY_DELIVERED` — заказ частично доставлен;
+
   * `PARTIALLY_RETURNED` — заказ частично возвращен покупателем;
 
   * `PICKUP` — заказ доставлен в пункт выдачи;
@@ -25,6 +27,8 @@ description: |
 
   * `RETURNED` — заказ полностью возвращен покупателем;
 
+  * `LOST` — заказ утерян;
+
   * `UNKNOWN` — неизвестный статус заказа.
 type: string
 enum:
@@ -33,6 +37,7 @@ enum:
   - CANCELLED_IN_PROCESSING
   - DELIVERY
   - DELIVERED
+  - PARTIALLY_DELIVERED
   - PARTIALLY_RETURNED
   - PENDING
   - PICKUP
@@ -42,3 +47,4 @@ enum:
   - REJECTED
   - UNKNOWN
   - UNPAID
+  - LOST
