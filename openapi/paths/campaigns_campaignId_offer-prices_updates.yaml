@@ -14,7 +14,11 @@ post:
     {% note warning %}
 
 
-    Этот метод не работает с новыми магазинами. Вместо него используйте [POST
+    Используйте этот метод, только если в кабинете установлены уникальные цены в
+    отдельных магазинах.
+
+
+    Для управления базовыми ценами используйте [POST
     businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
 
 

@@ -5,9 +5,11 @@ put:
   operationId: setShipmentPalletsCount
   summary: Передача количества упаковок в отгрузке
   description: >
-    Передает Маркету количество упаковок — пакетов, коробок или палет — в
-    отгрузке. 
-     
+    Передает Маркету количество коробов или палет в отгрузке для доверительной
+    приемки. Подробнее про доверительную приемку написано в [Справке
+    Маркета](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance). 
+
+
     Получить PDF-файл с ярлыками для упаковок можно с помощью запроса [GET
     campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](../../reference/shipments/downloadShipmentPalletLabels.md).
 
