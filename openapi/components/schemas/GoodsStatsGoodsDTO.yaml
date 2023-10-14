@@ -28,7 +28,10 @@ properties:
       габариты из карточки Маркета, а не размеры, которые вы передаете.
     $ref: ./GoodsStatsWeightDimensionsDTO.yaml
   warehouses:
-    description: Информация о складах, на которых хранится товар.
+    description: |
+      Информация о складах, на которых хранится товар.
+
+      Параметр не приходит, если товара нет ни на одном складе.
     type: array
     items:
       $ref: ./GoodsStatsWarehouseDTO.yaml
