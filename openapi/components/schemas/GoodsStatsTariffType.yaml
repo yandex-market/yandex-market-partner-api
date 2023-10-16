@@ -2,8 +2,10 @@ description: >
   Услуга Маркета, за которую начисляется тариф:
 
 
-  * `AGENCY_COMMISSION` — прием и перечисление денег от покупателя (агентское
-  вознаграждение).
+  * `AGENCY_COMMISSION` — приём платежа покупателя.
+
+
+  * `PAYMENT_TRANSFER` — перевод платежа покупателя.
 
 
   * `FULFILLMENT` — обработка товара на складе Маркета.
@@ -26,6 +28,7 @@ description: >
 type: string
 enum:
   - AGENCY_COMMISSION
+  - PAYMENT_TRANSFER
   - FULFILLMENT
   - STORAGE
   - WITHDRAW
