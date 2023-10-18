@@ -45,6 +45,9 @@ description: >
 
 
   * `B2B_ACCOUNT_PREPAYMENT` — заказ оплачивает организация.
+
+
+  * `B2B_ACCOUNT_POSTPAYMENT` - заказ оплачивает организация после доставки.
 type: string
 enum:
   - SHOP_PREPAID
@@ -62,4 +65,5 @@ enum:
   - SBP
   - TINKOFF_INSTALLMENTS
   - B2B_ACCOUNT_PREPAYMENT
+  - B2B_ACCOUNT_POSTPAYMENT
   - UNKNOWN
