@@ -41,13 +41,14 @@ properties:
   address:
     $ref: ./OutletAddressDTO.yaml
   phones:
-    description: |
-      Номера телефонов точки продаж.
+    description: >
+      Номера телефонов точки продаж. Передавайте в формате: `+7 (999)
+      999-99-99`.
+
       Обязательный параметр.
     type: array
     minItems: 1
     items:
-      description: Номер телефона точки продаж.
       type: string
       minLength: 1
   workingSchedule:
