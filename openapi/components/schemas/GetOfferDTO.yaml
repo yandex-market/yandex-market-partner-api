@@ -44,3 +44,7 @@ allOf:
         type: array
         items:
           $ref: ./OfferSellingProgramDTO.yaml
+      archived:
+        description: |
+          Товар помещен в архив.
+        type: boolean
