@@ -28,7 +28,7 @@ get:
     * дате отгрузки в службу доставки.
 
 
-    * дате обновления заказа
+    * дате и времени обновления заказа
 
 
     Информация о заказах, доставленных или отмененных больше 30 дней назад, не
@@ -56,8 +56,8 @@ get:
     - $ref: ../components/parameters/GetOrdersToDate.yaml
     - $ref: ../components/parameters/GetOrdersSupplierShipmentDateFrom.yaml
     - $ref: ../components/parameters/GetOrdersSupplierShipmentDateTo.yaml
-    - $ref: ../components/parameters/GetOrdersUpdatedAtDateFrom.yaml
-    - $ref: ../components/parameters/GetOrdersUpdatedAtDateTo.yaml
+    - $ref: ../components/parameters/GetOrdersUpdatedAtDateTimeFrom.yaml
+    - $ref: ../components/parameters/GetOrdersUpdatedAtDateTimeTo.yaml
     - $ref: ../components/parameters/GetOrdersDispatchType.yaml
     - $ref: ../components/parameters/GetOrdersFake.yaml
     - $ref: ../components/parameters/GetOrdersHasCis.yaml
