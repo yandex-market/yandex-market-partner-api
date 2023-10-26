@@ -47,7 +47,7 @@ description: >
   * `B2B_ACCOUNT_PREPAYMENT` — заказ оплачивает организация.
 
 
-  * `B2B_ACCOUNT_POSTPAYMENT` - заказ оплачивает организация после доставки.
+  * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
 type: string
 enum:
   - SHOP_PREPAID
