@@ -4,7 +4,7 @@ properties:
   offerId:
     $ref: ./ShopSku.yaml
   price:
-    description: Цена товара.
+    description: Цена товара в каталоге.
     $ref: ./BasePriceDTO.yaml
   cofinancePrice:
     description: Заданная цена для участия в софинансировании скидок.
