@@ -18,12 +18,14 @@ properties:
   statuses:
     description: Список статусов отгрузок.
     type: array
+    uniqueItems: true
     items:
       description: Статус отгрузки
       $ref: ./ShipmentStatusType.yaml
   orderIds:
     description: Список идентификаторов заказов из отгрузок.
     type: array
+    uniqueItems: true
     items:
       description: Идентификатор заказа.
       type: integer

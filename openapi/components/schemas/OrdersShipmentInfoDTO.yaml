@@ -7,12 +7,14 @@ properties:
   orderIdsWithLabels:
     description: Идентификаторы заказов в отгрузке, для которых можно распечатать ярлыки.
     type: array
+    uniqueItems: true
     items:
       type: integer
       format: int64
   orderIdsWithoutLabels:
     description: Идентификаторы заказов в отгрузке, для которых нельзя распечатать ярлыки.
     type: array
+    uniqueItems: true
     items:
       type: integer
       format: int64

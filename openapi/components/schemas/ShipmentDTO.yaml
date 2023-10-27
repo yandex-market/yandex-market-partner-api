@@ -34,6 +34,7 @@ properties:
   orderIds:
     description: Идентификаторы заказов в отгрузке.
     type: array
+    uniqueItems: true
     items:
       type: integer
       format: int64

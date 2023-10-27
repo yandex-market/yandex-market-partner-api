@@ -1,5 +1,7 @@
 description: Запрос для подтверждения отгрузки.
 type: object
+required:
+  - orderIds
 properties:
   externalShipmentId:
     description: Идентификатор отгрузки в системе поставщика.
@@ -7,6 +9,8 @@ properties:
   orderIds:
     description: Список идентификаторов заказов в отгрузке.
     type: array
+    uniqueItems: true
+    minItems: 1
     items:
       type: integer
       format: int64
