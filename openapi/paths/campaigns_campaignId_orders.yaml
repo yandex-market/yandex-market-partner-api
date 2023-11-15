@@ -56,8 +56,8 @@ get:
     - $ref: ../components/parameters/GetOrdersToDate.yaml
     - $ref: ../components/parameters/GetOrdersSupplierShipmentDateFrom.yaml
     - $ref: ../components/parameters/GetOrdersSupplierShipmentDateTo.yaml
-    - $ref: ../components/parameters/GetOrdersUpdatedAtDateTimeFrom.yaml
-    - $ref: ../components/parameters/GetOrdersUpdatedAtDateTimeTo.yaml
+    - $ref: ../components/parameters/GetOrdersUpdatedAtFrom.yaml
+    - $ref: ../components/parameters/GetOrdersUpdatedAtTo.yaml
     - $ref: ../components/parameters/GetOrdersDispatchType.yaml
     - $ref: ../components/parameters/GetOrdersFake.yaml
     - $ref: ../components/parameters/GetOrdersHasCis.yaml

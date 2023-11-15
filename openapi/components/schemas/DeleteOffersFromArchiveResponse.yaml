@@ -1,0 +1,8 @@
+description: Результат разархивации товаров.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        description: Товары, которые не удалось восстановить из архива.
+        $ref: ./DeleteOffersFromArchiveDTO.yaml

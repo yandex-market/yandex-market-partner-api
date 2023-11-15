@@ -7,12 +7,12 @@ description: >
   `2017-11-21T00:42:42+03:00`.
 
 
-  Между начальной и конечной датой (параметр `updatedAtDateTimeFrom`) должно
-  быть не больше 30 дней.
+  Между начальной и конечной датой (параметр `updatedAtTo`) должно быть не
+  больше 30 дней.
 
 
   Начальная дата включается в интервал для фильтрации.
-name: updatedAtDateFrom
+name: updatedAtFrom
 in: query
 required: false
 schema:

@@ -1,0 +1,8 @@
+description: Товары, которые не удалось поместить в архив.
+type: object
+properties:
+  notArchivedOffers:
+    description: Список товаров, которые не удалось поместить в архив.
+    type: array
+    items:
+      $ref: ./AddOffersToArchiveErrorDTO.yaml

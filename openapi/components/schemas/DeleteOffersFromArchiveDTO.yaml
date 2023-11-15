@@ -1,0 +1,8 @@
+description: Товары, которые не удалось восстановить из архива.
+type: object
+properties:
+  notUnarchivedOfferIds:
+    description: Список товаров, которые не удалось восстановить из архива.
+    type: array
+    items:
+      $ref: ./ShopSku.yaml

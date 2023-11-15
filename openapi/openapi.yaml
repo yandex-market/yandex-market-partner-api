@@ -142,6 +142,10 @@ paths:
     $ref: paths/businesses_businessId_offer-mappings_update.yaml
   /businesses/{businessId}/offer-mappings/suggestions:
     $ref: paths/businesses_businessId_offer-mappings_suggestions.yaml
+  /businesses/{businessId}/offer-mappings/archive:
+    $ref: paths/businesses_businessId_offer-mappings_archive.yaml
+  /businesses/{businessId}/offer-mappings/unarchive:
+    $ref: paths/businesses_businessId_offer-mappings_unarchive.yaml
   /campaigns/{campaignId}/offer-mapping-entries:
     $ref: paths/campaigns_campaignId_offer-mapping-entries.yaml
   /campaigns/{campaignId}/offer-mapping-entries/updates:

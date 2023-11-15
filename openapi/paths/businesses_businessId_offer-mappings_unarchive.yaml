@@ -1,0 +1,48 @@
+post:
+  tags:
+    - business-offer-mappings
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: deleteOffersFromArchive
+  summary: Восстановление товаров из архива
+  description: |
+    Восстанавливает товары из архива.
+
+    |**⚙️ Лимит:** 5000 товаров в минуту, не более 200 товаров в одном запросе|
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/DeleteOffersFromArchiveRequest.yaml
+  responses:
+    '200':
+      description: >
+        Если некоторые товары восстановить из архива не удалось, в ответе 200
+        будет их список.
+
+
+        Список успешно восстановленных товаров не возвращается.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/DeleteOffersFromArchiveResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

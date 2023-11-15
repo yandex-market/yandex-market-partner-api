@@ -1,0 +1,13 @@
+description: |
+  Товары, которые нужно восстановить из архива.
+type: object
+required:
+  - offerIds
+properties:
+  offerIds:
+    description: Список товаров, которые нужно восстановить из архива.
+    type: array
+    minItems: 1
+    maxItems: 200
+    items:
+      $ref: ./ShopSku.yaml

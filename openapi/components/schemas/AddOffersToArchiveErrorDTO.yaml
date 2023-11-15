@@ -1,0 +1,11 @@
+description: Товар, который не удалось поместить в архив.
+type: object
+required:
+  - offerId
+  - error
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  error:
+    description: Причина, по которой товар не удалось поместить в архив.
+    $ref: ./AddOffersToArchiveErrorType.yaml

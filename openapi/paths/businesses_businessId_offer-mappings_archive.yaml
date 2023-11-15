@@ -1,0 +1,61 @@
+post:
+  tags:
+    - business-offer-mappings
+    - dbs
+    - fby
+    - fbs
+    - express
+  operationId: addOffersToArchive
+  summary: Добавление товаров в архив
+  description: >
+    Помещает товары в архив. Товары, помещенные в архив, скрыты с витрины во
+    всех магазинах кабинета.
+
+
+    {% note warning "В архив нельзя отправить товар, который хранится на складе
+    Маркета" %}
+
+
+    Вначале такой товар нужно распродать или вывезти.
+
+
+    {% endnote %}
+
+
+    |**⚙️ Лимит:** 5000 товаров в минуту, не более 200 товаров в одном запросе|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/AddOffersToArchiveRequest.yaml
+  responses:
+    '200':
+      description: >
+        Если некоторые товары добавить в архив не удалось, в ответе 200 будет их
+        список.
+
+
+        Список успешно добавленных товаров не возвращается.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/AddOffersToArchiveResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

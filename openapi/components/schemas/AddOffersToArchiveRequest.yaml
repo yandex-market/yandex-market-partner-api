@@ -1,0 +1,13 @@
+description: |
+  Товары, которые нужно поместить в архив.
+type: object
+required:
+  - offerIds
+properties:
+  offerIds:
+    description: Список товаров, которые нужно поместить в архив.
+    type: array
+    minItems: 1
+    maxItems: 200
+    items:
+      $ref: ./ShopSku.yaml
