@@ -34,6 +34,13 @@ get:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - $ref: ../components/parameters/PageLimit.yaml
+    - description: Фильтр по нахождению в архиве
+      in: query
+      name: archived
+      required: false
+      schema:
+        type: boolean
+        default: false
   responses:
     '200':
       description: Ответ на запрос списка цен.
