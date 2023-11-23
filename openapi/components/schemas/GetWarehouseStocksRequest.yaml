@@ -11,6 +11,15 @@ properties:
       нужна.
     type: boolean
     default: false
+  archived:
+    description: >
+      Фильтр по нахождению в архиве.
+
+
+      Передайте `true`, чтобы получить товары, находящиеся в архиве. Если фильтр
+      не заполнен или передано `false`, в ответе возвращаются товары, не
+      находящиеся в архиве.
+    type: boolean
   offerIds:
     description: Фильтр по вашим SKU товаров.
     type: array
