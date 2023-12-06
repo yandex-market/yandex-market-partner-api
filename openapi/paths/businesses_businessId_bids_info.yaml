@@ -7,12 +7,27 @@ post:
     - express
   operationId: getBidsInfoForBusiness
   summary: Информация об установленных ставках
-  description: |
+  description: >
     Возвращает значения ставок для заданных товаров.
+
+
+    {% note warning "" %}
+
+
+    В ответе возвращаются значения только тех ставок, которые вы установили
+    через запрос [PUT
+    businesses/{businessId}/bids](../../reference/bids/putBidsForBusiness.md).
+    Получить информацию по кампаниям, созданным в кабинете, не получится.
+
+
+    {% endnote %}
+
 
     В одном запросе может быть максимум 1500 товаров.
 
+
     |**⚙️ Лимит:** 1000 запросов в минуту|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
