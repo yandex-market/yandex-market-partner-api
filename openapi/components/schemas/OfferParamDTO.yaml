@@ -1,12 +1,30 @@
-description: Характеристика товара.
+description: >
+  Параметры товара.
+
+
+  {% note tip "" %}
+
+
+  Используйте [POST
+  businesses/{businessId}/offer-cards/update](../../reference/content/updateOfferContent.md)
+  для передачи характеристик товара, которые специфичны для его категории. Так
+  переданные характеристики с большей вероятностью попадут на карточку.
+
+
+  {% endnote %}
 type: object
 required:
   - name
   - value
 properties:
   name:
-    description: |
+    description: >
       Название.
+
+
+      Должно совпадать с названием характеристики на Маркете. Узнать его можно
+      из Excel-шаблона категории или через запрос [POST
+      category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
     example: Wi-Fi
     type: string
   value:
