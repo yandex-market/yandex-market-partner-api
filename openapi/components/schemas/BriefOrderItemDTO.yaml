@@ -1,8 +1,8 @@
-description: Информация о маркированной позиции.
+description: Информация о маркированном товаре.
 type: object
 properties:
   id:
-    description: Идентификатор позиции.
+    description: Идентификатор товара в заказе.
     type: integer
     format: int64
   vat:

@@ -20,7 +20,7 @@ post:
 
     |**⚙️ Лимит:** 1 000 000 запросов в час|
 
-    |-| 
+    |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

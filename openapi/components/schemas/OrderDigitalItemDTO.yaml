@@ -7,7 +7,15 @@ required:
   - activate_till
 properties:
   id:
-    description: Идентификатор позиции в заказе.
+    description: >
+      Идентификатор товара в заказе.
+
+
+      Он приходит в ответе на запрос [GET
+      campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
+      и в запросе Маркета [POST
+      order/accept](../../pushapi/reference/post-order-accept.md) — параметр
+      `id` в `items`.
     type: integer
     format: int64
   code:

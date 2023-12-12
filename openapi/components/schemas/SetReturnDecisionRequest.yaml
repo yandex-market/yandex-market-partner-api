@@ -5,7 +5,7 @@ required:
   - decisionType
 properties:
   returnItemId:
-    description: Идентификатор позиции в возврате.
+    description: Идентификатор товара в возврате.
     type: integer
     format: int64
   decisionType:

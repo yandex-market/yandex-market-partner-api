@@ -12,3 +12,7 @@ properties:
   competitiveness:
     description: Привлекательность цены товара.
     $ref: ./PriceCompetitivenessType.yaml
+  shows:
+    description: Количество показов карточки товара за последние 7 дней.
+    type: integer
+    format: int64
