@@ -9,4 +9,4 @@ properties:
     minItems: 1
     maxItems: 500
     items:
-      $ref: ./OfferMappingEntryDTO.yaml
+      $ref: ./UpdateOfferMappingEntryDTO.yaml

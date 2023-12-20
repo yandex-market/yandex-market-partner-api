@@ -2,7 +2,3 @@ description: Информация о товарах в каталоге.
 type: object
 allOf:
   - $ref: ./MappingsOfferInfoDTO.yaml
-  - properties:
-      price:
-        description: Цена товара в рублях.
-        type: number
