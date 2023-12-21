@@ -4,10 +4,16 @@ get:
     - dbs
   operationId: getOrderBuyerInfo
   summary: Информация о покупателе
-  description: |
+  description: >
     Возвращает информацию о покупателе по идентификатору заказа.
 
+
+    Получить данные можно, только если заказ находится в статусе `PROCESSING`,
+    `DELIVERY` или `PICKUP`.
+
+
     |**⚙️ Лимит:** 3 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
