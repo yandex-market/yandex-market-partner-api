@@ -1,0 +1,16 @@
+description: Информация о части товара в коробке.
+type: object
+required:
+  - current
+  - total
+properties:
+  current:
+    description: Номер части, начиная с 1.
+    type: integer
+    format: int32
+    minimum: 1
+  total:
+    description: На сколько всего частей разделен товар.
+    type: integer
+    format: int32
+    minimum: 2

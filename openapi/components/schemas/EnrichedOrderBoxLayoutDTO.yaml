@@ -1,0 +1,9 @@
+description: Информация о коробке.
+type: object
+allOf:
+  - $ref: ./OrderBoxLayoutDTO.yaml
+  - properties:
+      boxId:
+        description: Идентификатор коробки.
+        type: integer
+        format: int64

@@ -1,0 +1,10 @@
+description: Распределение товаров по коробкам.
+type: object
+required:
+  - boxes
+properties:
+  boxes:
+    description: Список коробок.
+    type: array
+    items:
+      $ref: ./EnrichedOrderBoxLayoutDTO.yaml

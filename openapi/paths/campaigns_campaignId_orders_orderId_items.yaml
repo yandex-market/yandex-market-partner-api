@@ -5,8 +5,18 @@ put:
     - dbs
     - express
   operationId: updateOrderItems
-  summary: Удаление товара из заказа или уменьшение числа единиц
+  summary: Удаление товара из заказа или уменьшение числа единиц (DBS)
   description: >
+    {% note warning "Этот запрос только для DBS" %}
+
+
+    Если вы работаете по модели FBS, пользуйтесь [PUT
+    campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/setOrderBoxLayout.md).
+
+
+    {% endnote %}
+
+
     Изменяет состав заказа, если позволяет выбранная служба доставки, в случаях:
 
 

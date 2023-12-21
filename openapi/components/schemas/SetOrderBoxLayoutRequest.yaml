@@ -1,0 +1,14 @@
+type: object
+required:
+  - boxes
+properties:
+  boxes:
+    description: Список коробок.
+    type: array
+    minItems: 1
+    items:
+      $ref: ./OrderBoxLayoutDTO.yaml
+  allowRemove:
+    description: Передайте `true`, если вы собираетесь удалить часть товаров из заказа.
+    type: boolean
+    default: false

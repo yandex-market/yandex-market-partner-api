@@ -1,0 +1,16 @@
+description: Информация о коробке.
+type: object
+required:
+  - items
+properties:
+  items:
+    description: >
+      Список товаров в коробке.
+
+
+      Если в коробке едет часть большого товара, в списке может быть только один
+      пункт.
+    type: array
+    minItems: 1
+    items:
+      $ref: ./OrderBoxLayoutItemDTO.yaml

@@ -5,8 +5,18 @@ put:
     - dbs
     - express
   operationId: provideOrderItemIdentifiers
-  summary: Передача уникальных кодов маркировки единиц товара
+  summary: Передача уникальных кодов маркировки единиц товара (DBS)
   description: >
+    {% note warning "Этот запрос только для DBS" %}
+
+
+    Если вы работаете по модели FBS, пользуйтесь [PUT
+    campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
+
+
+    {% endnote %}
+
+
     Передает Маркету коды маркировки для единиц товара в указанном заказе.
 
 

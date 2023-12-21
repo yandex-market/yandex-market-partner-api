@@ -5,8 +5,18 @@ put:
     - dbs
     - express
   operationId: setOrderShipmentBoxes
-  summary: Передача количества грузовых мест в заказе
+  summary: Передача количества грузовых мест в заказе (DBS)
   description: >
+    {% note warning "Этот запрос только для DBS" %}
+
+
+    Если вы работаете по модели FBS, пользуйтесь [PUT
+    campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/setOrderBoxLayout.md).
+
+
+    {% endnote %}
+
+
     Отгружаемый Маркету заказ может не влезть в одну коробку или упаковку — в
     этом случае получается, что он занимает несколько грузовых мест.
 
