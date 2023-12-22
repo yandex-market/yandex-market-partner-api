@@ -4,7 +4,7 @@ required:
   - id
 properties:
   id:
-    description: "Идентификатор товара заказе.\n\n{% cut \"Где его взять\" %}\n\nИдентификатор приходит в ответе на запрос [GET campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md) и в запросе Маркета [POST order/accept](../../pushapi/reference/post-order-accept.md) — параметр `id` в `items`.\n\n{% endcut %}\n\_\n"
+    description: "Идентификатор товара в заказе.\n\n{% cut \"Где его взять\" %}\n\nИдентификатор приходит в ответе на запрос [GET campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md) и в запросе Маркета [POST order/accept](../../pushapi/reference/post-order-accept.md) — параметр `id` в `items`.\n\n{% endcut %}\n\_\n"
     type: integer
     format: int64
   fullCount:
