@@ -23,7 +23,9 @@ description: >
 
   * `RETURNED_ORDERS_STORAGE` — хранение невыкупов и возвратов;
 
-  * `SORTING` — обработка заказа.
+  * `SORTING` — обработка заказа;
+
+  * `INTAKE_SORTING` — организация забора заказов со склада продавца.
 type: string
 enum:
   - FEE
@@ -37,3 +39,4 @@ enum:
   - PAYMENT_TRANSFER
   - RETURNED_ORDERS_STORAGE
   - SORTING
+  - INTAKE_SORTING
