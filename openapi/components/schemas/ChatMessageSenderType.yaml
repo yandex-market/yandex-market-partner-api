@@ -1,0 +1,13 @@
+description: |
+  Кто отправил сообщение:
+
+  * `PARTNER` — магазин;
+  * `CUSTOMER` — покупатель;
+  * `MARKET` — Маркет;
+  * `SUPPORT` — сотрудник службы поддержки Маркета.
+type: string
+enum:
+  - PARTNER
+  - CUSTOMER
+  - MARKET
+  - SUPPORT

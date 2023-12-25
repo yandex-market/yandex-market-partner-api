@@ -1,0 +1,10 @@
+description: В какой чат нужно отправить сообщение и текст сообщения.
+type: object
+required:
+  - message
+properties:
+  message:
+    description: Текст сообщения. Максимальная длина — 4096 символа.
+    type: string
+    minLength: 1
+    maxLength: 4096

@@ -1,0 +1,43 @@
+post:
+  tags:
+    - chats
+    - dbs
+    - fbs
+    - fby
+    - express
+  operationId: sendFileToChat
+  summary: Отправка файла в чат
+  description: |
+    Отправляет файл в чат с покупателем.
+
+    |**⚙️ Лимит:** 1000 запросов в час|
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/ChatId.yaml
+  requestBody:
+    required: true
+    description: description
+    content:
+      multipart/form-data:
+        schema:
+          $ref: ../components/schemas/SendFileToChatRequest.yaml
+  responses:
+    '200':
+      description: Пустой ответ. Означает, что файл отправлен.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

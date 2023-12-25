@@ -1,0 +1,46 @@
+post:
+  tags:
+    - chats
+    - dbs
+    - fbs
+    - fby
+    - express
+  operationId: getChatHistory
+  summary: Получение истории сообщений в чате
+  description: |
+    Возвращает историю сообщений в чате с покупателем.
+
+    |**⚙️ Лимит:** 10000 запросов в час|
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/ChatId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  requestBody:
+    required: true
+    description: description
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetChatHistoryRequest.yaml
+  responses:
+    '200':
+      description: |
+        История сообщений успешно получена.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetChatHistoryResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

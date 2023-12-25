@@ -1,0 +1,17 @@
+description: Информация о приложенных к сообщению файлах.
+type: object
+required:
+  - name
+  - size
+  - url
+properties:
+  name:
+    description: Имя файла.
+    type: string
+  url:
+    description: Ссылка для скачивания файла.
+    type: string
+  size:
+    description: Размер файла в байтах.
+    type: integer
+    format: int32

@@ -256,6 +256,16 @@ paths:
     $ref: paths/businesses_businessId_offer-cards.yaml
   /businesses/{businessId}/offer-cards/update:
     $ref: paths/businesses_businessId_offer-cards_update.yaml
+  /businesses/{businessId}/chats/new:
+    $ref: paths/businesses_businessId_chats_new.yaml
+  /businesses/{businessId}/chats:
+    $ref: paths/businesses_businessId_chats.yaml
+  /businesses/{businessId}/chats/file/send:
+    $ref: paths/businesses_businessId_chats_file_send.yaml
+  /businesses/{businessId}/chats/message:
+    $ref: paths/businesses_businessId_chats_message.yaml
+  /businesses/{businessId}/chats/history:
+    $ref: paths/businesses_businessId_chats_history.yaml
 components:
   securitySchemes:
     OAuth:

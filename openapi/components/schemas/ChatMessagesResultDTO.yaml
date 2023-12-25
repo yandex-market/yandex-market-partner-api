@@ -1,0 +1,11 @@
+description: Информация о сообщениях.
+type: object
+properties:
+  messages:
+    description: Информация о сообщениях.
+    type: array
+    items:
+      $ref: ./ChatMessageDTO.yaml
+  paging:
+    description: Информация о страницах с результатами.
+    $ref: ./ForwardScrollingPagerDTO.yaml

@@ -1,0 +1,23 @@
+description: |
+  Фильтры по чатам, которые нужно вернуть.
+type: object
+properties:
+  orderIds:
+    description: Фильтр по идентификаторам заказов на Маркете.
+    type: array
+    items:
+      type: integer
+      format: int64
+    minItems: 1
+  types:
+    description: Фильтр по типам чатов.
+    type: array
+    items:
+      $ref: ./ChatType.yaml
+    minItems: 1
+  statuses:
+    description: Фильтр по статусам чатов.
+    type: array
+    items:
+      $ref: ./ChatStatusType.yaml
+    minItems: 1

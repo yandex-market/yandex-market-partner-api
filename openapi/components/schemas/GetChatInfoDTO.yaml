@@ -1,0 +1,30 @@
+description: Информация о чатах.
+type: object
+required:
+  - chatId
+  - type
+  - status
+  - createdAt
+  - updatedAt
+properties:
+  chatId:
+    description: Идентификатор чата.
+    type: integer
+    format: int64
+  type:
+    $ref: ./ChatType.yaml
+  status:
+    $ref: ./ChatStatusType.yaml
+  createdAt:
+    description: >
+      Дата и время создания чата.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      2017-11-21T00:00:00+03:00.
+    type: string
+    format: date-time
+  updatedAt:
+    description: Дата и время последнего сообщения в чате.
+    type: string
+    format: date-time

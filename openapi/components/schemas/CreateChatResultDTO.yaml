@@ -1,0 +1,9 @@
+description: Информация о созданном чате.
+type: object
+required:
+  - chatId
+properties:
+  chatId:
+    description: Идентификатор чата.
+    type: integer
+    format: int64

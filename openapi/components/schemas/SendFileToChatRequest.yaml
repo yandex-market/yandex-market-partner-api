@@ -1,0 +1,9 @@
+description: Информация о чате и отправляемом файле.
+type: object
+required:
+  - file
+properties:
+  file:
+    description: Содержимое файла. Максимальный размер файла — 5 Мбайт.
+    type: string
+    format: binary

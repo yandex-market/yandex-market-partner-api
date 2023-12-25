@@ -1,0 +1,8 @@
+description: Результат создания чата.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - type: object
+    properties:
+      result:
+        $ref: ./CreateChatResultDTO.yaml

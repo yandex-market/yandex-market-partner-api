@@ -1,0 +1,13 @@
+description: Список чатов.
+type: object
+required:
+  - chats
+properties:
+  chats:
+    description: Информация о чатах.
+    type: array
+    items:
+      $ref: ./GetChatInfoDTO.yaml
+  paging:
+    description: Информация о страницах с результатами.
+    $ref: ./ForwardScrollingPagerDTO.yaml

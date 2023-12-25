@@ -1,0 +1,9 @@
+description: |
+  Тип чата:
+
+  * `CHAT` — чат с покупателем.
+  * `ARBITRAGE` — спор.
+type: string
+enum:
+  - CHAT
+  - ARBITRAGE
