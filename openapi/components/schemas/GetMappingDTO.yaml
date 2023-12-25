@@ -1,4 +1,5 @@
-description: Информация о товарах в каталоге.
+description: |
+  Информация о товарах в каталоге.
 type: object
 allOf:
   - description: |

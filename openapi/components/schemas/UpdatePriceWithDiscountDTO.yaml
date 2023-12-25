@@ -4,7 +4,12 @@ allOf:
   - $ref: ./BasePriceDTO.yaml
   - properties:
       discountBase:
-        description: Цена до скидки.
+        description: >
+          Цена до скидки.
+
+
+          Не передавайте это значение, если не предоставляете скидку на данный
+          товар.
         type: number
         minimum: 0
         exclusiveMinimum: true
