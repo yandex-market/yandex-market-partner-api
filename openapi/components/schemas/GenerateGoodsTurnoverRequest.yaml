@@ -1,0 +1,10 @@
+description: |
+  Данные, необходимые для генерации отчета.
+type: object
+required:
+  - campaignId
+properties:
+  campaignId:
+    description: Идентификатор кампании.
+    format: int64
+    type: integer
