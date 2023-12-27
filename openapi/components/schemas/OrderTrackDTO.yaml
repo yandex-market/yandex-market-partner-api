@@ -1,4 +1,4 @@
-description: Информация о трек-номерах.
+description: Информация о трек-номере посылки (DBS).
 type: object
 properties:
   trackCode:
