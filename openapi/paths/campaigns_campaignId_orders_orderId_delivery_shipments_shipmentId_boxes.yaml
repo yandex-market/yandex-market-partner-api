@@ -11,7 +11,7 @@ put:
 
 
     Если вы работаете по модели FBS, пользуйтесь [PUT
-    campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/setOrderBoxLayout.md).
+    campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
 
 
     {% endnote %}

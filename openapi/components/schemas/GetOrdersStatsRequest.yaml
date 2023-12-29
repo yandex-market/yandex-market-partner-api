@@ -1,4 +1,4 @@
-description: Запрос отчета по заказам.
+description: Запрос информации по заказам.
 type: object
 properties:
   dateFrom:

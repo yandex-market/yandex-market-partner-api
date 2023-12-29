@@ -1,0 +1,60 @@
+post:
+  tags:
+    - reports
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: generateUnitedOrdersReport
+  summary: Отчет по заказам
+  description: >
+    Запускает генерацию **отчета по заказам** за заданный период. [Что это за
+    отчет](https://yandex.ru/support/marketplace/analytics/orders.html)
+
+
+    {% note info "" %}
+
+
+    Это новый отчет. Раньше мы так называли генерацию детальной информации по
+    заказам. [Как получить детальную информацию по
+    заказам](../../reference/stats/getOrdersStats.md)
+
+
+    {% endnote %}
+
+
+    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
+    запроса [GET
+    reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+
+    |**⚙️ Лимит:** 100 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/ReportFormat.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GenerateUnitedOrdersRequest.yaml
+  responses:
+    '200':
+      description: >-
+        В ответ приходит идентификатор, который позволяет узнавать статус
+        генерации и скачать готовый отчет.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GenerateReportResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

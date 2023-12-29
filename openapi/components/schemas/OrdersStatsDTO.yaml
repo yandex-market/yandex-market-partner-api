@@ -1,4 +1,4 @@
-description: Отчет по заказам.
+description: Информация по заказам.
 type: object
 properties:
   orders:
