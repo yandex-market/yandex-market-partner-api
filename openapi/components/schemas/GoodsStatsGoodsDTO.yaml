@@ -39,7 +39,7 @@ properties:
     description: Информация о тарифах, по которым нужно заплатить за услуги Маркета.
     type: array
     items:
-      $ref: ./GoodsStatsTariffDTO.yaml
+      $ref: ./TariffDTO.yaml
   pictures:
     description: Ссылки (URL) изображений товара в хорошем качестве.
     type: array

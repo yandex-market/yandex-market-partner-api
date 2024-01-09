@@ -82,6 +82,10 @@ paths:
     $ref: paths/campaigns_campaignId_orders_orderId_delivery_labels.yaml
   /campaigns/{campaignId}/orders/{orderId}/delivery/labels/data:
     $ref: paths/campaigns_campaignId_orders_orderId_delivery_labels_data.yaml
+  /campaigns/{campaignId}/orders/{orderId}/business-buyer:
+    $ref: paths/campaigns_campaignId_orders_orderId_business-buyer.yaml
+  /campaigns/{campaignId}/orders/{orderId}/documents:
+    $ref: paths/campaigns_campaignId_orders_orderId_documents.yaml
   /campaigns/{campaignId}/returns:
     $ref: paths/campaigns_campaignId_returns.yaml
   /campaigns/{campaignId}/orders/{orderId}/returns/{returnId}:

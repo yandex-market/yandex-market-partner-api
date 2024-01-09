@@ -1,0 +1,9 @@
+description: |
+  Статус УПД:
+
+  * `READY` — УПД готов;
+  * `NOT_READY` — УПД не готов.
+type: string
+enum:
+  - READY
+  - NOT_READY

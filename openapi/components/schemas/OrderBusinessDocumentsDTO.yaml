@@ -1,0 +1,7 @@
+description: |
+  Информация об УПД.
+type: object
+properties:
+  upd:
+    description: Информация об УПД-1 или УПД-2.
+    $ref: ./UpdDTO.yaml

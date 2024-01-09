@@ -3,7 +3,7 @@ type: object
 properties:
   type:
     description: Услуга Маркета, за которую начисляется тариф.
-    $ref: ./GoodsStatsTariffType.yaml
+    $ref: ./TariffType.yaml
   percent:
     description: Значение тарифа в процентах.
     type: number

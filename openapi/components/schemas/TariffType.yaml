@@ -23,7 +23,35 @@ description: >
   * `FEE` — размещение товара на Маркете.
 
 
-  Все тарифы описаны [в Справке для
+  * `CANCELLED_ORDER_FEE` — отмена заказа продавцом.
+
+
+  * `DELIVERY_TO_CUSTOMER` — доставка покупателю.
+
+
+  * `CROSSREGIONAL_DELIVERY` — доставка в федеральный округ, город или
+  населенный пункт.
+
+
+  * `DISPOSAL` — утилизация.
+
+
+  * `SORTING_CENTER_STORAGE` — хранение невыкупов и возвратов.
+
+
+  * `EXPRESS_DELIVERY` — экспресс-доставка покупателю.
+
+
+  * `TRANSIT_BOX` — поставка товара через транзитный склад (за короб).
+
+
+  * `TRANSIT_PALLET` — поставка товара через транзитный склад (за палету).
+
+
+  * `SORTING` — обработка заказа.
+
+
+  Подробнее о тарифах читайте [в Справке для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
 enum:

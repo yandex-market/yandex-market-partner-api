@@ -1,0 +1,16 @@
+description: |
+  Информация о покупателе.
+type: object
+properties:
+  inn:
+    description: ИНН.
+    type: string
+  kpp:
+    description: КПП.
+    type: string
+  organizationName:
+    description: Наименование юридического лица.
+    type: string
+  organizationJurAddress:
+    description: Юридический адрес.
+    type: string

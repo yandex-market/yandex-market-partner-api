@@ -1,9 +1,10 @@
-get:
+post:
   tags:
-    - order-delivery
-    - dbs
-  operationId: getOrderBuyerInfo
-  summary: Информация о покупателе — физическом лице
+    - order-business-information
+    - fbs
+    - fby
+  operationId: getOrderBusinessBuyerInfo
+  summary: Информация о покупателе — юридическом лице
   description: >
     Возвращает информацию о покупателе по идентификатору заказа.
 
@@ -11,16 +12,16 @@ get:
     {% note info "" %}
 
 
-    Чтобы получить информацию о покупателе, который является юридическим лицом,
-    воспользуйтесь запросом [POST
-    campaigns/{campaignId}/orders/{orderId}/business-buyer](../../reference/order-business-information/getOrderBusinessBuyerInfo.md).
+    Чтобы получить информацию о покупателе, который является физическим лицом,
+    воспользуйтесь запросом [GET
+    campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
 
 
     {% endnote %}
 
 
-    Получить данные можно, только если заказ находится в статусе `PROCESSING`,
-    `DELIVERY` или `PICKUP`.
+    Получить данные можно, только если заказ находится в статусе `DELIVERY`,
+    `PICKUP` или `DELIVERED`.
 
 
     |**⚙️ Лимит:** 3 000 запросов в час|
@@ -35,7 +36,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/GetOrderBuyerInfoResponse.yaml
+            $ref: ../components/schemas/GetBusinessBuyerInfoResponse.yaml
     '400':
       $ref: ../components/responses/400.yaml
     '401':

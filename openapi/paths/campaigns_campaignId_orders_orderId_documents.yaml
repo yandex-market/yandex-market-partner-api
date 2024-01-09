@@ -1,0 +1,34 @@
+post:
+  tags:
+    - order-business-information
+    - fbs
+    - fby
+  operationId: getOrderBusinessDocumentsInfo
+  summary: Информация об УПД
+  description: |
+    Возвращает информацию об УПД по идентификатору заказа.
+
+    |**⚙️ Лимит:** 3 000 запросов в час|
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  responses:
+    '200':
+      description: Информация об УПД.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetBusinessDocumentsInfoResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
