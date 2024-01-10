@@ -13,13 +13,12 @@ properties:
     type: integer
     format: int32
   preDiscountPrice:
-    description: Цена предложения без скидки.
+    description: Цена предложения без скидки магазина.
     type: number
   price:
-    description: |
-      Цена предложения.
-
-      До версии 2.0 партнерского API у параметра был тип String.
+    description: >-
+      Цена предложения без скидки, которую получает покупатель при оплате через
+      Yandex Pay.
     type: number
   regionId:
     description: >
