@@ -81,7 +81,6 @@ get:
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_OfferIds.yaml
-    - $ref: ../components/parameters/FeedIds.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - description: |
         {% note alert "Это поле устарело" %}
