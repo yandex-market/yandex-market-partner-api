@@ -9,11 +9,11 @@ description: >
   пишите слова большими буквами — кроме устоявшихся названий брендов и моделей.
 
 
-  Оптимальная длина — 50–60 символов, максимальная — 150.
+  Оптимальная длина — 50–60 символов, максимальная — 256.
 
 
   [Рекомендации и
   правила](https://yandex.ru/support/marketplace/assortment/fields/title.html)
 example: Ударная дрель Makita HP1630, 710 Вт
 type: string
-maxLength: 150
+maxLength: 256

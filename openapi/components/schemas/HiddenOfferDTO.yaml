@@ -31,31 +31,8 @@ properties:
       Максимальное значение — `720`.
 
       Значение по умолчанию — `48`.
-
-      Используется только совместно с параметром `priority="true"`.
     deprecated: true
     type: integer
-  comment:
-    description: >
-      {% note alert "Это поле устарело" %}
-
-
-      Не используйте его — это может привести к ошибкам.
-
-
-      {% endnote %}
-
-
-      Комментарий магазина.
-
-
-      Максимальная длина комментария — 100 символов.
-
-
-      Используется только совместно с параметром `priority="true"`. Если скрытие
-      было без приоритета, комментарий не вернется в ответе.
-    deprecated: true
-    type: string
   marketSku:
     description: >
       {% note alert "Это поле устарело" %}
@@ -74,18 +51,3 @@ properties:
       `GET /campaigns/{campaignId}/offer-mapping-entries`.
     deprecated: true
     $ref: ./MarketSku.yaml
-  priority:
-    description: >
-      {% note alert "Это поле устарело" %}
-
-
-      Не используйте его — это может привести к ошибкам.
-
-
-      {% endnote %}
-
-
-      Приоритет скрытия предложений через API над скрытием в личном кабинете.
-      Параметр принимает только значение true.
-    deprecated: true
-    type: boolean
