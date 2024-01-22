@@ -2,17 +2,6 @@ description: |
   Список скрытых вами товаров.
 type: object
 properties:
-  total:
-    description: |
-      {% note alert "Это поле устарело" %}
-
-      Не используйте его — это может привести к ошибкам.
-
-      {% endnote %}
-
-      Общее количество скрытых товаров магазина.
-    deprecated: true
-    type: integer
   paging:
     $ref: ./ScrollingPagerDTO.yaml
   hiddenOffers:
