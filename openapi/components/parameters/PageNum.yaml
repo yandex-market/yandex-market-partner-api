@@ -4,7 +4,7 @@ description: |
 
   Значение по умолчанию: 1.
 
-  Используется вместе с параметром page_size.
+  Используется вместе с параметром `page_size`.
 
   `page_number` игнорируется, если задан `page_token`, `limit` или `offset`.
 in: query

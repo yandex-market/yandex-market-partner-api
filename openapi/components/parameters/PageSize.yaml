@@ -1,8 +1,8 @@
 name: pageSize
 description: |
-  Количество скрытых товаров на странице.
+  Размер страницы.
 
-  Используется вместе с параметром page_number.
+  Используется вместе с параметром `page_number`.
 
   `page_size` игнорируется, если задан `page_token`, `limit` или `offset`.
 in: query
