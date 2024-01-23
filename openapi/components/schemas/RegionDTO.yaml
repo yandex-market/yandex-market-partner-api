@@ -1,4 +1,4 @@
-description: Информация о регионах.
+description: Регион доставки.
 type: object
 required:
   - name

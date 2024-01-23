@@ -1,11 +1,4 @@
-description: |
-  Способ доставки заказа:
-
-  * `DELIVERY` — курьерская доставка.
-
-  * `PICKUP` — самовывоз.
-
-  * `POST` — почта.
+description: "Способ доставки заказа:\n\n* `DELIVERY` — курьерская доставка.\n\n* `PICKUP` — самовывоз.\n\n* `POST` — почта.\n\n* `DIGITAL` —\_для цифровых товаров.\n"
 type: string
 enum:
   - DELIVERY

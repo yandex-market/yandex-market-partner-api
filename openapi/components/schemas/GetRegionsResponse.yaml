@@ -2,7 +2,7 @@ type: object
 properties:
   regions:
     type: array
-    description: Информация о регионах.
+    description: Регион доставки.
     items:
       $ref: ./RegionDTO.yaml
   paging:

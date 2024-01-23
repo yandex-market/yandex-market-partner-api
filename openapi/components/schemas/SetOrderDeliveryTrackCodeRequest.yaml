@@ -7,6 +7,9 @@ properties:
     description: Трек‑номер посылки.
     type: string
   deliveryServiceId:
-    description: Идентификатор службы доставки.
+    description: >-
+      Идентификатор службы доставки. Информацию о службе доставки можно получить
+      с помощью запроса [GET
+      delivery/services](../../reference/orders/getDeliveryServices.md).
     type: integer
     format: int64

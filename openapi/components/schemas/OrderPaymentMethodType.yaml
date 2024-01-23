@@ -31,6 +31,10 @@ description: >
   * `SBP` — через систему быстрых платежей.
 
 
+  * `B2B_ACCOUNT_PREPAYMENT` — заказ оплачивает организация.
+
+
+
   Возможные значения, если выбрана оплата при получении заказа (`"paymentType":
   "POSTPAID"`):
 
@@ -41,13 +45,10 @@ description: >
   * `CASH_ON_DELIVERY` — наличными.
 
 
-  Значение по умолчанию: `CASH_ON_DELIVERY`.
-
-
-  * `B2B_ACCOUNT_PREPAYMENT` — заказ оплачивает организация.
-
-
   * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
+
+
+  Значение по умолчанию: `CASH_ON_DELIVERY`.
 type: string
 enum:
   - SHOP_PREPAID

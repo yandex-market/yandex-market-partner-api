@@ -109,8 +109,8 @@ properties:
       Информация о маркировке единиц товара.
 
 
-      Возвращаются данные для маркировки, переданные в запросе `PUT
-      /campaigns/{campaignId}/orders/{orderId}/cis`.
+      Возвращаются данные для маркировки, переданные в запросе [PUT
+      campaigns/{campaignId}/orders/{orderId}/cis](../../reference/orders/provideOrderItemCis.md).
 
 
       Если магазин еще не передавал коды для этого заказа, `instances`

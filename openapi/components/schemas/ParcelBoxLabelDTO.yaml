@@ -58,7 +58,10 @@ properties:
       Общая масса всех товаров в заказе. Возвращается в формате: 'weight' кг.
     type: string
   deliveryServiceId:
-    description: Идентификатор службы доставки.
+    description: >-
+      Идентификатор службы доставки. Информацию о службе доставки можно получить
+      с помощью запроса [GET
+      delivery/services](../../reference/orders/getDeliveryServices.md).
     type: string
   deliveryAddress:
     description: Адрес получателя.

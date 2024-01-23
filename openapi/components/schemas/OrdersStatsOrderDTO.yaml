@@ -31,9 +31,9 @@ properties:
     description: |
       Тип заказа:
 
-      * false — заказ покупателя.
+      * `false` — настоящий заказ покупателя.
 
-      * true — тестовый заказ Маркета.
+      * `true` — тестовый заказ Маркета.
     type: boolean
   deliveryRegion:
     $ref: ./OrdersStatsDeliveryRegionDTO.yaml

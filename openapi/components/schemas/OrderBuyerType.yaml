@@ -1,7 +1,7 @@
 description: |
   Кто покупатель:
 
-  * `PERSON` — физическое лицо;
+  * `PERSON` — физическое лицо.
   * `BUSINESS` — организация.
 type: string
 enum:

@@ -70,8 +70,8 @@ properties:
     description: >
       Идентификатор службы доставки товаров в точку продаж.
 
-      Идентификаторы и наименования служб доставки можно получить с помощью
-      ресурса `GET /delivery/services`.
+      Информацию о службе доставки можно получить с помощью запроса [GET
+      delivery/services](../../reference/orders/getDeliveryServices.md).
     type: integer
     format: int64
   orderBefore:
