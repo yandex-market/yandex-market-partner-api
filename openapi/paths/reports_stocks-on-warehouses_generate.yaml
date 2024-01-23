@@ -27,8 +27,6 @@ post:
     |**⚙️ Лимит:** 100 запросов в час|
 
     |-|
-  parameters:
-    - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:
     required: true
     content:
