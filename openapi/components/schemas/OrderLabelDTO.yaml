@@ -19,8 +19,8 @@ properties:
       URL файла с ярлыками‑наклейками на все грузовые места в заказе.
 
 
-      Соответствует URL, по которому выполняется запрос `GET
-      /campaigns/{campaignId}/orders/{orderId}/delivery/labels`.
+      Соответствует URL, по которому выполняется запрос [GET
+      campaigns/{campaignId}/orders/{orderId}/delivery/labels](../../reference/orders/generateOrderLabels.md).
     type: string
   parcelBoxLabels:
     description: Информация на ярлыке.

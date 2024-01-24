@@ -1,7 +1,9 @@
-description: |
+description: >
   Идентификатор региона.
 
-  Идентификатор региона можно получить c помощью запроса `GET /regions`.
+
+  Идентификатор региона можно получить c помощью запроса [GET
+  regions](../../reference/regions/searchRegionsByName.md).
 name: regionId
 in: path
 required: true

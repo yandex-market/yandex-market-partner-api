@@ -21,7 +21,7 @@ put:
 
 
     Если у магазина настроена работа с кодами подтверждения, в запросах [POST
-    /order/status](https://yandex.ru/dev/market/partner-api/doc/ru/pushapi/reference/post-order-status),
+    order/status](https://yandex.ru/dev/market/partner-api/doc/ru/pushapi/reference/post-order-status),
     [PUT
     campaigns/{campaignId}/orders/{orderId}/status](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus),
     [GET

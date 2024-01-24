@@ -41,24 +41,30 @@ get:
     службы доставки. |
 
     | № отправления в системе заказчика       | Ваш идентификатор заказа,
-    который вы указали в ответе на запрос `POST /order/accept` от Маркета. |
+    который вы указали в ответе на запрос [POST
+    order/accept](../../pushapi/reference/post-order-accept.md) от Маркета. |
 
     | № отправления в системе исполнителя (субподрядчика)       | Идентификатор
-    заказа на Маркете, как в выходных данных запроса `GET
-    /campaigns/{campaignId}/orders`. |
+    заказа на Маркете, как в выходных данных запроса [GET
+    campaigns/{campaignId}/orders](../../reference/orders/getOrders.md). |
 
     | Объявленная ценность | Общая сумма заказа без учета стоимости доставки,
-    как в выходных данных запроса `GET /campaigns/{campaignId}/orders` или `GET
-    /campaigns/{campaignId}/orders/{orderId}`. |
+    как в выходных данных запроса [GET
+    campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или [GET
+    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+    |
 
     | Вес       | Масса брутто грузового места (суммарная масса упаковки и
-    содержимого), как в выходных данных запроса `GET
-    /campaigns/{campaignId}/orders` или `GET
-    /campaigns/{campaignId}/orders/{orderId}`. |
+    содержимого), как в выходных данных запроса [GET
+    campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или [GET
+    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+    |
 
     | Количество мест | Количество грузовых мест в заказе, как в выходных данных
-    запроса `GET /campaigns/{campaignId}/orders` или `GET
-    /campaigns/{campaignId}/orders/{orderId}`. |
+    запроса [GET
+    campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или [GET
+    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+    |
 
 
     {% endcut %}

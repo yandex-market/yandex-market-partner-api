@@ -48,6 +48,7 @@ properties:
 
 
       Узнать SKU на Маркете, соответствующий товару, можно с помощью ресурса
-      `GET /campaigns/{campaignId}/offer-mapping-entries`.
+      [GET
+      campaigns/{campaignId}/offer-mapping-entries](../../reference/offer-mappings/getOfferMappingEntries.md).
     deprecated: true
     $ref: ./MarketSku.yaml

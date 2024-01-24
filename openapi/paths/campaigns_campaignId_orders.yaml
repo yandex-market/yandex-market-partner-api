@@ -34,9 +34,10 @@ get:
 
     Информация о заказах, доставленных или отмененных больше 30 дней назад, не
     возвращается. Ее можно получить с помощью запроса информации об отдельном
-    заказе `GET /campaigns/{campaignId}/orders/{orderId}` (если у вас есть
-    идентификатор заказа) или запроса отчета по заказам `POST
-    /campaigns/{campaignId}/stats/orders`.
+    заказе [GET
+    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
+    (если у вас есть идентификатор заказа) или запроса отчета по заказам [POST
+    campaigns/{campaignId}/stats/orders](../../reference/stats/getOrdersStats.md).
 
 
     Максимальный диапазон дат за один запрос к ресурсу — 30 дней. Максимальное

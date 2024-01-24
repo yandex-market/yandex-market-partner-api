@@ -4,8 +4,10 @@ description: >
 
   * `ASSORTMENT` — товар производится в разных вариантах. Каждый из них нужно
   описать как отдельный товар (входной параметр `offer-mapping-entry` запроса
-  POST /campaigns/{campaignId}/offer-mapping-entries/updates или строка в
-  каталоге, если вы загружаете товары через личный кабинет магазина).
+  [POST
+  campaigns/{campaignId}/offer-mapping-entries/updates](../../reference/offer-mappings/updateOfferMappingEntries.md)
+  или строка в каталоге, если вы загружаете товары через личный кабинет
+  магазина).
 
   * `CANCELLED` — товар отозван с модерации по вашей инициативе.
 
@@ -37,9 +39,9 @@ description: >
   Справки Маркета для продавцов.
 
   * `NEED_PICTURES` — для идентификации товара нужны его изображения. Отправьте
-  URL изображений товара в запросе POST
-  /campaigns/{campaignId}/offer-mapping-entries/updates или загрузите
-  обновленный каталог через личный кабинет магазина.
+  URL изображений товара в запросе [POST
+  campaigns/{campaignId}/offer-mapping-entries/updates](../../reference/offer-mappings/updateOfferMappingEntries.md)
+  или загрузите обновленный каталог через личный кабинет магазина.
 
   * `NEED_VENDOR` — неверно указан производитель товара.
 

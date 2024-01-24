@@ -53,8 +53,9 @@ put:
 
 
     Если необходимо удалить такой товар, отмените заказ. Для этого отправьте
-    запрос методом `PUT campaigns/{campaignId}/orders/{orderId}/status` и
-    передайте статус заказа `CANCELLED` с причиной отмены `SHOP_FAILED`.
+    запрос методом [PUT
+    campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md)
+    и передайте статус заказа `CANCELLED` с причиной отмены `SHOP_FAILED`.
 
 
     {% note info "Увеличить заказ нельзя" %}

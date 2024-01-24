@@ -7,7 +7,7 @@ properties:
 
 
       Указывается, только если магазин передал данный идентификатор в ответе на
-      запрос методом `POST /cart`.
+      запрос методом [POST cart](../../pushapi/reference/post-cart.md).
     type: string
   type:
     description: |

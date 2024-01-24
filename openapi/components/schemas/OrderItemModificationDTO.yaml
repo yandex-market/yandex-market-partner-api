@@ -14,9 +14,10 @@ properties:
       Идентификатор товара в рамках заказа.
 
 
-      Получить идентификатор можно с помощью ресурсов `GET
-      /campaigns/{campaignId}/orders` или `GET
-      /campaigns/{campaignId}/orders/{orderId}`.
+      Получить идентификатор можно с помощью ресурсов [GET
+      campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или
+      [GET
+      campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
 
 
       Обязательный параметр.

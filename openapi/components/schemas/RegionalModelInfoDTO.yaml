@@ -10,6 +10,6 @@ properties:
 
 
       Информацию о регионе по идентификатору можно получить с помощью запроса
-      `GET /regions/{regionId}`.
+      [GET regions/{regionId}](../../reference/regions/searchRegionsById.md).
     type: integer
     format: int64

@@ -25,8 +25,8 @@ get:
     выдаются постранично.
 
 
-    Для методов `GET /campaigns/{campaignId}/feeds/categories` и `GET
-    /campaigns/{campaignId}/feeds/{feedId}/categories` действует групповое
+    Для методов `GET campaigns/{campaignId}/feeds/categories` и `GET
+    campaigns/{campaignId}/feeds/{feedId}/categories` действует групповое
     ресурсное ограничение. Ограничение вводится на суммарное количество
     категорий, информация о которых запрошена при помощи этих методов.
 
