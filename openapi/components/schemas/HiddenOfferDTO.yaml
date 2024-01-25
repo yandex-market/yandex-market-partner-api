@@ -33,22 +33,3 @@ properties:
       Значение по умолчанию — `48`.
     deprecated: true
     type: integer
-  marketSku:
-    description: >
-      {% note alert "Это поле устарело" %}
-
-
-      Не используйте его — это может привести к ошибкам.
-
-
-      {% endnote %}
-
-
-      SKU на Маркете.
-
-
-      Узнать SKU на Маркете, соответствующий товару, можно с помощью ресурса
-      [GET
-      campaigns/{campaignId}/offer-mapping-entries](../../reference/offer-mappings/getOfferMappingEntries.md).
-    deprecated: true
-    $ref: ./MarketSku.yaml
