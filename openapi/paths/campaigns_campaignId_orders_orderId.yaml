@@ -7,10 +7,17 @@ get:
     - express
   operationId: getOrder
   summary: Информация о заказе
-  description: |
+  description: >
     Возвращает информацию о заказе.
 
+
+    Получить более подробную информацию о покупателе и его номере телефона можно
+    с помощью запроса [GET
+    campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
+
+
     |**⚙️ Лимит:** 1 000 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

@@ -1,0 +1,14 @@
+description: Информация о покупателе и его номере телефона.
+type: object
+allOf:
+  - $ref: ./OrderBuyerBasicInfoDTO.yaml
+  - properties:
+      phone:
+        description: >
+          Подменный номер телефона покупателя. Подробнее о таких номерах читайте
+          [в Справке для
+          продавцов](https://yandex.ru/support2/marketplace/ru/orders/dbs/call#fake-number).
+
+
+          Формат номера: `+<код_страны><код_региона><номер_телефона>`.
+        type: string
