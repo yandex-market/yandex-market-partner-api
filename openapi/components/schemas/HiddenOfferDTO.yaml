@@ -1,17 +1,6 @@
 description: Информация о скрытии.
 type: object
 properties:
-  feedId:
-    description: |
-      {% note alert "Это поле устарело" %}
-
-      Не используйте его — это может привести к ошибкам.
-
-      {% endnote %}
-
-      Идентификатор прайс-листа.
-    deprecated: true
-    $ref: ./FeedId.yaml
   offerId:
     description: |
       Идентификатор предложения из прайс-листа.
