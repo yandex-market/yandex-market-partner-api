@@ -1,6 +1,6 @@
 description: Значение ставки.
 type: integer
 format: int32
-minimum: 0
+minimum: 50
 maximum: 9999
 example: 570
