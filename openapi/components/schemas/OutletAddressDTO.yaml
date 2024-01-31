@@ -1,6 +1,5 @@
 description: |
   Адрес точки продаж.
-  Обязательный параметр.
 type: object
 required:
   - regionId
@@ -24,9 +23,6 @@ properties:
 
 
       {% endnote %}
-
-
-      Обязательный параметр.
     type: integer
     format: int64
   street:

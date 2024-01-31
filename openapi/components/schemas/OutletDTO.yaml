@@ -10,7 +10,6 @@ properties:
   name:
     description: |
       Название точки продаж.
-      Обязательный параметр.
     type: string
   type:
     $ref: ./OutletType.yaml
@@ -44,8 +43,6 @@ properties:
     description: >
       Номера телефонов точки продаж. Передавайте в формате: `+7 (999)
       999-99-99`.
-
-      Обязательный параметр.
     type: array
     minItems: 1
     items:

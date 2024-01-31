@@ -1,6 +1,5 @@
 description: |
   Список режимов работы точки продаж.
-  Обязательный параметр.
 type: object
 required:
   - scheduleItems
@@ -15,7 +14,6 @@ properties:
   scheduleItems:
     description: |
       Список расписаний работы точки продаж.
-      Обязательный параметр.
     type: array
     minItems: 1
     items:

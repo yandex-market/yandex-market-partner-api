@@ -17,7 +17,6 @@ properties:
       * `FRIDAY` — пятница.
       * `SATURDAY` — суббота.
       * `SUNDAY` — воскресенье.
-      Обязательный параметр.
     $ref: ./DayOfWeekType.yaml
   endDay:
     description: |
@@ -30,19 +29,16 @@ properties:
       * `FRIDAY` — пятница.
       * `SATURDAY` — суббота.
       * `SUNDAY` — воскресенье.
-      Обязательный параметр.
     $ref: ./DayOfWeekType.yaml
   startTime:
     description: |
       Точка продаж работает c указанного часа.
       Формат: `ЧЧ:ММ`.
-      Обязательный параметр.
     type: string
     minLength: 1
   endTime:
     description: |
       Точка продаж работает до указанного часа.
       Формат: `ЧЧ:ММ`.
-      Обязательный параметр.
     type: string
     minLength: 1

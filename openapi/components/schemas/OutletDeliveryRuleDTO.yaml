@@ -1,10 +1,11 @@
 description: Информация об условиях доставки для данной точки продаж.
 type: object
+required:
+  - cost
 properties:
   cost:
     description: |
       Стоимость самовывоза из точки продаж.
-      Обязательный параметр.
     type: number
   minDeliveryDays:
     description: >
