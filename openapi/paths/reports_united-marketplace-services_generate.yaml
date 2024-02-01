@@ -7,34 +7,7 @@ post:
     - express
   operationId: generateUnitedMarketplaceServicesReport
   summary: Отчет по стоимости услуг
-  description: >
-    Запускает генерацию **отчета по стоимости услуг** за заданный период. [Что
-    это за отчет](https://yandex.ru/support/marketplace/analytics/reports.html)
-
-
-    Тип отчета зависит от того, какие поля заполнены в запросе:
-
-
-    |Тип отчета               |Какие поля нужны             |
-
-    |-------------------------|-----------------------------|
-
-    |По дате начисления услуги|`dateTimeFrom` и `dateTimeTo`|
-
-    |По дате формирования акта|`year` и `month`             |
-
-
-    Заказать отчеты обоих типов одним запросом нельзя.
-
-
-    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
-    запроса [GET
-    reports/info/{reportId}](../../reference/reports/getReportInfo.md).
-
-
-    |**⚙️ Лимит:** 100 запросов в час|
-
-    |-|
+  description: "Запускает генерацию **отчета по стоимости услуг** за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/reports.html)\n\n{% note warning \"Формат отчета\" %}\n\nОтчет доступен в формате:\n\n* `FILE` — электронная таблица;\n* `CSV` — ZIP-архив с CSV-файлами.\n\n{% endnote %}\n\n\_\nТип отчета зависит от того, какие поля заполнены в запросе:\n\n|Тип отчета               |Какие поля нужны             |\n|-------------------------|-----------------------------|\n|По дате начисления услуги|`dateTimeFrom` и `dateTimeTo`|\n|По дате формирования акта|`year` и `month`             |\n\nЗаказать отчеты обоих типов одним запросом нельзя.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:
