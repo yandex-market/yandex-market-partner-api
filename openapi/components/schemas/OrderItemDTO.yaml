@@ -62,8 +62,19 @@ properties:
     description: Ставка налога на добавленную стоимость (НДС) на товар.
     $ref: ./OrderVatType.yaml
   shopSku:
-    description: |
+    deprecated: true
+    description: >
       Ваш SKU.
+
+
+      {% note alert %}
+
+
+      Параметр устарел и не рекомендуется к использованию. Вместо него
+      используйте параметр `offerId`.
+
+
+      {% endnote %}
     $ref: ./ShopSku.yaml
   subsidy:
     description: >
