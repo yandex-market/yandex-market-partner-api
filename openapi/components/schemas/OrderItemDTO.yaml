@@ -5,10 +5,6 @@ properties:
     description: Идентификатор товара в заказе.
     type: integer
     format: int64
-  feedId:
-    description: Идентификатор каталога товаров.
-    type: integer
-    format: int64
   offerId:
     description: >-
       Идентификатор вашего товарного предложения для определенного товара.

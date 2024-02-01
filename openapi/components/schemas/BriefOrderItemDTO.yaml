@@ -17,10 +17,6 @@ properties:
       Цена на товар. Указана в той валюте, которая была задана в каталоге.
       Разделитель целой и дробной части — точка.
     type: number
-  feedId:
-    description: Идентификатор каталога, в котором указан товар.
-    type: integer
-    format: int64
   feedCategoryId:
     description: Идентификатор категории, в которую входит товар.
     type: string
