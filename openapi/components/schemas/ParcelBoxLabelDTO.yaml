@@ -7,6 +7,7 @@ required:
   - orderId
   - orderNum
   - recipientName
+  - boxId
   - fulfilmentId
   - place
   - weight
@@ -38,6 +39,10 @@ properties:
   recipientName:
     description: Фамилия и инициалы получателя заказа.
     type: string
+  boxId:
+    description: Идентификатор коробки.
+    type: integer
+    format: int64
   fulfilmentId:
     description: >
       Идентификатор грузового места в информационной системе магазина.
