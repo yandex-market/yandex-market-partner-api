@@ -22,10 +22,16 @@ properties:
     description: Отправитель.
     $ref: ./ChatMessageSenderType.yaml
   message:
-    description: Текст сообщения.
+    description: |
+      Текст сообщения.
+
+      Необязательный параметр, если возвращается параметр `payload`.
     type: string
   payload:
-    description: Информация о приложенных к сообщению файлах.
+    description: |
+      Информация о приложенных к сообщению файлах.
+
+      Необязательный параметр, если возвращается параметр `message`.
     type: array
     items:
       $ref: ./ChatMessagePayloadDTO.yaml

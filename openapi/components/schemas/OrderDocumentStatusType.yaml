@@ -1,8 +1,8 @@
 description: |
-  Статус УПД:
+  Статус документа:
 
-  * `READY` — УПД готов;
-  * `NOT_READY` — УПД не готов.
+  * `READY` — готов;
+  * `NOT_READY` — не готов.
 type: string
 enum:
   - READY
