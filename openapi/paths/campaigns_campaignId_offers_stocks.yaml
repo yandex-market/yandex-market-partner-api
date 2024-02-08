@@ -75,10 +75,7 @@ post:
           $ref: ../components/schemas/GetWarehouseStocksRequest.yaml
   responses:
     '200':
-      description: |
-        Остатки товаров на складах.
-
-        В ответ попадают только товары с ненулевыми остатками.
+      description: Остатки товаров на складах.
       content:
         application/json:
           schema:

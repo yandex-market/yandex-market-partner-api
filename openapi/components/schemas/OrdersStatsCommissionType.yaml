@@ -25,7 +25,9 @@ description: >
 
   * `SORTING` — обработка заказа;
 
-  * `INTAKE_SORTING` — организация забора заказов со склада продавца.
+  * `INTAKE_SORTING` — организация забора заказов со склада продавца (FBS);
+
+  * `RETURN_PROCESSING` — обработка заказов на складе (FBY).
 type: string
 enum:
   - FEE
@@ -40,3 +42,4 @@ enum:
   - RETURNED_ORDERS_STORAGE
   - SORTING
   - INTAKE_SORTING
+  - RETURN_PROCESSING

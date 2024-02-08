@@ -1,12 +1,6 @@
 description: Информация об условиях доставки для данной точки продаж.
 type: object
-required:
-  - cost
 properties:
-  cost:
-    description: |
-      Стоимость самовывоза из точки продаж.
-    type: number
   minDeliveryDays:
     description: >
       Минимальный срок доставки товаров в точку продаж. Указан в рабочих днях.
