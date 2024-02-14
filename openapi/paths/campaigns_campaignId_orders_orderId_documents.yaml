@@ -4,9 +4,9 @@ post:
     - fbs
     - fby
   operationId: getOrderBusinessDocumentsInfo
-  summary: Информация об УПД
+  summary: Информация о документах
   description: |
-    Возвращает информацию об УПД по идентификатору заказа.
+    Возвращает информацию о документах по идентификатору заказа.
 
     |**⚙️ Лимит:** 3 000 запросов в час|
     |-|
@@ -15,7 +15,7 @@ post:
     - $ref: ../components/parameters/OrderId.yaml
   responses:
     '200':
-      description: Информация об УПД.
+      description: Информация о документах.
       content:
         application/json:
           schema:

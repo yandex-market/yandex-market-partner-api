@@ -5,3 +5,15 @@ properties:
   upd:
     description: Информация об УПД-1 или УПД-2.
     $ref: ./DocumentDTO.yaml
+  ukd:
+    description: Информация об УКД-1 или УКД-2.
+    $ref: ./DocumentDTO.yaml
+  torgTwelve:
+    description: Информация о ТОРГ-12.
+    $ref: ./DocumentDTO.yaml
+  sf:
+    description: Информация о счете-фактуре.
+    $ref: ./DocumentDTO.yaml
+  ksf:
+    description: Информация о корректировочном счете-фактуре.
+    $ref: ./DocumentDTO.yaml
