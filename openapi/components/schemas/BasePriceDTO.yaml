@@ -16,5 +16,4 @@ properties:
 
       Если `BasePriceDTO` присутствует в запросе, указывайте `RUR` — российский
       рубль.
-    type: string
-    example: RUR
+    $ref: ./CurrencyType.yaml
