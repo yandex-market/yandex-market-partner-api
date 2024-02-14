@@ -16,3 +16,6 @@ properties:
     description: Идентификатор кампании в API и идентификатор магазина.
     type: integer
     format: int64
+  address:
+    description: Адрес склада.
+    $ref: ./WarehouseAddressDTO.yaml

@@ -11,3 +11,6 @@ properties:
   name:
     description: Название склада.
     type: string
+  address:
+    description: Адрес склада.
+    $ref: ./WarehouseAddressDTO.yaml
