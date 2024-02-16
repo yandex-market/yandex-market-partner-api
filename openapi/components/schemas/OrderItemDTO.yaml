@@ -2,7 +2,10 @@ description: Список товаров в заказе.
 type: object
 properties:
   id:
-    description: Идентификатор товара в заказе.
+    description: |
+      Идентификатор товара в заказе.
+
+      Позволяет идентифицировать товар в рамках данного заказа.
     type: integer
     format: int64
   offerId:
@@ -52,25 +55,14 @@ properties:
     type: number
     format: decimal
   count:
-    description: Количество товара.
+    description: Количество единиц товара.
     type: integer
   vat:
     description: Ставка налога на добавленную стоимость (НДС) на товар.
     $ref: ./OrderVatType.yaml
   shopSku:
     deprecated: true
-    description: >
-      Ваш SKU.
-
-
-      {% note alert %}
-
-
-      Параметр устарел и не рекомендуется к использованию. Вместо него
-      используйте параметр `offerId`.
-
-
-      {% endnote %}
+    description: "Ваш SKU —\_идентификатор товара в вашей системе.\n\n{% note alert %}\n\nПараметр устарел и не рекомендуется к использованию. Вместо него используйте параметр `offerId`.\n\n{% endnote %}\n"
     $ref: ./ShopSku.yaml
   subsidy:
     description: >

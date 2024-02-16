@@ -233,9 +233,14 @@ properties:
       товаров](https://yandex.ru/support/marketplace/assortment/restrictions/used-goods.html)
     $ref: ./OfferConditionDTO.yaml
   type:
-    description: >
-      Особый тип товара. Указывается, если товар — книга, аудиокнига, лекарство,
-      музыка, видео или поставляется под заказ.
+    description: |
+      Особый тип товара. Указывается, если товар:
+
+      * лекарство;
+      * бумажная или электронная книга;
+      * аудиокнига;
+      * музыка или видео;
+      * изготовляется на заказ.
     $ref: ./OfferType.yaml
   downloadable:
     description: >
@@ -260,7 +265,7 @@ properties:
       или в месяцах (любое число от 0 до 12).
     $ref: ./AgeDTO.yaml
   params:
-    description: >
+    description: >-
       Характеристики, которые есть только у товаров конкретной категории —
       например, диаметр колес велосипеда или материал подошвы обуви.
     type: array

@@ -2,7 +2,10 @@ description: Информация о маркированном товаре.
 type: object
 properties:
   id:
-    description: Идентификатор товара в заказе.
+    description: |
+      Идентификатор товара в заказе.
+
+      Позволяет идентифицировать товар в рамках данного заказа.
     type: integer
     format: int64
   vat:

@@ -1,9 +1,9 @@
 description: |
   Фильтрация заказов по типам:
 
-  * `false` — заказ пользователя.
+  * `false` — настоящий заказ покупателя.
 
-  * `true` — тестовый заказ Маркета.
+  * `true` — [тестовый](../../pushapi/concepts/sandbox.md) заказ Маркета.
 name: fake
 in: query
 required: false

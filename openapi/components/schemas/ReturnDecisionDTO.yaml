@@ -6,7 +6,7 @@ properties:
     type: integer
     format: int64
   count:
-    description: Количество товаров.
+    description: Количество единиц товара.
     type: integer
     format: int32
   comment:

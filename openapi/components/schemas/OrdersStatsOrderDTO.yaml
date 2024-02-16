@@ -33,7 +33,7 @@ properties:
 
       * `false` — настоящий заказ покупателя.
 
-      * `true` — тестовый заказ Маркета.
+      * `true` — [тестовый](../../pushapi/concepts/sandbox.md) заказ Маркета.
     type: boolean
   deliveryRegion:
     $ref: ./OrdersStatsDeliveryRegionDTO.yaml

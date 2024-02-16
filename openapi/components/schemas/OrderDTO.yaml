@@ -54,7 +54,10 @@ properties:
     type: number
     format: decimal
   deliveryTotal:
-    description: Стоимость доставки в валюте заказа.
+    description: |
+      Стоимость доставки в валюте заказа.
+
+      Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   subsidyTotal:
@@ -139,7 +142,7 @@ properties:
 
       * `false` — настоящий заказ покупателя.
 
-      * `true` — тестовый заказ Маркета.
+      * `true` — [тестовый](../../pushapi/concepts/sandbox.md) заказ Маркета.
     type: boolean
   items:
     description: Список товаров в заказе.

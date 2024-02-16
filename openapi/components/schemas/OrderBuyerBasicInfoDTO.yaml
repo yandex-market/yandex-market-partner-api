@@ -15,7 +15,7 @@ properties:
     type: string
   type:
     description: >
-      Кто покупатель: физическое лицо или организация. Этот параметр
+      Тип покупателя: физическое лицо или организация. Этот параметр
       используется FBS- и FBY-магазинами, размещающими товары на витрине
       business.market.yandex.ru.
     $ref: ./OrderBuyerType.yaml
