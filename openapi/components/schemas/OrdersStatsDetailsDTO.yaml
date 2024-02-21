@@ -16,5 +16,5 @@ properties:
     type: string
     format: date
   stockType:
-    description: Тип стока.
+    description: Тип товара.
     $ref: ./OrdersStatsStockType.yaml

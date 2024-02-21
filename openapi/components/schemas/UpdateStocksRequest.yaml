@@ -1,4 +1,4 @@
-description: Запрос на изменение информации по стокам.
+description: Запрос на изменение информации по остаткам товаров.
 type: object
 required:
   - skus
