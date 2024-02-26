@@ -4,6 +4,7 @@ required:
   - id
   - name
   - campaignId
+  - express
 properties:
   id:
     description: Идентификатор склада.
@@ -16,6 +17,9 @@ properties:
     description: Идентификатор кампании в API и идентификатор магазина.
     type: integer
     format: int64
+  express:
+    description: Возможна ли доставка по модели Экспресс.
+    type: boolean
   address:
     description: Адрес склада.
     $ref: ./WarehouseAddressDTO.yaml

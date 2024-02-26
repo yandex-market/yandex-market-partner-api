@@ -51,6 +51,9 @@ description: >
   * `SORTING` — обработка заказа.
 
 
+  * `MIDDLE_MILE` - средняя миля.
+
+
   Подробнее о тарифах читайте [в Справке для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
@@ -71,3 +74,4 @@ enum:
   - TRANSIT_BOX
   - TRANSIT_PALLET
   - SORTING
+  - MIDDLE_MILE

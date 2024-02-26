@@ -1,4 +1,4 @@
-description: Информацию о кабинете.
+description: Информация о кабинете.
 type: object
 properties:
   id:
