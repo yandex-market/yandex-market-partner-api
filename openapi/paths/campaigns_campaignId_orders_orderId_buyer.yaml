@@ -3,7 +3,7 @@ get:
     - order-delivery
     - dbs
   operationId: getOrderBuyerInfo
-  summary: Информация о покупателе — физическом лице
+  summary: Информация о покупателе — физическом лице (DBS)
   description: >
     Возвращает информацию о покупателе по идентификатору заказа.
 

@@ -11,12 +11,12 @@ properties:
     type: integer
     format: int64
   placesNumber:
-    description: Количество грузовых мест в заказе.
+    description: Количество коробок в заказе.
     type: integer
     format: int32
   url:
     description: >
-      URL файла с ярлыками‑наклейками на все грузовые места в заказе.
+      URL файла с ярлыками‑наклейками на все коробки в заказе.
 
 
       Соответствует URL, по которому выполняется запрос [GET

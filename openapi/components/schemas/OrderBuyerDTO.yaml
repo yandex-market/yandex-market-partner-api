@@ -1,4 +1,9 @@
-description: Информация о покупателе.
+description: >
+  Информация о покупателе.
+
+
+  Параметры `id`, `lastName`, `firstName` и `middleName` возвращаются, только
+  если вы работаете по модели DBS.
 type: object
 allOf:
   - $ref: ./OrderBuyerBasicInfoDTO.yaml

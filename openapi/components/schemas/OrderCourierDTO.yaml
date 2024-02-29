@@ -14,5 +14,5 @@ properties:
     description: Номер транспортного средства.
     type: string
   vehicleDescription:
-    description: Полное имя курьера.
+    description: Описание машины. Например, модель и цвет.
     type: string

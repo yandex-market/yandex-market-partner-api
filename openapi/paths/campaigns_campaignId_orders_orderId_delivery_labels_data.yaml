@@ -5,20 +5,17 @@ get:
     - express
   operationId: getOrderLabelsData
   summary: Информация на ярлыках‑наклейках
-  description: >
-    Возвращает информацию на ярлыках, которые клеятся на грузовые места в
-    заказе.
-
+  description: |
+    Возвращает информацию на ярлыках, которые клеятся на коробки в заказе.
 
     |**⚙️ Лимит:** 1 000 000 запросов в час|
-
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml
   responses:
     '200':
-      description: Информация для печати ярлыков
+      description: Информация для печати ярлыков.
       content:
         application/json:
           schema:
