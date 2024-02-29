@@ -57,21 +57,6 @@ properties:
     type: array
     items:
       $ref: ./OutletDeliveryRuleDTO.yaml
-  emails:
-    description: |
-      Адрес электронной почты точки продаж.
-      Может содержать только один параметр `email`.
-    type: array
-    maxItems: 1
-    items:
-      description: >
-        Адрес электронной почты точки продаж.
-
-        Допускается любой адрес электронной почты, соответствующий стандарту RFC
-        2822.
-
-        Выводится в виде строки.
-      type: string
   storagePeriod:
     description: >-
       Срок хранения заказа в собственном пункте выдачи заказов. Считается в
