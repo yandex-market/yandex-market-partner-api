@@ -54,6 +54,9 @@ description: >
   * `MIDDLE_MILE` - средняя миля.
 
 
+  * `LATE_ORDER_EXECUTION_FEE` - отгрузка или доставка не вовремя.
+
+
   Подробнее о тарифах читайте [в Справке для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
@@ -75,3 +78,4 @@ enum:
   - TRANSIT_PALLET
   - SORTING
   - MIDDLE_MILE
+  - LATE_ORDER_EXECUTION_FEE
