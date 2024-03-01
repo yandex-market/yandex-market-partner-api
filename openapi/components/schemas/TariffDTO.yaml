@@ -5,7 +5,15 @@ properties:
     description: Услуга Маркета, за которую начисляется тариф.
     $ref: ./TariffType.yaml
   percent:
-    description: Значение тарифа в процентах.
+    description: |
+      {% note alert "Это поле устарело" %}
+
+      Не используйте его — это может привести к ошибкам.
+
+      {% endnote %}
+
+      Значение тарифа в процентах.
+    deprecated: true
     type: number
   amount:
     description: Значение тарифа в рублях.
