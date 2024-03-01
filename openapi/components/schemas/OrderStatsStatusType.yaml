@@ -23,8 +23,6 @@ description: |
 
   * `PROCESSING` — заказ в обработке;
 
-  * `REJECTED` — заказ создан, но не оплачен;
-
   * `RETURNED` — заказ полностью возвращен покупателем;
 
   * `LOST` — заказ утерян;
@@ -44,7 +42,6 @@ enum:
   - PROCESSING
   - RESERVED
   - RETURNED
-  - REJECTED
   - UNKNOWN
   - UNPAID
   - LOST
