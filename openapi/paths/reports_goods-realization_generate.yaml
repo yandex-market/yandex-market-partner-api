@@ -7,7 +7,19 @@ post:
     - express
   operationId: generateGoodsRealizationReport
   summary: Отчет по реализации
-  description: "Запускает генерацию **отчета по реализации** за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#documents__sales-report)\n\n{% note warning \"Формат отчета\" %}\n\nОтчет доступен в формате:\n\n* `FILE` — электронная таблица;\n* `CSV` — ZIP-архив с CSV-файлами.\n\n{% endnote %}\n\n\_\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"
+  description: >
+    Запускает генерацию **отчета по реализации** за заданный период. [Что это за
+    отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#documents__sales-report)
+
+
+    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
+    запроса [GET
+    reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+
+    |**⚙️ Лимит:** 100 запросов в час|
+
+    |-|
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:

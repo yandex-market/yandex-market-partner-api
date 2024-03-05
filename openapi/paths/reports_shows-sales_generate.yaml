@@ -7,7 +7,20 @@ post:
     - express
   operationId: generateShowsSalesReport
   summary: Отчет «Аналитика продаж»
-  description: "Запускает генерацию **отчета «Аналитика продаж»** за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/shows-sales.html)\n\n{% note warning \"Формат отчета\" %}\n\nОтчет доступен в формате:\n\n* `FILE` — электронная таблица;\n* `CSV` — ZIP-архив с CSV-файлами.\n\n{% endnote %}\n\n\_\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**⚙️ Лимит:** 10 запросов в час|\n|-|\n"
+  description: >
+    Запускает генерацию **отчета «Аналитика продаж»** за заданный период. [Что
+    это за
+    отчет](https://yandex.ru/support/marketplace/analytics/shows-sales.html)
+
+
+    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
+    запроса [GET
+    reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+
+    |**⚙️ Лимит:** 10 запросов в час|
+
+    |-|
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:
