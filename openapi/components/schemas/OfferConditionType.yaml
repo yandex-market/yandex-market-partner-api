@@ -13,6 +13,8 @@ description: >
 
   * `RENOVATED` — восстановленный товар.
 
+  * `NOT_SPECIFIED` — не выбрано.
+
 
   `REFURBISHED` — специальное значение для одежды, обуви и аксессуаров.
   Используется только для уцененных товаров из этой категории. Другие значения
@@ -24,3 +26,4 @@ enum:
   - REFURBISHED
   - REDUCTION
   - RENOVATED
+  - NOT_SPECIFIED
