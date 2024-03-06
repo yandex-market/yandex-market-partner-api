@@ -13,7 +13,7 @@ description: >
 
   * `RENOVATED` — восстановленный товар.
 
-  * `NOT_SPECIFIED` — не выбрано.
+  * `NOT_SPECIFIED` — не выбран.
 
 
   `REFURBISHED` — специальное значение для одежды, обуви и аксессуаров.

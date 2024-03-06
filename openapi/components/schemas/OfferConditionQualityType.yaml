@@ -4,7 +4,7 @@ description: |
   * `PERFECT` — идеальный.
   * `EXCELLENT` — отличный.
   * `GOOD` — хороший.
-  * `NOT_SPECIFIED` — не выбрано.
+  * `NOT_SPECIFIED` — не выбран.
 type: string
 enum:
   - PERFECT
