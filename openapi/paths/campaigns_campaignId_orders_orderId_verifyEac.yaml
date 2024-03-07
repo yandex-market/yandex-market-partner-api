@@ -21,13 +21,11 @@ put:
 
 
     Если у магазина настроена работа с кодами подтверждения, в запросах [POST
-    order/status](https://yandex.ru/dev/market/partner-api/doc/ru/pushapi/reference/postOrderStatus),
-    [PUT
-    campaigns/{campaignId}/orders/{orderId}/status](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus),
+    order/status](../../pushapi/reference/postOrderStatus.md), [PUT
+    campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md),
+    [GET campaigns/{campaignId}/orders](../../reference/orders/getOrders.md),
     [GET
-    campaigns/{campaignId}/orders](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrders),
-    [GET
-    campaigns/{campaignId}/orders/{orderId}](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrder)
+    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
     в параметре `delivery`, вложенном в `order` будет возвращаться параметр
     `eacType` с типом `Enum` — тип кода подтверждения для передачи заказа.
 
