@@ -8,9 +8,6 @@ description: >
   * `PAYMENT_TRANSFER` — перевод платежа покупателя.
 
 
-  * `FULFILLMENT` — обработка товара на складе Маркета.
-
-
   * `STORAGE` — хранение товара на складе Маркета в течение суток.
 
 
@@ -45,10 +42,11 @@ description: >
   * `EXPRESS_DELIVERY` — экспресс-доставка покупателю.
 
 
-  * `TRANSIT_BOX` — поставка товара через транзитный склад (за короб).
+  * `FF_XDOC_SUPPLY_BOX` — поставка товара через транзитный склад (за короб).
 
 
-  * `TRANSIT_PALLET` — поставка товара через транзитный склад (за палету).
+  * `FF_XDOC_SUPPLY_PALLET` — поставка товара через транзитный склад (за
+  палету).
 
 
   * `SORTING` — обработка заказа.
@@ -63,13 +61,36 @@ description: >
   * `RETURN_PROCESSING` — обработка невыкупов и возвратов.
 
 
+  * `EXPRESS_CANCELLED_BY_PARTNER` — отмена Экспресс заказа.
+
+
+  * `DELIVERY_TO_CUSTOMER_RETURN` — возврат доставляемого товара на склад.
+
+
+  * `CROSSBORDER_DELIVERY` — доставка из-за рубежа.
+
+
+  * `INTAKE_SORTING_BULKY_CARGO` — сортировка КГТ заказов заборной логистики.
+
+
+  * `INTAKE_SORTING_SMALL_GOODS` — сортировка МГТ заказов заборной логистики.
+
+
+  * `INTAKE_SORTING_DAILY` — выезд за заказами заборной логистики.
+
+
+  * `FF_STORAGE_BILLING` — хранения товаров поставщиков на складе.
+
+
+  * `FF_STORAGE_BILLING_EXTRA` — хранения товара на складе по оборачиваемости.
+
+
   Подробнее о тарифах читайте [в Справке для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
 enum:
   - AGENCY_COMMISSION
   - PAYMENT_TRANSFER
-  - FULFILLMENT
   - STORAGE
   - WITHDRAW
   - SURPLUS
@@ -81,9 +102,17 @@ enum:
   - DISPOSAL
   - SORTING_CENTER_STORAGE
   - EXPRESS_DELIVERY
-  - TRANSIT_BOX
-  - TRANSIT_PALLET
+  - FF_XDOC_SUPPLY_BOX
+  - FF_XDOC_SUPPLY_PALLET
   - SORTING
   - MIDDLE_MILE
   - LATE_ORDER_EXECUTION_FEE
   - RETURN_PROCESSING
+  - EXPRESS_CANCELLED_BY_PARTNER
+  - DELIVERY_TO_CUSTOMER_RETURN
+  - CROSSBORDER_DELIVERY
+  - INTAKE_SORTING_BULKY_CARGO
+  - INTAKE_SORTING_SMALL_GOODS
+  - INTAKE_SORTING_DAILY
+  - FF_STORAGE_BILLING
+  - FF_STORAGE_BILLING_EXTRA
