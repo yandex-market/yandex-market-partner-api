@@ -61,7 +61,7 @@ description: >
   * `RETURN_PROCESSING` — обработка невыкупов и возвратов.
 
 
-  * `EXPRESS_CANCELLED_BY_PARTNER` — отмена Экспресс заказа.
+  * `EXPRESS_CANCELLED_BY_PARTNER` — отмена заказа с экспресс-доставкой.
 
 
   * `DELIVERY_TO_CUSTOMER_RETURN` — возврат доставляемого товара на склад.
@@ -70,19 +70,18 @@ description: >
   * `CROSSBORDER_DELIVERY` — доставка из-за рубежа.
 
 
-  * `INTAKE_SORTING_BULKY_CARGO` — сортировка КГТ заказов заборной логистики.
+  * `INTAKE_SORTING_BULKY_CARGO` — сортировка заказов с крупногабаритными
+  товарами, которые Маркет забрал со склада продавца.
 
 
-  * `INTAKE_SORTING_SMALL_GOODS` — сортировка МГТ заказов заборной логистики.
+  * `INTAKE_SORTING_SMALL_GOODS` — сортировка заказов с малогабаритными
+  товарами, которые Маркет забрал со склада продавца.
 
 
-  * `INTAKE_SORTING_DAILY` — выезд за заказами заборной логистики.
+  * `INTAKE_SORTING_DAILY` — организация забора заказов со склада продавца.
 
 
-  * `FF_STORAGE_BILLING` — хранения товаров поставщиков на складе.
-
-
-  * `FF_STORAGE_BILLING_EXTRA` — хранения товара на складе по оборачиваемости.
+  * `FF_STORAGE_BILLING` — хранения товаров на складе.
 
 
   Подробнее о тарифах читайте [в Справке для
@@ -115,4 +114,3 @@ enum:
   - INTAKE_SORTING_SMALL_GOODS
   - INTAKE_SORTING_DAILY
   - FF_STORAGE_BILLING
-  - FF_STORAGE_BILLING_EXTRA
