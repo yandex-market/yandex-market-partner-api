@@ -20,9 +20,6 @@ description: >
   * `FEE` — размещение товара на Маркете.
 
 
-  * `CANCELLED_ORDER_FEE` — отмена заказа продавцом.
-
-
   * `DELIVERY_TO_CUSTOMER` — доставка покупателю.
 
 
@@ -53,9 +50,6 @@ description: >
 
 
   * `MIDDLE_MILE` — средняя миля.
-
-
-  * `LATE_ORDER_EXECUTION_FEE` — отгрузка или доставка не вовремя.
 
 
   * `RETURN_PROCESSING` — обработка невыкупов и возвратов.
@@ -94,7 +88,6 @@ enum:
   - WITHDRAW
   - SURPLUS
   - FEE
-  - CANCELLED_ORDER_FEE
   - DELIVERY_TO_CUSTOMER
   - CROSSREGIONAL_DELIVERY
   - CROSSREGIONAL_DELIVERY_RETURN
@@ -105,7 +98,6 @@ enum:
   - FF_XDOC_SUPPLY_PALLET
   - SORTING
   - MIDDLE_MILE
-  - LATE_ORDER_EXECUTION_FEE
   - RETURN_PROCESSING
   - EXPRESS_CANCELLED_BY_PARTNER
   - DELIVERY_TO_CUSTOMER_RETURN
