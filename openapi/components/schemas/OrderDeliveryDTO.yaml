@@ -83,5 +83,5 @@ properties:
     $ref: ./OrderDeliveryEacType.yaml
   eacCode:
     description: |
-      Код подтверждения ЭАПП (для типа MERCHANT_TO_COURIER).
+      Код подтверждения ЭАПП (для типа `MERCHANT_TO_COURIER`).
     type: string

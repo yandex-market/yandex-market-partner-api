@@ -164,7 +164,10 @@ properties:
   taxSystem:
     $ref: ./OrderTaxSystemType.yaml
   cancelRequested:
-    description: Запрошена ли отмена.
+    description: |
+      **Только для модели DBS**
+
+      Запрошена ли отмена.
     type: boolean
   expiryDate:
     description: >

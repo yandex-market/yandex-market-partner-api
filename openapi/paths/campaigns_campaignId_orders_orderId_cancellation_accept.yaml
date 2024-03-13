@@ -3,7 +3,7 @@ put:
     - orders
     - dbs
   operationId: acceptOrderCancellation
-  summary: Отмена заказа покупателем
+  summary: Отмена заказа покупателем (DBS)
   description: >
     Подтверждает или отклоняет запрос покупателя на отмену заказа, который
     передан службе доставки.
