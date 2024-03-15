@@ -112,6 +112,20 @@ properties:
     maxItems: 1
     items:
       type: string
+  manuals:
+    description: >
+      Список инструкций по использованию товара.
+
+
+      Максимальное количество инструкций — 6.
+
+
+      Если вы передадите пустое поле `manuals`, загруженные ранее инструкции
+      удалятся.
+    type: array
+    maxItems: 6
+    items:
+      $ref: ./OfferManualDTO.yaml
   vendor:
     $ref: ./OfferVendor.yaml
   barcodes:
