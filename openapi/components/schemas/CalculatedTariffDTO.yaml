@@ -1,0 +1,9 @@
+description: Информация об услугах Маркета.
+type: object
+properties:
+  type:
+    description: Услуга Маркета.
+    $ref: ./CalculatedTariffType.yaml
+  amount:
+    description: Стоимость услуги в рублях.
+    type: number

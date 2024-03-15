@@ -1,0 +1,24 @@
+description: Стоимость услуг.
+type: object
+required:
+  - offer
+  - tariffs
+properties:
+  offer:
+    description: >-
+      Информация о товаре, которую вы передали в запросе для расчета стоимости
+      услуг.
+    $ref: ./CalculateTariffsOfferDTO.yaml
+  tariffs:
+    description: >
+      Список услуг и их стоимость.
+
+
+      По некоторым услугам могут возвращаться несколько разных стоимостей.
+      Например, в модели FBS стоимость услуги `SORTING` (обработка заказа)
+      зависит от способа отгрузки и количества заказов в отгрузке. Подробнее о
+      тарифах на услуги читайте [в Справке для
+      продавцов](https://yandex.ru/support2/marketplace/ru/introduction/rates/models/).
+    type: array
+    items:
+      $ref: ./CalculatedTariffDTO.yaml

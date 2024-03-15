@@ -78,7 +78,7 @@ description: >
   * `FF_STORAGE_BILLING` — хранения товаров на складе.
 
 
-  Подробнее о тарифах читайте [в Справке для
+  Подробнее об услугах Маркета читайте [в Справке для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
 enum:

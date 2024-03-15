@@ -1,0 +1,10 @@
+description: Расчет стоимости услуг.
+type: object
+required:
+  - offers
+properties:
+  offers:
+    description: Стоимость услуг.
+    type: array
+    items:
+      $ref: ./CalculateTariffsOfferInfoDTO.yaml

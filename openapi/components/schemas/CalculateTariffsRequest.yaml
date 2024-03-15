@@ -1,0 +1,15 @@
+type: object
+required:
+  - parameters
+  - offers
+properties:
+  parameters:
+    description: Параметры для расчета стоимости услуг.
+    $ref: ./CalculateTariffsParametersDTO.yaml
+  offers:
+    description: Товары, для которых нужно рассчитать стоимость услуг.
+    type: array
+    minItems: 1
+    maxItems: 200
+    items:
+      $ref: ./CalculateTariffsOfferDTO.yaml

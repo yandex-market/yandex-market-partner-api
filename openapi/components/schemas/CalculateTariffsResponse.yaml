@@ -1,0 +1,7 @@
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        description: Стоимость услуг.
+        $ref: ./CalculateTariffsResponseDTO.yaml

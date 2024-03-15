@@ -1,0 +1,21 @@
+description: >
+  Частота выплат:
+
+
+  * `DAILY` — ежедневно.
+
+  * `WEEKLY` — раз в неделю.
+
+  * `BIWEEKLY` — раз в две недели.
+
+  * `MONTHLY` — раз в месяц.
+
+
+  Подробнее о графике выплат читайте [в Справке для
+  продавцов](https://yandex.ru/support/marketplace/introduction/rates/acquiring.html).
+type: string
+enum:
+  - DAILY
+  - WEEKLY
+  - BIWEEKLY
+  - MONTHLY

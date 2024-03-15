@@ -1,0 +1,52 @@
+post:
+  tags:
+    - tariffs
+    - fbs
+    - fby
+    - dbs
+    - express
+  operationId: calculateTariffs
+  summary: Калькулятор стоимости услуг
+  description: >
+    Рассчитывает стоимость услуг Маркета для товаров с заданными параметрами.
+    Порядок товаров в запросе и ответе сохраняется, чтобы определить,
+
+    для какого товара рассчитана стоимость услуги.
+
+
+    Обратите внимание: калькулятор осуществляет примерные расчеты. Финальная
+    стоимость для каждого заказа зависит от предоставленных услуг.
+
+
+    В запросе можно указать либо параметр `campaignId`, либо `sellingProgram`.
+    Совместное использование параметров приведет к ошибке.
+
+
+    |**⚙️ Лимит:** 100 запросов в минуту, не более 200 товаров в одном запросе|
+
+    |-|
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CalculateTariffsRequest.yaml
+  responses:
+    '200':
+      description: Стоимость услуг.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/CalculateTariffsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
