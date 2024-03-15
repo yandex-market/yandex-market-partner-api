@@ -24,6 +24,12 @@ properties:
     description: Идентификатор характеристики.
     type: integer
     format: int64
+  unitId:
+    description: >-
+      Идентификатор единицы измерения. Если не задан, то используется единица
+      измерения по умолчанию для меры характеристики.
+    type: integer
+    format: int64
   valueId:
     description: >
       Идентификатор значения.

@@ -16,6 +16,9 @@ description: >
   * `NUMBER_FORMAT` — передана строка, не обозначающая число, вместо числа;
 
   * `VALUE_BLANK` — передано пустое значение.
+
+  * `INVALID_UNIT_ID` — переданная единица измерения недопустима для
+  характеристики.
 type: string
 enum:
   - OFFER_NOT_FOUND
@@ -25,3 +28,4 @@ enum:
   - UNEXPECTED_BOOLEAN_VALUE
   - NUMBER_FORMAT
   - VALUE_BLANK
+  - INVALID_UNIT_ID
