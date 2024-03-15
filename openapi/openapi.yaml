@@ -272,6 +272,8 @@ paths:
     $ref: paths/businesses_businessId_chats_message.yaml
   /businesses/{businessId}/chats/history:
     $ref: paths/businesses_businessId_chats_history.yaml
+  /categories/tree:
+    $ref: paths/categories_tree.yaml
 components:
   securitySchemes:
     OAuth:

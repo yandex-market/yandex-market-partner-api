@@ -1,0 +1,21 @@
+description: |
+  Информация о категории.
+
+  Категория считается листовой, если у нее нет дочерних категорий.
+type: object
+required:
+  - id
+  - name
+properties:
+  id:
+    description: ID категории.
+    type: integer
+    format: int64
+  name:
+    description: Название категории.
+    type: string
+  children:
+    description: Дочерние категории.
+    type: array
+    items:
+      $ref: ./CategoryDTO.yaml
