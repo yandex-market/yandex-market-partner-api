@@ -1,19 +1,19 @@
 description: |
   Решение по возврату:
 
-  * REFUND_MONEY — вернуть деньги покупателю.
+  * `REFUND_MONEY` — вернуть деньги покупателю.
 
-  * REFUND_MONEY_INCLUDING_SHIPMENT — вернуть деньги за товар и пересылку.
+  * `REFUND_MONEY_INCLUDING_SHIPMENT` — вернуть деньги за товар и пересылку.
 
-  * REPAIR — отремонтировать товар.
+  * `REPAIR` — отремонтировать товар.
 
-  * REPLACE — заменить товар.
+  * `REPLACE` — заменить товар.
 
-  * SEND_TO_EXAMINATION — взять товар на экспертизу.
+  * `SEND_TO_EXAMINATION` — взять товар на экспертизу.
 
-  * DECLINE_REFUND — отказать в возврате.
+  * `DECLINE_REFUND` — отказать в возврате.
 
-  * OTHER_DECISION — другое решение.
+  * `OTHER_DECISION` — другое решение.
 type: string
 enum:
   - REFUND_MONEY

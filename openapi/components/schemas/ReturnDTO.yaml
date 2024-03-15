@@ -20,10 +20,10 @@ properties:
   refundStatus:
     $ref: ./RefundStatusType.yaml
   logisticPickupPoint:
-    description: Пункт вывоза
+    description: Пункт вывоза.
     $ref: ./LogisticPickupPointDTO.yaml
   shipmentRecipientType:
-    description: Способ возврата товара покупателем
+    description: Способ возврата товара покупателем.
     $ref: ./RecipientType.yaml
   shipmentStatus:
     description: Статус передачи возврата.

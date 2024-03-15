@@ -38,30 +38,6 @@ get:
     - description: |
         Статусы возвратов или невыкупов — для фильтрации результатов.
 
-        Возможные значения:
-
-        * CREATED — возврат создан.
-
-        * RECEIVED — принят у покупателя.
-
-        * IN_TRANSIT — возврат в пути.
-
-        * READY_FOR_PICKUP — возврат готов к выдаче магазину.
-
-        * PICKED — возврат выдан магазину.
-
-        * LOST — возврат утерян при транспортировке.
-
-        * CANCELLED — возврат отменен.
-
-        * EXPIRED — возврат просрочен, покупатель не передал товар.
-
-        * FULFILMENT_RECEIVED — возврат принят на складе Маркета.
-
-        * PREPARED_FOR_UTILIZATION — возврат передан в утилизацию.
-
-        * UTILIZED — возврат утилизирован.
-
         Несколько статусов перечисляются через запятую.
       in: query
       name: statuses
@@ -74,9 +50,9 @@ get:
     - description: |
         Тип заказа для фильтрации:
 
-        * RETURN — возврат.
+        * `RETURN` — возврат.
 
-        * UNREDEEMED — невыкуп.
+        * `UNREDEEMED` — невыкуп.
 
         Если не указывать, в ответе будут и возвраты, и невыкупы.
       in: query
@@ -89,7 +65,7 @@ get:
         оформления.
 
 
-        Формат: ГГГГ-ММ-ДД.
+        Формат: `ГГГГ-ММ-ДД`.
       in: query
       name: fromDate
       required: false
@@ -102,7 +78,7 @@ get:
         оформления.
 
 
-        Формат: ГГГГ-ММ-ДД.
+        Формат: `ГГГГ-ММ-ДД`.
       in: query
       name: toDate
       required: false
@@ -110,7 +86,7 @@ get:
       schema:
         type: string
         format: date
-    - description: Дата, с которой интересуют возвраты (устаревшее, будет удалено)
+    - description: Дата, с которой интересуют возвраты (устаревшее, будет удалено).
       deprecated: true
       in: query
       name: from_date
@@ -119,7 +95,7 @@ get:
       schema:
         type: string
         format: date
-    - description: Дата, до которой интересуют возвраты (устаревшее, будет удалено)
+    - description: Дата, до которой интересуют возвраты (устаревшее, будет удалено).
       deprecated: true
       in: query
       name: to_date
@@ -130,7 +106,7 @@ get:
         format: date
   responses:
     '200':
-      description: Постраничные возвраты партнера
+      description: Постраничные возвраты партнера.
       content:
         application/json:
           schema:
