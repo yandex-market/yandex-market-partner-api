@@ -21,7 +21,15 @@ properties:
       Разделитель целой и дробной части — точка.
     type: number
   feedCategoryId:
-    description: Идентификатор категории, в которую входит товар.
+    deprecated: true
+    description: |
+      Идентификатор категории, в которую входит товар.
+
+      {% note alert %}
+
+      Параметр устарел и не рекомендуется к использованию.
+
+      {% endnote %}
     type: string
   offerName:
     description: Название товара.

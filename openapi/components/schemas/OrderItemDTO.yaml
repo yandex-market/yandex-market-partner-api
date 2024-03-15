@@ -15,7 +15,15 @@ properties:
       продавцов](https://yandex.ru/support/marketplace/assortment/fields/index.html#sku)
     $ref: ./ShopSku.yaml
   feedCategoryId:
-    description: Идентификатор категории, указанный в каталоге.
+    deprecated: true
+    description: |
+      Идентификатор категории, указанный в каталоге.
+
+      {% note alert %}
+
+      Параметр устарел и не рекомендуется к использованию.
+
+      {% endnote %}
     type: string
   offerName:
     description: Название товара.
