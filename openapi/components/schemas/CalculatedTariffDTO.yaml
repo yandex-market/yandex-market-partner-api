@@ -7,3 +7,8 @@ properties:
   amount:
     description: Стоимость услуги в рублях.
     type: number
+  parameters:
+    description: Параметры расчета тарифа.
+    type: array
+    items:
+      $ref: ./TariffParameterDTO.yaml

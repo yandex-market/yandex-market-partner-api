@@ -1,0 +1,12 @@
+description: Детали расчета конкретной услуги Маркета.
+type: object
+required:
+  - name
+  - value
+properties:
+  name:
+    description: Название параметра.
+    type: string
+  value:
+    description: Значение параметра.
+    type: string
