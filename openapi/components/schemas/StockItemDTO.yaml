@@ -4,7 +4,6 @@ type: object
 required:
   - count
   - type
-  - updatedAt
 properties:
   count:
     description: |
@@ -21,6 +20,8 @@ properties:
   updatedAt:
     description: >
       Дата и время последнего обновления информации об остатках указанного типа.
+
+      Если параметр не передан, будет использовано текущее время.
 
 
       Формат даты и времени: ISO 8601 со смещением относительно UTC. Например,
