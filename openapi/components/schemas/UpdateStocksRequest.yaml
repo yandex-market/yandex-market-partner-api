@@ -11,4 +11,4 @@ properties:
     maxItems: 2000
     uniqueItems: true
     items:
-      $ref: ./StockDTO.yaml
+      $ref: ./UpdateStockDTO.yaml

@@ -35,4 +35,4 @@ properties:
     minItems: 1
     maxItems: 1
     items:
-      $ref: ./StockItemDTO.yaml
+      $ref: ./UpdateStockItemDTO.yaml
