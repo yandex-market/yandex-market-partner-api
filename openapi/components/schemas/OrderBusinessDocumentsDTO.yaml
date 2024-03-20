@@ -9,7 +9,7 @@ properties:
     description: Информация об УКД-1 или УКД-2.
     $ref: ./DocumentDTO.yaml
   torgTwelve:
-    description: Информация о ТОРГ-12.
+    description: Информация о товарной накладной.
     $ref: ./DocumentDTO.yaml
   sf:
     description: Информация о счете-фактуре.
