@@ -1,7 +1,9 @@
-description: |
+description: >
   Адрес доставки.
 
-  Указывается, если `type=DELIVERY` или `type=POST`.
+
+  Указывается, если type=DELIVERY, type=POST или type=PICKUP (адрес пункта
+  выдачи).
 type: object
 properties:
   country:
