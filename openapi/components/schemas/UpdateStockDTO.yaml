@@ -10,7 +10,7 @@ properties:
     $ref: ./ShopSku.yaml
   items:
     description: |
-      Информация об остатках товара на данном складе.
+      Информация об остатках товара.
     type: array
     minItems: 1
     maxItems: 1
