@@ -1,0 +1,21 @@
+description: |
+  Данные, необходимые для генерации документа.
+type: object
+required:
+  - campaignId
+properties:
+  campaignId:
+    description: Идентификатор кампании.
+    format: int64
+    type: integer
+  shipmentId:
+    description: Идентификатор отгрузки.
+    format: int64
+    type: integer
+  orderIds:
+    description: Фильтр по идентификаторам заказа в отгрузке.
+    type: array
+    items:
+      description: Идентификатор заказа.
+      format: int64
+      type: integer

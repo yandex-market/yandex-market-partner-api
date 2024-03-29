@@ -206,6 +206,8 @@ paths:
     $ref: paths/reports_goods-turnover_generate.yaml
   /reports/boost-consolidated/generate:
     $ref: paths/reports_boost-consolidated_generate.yaml
+  /reports/documents/shipment-list/generate:
+    $ref: paths/reports_documents_shipment-list_generate.yaml
   /campaigns/{campaignId}/outlets:
     $ref: paths/campaigns_campaignId_outlets.yaml
   /campaigns/{campaignId}/outlets/{outletId}:
