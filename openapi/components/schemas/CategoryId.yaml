@@ -1,3 +1,6 @@
-description: Идентификатор категории на Маркете.
+description: >-
+  Идентификатор категории на Маркете. Чтобы узнать идентификатор категории, к
+  которой относится товар, воспользуйтесь запросом [POST
+  categories/tree](../../reference/categories/getCategoriesTree.md).
 format: int32
 type: integer

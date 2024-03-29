@@ -24,7 +24,7 @@ post:
 
         Чтобы узнать идентификатор категории, к которой относится интересующий
         вас товар, воспользуйтесь запросом [POST
-        businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md).
+        categories/tree](../../reference/categories/getCategoriesTree.md).
       required: true
       schema:
         format: int64

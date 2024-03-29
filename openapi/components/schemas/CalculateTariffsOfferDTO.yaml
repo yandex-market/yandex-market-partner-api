@@ -19,7 +19,7 @@ properties:
 
       Чтобы узнать идентификатор категории, к которой относится товар,
       воспользуйтесь запросом [POST
-      businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md).
+      categories/tree](../../reference/categories/getCategoriesTree.md).
     type: integer
     format: int64
     minimum: 0
