@@ -62,13 +62,7 @@ properties:
       Ссылка (URL) на видео товара.
 
 
-      {% note alert %}
-
-
-      Пока действует временное ограничение: ссылка может быть только одна.
-
-
-      {% endnote %}
+      Максимальное количество ссылок — 6.
 
 
       **Требования к ссылке**
@@ -109,7 +103,7 @@ properties:
       [Требования к
       видео](https://yandex.ru/support/marketplace/assortment/fields/video.html)
     type: array
-    maxItems: 1
+    maxItems: 6
     items:
       type: string
   manuals:
