@@ -1,5 +1,8 @@
 description: Информация о тарифах, по которым нужно заплатить за услуги Маркета.
 type: object
+required:
+  - type
+  - amount
 properties:
   type:
     description: Услуга Маркета, за которую начисляется тариф.
@@ -18,3 +21,8 @@ properties:
   amount:
     description: Значение тарифа в рублях.
     type: number
+  parameters:
+    description: Параметры расчета тарифа.
+    type: array
+    items:
+      $ref: ./TariffParameterDTO.yaml
