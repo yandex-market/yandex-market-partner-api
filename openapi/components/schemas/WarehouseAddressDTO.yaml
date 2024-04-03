@@ -24,8 +24,5 @@ properties:
     description: Номер корпуса.
     type: string
     maxLength: 16
-  additional:
-    description: Дополнительная информация.
-    type: string
   gps:
     $ref: ./GpsDTO.yaml
