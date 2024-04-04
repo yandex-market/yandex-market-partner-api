@@ -15,7 +15,7 @@ post:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml
   requestBody:
-    required: true
+    required: false
     content:
       application/json:
         schema:
