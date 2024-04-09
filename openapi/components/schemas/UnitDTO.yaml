@@ -1,0 +1,19 @@
+description: Единица измерения.
+type: object
+required:
+  - id
+  - name
+  - fullName
+properties:
+  id:
+    description: Идентификатор единицы измерения.
+    type: integer
+    format: int64
+  name:
+    description: Сокращенное название единицы измерения.
+    type: string
+    example: кг
+  fullName:
+    description: Полное название единицы измерения.
+    type: string
+    example: килограмм

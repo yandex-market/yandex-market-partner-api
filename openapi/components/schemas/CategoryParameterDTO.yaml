@@ -19,6 +19,8 @@ properties:
   type:
     description: Тип данных.
     $ref: ./ParameterType.yaml
+  unit:
+    $ref: ./CategoryParameterUnitDTO.yaml
   description:
     description: Описание характеристики.
     type: string

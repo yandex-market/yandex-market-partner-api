@@ -1,0 +1,15 @@
+description: Единицы измерения характеристики товара.
+type: object
+required:
+  - defaultUnitId
+  - units
+properties:
+  defaultUnitId:
+    description: Единица измерения по умолчанию.
+    type: integer
+    format: int64
+  units:
+    description: Допустимые единицы измерения.
+    type: array
+    items:
+      $ref: ./UnitDTO.yaml
