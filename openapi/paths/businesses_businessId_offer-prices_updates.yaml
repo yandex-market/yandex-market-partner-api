@@ -8,7 +8,7 @@ post:
   operationId: updateBusinessPrices
   summary: Установка цен
   description: |
-    Устанавливает [базовые цены](*rule).
+    Устанавливает [базовые цены](*default-price).
 
     {% note info "Данные в каталоге обновляются не мгновенно" %}
 
