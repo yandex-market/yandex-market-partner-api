@@ -24,7 +24,7 @@ post:
 
     |---------------------|-----------------------------------|
 
-    |О платежах за период |`dateTimeFrom` и `dateTimeTo`      |
+    |О платежах за период |`dateFrom` и `dateTo`      |
 
     |О платежном поручении|`bankOrderId` и `bankOrderDateTime`|
 
