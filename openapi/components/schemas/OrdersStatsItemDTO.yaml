@@ -46,7 +46,9 @@ properties:
     items:
       $ref: ./OrdersStatsDetailsDTO.yaml
   cisList:
-    description: Список кодов идентификации товара в системе «Честный ЗНАК».
+    description: >-
+      Список кодов идентификации товара [в системе «Честный
+      ЗНАК»](https://честныйзнак.рф/).
     type: array
     items:
       type: string

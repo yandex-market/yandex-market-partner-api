@@ -8,7 +8,9 @@ properties:
     description: Логистический статус конкретного товара.
     $ref: ./ReturnInstanceStatusType.yaml
   cis:
-    description: Контрольный идентификационный знак.
+    description: >-
+      Код идентификации единицы товара [в системе «Честный
+      ЗНАК»](https://честныйзнак.рф/).
     type: string
   imei:
     description: Международный идентификатор мобильного оборудования.
