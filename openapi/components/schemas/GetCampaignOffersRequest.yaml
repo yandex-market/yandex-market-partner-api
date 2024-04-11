@@ -15,6 +15,7 @@ properties:
     type: array
     items:
       $ref: ./ShopSku.yaml
+    maxItems: 200
   statuses:
     description: |
       Фильтр по статусам товаров.
