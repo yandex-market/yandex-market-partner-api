@@ -20,17 +20,6 @@ properties:
       Цена на товар. Указана в той валюте, которая была задана в каталоге.
       Разделитель целой и дробной части — точка.
     type: number
-  feedCategoryId:
-    deprecated: true
-    description: |
-      Идентификатор категории, в которую входит товар.
-
-      {% note alert %}
-
-      Параметр устарел и не рекомендуется к использованию.
-
-      {% endnote %}
-    type: string
   offerName:
     description: Название товара.
     type: string
