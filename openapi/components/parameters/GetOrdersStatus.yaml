@@ -26,4 +26,7 @@ name: status
 in: query
 required: false
 schema:
-  $ref: ../schemas/OrderStatusType.yaml
+  type: array
+  uniqueItems: true
+  items:
+    $ref: ../schemas/OrderStatusType.yaml
