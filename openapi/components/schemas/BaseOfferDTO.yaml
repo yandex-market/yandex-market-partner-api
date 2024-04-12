@@ -211,7 +211,7 @@ properties:
 
 
       Передавать можно только номера документов, сканы которого загружены в
-      личном кабинете продавца по
+      кабинете продавца по
       [инструкции](https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html).
     type: array
     items:

@@ -44,8 +44,8 @@ post:
     Получить SKU на Маркете рекомендованной карточки товара можно с помощью
     запроса [POST
     campaigns/{campaignId}/offer-mapping-entries/suggestions](../../reference/offer-mappings/getSuggestedOfferMappingEntries.md)
-    или через личный кабинет. Если SKU на Маркете не указан, сотрудники Маркета
-    сами подберут или создадут подходящую карточку товара, либо у него появится
+    или через кабинет. Если SKU на Маркете не указан, сотрудники Маркета сами
+    подберут или создадут подходящую карточку товара, либо у него появится
     статус `NEED_CONTENT` (нужно найти карточку или создать ее самостоятельно) в
     выходных данных запроса [GET
     campaigns/{campaignId}/offer-mapping-entries](../../reference/offer-mappings/getOfferMappingEntries.md).

@@ -272,7 +272,7 @@ properties:
       Номер документа на товар.
 
 
-      Перед указанием номера документ нужно загрузить в личном кабинете
-      магазина.
+      Перед указанием номера документ нужно загрузить в кабинете продавца на
+      Маркете.
       [Инструкция](https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html)
     type: string

@@ -6,8 +6,8 @@ description: >
   описать как отдельный товар (входной параметр `offer-mapping-entry` запроса
   [POST
   campaigns/{campaignId}/offer-mapping-entries/updates](../../reference/offer-mappings/updateOfferMappingEntries.md)
-  или строка в каталоге, если вы загружаете товары через личный кабинет
-  магазина).
+  или строка в каталоге, если вы загружаете товары через кабинет продавца на
+  Маркете).
 
   * `CANCELLED` — товар отозван с модерации по вашей инициативе.
 
@@ -41,7 +41,7 @@ description: >
   * `NEED_PICTURES` — для идентификации товара нужны его изображения. Отправьте
   URL изображений товара в запросе [POST
   campaigns/{campaignId}/offer-mapping-entries/updates](../../reference/offer-mappings/updateOfferMappingEntries.md)
-  или загрузите обновленный каталог через личный кабинет магазина.
+  или загрузите обновленный каталог через кабинет продавца на Маркете.
 
   * `NEED_VENDOR` — неверно указан производитель товара.
 
