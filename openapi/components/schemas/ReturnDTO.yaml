@@ -14,7 +14,7 @@ properties:
     type: string
     format: date-time
   updateDate:
-    description: Дата обновления заказа.
+    description: Дата обновления возврата.
     type: string
     format: date-time
   refundStatus:
