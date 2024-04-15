@@ -1,6 +1,6 @@
 description: |
   Тип денежного перевода:
-  - `PAYMENT` — оплата;
+  - `PAYMENT` — оплата.
   - `REFUND` — возврат.
 type: string
 enum:

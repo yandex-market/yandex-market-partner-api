@@ -2,30 +2,30 @@ description: >
   Услуга:
 
 
-  * `FEE` — размещение товара на Маркете;
+  * `FEE` — размещение товара на Маркете.
 
-  * `FULFILLMENT` — складская обработка;
+  * `FULFILLMENT` — складская обработка.
 
   * `LOYALTY_PARTICIPATION_FEE` — участие в программе лояльности и отзывы за
-  баллы, если они подключены;
+  баллы, если они подключены.
 
-  * `AUCTION_PROMOTION` — буст продаж;
+  * `AUCTION_PROMOTION` — буст продаж.
 
-  * `INSTALLMENT` — рассрочка;
+  * `INSTALLMENT` — рассрочка.
 
-  * `DELIVERY_TO_CUSTOMER` — доставка покупателю;
+  * `DELIVERY_TO_CUSTOMER` — доставка покупателю.
 
-  * `EXPRESS_DELIVERY_TO_CUSTOMER` — экспресс-доставка покупателю;
+  * `EXPRESS_DELIVERY_TO_CUSTOMER` — экспресс-доставка покупателю.
 
-  * `AGENCY` — прием платежа покупателя;
+  * `AGENCY` — прием платежа покупателя.
 
-  * `PAYMENT_TRANSFER` — перевод платежа покупателя;
+  * `PAYMENT_TRANSFER` — перевод платежа покупателя.
 
-  * `RETURNED_ORDERS_STORAGE` — хранение невыкупов и возвратов;
+  * `RETURNED_ORDERS_STORAGE` — хранение невыкупов и возвратов.
 
-  * `SORTING` — обработка заказа;
+  * `SORTING` — обработка заказа.
 
-  * `INTAKE_SORTING` — организация забора заказов со склада продавца (FBS);
+  * `INTAKE_SORTING` — организация забора заказов со склада продавца (FBS).
 
   * `RETURN_PROCESSING` — обработка заказов на складе (FBY).
 type: string
