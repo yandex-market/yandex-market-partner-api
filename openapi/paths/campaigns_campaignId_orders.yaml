@@ -20,6 +20,9 @@ get:
     * статусу;
 
 
+    * идентификаторам заказов;
+
+
     * этапу обработки или причине отмены;
 
 
@@ -57,6 +60,7 @@ get:
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/GetOrdersOrderIds.yaml
     - $ref: ../components/parameters/GetOrdersStatus.yaml
     - $ref: ../components/parameters/GetOrdersSubstatus.yaml
     - $ref: ../components/parameters/GetOrdersFromDate.yaml

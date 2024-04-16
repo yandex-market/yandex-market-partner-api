@@ -1,0 +1,12 @@
+description: |
+  Фильтрация заказов по идентификаторам.
+name: orderIds
+in: query
+required: false
+schema:
+  type: array
+  items:
+    type: integer
+    format: int64
+    minItems: 1
+    maxItems: 50
