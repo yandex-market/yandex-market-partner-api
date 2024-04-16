@@ -2,6 +2,7 @@ description: Информация о чатах.
 type: object
 required:
   - chatId
+  - orderId
   - type
   - status
   - createdAt
@@ -9,6 +10,10 @@ required:
 properties:
   chatId:
     description: Идентификатор чата.
+    type: integer
+    format: int64
+  orderId:
+    description: Идентификатор заказа.
     type: integer
     format: int64
   type:
