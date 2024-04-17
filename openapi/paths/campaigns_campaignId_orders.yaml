@@ -74,6 +74,7 @@ get:
     - $ref: ../components/parameters/GetOrdersHasCis.yaml
     - $ref: ../components/parameters/GetOrdersOnlyWaitingForCancellationApprove.yaml
     - $ref: ../components/parameters/GetOrdersOnlyEstimatedDelivery.yaml
+    - $ref: ../components/parameters/GetOrdersBuyerType.yaml
     - $ref: ../components/parameters/PageNum.yaml
     - $ref: ../components/parameters/PageSize.yaml
   responses:

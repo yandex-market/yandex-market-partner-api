@@ -1,0 +1,7 @@
+description: |
+  Фильтрация заказов по типу покупателя.
+name: buyerType
+in: query
+required: false
+schema:
+  $ref: ../schemas/OrderBuyerType.yaml
