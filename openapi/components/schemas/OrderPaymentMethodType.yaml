@@ -49,18 +49,17 @@ description: >
 
 
   Значение по умолчанию: `CASH_ON_DELIVERY`.
+
+
+  * `UNKNOWN` — неизвестный тип.
 type: string
 enum:
-  - SHOP_PREPAID
-  - BANK_CARD
-  - YANDEX_MONEY
   - CASH_ON_DELIVERY
   - CARD_ON_DELIVERY
   - YANDEX
   - APPLE_PAY
   - EXTERNAL_CERTIFICATE
   - CREDIT
-  - INSTALLMENT
   - GOOGLE_PAY
   - TINKOFF_CREDIT
   - SBP

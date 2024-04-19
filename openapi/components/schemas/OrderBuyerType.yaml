@@ -2,6 +2,7 @@ description: |
   Тип покупателя:
 
   * `PERSON` — физическое лицо.
+
   * `BUSINESS` — организация.
 type: string
 enum:
