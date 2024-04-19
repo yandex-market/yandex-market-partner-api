@@ -1,4 +1,29 @@
-description: Настройка продажи квантами.
+description: >
+  Настройка продажи квантами.
+
+
+  Чтобы сбросить установленные ранее значения, передайте пустой параметр
+  `quantum`.
+
+
+  {% cut "Пример" %}
+
+
+  ```json
+
+  {
+    "offers": [
+      {
+        "offerId": "08e35dc1-89a2-11e3-8055-0015e9b8c48d",
+        "quantum": {}
+      }
+    ]
+  }
+
+  ```
+
+
+  {% endcut %}
 type: object
 properties:
   minQuantity:
