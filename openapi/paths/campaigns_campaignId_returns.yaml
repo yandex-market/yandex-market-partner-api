@@ -22,15 +22,18 @@ get:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - $ref: ../components/parameters/PageLimit.yaml
-    - description: |
+    - description: >
         Идентификаторы заказов — для фильтрации результатов.
 
+
         Несколько идентификаторов перечисляются через запятую без пробела.
+        Максимальное количество идентификаторов — 50.
       in: query
       name: orderIds
       required: false
       schema:
         type: array
+        maxItems: 50
         items:
           type: integer
           format: int64
