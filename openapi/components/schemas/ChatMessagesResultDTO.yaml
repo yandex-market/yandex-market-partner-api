@@ -1,6 +1,13 @@
 description: Информация о сообщениях.
 type: object
+required:
+  - orderId
+  - messages
 properties:
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
   messages:
     description: Информация о сообщениях.
     type: array
