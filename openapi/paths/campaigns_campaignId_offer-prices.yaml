@@ -8,6 +8,16 @@ get:
   operationId: getPrices
   summary: Список цен
   description: >
+    {% note alert "Deprecated" %}
+
+
+    Этот метод устарел. Пожалуйста, пользуйтесь вместо него [POST
+    campaigns/{campaignId}/offer-prices](../../reference/assortment/getPricesByOfferIds.md).
+
+
+    {% endnote %}
+
+
     Возвращает список цен, установленных вами на товары любым способом:
     например, через партнерский API или в файле с каталогом.
 
@@ -30,6 +40,7 @@ get:
     сутки|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml

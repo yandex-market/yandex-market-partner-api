@@ -7,6 +7,8 @@ properties:
     $ref: ./ShopSku.yaml
   name:
     $ref: ./OfferName.yaml
+  marketCategoryId:
+    $ref: ./PartnerMarketCategoryId.yaml
   category:
     $ref: ./OfferCategory.yaml
   pictures:

@@ -1,0 +1,12 @@
+description: >
+  Идентификатор категории на Маркете, к которой вы относите свой товар.
+
+
+  Если не указать `marketCategoryId`, то маркетная категория будет определена
+  автоматически.
+
+
+  Список категорий Маркета можно получить с помощью запроса  [POST
+  categories/tree](../../reference/categories/getCategoriesTree.md).
+type: integer
+format: int64
