@@ -30,7 +30,7 @@ post:
           $ref: ../components/schemas/GetGoodsStatsRequest.yaml
   responses:
     '200':
-      description: Отчёт по товарам.
+      description: Отчет по товарам.
       content:
         application/json:
           schema:

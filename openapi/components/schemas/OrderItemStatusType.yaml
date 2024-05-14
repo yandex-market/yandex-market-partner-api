@@ -1,9 +1,9 @@
 description: |
-  Возвращенный или невыкупленный товар.
+  Возвращенный или невыкупленный товар:
 
-  * `REJECTED` — невыкуп.
+  * `REJECTED` — невыкупленный.
 
-  * `RETURNED` — возврат.
+  * `RETURNED` — возвращенный.
 type: string
 enum:
   - REJECTED

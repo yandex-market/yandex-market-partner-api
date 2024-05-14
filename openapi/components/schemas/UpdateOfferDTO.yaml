@@ -3,6 +3,15 @@ type: object
 allOf:
   - $ref: ./BaseOfferDTO.yaml
   - properties:
+      parameterValues:
+        description: |
+          Список характеристик с их значениями.
+          Обновляется всегда целиком.
+          Максимальное количество — 300.
+        type: array
+        maxItems: 300
+        items:
+          $ref: ./ParameterValueDTO.yaml
       purchasePrice:
         description: >-
           Себестоимость — затраты на самостоятельное производство товара или
@@ -21,5 +30,5 @@ allOf:
           рассчитаем скидку и размер софинансирования.
 
 
-          Если Маркет не готов софинансировать скидку, покупатель её не увидит.
+          Если Маркет не готов софинансировать скидку, покупатель ее не увидит.
         $ref: ./BasePriceDTO.yaml

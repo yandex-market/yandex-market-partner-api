@@ -49,3 +49,9 @@ properties:
     type: number
     minimum: 0
     exclusiveMinimum: true
+  quantity:
+    description: Квант продажи — количество единиц товара в одном товарном предложении.
+    type: integer
+    format: int32
+    minimum: 1
+    default: 1

@@ -12,6 +12,12 @@ post:
 
     |**⚙️ Лимит:** 1 000 запросов в час|
     |-|
+  requestBody:
+    required: false
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetCategoriesRequest.yaml
   responses:
     '200':
       description: Категории Маркета.

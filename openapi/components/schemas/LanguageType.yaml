@@ -1,0 +1,10 @@
+description: |
+  Язык:
+
+  * `RU` — русский.
+
+  * `EN` — английский.
+type: string
+enum:
+  - RU
+  - EN

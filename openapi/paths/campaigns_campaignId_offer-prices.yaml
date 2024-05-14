@@ -11,7 +11,7 @@ get:
     {% note alert "Deprecated" %}
 
 
-    Этот метод устарел. Пожалуйста, пользуйтесь вместо него [POST
+    Этот метод устарел. Вместо него используйте [POST
     campaigns/{campaignId}/offer-prices](../../reference/assortment/getPricesByOfferIds.md).
 
 
@@ -45,7 +45,7 @@ get:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - $ref: ../components/parameters/PageLimit.yaml
-    - description: Фильтр по нахождению в архиве
+    - description: Фильтр по нахождению в архиве.
       in: query
       name: archived
       required: false
@@ -54,7 +54,7 @@ get:
         default: false
   responses:
     '200':
-      description: Ответ на запрос списка цен.
+      description: Список всех товаров с установленными ценами.
       content:
         application/json:
           schema:
@@ -79,10 +79,9 @@ post:
     - dbs
     - express
   operationId: getPricesByOfferIds
-  summary: Просмотр установленных в магазине цен
+  summary: Просмотр цен на указанные товары в магазине.
   description: >
-    Возвращает список установленных вами цен на заданные товары в заданном
-    магазине.
+    Возвращает список цен на указанные товары в магазине.
 
 
     {% note warning "Метод только для отдельных магазинов" %}

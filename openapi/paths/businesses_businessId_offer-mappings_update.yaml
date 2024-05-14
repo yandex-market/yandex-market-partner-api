@@ -75,7 +75,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/EmptyApiResponse.yaml
+            $ref: ../components/schemas/UpdateOfferMappingsResponse.yaml
     '400':
       description: >
         Убедитесь, что все обязательные поля заполнены.

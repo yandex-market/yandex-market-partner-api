@@ -1,0 +1,7 @@
+description: |
+  Параметры запроса категорий.
+type: object
+properties:
+  language:
+    description: Язык категорий.
+    $ref: ./LanguageType.yaml

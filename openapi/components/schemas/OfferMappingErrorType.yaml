@@ -1,0 +1,25 @@
+description: >
+  Типы ошибок:
+
+
+  * `UNKNOWN_CATEGORY` — указана неизвестная категория.
+
+  * `UNKNOWN_PARAMETER` — передана характеристика, отсутствующая среди
+  характеристик категории.
+
+  * `UNEXPECTED_BOOLEAN_VALUE` — вместо boolean-значения передано что-то другое.
+
+  * `NUMBER_FORMAT` — передана строка, не обозначающая число, вместо числа.
+
+  * `VALUE_BLANK` — передано пустое значение.
+
+  * `INVALID_UNIT_ID` — передана единица измерения, недопустимая для
+  характеристики.
+type: string
+enum:
+  - UNKNOWN_CATEGORY
+  - UNKNOWN_PARAMETER
+  - UNEXPECTED_BOOLEAN_VALUE
+  - NUMBER_FORMAT
+  - VALUE_BLANK
+  - INVALID_UNIT_ID

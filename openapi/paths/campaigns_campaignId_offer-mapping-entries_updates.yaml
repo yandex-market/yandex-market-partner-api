@@ -10,7 +10,7 @@ post:
     {% note alert "Deprecated" %}
 
 
-    Этот метод устарел. Пожалуйста, пользуйтесь вместо него [POST
+    Этот метод устарел. Вместо него используйте [POST
     businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
 
 
