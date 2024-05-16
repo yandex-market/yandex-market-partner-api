@@ -4,8 +4,6 @@ properties:
   id:
     description: Идентификатор предложения из прайс-листа.
     type: string
-  feed:
-    $ref: ./OfferPriceFeedDTO.yaml
   price:
     $ref: ./PriceDTO.yaml
   marketSku:
