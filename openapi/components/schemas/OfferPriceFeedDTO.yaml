@@ -1,7 +1,0 @@
-description: Информация о прайс-листе, содержащем предложение.
-type: object
-properties:
-  id:
-    description: Идентификатор прайс-листа, содержащего предложение.
-    type: integer
-    format: int64

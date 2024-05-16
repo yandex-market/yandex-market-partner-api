@@ -15,17 +15,6 @@ properties:
       Идентификатор предложения из прайс-листа.
     deprecated: true
     type: string
-  feed:
-    description: |
-      {% note alert "Это поле устарело" %}
-
-      Не используйте его — это может привести к ошибкам.
-
-      {% endnote %}
-
-      Информация о прайс-листе.
-    deprecated: true
-    $ref: ./OfferPriceFeedDTO.yaml
   price:
     $ref: ./PriceDTO.yaml
   marketSku:
