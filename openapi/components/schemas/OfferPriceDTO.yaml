@@ -17,17 +17,6 @@ properties:
     type: string
   price:
     $ref: ./PriceDTO.yaml
-  marketSku:
-    description: |
-      {% note alert "Это поле устарело" %}
-
-      Не используйте его — это может привести к ошибкам.
-
-      {% endnote %}
-
-      SKU на Маркете.
-    deprecated: true
-    $ref: ./MarketSku.yaml
   shopSku:
     description: |
       {% note alert "Это поле устарело" %}
