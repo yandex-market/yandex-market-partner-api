@@ -78,6 +78,12 @@ description: >
   * `FF_STORAGE_BILLING` — хранения товаров на складе.
 
 
+  * `CANCELLED_ORDER_FEE_QI` — штраф за отмену заказа по вине продавца.
+
+
+  * `LATE_ORDER_EXECUTION_FEE_QI` — штраф за отгрузку или доставку не вовремя.
+
+
   Подробнее об услугах Маркета читайте [в Справке для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
@@ -106,3 +112,5 @@ enum:
   - INTAKE_SORTING_SMALL_GOODS
   - INTAKE_SORTING_DAILY
   - FF_STORAGE_BILLING
+  - CANCELLED_ORDER_FEE_QI
+  - LATE_ORDER_EXECUTION_FEE_QI
