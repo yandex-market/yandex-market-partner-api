@@ -17,6 +17,8 @@ description: |
 
   * `REFUNDED_BY_SHOP` — магазин сделал самостоятельно возврат денег.
 
+  * `COMPLETE_WITHOUT_REFUND` - возврат денег не требуется.
+
   * `CANCELLED` — возврат отменен.
 type: string
 enum:
@@ -29,4 +31,5 @@ enum:
   - REFUNDED_WITH_BONUSES
   - REFUNDED_BY_SHOP
   - CANCELLED
+  - COMPLETE_WITHOUT_REFUND
   - UNKNOWN
