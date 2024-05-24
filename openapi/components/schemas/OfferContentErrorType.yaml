@@ -19,6 +19,12 @@ description: >
 
   * `INVALID_UNIT_ID` — передана единица измерения, недопустимая для
   характеристики.
+
+  * `INVALID_GROUP_ID_LENGTH` — в названии превышено допустимое значение
+  символов — 255.
+
+  * `INVALID_GROUP_ID_CHARACTERS` — переданы недопустимые символы. Используйте
+  только буквы и цифры.
 type: string
 enum:
   - OFFER_NOT_FOUND
@@ -29,3 +35,5 @@ enum:
   - NUMBER_FORMAT
   - VALUE_BLANK
   - INVALID_UNIT_ID
+  - INVALID_GROUP_ID_LENGTH
+  - INVALID_GROUP_ID_CHARACTERS
