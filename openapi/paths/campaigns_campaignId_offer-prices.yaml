@@ -79,7 +79,7 @@ post:
     - dbs
     - express
   operationId: getPricesByOfferIds
-  summary: Просмотр цен на указанные товары в магазине.
+  summary: Просмотр цен на указанные товары в магазине
   description: >
     Возвращает список цен на указанные товары в магазине.
 

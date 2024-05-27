@@ -1,0 +1,9 @@
+type: object
+description: Настройки кабинета.
+properties:
+  onlyDefaultPrice:
+    description: |
+      Можно ли установить только [базовую цену](*rule):
+      * `false` — можно задать и базовую цену, и цены в конкретных магазинах.
+      * `true` — можно задать только базовую цену.
+    type: boolean

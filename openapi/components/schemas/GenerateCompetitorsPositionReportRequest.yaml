@@ -1,0 +1,24 @@
+description: Данные, необходимые для генерации отчета.
+type: object
+required:
+  - dateFrom
+  - dateTo
+  - businessId
+  - categoryId
+properties:
+  businessId:
+    description: Идентификатор бизнеса.
+    type: integer
+    format: int64
+  categoryId:
+    description: Идентификатор категории.
+    type: integer
+    format: int64
+  dateFrom:
+    description: Начало периода, включительно.
+    type: string
+    format: date
+  dateTo:
+    description: Конец периода, включительно.
+    type: string
+    format: date

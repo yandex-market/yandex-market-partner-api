@@ -40,3 +40,7 @@ properties:
   returnType:
     description: Тип возврата.
     $ref: ./ReturnType.yaml
+  fastReturn:
+    description: |
+      Используется ли опция **Быстрый возврат денег за дешевый брак**.
+    type: boolean

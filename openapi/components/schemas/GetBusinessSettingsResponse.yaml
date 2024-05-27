@@ -1,0 +1,7 @@
+type: object
+description: Ответ на запрос настроек кабинета.
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GetBusinessSettingsInfoDTO.yaml

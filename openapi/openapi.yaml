@@ -32,6 +32,8 @@ externalDocs:
   description: Документация API
   url: https://yandex.ru/dev/market/partner-api/doc/
 paths:
+  /businesses/{businessId}/settings:
+    $ref: paths/businesses_businessId_settings.yaml
   /campaigns:
     $ref: paths/campaigns.yaml
   /campaigns/{campaignId}:
@@ -202,6 +204,8 @@ paths:
     $ref: paths/reports_goods-movement_generate.yaml
   /reports/shows-sales/generate:
     $ref: paths/reports_shows-sales_generate.yaml
+  /reports/competitors-position/generate:
+    $ref: paths/reports_competitors-position_generate.yaml
   /reports/goods-turnover/generate:
     $ref: paths/reports_goods-turnover_generate.yaml
   /reports/boost-consolidated/generate:

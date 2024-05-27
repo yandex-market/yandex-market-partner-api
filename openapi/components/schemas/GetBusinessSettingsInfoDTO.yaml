@@ -1,0 +1,9 @@
+type: object
+description: Информация о кабинете и его настройках.
+properties:
+  info:
+    description: Базовая информация о кабинете.
+    $ref: ./BusinessDTO.yaml
+  settings:
+    description: Настройки на уровне кабинета.
+    $ref: ./BusinessSettingsDTO.yaml
