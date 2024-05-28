@@ -17,7 +17,7 @@ description: |
 
   * `REFUNDED_BY_SHOP` — магазин сделал самостоятельно возврат денег.
 
-  * `COMPLETE_WITHOUT_REFUND` - возврат денег не требуется.
+  * `COMPLETE_WITHOUT_REFUND` — возврат денег не требуется.
 
   * `CANCELLED` — возврат отменен.
 type: string
