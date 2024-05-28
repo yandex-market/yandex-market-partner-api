@@ -8,7 +8,9 @@ post:
   operationId: updatePrices
   summary: Установка цен на товары в конкретном магазине
   description: >
-    Устанавливает цены на товары в магазине.
+    Устанавливает цены на товары в магазине. Чтобы получить рекомендации
+    Маркета, касающиеся цен, выполните запрос [POST
+    businesses/{businessId}/offers/recommendations](../../reference/business-assortment/getOfferRecommendations.md).
 
 
     {% note warning "Метод только для отдельных магазинов" %}

@@ -7,16 +7,23 @@ post:
     - express
   operationId: updateBusinessPrices
   summary: Установка цен
-  description: |
-    Устанавливает [базовые цены](*default-price).
+  description: >
+    Устанавливает [базовые цены](*default-price). Чтобы получить рекомендации
+    Маркета, касающиеся цен, выполните запрос [POST
+    businesses/{businessId}/offers/recommendations](../../reference/business-assortment/getOfferRecommendations.md).
+
 
     {% note info "Данные в каталоге обновляются не мгновенно" %}
 
+
     Это занимает до нескольких минут.
+
 
     {% endnote %}
 
+
     |**⚙️ Лимит:** 5000 товаров в минуту, не более 500 товаров в одном запросе|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
