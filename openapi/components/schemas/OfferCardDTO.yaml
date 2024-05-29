@@ -14,6 +14,12 @@ properties:
   mapping:
     description: Основная информация о карточке товара.
     $ref: ./GetMappingDTO.yaml
+  parameterValues:
+    description: |
+      Список характеристик с их значениями.
+    type: array
+    items:
+      $ref: ./ParameterValueDTO.yaml
   cardStatus:
     description: Статус карточки.
     $ref: ./OfferCardStatusType.yaml
