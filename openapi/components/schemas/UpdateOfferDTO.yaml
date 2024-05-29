@@ -12,6 +12,10 @@ allOf:
         maxItems: 300
         items:
           $ref: ./ParameterValueDTO.yaml
+      basicPrice:
+        description: |
+          Цена.
+        $ref: ./UpdatePriceWithDiscountDTO.yaml
       purchasePrice:
         description: >-
           Себестоимость — затраты на самостоятельное производство товара или
