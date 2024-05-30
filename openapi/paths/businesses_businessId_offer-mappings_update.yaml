@@ -58,7 +58,6 @@ post:
 
     |**⚙️ Лимит:** 5000 товаров в минуту, не более 500 товаров в одном запросе|
 
-
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
