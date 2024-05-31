@@ -4,6 +4,9 @@ description: >
 
   * `UNKNOWN_CATEGORY` — указана неизвестная категория.
 
+  * `EMPTY_MARKET_CATEGORY` — не указана маркетная категория при указании
+  категорийных параметров.
+
   * `UNKNOWN_PARAMETER` — передана характеристика, отсутствующая среди
   характеристик категории.
 
@@ -18,6 +21,7 @@ description: >
 type: string
 enum:
   - UNKNOWN_CATEGORY
+  - EMPTY_MARKET_CATEGORY
   - UNKNOWN_PARAMETER
   - UNEXPECTED_BOOLEAN_VALUE
   - NUMBER_FORMAT
