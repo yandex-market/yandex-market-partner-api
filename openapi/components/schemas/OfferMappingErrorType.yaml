@@ -4,6 +4,8 @@ description: >
 
   * `UNKNOWN_CATEGORY` — указана неизвестная категория.
 
+  * `CATEGORY_MISMATCH` — указанная категория не совпадает с категорией товара.
+
   * `EMPTY_MARKET_CATEGORY` — не указана маркетная категория при указании
   категорийных параметров.
 
@@ -21,6 +23,7 @@ description: >
 type: string
 enum:
   - UNKNOWN_CATEGORY
+  - CATEGORY_MISMATCH
   - EMPTY_MARKET_CATEGORY
   - UNKNOWN_PARAMETER
   - UNEXPECTED_BOOLEAN_VALUE
