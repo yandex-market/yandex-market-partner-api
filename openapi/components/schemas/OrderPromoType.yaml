@@ -71,7 +71,7 @@ description: >
   * `DISCOUNT_BY_PAYMENT_TYPE` — прямая скидка при оплате картой Плюса.
 
 
-  * `PERCENT_DISCOUNT` — процентная скидка.
+  * `PERCENT_DISCOUNT` — прямая скидка в процентах.
 
 
   * `DCO_EXTRA_DISCOUNT` — дополнительная скидка, необходимая для расчета
