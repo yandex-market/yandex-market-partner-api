@@ -8,16 +8,6 @@ properties:
     description: Идентификатор посылки, присвоенный Маркетом.
     type: integer
     format: int64
-  status:
-    description: |
-      {% note alert %}
-
-      Поле устарело, не используйте его.
-
-      {% endnote %}
-
-      Статус заказа в партнерской службе доставки.
-    $ref: ./OrderParcelStatusType.yaml
   shipmentDate:
     description: >
       День, в который нужно отгрузить заказ службе доставки.
