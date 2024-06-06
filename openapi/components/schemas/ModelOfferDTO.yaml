@@ -66,9 +66,9 @@ properties:
     format: int32
   inStock:
     description: |
-      {% note alert %}
+      {% note warning "" %}
 
-      Параметр устарел и не рекомендуется к использованию.
+      Этот параметр устарел. Не используйте его.
 
       {% endnote %}
     deprecated: true

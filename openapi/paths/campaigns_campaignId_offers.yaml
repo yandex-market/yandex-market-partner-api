@@ -5,7 +5,7 @@ get:
   operationId: getOffers
   summary: Предложения магазина
   description: >
-    {% note alert "Deprecated" %}
+    {% note warning "" %}
 
 
     Этот метод устарел. Не используйте его.

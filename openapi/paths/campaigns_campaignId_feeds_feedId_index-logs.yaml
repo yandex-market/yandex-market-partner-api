@@ -5,7 +5,7 @@ get:
   operationId: getFeedIndexLogs
   summary: Отчет по индексации прайс-листа
   description: >
-    {% note alert "Deprecated" %}
+    {% note warning "" %}
 
 
     Этот метод устарел. Не используйте его.

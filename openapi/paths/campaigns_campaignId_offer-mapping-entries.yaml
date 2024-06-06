@@ -7,7 +7,7 @@ get:
   operationId: getOfferMappingEntries
   summary: Список товаров в каталоге
   description: >
-    {% note alert "Deprecated" %}
+    {% note warning "" %}
 
 
     Этот метод устарел. Вместо него используйте [POST

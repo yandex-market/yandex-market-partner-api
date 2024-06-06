@@ -8,7 +8,7 @@ get:
   operationId: getPrices
   summary: Список цен
   description: >
-    {% note alert "Deprecated" %}
+    {% note warning "" %}
 
 
     Этот метод устарел. Вместо него используйте [POST

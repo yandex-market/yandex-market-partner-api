@@ -86,13 +86,10 @@ get:
       required: false
       schema:
         type: string
-    - description: >
-        {% note alert %}
+    - description: |
+        {% note warning "" %}
 
-
-        Параметр устарел и не рекомендуется к использованию. Идентификатор
-        региона укажите в параметре `region_id`.
-
+        Этот параметр устарел. Для указания региона используйте `region_id`.
 
         {% endnote %}
       name: regionId

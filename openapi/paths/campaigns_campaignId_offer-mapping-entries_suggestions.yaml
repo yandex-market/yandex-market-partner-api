@@ -7,7 +7,7 @@ post:
   operationId: getSuggestedOfferMappingEntries
   summary: Рекомендованные карточки для ваших товаров
   description: >
-    {% note alert "Deprecated" %}
+    {% note warning "" %}
 
 
     Этот метод устарел. Вместо него используйте [POST

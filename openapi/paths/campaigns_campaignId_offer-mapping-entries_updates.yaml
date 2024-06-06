@@ -7,7 +7,7 @@ post:
   operationId: updateOfferMappingEntries
   summary: Добавление и редактирование товаров в каталоге
   description: >
-    {% note alert "Deprecated" %}
+    {% note warning "" %}
 
 
     Этот метод устарел. Вместо него используйте [POST

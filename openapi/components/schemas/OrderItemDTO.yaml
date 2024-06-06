@@ -59,7 +59,7 @@ properties:
     $ref: ./OrderVatType.yaml
   shopSku:
     deprecated: true
-    description: "Ваш SKU —\_идентификатор товара в вашей системе.\n\n{% note alert %}\n\nПараметр устарел и не рекомендуется к использованию. Вместо него используйте параметр `offerId`.\n\n{% endnote %}\n"
+    description: "{% note warning \"\" %}\n\nЭтот параметр устарел. Вместо него используйте `offerId`.\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
     $ref: ./ShopSku.yaml
   subsidy:
     description: >
@@ -80,18 +80,14 @@ properties:
     type: number
     format: decimal
   partnerWarehouseId:
-    description: >
-      Идентификатор склада в системе партнера, на который сформирован заказ.
+    description: |
+      {% note warning "" %}
 
-
-      {% note alert %}
-
-
-      Параметр устарел, временно поддерживается, но не доступен для ввода и
-      редактирования.
-
+      Этот параметр устарел. Не используйте его.
 
       {% endnote %}
+
+      Идентификатор склада в системе партнера, на который сформирован заказ.
     type: string
   promos:
     description: >-

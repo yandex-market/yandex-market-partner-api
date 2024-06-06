@@ -49,16 +49,16 @@ properties:
     type: boolean
   verified:
     description: |
+      {% note warning "" %}
+
+      Этот параметр устарел. Не используйте его.
+
+      {% endnote %}
+
       Является ли отзыв рекомендованным:
 
       * `true` — да.
       * `false` — нет.
-
-      {% note alert %}
-
-      Параметр устарел и не рекомендуется к использованию.
-
-      {% endnote %}
     type: boolean
   recommend:
     description: |

@@ -5,7 +5,7 @@ get:
   operationId: getCampaignFeedCategories
   summary: Категории магазина
   description: >
-    {% note alert "Deprecated" %}
+    {% note warning "" %}
 
 
     Этот метод устарел. Не используйте его.

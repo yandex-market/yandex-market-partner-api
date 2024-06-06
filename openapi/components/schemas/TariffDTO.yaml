@@ -9,9 +9,9 @@ properties:
     $ref: ./TariffType.yaml
   percent:
     description: |
-      {% note alert "Это поле устарело" %}
+      {% note warning "" %}
 
-      Не используйте его — это может привести к ошибкам.
+      Этот параметр устарел. Не используйте его.
 
       {% endnote %}
 

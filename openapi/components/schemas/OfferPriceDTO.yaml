@@ -6,9 +6,9 @@ properties:
     $ref: ./ShopSku.yaml
   id:
     description: |
-      {% note alert "Это поле устарело" %}
+      {% note warning "" %}
 
-      Не используйте его — это может привести к ошибкам.
+      Этот параметр устарел. Не используйте его.
 
       {% endnote %}
 
@@ -19,9 +19,9 @@ properties:
     $ref: ./PriceDTO.yaml
   shopSku:
     description: |
-      {% note alert "Это поле устарело" %}
+      {% note warning "" %}
 
-      Не используйте его — это может привести к ошибкам.
+      Этот параметр устарел. Не используйте его.
 
       {% endnote %}
     deprecated: true

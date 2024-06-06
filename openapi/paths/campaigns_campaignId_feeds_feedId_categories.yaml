@@ -5,7 +5,7 @@ get:
   operationId: getFeedCategories
   summary: Категории прайс-листа
   description: >
-    {% note alert "Deprecated" %}
+    {% note warning "" %}
 
 
     Этот метод устарел. Не используйте его.
