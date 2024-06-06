@@ -1,4 +1,4 @@
-description: Сообщение об ошибке.
+description: Текст ошибки.
 type: object
 properties:
   type:
@@ -8,7 +8,7 @@ properties:
     type: integer
     format: int64
   message:
-    description: Сообщение об ошибке.
+    description: Текст ошибки.
     type: string
 required:
   - type
