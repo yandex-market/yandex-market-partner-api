@@ -20,7 +20,7 @@ properties:
   price:
     description: >
       Цена товара в валюте заказа без учета вознаграждения партнеру за скидки по
-      промокодам, купонам и акциям (параметр `subsidy`).
+      промокодам, купонам и акциям (параметр `subsidies`).
 
 
       Для отделения целой части от дробной используется точка.
@@ -62,7 +62,17 @@ properties:
     description: "{% note warning \"\" %}\n\nЭтот параметр устарел. Вместо него используйте `offerId`.\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
     $ref: ./ShopSku.yaml
   subsidy:
+    deprecated: true
     description: >
+      {% note warning "" %}
+
+
+      Этот параметр устарел. Вместо него используйте `subsidies`.
+
+
+      {% endnote %}
+
+
       Общее вознаграждение партнеру за DBS-доставку и все скидки на товар:
 
 
@@ -80,6 +90,7 @@ properties:
     type: number
     format: decimal
   partnerWarehouseId:
+    deprecated: true
     description: |
       {% note warning "" %}
 
