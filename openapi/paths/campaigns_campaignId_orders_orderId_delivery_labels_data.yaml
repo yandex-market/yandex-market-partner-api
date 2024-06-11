@@ -2,6 +2,7 @@ get:
   tags:
     - order-labels
     - fbs
+    - dbs
     - express
   operationId: getOrderLabelsData
   summary: Информация на ярлыках‑наклейках

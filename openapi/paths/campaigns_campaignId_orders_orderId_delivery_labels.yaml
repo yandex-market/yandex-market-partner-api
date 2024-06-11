@@ -5,9 +5,9 @@ get:
     - dbs
     - express
   operationId: generateOrderLabels
-  summary: Ярлыки‑наклейки на все грузовые места в заказе
+  summary: Ярлыки‑наклейки на все коробки в одном заказе
   description: >
-    Возвращает PDF-файл с ярлыками, которые нужно наклеить на посылки перед
+    Возвращает PDF-файл с ярлыками, которые нужно наклеить на коробки перед
     отгрузкой. Подробно о том, зачем они нужны и как выглядят, рассказано [в
     Справке](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).
 
@@ -25,7 +25,7 @@ get:
     - $ref: ../components/parameters/PageFormat.yaml
   responses:
     '200':
-      description: PDF‑файл с ярлыками на все грузовые места.
+      description: PDF‑файл с ярлыками на все коробки.
       content:
         application/pdf:
           schema:

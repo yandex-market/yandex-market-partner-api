@@ -1,0 +1,8 @@
+description: >-
+  Настройка размещения ярлыков на странице. Если параметра нет, возвращается PDF
+  с ярлыками формата A7.
+name: format
+in: query
+required: false
+schema:
+  $ref: ../schemas/PageFormatType.yaml
