@@ -9,7 +9,9 @@ properties:
   startDay:
     description: |
       Точка продаж работает с указанного дня недели.
+
       Возможные значения:
+
       * `MONDAY` — понедельник.
       * `TUESDAY` — вторник.
       * `WEDNESDAY` — среда.
@@ -21,7 +23,9 @@ properties:
   endDay:
     description: |
       Точка продаж работает до указанного дня недели.
+
       Возможные значения:
+
       * `MONDAY` — понедельник.
       * `TUESDAY` — вторник.
       * `WEDNESDAY` — среда.
@@ -33,12 +37,14 @@ properties:
   startTime:
     description: |
       Точка продаж работает c указанного часа.
+
       Формат: `ЧЧ:ММ`.
     type: string
     minLength: 1
   endTime:
     description: |
       Точка продаж работает до указанного часа.
+
       Формат: `ЧЧ:ММ`.
     type: string
     minLength: 1

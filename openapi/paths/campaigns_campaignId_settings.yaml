@@ -15,7 +15,7 @@ get:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:
     '200':
-      description: Настройки магазина
+      description: Настройки магазина.
       content:
         application/json:
           schema:

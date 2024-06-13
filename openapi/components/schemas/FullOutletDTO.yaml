@@ -4,7 +4,7 @@ allOf:
   - $ref: ./OutletDTO.yaml
   - properties:
       id:
-        description: Идентификатор точки продаж, присвоенный Яндекс Маркетом.
+        description: Идентификатор точки продаж, присвоенный Маркетом.
         type: integer
         format: int64
       status:

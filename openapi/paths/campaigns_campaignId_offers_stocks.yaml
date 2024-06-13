@@ -63,7 +63,7 @@ post:
 
 
     [//]: <> (turnover: Среднее количество дней, за которое товар продается.
-    Подробно об оборачиваемости рассказано в Справке
+    Подробно об оборачиваемости рассказано в Справке Маркета для продавцов
     https://yandex.ru/support/marketplace/analytics/turnover.html.)
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

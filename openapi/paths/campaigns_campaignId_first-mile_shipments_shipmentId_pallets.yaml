@@ -7,7 +7,7 @@ put:
   description: >
     Передает Маркету количество коробов или палет в отгрузке для доверительной
     приемки. Подробнее про доверительную приемку написано в [Справке
-    Маркета](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance). 
+    Маркета](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).
 
 
     Получить PDF-файл с ярлыками для упаковок можно с помощью запроса [GET
@@ -28,8 +28,8 @@ put:
   responses:
     '200':
       description: >-
-        Имеет значение только тип ответа. Если вы получили `ОК`, количество
-        упаковок записано.
+        Имеет значение только тип ответа. Если ответ `ОК`, количество упаковок
+        записано.
       content:
         application/json:
           schema:

@@ -25,7 +25,7 @@ get:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:
     '200':
-      description: Список прайс-листов
+      description: Список прайс-листов.
       content:
         application/json:
           schema:

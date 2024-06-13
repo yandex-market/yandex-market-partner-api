@@ -1,4 +1,4 @@
-description: Идентификатор товара в возврате
+description: Идентификатор товара в возврате.
 name: itemId
 in: path
 required: true

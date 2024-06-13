@@ -13,7 +13,7 @@ get:
     - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
-      description: Найденная отгрузка
+      description: Найденная отгрузка.
       content:
         application/json:
           schema:

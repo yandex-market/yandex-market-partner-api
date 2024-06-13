@@ -53,7 +53,7 @@ get:
     - $ref: ../components/parameters/OffersChunk.yaml
   responses:
     '200':
-      description: Предложения магазина
+      description: Предложения магазина.
       content:
         application/json:
           schema:

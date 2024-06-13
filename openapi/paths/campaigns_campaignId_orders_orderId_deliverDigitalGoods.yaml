@@ -32,7 +32,7 @@ post:
           $ref: ../components/schemas/ProvideOrderDigitalCodesRequest.yaml
   responses:
     '200':
-      description: Пустой ответ
+      description: Пустой ответ.
       content:
         application/json:
           schema:

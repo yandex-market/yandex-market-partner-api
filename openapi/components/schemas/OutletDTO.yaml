@@ -28,7 +28,9 @@ properties:
   isMain:
     description: |
       Признак основной точки продаж.
+
       Возможные значения:
+
       * `false` — неосновная точка продаж.
       * `true` — основная точка продаж.
     type: boolean
@@ -53,6 +55,7 @@ properties:
   deliveryRules:
     description: |
       Информация об условиях доставки для данной точки продаж.
+
       Обязательный параметр, если параметр `type=DEPOT` или `type=MIXED`.
     type: array
     items:

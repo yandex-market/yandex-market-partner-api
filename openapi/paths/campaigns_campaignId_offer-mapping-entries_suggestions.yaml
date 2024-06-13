@@ -56,7 +56,7 @@ post:
           $ref: ../components/schemas/GetSuggestedOfferMappingEntriesRequest.yaml
   responses:
     '200':
-      description: Информация о товарах в каталоге
+      description: Информация о товарах в каталоге.
       content:
         application/json:
           schema:

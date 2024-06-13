@@ -18,7 +18,7 @@ post:
     - $ref: ../components/parameters/ReturnId.yaml
   responses:
     '200':
-      description: Статус выполнения операции
+      description: Статус выполнения операции.
       content:
         application/json:
           schema:

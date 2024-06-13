@@ -84,7 +84,7 @@ description: >
   * `LATE_ORDER_EXECUTION_FEE_QI` — несвоевременная отгрузка или доставка.
 
 
-  Подробнее об услугах Маркета читайте [в Справке для
+  Подробнее об услугах Маркета читайте [в Справке Маркета для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
 enum:

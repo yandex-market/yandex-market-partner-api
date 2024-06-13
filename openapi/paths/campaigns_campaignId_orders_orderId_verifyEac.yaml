@@ -53,7 +53,7 @@ put:
           $ref: ../components/schemas/VerifyOrderEacRequest.yaml
   responses:
     '200':
-      description: Проверка кода выполнена успешно
+      description: Проверка кода выполнена успешно.
       content:
         application/json:
           schema:

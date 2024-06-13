@@ -4,6 +4,6 @@ description: |
 type: object
 properties:
   id:
-    description: Идентификатор точки продаж, присвоенный Яндекс Маркетом.
+    description: Идентификатор точки продаж, присвоенный Маркетом.
     type: integer
     format: int64

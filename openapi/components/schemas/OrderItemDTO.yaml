@@ -11,7 +11,7 @@ properties:
   offerId:
     description: >-
       Идентификатор вашего товарного предложения для определенного товара.
-      [Описание поля в Справке для
+      [Описание поля в Справке Маркета для
       продавцов](https://yandex.ru/support/marketplace/assortment/fields/index.html#sku)
     $ref: ./ShopSku.yaml
   offerName:

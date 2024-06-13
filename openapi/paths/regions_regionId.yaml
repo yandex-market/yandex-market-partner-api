@@ -27,7 +27,7 @@ get:
     - $ref: ../components/parameters/RegionId.yaml
   responses:
     '200':
-      description: Найденный регион
+      description: Найденный регион.
       content:
         application/json:
           schema:

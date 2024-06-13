@@ -36,7 +36,7 @@ get:
     - $ref: ../components/parameters/PageLimit.yaml
   responses:
     '200':
-      description: Список найденных регионов
+      description: Список найденных регионов.
       content:
         application/json:
           schema:

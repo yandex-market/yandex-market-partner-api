@@ -13,7 +13,7 @@ get:
     - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
-      description: Акт расхождений в формате xlsx.
+      description: Акт расхождений в формате XLSX.
       content:
         application/vnd.ms-excel:
           schema:

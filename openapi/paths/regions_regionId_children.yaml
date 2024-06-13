@@ -30,7 +30,7 @@ get:
     - $ref: ../components/parameters/PageSize.yaml
   responses:
     '200':
-      description: Регионы, являющиеся дочерними к указанному в запросе
+      description: Регионы, являющиеся дочерними к указанному в запросе.
       content:
         application/json:
           schema:

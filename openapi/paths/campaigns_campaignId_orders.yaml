@@ -79,7 +79,7 @@ get:
     - $ref: ../components/parameters/PageSize.yaml
   responses:
     '200':
-      description: Информация о заказах
+      description: Информация о заказах.
       content:
         application/json:
           schema:

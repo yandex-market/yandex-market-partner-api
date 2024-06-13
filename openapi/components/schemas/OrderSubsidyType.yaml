@@ -1,21 +1,13 @@
-description: >
+description: |
   Тип субсидии:
-
-
-  * `SBER_SPASIBO` — скидка по бонусам «Спасибо». Используется только для старых
-  заказов.
-
 
   * `YANDEX_CASHBACK` — скидка по подписке Яндекс Плюс.
 
-
   * `SUBSIDY` — скидка Маркета (по акциям, промокодам, купонам и т. д.)
-
 
   * `DELIVERY` — скидка за доставку.
 type: string
 enum:
-  - SBER_SPASIBO
   - YANDEX_CASHBACK
   - SUBSIDY
   - DELIVERY

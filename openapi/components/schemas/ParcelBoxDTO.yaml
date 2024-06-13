@@ -5,14 +5,20 @@ description: >-
 type: object
 properties:
   id:
-    description: >-
-      Поле больше не используется. Не передавайте его в запросах и не обращайте
-      на него внимания в ответах.
+    description: |
+      {% note warning "" %}
+
+      Этот параметр устарел. Не используйте его.
+
+      {% endnote %}
     type: integer
     format: int64
   fulfilmentId:
-    description: >-
-      Поле больше не используется. Не передавайте его в запросах и не обращайте
-      на него внимания в ответах.
+    description: |
+      {% note warning "" %}
+
+      Этот параметр устарел. Не используйте его.
+
+      {% endnote %}
     type: string
     pattern: ^[\p{Alnum}- ]*$

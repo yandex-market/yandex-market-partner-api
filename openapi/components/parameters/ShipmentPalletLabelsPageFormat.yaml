@@ -5,5 +5,6 @@ schema:
   $ref: ../schemas/ShipmentPalletLabelPageFormatType.yaml
 description: |
   Формат страниц PDF-файла с ярлыками:
+
   * `A4` — по 16 ярлыков на странице.
   * `A8` — по одному ярлыку на странице.

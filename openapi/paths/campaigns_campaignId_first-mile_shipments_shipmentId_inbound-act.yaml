@@ -21,7 +21,7 @@ get:
     - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
-      description: Акт в формате pdf.
+      description: Акт в формате PDF.
       content:
         application/pdf:
           schema:

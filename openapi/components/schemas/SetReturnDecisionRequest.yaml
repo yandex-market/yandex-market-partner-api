@@ -12,21 +12,16 @@ properties:
     description: Решение по позиции.
     $ref: ./ReturnRequestDecisionType.yaml
   comment:
-    description: >
-      Комментарий к решению.
+    description: |
+      Комментарий к решению. Укажите:
 
+      * для `REFUND_MONEY_INCLUDING_SHIPMENT`— стоимость обратной пересылки;
 
-      Для решения `REFUND_MONEY_INCLUDING_SHIPMENT` укажите стоимость обратной
-      пересылки,
+      * для `REPAIR` — когда вы устраните недостатки товара;
 
+      * для `DECLINE_REFUND` — причину отказа;
 
-      для `REPAIR` — когда вы устраните недостатки товара,
-
-
-      для `DECLINE_REFUND` — причину отказа,
-
-
-      для `OTHER_DECISION` следует передать, какое решение вы предлагаете.
+      * для `OTHER_DECISION` — какое решение вы предлагаете.
     type: string
 example:
   returnItemId: 1

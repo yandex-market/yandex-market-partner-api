@@ -8,12 +8,14 @@ properties:
   creationDate:
     description: |
       Дата создания заказа.
+
       Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date
   statusUpdateDate:
     description: >
       Дата и время, когда статус заказа был изменен в последний раз.
+
 
       Формат даты и времени: ISO 8601. Например, `2017-11-21T00:00:00`. Часовой
       пояс — UTC+03:00 (Москва).

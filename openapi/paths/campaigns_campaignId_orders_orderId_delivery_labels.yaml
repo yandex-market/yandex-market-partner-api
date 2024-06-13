@@ -9,7 +9,8 @@ get:
   description: >
     Возвращает PDF-файл с ярлыками, которые нужно наклеить на коробки перед
     отгрузкой. Подробно о том, зачем они нужны и как выглядят, рассказано [в
-    Справке](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).
+    Справке Маркета для
+    продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).
 
 
     На вход нужно передать идентификатор заказа и один необязательный параметр,

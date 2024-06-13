@@ -7,8 +7,7 @@ post:
   operationId: updateOrderStatuses
   summary: Изменение статусов заказа
   description: >
-    Изменяет статусы нескольких заказов. Максимальное количество заказов, у
-    которых можно изменить статус в одном запросе, — 30.
+    Изменяет статусы нескольких заказов.
 
 
     Возможные изменения статусов:
@@ -49,7 +48,7 @@ post:
           $ref: ../components/schemas/UpdateOrderStatusesRequest.yaml
   responses:
     '200':
-      description: Возвращается информация об обновленных статусах заказов
+      description: Возвращается информация об обновленных статусах заказов.
       content:
         application/json:
           schema:

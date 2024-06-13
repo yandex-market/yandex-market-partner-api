@@ -26,7 +26,7 @@ put:
           $ref: ../components/schemas/SearchShipmentsRequest.yaml
   responses:
     '200':
-      description: Найденные отгрузки
+      description: Найденные отгрузки.
       content:
         application/json:
           schema:

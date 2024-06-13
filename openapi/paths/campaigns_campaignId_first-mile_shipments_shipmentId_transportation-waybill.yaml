@@ -21,7 +21,7 @@ get:
     - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
-      description: Транспортная накладная в формате xlsx.
+      description: Транспортная накладная в формате XLSX.
       content:
         application/vnd.ms-excel:
           schema:

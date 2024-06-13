@@ -1,7 +1,7 @@
 description: |
   Статус документа:
 
-  * `READY` — готов;
+  * `READY` — готов.
   * `NOT_READY` — не готов.
 type: string
 enum:

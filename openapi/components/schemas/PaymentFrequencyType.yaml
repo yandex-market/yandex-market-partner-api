@@ -11,7 +11,7 @@ description: >
   * `MONTHLY` — раз в месяц.
 
 
-  Подробнее о графике выплат читайте [в Справке для
+  Подробнее о графике выплат читайте [в Справке Маркета для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/acquiring.html).
 type: string
 enum:

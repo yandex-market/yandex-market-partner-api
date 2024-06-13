@@ -1,4 +1,4 @@
-description: Идентификатор точки продаж
+description: Идентификатор точки продаж.
 name: outletId
 in: path
 required: true

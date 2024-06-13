@@ -27,7 +27,7 @@ description: >
   * `MIDDLE_MILE` — средняя миля.
 
 
-  Подробнее об услугах Маркета читайте [в Справке для
+  Подробнее об услугах Маркета читайте [в Справке Маркета для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
 enum:

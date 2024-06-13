@@ -5,11 +5,11 @@ properties:
     $ref: ./ShopSku.yaml
   currentPrice:
     description: >
-      {% note alert "Deprecated" %}
+      {% note warning "" %}
 
 
-      Поле больше не используется. Используйте значение из `verdicts` →
-      `params`.
+      Этот параметр устарел. Вместо него используйте значение из `verdicts` →
+      `params`
 
 
       {% endnote %}
@@ -20,11 +20,11 @@ properties:
     $ref: ./BasePriceDTO.yaml
   lastValidPrice:
     description: >
-      {% note alert "Deprecated" %}
+      {% note warning "" %}
 
 
-      Поле больше не используется. Используйте значение из `verdicts` →
-      `params`.
+      Этот параметр устарел. Вместо него используйте значение из `verdicts` →
+      `params`
 
 
       {% endnote %}

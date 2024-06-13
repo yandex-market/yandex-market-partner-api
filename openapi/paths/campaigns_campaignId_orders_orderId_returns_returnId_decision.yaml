@@ -25,7 +25,7 @@ post:
           $ref: ../components/schemas/SetReturnDecisionRequest.yaml
   responses:
     '200':
-      description: Детали возврата
+      description: Детали возврата.
       content:
         application/json:
           schema:

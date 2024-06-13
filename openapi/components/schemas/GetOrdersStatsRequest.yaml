@@ -13,21 +13,27 @@ properties:
   dateTo:
     description: |
       Конечная дата, когда заказ был сформирован.
+
       Формат даты: `ГГГГ‑ММ‑ДД`.
+
       Нельзя использовать вместе с параметрами `updateFrom` и `updateTo`.
     type: string
     format: date
   updateFrom:
     description: |
       Начальная дата периода, за который были изменения статуса заказа.
+
       Формат даты: `ГГГГ‑ММ‑ДД`.
+
       Нельзя использовать вместе с параметрами `dateFrom` и `dateTo`.
     type: string
     format: date
   updateTo:
     description: |
       Конечная дата периода, за который были изменения статуса заказа.
+
       Формат даты: `ГГГГ‑ММ‑ДД`.
+
       Нельзя использовать вместе с параметрами `dateFrom` и `dateTo`.
     type: string
     format: date

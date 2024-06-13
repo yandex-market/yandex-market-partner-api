@@ -27,7 +27,7 @@ get:
     - $ref: ../components/parameters/FeedId.yaml
   responses:
     '200':
-      description: Информация о прайс-листе
+      description: Информация о прайс-листе.
       content:
         application/json:
           schema:

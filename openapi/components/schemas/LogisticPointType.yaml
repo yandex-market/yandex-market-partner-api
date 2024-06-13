@@ -1,5 +1,6 @@
 description: |
   Тип логистической точки:
+
     * `WAREHOUSE` — склад.
     * `PICKUP_POINT` — обычная точка выдачи заказов (ПВЗ).
     * `PICKUP_TERMINAL` — постамат.

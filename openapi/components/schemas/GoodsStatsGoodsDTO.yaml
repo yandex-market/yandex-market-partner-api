@@ -45,7 +45,7 @@ properties:
       зависит от способа отгрузки
 
       и количества заказов в отгрузке. Подробнее о тарифах на услуги читайте [в
-      Справке для
+      Справке Маркета для
       продавцов](https://yandex.ru/support2/marketplace/ru/introduction/rates/models/).
     type: array
     items:

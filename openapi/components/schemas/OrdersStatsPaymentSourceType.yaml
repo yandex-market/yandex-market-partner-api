@@ -3,12 +3,10 @@ description: |
   - `BUYER` — оплата или возврат деньгами.
   - `CASHBACK` — оплата или возврат баллами Плюса.
   - `MARKETPLACE` — оплата или возврат купонами.
-  - `SPASIBO` — оплата или возврат бонусами СберСпасибо.
   - `SPLIT` — оплата картой по частям (Сплит).
 type: string
 enum:
   - BUYER
   - CASHBACK
   - MARKETPLACE
-  - SPASIBO
   - SPLIT

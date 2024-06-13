@@ -66,6 +66,7 @@ properties:
       Дата, до которой заказ будет храниться в пункте выдачи. Возвращается,
       когда заказ переходит в статус `PICKUP`.
 
+
       Один раз дату можно поменять с помощью метода [PUT
       campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit](../../reference/orders/updateOrderStorageLimit.md).
     $ref: ./DateDdMmYyyy.yaml

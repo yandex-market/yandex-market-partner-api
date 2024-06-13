@@ -50,7 +50,7 @@ properties:
     description: Цена предложения без скидки.
     type: number
   discount:
-    description: Скидка на предложение, в %.
+    description: Скидка на предложение в процентах.
     type: integer
     format: int32
   cutPrice:
@@ -103,13 +103,34 @@ properties:
       * `UAH` — украинская гривна.
     $ref: ./CurrencyType.yaml
   bid:
-    description: Ставка на клик. deprecated.
+    description: |
+      {% note warning "" %}
+
+      Этот параметр устарел. Не используйте его.
+
+      {% endnote %}
+
+      Ставка на клик.
     type: number
   cbid:
-    description: Ставка на клик. deprecated.
+    description: |
+      {% note warning "" %}
+
+      Этот параметр устарел. Не используйте его.
+
+      {% endnote %}
+
+      Ставка на клик.
     type: number
   fee:
-    description: Процент комиссии на товар при продаже по CPA. deprecated.
+    description: |
+      {% note warning "" %}
+
+      Этот параметр устарел. Не используйте его.
+
+      {% endnote %}
+
+      Процент комиссии на товар при продаже по CPA.
     type: number
   blocked:
     description: >

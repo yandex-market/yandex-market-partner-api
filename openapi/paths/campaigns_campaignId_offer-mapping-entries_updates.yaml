@@ -86,7 +86,7 @@ post:
           $ref: ../components/schemas/UpdateOfferMappingEntryRequest.yaml
   responses:
     '200':
-      description: Статус выполнения операции
+      description: Статус выполнения операции.
       content:
         application/json:
           schema:

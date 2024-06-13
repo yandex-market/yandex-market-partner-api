@@ -24,7 +24,7 @@ get:
     - $ref: ../components/parameters/OrderId.yaml
   responses:
     '200':
-      description: Информация о заказе
+      description: Информация о заказе.
       content:
         application/json:
           schema:

@@ -8,8 +8,8 @@ post:
   summary: Ярлыки‑наклейки на все коробки в нескольких заказах
   description: >
     Запускает генерацию PDF-файла с ярлыками для переданных заказов. Подробно о
-    том, зачем они нужны и как выглядят, рассказано [в
-    Справке](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).
+    том, зачем они нужны и как выглядят, рассказано [в Справке Маркета для
+    продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).
 
 
     Узнать статус генерации и получить ссылку на готовый файл можно с помощью

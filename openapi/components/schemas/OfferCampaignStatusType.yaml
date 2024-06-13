@@ -2,21 +2,21 @@ description: >
   Статус товара:
 
 
-  * `PUBLISHED` — **Готов к продаже**.
+  * `PUBLISHED` — Готов к продаже.
 
-  * `CHECKING` — **На проверке**.
+  * `CHECKING` — На проверке.
 
-  * `DISABLED_BY_PARTNER` — **Скрыт вами**.
+  * `DISABLED_BY_PARTNER` — Скрыт вами.
 
-  * `REJECTED_BY_MARKET` — **Отклонен**.
+  * `REJECTED_BY_MARKET` — Отклонен.
 
-  * `DISABLED_AUTOMATICALLY` — **Исправьте ошибки**.
+  * `DISABLED_AUTOMATICALLY` — Исправьте ошибки.
 
-  * `CREATING_CARD` — **Создается карточка**.
+  * `CREATING_CARD` — Создается карточка.
 
-  * `NO_CARD` — **Нужна карточка**.
+  * `NO_CARD` — Нужна карточка.
 
-  * `NO_STOCKS` — **Нет на складе**.
+  * `NO_STOCKS` — Нет на складе.
 
 
   [Что обозначает каждый из

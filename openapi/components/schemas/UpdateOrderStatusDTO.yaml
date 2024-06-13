@@ -10,7 +10,7 @@ properties:
   substatus:
     $ref: ./OrderSubstatusType.yaml
   updateStatus:
-    description: Статус обновления
+    description: Статус обновления.
     $ref: ./OrderUpdateStatusType.yaml
   errorDetails:
     description: >

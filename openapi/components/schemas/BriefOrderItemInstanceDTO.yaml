@@ -6,8 +6,8 @@ description: >
   товар.
 
 
-  Подробно о работе с маркируемыми товарами рассказано [в
-  Справке](https://yandex.ru/support/marketplace/orders/cz.html).
+  Подробно о работе с маркируемыми товарами рассказано [в Справке Маркета для
+  продавцов](https://yandex.ru/support/marketplace/orders/cz.html).
 type: object
 properties:
   cis:
