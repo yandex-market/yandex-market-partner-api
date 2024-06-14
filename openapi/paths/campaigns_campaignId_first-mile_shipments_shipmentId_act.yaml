@@ -5,7 +5,7 @@ get:
   operationId: downloadShipmentAct
   summary: Получение акта приема-передачи
   description: >
-    {% note alert %}
+    {% note warning "Экспресс‑доставка" %}
 
 
     Если ваш магазин подключен к экспресс‑доставке и вы отгружаете заказы
