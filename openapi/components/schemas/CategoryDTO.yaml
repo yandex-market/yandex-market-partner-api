@@ -8,7 +8,7 @@ required:
   - name
 properties:
   id:
-    description: ID категории.
+    description: Идентификатор категории.
     type: integer
     format: int64
   name:

@@ -1,4 +1,4 @@
-description: Информация о магазине к данным id кампании.
+description: Информация о магазине к данным идентификатора кампании.
 type: object
 properties:
   campaign:
