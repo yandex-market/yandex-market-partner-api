@@ -1,4 +1,4 @@
-description: Запрос на установку дефолтных цен на товары.
+description: Запрос на установку базовых цен на товары.
 type: object
 required:
   - offers

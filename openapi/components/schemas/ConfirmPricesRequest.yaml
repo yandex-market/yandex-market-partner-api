@@ -7,5 +7,7 @@ properties:
   offerIds:
     description: Идентификаторы товаров, у которых подтверждается цена.
     type: array
+    minItems: 1
+    maxItems: 200
     items:
       $ref: ./ShopSku.yaml

@@ -6,8 +6,6 @@ properties:
   shopSkus:
     description: |
       Список ваших идентификаторов SKU.
-      Максимальное количество идентификаторов: 500.
-      Обязательный параметр. Должен содержать хотя бы один SKU.
     type: array
     uniqueItems: true
     items:

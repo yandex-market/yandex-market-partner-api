@@ -17,6 +17,8 @@ properties:
       категориям, брендам или тегам. Если вы хотите воспользоваться фильтрами,
       оставьте поле пустым.
     type: array
+    minItems: 1
+    maxItems: 500
     items:
       $ref: ./ShopSku.yaml
   cardStatuses:

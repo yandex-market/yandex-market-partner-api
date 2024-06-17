@@ -4,5 +4,7 @@ properties:
   offerIds:
     description: "Список SKU.\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным SKU, не заполняйте:\n\n* `page_token`\n* `limit`\n\n{% endnote %}\n\n\_\n"
     type: array
+    minItems: 1
+    maxItems: 2000
     items:
       $ref: ./ShopSku.yaml
