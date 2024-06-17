@@ -104,7 +104,7 @@ properties:
     maximum: 24
   priceFreePickup:
     description: >-
-      Цена товара, начиная с которой действует бесплатный самовывоз товара из
+      Цена на товар, начиная с которой действует бесплатный самовывоз товара из
       точки продаж.
     type: number
   unspecifiedDeliveryInterval:

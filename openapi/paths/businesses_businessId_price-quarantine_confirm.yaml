@@ -6,9 +6,9 @@ post:
     - fbs
     - express
   operationId: confirmBusinessPrices
-  summary: Подтверждение цены товара, попавшего в карантин (основная цена)
+  summary: Подтверждение цены на товар, попавшего в карантин (основная цена)
   description: >
-    Подтверждает основную цену товаров, попавших в карантин.
+    Подтверждает основную цену на товары, которые попали в карантин.
 
 
     Основная цена задается в каталоге и действует во всех магазинах кабинета.
@@ -19,7 +19,8 @@ post:
     карантин](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)
 
 
-    Чтобы увидеть список товаров, попавших в карантин, используйте запрос [POST
+    Чтобы увидеть список товаров, которые попали в карантин, используйте запрос
+    [POST
     businesses/{businessId}/price-quarantine](getBusinessQuarantineOffers.md).
 
 

@@ -19,7 +19,7 @@ properties:
     $ref: ./DateDdMmYyyyHhMmSs.yaml
   currency:
     description: |
-      Валюта, в которой указаны цены товаров в заказе.
+      Валюта, в которой указаны цены на товары в заказе.
 
       Принимает значение `RUR` — российский рубль.
     $ref: ./CurrencyType.yaml

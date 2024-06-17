@@ -6,9 +6,9 @@ post:
     - fbs
     - express
   operationId: confirmCampaignPrices
-  summary: Подтверждение цены товара, попавшего в карантин (цена в магазине)
+  summary: Подтверждение цены на товар, попавшего в карантин (цена в магазине)
   description: >
-    Подтверждает в заданном магазине цену товаров, попавших в карантин.
+    Подтверждает в заданном магазине цену на товары, которые попали в карантин.
 
 
     Товар попадает в карантин, если его цена меняется слишком резко. [Как
@@ -16,7 +16,8 @@ post:
     карантин](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)
 
 
-    Чтобы увидеть список товаров, попавших в карантин, используйте запрос [POST
+    Чтобы увидеть список товаров, которые попали в карантин, используйте запрос
+    [POST
     campaigns/{campaignId}/price-quarantine](getCampaignQuarantineOffers.md).
 
 

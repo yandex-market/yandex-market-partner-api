@@ -12,8 +12,8 @@ post:
     установленной в заданном магазине.
 
 
-    Проверьте цену каждого из товаров, попавших в карантин. Если ошибки нет и
-    цена правильная, подтвердите ее с помощью запроса [POST
+    Проверьте цену каждого из товаров, который попал в карантин. Если ошибки нет
+    и цена правильная, подтвердите ее с помощью запроса [POST
     campaigns/{campaignId}/price-quarantine/confirm](../../reference/assortment/confirmCampaignPrices.md).
     Если цена в самом деле ошибочная, установите верную с помощью запроса [POST
     campaigns/{campaignId}/offer-prices/updates](../../reference/assortment/updatePrices.md).

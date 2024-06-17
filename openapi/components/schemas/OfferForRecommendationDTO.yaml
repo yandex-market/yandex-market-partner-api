@@ -1,16 +1,16 @@
-description: Информация о состоянии цены товара.
+description: Информация о состоянии цены на товар.
 type: object
 properties:
   offerId:
     $ref: ./ShopSku.yaml
   price:
-    description: Цена товара в каталоге.
+    description: Цена на товар в каталоге.
     $ref: ./BasePriceDTO.yaml
   cofinancePrice:
     description: Заданная цена для участия в софинансировании скидок.
     $ref: ./GetPriceDTO.yaml
   competitiveness:
-    description: Привлекательность цены товара.
+    description: Привлекательность цены на товар.
     $ref: ./PriceCompetitivenessType.yaml
   shows:
     description: Количество показов карточки товара за последние 7 дней.

@@ -1,4 +1,4 @@
-description: Рекомендации, касающиеся цены товара.
+description: Рекомендации, касающиеся цены на товар.
 type: object
 properties:
   offerId:
