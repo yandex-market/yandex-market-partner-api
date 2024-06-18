@@ -84,7 +84,7 @@ properties:
     description: Список субсидий по типам.
     type: array
     items:
-      $ref: ./OrderItemSubsidyDTO.yaml
+      $ref: ./OrderSubsidyDTO.yaml
   delivery:
     $ref: ./OrderDeliveryDTO.yaml
   buyer:
