@@ -15,7 +15,7 @@ post:
 
     {% endnote %}
 
-    |**⚙️ Лимит:** 5000 товаров в минуту, не более 500 товаров в одном запросе|
+    |**⚙️ Лимит:** 5000 товаров в минуту|
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
@@ -175,7 +175,7 @@ delete:
 
     {% endnote %}
 
-    |**⚙️ Лимит:** 5000 товаров в минуту, не более 500 товаров в одном запросе|
+    |**⚙️ Лимит:** 5000 товаров в минуту|
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
