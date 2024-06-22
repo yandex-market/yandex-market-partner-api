@@ -30,9 +30,14 @@ post:
           $ref: ../components/schemas/GenerateMassOrderLabelsRequest.yaml
   responses:
     '200':
-      description: >-
+      description: >
         В ответ приходит идентификатор, который позволяет узнавать статус
         генерации и скачать готовый файл.
+
+
+        Если при генерации отчета не удалось найти часть заказов, в ответе на
+        запрос получения готового отчета вернется подстатус
+        `RESOURCE_NOT_FOUND`.
       content:
         application/json:
           schema:
