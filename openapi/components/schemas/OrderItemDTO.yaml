@@ -39,13 +39,20 @@ properties:
     format: decimal
   buyerPriceBeforeDiscount:
     description: |
-      Стоимость товара в валюте покупателя до применения скидок.
+      Цена продажи. Стоимость товара в валюте покупателя до применения скидок.
 
       Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   priceBeforeDiscount:
+    deprecated: true
     description: |
+      {% note warning "" %}
+
+      Этот параметр устарел.
+
+      {% endnote %}
+
       Стоимость товара в валюте магазина до применения скидок.
 
       Для отделения целой части от дробной используется точка.

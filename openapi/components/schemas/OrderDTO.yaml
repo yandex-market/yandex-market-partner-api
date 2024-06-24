@@ -24,43 +24,62 @@ properties:
       Принимает значение `RUR` — российский рубль.
     $ref: ./CurrencyType.yaml
   itemsTotal:
-    description: >
-      Общая сумма заказа в валюте заказа без учета стоимости доставки и
-      вознаграждения партнеру за скидки по промокодам, купонам и акциям.
-
+    description: |
+      Платеж покупателя.
 
       Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   deliveryTotal:
     description: |
-      Стоимость доставки в валюте заказа.
+      Стоимость доставки.
 
       Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   buyerItemsTotal:
-    description: >-
+    deprecated: true
+    description: >
+      {% note warning "" %}
+
+
+      Этот параметр устарел.
+
+
+      {% endnote %}
+
+
       Стоимость всех товаров в заказе в валюте покупателя после применения
       скидок и без учета стоимости доставки.
     type: number
     format: decimal
   buyerTotal:
-    description: >-
+    deprecated: true
+    description: >
+      {% note warning "" %}
+
+
+      Этот параметр устарел.
+
+
+      {% endnote %}
+
+
       Стоимость всех товаров в заказе в валюте покупателя после применения
       скидок и с учетом стоимости доставки.
     type: number
     format: decimal
   buyerItemsTotalBeforeDiscount:
     description: >-
-      Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
-      без учета стоимости доставки.
+      Цена продажи. Стоимость всех товаров в заказе в валюте покупателя до
+      применения скидок и без учета стоимости доставки.
     type: number
     format: decimal
   buyerTotalBeforeDiscount:
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
-      с учетом стоимости доставки.
+      с учетом стоимости доставки (`buyerItemsTotalBeforeDiscount` + стоимость
+      доставки).
     type: number
     format: decimal
   paymentType:
