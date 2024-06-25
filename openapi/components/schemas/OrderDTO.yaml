@@ -26,15 +26,11 @@ properties:
   itemsTotal:
     description: |
       Платеж покупателя.
-
-      Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   deliveryTotal:
     description: |
       Стоимость доставки.
-
-      Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   buyerItemsTotal:

@@ -15,12 +15,10 @@ properties:
     type: number
     format: decimal
   subsidy:
-    description: >
+    description: |
       Вознаграждение партнеру от Маркета за товар, проданный в рамках акции.
 
-
-      Передается в валюте заказа, для отделения целой части от дробной
-      используется точка.
+      Передается в валюте заказа.
     type: number
     format: decimal
   shopPromoId:

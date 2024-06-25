@@ -30,9 +30,6 @@ properties:
 
 
       Стоимость доставки в валюте заказа.
-
-
-      Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   deliveryPartnerType:

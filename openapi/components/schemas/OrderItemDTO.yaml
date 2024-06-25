@@ -21,9 +21,6 @@ properties:
     description: >
       Цена на товар в валюте заказа без учета вознаграждения партнеру за скидки
       по промокодам, купонам и акциям (параметр `subsidies`).
-
-
-      Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   buyerPrice:
@@ -33,15 +30,11 @@ properties:
       * акциям;
       * купонам;
       * промокодам.
-
-      Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   buyerPriceBeforeDiscount:
     description: |
       Цена продажи. Стоимость товара в валюте покупателя до применения скидок.
-
-      Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   priceBeforeDiscount:
@@ -54,8 +47,6 @@ properties:
       {% endnote %}
 
       Стоимость товара в валюте магазина до применения скидок.
-
-      Для отделения целой части от дробной используется точка.
     type: number
     format: decimal
   count:
@@ -70,30 +61,21 @@ properties:
     $ref: ./ShopSku.yaml
   subsidy:
     deprecated: true
-    description: >
+    description: |
       {% note warning "" %}
-
 
       Этот параметр устарел. Вместо него используйте `subsidies`.
 
-
       {% endnote %}
-
 
       Общее вознаграждение партнеру за DBS-доставку и все скидки на товар:
 
-
       * по промокодам;
-
       * по купонам;
-
       * по баллам Плюса;
-
       * по акциям.
 
-
-      Передается в валюте заказа, для отделения целой части от дробной
-      используется точка.
+      Передается в валюте заказа.
     type: number
     format: decimal
   partnerWarehouseId:
