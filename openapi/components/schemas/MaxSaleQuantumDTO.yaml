@@ -1,0 +1,16 @@
+description: |
+  Лимит на установку кванта и минимального количества товаров по категориям.
+type: object
+required:
+  - id
+properties:
+  id:
+    description: Идентификатор категории.
+    type: integer
+    format: int64
+  name:
+    description: Название категории.
+    type: string
+  maxSaleQuantum:
+    description: Лимит на установку кванта и минимального количества товаров.
+    type: integer

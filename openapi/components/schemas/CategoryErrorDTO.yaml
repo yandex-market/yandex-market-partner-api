@@ -1,0 +1,9 @@
+description: Текст ошибки.
+type: object
+properties:
+  categoryId:
+    description: Идентификатор категории.
+    type: integer
+    format: int64
+  type:
+    $ref: ./CategoryErrorType.yaml

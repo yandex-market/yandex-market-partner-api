@@ -1,0 +1,16 @@
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      results:
+        description: >-
+          Категории и лимит на установку кванта и минимального количества
+          товаров.
+        type: array
+        items:
+          $ref: ./MaxSaleQuantumDTO.yaml
+      errors:
+        description: Ошибки, которые появились из-за переданных категорий.
+        type: array
+        items:
+          $ref: ./CategoryErrorDTO.yaml

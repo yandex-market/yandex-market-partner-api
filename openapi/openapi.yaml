@@ -288,6 +288,8 @@ paths:
     $ref: paths/tariffs_calculate.yaml
   /categories/tree:
     $ref: paths/categories_tree.yaml
+  /categories/max-sale-quantum:
+    $ref: paths/categories_max-sale-quantum.yaml
 components:
   securitySchemes:
     OAuth:

@@ -1,0 +1,51 @@
+post:
+  tags:
+    - categories
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: getCategoriesMaxSaleQuantum
+  summary: Лимит на установку кванта продажи и минимального количества товаров в заказе
+  description: >
+    Возвращает лимит на установку [кванта](*quantum) и минимального количества
+    товаров в заказе, которые вы можете задать для товаров указанных категорий.
+
+
+    Если вы передадите значение кванта или минимального количества товаров выше
+    установленного Маркетом ограничения, товар будет скрыт с витрины.
+
+
+    Подробнее о том, как продавать товары по несколько штук, читайте [в Справке
+    Маркета для
+    продавцов](https://yandex.ru/support2/marketplace/ru/assortment/fields/quantum).
+
+
+    |**⚙️ Лимит:** 1 000 запросов в час|
+
+    |-|
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetCategoriesMaxSaleQuantumRequest.yaml
+  responses:
+    '200':
+      description: Лимит на установку кванта и минимального количества товаров.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetCategoriesMaxSaleQuantumResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

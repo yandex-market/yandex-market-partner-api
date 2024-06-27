@@ -5,10 +5,20 @@ post:
     - fby
   operationId: getOrderBusinessDocumentsInfo
   summary: Информация о документах
-  description: |
+  description: >
     Возвращает информацию о документах по идентификатору заказа.
 
+
+    Получить данные можно после того, как заказ перейдет в статус `DELIVERED`.
+
+
+    Если у вас настроена работа с push-компонентом, Маркет отправит уведомление
+    о смене статуса заказа с помощью запроса [POST
+    order/status](../../pushapi/reference/postOrderStatus.md).
+
+
     |**⚙️ Лимит:** 3 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
