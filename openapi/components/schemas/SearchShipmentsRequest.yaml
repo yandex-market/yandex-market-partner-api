@@ -1,3 +1,6 @@
+required:
+  - dateFrom
+  - dateTo
 description: Запрос информации об отгрузках.
 type: object
 properties:
