@@ -7,3 +7,8 @@ properties:
       * `false` — можно задать и базовую цену, и цены в конкретных магазинах.
       * `true` — можно задать только базовую цену.
     type: boolean
+  currency:
+    description: >-
+      Валюта [в кабинете продавца на
+      Маркете](https://partner.market.yandex.ru/).
+    $ref: ./CurrencyType.yaml
