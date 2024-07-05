@@ -72,7 +72,17 @@ properties:
     type: number
     format: decimal
   buyerTotalBeforeDiscount:
-    description: >-
+    deprecated: true
+    description: >
+      {% note warning "" %}
+
+
+      Этот параметр устарел.
+
+
+      {% endnote %}
+
+
       Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
       с учетом стоимости доставки (`buyerItemsTotalBeforeDiscount` + стоимость
       доставки).
