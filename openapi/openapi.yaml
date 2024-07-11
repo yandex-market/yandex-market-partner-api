@@ -178,6 +178,8 @@ paths:
     $ref: paths/campaigns_campaignId_price-quarantine_confirm.yaml
   /campaigns/{campaignId}/hidden-offers:
     $ref: paths/campaigns_campaignId_hidden-offers.yaml
+  /campaigns/{campaignId}/hidden-offers/delete:
+    $ref: paths/campaigns_campaignId_hidden-offers_delete.yaml
   /campaigns/{campaignId}/offers/stocks:
     $ref: paths/campaigns_campaignId_offers_stocks.yaml
   /delivery/services:
