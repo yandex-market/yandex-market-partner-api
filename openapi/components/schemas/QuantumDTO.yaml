@@ -37,7 +37,6 @@ properties:
     type: integer
     format: int32
     minimum: 1
-    maximum: 100
   stepQuantity:
     description: >
       На сколько единиц покупатель сможет увеличить количество товара в корзине.

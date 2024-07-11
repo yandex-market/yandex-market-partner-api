@@ -1,0 +1,15 @@
+description: Составляющая индекса качества.
+type: object
+required:
+  - value
+  - componentType
+properties:
+  value:
+    description: Значение составляющей в процентах.
+    minimum: 0
+    maximum: 100
+    type: number
+    format: double
+  componentType:
+    description: Тип составляющей.
+    $ref: ./QualityRatingComponentType.yaml

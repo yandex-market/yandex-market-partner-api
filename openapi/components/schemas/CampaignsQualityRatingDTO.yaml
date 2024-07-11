@@ -1,0 +1,10 @@
+description: Информация об индексе качества магазинов.
+type: object
+required:
+  - campaignRatings
+properties:
+  campaignRatings:
+    description: Список магазинов c информацией об их индексе качества.
+    type: array
+    items:
+      $ref: ./CampaignQualityRatingDTO.yaml

@@ -290,6 +290,10 @@ paths:
     $ref: paths/categories_tree.yaml
   /categories/max-sale-quantum:
     $ref: paths/categories_max-sale-quantum.yaml
+  /businesses/{businessId}/ratings/quality:
+    $ref: paths/businesses_businessId_ratings_quality.yaml
+  /campaigns/{campaignId}/ratings/quality/details:
+    $ref: paths/campaigns_campaignId_ratings_quality_details.yaml
 components:
   securitySchemes:
     OAuth:

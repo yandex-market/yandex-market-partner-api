@@ -1,0 +1,25 @@
+description: Информация об индексе качества.
+type: object
+required:
+  - rating
+  - calculationDate
+  - components
+properties:
+  rating:
+    description: Значение индекса качества.
+    minimum: 0
+    maximum: 100
+    type: integer
+    format: int64
+  calculationDate:
+    description: |
+      Дата вычисления.
+
+      Формат даты: `ГГГГ‑ММ‑ДД`.
+    type: string
+    format: date
+  components:
+    description: Составляющие индекса качества.
+    type: array
+    items:
+      $ref: ./QualityRatingComponentDTO.yaml

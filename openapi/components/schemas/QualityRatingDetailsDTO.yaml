@@ -1,0 +1,10 @@
+type: object
+description: Информация о заказах, которые повлияли на индекс качества.
+required:
+  - affectedOrders
+properties:
+  affectedOrders:
+    description: Список заказов, которые повлияли на индекс качества.
+    type: array
+    items:
+      $ref: ./QualityRatingAffectedOrderDTO.yaml

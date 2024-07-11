@@ -1,0 +1,7 @@
+description: Информация об индексе качества магазинов.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./CampaignsQualityRatingDTO.yaml

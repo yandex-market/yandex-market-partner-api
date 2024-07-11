@@ -6,7 +6,7 @@ post:
   summary: Отчет по движению товаров
   description: >
     Запускает генерацию **отчета по движению товаров**. [Что это за
-    отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#documents__flow)
+    отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#flow)
 
 
     Узнать статус генерации и получить ссылку на готовый отчет можно с помощью

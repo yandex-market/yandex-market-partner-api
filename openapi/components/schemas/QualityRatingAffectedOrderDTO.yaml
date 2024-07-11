@@ -1,0 +1,18 @@
+type: object
+description: Информация о заказе, который повлиял на индекс качества.
+required:
+  - orderId
+  - description
+  - componentType
+properties:
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+    minimum: 0
+  description:
+    description: Описание проблемы.
+    type: string
+  componentType:
+    description: Тип составляющей индекса качества.
+    $ref: ./AffectedOrderQualityRatingComponentType.yaml

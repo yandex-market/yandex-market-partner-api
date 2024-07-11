@@ -1,0 +1,38 @@
+post:
+  tags:
+    - ratings
+    - fbs
+    - dbs
+    - express
+  operationId: getQualityRatingDetails
+  summary: Заказы, которые повлияли на индекс качества
+  description: >
+    Возвращает список заказов, которые повлияли на индекс качества магазина.
+    Чтобы узнать значение индекса качества, выполните запрос [POST
+    businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).
+
+
+    |**⚙️ Лимит:** 100000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  responses:
+    '200':
+      description: Информация о заказах, которые повлияли на индекс качества.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetQualityRatingDetailsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
