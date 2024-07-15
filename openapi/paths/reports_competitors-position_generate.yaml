@@ -18,6 +18,16 @@ post:
     reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
+    {% note info "Значение -1 в отчете" %}
+
+
+    Если в CSV-файле в столбце **POSITION** стоит -1, в этот день не было
+    заказов с товарами в указанной категории.
+
+
+    {% endnote %}
+
+
     |**⚙️ Лимит:** 10 запросов в час|
 
     |-|
