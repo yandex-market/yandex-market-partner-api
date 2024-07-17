@@ -10,7 +10,9 @@ properties:
     description: Название товара.
     type: string
   price:
-    description: Цена на товар, выставленная партнером.
+    description: >-
+      Цена на товар в валюте, которая установлена [в кабинете продавца на
+      Маркете](https://partner.market.yandex.ru/).
     type: number
   categoryId:
     description: Идентификатор категории товара на Маркете.
