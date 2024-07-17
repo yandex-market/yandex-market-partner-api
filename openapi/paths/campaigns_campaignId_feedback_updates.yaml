@@ -2,6 +2,9 @@ get:
   tags:
     - feedbacks
     - dbs
+    - fby
+    - fbs
+    - express
   operationId: getFeedbackAndCommentUpdates
   summary: Новые и обновленные отзывы о магазине
   description: >

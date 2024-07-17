@@ -2,6 +2,9 @@ post:
   tags:
     - feeds
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: refreshFeed
   summary: Сообщить, что прайс-лист обновился
   description: >

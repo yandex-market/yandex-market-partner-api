@@ -1,7 +1,6 @@
 put:
   tags:
     - orders
-    - fby
     - fbs
     - dbs
     - express

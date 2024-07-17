@@ -4,6 +4,7 @@ get:
     - fbs
     - dbs
     - express
+    - fby
   operationId: getReturnPhoto
   summary: Получение фотографии возврата
   description: >

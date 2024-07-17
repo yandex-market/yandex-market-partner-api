@@ -2,6 +2,9 @@ get:
   tags:
     - feeds
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: getFeeds
   summary: Список прайс-листов магазина
   description: >

@@ -2,6 +2,9 @@ get:
   tags:
     - feed-categories
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: getFeedCategories
   summary: Категории прайс-листа
   description: >

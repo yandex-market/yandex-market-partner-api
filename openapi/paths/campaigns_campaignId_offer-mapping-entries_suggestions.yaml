@@ -4,6 +4,7 @@ post:
     - fby
     - fbs
     - express
+    - dbs
   operationId: getSuggestedOfferMappingEntries
   summary: Рекомендованные карточки для ваших товаров
   description: >

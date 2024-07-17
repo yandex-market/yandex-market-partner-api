@@ -2,6 +2,9 @@ get:
   tags:
     - feed-categories
     - dbs
+    - fby
+    - fbs
+    - express
   operationId: getCampaignFeedCategories
   summary: Категории магазина
   description: >

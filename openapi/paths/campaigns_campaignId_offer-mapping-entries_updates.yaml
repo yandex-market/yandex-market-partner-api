@@ -4,6 +4,7 @@ post:
     - fby
     - fbs
     - express
+    - dbs
   operationId: updateOfferMappingEntries
   summary: Добавление и редактирование товаров в каталоге
   description: >

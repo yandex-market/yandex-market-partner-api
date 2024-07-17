@@ -4,6 +4,7 @@ get:
     - fbs
     - dbs
     - express
+    - fby
   operationId: getReturns
   summary: Список возвратов и невыкупов
   description: >

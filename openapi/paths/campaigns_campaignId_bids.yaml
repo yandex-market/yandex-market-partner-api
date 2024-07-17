@@ -2,6 +2,9 @@ put:
   tags:
     - bids
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: putBidsForCampaign
   summary: Включение буста продаж и установка ставок для магазина
   description: >

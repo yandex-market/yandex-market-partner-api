@@ -2,6 +2,9 @@ get:
   tags:
     - feeds
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: getFeed
   summary: Информация о прайс-листе
   description: >

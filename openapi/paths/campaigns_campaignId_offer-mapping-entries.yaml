@@ -4,6 +4,7 @@ get:
     - fby
     - fbs
     - express
+    - dbs
   operationId: getOfferMappingEntries
   summary: Список товаров в каталоге
   description: >

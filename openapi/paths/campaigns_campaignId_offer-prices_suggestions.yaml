@@ -4,6 +4,7 @@ post:
     - fby
     - fbs
     - express
+    - dbs
   operationId: getSuggestedPrices
   summary: Цены для продвижения товаров
   description: >

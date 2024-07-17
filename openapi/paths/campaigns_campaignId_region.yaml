@@ -2,6 +2,9 @@ get:
   tags:
     - campaigns
     - dbs
+    - fby
+    - fbs
+    - express
   operationId: getCampaignRegion
   summary: Регион магазина
   description: |

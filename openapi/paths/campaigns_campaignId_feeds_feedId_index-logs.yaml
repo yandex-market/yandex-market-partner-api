@@ -2,6 +2,9 @@ get:
   tags:
     - feeds
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: getFeedIndexLogs
   summary: Отчет по индексации прайс-листа
   description: >

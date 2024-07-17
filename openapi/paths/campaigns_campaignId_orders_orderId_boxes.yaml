@@ -3,6 +3,7 @@ put:
     - orders
     - fbs
     - express
+    - dbs
   operationId: setOrderBoxLayout
   summary: Подготовка заказа (FBS)
   description: >

@@ -2,6 +2,9 @@ get:
   tags:
     - offers
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: getOffers
   summary: Предложения магазина
   description: >

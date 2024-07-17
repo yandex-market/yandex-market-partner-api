@@ -3,6 +3,7 @@ get:
     - orders
     - fbs
     - dbs
+    - fby
     - express
   operationId: getOrders
   summary: Информация о заказах

@@ -2,6 +2,9 @@ get:
   tags:
     - campaigns
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: getCampaignSettings
   summary: Настройки магазина
   description: >

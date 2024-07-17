@@ -2,6 +2,9 @@ post:
   tags:
     - feeds
     - dbs
+    - fbs
+    - express
+    - fby
   operationId: setFeedParams
   summary: Изменение параметров прайс-листа
   description: >
