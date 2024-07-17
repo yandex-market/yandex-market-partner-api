@@ -3,9 +3,7 @@ description: |
 
   * `USER` — пользователь.
   * `SHOP` — магазин.
-  * `BUSINESS` — кабинет.
 type: string
 enum:
   - USER
   - SHOP
-  - BUSINESS
