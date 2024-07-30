@@ -1,0 +1,8 @@
+description: Информация об авторе комментария.
+type: object
+properties:
+  type:
+    $ref: ./GoodsFeedbackCommentAuthorType.yaml
+  name:
+    description: Имя автора или название кабинета.
+    type: string

@@ -1,0 +1,26 @@
+description: Статистическая информация по отзыву.
+type: object
+required:
+  - rating
+  - commentsCount
+properties:
+  rating:
+    description: Оценка товара.
+    type: integer
+    format: int32
+    minimum: 1
+    maximum: 5
+  commentsCount:
+    description: |
+      Количество комментариев к отзыву.
+
+      Учитываются только ответы на отзывы, а не дочерние комментарии.
+    type: integer
+    format: int64
+  recommended:
+    description: Рекомендуют ли этот товар.
+    type: boolean
+  paidAmount:
+    description: Количество баллов Плюса, которое автор получил за отзыв.
+    type: integer
+    format: int64

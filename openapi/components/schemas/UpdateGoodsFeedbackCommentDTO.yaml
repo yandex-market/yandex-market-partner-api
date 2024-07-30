@@ -1,0 +1,16 @@
+description: Комментарий к отзыву или другому комментарию.
+type: object
+required:
+  - text
+properties:
+  id:
+    description: |
+      Идентификатор комментария, который нужно изменить.
+
+      Оставьте поле пустым, если хотите добавить новый комментарий.
+    $ref: ./GoodsFeedbackCommentId.yaml
+  parentId:
+    description: Идентификатор родительского комментария, на который нужно ответить.
+    $ref: ./GoodsFeedbackCommentId.yaml
+  text:
+    $ref: ./GoodsFeedbackCommentText.yaml

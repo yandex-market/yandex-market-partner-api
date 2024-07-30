@@ -1,0 +1,8 @@
+description: |
+  Фильтр запроса комментариев отзыва.
+type: object
+required:
+  - feedbackId
+properties:
+  feedbackId:
+    $ref: ./GoodsFeedbackId.yaml

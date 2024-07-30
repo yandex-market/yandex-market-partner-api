@@ -1,0 +1,4 @@
+description: |
+  Идентификатор комментария к отзыву.
+type: integer
+format: int64

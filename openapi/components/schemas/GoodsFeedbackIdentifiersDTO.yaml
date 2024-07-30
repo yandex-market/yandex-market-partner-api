@@ -1,0 +1,14 @@
+description: Идентификаторы, которые связаны с отзывом.
+type: object
+required:
+  - orderId
+  - modelId
+properties:
+  orderId:
+    description: Идентификатор заказа на Маркете.
+    type: integer
+    format: int64
+  modelId:
+    description: Идентификатор модели товара.
+    type: integer
+    format: int64

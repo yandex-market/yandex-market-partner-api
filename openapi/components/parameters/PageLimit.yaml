@@ -1,6 +1,6 @@
 name: limit
 description: |
-  Количество товаров на одной странице.
+  Количество значений на одной странице.
 in: query
 required: false
 example: 20

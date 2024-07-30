@@ -1,0 +1,62 @@
+description: |
+  Фильтр запроса отзывов в кабинете.
+type: object
+properties:
+  dateTimeFrom:
+    description: >
+      Начало периода. Не включительно.
+
+
+      Если параметр не указан, возвращается информация за 6 месяцев до указанной
+      в `dateTimeTo` даты.
+    type: string
+    format: date-time
+  dateTimeTo:
+    description: |
+      Конец периода. Не включительно.
+
+      Если параметр не указан, используется текущая дата.
+    type: string
+    format: date-time
+  reactionStatus:
+    description: >
+      Нужно ли вернуть только те отзывы, которые требуют ответа от магазина. Для
+      этого передайте значение `NEED_REACTION`.
+
+
+      По умолчанию возвращаются все отзывы.
+    $ref: ./FeedbackReactionStatusType.yaml
+  ratingValues:
+    description: Оценка товара.
+    type: array
+    uniqueItems: true
+    maxItems: 5
+    items:
+      type: integer
+      format: int32
+  modelIds:
+    description: >
+      Фильтр по идентификатору модели товара.
+
+
+      Получить идентификатор модели можно с помощью одного из запросов:
+
+
+      * [POST
+      businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md);
+
+
+      * [POST
+      businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md);
+
+
+      * [POST models](../../reference/models/getModels.md).
+    type: array
+    uniqueItems: true
+    maxItems: 20
+    items:
+      type: integer
+      format: int64
+  paid:
+    description: Фильтр отзывов за баллы Плюса.
+    type: boolean

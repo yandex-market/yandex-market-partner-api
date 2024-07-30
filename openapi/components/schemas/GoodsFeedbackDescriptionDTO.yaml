@@ -1,0 +1,12 @@
+description: Текстовая часть отзыва.
+type: object
+properties:
+  advantages:
+    description: Описание плюсов товара в отзыве.
+    type: string
+  disadvantages:
+    description: Описание минусов товара в отзыве.
+    type: string
+  comment:
+    description: Комментарий в отзыве.
+    type: string

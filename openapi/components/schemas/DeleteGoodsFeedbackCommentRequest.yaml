@@ -1,0 +1,8 @@
+description: |
+  Фильтр запроса отзывов по бизнесу.
+type: object
+required:
+  - id
+properties:
+  id:
+    $ref: ./GoodsFeedbackCommentId.yaml

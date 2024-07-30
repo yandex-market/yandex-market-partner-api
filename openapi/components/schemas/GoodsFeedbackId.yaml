@@ -1,0 +1,4 @@
+description: |
+  Идентификатор отзыва.
+type: integer
+format: int64

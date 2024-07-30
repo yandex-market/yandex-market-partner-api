@@ -1,0 +1,13 @@
+description: Идентификаторы отзывов.
+type: object
+required:
+  - feedbackIds
+properties:
+  feedbackIds:
+    description: Список идентификаторов отзывов, на которые магазин не будет отвечать.
+    type: array
+    minItems: 1
+    maxItems: 50
+    uniqueItems: true
+    items:
+      $ref: ./GoodsFeedbackId.yaml

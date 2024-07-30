@@ -1,4 +1,4 @@
-description: Информация об авторе ответа.
+description: Информация об авторе комментария.
 type: object
 properties:
   type:

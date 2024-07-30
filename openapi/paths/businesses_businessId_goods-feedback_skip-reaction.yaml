@@ -1,0 +1,45 @@
+post:
+  tags:
+    - goods-feedback
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: skipGoodsFeedbacksReaction
+  summary: Отказ от ответа на отзывы
+  description: >
+    Пропускает отзывы — они больше не будут возвращаться в методе получения всех
+    отзывов [POST
+    businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).
+
+
+    |**⚙️ Лимит:** 1 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/SkipGoodsFeedbackReactionRequest.yaml
+  responses:
+    '200':
+      description: Пустой ответ.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/EmptyApiResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

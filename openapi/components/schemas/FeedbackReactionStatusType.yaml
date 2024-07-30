@@ -1,0 +1,10 @@
+description: |
+  Статус реакции на отзыв:
+
+  * `ALL` — все отзывы.
+
+  * `NEED_REACTION` — отзывы, на которые нужно ответить.
+type: string
+enum:
+  - ALL
+  - NEED_REACTION

@@ -1,0 +1,13 @@
+description: Фото и видео.
+type: object
+properties:
+  photos:
+    description: Ссылки на фото.
+    type: array
+    items:
+      type: string
+  videos:
+    description: Ссылки на видео.
+    type: array
+    items:
+      type: string

@@ -1,0 +1,11 @@
+description: Комментарий к отзыву.
+type: object
+required:
+  - feedbackId
+  - comment
+properties:
+  feedbackId:
+    $ref: ./GoodsFeedbackId.yaml
+  comment:
+    description: Параметры комментария.
+    $ref: ./UpdateGoodsFeedbackCommentDTO.yaml

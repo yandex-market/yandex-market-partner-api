@@ -1,0 +1,29 @@
+description: Отзыв о товаре.
+type: object
+required:
+  - identifiers
+  - statistics
+  - feedbackId
+  - needReaction
+  - createdAt
+properties:
+  feedbackId:
+    $ref: ./GoodsFeedbackId.yaml
+  createdAt:
+    description: Дата и время создания отзыва.
+    type: string
+    format: date-time
+  needReaction:
+    description: Нужен ли ответ на отзыв.
+    type: boolean
+  identifiers:
+    $ref: ./GoodsFeedbackIdentifiersDTO.yaml
+  author:
+    description: Имя автора отзыва.
+    type: string
+  description:
+    $ref: ./GoodsFeedbackDescriptionDTO.yaml
+  media:
+    $ref: ./GoodsFeedbackMediaDTO.yaml
+  statistics:
+    $ref: ./GoodsFeedbackStatisticsDTO.yaml

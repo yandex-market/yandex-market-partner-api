@@ -1,0 +1,68 @@
+post:
+  tags:
+    - goods-feedback
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: updateGoodsFeedbackComment
+  summary: Добавление нового или изменение созданного комментария
+  description: >
+    Добавляет новый комментарий магазина или изменяет комментарий, который
+    магазин оставлял ранее.
+
+
+    Для создания комментария к отзыву передайте только идентификатор отзыва
+    `feedbackId`.
+
+
+    Чтобы добавить комментарий к другому комментарию, передайте:
+
+
+    * `feedbackId` — идентификатор отзыва;
+
+    * `comment.parentId` — идентификатор родительского комментария.
+
+
+    Чтобы изменить комментарий, передайте:
+
+
+    * `feedbackId`— идентификатор отзыва;
+
+    * `comment.id` — идентификатор комментария, который нужно изменить.
+
+
+    Если передать одновременно `comment.parentId` и `comment.id`, будет изменен
+    существующий комментарий.
+
+
+    |**⚙️ Лимит:** 1 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateGoodsFeedbackCommentRequest.yaml
+  responses:
+    '200':
+      description: Информация о добавленном или измененном комментарии.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdateGoodsFeedbackCommentResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

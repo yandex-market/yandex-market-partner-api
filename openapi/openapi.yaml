@@ -226,6 +226,16 @@ paths:
     $ref: paths/campaigns_campaignId_outlets_licenses.yaml
   /campaigns/{campaignId}/feedback/updates:
     $ref: paths/campaigns_campaignId_feedback_updates.yaml
+  /businesses/{businessId}/goods-feedback:
+    $ref: paths/businesses_businessId_goods-feedback.yaml
+  /businesses/{businessId}/goods-feedback/skip-reaction:
+    $ref: paths/businesses_businessId_goods-feedback_skip-reaction.yaml
+  /businesses/{businessId}/goods-feedback/comments/update:
+    $ref: paths/businesses_businessId_goods-feedback_comments_update.yaml
+  /businesses/{businessId}/goods-feedback/comments/delete:
+    $ref: paths/businesses_businessId_goods-feedback_comments_delete.yaml
+  /businesses/{businessId}/goods-feedback/comments:
+    $ref: paths/businesses_businessId_goods-feedback_comments.yaml
   /campaigns/{campaignId}/offers:
     $ref: paths/campaigns_campaignId_offers.yaml
   /campaigns/{campaignId}/offers/update:

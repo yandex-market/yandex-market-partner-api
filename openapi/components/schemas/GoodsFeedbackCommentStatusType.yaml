@@ -1,0 +1,13 @@
+description: |
+  Статус комментария:
+
+  * `PUBLISHED` — опубликован.
+  * `UNMODERATED` — не проверен.
+  * `BANNED` — заблокирован.
+  * `DELETED` — удален.
+type: string
+enum:
+  - PUBLISHED
+  - UNMODERATED
+  - BANNED
+  - DELETED

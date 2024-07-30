@@ -1,0 +1,10 @@
+description: Комментарии к отзыву.
+type: object
+properties:
+  comments:
+    description: Список комментариев.
+    type: array
+    items:
+      $ref: ./GoodsFeedbackCommentDTO.yaml
+  paging:
+    $ref: ./ForwardScrollingPagerDTO.yaml
