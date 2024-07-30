@@ -218,6 +218,8 @@ paths:
     $ref: paths/reports_shelf-statistics_generate.yaml
   /reports/documents/labels/generate:
     $ref: paths/reports_documents_labels_generate.yaml
+  /reports/goods-feedback/generate:
+    $ref: paths/reports_goods-feedback_generate.yaml
   /campaigns/{campaignId}/outlets:
     $ref: paths/campaigns_campaignId_outlets.yaml
   /campaigns/{campaignId}/outlets/{outletId}:
