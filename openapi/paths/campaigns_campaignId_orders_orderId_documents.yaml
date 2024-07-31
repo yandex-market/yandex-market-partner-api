@@ -3,6 +3,7 @@ post:
     - order-business-information
     - fbs
     - fby
+    - dbs
   operationId: getOrderBusinessDocumentsInfo
   summary: Информация о документах
   description: >

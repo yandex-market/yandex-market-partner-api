@@ -3,6 +3,7 @@ post:
     - order-business-information
     - fbs
     - fby
+    - dbs
   operationId: getOrderBusinessBuyerInfo
   summary: Информация о покупателе — юридическом лице
   description: >
