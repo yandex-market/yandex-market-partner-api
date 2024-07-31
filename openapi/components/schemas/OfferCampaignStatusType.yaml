@@ -18,6 +18,8 @@ description: >
 
   * `NO_STOCKS` — Нет на складе.
 
+  * `ARCHIVED` — В архиве.
+
 
   [Что обозначает каждый из
   статусов](https://yandex.ru/support/marketplace/assortment/add/statuses.html)
@@ -31,3 +33,4 @@ enum:
   - CREATING_CARD
   - NO_CARD
   - NO_STOCKS
+  - ARCHIVED
