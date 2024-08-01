@@ -29,8 +29,6 @@ description: >
 
     * `CARD_ON_DELIVERY` — банковской картой.
 
-    * `BOUND_CARD_ON_DELIVERY` — привязанной картой при получении.
-
     * `CASH_ON_DELIVERY` — наличными.
 
     * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
@@ -43,7 +41,6 @@ type: string
 enum:
   - CASH_ON_DELIVERY
   - CARD_ON_DELIVERY
-  - BOUND_CARD_ON_DELIVERY
   - YANDEX
   - APPLE_PAY
   - EXTERNAL_CERTIFICATE
