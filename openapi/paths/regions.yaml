@@ -4,6 +4,7 @@ get:
     - fby
     - fbs
     - dbs
+    - express
   operationId: searchRegionsByName
   summary: Метод для поиска регионов по их имени
   description: >

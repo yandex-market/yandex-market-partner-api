@@ -4,6 +4,7 @@ post:
     - fbs
     - fby
     - dbs
+    - express
   operationId: getOrderBusinessDocumentsInfo
   summary: Информация о документах
   description: >

@@ -52,6 +52,7 @@ get:
     - fby
     - fbs
     - dbs
+    - express
   operationId: getHiddenOffers
   summary: Информация о скрытых вами товарах
   description: >

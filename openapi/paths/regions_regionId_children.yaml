@@ -4,6 +4,7 @@ get:
     - fby
     - fbs
     - dbs
+    - express
   operationId: searchRegionChildren
   summary: Информация о дочерних регионах
   description: >

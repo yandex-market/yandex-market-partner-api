@@ -4,6 +4,7 @@ post:
     - fbs
     - fby
     - dbs
+    - express
   operationId: getOrderBusinessBuyerInfo
   summary: Информация о покупателе — юридическом лице
   description: >
