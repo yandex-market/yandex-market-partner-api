@@ -4,25 +4,5 @@ properties:
   offerId:
     description: Идентификатор предложения.
     $ref: ./ShopSku.yaml
-  id:
-    description: |
-      {% note warning "" %}
-
-      Этот параметр устарел. Не используйте его.
-
-      {% endnote %}
-
-      Идентификатор предложения из прайс-листа.
-    deprecated: true
-    type: string
   price:
     $ref: ./PriceDTO.yaml
-  shopSku:
-    description: |
-      {% note warning "" %}
-
-      Этот параметр устарел. Не используйте его.
-
-      {% endnote %}
-    deprecated: true
-    $ref: ./ShopSku.yaml
