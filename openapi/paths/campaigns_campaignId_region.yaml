@@ -7,10 +7,23 @@ get:
     - express
   operationId: getCampaignRegion
   summary: Регион магазина
-  description: |
+  description: >
+    {% note warning "" %}
+
+
+    Этот метод устарел. Вместо него используйте [GET
+    campaigns/{campaignId}/settings](../../reference/campaigns/getCampaignSettings.md).
+
+
+    {% endnote %}
+
+
     Возвращает регион, в котором находится магазин.
+
     |**⚙️ Лимит:** 5 000 запросов в час|
+
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:
