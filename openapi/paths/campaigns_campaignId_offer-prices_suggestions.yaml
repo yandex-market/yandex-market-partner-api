@@ -11,6 +11,16 @@ post:
     {% note warning "" %}
 
 
+    Этот метод устарел. Вместо него используйте [отчет «Цены на
+    рынке»](../../reference/reports/generateShowsSalesReport.md).
+
+
+    {% endnote %}
+
+
+    {% note warning "" %}
+
+
     Этот метод подходит только тем магазинам, которые устанавливают цены на
     товары в рублях.
 
@@ -48,6 +58,7 @@ post:
     |**⚙️ Лимит:** 100 000 товаров в час|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:
