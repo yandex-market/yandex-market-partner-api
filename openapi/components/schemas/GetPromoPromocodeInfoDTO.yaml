@@ -1,0 +1,16 @@
+description: |
+  Информация для типа `MARKET_PROMOCODE`.
+
+  Параметр заполняется только для этого типа акции.
+type: object
+required:
+  - promocode
+  - discount
+properties:
+  promocode:
+    description: Промокод.
+    type: string
+  discount:
+    description: Процент скидки по промокоду.
+    type: integer
+    format: int32

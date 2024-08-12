@@ -1,0 +1,31 @@
+description: >
+  Удаление товаров из акции.
+
+
+  Чтобы убрать:
+
+
+  * все товары из акции и больше не участвовать в ней, передайте значение `true`
+  в параметре `deleteAllOffers`;
+
+
+  * часть товаров, передайте их идентификаторы в параметре `offersIds`.
+type: object
+required:
+  - promoId
+properties:
+  promoId:
+    description: Идентификатор акции.
+    type: string
+  deleteAllOffers:
+    description: >-
+      Чтобы убрать все товары из акции и больше не участвовать в ней, передайте
+      значение `true` и не передавайте параметр `offerIds`.
+    type: boolean
+  offerIds:
+    description: Товары, которые нужно убрать из акции.
+    type: array
+    minItems: 1
+    maxItems: 500
+    items:
+      $ref: ./ShopSku.yaml

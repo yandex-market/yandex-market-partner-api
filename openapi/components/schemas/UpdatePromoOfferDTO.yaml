@@ -1,0 +1,9 @@
+description: Описание товаров, которые участвуют в акции.
+type: object
+required:
+  - offerId
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  params:
+    $ref: ./UpdatePromoOfferParamsDTO.yaml

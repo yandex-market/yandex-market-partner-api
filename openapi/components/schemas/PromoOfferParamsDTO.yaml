@@ -1,0 +1,10 @@
+description: |
+  Параметры товара в акции.
+
+  Возвращается параметр, который соответствует типу акции.
+type: object
+properties:
+  discountParams:
+    $ref: ./PromoOfferDiscountParamsDTO.yaml
+  promocodeParams:
+    $ref: ./PromoOfferPromocodeParamsDTO.yaml

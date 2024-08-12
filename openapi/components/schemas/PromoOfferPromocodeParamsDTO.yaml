@@ -1,0 +1,14 @@
+description: Параметры товара в акции с типом `MARKET_PROMOCODE`.
+type: object
+required:
+  - maxPrice
+properties:
+  maxPrice:
+    description: |
+      Максимально возможная цена для участия в акции до применения промокода.
+
+      Указывается в рублях.
+
+      Возвращается для всех товаров.
+    type: integer
+    format: int64

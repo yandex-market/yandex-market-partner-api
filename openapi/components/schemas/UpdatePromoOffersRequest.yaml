@@ -1,0 +1,23 @@
+description: >
+  Добавление товаров в акцию или обновление их параметров.
+
+
+  Чтобы добавить товары в акцию или обновить параметры каких-то товаров,
+  передайте их в параметре `offers`.
+type: object
+required:
+  - promoId
+  - offers
+properties:
+  promoId:
+    description: Идентификатор акции.
+    type: string
+  offers:
+    description: >-
+      Товары, которые необходимо добавить в акцию или цены которых нужно
+      изменить.
+    type: array
+    minItems: 1
+    maxItems: 500
+    items:
+      $ref: ./UpdatePromoOfferDTO.yaml

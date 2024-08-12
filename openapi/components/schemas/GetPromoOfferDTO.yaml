@@ -1,0 +1,15 @@
+description: Товар, который участвует или может участвовать в акции.
+type: object
+required:
+  - offerId
+  - status
+  - params
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  status:
+    $ref: ./PromoOfferParticipationStatusType.yaml
+  params:
+    $ref: ./PromoOfferParamsDTO.yaml
+  autoParticipatingDetails:
+    $ref: ./PromoOfferAutoParticipatingDetailsDTO.yaml

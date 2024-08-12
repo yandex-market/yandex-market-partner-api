@@ -1,0 +1,13 @@
+description: |
+  Тип акции:
+
+  * `DIRECT_DISCOUNT` — прямая скидка.
+
+  * `BLUE_FLASH` — флеш-акция.
+
+  * `MARKET_PROMOCODE` — скидка по промокоду.
+type: string
+enum:
+  - DIRECT_DISCOUNT
+  - BLUE_FLASH
+  - MARKET_PROMOCODE

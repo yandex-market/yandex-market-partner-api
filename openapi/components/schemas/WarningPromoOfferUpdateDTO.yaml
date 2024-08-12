@@ -1,0 +1,15 @@
+description: Описание предупреждения, которое появилось при добавлении товара.
+type: object
+required:
+  - offerId
+  - warnings
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  warnings:
+    description: >-
+      Предупреждения, которые появились при добавлении товара в акцию или
+      изменении его цен.
+    type: array
+    items:
+      $ref: ./PromoOfferUpdateWarningDTO.yaml

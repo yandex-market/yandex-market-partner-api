@@ -1,0 +1,7 @@
+description: Результат удаления товаров из акции.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./DeletePromoOffersResultDTO.yaml

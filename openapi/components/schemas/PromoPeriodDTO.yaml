@@ -1,0 +1,14 @@
+description: Время проведения акции.
+type: object
+required:
+  - dateTimeFrom
+  - dateTimeTo
+properties:
+  dateTimeFrom:
+    description: Дата и время начала акции.
+    type: string
+    format: date-time
+  dateTimeTo:
+    description: Дата и время окончания акции.
+    type: string
+    format: date-time

@@ -1,0 +1,14 @@
+description: |
+  Результат удаления товаров из акции.
+
+  Возвращается, только если в запросе был передан параметр `offerIds`.
+type: object
+properties:
+  rejectedOffers:
+    description: |
+      Товары, при удалении которых появились ошибки.
+
+      Возвращается, только если есть такие товары.
+    type: array
+    items:
+      $ref: ./RejectedPromoOfferDeleteDTO.yaml

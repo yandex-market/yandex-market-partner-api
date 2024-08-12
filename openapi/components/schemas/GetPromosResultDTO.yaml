@@ -1,0 +1,8 @@
+description: Информация об акциях Маркета.
+type: object
+properties:
+  promos:
+    description: Акции Маркета.
+    type: array
+    items:
+      $ref: ./GetPromoDTO.yaml

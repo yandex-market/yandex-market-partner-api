@@ -1,0 +1,21 @@
+description: Ошибки и предупреждения, которые появились при добавлении товаров в акцию.
+type: object
+properties:
+  rejectedOffers:
+    description: |
+      Изменения, которые были отклонены.
+
+      Возвращается, только если есть отклоненные изменения.
+    type: array
+    items:
+      $ref: ./RejectedPromoOfferUpdateDTO.yaml
+  warningOffers:
+    description: >
+      Изменения, по которым есть предупреждения. Они информируют о возможных
+      проблемах. Информация о товарах обновится.
+
+
+      Возвращается, только если есть предупреждения.
+    type: array
+    items:
+      $ref: ./WarningPromoOfferUpdateDTO.yaml

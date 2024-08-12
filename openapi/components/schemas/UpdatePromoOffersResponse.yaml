@@ -1,0 +1,7 @@
+description: Результат добавления товаров в акцию.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./UpdatePromoOffersResultDTO.yaml

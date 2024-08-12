@@ -1,0 +1,10 @@
+description: Информация о товаре и ошибки, которые появились при его удалении.
+type: object
+required:
+  - offerId
+  - reason
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  reason:
+    $ref: ./RejectedPromoOfferDeleteReasonType.yaml

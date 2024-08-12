@@ -1,0 +1,49 @@
+post:
+  tags:
+    - promos
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: getPromoOffers
+  summary: Получение списка товаров, которые участвуют или могут участвовать в акции
+  description: |
+    Возвращает список товаров, которые участвуют или могут участвовать в акции.
+
+    {% note warning %}
+
+    В параметре `limit` не передавайте значение больше 500.
+
+    {% endnote %}
+
+    |**⚙️ Лимит:** 10000 запросов в час|
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetPromoOffersRequest.yaml
+  responses:
+    '200':
+      description: Список товаров, которые участвуют или могут участвовать в акции.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetPromoOffersResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

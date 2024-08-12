@@ -1,0 +1,10 @@
+description: Описание отклоненного изменения.
+type: object
+required:
+  - offerId
+  - reason
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  reason:
+    $ref: ./RejectedPromoOfferUpdateReasonType.yaml

@@ -1,0 +1,11 @@
+description: Фильтры для получения списка акций.
+type: object
+properties:
+  participation:
+    $ref: ./PromoParticipationType.yaml
+  mechanics:
+    description: |
+      Фильтр по типу акции.
+
+      По умолчанию возвращаются все типы акций.
+    $ref: ./MechanicsType.yaml

@@ -308,6 +308,14 @@ paths:
     $ref: paths/businesses_businessId_ratings_quality.yaml
   /campaigns/{campaignId}/ratings/quality/details:
     $ref: paths/campaigns_campaignId_ratings_quality_details.yaml
+  /businesses/{businessId}/promos:
+    $ref: paths/businesses_businessId_promos.yaml
+  /businesses/{businessId}/promos/offers:
+    $ref: paths/businesses_businessId_promos_offers.yaml
+  /businesses/{businessId}/promos/offers/update:
+    $ref: paths/businesses_businessId_promos_offers_update.yaml
+  /businesses/{businessId}/promos/offers/delete:
+    $ref: paths/businesses_businessId_promos_offers_delete.yaml
 components:
   securitySchemes:
     OAuth:

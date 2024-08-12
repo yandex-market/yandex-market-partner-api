@@ -1,0 +1,50 @@
+description: Информация об акции.
+type: object
+required:
+  - id
+  - name
+  - period
+  - participating
+  - assortmentInfo
+  - mechanicsInfo
+  - bestsellerInfo
+properties:
+  id:
+    description: Идентификатор акции.
+    type: string
+  name:
+    description: Название акции.
+    type: string
+  period:
+    $ref: ./PromoPeriodDTO.yaml
+  participating:
+    description: >
+      Участвует или участвовал ли продавец в этой акции.
+
+
+      Для текущих и будущих акций возвращается со значением `true`, если в акции
+      есть товары, которые были добавлены вручную. Если товары не участвуют в
+      акции или добавлены в нее автоматически, параметр возвращается со
+      значением `false`.
+
+
+      Для прошедших акций всегда возвращается со значением `true`.
+
+
+      Об автоматическом и ручном добавлении товаров в акцию читайте [в Справке
+      Маркета для
+      продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/index).
+    type: boolean
+  assortmentInfo:
+    $ref: ./GetPromoAssortmentInfoDTO.yaml
+  mechanicsInfo:
+    $ref: ./GetPromoMechanicsInfoDTO.yaml
+  bestsellerInfo:
+    $ref: ./GetPromoBestsellerInfoDTO.yaml
+  channels:
+    description: Список каналов продвижения товаров.
+    type: array
+    items:
+      $ref: ./ChannelType.yaml
+  constraints:
+    $ref: ./GetPromoConstraintsDTO.yaml

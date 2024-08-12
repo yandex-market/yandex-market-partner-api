@@ -24,3 +24,6 @@ properties:
     items:
       type: integer
       format: int64
+  promoId:
+    description: Идентификатор акции, товары из которой нужны в отчете.
+    type: string

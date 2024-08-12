@@ -1,0 +1,7 @@
+description: |
+  Описание ошибки:
+
+  * `OFFER_DOES_NOT_EXIST` — в кабинете нет товара с таким SKU.
+type: string
+enum:
+  - OFFER_DOES_NOT_EXIST

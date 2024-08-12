@@ -1,0 +1,68 @@
+post:
+  tags:
+    - promos
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: deletePromoOffers
+  summary: Удаление товаров из акции
+  description: |
+    Убирает товары из акции.
+
+    Изменения начинают действовать в течение 4–6 часов.
+
+    |**⚙️ Лимит:** 10000 запросов в час|
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/DeletePromoOffersRequest.yaml
+  responses:
+    '200':
+      description: Результат удаления товаров из акции.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/DeletePromoOffersResponse.yaml
+    '400':
+      description: >
+        |
+        **Описание**                                                                                               
+        |
+        **Пояснение**                                                                                              
+        | **Способы
+        решения**                                                                                                                                              
+        |
+
+        |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+        | Not enough parameters in request: offerIds or deleteAllOffers should
+        be specified.                          | Не передан параметр для
+        удаления товаров из
+        акции.                                                          | Чтобы
+        убрать все товары, передайте значение `true` в параметре
+        `deleteAllOffers`. Чтобы удалить только некоторые товары, передайте их
+        SKU в параметре `offerIds`. |
+
+        | Too many parameters in request: only one of parameters offerIds or
+        deleteAllOffers should be specified.     | Можно либо передать значение
+        `true` в параметре `deleteAllOffers`, либо SKU товаров в параметре
+        `offerIds`. | Передайте что-то одно  — или значение `true` в параметре
+        `deleteAllOffers`, или SKU товаров в параметре
+        `offerIds`.                                               |
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

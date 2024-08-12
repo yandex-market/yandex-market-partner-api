@@ -1,0 +1,47 @@
+post:
+  tags:
+    - promos
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: updatePromoOffers
+  summary: Добавление товаров в акцию или изменение их цен
+  description: >
+    Добавляет товары в акцию или изменяет цены на товары, которые участвуют в
+    акции.
+
+
+    Изменения начинают действовать в течение 4–6 часов.
+
+
+    |**⚙️ Лимит:** 10000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdatePromoOffersRequest.yaml
+  responses:
+    '200':
+      description: Результат добавления товаров в акцию или обновления их цен.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdatePromoOffersResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

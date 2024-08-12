@@ -1,0 +1,5 @@
+description: Параметры товара, который участвует в акции.
+type: object
+properties:
+  discountParams:
+    $ref: ./UpdatePromoOfferDiscountParamsDTO.yaml

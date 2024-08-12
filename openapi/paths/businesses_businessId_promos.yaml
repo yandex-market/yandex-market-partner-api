@@ -1,0 +1,61 @@
+post:
+  tags:
+    - promos
+    - fby
+    - fbs
+    - dbs
+    - express
+  operationId: getPromos
+  summary: Получение списка акций
+  description: >
+    Возвращает информацию об акциях Маркета.
+
+
+    По умолчанию возвращаются акции, в которых продавец участвует или может
+    принять участие.
+
+
+    Чтобы получить текущие или завершенные акции, передайте параметр
+    `participation`.
+
+
+    Типы акций, которые возвращаются в ответе:
+
+
+    * прямая скидка;
+
+    * флеш-акция;
+
+    * скидка по промокоду.
+
+
+    |**⚙️ Лимит:** 1000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: false
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetPromosRequest.yaml
+  responses:
+    '200':
+      description: Список акций Маркета.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetPromosResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

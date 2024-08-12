@@ -1,0 +1,32 @@
+description: Параметры товара в акции с типом `DIRECT_DISCOUNT` или `BLUE_FLASH`.
+type: object
+required:
+  - maxPromoPrice
+properties:
+  price:
+    description: |
+      Зачеркнутая цена — та, по которой товар продавался до акции.
+
+      Указывается в рублях.
+
+      Возвращается, только если товар участвует в акции.
+    type: integer
+    format: int64
+  promoPrice:
+    description: |
+      Цена по акции — та, по которой вы хотите продавать товар.
+
+      Указывается в рублях.
+
+      Возвращается, только если товар участвует в акции.
+    type: integer
+    format: int64
+  maxPromoPrice:
+    description: |
+      Максимально возможная цена для участия в акции.
+
+      Указывается в рублях.
+
+      Возвращается для всех товаров.
+    type: integer
+    format: int64

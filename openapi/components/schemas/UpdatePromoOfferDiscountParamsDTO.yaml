@@ -1,0 +1,26 @@
+description: |
+  Параметры товара в акции с типом `DIRECT_DISCOUNT` или `BLUE_FLASH`.
+
+  Обязательный параметр для акций с этими типами.
+type: object
+properties:
+  price:
+    description: |
+      Зачеркнутая цена — та, по которой товар продавался до акции.
+
+      Указывается в рублях.
+
+      Число должно быть целым.
+    type: integer
+    format: int64
+    minimum: 1
+  promoPrice:
+    description: |
+      Цена по акции — та, по которой вы хотите продавать товар.
+
+      Указывается в рублях.
+
+      Число должно быть целым.
+    type: integer
+    format: int64
+    minimum: 1

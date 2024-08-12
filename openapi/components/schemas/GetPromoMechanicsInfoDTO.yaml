@@ -1,0 +1,9 @@
+description: Информация о типе акции.
+type: object
+required:
+  - type
+properties:
+  type:
+    $ref: ./MechanicsType.yaml
+  promocodeInfo:
+    $ref: ./GetPromoPromocodeInfoDTO.yaml

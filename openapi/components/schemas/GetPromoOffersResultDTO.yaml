@@ -1,0 +1,12 @@
+description: Список товаров, которые участвуют или могут участвовать в акции.
+type: object
+required:
+  - offers
+properties:
+  offers:
+    description: Товары, которые участвуют или могут участвовать в акции.
+    type: array
+    items:
+      $ref: ./GetPromoOfferDTO.yaml
+  paging:
+    $ref: ./ForwardScrollingPagerDTO.yaml

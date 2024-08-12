@@ -1,0 +1,10 @@
+description: Получение списка товаров, которые участвуют или могут участвовать в акции.
+type: object
+required:
+  - promoId
+properties:
+  promoId:
+    description: Идентификатор акции.
+    type: string
+  statusType:
+    $ref: ./PromoOfferParticipationStatusFilterType.yaml
