@@ -12,7 +12,7 @@ post:
 
 
     Этот метод устарел. Вместо него используйте [отчет «Цены на
-    рынке»](../../reference/reports/generateShowsSalesReport.md).
+    рынке»](../../reference/reports/generatePricesReport.md).
 
 
     {% endnote %}
