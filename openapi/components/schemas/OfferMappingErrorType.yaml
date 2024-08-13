@@ -27,6 +27,9 @@ description: >
 
   * `INVALID_GROUP_ID_CHARACTERS` — переданы [недопустимые
   символы](*ascii-code).
+
+  * `INVALID_PICKER_URL` — передана ссылка на изображение для миниатюры, которая
+  не совпадает со ссылкой на изображение товара.
 type: string
 enum:
   - UNKNOWN_CATEGORY
@@ -39,3 +42,4 @@ enum:
   - INVALID_UNIT_ID
   - INVALID_GROUP_ID_LENGTH
   - INVALID_GROUP_ID_CHARACTERS
+  - INVALID_PICKER_URL
