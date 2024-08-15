@@ -8,6 +8,15 @@ get:
   operationId: getFeedbackAndCommentUpdates
   summary: Новые и обновленные отзывы о магазине
   description: >
+    {% note warning "" %}
+
+
+    Этот метод устарел. Не используйте его.
+
+
+    {% endnote %}
+
+
     Возвращает новые и обновленные отзывы о магазине на Маркете.
 
 
@@ -18,6 +27,7 @@ get:
     |**⚙️ Лимит:** 100 запросов в час|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
