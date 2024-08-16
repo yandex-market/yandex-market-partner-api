@@ -33,3 +33,7 @@ properties:
       description: Идентификатор заказа.
       type: integer
       format: int64
+  cancelledOrders:
+    description: Возвращать отмененные заказы.
+    type: boolean
+    default: true

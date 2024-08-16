@@ -1,0 +1,12 @@
+description: >
+  Возвращать ли отмененные заказы.
+
+
+  Значение по умолчанию — `true`. Если возвращать отмененные заказы не нужно,
+  передавайте значение `false`.
+name: cancelledOrders
+in: query
+required: false
+schema:
+  type: boolean
+  default: true

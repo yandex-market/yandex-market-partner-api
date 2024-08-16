@@ -41,11 +41,11 @@ properties:
       type: integer
       format: int64
   draftCount:
-    description: Количество заказов, запланированных к отгрузке.
+    description: Количество заказов, которое Маркет запланировал к отгрузке.
     type: integer
     format: int32
   plannedCount:
-    description: Количество отгруженных заказов.
+    description: Количество заказов, которое Маркет подтвердил к отгрузке.
     type: integer
     format: int32
   factCount:
