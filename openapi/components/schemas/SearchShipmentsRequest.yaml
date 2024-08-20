@@ -34,6 +34,11 @@ properties:
       type: integer
       format: int64
   cancelledOrders:
-    description: Возвращать отмененные заказы.
+    description: >
+      Возвращать отмененные заказы.
+
+
+      Значение по умолчанию — `true`. Если возвращать отмененные заказы не
+      нужно, передавайте значение `false`.
     type: boolean
     default: true
