@@ -34,7 +34,11 @@ properties:
     format: decimal
   buyerPriceBeforeDiscount:
     description: |
-      Цена продажи. Стоимость товара в валюте покупателя до применения скидок.
+      Стоимость товара в валюте покупателя до применения скидок по:
+
+      * акциям;
+      * купонам;
+      * промокодам.
     type: number
     format: decimal
   priceBeforeDiscount:
