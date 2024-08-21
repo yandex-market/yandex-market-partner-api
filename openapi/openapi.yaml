@@ -258,10 +258,6 @@ paths:
     $ref: paths/campaigns_campaignId_feeds_feedId_params.yaml
   /campaigns/{campaignId}/feeds/{feedId}/refresh:
     $ref: paths/campaigns_campaignId_feeds_feedId_refresh.yaml
-  /campaigns/{campaignId}/feeds/{feedId}/categories:
-    $ref: paths/campaigns_campaignId_feeds_feedId_categories.yaml
-  /campaigns/{campaignId}/feeds/categories:
-    $ref: paths/campaigns_campaignId_feeds_categories.yaml
   /models:
     $ref: paths/models.yaml
   /models/{modelId}:
