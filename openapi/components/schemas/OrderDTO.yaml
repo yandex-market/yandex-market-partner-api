@@ -74,9 +74,16 @@ properties:
     type: number
     format: decimal
   buyerItemsTotalBeforeDiscount:
-    description: >-
-      Цена продажи. Стоимость всех товаров в заказе в валюте покупателя до
-      применения скидок и без учета стоимости доставки.
+    description: >
+      Стоимость всех товаров в заказе в валюте покупателя без учета стоимости
+      доставки и до применения скидок по:
+
+
+      * акциям;
+
+      * купонам;
+
+      * промокодам.
     type: number
     format: decimal
   buyerTotalBeforeDiscount:
