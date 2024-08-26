@@ -48,7 +48,8 @@ get:
     количество заказов в выходных данных запроса — 50.
 
 
-    Результаты возвращаются постранично.
+    Результаты возвращаются постранично. Для навигации по страницам используйте
+    параметры `page_token` и `limit`.
 
 
     Получить более подробную информацию о покупателе и его номере телефона можно
@@ -78,6 +79,8 @@ get:
     - $ref: ../components/parameters/GetOrdersBuyerType.yaml
     - $ref: ../components/parameters/PageNum.yaml
     - $ref: ../components/parameters/PageSize.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
   responses:
     '200':
       description: Информация о заказах.

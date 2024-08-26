@@ -9,3 +9,6 @@ properties:
     type: array
     items:
       $ref: ./OrderDTO.yaml
+  paging:
+    description: Информация о страницах с результатами.
+    $ref: ./ForwardScrollingPagerDTO.yaml
