@@ -68,6 +68,9 @@ get:
   tags:
     - outlets
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: getOutlet
   summary: Информация о точке продаж
   description: >
@@ -109,6 +112,9 @@ delete:
   tags:
     - outlets
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: deleteOutlet
   summary: Удаление точки продаж
   description: >

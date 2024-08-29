@@ -51,6 +51,9 @@ get:
   tags:
     - outlets
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: getOutlets
   summary: Информация о точках продаж
   description: >

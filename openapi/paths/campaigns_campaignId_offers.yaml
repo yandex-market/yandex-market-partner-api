@@ -108,6 +108,10 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
   operationId: getCampaignOffers
   summary: Список товаров, размещенных в заданном магазине, с параметрами размещения
   description: >

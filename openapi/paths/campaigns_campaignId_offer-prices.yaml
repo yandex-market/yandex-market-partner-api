@@ -82,6 +82,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - pricing
   operationId: getPricesByOfferIds
   summary: Просмотр цен на указанные товары в магазине
   description: >

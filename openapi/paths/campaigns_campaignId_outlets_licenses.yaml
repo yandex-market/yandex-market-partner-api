@@ -57,6 +57,9 @@ delete:
   tags:
     - outlet-licenses
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: deleteOutletLicenses
   summary: Удаление лицензий для точек продаж
   description: >
@@ -104,6 +107,9 @@ post:
   tags:
     - outlet-licenses
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: updateOutletLicenses
   summary: Создание и изменение лицензий для точек продаж
   description: >
