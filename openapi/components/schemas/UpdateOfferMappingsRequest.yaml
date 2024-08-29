@@ -9,3 +9,11 @@ properties:
     maxItems: 500
     items:
       $ref: ./UpdateOfferMappingDTO.yaml
+  onlyPartnerMediaContent:
+    description: >
+      Будут использоваться только переданные вами изображения товаров.
+
+
+      Значение по умолчанию — `false`. Если вы хотите заменить изображения,
+      которые добавил Маркет, передайте значение `true`.
+    type: boolean

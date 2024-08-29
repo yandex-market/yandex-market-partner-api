@@ -3,7 +3,7 @@ description: >
 
 
   Значение по умолчанию — `true`. Если возвращать отмененные заказы не нужно,
-  передавайте значение `false`.
+  передайте значение `false`.
 name: cancelledOrders
 in: query
 required: false
