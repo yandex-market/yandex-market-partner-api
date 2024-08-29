@@ -5,6 +5,10 @@ post:
     - fbs
     - fby
     - express
+  x-auth-scopes:
+    - all-methods
+    - pricing
+    - pricing:read-only
   operationId: getBidsInfoForBusiness
   summary: Информация об установленных ставках
   description: >

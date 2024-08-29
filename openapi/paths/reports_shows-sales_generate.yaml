@@ -5,6 +5,9 @@ post:
     - dbs
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - finance-and-accounting
   operationId: generateShowsSalesReport
   summary: Отчет «Аналитика продаж»
   description: >

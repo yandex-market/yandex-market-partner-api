@@ -5,6 +5,9 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
   operationId: updateOfferMappings
   summary: Добавление товаров в каталог и редактирование информации о них
   description: >

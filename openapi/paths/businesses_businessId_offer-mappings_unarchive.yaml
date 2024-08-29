@@ -5,6 +5,9 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
   operationId: deleteOffersFromArchive
   summary: Восстановление товаров из архива
   description: |

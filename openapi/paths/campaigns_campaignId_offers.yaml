@@ -5,6 +5,10 @@ get:
     - fbs
     - express
     - fby
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
   operationId: getOffers
   summary: Предложения магазина
   description: >

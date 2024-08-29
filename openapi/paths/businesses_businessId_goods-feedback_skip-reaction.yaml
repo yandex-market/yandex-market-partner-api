@@ -5,6 +5,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - communication
   operationId: skipGoodsFeedbacksReaction
   summary: Отказ от ответа на отзывы
   description: >

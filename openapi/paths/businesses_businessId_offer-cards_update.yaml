@@ -5,6 +5,9 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
   operationId: updateOfferContent
   summary: Редактирование категорийных характеристик товара
   description: >

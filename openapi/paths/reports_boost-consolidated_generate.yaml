@@ -5,6 +5,10 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - promotion
+    - finance-and-accounting
   operationId: generateBoostConsolidatedReport
   summary: Отчет по бусту продаж
   description: >

@@ -5,6 +5,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - pricing
   operationId: updatePromoOffers
   summary: Добавление товаров в акцию или изменение их цен
   description: >

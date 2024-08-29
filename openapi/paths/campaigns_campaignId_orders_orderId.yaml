@@ -5,6 +5,12 @@ get:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
+    - inventory-and-orders:read-only
+    - communication
+    - finance-and-accounting
   operationId: getOrder
   summary: Информация о заказе
   description: >

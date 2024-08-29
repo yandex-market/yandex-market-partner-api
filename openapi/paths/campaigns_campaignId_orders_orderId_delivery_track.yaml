@@ -2,6 +2,9 @@ post:
   tags:
     - order-delivery
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: setOrderDeliveryTrackCode
   summary: Передача трек‑номера посылки (DBS)
   description: >

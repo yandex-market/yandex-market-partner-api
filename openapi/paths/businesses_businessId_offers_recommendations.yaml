@@ -5,6 +5,12 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
+    - pricing
+    - pricing:read-only
   operationId: getOfferRecommendations
   summary: Рекомендации Маркета, касающиеся цен
   description: >

@@ -4,6 +4,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: updateOrderStatuses
   summary: Изменение статусов заказа
   description: >

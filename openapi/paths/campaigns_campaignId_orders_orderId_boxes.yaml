@@ -4,6 +4,9 @@ put:
     - fbs
     - express
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: setOrderBoxLayout
   summary: Подготовка заказа
   description: >

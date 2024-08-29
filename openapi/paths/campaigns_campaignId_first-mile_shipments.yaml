@@ -2,6 +2,10 @@ put:
   tags:
     - shipments
     - fbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
+    - inventory-and-orders:read-only
   operationId: searchShipments
   summary: Получение информации об отгрузках
   description: |

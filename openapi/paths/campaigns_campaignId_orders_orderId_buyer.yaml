@@ -2,6 +2,10 @@ get:
   tags:
     - order-delivery
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
+    - inventory-and-orders:read-only
   operationId: getOrderBuyerInfo
   summary: Информация о покупателе — физическом лице (DBS)
   description: >

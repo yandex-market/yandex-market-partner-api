@@ -4,6 +4,9 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - finance-and-accounting
   operationId: generateGoodsRealizationReport
   summary: Отчет по реализации
   description: >

@@ -5,6 +5,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
   operationId: addHiddenOffers
   summary: Скрытие товаров и настройки скрытия
   description: |
@@ -53,6 +56,10 @@ get:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
   operationId: getHiddenOffers
   summary: Информация о скрытых вами товарах
   description: >

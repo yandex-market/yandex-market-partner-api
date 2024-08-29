@@ -5,6 +5,12 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - promotion
+    - promotion:read-only
+    - pricing
+    - pricing:read-only
   operationId: getPromos
   summary: Получение списка акций
   description: >

@@ -5,6 +5,9 @@ get:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: getCampaignRegion
   summary: Регион магазина
   description: >

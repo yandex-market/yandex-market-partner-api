@@ -5,6 +5,10 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
   operationId: getOfferMappings
   summary: Информация о товарах в каталоге
   description: >

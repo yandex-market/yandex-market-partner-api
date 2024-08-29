@@ -5,6 +5,9 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - pricing
   operationId: confirmCampaignPrices
   summary: Подтверждение цены на товар, попавшего в карантин (цена в магазине)
   description: >

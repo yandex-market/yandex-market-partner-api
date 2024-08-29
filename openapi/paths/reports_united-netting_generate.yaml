@@ -5,6 +5,9 @@ post:
     - dbs
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - finance-and-accounting
   operationId: generateUnitedNettingReport
   summary: Отчет по платежам
   description: >

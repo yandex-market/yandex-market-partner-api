@@ -2,6 +2,9 @@ put:
   tags:
     - order-delivery
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: updateOrderStorageLimit
   summary: Продление срока хранения заказа
   description: >

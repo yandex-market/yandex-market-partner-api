@@ -5,6 +5,10 @@ post:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
   operationId: getOfferCardsContentStatus
   summary: Получение информации о заполненности карточек
   description: |

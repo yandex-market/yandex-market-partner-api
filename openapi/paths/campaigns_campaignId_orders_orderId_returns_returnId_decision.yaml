@@ -2,6 +2,9 @@ post:
   tags:
     - returns
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: setReturnDecision
   summary: Принятие/изменение решения по позиции в возврате
   description: >

@@ -5,6 +5,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - pricing
   operationId: updatePrices
   summary: Установка цен на товары в конкретном магазине
   description: >

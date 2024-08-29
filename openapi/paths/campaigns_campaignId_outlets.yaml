@@ -2,6 +2,9 @@ post:
   tags:
     - outlets
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: createOutlet
   summary: Создание точки продаж
   description: >

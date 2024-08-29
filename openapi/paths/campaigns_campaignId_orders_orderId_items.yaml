@@ -4,6 +4,9 @@ put:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: updateOrderItems
   summary: Удаление товара из заказа или уменьшение числа единиц (DBS)
   description: >

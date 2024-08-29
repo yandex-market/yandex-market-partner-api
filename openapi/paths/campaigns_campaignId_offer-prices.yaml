@@ -5,6 +5,10 @@ get:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - pricing
+    - pricing:read-only
   operationId: getPrices
   summary: Список цен
   description: >

@@ -2,6 +2,9 @@ post:
   tags:
     - reports
     - fbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: generateShipmentListDocumentReport
   summary: Лист сборки
   description: >

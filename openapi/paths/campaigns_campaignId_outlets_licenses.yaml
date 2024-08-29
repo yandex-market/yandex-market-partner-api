@@ -2,6 +2,9 @@ get:
   tags:
     - outlet-licenses
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: getOutletLicenses
   summary: Информация о лицензиях для точек продаж
   description: >

@@ -5,6 +5,10 @@ post:
     - fby
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
+    - inventory-and-orders:read-only
   operationId: getOrderBusinessBuyerInfo
   summary: Информация о покупателе — юридическом лице
   description: >

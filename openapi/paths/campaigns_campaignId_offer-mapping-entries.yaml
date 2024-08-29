@@ -5,6 +5,10 @@ get:
     - fbs
     - express
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
   operationId: getOfferMappingEntries
   summary: Список товаров в каталоге
   description: >

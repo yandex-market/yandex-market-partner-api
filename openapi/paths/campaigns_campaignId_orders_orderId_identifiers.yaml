@@ -4,6 +4,9 @@ put:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: provideOrderItemIdentifiers
   summary: Передача уникальных кодов маркировки единиц товара (DBS)
   description: >

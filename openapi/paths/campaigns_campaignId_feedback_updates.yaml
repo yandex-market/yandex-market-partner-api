@@ -5,6 +5,9 @@ get:
     - fby
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - communication
   operationId: getFeedbackAndCommentUpdates
   summary: Новые и обновленные отзывы о магазине
   description: >

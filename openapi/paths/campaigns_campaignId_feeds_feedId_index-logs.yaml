@@ -5,6 +5,10 @@ get:
     - fbs
     - express
     - fby
+  x-auth-scopes:
+    - all-methods
+    - pricing
+    - pricing:read-only
   operationId: getFeedIndexLogs
   summary: Отчет по индексации прайс-листа
   description: >

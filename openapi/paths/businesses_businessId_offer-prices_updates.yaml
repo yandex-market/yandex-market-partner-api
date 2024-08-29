@@ -5,6 +5,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - pricing
   operationId: updateBusinessPrices
   summary: Установка цен
   description: >

@@ -5,6 +5,10 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
   operationId: getCategoriesMaxSaleQuantum
   summary: Лимит на установку кванта продажи и минимального количества товаров в заказе
   description: >

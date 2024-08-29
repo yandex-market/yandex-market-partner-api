@@ -2,6 +2,9 @@ put:
   tags:
     - outlets
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
   description: >

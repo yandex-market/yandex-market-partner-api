@@ -5,6 +5,9 @@ post:
     - fbs
     - fby
     - express
+  x-auth-scopes:
+    - all-methods
+    - communication
   operationId: getChatHistory
   summary: Получение истории сообщений в чате
   description: |

@@ -4,6 +4,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: generateMassOrderLabelsReport
   summary: Ярлыки‑наклейки на все коробки в нескольких заказах
   description: >

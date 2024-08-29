@@ -5,6 +5,9 @@ post:
     - fbs
     - fby
     - express
+  x-auth-scopes:
+    - all-methods
+    - communication
   operationId: sendMessageToChat
   summary: Отправка сообщения в чат
   description: |

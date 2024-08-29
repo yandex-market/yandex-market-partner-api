@@ -5,6 +5,9 @@ post:
     - fby
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - finance-and-accounting
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >

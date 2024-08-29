@@ -2,6 +2,9 @@ post:
   tags:
     - returns
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: submitReturnDecision
   summary: Подтверждение решения по возвратным позициям
   description: >

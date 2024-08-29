@@ -5,6 +5,10 @@ post:
     - dbs
     - fbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - promotion
+    - finance-and-accounting
   operationId: generateCompetitorsPositionReport
   summary: Отчет «Конкурентная позиция»
   description: >

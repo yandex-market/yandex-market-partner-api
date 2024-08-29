@@ -5,6 +5,19 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - settings
+    - finance-and-accounting
+    - offers-and-cards
+    - offers-and-cards:read-only
+    - pricing
+    - pricing:read-only
+    - inventory-and-orders
+    - inventory-and-orders:read-only
+    - promotion
+    - promotion:read-only
+    - communication
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: |

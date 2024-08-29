@@ -5,6 +5,10 @@ get:
     - fbs
     - express
     - fby
+  x-auth-scopes:
+    - all-methods
+    - pricing
+    - pricing:read-only
   operationId: getFeeds
   summary: Список прайс-листов магазина
   description: >

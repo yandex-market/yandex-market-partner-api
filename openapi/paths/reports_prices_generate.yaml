@@ -5,6 +5,11 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - finance-and-accounting
+    - pricing
+    - promotion
   operationId: generatePricesReport
   summary: Отчет «Цены на рынке»
   description: >

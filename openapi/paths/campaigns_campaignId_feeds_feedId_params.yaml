@@ -5,6 +5,9 @@ post:
     - fbs
     - express
     - fby
+  x-auth-scopes:
+    - all-methods
+    - pricing
   operationId: setFeedParams
   summary: Изменение параметров прайс-листа
   description: >

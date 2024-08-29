@@ -5,6 +5,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - communication
   operationId: getGoodsFeedbackComments
   summary: Получение комментариев к отзыву
   description: >

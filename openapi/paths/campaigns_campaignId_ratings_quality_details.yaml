@@ -4,6 +4,9 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - settings
   operationId: getQualityRatingDetails
   summary: Заказы, которые повлияли на индекс качества
   description: >

@@ -2,6 +2,9 @@ get:
   tags:
     - shipments
     - fbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: downloadShipmentDiscrepancyAct
   summary: Получение акта расхождений
   description: |

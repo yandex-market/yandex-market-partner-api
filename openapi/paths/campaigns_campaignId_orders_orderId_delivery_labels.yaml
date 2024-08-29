@@ -4,6 +4,9 @@ get:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: generateOrderLabels
   summary: Ярлыки‑наклейки на все коробки в одном заказе
   description: >

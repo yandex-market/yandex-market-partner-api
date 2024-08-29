@@ -2,6 +2,9 @@ post:
   tags:
     - orders
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: provideOrderDigitalCodes
   summary: Передача ключей цифровых товаров
   description: >

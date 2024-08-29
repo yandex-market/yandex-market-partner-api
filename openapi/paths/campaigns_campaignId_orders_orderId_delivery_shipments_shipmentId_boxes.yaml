@@ -4,6 +4,9 @@ put:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: setOrderShipmentBoxes
   summary: Передача количества грузовых мест в заказе (DBS)
   description: >

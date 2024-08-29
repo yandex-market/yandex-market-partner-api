@@ -2,6 +2,9 @@ post:
   tags:
     - shipments
     - fbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: confirmShipment
   summary: Подтверждение отгрузки
   description: >

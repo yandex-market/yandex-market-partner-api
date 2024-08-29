@@ -2,6 +2,9 @@ put:
   tags:
     - shipments
     - fbs
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-orders
   operationId: setShipmentPalletsCount
   summary: Передача количества упаковок в отгрузке
   description: >

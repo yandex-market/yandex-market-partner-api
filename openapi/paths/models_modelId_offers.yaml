@@ -2,6 +2,10 @@ get:
   tags:
     - models
     - dbs
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards
+    - offers-and-cards:read-only
   operationId: getModelOffers
   summary: Список предложений для модели
   description: >

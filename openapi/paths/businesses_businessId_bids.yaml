@@ -5,6 +5,9 @@ put:
     - fbs
     - fby
     - express
+  x-auth-scopes:
+    - all-methods
+    - pricing
   operationId: putBidsForBusiness
   summary: Включение буста продаж и установка ставок
   description: >

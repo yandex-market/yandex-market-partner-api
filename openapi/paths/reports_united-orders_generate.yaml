@@ -5,6 +5,10 @@ post:
     - fbs
     - dbs
     - express
+  x-auth-scopes:
+    - all-methods
+    - finance-and-accounting
+    - promotion
   operationId: generateUnitedOrdersReport
   summary: Отчет по заказам
   description: >
