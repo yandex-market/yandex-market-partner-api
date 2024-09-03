@@ -29,5 +29,6 @@ properties:
   instances:
     description: Переданные вами коды маркировки.
     type: array
+    nullable: true
     items:
       $ref: ./OrderItemInstanceDTO.yaml

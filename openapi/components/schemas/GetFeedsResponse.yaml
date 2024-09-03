@@ -1,5 +1,7 @@
 description: Ответ на запрос списка прайс-листов.
 type: object
+required:
+  - feeds
 properties:
   feeds:
     description: Список прайс-листов.

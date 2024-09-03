@@ -1,0 +1,16 @@
+description: Категории и лимит на установку кванта и минимального количества товаров.
+type: object
+required:
+  - results
+properties:
+  results:
+    description: Категории и лимит на установку кванта и минимального количества товаров.
+    type: array
+    items:
+      $ref: ./MaxSaleQuantumDTO.yaml
+  errors:
+    description: Ошибки, которые появились из-за переданных категорий.
+    type: array
+    nullable: true
+    items:
+      $ref: ./CategoryErrorDTO.yaml

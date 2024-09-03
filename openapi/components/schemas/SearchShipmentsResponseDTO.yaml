@@ -1,5 +1,7 @@
 description: Информация об отгрузках.
 type: object
+required:
+  - shipments
 properties:
   shipments:
     description: Список с информацией об отгрузках.

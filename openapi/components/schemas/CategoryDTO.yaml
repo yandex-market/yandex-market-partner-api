@@ -17,5 +17,6 @@ properties:
   children:
     description: Дочерние категории.
     type: array
+    nullable: true
     items:
       $ref: ./CategoryDTO.yaml

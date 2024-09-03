@@ -6,11 +6,13 @@ properties:
   errors:
     description: Ошибки — информация в каталоге не обновится.
     type: array
+    nullable: true
     items:
       $ref: ./OfferMappingErrorDTO.yaml
   warnings:
     description: Предупреждения — информация в каталоге обновится.
     type: array
+    nullable: true
     items:
       $ref: ./OfferMappingErrorDTO.yaml
 required:

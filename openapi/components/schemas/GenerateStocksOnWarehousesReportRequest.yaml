@@ -14,6 +14,7 @@ properties:
       идентификатор, воспользуйтесь запросом [GET
       warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).
     type: array
+    nullable: true
     items:
       type: integer
       format: int64
@@ -26,6 +27,7 @@ properties:
   categoryIds:
     description: Фильтр по категориям на Маркете (кроме модели FBY).
     type: array
+    nullable: true
     items:
       type: integer
       format: int64

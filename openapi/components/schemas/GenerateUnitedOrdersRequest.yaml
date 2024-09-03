@@ -21,6 +21,7 @@ properties:
   campaignIds:
     description: Список магазинов, которые нужны в отчете.
     type: array
+    nullable: true
     items:
       type: integer
       format: int64

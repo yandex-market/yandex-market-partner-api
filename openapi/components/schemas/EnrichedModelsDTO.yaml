@@ -1,0 +1,10 @@
+description: Список моделей товаров.
+type: object
+required:
+  - models
+properties:
+  models:
+    description: Список моделей товаров.
+    type: array
+    items:
+      $ref: ./EnrichedModelDTO.yaml

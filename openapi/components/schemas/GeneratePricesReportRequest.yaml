@@ -21,6 +21,7 @@ properties:
   categoryIds:
     description: Фильтр по категориям на Маркете.
     type: array
+    nullable: true
     items:
       type: integer
       format: int64

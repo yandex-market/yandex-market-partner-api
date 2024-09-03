@@ -57,6 +57,7 @@ properties:
       [Требования к
       изображениям](https://yandex.ru/support/marketplace/assortment/fields/images.html)
     type: array
+    nullable: true
     items:
       type: string
   videos:
@@ -105,6 +106,7 @@ properties:
       [Требования к
       видео](https://yandex.ru/support/marketplace/assortment/fields/video.html)
     type: array
+    nullable: true
     maxItems: 6
     items:
       type: string
@@ -119,6 +121,7 @@ properties:
       Если вы передадите пустое поле `manuals`, загруженные ранее инструкции
       удалятся.
     type: array
+    nullable: true
     maxItems: 6
     items:
       $ref: ./OfferManualDTO.yaml
@@ -136,6 +139,7 @@ properties:
       Записывайте названия стран так, как они записаны в
       [списке](https://yastatic.net/s3/doc-binary/src/support/market/ru/countries.xlsx).
     type: array
+    nullable: true
     items:
       type: string
       example: Россия
@@ -155,6 +159,7 @@ properties:
       Максимальная длина тега 20 символов. У одного товара может быть максимум
       10 тегов. Всего можно создать не больше 50 разных тегов.
     type: array
+    nullable: true
     items:
       type: string
       example: до 500 рублей
@@ -216,6 +221,7 @@ properties:
       кабинете продавца по
       [инструкции](https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html).
     type: array
+    nullable: true
     items:
       type: string
   boxCount:
@@ -289,6 +295,7 @@ properties:
       Характеристики, которые есть только у товаров конкретной категории —
       например, диаметр колес велосипеда или материал подошвы обуви.
     type: array
+    nullable: true
     deprecated: true
     items:
       $ref: ./OfferParamDTO.yaml

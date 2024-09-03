@@ -1,5 +1,7 @@
 type: object
 description: Информация об отгрузке.
+required:
+  - orderIds
 properties:
   id:
     description: Идентификатор отгрузки.

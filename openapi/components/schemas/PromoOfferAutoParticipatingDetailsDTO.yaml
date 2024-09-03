@@ -17,6 +17,7 @@ properties:
 
       Возвращается, если статус товара в акции — `PARTIALLY_AUTO`.
     type: array
+    nullable: true
     items:
       description: Идентификатор магазина.
       type: integer

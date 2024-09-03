@@ -1,5 +1,7 @@
 description: Информация по заказам.
 type: object
+required:
+  - orders
 properties:
   orders:
     description: Список заказов.

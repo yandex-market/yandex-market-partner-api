@@ -18,6 +18,7 @@ properties:
     description: |
       Список характеристик с их значениями.
     type: array
+    nullable: true
     items:
       $ref: ./ParameterValueDTO.yaml
   cardStatus:
@@ -35,11 +36,13 @@ properties:
       Рекомендации Маркета помогают заполнять карточку так, чтобы покупателям
       было проще найти ваш товар и решиться на покупку.
     type: array
+    nullable: true
     items:
       $ref: ./OfferCardRecommendationDTO.yaml
   errors:
     description: Ошибки в контенте, препятствующие размещению товара на витрине.
     type: array
+    nullable: true
     items:
       $ref: ./OfferErrorDTO.yaml
   warnings:
@@ -47,5 +50,6 @@ properties:
       Связанные с контентом предупреждения, не препятствующие размещению товара
       на витрине.
     type: array
+    nullable: true
     items:
       $ref: ./OfferErrorDTO.yaml

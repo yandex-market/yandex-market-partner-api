@@ -1,5 +1,7 @@
 description: Комментарии к отзыву.
 type: object
+required:
+  - comments
 properties:
   comments:
     description: Список комментариев.

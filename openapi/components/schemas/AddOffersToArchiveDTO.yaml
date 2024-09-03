@@ -4,5 +4,6 @@ properties:
   notArchivedOffers:
     description: Список товаров, которые не удалось поместить в архив.
     type: array
+    nullable: true
     items:
       $ref: ./AddOffersToArchiveErrorDTO.yaml

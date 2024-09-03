@@ -1,5 +1,7 @@
 description: Информация об акциях Маркета.
 type: object
+required:
+  - promos
 properties:
   promos:
     description: Акции Маркета.

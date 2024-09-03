@@ -6,5 +6,6 @@ allOf:
       errors:
         description: Список ошибок.
         type: array
+        nullable: true
         items:
           $ref: ./ApiErrorDTO.yaml

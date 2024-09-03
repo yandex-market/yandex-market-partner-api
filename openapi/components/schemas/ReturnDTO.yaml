@@ -1,5 +1,7 @@
 description: Возврат заказа.
 type: object
+required:
+  - items
 properties:
   id:
     description: Идентификатор возврата.

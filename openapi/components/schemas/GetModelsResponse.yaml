@@ -1,10 +1,5 @@
 description: Ответ на запрос информации о моделях.
 type: object
 allOf:
-  - properties:
-      models:
-        description: Список моделей товаров.
-        type: array
-        items:
-          $ref: ./ModelDTO.yaml
+  - $ref: ./ModelsDTO.yaml
   - $ref: ./RegionalModelInfoDTO.yaml

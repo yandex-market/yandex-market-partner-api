@@ -98,6 +98,7 @@ properties:
       Информация о вознаграждениях партнеру за скидки на товар по промокодам,
       купонам и акциям.
     type: array
+    nullable: true
     items:
       $ref: ./OrderItemPromoDTO.yaml
   instances:
@@ -112,21 +113,25 @@ properties:
       Если магазин еще не передавал коды для этого заказа, `instances`
       отсутствует.
     type: array
+    nullable: true
     items:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
     description: |
       Информация об удалении товара из заказа.
     type: array
+    nullable: true
     items:
       $ref: ./OrderItemDetailDTO.yaml
   subsidies:
     description: Список субсидий по типам.
     type: array
+    nullable: true
     items:
       $ref: ./OrderItemSubsidyDTO.yaml
   requiredInstanceTypes:
     description: Список необходимых маркировок товара.
     type: array
+    nullable: true
     items:
       $ref: ./OrderItemInstanceType.yaml

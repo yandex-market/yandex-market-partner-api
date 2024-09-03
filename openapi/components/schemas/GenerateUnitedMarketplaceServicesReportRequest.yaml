@@ -63,16 +63,19 @@ properties:
     description: |
       Список моделей, которые нужны в отчете.
     type: array
+    nullable: true
     items:
       $ref: ./PlacementType.yaml
   inns:
     description: Список ИНН, которые нужны в отчете.
     type: array
+    nullable: true
     items:
       type: string
   campaignIds:
     description: Список магазинов, которые нужны в отчете.
     type: array
+    nullable: true
     items:
       type: integer
       format: int64

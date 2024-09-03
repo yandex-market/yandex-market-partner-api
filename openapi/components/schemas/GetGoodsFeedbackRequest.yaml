@@ -31,6 +31,7 @@ properties:
     type: array
     uniqueItems: true
     maxItems: 5
+    nullable: true
     items:
       type: integer
       format: int32
@@ -54,6 +55,7 @@ properties:
     type: array
     uniqueItems: true
     maxItems: 20
+    nullable: true
     items:
       type: integer
       format: int64

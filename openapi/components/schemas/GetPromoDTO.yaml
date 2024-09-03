@@ -44,6 +44,7 @@ properties:
   channels:
     description: Список каналов продвижения товаров.
     type: array
+    nullable: true
     items:
       $ref: ./ChannelType.yaml
   constraints:

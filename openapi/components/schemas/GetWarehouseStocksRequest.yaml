@@ -28,5 +28,6 @@ properties:
     type: array
     uniqueItems: true
     maxItems: 500
+    nullable: true
     items:
       $ref: ./ShopSku.yaml

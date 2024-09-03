@@ -20,6 +20,7 @@ properties:
 
       Используется вместе с параметром `name`.
     type: array
+    nullable: true
     items:
       description: |
         Значение параметра.

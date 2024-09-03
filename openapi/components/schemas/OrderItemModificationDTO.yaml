@@ -39,6 +39,7 @@ properties:
       Обязательный параметр, если в заказе есть товары, подлежащие маркировке [в
       системе «Честный ЗНАК»](https://честныйзнак.рф/).
     type: array
+    nullable: true
     items:
       $ref: ./BriefOrderItemInstanceDTO.yaml
 required:

@@ -2,13 +2,4 @@ description: Информация об отгрузке.
 type: object
 allOf:
   - $ref: ./BaseShipmentDTO.yaml
-  - properties:
-      currentStatus:
-        description: Статус отгрузки.
-        $ref: ./ShipmentStatusChangeDTO.yaml
-      availableActions:
-        description: Доступные действия над отгрузкой.
-        type: array
-        uniqueItems: true
-        items:
-          $ref: ./ShipmentActionType.yaml
+  - $ref: ./ExtensionShipmentDTO.yaml

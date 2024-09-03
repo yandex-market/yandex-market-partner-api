@@ -2,6 +2,8 @@ description: >-
   Информация об оценках, которые поставил автор отзыва магазину, и об оценках
   полезности отзыва от других пользователей Маркета.
 type: object
+required:
+  - factors
 properties:
   average:
     description: >-

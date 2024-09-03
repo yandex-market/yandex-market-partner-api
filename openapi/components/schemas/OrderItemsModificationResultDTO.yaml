@@ -2,6 +2,8 @@ description: >
   Краткие сведения о промаркированных товарах. Параметр возвращается, если ответ
   `OK`.
 type: object
+required:
+  - items
 properties:
   items:
     description: Список позиций в заказе, подлежащих маркировке.

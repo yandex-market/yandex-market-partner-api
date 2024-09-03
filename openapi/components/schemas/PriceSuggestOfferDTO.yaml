@@ -10,5 +10,6 @@ properties:
     description: |
       Цены для продвижения.
     type: array
+    nullable: true
     items:
       $ref: ./PriceSuggestDTO.yaml

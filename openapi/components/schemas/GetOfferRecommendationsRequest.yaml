@@ -6,6 +6,7 @@ properties:
       поле одновременно с остальными фильтрами. Если вы хотите воспользоваться
       фильтрами, оставьте поле пустым.
     type: array
+    nullable: true
     items:
       $ref: ./ShopSku.yaml
   cofinancePriceFilter:

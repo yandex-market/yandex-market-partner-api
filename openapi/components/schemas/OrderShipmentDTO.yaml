@@ -36,10 +36,12 @@ properties:
 
       Информация для отслеживания перемещений посылки.
     type: array
+    nullable: true
     items:
       $ref: ./OrderTrackDTO.yaml
   boxes:
     description: Список грузовых мест.
     type: array
+    nullable: true
     items:
       $ref: ./OrderParcelBoxDTO.yaml

@@ -12,6 +12,7 @@ properties:
     type: array
     maxItems: 200
     uniqueItems: true
+    nullable: true
     items:
       $ref: ./ShopSku.yaml
   cardStatuses:
@@ -23,6 +24,7 @@ properties:
       товара](https://yandex.ru/support/marketplace/assortment/content/index.html)
     type: array
     uniqueItems: true
+    nullable: true
     items:
       $ref: ./OfferCardStatusType.yaml
   categoryIds:
@@ -30,5 +32,6 @@ properties:
     type: array
     maxItems: 200
     uniqueItems: true
+    nullable: true
     items:
       $ref: ./CategoryId.yaml

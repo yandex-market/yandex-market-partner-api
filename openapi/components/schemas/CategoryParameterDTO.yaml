@@ -29,6 +29,7 @@ properties:
       Перечень возможных рекомендаций по заполнению карточки, к которым
       относится данная характеристика.
     type: array
+    nullable: true
     items:
       $ref: ./OfferCardRecommendationType.yaml
   required:
@@ -53,6 +54,7 @@ properties:
       Список допустимых значений параметра. Только для характеристик типа
       `ENUM`.
     type: array
+    nullable: true
     items:
       $ref: ./ParameterValueOptionDTO.yaml
   constraints:
@@ -63,5 +65,6 @@ properties:
       Ограничения на значения, накладываемые другими характеристиками. Только
       для характеристик типа `ENUM`.
     type: array
+    nullable: true
     items:
       $ref: ./ValueRestrictionDTO.yaml

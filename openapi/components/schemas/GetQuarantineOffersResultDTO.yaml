@@ -1,5 +1,7 @@
 description: Список товаров в карантине.
 type: object
+required:
+  - offers
 properties:
   paging:
     $ref: ./ScrollingPagerDTO.yaml

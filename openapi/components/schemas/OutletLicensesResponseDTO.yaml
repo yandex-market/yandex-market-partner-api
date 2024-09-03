@@ -1,5 +1,7 @@
 description: Ответ на запрос информации о лицензиях для точек продаж.
 type: object
+required:
+  - licenses
 properties:
   licenses:
     description: Список лицензий.

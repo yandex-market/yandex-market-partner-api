@@ -1,5 +1,7 @@
 description: Ответ на запрос списка логинов, связанных с магазином.
 type: object
+required:
+  - logins
 properties:
   logins:
     description: Список логинов.

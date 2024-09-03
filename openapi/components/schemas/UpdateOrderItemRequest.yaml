@@ -1,5 +1,7 @@
 description: Запрос на обновление состава заказа.
 type: object
+required:
+  - items
 properties:
   items:
     description: >
@@ -12,9 +14,8 @@ properties:
 
       Обязательный параметр.
     type: array
+    minItems: 1
     items:
       $ref: ./OrderItemModificationDTO.yaml
   reason:
     $ref: ./OrderItemsModificationRequestReasonType.yaml
-required:
-  - items

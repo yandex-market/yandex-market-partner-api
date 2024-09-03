@@ -11,5 +11,6 @@ allOf:
 
           Если ошибок и предупреждений нет, поле не передается.
         type: array
+        nullable: true
         items:
           $ref: ./UpdateOfferContentResultDTO.yaml

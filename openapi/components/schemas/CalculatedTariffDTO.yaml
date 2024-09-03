@@ -1,5 +1,8 @@
 description: Информация об услугах Маркета.
 type: object
+required:
+  - type
+  - parameters
 properties:
   type:
     description: Услуга Маркета.

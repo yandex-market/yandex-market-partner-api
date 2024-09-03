@@ -1,5 +1,7 @@
 description: Список цен.
 type: object
+required:
+  - offers
 properties:
   offers:
     description: Страница списка цен.

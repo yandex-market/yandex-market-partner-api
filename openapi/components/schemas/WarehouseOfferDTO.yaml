@@ -2,6 +2,7 @@ description: Информация об остатках товара.
 type: object
 required:
   - offerId
+  - stocks
 properties:
   offerId:
     $ref: ./ShopSku.yaml

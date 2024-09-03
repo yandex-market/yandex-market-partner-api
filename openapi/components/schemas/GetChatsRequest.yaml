@@ -5,6 +5,7 @@ properties:
   orderIds:
     description: Фильтр по идентификаторам заказов на Маркете.
     type: array
+    nullable: true
     items:
       type: integer
       format: int64
@@ -12,12 +13,14 @@ properties:
   types:
     description: Фильтр по типам чатов.
     type: array
+    nullable: true
     items:
       $ref: ./ChatType.yaml
     minItems: 1
   statuses:
     description: Фильтр по статусам чатов.
     type: array
+    nullable: true
     items:
       $ref: ./ChatStatusType.yaml
     minItems: 1

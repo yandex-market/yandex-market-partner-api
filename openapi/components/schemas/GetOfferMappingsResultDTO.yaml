@@ -1,5 +1,7 @@
 description: Информация о товарах.
 type: object
+required:
+  - offerMappings
 properties:
   paging:
     description: Ссылка на следующую страницу.

@@ -1,6 +1,8 @@
 description: |
   Список скрытых вами товаров.
 type: object
+required:
+  - hiddenOffers
 properties:
   paging:
     $ref: ./ScrollingPagerDTO.yaml

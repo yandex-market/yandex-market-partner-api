@@ -23,6 +23,7 @@ allOf:
 
           Максимальное количество характеристик — 300.
         type: array
+        nullable: true
         maxItems: 300
         items:
           $ref: ./ParameterValueDTO.yaml

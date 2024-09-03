@@ -8,5 +8,6 @@ properties:
   parameters:
     description: Список характеристик.
     type: array
+    nullable: true
     items:
       $ref: ./CategoryParameterDTO.yaml

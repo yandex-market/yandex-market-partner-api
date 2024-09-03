@@ -72,11 +72,13 @@ properties:
   tracks:
     description: Информация для отслеживания перемещений посылки.
     type: array
+    nullable: true
     items:
       $ref: ./OrderTrackDTO.yaml
   shipments:
     description: Информация о посылках.
     type: array
+    nullable: true
     items:
       $ref: ./OrderShipmentDTO.yaml
   estimated:

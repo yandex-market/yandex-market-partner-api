@@ -25,6 +25,7 @@ properties:
   offerIds:
     description: Товары, которые нужно убрать из акции.
     type: array
+    nullable: true
     minItems: 1
     maxItems: 500
     items:

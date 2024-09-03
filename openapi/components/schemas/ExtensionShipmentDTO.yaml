@@ -1,0 +1,14 @@
+description: Информация об отгрузке.
+type: object
+required:
+  - availableActions
+properties:
+  currentStatus:
+    description: Статус отгрузки.
+    $ref: ./ShipmentStatusChangeDTO.yaml
+  availableActions:
+    description: Доступные действия над отгрузкой.
+    type: array
+    uniqueItems: true
+    items:
+      $ref: ./ShipmentActionType.yaml

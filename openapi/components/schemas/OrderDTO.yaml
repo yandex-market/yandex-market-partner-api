@@ -1,5 +1,7 @@
 description: Заказ.
 type: object
+required:
+  - items
 properties:
   id:
     description: Идентификатор заказа.
@@ -123,6 +125,7 @@ properties:
   subsidies:
     description: Список субсидий по типам.
     type: array
+    nullable: true
     items:
       $ref: ./OrderSubsidyDTO.yaml
   delivery:

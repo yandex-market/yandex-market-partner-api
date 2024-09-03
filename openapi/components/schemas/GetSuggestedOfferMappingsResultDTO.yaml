@@ -1,5 +1,7 @@
 description: Подобранные карточки на Маркете.
 type: object
+required:
+  - offers
 properties:
   offers:
     description: Список товаров.

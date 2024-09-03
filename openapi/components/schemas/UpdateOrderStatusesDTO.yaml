@@ -1,5 +1,7 @@
 description: Список заказов, статус которых обновился.
 type: object
+required:
+  - orders
 properties:
   orders:
     description: Список с обновленными заказами.

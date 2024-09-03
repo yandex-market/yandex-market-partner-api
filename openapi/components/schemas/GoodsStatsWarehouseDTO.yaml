@@ -1,5 +1,7 @@
 description: Информация о складе.
 type: object
+required:
+  - stocks
 properties:
   id:
     description: Идентификатор склада.

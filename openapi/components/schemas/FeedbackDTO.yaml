@@ -1,5 +1,7 @@
 description: Отзыв пользователя Яндекс Маркета об указанном магазине.
 type: object
+required:
+  - comments
 properties:
   id:
     description: Идентификатор отзыва.

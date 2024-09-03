@@ -1,4 +1,6 @@
 type: object
+required:
+  - regions
 properties:
   regions:
     type: array

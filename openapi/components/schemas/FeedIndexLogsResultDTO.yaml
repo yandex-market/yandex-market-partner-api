@@ -1,5 +1,7 @@
 description: Результат выполнения запроса отчета по индексации прайс-листа.
 type: object
+required:
+  - indexLogRecords
 properties:
   feed:
     $ref: ./FeedIndexLogsFeedDTO.yaml

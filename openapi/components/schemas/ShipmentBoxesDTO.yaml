@@ -2,6 +2,8 @@ description: >
   В ответе Маркет возвращает переданный вами список грузовых мест. Не обращайте
   на это поле внимания.
 type: object
+required:
+  - boxes
 properties:
   boxes:
     description: >

@@ -1,5 +1,7 @@
 description: Отчет по товарам.
 type: object
+required:
+  - shopSkus
 properties:
   shopSkus:
     description: Список товаров.

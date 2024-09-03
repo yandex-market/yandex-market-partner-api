@@ -1,5 +1,7 @@
 description: Список товаров с рекомендациями.
 type: object
+required:
+  - offerRecommendations
 properties:
   paging:
     $ref: ./ScrollingPagerDTO.yaml

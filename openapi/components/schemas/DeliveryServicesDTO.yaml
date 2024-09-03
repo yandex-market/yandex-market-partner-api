@@ -1,5 +1,7 @@
 description: Информация о службах доставки.
 type: object
+required:
+  - deliveryService
 properties:
   deliveryService:
     description: Информация о службе доставки.

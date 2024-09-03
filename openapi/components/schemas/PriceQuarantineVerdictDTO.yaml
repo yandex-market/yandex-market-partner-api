@@ -1,5 +1,7 @@
 description: Причина попадания товара в карантин.
 type: object
+required:
+  - params
 properties:
   type:
     description: Тип карантина.

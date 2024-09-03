@@ -1,17 +1,19 @@
 description: Ошибки и предупреждения, которые появились из-за переданных характеристик.
 type: object
+required:
+  - offerId
 properties:
   offerId:
     $ref: ./ShopSku.yaml
   errors:
     description: Ошибки — информация в каталоге не обновится.
     type: array
+    nullable: true
     items:
       $ref: ./OfferContentErrorDTO.yaml
   warnings:
     description: Предупреждения — информация в каталоге обновится.
     type: array
+    nullable: true
     items:
       $ref: ./OfferContentErrorDTO.yaml
-required:
-  - offerId

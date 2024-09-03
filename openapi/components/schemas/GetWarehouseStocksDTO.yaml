@@ -1,5 +1,7 @@
 description: Список складов с информацией об остатках на каждом из них.
 type: object
+required:
+  - warehouses
 properties:
   paging:
     $ref: ./ScrollingPagerDTO.yaml

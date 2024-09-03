@@ -34,6 +34,7 @@ properties:
   prices:
     description: Цена или скидки на товар.
     type: array
+    nullable: true
     items:
       $ref: ./OrdersStatsPriceDTO.yaml
   warehouse:
@@ -42,6 +43,7 @@ properties:
   details:
     description: Информация об удалении товара из заказа.
     type: array
+    nullable: true
     items:
       $ref: ./OrdersStatsDetailsDTO.yaml
   cisList:
@@ -49,6 +51,7 @@ properties:
       Список кодов идентификации товара [в системе «Честный
       ЗНАК»](https://честныйзнак.рф/).
     type: array
+    nullable: true
     items:
       type: string
   initialCount:

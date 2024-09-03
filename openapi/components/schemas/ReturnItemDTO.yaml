@@ -16,15 +16,18 @@ properties:
   decisions:
     description: Список решений по возврату.
     type: array
+    nullable: true
     items:
       $ref: ./ReturnDecisionDTO.yaml
   instances:
     description: Список логистических позиций возврата.
     type: array
+    nullable: true
     items:
       $ref: ./ReturnInstanceDTO.yaml
   tracks:
     description: Список трек-кодов для почтовых отправлений.
     type: array
+    nullable: true
     items:
       $ref: ./TrackDTO.yaml

@@ -35,5 +35,6 @@ properties:
   children:
     description: Дочерние ответы.
     type: array
+    nullable: true
     items:
       $ref: ./FeedbackCommentDTO.yaml

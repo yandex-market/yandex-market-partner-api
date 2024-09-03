@@ -1,6 +1,8 @@
 description: |
   Список отзывов о товарах.
 type: object
+required:
+  - feedbacks
 properties:
   feedbacks:
     description: Список отзывов.

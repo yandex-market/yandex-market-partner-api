@@ -1,5 +1,7 @@
 description: Отзывы пользователей Яндекс Маркета об указанном магазине.
 type: object
+required:
+  - feedbackList
 properties:
   paging:
     $ref: ./ScrollingPagerDTO.yaml

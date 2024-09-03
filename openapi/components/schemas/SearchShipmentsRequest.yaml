@@ -22,6 +22,8 @@ properties:
     description: Список статусов отгрузок.
     type: array
     uniqueItems: true
+    nullable: true
+    minItems: 1
     items:
       description: Статус отгрузки
       $ref: ./ShipmentStatusType.yaml
@@ -29,6 +31,8 @@ properties:
     description: Список идентификаторов заказов из отгрузок.
     type: array
     uniqueItems: true
+    nullable: true
+    minItems: 1
     items:
       description: Идентификатор заказа.
       type: integer

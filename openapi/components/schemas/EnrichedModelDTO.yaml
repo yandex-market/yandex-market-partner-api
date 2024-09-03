@@ -12,6 +12,7 @@ allOf:
           есть несколько предложений от одного магазина, в ответе отображается
           только одно, наиболее релевантное из них.
         type: array
+        nullable: true
         items:
           $ref: ./ModelOfferDTO.yaml
       offlineOffers:

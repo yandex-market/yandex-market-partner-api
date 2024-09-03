@@ -1,5 +1,7 @@
 description: Результаты поиска магазинов.
 type: object
+required:
+  - campaigns
 properties:
   campaigns:
     description: Список с информацией по каждому магазину.

@@ -1,5 +1,7 @@
 description: Возвраты.
 type: object
+required:
+  - returns
 properties:
   paging:
     description: Информация о страницах с результатами.

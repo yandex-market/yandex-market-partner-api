@@ -36,12 +36,14 @@ allOf:
         description: |
           Список магазинов, в которых размещен товар.
         type: array
+        nullable: true
         items:
           $ref: ./OfferCampaignStatusDTO.yaml
       sellingPrograms:
         description: |
           Информация о том, какие для товара доступны модели размещения.
         type: array
+        nullable: true
         items:
           $ref: ./OfferSellingProgramDTO.yaml
       archived:

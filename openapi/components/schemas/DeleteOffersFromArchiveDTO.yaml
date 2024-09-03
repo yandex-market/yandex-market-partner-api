@@ -4,5 +4,6 @@ properties:
   notUnarchivedOfferIds:
     description: Список товаров, которые не удалось восстановить из архива.
     type: array
+    nullable: true
     items:
       $ref: ./ShopSku.yaml

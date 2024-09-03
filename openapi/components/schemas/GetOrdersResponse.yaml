@@ -1,5 +1,7 @@
 type: object
 description: Модель для ответа API списка информации по заказам.
+required:
+  - orders
 properties:
   pager:
     $ref: ./FlippingPagerDTO.yaml

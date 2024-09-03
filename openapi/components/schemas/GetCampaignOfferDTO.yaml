@@ -17,11 +17,13 @@ allOf:
         description: |
           Ошибки, препятствующие размещению товара на витрине.
         type: array
+        nullable: true
         items:
           $ref: ./OfferErrorDTO.yaml
       warnings:
         description: |
           Предупреждения, не препятствующие размещению товара на витрине.
         type: array
+        nullable: true
         items:
           $ref: ./OfferErrorDTO.yaml

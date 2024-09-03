@@ -1,5 +1,7 @@
 description: Ответ на запрос информации о точках продаж.
 type: object
+required:
+  - outlets
 properties:
   outlets:
     description: Информация о точках продаж.

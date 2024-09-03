@@ -33,5 +33,6 @@ properties:
 
       Необязательный параметр, если возвращается параметр `message`.
     type: array
+    nullable: true
     items:
       $ref: ./ChatMessagePayloadDTO.yaml

@@ -1,5 +1,7 @@
 description: Список складов Маркета (FBY).
 type: object
+required:
+  - warehouses
 properties:
   warehouses:
     description: Список складов Маркета (FBY).

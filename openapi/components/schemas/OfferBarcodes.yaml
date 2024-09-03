@@ -15,6 +15,7 @@ description: >+
   [Что такое GTIN](*gtin)
 
 type: array
+nullable: true
 items:
   type: string
   example: 46012300000000

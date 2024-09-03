@@ -15,6 +15,7 @@ properties:
       Не возвращается, если предупреждения действуют для всех магазинов в
       кабинете.
     type: array
+    nullable: true
     items:
       description: Идентификатор магазина.
       type: integer

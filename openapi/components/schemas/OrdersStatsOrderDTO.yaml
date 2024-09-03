@@ -1,5 +1,9 @@
 description: Информация о заказе.
 type: object
+required:
+  - items
+  - payments
+  - commissions
 properties:
   id:
     description: Идентификатор заказа.
@@ -47,6 +51,7 @@ properties:
   initialItems:
     description: Список товаров в заказе до изменений.
     type: array
+    nullable: true
     items:
       $ref: ./OrdersStatsItemDTO.yaml
   payments:

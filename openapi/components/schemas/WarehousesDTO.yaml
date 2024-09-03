@@ -1,5 +1,8 @@
 description: Информация о складах и группах складов.
 type: object
+required:
+  - warehouses
+  - warehouseGroups
 properties:
   warehouses:
     description: Список складов, не входящих в группы.

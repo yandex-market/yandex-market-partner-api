@@ -1,5 +1,7 @@
 description: Найденные предложения магазина.
 type: object
+required:
+  - offers
 properties:
   offers:
     description: Список предложений магазина.

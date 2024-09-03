@@ -10,6 +10,7 @@ properties:
       Параметр возвращается, только если в условиях акции есть ограничение по
       складу.
     type: array
+    nullable: true
     items:
       type: integer
       format: int64

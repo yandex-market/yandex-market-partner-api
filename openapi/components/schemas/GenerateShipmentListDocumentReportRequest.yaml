@@ -15,6 +15,7 @@ properties:
   orderIds:
     description: Фильтр по идентификаторам заказа в отгрузке.
     type: array
+    nullable: true
     items:
       description: Идентификатор заказа.
       format: int64

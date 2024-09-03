@@ -1,5 +1,7 @@
 description: Список товаров с информацией о состоянии карточек.
 type: object
+required:
+  - offerCards
 properties:
   offerCards:
     description: Страница списка товаров с информацией о состоянии карточек.
