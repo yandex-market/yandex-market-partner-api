@@ -8,3 +8,9 @@ properties:
     description: Идентификатор кампании.
     format: int64
     type: integer
+  date:
+    description: >-
+      Дата, за которую нужно рассчитать оборачиваемость. Если параметр не
+      указан, используется текущая дата.
+    type: string
+    format: date

@@ -8,7 +8,7 @@ post:
   operationId: generateGoodsTurnoverReport
   summary: Отчет по оборачиваемости
   description: >
-    Запускает генерацию **отчета по оборачиваемости** за заданный период.  [Что
+    Запускает генерацию **отчета по оборачиваемости** за заданную дату.  [Что
     это за отчет](https://yandex.ru/support/marketplace/analytics/turnover.html)
 
 
