@@ -19,7 +19,7 @@ get:
     - promotion:read-only
     - communication
   operationId: searchRegionsByName
-  summary: Метод для поиска регионов по их имени
+  summary: Поиск регионов по их имени
   description: >
     Возвращает информацию о регионе, удовлетворяющем заданным в запросе условиям
     поиска.

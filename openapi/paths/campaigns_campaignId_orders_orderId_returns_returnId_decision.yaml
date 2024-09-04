@@ -6,7 +6,7 @@ post:
     - all-methods
     - inventory-and-orders
   operationId: setReturnDecision
-  summary: Принятие/изменение решения по позиции в возврате
+  summary: Принятие или изменение решения по возврату
   description: >
     Выбирает решение по возврату от покупателя. После этого для подтверждения
     решения нужно выполнить запрос [POST

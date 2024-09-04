@@ -8,7 +8,7 @@ put:
     - all-methods
     - inventory-and-orders
   operationId: setOrderShipmentBoxes
-  summary: Передача количества грузовых мест в заказе (DBS)
+  summary: Передача количества грузовых мест в заказе
   description: >
     {% note warning "Этот запрос только для DBS" %}
 

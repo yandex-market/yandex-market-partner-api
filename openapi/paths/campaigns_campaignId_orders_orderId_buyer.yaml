@@ -7,7 +7,7 @@ get:
     - inventory-and-orders
     - inventory-and-orders:read-only
   operationId: getOrderBuyerInfo
-  summary: Информация о покупателе — физическом лице (DBS)
+  summary: Информация о покупателе — физическом лице
   description: >
     Возвращает информацию о покупателе по идентификатору заказа.
 

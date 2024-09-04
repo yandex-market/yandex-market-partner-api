@@ -7,7 +7,7 @@ get:
     - offers-and-cards
     - offers-and-cards:read-only
   operationId: getModelOffers
-  summary: Список предложений для модели
+  summary: Список предложений для одной модели
   description: >
     Возвращает информацию о первых десяти предложениях, расположенных на
     карточке модели.

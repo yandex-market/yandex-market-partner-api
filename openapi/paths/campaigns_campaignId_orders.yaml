@@ -12,7 +12,7 @@ get:
     - communication
     - finance-and-accounting
   operationId: getOrders
-  summary: Информация о заказах
+  summary: Информация о нескольких заказах
   description: >
     Возвращает информацию о заказах. Запрос можно использовать, чтобы узнать,
     нет ли новых заказов.

@@ -10,7 +10,7 @@ post:
     - offers-and-cards
     - offers-and-cards:read-only
   operationId: getOfferCardsContentStatus
-  summary: Получение информации о заполненности карточек
+  summary: Получение информации о заполненности карточек магазина
   description: |
     Возвращает сведения о состоянии контента для заданных товаров:
 

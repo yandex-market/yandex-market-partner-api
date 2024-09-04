@@ -6,11 +6,11 @@ get:
     - all-methods
     - inventory-and-orders
   operationId: downloadShipmentPalletLabels
-  summary: Ярлыки на все упаковки в отгрузке
+  summary: Ярлыки для доверительной приемки (FBS)
   description: >
     PDF-файл с ярлыками на каждый короб или палету в отгрузке для доверительной
     приемки. Подробнее про доверительную приемку написано в [Справке
-    Маркета](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance). 
+    Маркета](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).
 
 
     Распечатайте по несколько копий каждого ярлыка: на одну тару нужно наклеить

@@ -6,7 +6,7 @@ post:
     - all-methods
     - inventory-and-orders
   operationId: submitReturnDecision
-  summary: Подтверждение решения по возвратным позициям
+  summary: Подтверждение решения по возврату
   description: >
     Подтверждает выбранное решение по возврату, отправленное в запросе [POST
     campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision](../../reference/orders/setReturnDecision.md).

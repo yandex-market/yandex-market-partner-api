@@ -8,7 +8,7 @@ post:
     - all-methods
     - inventory-and-orders
   operationId: updateOrderStatuses
-  summary: Изменение статусов заказа
+  summary: Изменение статусов нескольких заказов
   description: >
     Изменяет статусы нескольких заказов.
 

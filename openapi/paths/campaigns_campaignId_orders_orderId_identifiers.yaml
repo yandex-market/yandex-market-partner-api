@@ -8,7 +8,7 @@ put:
     - all-methods
     - inventory-and-orders
   operationId: provideOrderItemIdentifiers
-  summary: Передача уникальных кодов маркировки единиц товара (DBS)
+  summary: Передача кодов маркировки единиц товара
   description: >
     {% note warning "Этот запрос только для DBS" %}
 

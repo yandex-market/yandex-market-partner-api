@@ -7,7 +7,7 @@ get:
     - inventory-and-orders
     - inventory-and-orders:read-only
   operationId: getShipment
-  summary: Получение информации об отгрузке
+  summary: Получение информации об одной отгрузке
   description: |
     Возвращает информацию об отгрузке по ее идентификатору.
     |**⚙️ Лимит:** 100 запросов в час|

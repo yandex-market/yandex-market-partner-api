@@ -6,7 +6,7 @@ post:
     - all-methods
     - inventory-and-orders
   operationId: generateShipmentListDocumentReport
-  summary: Лист сборки
+  summary: Получение листа сборки
   description: >
     Запускает генерацию **листа сборки** для отгрузки.
 

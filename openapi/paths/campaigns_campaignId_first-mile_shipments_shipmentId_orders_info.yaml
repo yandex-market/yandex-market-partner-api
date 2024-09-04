@@ -7,7 +7,7 @@ get:
     - inventory-and-orders
     - inventory-and-orders:read-only
   operationId: getShipmentOrdersInfo
-  summary: Получение информации о ярлыках
+  summary: Получение информации о возможности печати ярлыков (FBS)
   description: >
     Возвращает информацию о возможности печати ярлыков-наклеек для заказов в
     отгрузке.

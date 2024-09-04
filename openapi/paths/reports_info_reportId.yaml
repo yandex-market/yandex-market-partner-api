@@ -19,7 +19,7 @@ get:
     - promotion:read-only
     - communication
   operationId: getReportInfo
-  summary: Статус генерации и скачивание готовых отчетов
+  summary: Получение заданного отчета
   description: >
     Возвращает статус генерации заданного отчета и, если отчет готов, ссылку для
     скачивания.

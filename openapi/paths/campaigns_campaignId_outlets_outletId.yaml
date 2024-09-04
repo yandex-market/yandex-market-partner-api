@@ -72,7 +72,7 @@ get:
     - all-methods
     - settings
   operationId: getOutlet
-  summary: Информация о точке продаж
+  summary: Информация об одной точке продаж
   description: >
     Возвращает информацию о точках продаж магазина.
 

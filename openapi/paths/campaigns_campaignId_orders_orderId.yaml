@@ -12,7 +12,7 @@ get:
     - communication
     - finance-and-accounting
   operationId: getOrder
-  summary: Информация о заказе
+  summary: Информация об одном заказе
   description: >
     Возвращает информацию о заказе.
 

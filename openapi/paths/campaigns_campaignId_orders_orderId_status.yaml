@@ -8,7 +8,7 @@ put:
     - all-methods
     - inventory-and-orders
   operationId: updateOrderStatus
-  summary: Изменение статуса заказа
+  summary: Изменение статуса одного заказа
   description: >
     Изменяет статус заказа. Возможные изменения статусов:
 

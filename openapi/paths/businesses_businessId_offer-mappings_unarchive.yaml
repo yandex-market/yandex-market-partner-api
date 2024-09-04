@@ -9,7 +9,7 @@ post:
     - all-methods
     - offers-and-cards
   operationId: deleteOffersFromArchive
-  summary: Восстановление товаров из архива
+  summary: Удаление товаров из архива
   description: |
     Восстанавливает товары из архива.
 

@@ -8,7 +8,7 @@ put:
     - all-methods
     - inventory-and-orders
   operationId: updateOrderItems
-  summary: Удаление товара из заказа или уменьшение числа единиц (DBS)
+  summary: Удаление товара из заказа или уменьшение числа единиц
   description: >
     {% note warning "Этот запрос только для DBS" %}
 

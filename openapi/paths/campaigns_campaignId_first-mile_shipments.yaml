@@ -7,7 +7,7 @@ put:
     - inventory-and-orders
     - inventory-and-orders:read-only
   operationId: searchShipments
-  summary: Получение информации об отгрузках
+  summary: Получение информации о нескольких отгрузках
   description: |
     Возвращает информацию об отгрузках по заданным параметрам:
 

@@ -6,7 +6,7 @@ put:
     - all-methods
     - inventory-and-orders
   operationId: verifyOrderEac
-  summary: Передача кода проверки
+  summary: Передача кода подтверждения
   description: >
     Отправляет Маркету код подтверждения для его проверки.
 

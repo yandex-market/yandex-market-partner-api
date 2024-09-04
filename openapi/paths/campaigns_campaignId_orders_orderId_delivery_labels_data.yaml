@@ -8,7 +8,7 @@ get:
     - all-methods
     - inventory-and-orders
   operationId: getOrderLabelsData
-  summary: Информация на ярлыках‑наклейках
+  summary: Данные для самостоятельного изготовления ярлыков
   description: |
     Возвращает информацию на ярлыках, которые клеятся на коробки в заказе.
 

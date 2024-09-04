@@ -10,7 +10,7 @@ post:
     - offers-and-cards
     - offers-and-cards:read-only
   operationId: getSuggestedOfferMappingEntries
-  summary: Рекомендованные карточки для ваших товаров
+  summary: Рекомендованные карточки для товаров
   description: >
     {% note warning "" %}
 

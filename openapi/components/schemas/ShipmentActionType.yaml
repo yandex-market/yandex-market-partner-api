@@ -4,7 +4,7 @@ description: |
   * `CONFIRM` — подтвердить отгрузку.
   * `DOWNLOAD_ACT` — скачать акт приема-передачи отгрузки.
   * `DOWNLOAD_INBOUND_ACT` — скачать список принятых заказов.
-  * `DOWNLOAD_DISCREPANCY_ACT` — скачать акт о расхождениях.
+  * `DOWNLOAD_DISCREPANCY_ACT` — скачать акт расхождений.
   * `CHANGE_PALLETS_COUNT` — указать количество палет.
 type: string
 enum:

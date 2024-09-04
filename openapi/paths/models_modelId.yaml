@@ -7,7 +7,7 @@ get:
     - offers-and-cards
     - offers-and-cards:read-only
   operationId: getModel
-  summary: Информация о модели
+  summary: Информация об одной модели
   description: >
     Возвращает информацию о модели товара.
 
