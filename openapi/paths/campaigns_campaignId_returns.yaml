@@ -7,8 +7,9 @@ get:
     - fby
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
-    - inventory-and-orders:read-only
+    - all-methods:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
   operationId: getReturns
   summary: Список невыкупов и возвратов
   description: >

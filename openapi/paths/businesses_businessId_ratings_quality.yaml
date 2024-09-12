@@ -7,7 +7,8 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - settings
+    - all-methods:read-only
+    - settings-management
   operationId: getQualityRatings
   summary: Индекс качества магазинов
   description: >

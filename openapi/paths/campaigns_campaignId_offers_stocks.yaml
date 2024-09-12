@@ -6,7 +6,7 @@ put:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
+    - offers-and-cards-management
   operationId: updateStocks
   summary: Передача информации об остатках
   description: "Передает данные об остатках товаров на витрине.\n\nОбязательно указывайте SKU **в точности** так, как он указан в каталоге. Например, _557722_ и _0557722_ — это два разных SKU.\n\n{% note info \"Данные в каталоге обновляются не мгновенно\" %}\n\nЭто занимает до нескольких минут.\n\n{% endnote %}\n\n|**⚙️ Лимит:** 100\_000 товаров в минуту|\n|-|\n"
@@ -46,8 +46,8 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
-    - offers-and-cards:read-only
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
   operationId: getStocks
   summary: Информация об остатках и оборачиваемости
   description: >

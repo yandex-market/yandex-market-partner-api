@@ -6,7 +6,8 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - settings
+    - all-methods:read-only
+    - settings-management
   operationId: getQualityRatingDetails
   summary: Заказы, которые повлияли на индекс качества
   description: >

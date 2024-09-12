@@ -7,7 +7,7 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
+    - offers-and-cards-management
   operationId: deleteCampaignOffers
   summary: Удаление товаров из ассортимента магазина
   description: >

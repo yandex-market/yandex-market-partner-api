@@ -4,7 +4,7 @@ put:
     - express
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
+    - inventory-and-order-processing
   operationId: verifyOrderEac
   summary: Передача кода подтверждения
   description: >

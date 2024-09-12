@@ -4,7 +4,7 @@ put:
     - dbs
   x-auth-scopes:
     - all-methods
-    - settings
+    - settings-management
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
   description: >
@@ -70,7 +70,8 @@ get:
     - dbs
   x-auth-scopes:
     - all-methods
-    - settings
+    - all-methods:read-only
+    - settings-management
   operationId: getOutlet
   summary: Информация об одной точке продаж
   description: >
@@ -114,7 +115,7 @@ delete:
     - dbs
   x-auth-scopes:
     - all-methods
-    - settings
+    - settings-management
   operationId: deleteOutlet
   summary: Удаление точки продаж
   description: >

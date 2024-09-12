@@ -4,7 +4,7 @@ post:
     - dbs
   x-auth-scopes:
     - all-methods
-    - settings
+    - settings-management
   operationId: createOutlet
   summary: Создание точки продаж
   description: >
@@ -53,7 +53,8 @@ get:
     - dbs
   x-auth-scopes:
     - all-methods
-    - settings
+    - all-methods:read-only
+    - settings-management
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
   description: >

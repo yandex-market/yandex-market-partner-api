@@ -7,8 +7,9 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
-    - offers-and-cards:read-only
+    - all-methods:read-only
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
   operationId: getCategoryContentParameters
   summary: Списки характеристик товаров по категориям
   description: >

@@ -4,8 +4,9 @@ put:
     - fbs
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
-    - inventory-and-orders:read-only
+    - all-methods:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
   operationId: searchShipments
   summary: Получение информации о нескольких отгрузках
   description: |

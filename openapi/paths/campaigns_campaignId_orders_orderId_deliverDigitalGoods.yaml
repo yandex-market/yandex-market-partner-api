@@ -4,7 +4,7 @@ post:
     - dbs
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
+    - inventory-and-order-processing
   operationId: provideOrderDigitalCodes
   summary: Передача ключей цифровых товаров
   description: >

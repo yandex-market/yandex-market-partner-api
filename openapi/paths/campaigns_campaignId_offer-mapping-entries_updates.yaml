@@ -7,7 +7,7 @@ post:
     - dbs
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
+    - offers-and-cards-management
   operationId: updateOfferMappingEntries
   summary: Добавление и редактирование товаров в каталоге
   description: >

@@ -4,7 +4,7 @@ post:
     - fbs
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
+    - inventory-and-order-processing
   operationId: transferOrdersFromShipment
   summary: Перенос заказов в следующую отгрузку
   description: >

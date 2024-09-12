@@ -7,7 +7,7 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
+    - offers-and-cards-management
   operationId: addOffersToArchive
   summary: Добавление товаров в архив
   description: >

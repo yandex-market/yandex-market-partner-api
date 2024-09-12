@@ -4,7 +4,7 @@ put:
     - dbs
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
+    - inventory-and-order-processing
   operationId: setOrderDeliveryDate
   summary: Изменение даты доставки заказа
   description: >

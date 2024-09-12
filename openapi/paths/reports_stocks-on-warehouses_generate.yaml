@@ -7,7 +7,7 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
+    - offers-and-cards-management
   operationId: generateStocksOnWarehousesReport
   summary: Отчет по остаткам на складах
   description: >

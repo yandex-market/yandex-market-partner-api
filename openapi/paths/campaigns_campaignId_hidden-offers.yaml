@@ -7,7 +7,7 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
+    - offers-and-cards-management
   operationId: addHiddenOffers
   summary: Скрытие товаров и настройки скрытия
   description: |
@@ -58,8 +58,9 @@ get:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
-    - offers-and-cards:read-only
+    - all-methods:read-only
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
   operationId: getHiddenOffers
   summary: Информация о скрытых вами товарах
   description: >

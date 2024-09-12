@@ -7,8 +7,9 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
-    - inventory-and-orders:read-only
+    - all-methods:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
   operationId: getOrdersStats
   summary: Детальная информация по заказам
   description: "Возвращает информацию по заказам на Маркете, в которых есть ваши товары. С помощью нее вы можете собрать статистику по вашим заказам и узнать, например, какие из товаров чаще всего возвращаются покупателями, какие, наоборот, пользуются большим спросом, какая комиссия начисляется за заказы и\_т.\_п.\n\n{% note info \"\" %}\n\nРаньше генерация детальной информации по заказам называлась **Отчет по заказам**. Сейчас это новый отчет. [Подробнее об отчете](../../reference/reports/generateUnitedOrdersReport.md)\n\n{% endnote %}\n\nВ одном запросе можно получить информацию не более чем по 200 заказам.\n\n|**⚙️ Лимит:** 1 000 000 запросов в час|\n|-|\n"

@@ -6,7 +6,8 @@ get:
     - express
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
+    - all-methods:read-only
+    - inventory-and-order-processing
   operationId: getOrderLabelsData
   summary: Данные для самостоятельного изготовления ярлыков
   description: |

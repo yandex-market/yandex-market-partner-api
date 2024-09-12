@@ -7,14 +7,15 @@ get:
     - express
   x-auth-scopes:
     - all-methods
-    - settings
+    - all-methods:read-only
+    - settings-management
     - finance-and-accounting
-    - offers-and-cards
-    - offers-and-cards:read-only
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
     - pricing
     - pricing:read-only
-    - inventory-and-orders
-    - inventory-and-orders:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
     - promotion
     - promotion:read-only
     - communication

@@ -6,7 +6,7 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
+    - inventory-and-order-processing
   operationId: generateMassOrderLabelsReport
   summary: Готовые ярлыки‑наклейки на все коробки в нескольких заказах
   description: >

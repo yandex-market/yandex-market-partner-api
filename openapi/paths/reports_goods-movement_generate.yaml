@@ -4,8 +4,8 @@ post:
     - fby
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
-    - inventory-and-orders
+    - offers-and-cards-management
+    - inventory-and-order-processing
   operationId: generateGoodsMovementReport
   summary: Отчет по движению товаров
   description: >

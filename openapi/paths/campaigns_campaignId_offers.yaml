@@ -7,8 +7,9 @@ get:
     - fby
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
-    - offers-and-cards:read-only
+    - all-methods:read-only
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
   operationId: getOffers
   summary: Предложения магазина
   description: >
@@ -110,8 +111,8 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
-    - offers-and-cards:read-only
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
   operationId: getCampaignOffers
   summary: Информация о товарах, которые размещены в заданном магазине
   description: >

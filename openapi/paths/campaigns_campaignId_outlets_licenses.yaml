@@ -4,7 +4,8 @@ get:
     - dbs
   x-auth-scopes:
     - all-methods
-    - settings
+    - all-methods:read-only
+    - settings-management
   operationId: getOutletLicenses
   summary: Информация о лицензиях для точек продаж
   description: >
@@ -59,7 +60,7 @@ delete:
     - dbs
   x-auth-scopes:
     - all-methods
-    - settings
+    - settings-management
   operationId: deleteOutletLicenses
   summary: Удаление лицензий для точек продаж
   description: >
@@ -109,7 +110,7 @@ post:
     - dbs
   x-auth-scopes:
     - all-methods
-    - settings
+    - settings-management
   operationId: updateOutletLicenses
   summary: Создание и изменение лицензий для точек продаж
   description: >

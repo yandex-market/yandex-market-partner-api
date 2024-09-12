@@ -7,7 +7,7 @@ post:
     - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards
+    - offers-and-cards-management
   operationId: updateOfferMappings
   summary: Добавление товаров в каталог и изменение информации о них
   description: >

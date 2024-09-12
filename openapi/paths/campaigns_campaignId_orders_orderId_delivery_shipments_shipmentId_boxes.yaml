@@ -6,7 +6,7 @@ put:
     - express
   x-auth-scopes:
     - all-methods
-    - inventory-and-orders
+    - inventory-and-order-processing
   operationId: setOrderShipmentBoxes
   summary: Передача количества грузовых мест в заказе
   description: >
