@@ -41,6 +41,16 @@ post:
           schema:
             $ref: ../components/schemas/GetPromoOffersResponse.yaml
     '400':
+      description: >
+        | **Описание**    | **Пояснение**      | **Способы
+        решения**                                                                                                                                  
+        |
+
+        |-----------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+        | Promo has ended | Акция закончилась. | Чтобы узнать, в каких акциях
+        можно поучаствовать, воспользуйтесь методом [POST
+        /businesses/{businessId}/promos](../../reference/promos/getPromos.md). |
       $ref: ../components/responses/400.yaml
     '401':
       $ref: ../components/responses/401.yaml
