@@ -4,7 +4,7 @@ required:
   - message
 properties:
   message:
-    description: Текст сообщения. Максимальная длина — 4096 символа.
+    description: Текст сообщения.
     type: string
     minLength: 1
     maxLength: 4096

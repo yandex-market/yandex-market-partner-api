@@ -12,6 +12,7 @@ properties:
     description: Идентификатор чата.
     type: integer
     format: int64
+    minimum: 1
   orderId:
     description: Идентификатор заказа.
     type: integer
@@ -21,15 +22,18 @@ properties:
   status:
     $ref: ./ChatStatusType.yaml
   createdAt:
-    description: >
+    description: |
       Дата и время создания чата.
 
-
-      Формат даты: ISO 8601 со смещением относительно UTC. Например,
-      `2017-11-21T00:00:00+03:00`.
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
+    example: '2017-11-21T00:00:00+03:00'
   updatedAt:
-    description: Дата и время последнего сообщения в чате.
+    description: |
+      Дата и время последнего сообщения в чате.
+
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
+    example: '2017-11-21T00:00:00+03:00'

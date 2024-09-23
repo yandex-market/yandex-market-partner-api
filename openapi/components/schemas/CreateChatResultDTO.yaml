@@ -7,3 +7,4 @@ properties:
     description: Идентификатор чата.
     type: integer
     format: int64
+    minimum: 1

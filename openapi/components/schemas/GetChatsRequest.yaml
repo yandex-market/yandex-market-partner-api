@@ -6,6 +6,7 @@ properties:
     description: Фильтр по идентификаторам заказов на Маркете.
     type: array
     nullable: true
+    uniqueItems: true
     items:
       type: integer
       format: int64
