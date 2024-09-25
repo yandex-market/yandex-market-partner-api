@@ -1,3 +1,4 @@
 description: SKU на Маркете.
 type: integer
 format: int64
+minimum: 1
