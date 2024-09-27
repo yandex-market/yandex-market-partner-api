@@ -8,3 +8,4 @@ schema:
   items:
     type: integer
     format: int64
+    minimum: 1

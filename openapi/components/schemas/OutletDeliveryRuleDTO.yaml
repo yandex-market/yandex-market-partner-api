@@ -39,6 +39,8 @@ properties:
       Взаимоисключающий с параметром `unspecifiedDeliveryInterval`.
     type: integer
     format: int32
+    minimum: 0
+    maximum: 60
   maxDeliveryDays:
     description: >
       Максимальный срок доставки товаров в точку продаж. Указан в рабочих днях.
@@ -77,6 +79,8 @@ properties:
       Взаимоисключающий с параметром `unspecifiedDeliveryInterval`.
     type: integer
     format: int32
+    minimum: 0
+    maximum: 60
   deliveryServiceId:
     description: >
       Идентификатор службы доставки товаров в точку продаж.

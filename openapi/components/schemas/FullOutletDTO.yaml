@@ -1,5 +1,7 @@
 type: object
 description: Информация о точке продаж.
+required:
+  - id
 allOf:
   - $ref: ./OutletDTO.yaml
   - properties:

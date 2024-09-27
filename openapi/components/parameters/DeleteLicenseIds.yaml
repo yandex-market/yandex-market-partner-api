@@ -1,0 +1,11 @@
+description: Список идентификаторов лицензий для удаления.
+name: ids
+in: query
+required: true
+schema:
+  type: array
+  uniqueItems: true
+  minItems: 1
+  items:
+    type: integer
+    format: int64

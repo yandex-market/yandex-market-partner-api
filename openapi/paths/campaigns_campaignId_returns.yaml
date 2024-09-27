@@ -28,18 +28,17 @@ get:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - $ref: ../components/parameters/PageLimit.yaml
-    - description: >
+    - description: |
         Идентификаторы заказов — для фильтрации результатов.
 
-
         Несколько идентификаторов перечисляются через запятую без пробела.
-        Максимальное количество идентификаторов — 50.
       in: query
       name: orderIds
       required: false
       schema:
         type: array
         maxItems: 50
+        uniqueItems: true
         items:
           type: integer
           format: int64
@@ -54,6 +53,7 @@ get:
       example: STARTED_BY_USER,WAITING_FOR_DECISION
       schema:
         type: array
+        uniqueItems: true
         items:
           $ref: ../components/schemas/RefundStatusType.yaml
     - description: |

@@ -84,7 +84,7 @@ delete:
 
         Идентификаторы указываются через запятую. Идентификатор лицензии
         присваивается Маркетом. Не путайте его с номером, указанным на лицензии.
-      $ref: ../components/parameters/LicenseIds.yaml
+      $ref: ../components/parameters/DeleteLicenseIds.yaml
   responses:
     '200':
       description: Пустой ответ.

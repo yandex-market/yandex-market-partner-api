@@ -1,7 +1,10 @@
 description: Возврат заказа.
 type: object
 required:
+  - id
+  - orderId
   - items
+  - returnType
 properties:
   id:
     description: Идентификатор возврата.
@@ -12,13 +15,21 @@ properties:
     format: int64
     type: integer
   creationDate:
-    description: Дата создания возврата клиентом.
+    description: |
+      Дата создания возврата клиентом.
+
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
+    example: '2020-02-02T14:30:30+03:00'
   updateDate:
-    description: Дата обновления возврата.
+    description: |
+      Дата обновления возврата.
+
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
+    example: '2020-02-02T14:30:30+03:00'
   refundStatus:
     $ref: ./RefundStatusType.yaml
   logisticPickupPoint:

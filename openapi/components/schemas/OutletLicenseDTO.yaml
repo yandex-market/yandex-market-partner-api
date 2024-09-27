@@ -1,5 +1,11 @@
 description: Информация о лицензии.
 type: object
+required:
+  - outletId
+  - licenseType
+  - number
+  - dateOfIssue
+  - dateOfExpiry
 properties:
   id:
     description: >
@@ -20,6 +26,7 @@ properties:
     description: Идентификатор точки продаж, для которой действительна лицензия.
     type: integer
     format: int64
+    minimum: 1
   licenseType:
     $ref: ./LicenseType.yaml
   number:
@@ -37,13 +44,11 @@ properties:
       `2017-11-13T00:00:00+03:00`.
 
 
-      Обязательный параметр.
-
-
       Не может быть позже даты окончания срока действия, указанной в параметре
       `dateOfExpiry`.
     type: string
     format: date-time
+    example: '2017-11-13T00:00:00+03:00'
   dateOfExpiry:
     description: >
       Дата окончания действия лицензии.
@@ -56,9 +61,7 @@ properties:
       значение `2022-11-20T00:00:00+03:00`.
 
 
-      Обязательный параметр.
-
-
       Не может быть раньше даты выдачи, указанной в параметре `dateOfIssue`.
     type: string
     format: date-time
+    example: '2022-11-20T00:00:00+03:00'
