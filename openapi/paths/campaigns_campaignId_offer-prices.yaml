@@ -85,7 +85,9 @@ post:
     - express
   x-auth-scopes:
     - all-methods
+    - all-methods:read-only
     - pricing
+    - pricing:read-only
   operationId: getPricesByOfferIds
   summary: Просмотр цен на указанные товары в магазине
   description: >

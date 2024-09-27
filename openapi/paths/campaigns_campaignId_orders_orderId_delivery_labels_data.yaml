@@ -8,6 +8,7 @@ get:
     - all-methods
     - all-methods:read-only
     - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
   operationId: getOrderLabelsData
   summary: Данные для самостоятельного изготовления ярлыков
   description: |

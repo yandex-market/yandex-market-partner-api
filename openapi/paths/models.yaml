@@ -69,6 +69,7 @@ get:
     - dbs
   x-auth-scopes:
     - all-methods
+    - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
   operationId: searchModels

@@ -5,6 +5,7 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
+    - finance-and-accounting
   operationId: generateGoodsTurnoverReport
   summary: Отчет по оборачиваемости
   description: >

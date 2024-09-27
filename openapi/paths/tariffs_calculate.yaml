@@ -7,7 +7,10 @@ post:
     - express
   x-auth-scopes:
     - all-methods
+    - all-methods:read-only
     - finance-and-accounting
+    - pricing
+    - pricing:read-only
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >

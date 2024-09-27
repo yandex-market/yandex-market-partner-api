@@ -8,6 +8,8 @@ post:
     - all-methods
     - all-methods:read-only
     - settings-management
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
   operationId: getQualityRatingDetails
   summary: Заказы, которые повлияли на индекс качества
   description: >

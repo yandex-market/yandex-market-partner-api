@@ -8,6 +8,7 @@ put:
   x-auth-scopes:
     - all-methods
     - pricing
+    - promotion
   operationId: putBidsForBusiness
   summary: Включение буста продаж и установка ставок
   description: >

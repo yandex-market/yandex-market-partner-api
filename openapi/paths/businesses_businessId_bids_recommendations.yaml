@@ -10,6 +10,8 @@ post:
     - all-methods:read-only
     - pricing
     - pricing:read-only
+    - promotion
+    - promotion:read-only
   operationId: getBidsRecommendations
   summary: Рекомендованные ставки для заданных товаров
   description: >

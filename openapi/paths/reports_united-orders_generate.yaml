@@ -9,6 +9,7 @@ post:
     - all-methods
     - finance-and-accounting
     - promotion
+    - inventory-and-order-processing
   operationId: generateUnitedOrdersReport
   summary: Отчет по заказам
   description: >
