@@ -135,3 +135,9 @@ properties:
     nullable: true
     items:
       $ref: ./OrderItemInstanceType.yaml
+  tags:
+    description: Признаки товара.
+    type: array
+    nullable: true
+    items:
+      $ref: ./OrderItemTagType.yaml

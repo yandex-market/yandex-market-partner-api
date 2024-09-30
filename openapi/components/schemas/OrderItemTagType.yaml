@@ -1,0 +1,11 @@
+description: |
+  Признак товара:
+
+  * `ULTIMA` — премиум-товар.
+  * `SAFE_TAG` — товар с [защитной меткой](*safe-tag).
+  * `TURBO` — товар, который быстро раскупают.
+type: string
+enum:
+  - ULTIMA
+  - SAFE_TAG
+  - TURBO
