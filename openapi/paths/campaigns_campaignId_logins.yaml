@@ -21,9 +21,25 @@ get:
     - communication
   operationId: getCampaignLogins
   summary: Логины, связанные с магазином
-  description: |
-    Возвращает список логинов, у которых есть доступ к магазину.
+  description: >
+    {% note warning "" %}
+
+
+    Этот метод устарел. Не используйте его.
+
+
+    {% endnote %}
+
+
+    **Для Api-Key-токена:** возвращает пустой ответ.
+
+
+    **Для OAuth-токена:** возвращает список логинов, у которых есть доступ к
+    магазину.
+
+
     |**⚙️ Лимит:** 1000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
