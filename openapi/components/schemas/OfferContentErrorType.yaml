@@ -9,6 +9,9 @@ description: >
   * `CATEGORY_MISMATCH` — указана категория, которая не совпадает с категорией
   товара.
 
+  * `INVALID_CATEGORY` — указана нелистовая категория. Укажите ту, которая не
+  имеет дочерних категорий.
+
   * `UNKNOWN_PARAMETER` — передана характеристика, которой нет среди
   характеристик категории.
 
@@ -31,6 +34,7 @@ enum:
   - OFFER_NOT_FOUND
   - UNKNOWN_CATEGORY
   - CATEGORY_MISMATCH
+  - INVALID_CATEGORY
   - UNKNOWN_PARAMETER
   - UNEXPECTED_BOOLEAN_VALUE
   - NUMBER_FORMAT
