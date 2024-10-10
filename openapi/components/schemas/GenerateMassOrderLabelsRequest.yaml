@@ -19,3 +19,6 @@ properties:
       description: Идентификатор заказа.
       format: int64
       type: integer
+  sortingType:
+    description: Тип сортировки ярлыков в файле.
+    $ref: ./LabelsSortingType.yaml
