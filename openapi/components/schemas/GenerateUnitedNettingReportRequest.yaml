@@ -28,7 +28,7 @@ properties:
 
       {% endnote %}
 
-      Конец периода, включительно. Максимальный период — 1 год.
+      Конец периода, включительно. Максимальный период — 3 месяца.
     format: date-time
     type: string
   dateFrom:
@@ -36,7 +36,7 @@ properties:
     format: date
     type: string
   dateTo:
-    description: Конец периода, включительно. Максимальный период — 1 год.
+    description: Конец периода, включительно. Максимальный период — 3 месяца.
     format: date
     type: string
   bankOrderId:
