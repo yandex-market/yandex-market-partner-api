@@ -33,6 +33,8 @@ description: >
 
   * `INVALID_PICKER_URL` — передана ссылка на изображение для миниатюры, которой
   нет в переданных ссылках на изображение товара.
+
+  * `LOCKED_DIMENSIONS` — переданы габариты упаковки, которые нельзя изменить.
 type: string
 enum:
   - UNKNOWN_CATEGORY
@@ -47,3 +49,4 @@ enum:
   - INVALID_GROUP_ID_LENGTH
   - INVALID_GROUP_ID_CHARACTERS
   - INVALID_PICKER_URL
+  - LOCKED_DIMENSIONS
