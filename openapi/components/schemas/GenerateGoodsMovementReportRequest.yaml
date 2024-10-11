@@ -9,14 +9,18 @@ properties:
     description: Идентификатор кампании.
     type: integer
     format: int64
+    minimum: 1
   dateFrom:
-    description: Начало периода, включительно.
+    description: |
+      Начало периода, включительно. Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date
+    example: '2022-09-22'
   dateTo:
-    description: Конец периода, включительно.
+    description: |
+      Конец периода, включительно. Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date
+    example: '2022-09-23'
   shopSku:
-    description: Фильтр по SKU.
     $ref: ./ShopSku.yaml

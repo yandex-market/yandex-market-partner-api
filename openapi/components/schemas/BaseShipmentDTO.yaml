@@ -2,19 +2,34 @@ type: object
 description: Информация об отгрузке.
 required:
   - orderIds
+  - id
+  - planIntervalFrom
+  - planIntervalTo
+  - draftCount
+  - plannedCount
+  - factCount
 properties:
   id:
     description: Идентификатор отгрузки.
     format: int64
     type: integer
+    minimum: 1
   planIntervalFrom:
-    description: Начало планового интервала отгрузки.
+    description: |
+      Начало планового интервала отгрузки.
+
+      Формат даты: ISO 8601 со смещением относительно UTC.
     format: date-time
     type: string
+    example: '2017-11-21T00:00:00+03:00'
   planIntervalTo:
-    description: Конец планового интервала отгрузки.
+    description: |
+      Конец планового интервала отгрузки.
+
+      Формат даты: ISO 8601 со смещением относительно UTC.
     format: date-time
     type: string
+    example: '2017-11-21T00:00:00+03:00'
   shipmentType:
     description: Способ отгрузки заказов.
     $ref: ./ShipmentType.yaml
@@ -42,15 +57,19 @@ properties:
     items:
       type: integer
       format: int64
+      minimum: 1
   draftCount:
     description: Количество заказов, которое Маркет запланировал к отгрузке.
     type: integer
     format: int32
+    minimum: 0
   plannedCount:
     description: Количество заказов, которое Маркет подтвердил к отгрузке.
     type: integer
     format: int32
+    minimum: 0
   factCount:
     description: Количество заказов, принятых в сортировочном центре или пункте приема.
     type: integer
     format: int32
+    minimum: 0

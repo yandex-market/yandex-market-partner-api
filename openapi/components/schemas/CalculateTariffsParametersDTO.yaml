@@ -15,6 +15,7 @@ properties:
       Совместное использование параметров приведет к ошибке.
     type: integer
     format: int64
+    minimum: 1
   sellingProgram:
     description: >
       Модель размещения.

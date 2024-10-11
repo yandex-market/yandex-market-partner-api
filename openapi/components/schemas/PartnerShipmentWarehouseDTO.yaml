@@ -1,10 +1,13 @@
 description: Данные о складе отправления.
 type: object
+required:
+  - id
 properties:
   id:
     description: Идентификатор склада отправления.
     format: int64
     type: integer
+    minimum: 1
   name:
     description: Наименование склада отправления.
     type: string
