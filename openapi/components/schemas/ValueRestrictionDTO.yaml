@@ -24,6 +24,7 @@ properties:
     description: Идентификатор ограничивающей характеристики.
     type: integer
     format: int64
+    minimum: 1
   limitedValues:
     description: >-
       Значения ограничивающей характеристики и соответствующие допустимые

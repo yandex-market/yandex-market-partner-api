@@ -4,3 +4,4 @@ description: >-
   categories/tree](../../reference/categories/getCategoriesTree.md).
 format: int32
 type: integer
+minimum: 1

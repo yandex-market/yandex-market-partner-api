@@ -13,6 +13,7 @@ properties:
     description: Идентификатор характеристики.
     type: integer
     format: int64
+    minimum: 1
   name:
     description: Название характеристики.
     type: string

@@ -23,6 +23,7 @@ properties:
     description: Идентификатор характеристики.
     type: integer
     format: int64
+    minimum: 1
   unitId:
     description: >-
       Идентификатор единицы измерения. Если вы не передали параметр `unitId`,
