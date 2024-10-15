@@ -1,4 +1,4 @@
-description: "Особый тип товара:\n\n* `MEDICINE` — лекарства.\n* `BOOK` — бумажные и электронные книги.\n* `AUDIOBOOK` — аудиокниги.\n* `ARTIST_TITLE` — музыкальная и видеопродукция.\n* `ON_DEMAND` — товары на заказ.\n\n{% note info \"Если ваш товар —\_книга\" %}\n\nУкажите год издания в характеристиках товара. [Подробнее о параметре](../../reference/business-assortment/updateOfferMappings.md#offerparamdto)\n\n{% endnote %}\n"
+description: "Особый тип товара:\n\n* `MEDICINE` — лекарства.\n* `BOOK` — бумажные и электронные книги.\n* `AUDIOBOOK` — аудиокниги.\n* `ARTIST_TITLE` — музыкальная и видеопродукция.\n* `ON_DEMAND` — товары на заказ.\n* `ALCOHOL` — алкоголь.\n\n{% note info \"Если ваш товар —\_книга\" %}\n\nУкажите год издания в характеристиках товара. [Подробнее о параметре](../../reference/business-assortment/updateOfferMappings.md#offerparamdto)\n\n{% endnote %}\n"
 type: string
 enum:
   - DEFAULT
@@ -7,3 +7,4 @@ enum:
   - AUDIOBOOK
   - ARTIST_TITLE
   - ON_DEMAND
+  - ALCOHOL
