@@ -26,9 +26,9 @@ info:
 servers:
   - url: https://api.partner.market.yandex.ru
 security:
+  - ApiKey: []
   - OAuth:
       - market:partner-api
-  - ApiKey: []
 externalDocs:
   description: Документация API
   url: https://yandex.ru/dev/market/partner-api/doc/
@@ -315,6 +315,10 @@ paths:
     $ref: paths/businesses_businessId_promos_offers_delete.yaml
 components:
   securitySchemes:
+    ApiKey:
+      type: apiKey
+      name: Api-Key
+      in: header
     OAuth:
       type: oauth2
       flows:
@@ -322,7 +326,3 @@ components:
           authorizationUrl: https://oauth.yandex.ru/authorize
           scopes:
             market:partner-api: API Яндекс.Маркета / Поиска по товарам для партнеров
-    ApiKey:
-      type: apiKey
-      name: Api-Key
-      in: header
