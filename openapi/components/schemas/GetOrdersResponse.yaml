@@ -9,6 +9,7 @@ properties:
     description: |
       Модель заказа.
     type: array
+    maxItems: 50
     items:
       $ref: ./OrderDTO.yaml
   paging:
