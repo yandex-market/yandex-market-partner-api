@@ -7,18 +7,10 @@ post:
     - settings-management
   operationId: createOutlet
   summary: Создание точки продаж
-  description: >
+  description: |
     Создает точку продаж магазина на Маркете.
 
-
-    В течение суток этим и другими запросами о точках продаж, кроме запроса [GET
-    delivery/services](../../reference/orders/getDeliveryServices.md), можно
-    получить и изменить информацию об определенном суммарном количестве точек
-    продаж. Оно зависит от количества точек продаж магазина.
-
-
     |**⚙️ Лимит:** 100 000 запросов в час|
-
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
@@ -57,18 +49,10 @@ get:
     - settings-management
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
-  description: >
+  description: |
     Возвращает список точек продаж магазина.
 
-
-    В течение суток этим и другими запросами о точках продаж, кроме запроса [GET
-    delivery/services](../../reference/orders/getDeliveryServices.md), можно
-    получить и изменить информацию об определенном суммарном количестве точек
-    продаж. Оно зависит от количества точек продаж магазина.
-
-
     |**⚙️ Лимит:** 100 000 запросов в час|
-
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
