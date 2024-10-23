@@ -7,7 +7,7 @@ post:
     - offers-and-cards-management
     - finance-and-accounting
   operationId: generateGoodsTurnoverReport
-  summary: Отчет по оборачиваемости
+  summary: Отчет по оборачиваемости (FBY)
   description: >
     Запускает генерацию **отчета по оборачиваемости** за заданную дату.  [Что
     это за отчет](https://yandex.ru/support/marketplace/analytics/turnover.html)

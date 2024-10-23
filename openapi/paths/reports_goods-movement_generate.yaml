@@ -7,7 +7,7 @@ post:
     - offers-and-cards-management
     - inventory-and-order-processing
   operationId: generateGoodsMovementReport
-  summary: Отчет по движению товаров
+  summary: Отчет по движению товаров (FBY)
   description: >
     Запускает генерацию **отчета по движению товаров**. [Что это за
     отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#flow)
