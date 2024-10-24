@@ -80,7 +80,7 @@ get:
     - description: |
         {% note warning "" %}
 
-        Этот параметр устарел. Для указания региона используйте `region_id`.
+        Этот параметр устарел. Вместо него используйте `region_id`.
 
         {% endnote %}
       name: regionId
