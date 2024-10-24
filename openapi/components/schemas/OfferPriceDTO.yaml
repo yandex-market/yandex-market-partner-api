@@ -2,7 +2,6 @@ description: Товар с информацией о новой цене на н
 type: object
 properties:
   offerId:
-    description: Идентификатор предложения.
     $ref: ./ShopSku.yaml
   price:
     $ref: ./PriceDTO.yaml

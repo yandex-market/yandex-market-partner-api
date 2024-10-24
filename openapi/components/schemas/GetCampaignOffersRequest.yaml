@@ -13,7 +13,9 @@ properties:
     nullable: true
     items:
       $ref: ./ShopSku.yaml
+    minItems: 1
     maxItems: 200
+    uniqueItems: true
   statuses:
     description: |
       Фильтр по статусам товаров.
@@ -21,21 +23,29 @@ properties:
     nullable: true
     items:
       $ref: ./OfferCampaignStatusType.yaml
+    minItems: 1
+    uniqueItems: true
   categoryIds:
     description: Фильтр по категориям на Маркете.
     type: array
     nullable: true
     items:
       type: integer
+    minItems: 1
+    uniqueItems: true
   vendorNames:
     description: Фильтр по брендам.
     type: array
     nullable: true
     items:
       type: string
+    minItems: 1
+    uniqueItems: true
   tags:
     description: Фильтр по тегам.
     type: array
     nullable: true
     items:
       type: string
+    minItems: 1
+    uniqueItems: true
