@@ -6,15 +6,23 @@ description: |
       * `DELIVERED_TOO_LONG` — длительный срок доставки, поэтому передумал.
 
     * `BAD_QUALITY`:
-      * `BAD_PACKAGE` — упаковка товара была нарушена.
+      * `BAD_PACKAGE` — заводская упаковка повреждена.
       * `DAMAGED` — царапины, сколы.
       * `NOT_WORKING` — не включается / не работает.
       * `INCOMPLETENESS` — некомплект (не хватает детали в наборе, к товару).
+      * `WRAPPING_DAMAGED` - транспортная упаковка повреждена.
+      * `ITEM_WAS_USED` - товар имеет следы использования.
+      * `BROKEN` - товар разбит.
+      * `BAD_FLOWERS` - цветы некачественные.
 
     * `WRONG_ITEM`:
       * `WRONG_ITEM` — не тот товар.
       * `WRONG_COLOR` — не соответствует по цвету.
       * `DID_NOT_MATCH_DESCRIPTION` — не соответствует заявленным характеристикам/описанию.
+      * `WRONG_ORDER` - чужой заказ.
+      * `WRONG_AMOUNT_DELIVERED` - не то количество товара.
+      * `PARCEL_MISSING` - одна или несколько частей заказа отсутствуют.
+      * `INCOMPLETE` - некомплект.
 type: string
 enum:
   - USER_DID_NOT_LIKE
@@ -27,4 +35,12 @@ enum:
   - WRONG_ITEM
   - WRONG_COLOR
   - DID_NOT_MATCH_DESCRIPTION
+  - WRONG_ORDER
+  - WRONG_AMOUNT_DELIVERED
+  - WRAPPING_DAMAGED
+  - ITEM_WAS_USED
+  - BROKEN
+  - BAD_FLOWERS
+  - PARCEL_MISSING
+  - INCOMPLETE
   - UNKNOWN
