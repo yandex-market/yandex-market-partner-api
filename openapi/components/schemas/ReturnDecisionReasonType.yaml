@@ -13,7 +13,7 @@ description: |
 
   * `CONTENT_FAIL` — ошибочное описание товара по вине Маркета.
 
-  * `DELIVERY_FAIL` - товар не привезли.
+  * `DELIVERY_FAIL` — товар не привезли.
 
   * `UNKNOWN` — причина не известна.
 type: string

@@ -3,26 +3,26 @@ description: |
     * `DO_NOT_FIT`:
       * `USER_DID_NOT_LIKE` — товар не понравился.
       * `USER_CHANGED_MIND` — передумал покупать.
-      * `DELIVERED_TOO_LONG` — длительный срок доставки, поэтому передумал.
+      * `DELIVERED_TOO_LONG` — передумал покупать из-за длительного срока доставки.
 
     * `BAD_QUALITY`:
       * `BAD_PACKAGE` — заводская упаковка повреждена.
       * `DAMAGED` — царапины, сколы.
-      * `NOT_WORKING` — не включается / не работает.
+      * `NOT_WORKING` — не включается, не работает.
       * `INCOMPLETENESS` — некомплект (не хватает детали в наборе, к товару).
-      * `WRAPPING_DAMAGED` - транспортная упаковка повреждена.
-      * `ITEM_WAS_USED` - товар имеет следы использования.
-      * `BROKEN` - товар разбит.
-      * `BAD_FLOWERS` - цветы некачественные.
+      * `WRAPPING_DAMAGED` — транспортная упаковка повреждена.
+      * `ITEM_WAS_USED` — следы использования на товаре.
+      * `BROKEN` — товар разбит.
+      * `BAD_FLOWERS` — некачественные цветы.
 
     * `WRONG_ITEM`:
       * `WRONG_ITEM` — не тот товар.
-      * `WRONG_COLOR` — не соответствует по цвету.
-      * `DID_NOT_MATCH_DESCRIPTION` — не соответствует заявленным характеристикам/описанию.
-      * `WRONG_ORDER` - чужой заказ.
-      * `WRONG_AMOUNT_DELIVERED` - не то количество товара.
-      * `PARCEL_MISSING` - одна или несколько частей заказа отсутствуют.
-      * `INCOMPLETE` - некомплект.
+      * `WRONG_COLOR` — цвет не соответствует заявленному.
+      * `DID_NOT_MATCH_DESCRIPTION` — описание или характеристики не соответствуют заявленным.
+      * `WRONG_ORDER` — доставили чужой заказ.
+      * `WRONG_AMOUNT_DELIVERED` — неверное количество товара.
+      * `PARCEL_MISSING` — часть заказа отсутствует.
+      * `INCOMPLETE` — заказ не привезли полностью.
 type: string
 enum:
   - USER_DID_NOT_LIKE
