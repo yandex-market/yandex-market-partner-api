@@ -9,7 +9,7 @@
 ### Получить спецификацию через git
 
 Есть два способа:
-1. Выполнить команду `git clone https://github.com/yandex-market/yandex-market-partner-api.git`
+1. Выполнить команду `git clone https://github.com/yandex-market/yandex-market-partner-api.git`.
 2. Скачать архив с репозиторием через GitHub web-ui: в правом верхнем углу нажмите зеленую кнопку `Code` и в выпадающем списке выберите `Download ZIP`.
 
 ### Установка OpenAPI-генератора через пакетные менеджеры
