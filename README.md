@@ -1,47 +1,45 @@
-# API Яндекс Маркета для продавцов
+# Yandex Market API Integration Guide for Sellers
 
-Вы читаете спецификацию API Яндекс Маркета для продавцов, с помощью которого можно автоматизировать и упростить работу с маркетплейсом.
+This guide explains how to use the Yandex Market API specification for sellers, designed to automate and streamline interactions with the marketplace.
 
-## Как сгенерировать клиент партнерского API
+## Generating a Partner API Client
 
-Спецификация поможет сгенерировать файлы клиента на любом языке или фреймворке, которые поддерживает OpenAPI-генератор. Это может значительно упростить интеграцию с Яндекс Маркетом через API.
+The OpenAPI specification enables you to generate client libraries in various programming languages and frameworks supported by the OpenAPI generator,  simplifying your integration with Yandex Market's API.
 
-### Получить спецификацию через git
+### Obtaining the Specification via Git
 
-Есть два способа:
-1. Выполнить команду `git clone https://github.com/yandex-market/yandex-market-partner-api.git`.
-2. Скачать архив с репозиторием через GitHub web-ui: в правом верхнем углу нажмите зеленую кнопку `Code` и в выпадающем списке выберите `Download ZIP`.
+Choose one of these two methods:
+1. Clone the repository by executing the following command: `git clone https://github.com/yandex-market/yandex-market-partner-api.git`.
+2. Download the archive from the repository using the GitHub web interface: click the green`Code` button and select `Download ZIP` rom the dropdown menu.
 
-### Установка OpenAPI-генератора через пакетные менеджеры
+### Installing the OpenAPI Generator via Package Managers
 
-Документация генератора: <https://openapi-generator.tech/docs/installation>
+Refer to the generator documentation: <https://openapi-generator.tech/docs/installation>
 
-**Для npm (любая ОС)**
+**Using npm (any OS)**
 `npm install @openapitools/openapi-generator-cli -g`
 
-**Для Homebrew (macOS)**
+**Using Homebrew (macOS)**
 `brew install openapi-generator`
 
-**Для Scoop (Windows)**
+**Using Scoop (Windows)**
 `scoop install openapi-generator-cli`
 
-### Генерация клиента
+### Generating the Client
 
-**Для npm (любая ОС)**
+**Using npm (any OS)**
 `npx @openapitools/openapi-generator-cli generate -i <path to openapi.yaml> -g <lang> -o <output path>`
 
-**Для остальных пакетных менеджеров**
+**Using other package managers**
 `openapi-generator generate -i <path to openapi.yaml> -g <generator> -o <output path> `
 
-Значения частей запроса:
+Explanation of placeholders:
 
-`<generator>` — параметр генератора для выбранного языка или фреймворка.
+* `<generator>` means the generator parameter for the chosen language or framework.
+* `<output path>` means the directory where the generated client code will be saved.
+* `<path to openapi.yaml>` means the path to the openapi.yaml file of this specification.
 
-`<output path>` — выходная директория, куда будет помещен сгенерированный код клиента.
-
-`<path to openapi.yaml>` — путь к файлу openapi.yaml данной спецификации.
-
-Примеры генераторов:
+Examples of available generators include:
 * go
 * java
 * javascript
@@ -50,5 +48,5 @@
 * python
 * ruby
 
-Полный список генераторов доступен по ссылке: <https://openapi-generator.tech/docs/generators>
+For a complete list of generators, visit: <https://openapi-generator.tech/docs/generators>
 
