@@ -41,6 +41,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    maxItems: 250
     uniqueItems: true
     items:
       type: integer
@@ -49,6 +50,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    maxItems: 250
     uniqueItems: true
     items:
       type: string
@@ -57,6 +59,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    maxItems: 250
     uniqueItems: true
     items:
       type: string
