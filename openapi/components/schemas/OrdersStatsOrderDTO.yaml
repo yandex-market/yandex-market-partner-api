@@ -64,3 +64,12 @@ properties:
     type: array
     items:
       $ref: ./OrdersStatsCommissionDTO.yaml
+  subsidies:
+    description: >-
+      Начисления и списания баллов, которые используются для уменьшения
+      стоимости размещения.
+    type: array
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./OrdersStatsSubsidyDTO.yaml

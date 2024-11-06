@@ -1,0 +1,22 @@
+description: >-
+  Информация о начислении и списании баллов, которые используются для уменьшения
+  стоимости размещения.
+type: object
+required:
+  - operationType
+  - type
+  - amount
+properties:
+  operationType:
+    description: >-
+      Тип операции c баллами, которые используются для уменьшения стоимости
+      размещения.
+    $ref: ./OrdersStatsSubsidyOperationType.yaml
+  type:
+    description: Источник баллов, которые используются для уменьшения стоимости размещения.
+    $ref: ./OrdersStatsSubsidyType.yaml
+  amount:
+    description: >
+      Количество баллов, которые используются для уменьшения стоимости
+      размещения, с точностью до двух знаков после запятой.
+    type: number

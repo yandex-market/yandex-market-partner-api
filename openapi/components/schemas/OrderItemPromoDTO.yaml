@@ -17,8 +17,6 @@ properties:
   subsidy:
     description: |
       Вознаграждение партнеру от Маркета за товар, проданный в рамках акции.
-
-      Передается в валюте заказа.
     type: number
     format: decimal
   shopPromoId:

@@ -78,8 +78,6 @@ properties:
       * по купонам;
       * по баллам Плюса;
       * по акциям.
-
-      Передается в валюте заказа.
     type: number
     format: decimal
   partnerWarehouseId:
