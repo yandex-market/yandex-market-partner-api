@@ -16,4 +16,3 @@ properties:
   comment:
     description: Комментарий.
     type: string
-    maximum: 1000

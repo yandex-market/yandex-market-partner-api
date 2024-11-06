@@ -41,7 +41,6 @@ properties:
       category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
     example: Wi-Fi
     type: string
-    maxLength: 250
   value:
     description: |
       Значение.

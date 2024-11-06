@@ -16,7 +16,6 @@ description: >+
 
 type: array
 nullable: true
-maxItems: 2500
 items:
   type: string
   example: 46012300000000

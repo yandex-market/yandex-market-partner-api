@@ -7,9 +7,7 @@ properties:
   url:
     description: Ссылка на инструкцию.
     type: string
-    maxLength: 300
   title:
     description: |
       Название инструкции, которое будет отображаться на карточке товара.
     type: string
-    maxLength: 300

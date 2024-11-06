@@ -20,7 +20,11 @@ properties:
       **Требования к ссылкам**
 
 
+      * Ссылок может быть до 30.
+
       * Указывайте ссылку целиком, включая протокол http или https.
+
+      * Максимальная длина — 512 символов.
 
       * Русские буквы в URL можно.
 
@@ -53,20 +57,23 @@ properties:
       [Требования к
       изображениям](https://yandex.ru/support/marketplace/assortment/fields/images.html)
     type: array
-    maxItems: 30
     nullable: true
     items:
       type: string
-      maxLength: 512
   videos:
     description: >
       Ссылка (URL) на видео товара.
+
+
+      Максимальное количество ссылок — 6.
 
 
       **Требования к ссылке**
 
 
       * Указывайте ссылку целиком, включая протокол http или https.
+
+      * Максимальная длина — 512 символов.
 
       * Русские буквы в URL можно.
 
@@ -103,10 +110,12 @@ properties:
     maxItems: 6
     items:
       type: string
-      maxLength: 512
   manuals:
     description: >
       Список инструкций по использованию товара.
+
+
+      Максимальное количество инструкций — 6.
 
 
       Если вы передадите пустое поле `manuals`, загруженные ранее инструкции
@@ -147,13 +156,12 @@ properties:
       товары одной серии, коллекции или линейки.
 
 
-      У одного товара может быть максимум 10 тегов.
+      Максимальная длина тега 20 символов. У одного товара может быть максимум
+      10 тегов. Всего можно создать не больше 50 разных тегов.
     type: array
     nullable: true
-    maxItems: 50
     items:
       type: string
-      maxLength: 20
       example: до 500 рублей
   shelfLife:
     description: >
@@ -203,9 +211,6 @@ properties:
 
       Обязательно укажите, если он есть.
     example: 8517610008
-    minLength: 10
-    maxLength: 14
-    pattern: ^[\d]{10}$|^[\d]{14}$
     type: string
   certificates:
     description: >
@@ -217,7 +222,6 @@ properties:
       [инструкции](https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html).
     type: array
     nullable: true
-    maxItems: 500
     items:
       type: string
   boxCount:
@@ -233,7 +237,6 @@ properties:
       Для товаров, занимающих одно место, не передавайте этот параметр.
     type: integer
     format: int32
-    minimum: 2
   condition:
     description: >
       Состояние уцененного товара.
@@ -294,6 +297,5 @@ properties:
     type: array
     nullable: true
     deprecated: true
-    maxItems: 200
     items:
       $ref: ./OfferParamDTO.yaml
