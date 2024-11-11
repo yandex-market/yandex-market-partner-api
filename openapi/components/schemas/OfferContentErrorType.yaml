@@ -6,9 +6,6 @@ description: >
 
   * `UNKNOWN_CATEGORY` — указана неизвестная категория.
 
-  * `CATEGORY_MISMATCH` — указана категория, которая не совпадает с категорией
-  товара.
-
   * `INVALID_CATEGORY` — указана нелистовая категория. Укажите ту, которая не
   имеет дочерних категорий.
 
@@ -33,7 +30,6 @@ type: string
 enum:
   - OFFER_NOT_FOUND
   - UNKNOWN_CATEGORY
-  - CATEGORY_MISMATCH
   - INVALID_CATEGORY
   - UNKNOWN_PARAMETER
   - UNEXPECTED_BOOLEAN_VALUE
