@@ -94,10 +94,10 @@ get:
         type: string
         format: date
     - description: >
-        {% note warning "" %}
+        {% note warning "Этот параметр устарел" %}
 
 
-        Этот параметр устарел. Вместо него используйте `fromDate`.
+        Вместо него используйте `fromDate`.
 
 
         {% endnote %}
@@ -114,9 +114,9 @@ get:
         type: string
         format: date
     - description: |
-        {% note warning "" %}
+        {% note warning "Этот параметр устарел" %}
 
-        Этот параметр устарел. Вместо него используйте `toDate`.
+        Вместо него используйте `toDate`.
 
         {% endnote %}
 

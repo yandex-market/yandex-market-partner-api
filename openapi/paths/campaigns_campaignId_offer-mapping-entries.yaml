@@ -13,10 +13,10 @@ get:
   operationId: getOfferMappingEntries
   summary: Список товаров в каталоге
   description: >
-    {% note warning "" %}
+    {% note warning "Этот метод устарел" %}
 
 
-    Этот метод устарел. Вместо него используйте [POST
+    Вместо него используйте [POST
     businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
 
 
@@ -38,11 +38,10 @@ get:
     следующей страницы.
 
 
-    {% note info %}
+    {% note info "Как считается количество товаров в каталоге магазина" %}
 
 
-    Количество товаров в каталоге магазина считается по данным за последние семь
-    дней (не включая сегодня).
+    По данным за последние семь дней (не включая сегодня).
 
 
     {% endnote %}

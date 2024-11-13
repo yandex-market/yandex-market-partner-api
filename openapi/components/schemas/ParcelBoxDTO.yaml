@@ -6,18 +6,18 @@ type: object
 properties:
   id:
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
       {% endnote %}
     type: integer
     format: int64
   fulfilmentId:
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
       {% endnote %}
     type: string

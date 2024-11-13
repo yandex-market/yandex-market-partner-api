@@ -13,10 +13,10 @@ get:
   operationId: getFeedIndexLogs
   summary: Отчет по индексации прайс-листа
   description: >
-    {% note warning "" %}
+    {% note warning "Этот метод устарел" %}
 
 
-    Этот метод устарел. Не используйте его.
+    Не используйте его.
 
 
     {% endnote %}

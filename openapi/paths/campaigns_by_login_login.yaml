@@ -22,10 +22,10 @@ get:
   operationId: getCampaignsByLogin
   summary: Магазины, доступные логину
   description: >
-    {% note warning "" %}
+    {% note warning "Этот метод устарел" %}
 
 
-    Этот метод устарел. Не используйте его.
+    Не используйте его.
 
 
     {% endnote %}

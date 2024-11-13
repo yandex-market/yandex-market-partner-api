@@ -12,10 +12,10 @@ get:
   operationId: getFeedbackAndCommentUpdates
   summary: Новые и обновленные отзывы о магазине
   description: >
-    {% note warning "" %}
+    {% note warning "Этот метод устарел" %}
 
 
-    Этот метод устарел. Не используйте его.
+    Не используйте его.
 
 
     {% endnote %}

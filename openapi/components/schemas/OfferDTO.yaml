@@ -74,11 +74,10 @@ properties:
       `modelid` содержит значение `0`.
 
 
-      {% note info %}
+      {% note info "Где отображается идентификатор модели" %}
 
 
-      Идентификатор модели присутствует в URL карточки модели в виде значения
-      параметра `product`. Например:
+      В URL карточки модели в виде значения параметра `product`. Например:
       `https://market.yandex.ru/product/13584121`.
 
 
@@ -104,9 +103,9 @@ properties:
     $ref: ./CurrencyType.yaml
   bid:
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
       {% endnote %}
 
@@ -114,9 +113,9 @@ properties:
     type: number
   cbid:
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
       {% endnote %}
 
@@ -124,9 +123,9 @@ properties:
     type: number
   fee:
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
       {% endnote %}
 

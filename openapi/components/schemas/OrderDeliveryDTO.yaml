@@ -18,16 +18,12 @@ properties:
     type: string
   price:
     deprecated: true
-    description: >
-      {% note warning "" %}
+    description: |
+      {% note warning "Этот параметр устарел" %}
 
-
-      Этот параметр устарел. Стоимость доставки смотрите в параметре
-      `deliveryTotal`.
-
+      Стоимость доставки смотрите в параметре `deliveryTotal`.
 
       {% endnote %}
-
 
       Стоимость доставки в валюте заказа.
     type: number

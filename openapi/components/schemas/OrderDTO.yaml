@@ -46,10 +46,10 @@ properties:
   buyerItemsTotal:
     deprecated: true
     description: >
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
 
       {% endnote %}
@@ -62,10 +62,10 @@ properties:
   buyerTotal:
     deprecated: true
     description: >
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
 
       {% endnote %}
@@ -91,10 +91,10 @@ properties:
   buyerTotalBeforeDiscount:
     deprecated: true
     description: >
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
 
       {% endnote %}

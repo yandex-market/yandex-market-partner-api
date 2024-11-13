@@ -4,31 +4,23 @@ properties:
   offerId:
     $ref: ./ShopSku.yaml
   currentPrice:
-    description: >
-      {% note warning "" %}
+    description: |
+      {% note warning "Этот параметр устарел" %}
 
-
-      Этот параметр устарел. Вместо него используйте значение из `verdicts` →
-      `params`
-
+      Вместо него используйте значение из `verdicts` → `params`.
 
       {% endnote %}
-
 
       Новая цена.
     deprecated: true
     $ref: ./BasePriceDTO.yaml
   lastValidPrice:
-    description: >
-      {% note warning "" %}
+    description: |
+      {% note warning "Этот параметр устарел" %}
 
-
-      Этот параметр устарел. Вместо него используйте значение из `verdicts` →
-      `params`
-
+      Вместо него используйте значение из `verdicts` → `params`.
 
       {% endnote %}
-
 
       Последняя цена до попадания в карантин.
     deprecated: true

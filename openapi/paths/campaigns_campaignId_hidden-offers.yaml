@@ -79,9 +79,9 @@ get:
     - $ref: ../components/parameters/params_OfferIds.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - description: |
-        {% note warning "" %}
+        {% note warning "Этот параметр устарел" %}
 
-        Этот параметр устарел. Не используйте его.
+        Не используйте его.
 
         {% endnote %}
 
@@ -99,9 +99,9 @@ get:
       deprecated: true
       $ref: ../components/parameters/PageLimit.yaml
     - description: |
-        {% note warning "" %}
+        {% note warning "Этот параметр устарел" %}
 
-        Этот параметр устарел. Не используйте его.
+        Не используйте его.
 
         {% endnote %}
 
@@ -115,10 +115,10 @@ get:
       deprecated: true
       $ref: ../components/parameters/PageOffset.yaml
     - description: >
-        {% note warning "" %}
+        {% note warning "Этот параметр устарел" %}
 
 
-        Этот параметр устарел. Не используйте его.
+        Не используйте его.
 
 
         {% endnote %}
@@ -138,9 +138,9 @@ get:
       deprecated: true
       $ref: ../components/parameters/PageNum.yaml
     - description: |
-        {% note warning "" %}
+        {% note warning "Этот параметр устарел" %}
 
-        Этот параметр устарел. Не используйте его.
+        Не используйте его.
 
         {% endnote %}
 

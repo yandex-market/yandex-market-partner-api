@@ -44,9 +44,9 @@ properties:
   priceBeforeDiscount:
     deprecated: true
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
       {% endnote %}
 
@@ -61,14 +61,14 @@ properties:
     $ref: ./OrderVatType.yaml
   shopSku:
     deprecated: true
-    description: "{% note warning \"\" %}\n\nЭтот параметр устарел. Вместо него используйте `offerId`.\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
+    description: "{% note warning \"Этот параметр устарел\" %}\n\nВместо него используйте `offerId`.\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
     $ref: ./ShopSku.yaml
   subsidy:
     deprecated: true
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Вместо него используйте `subsidies`.
+      Вместо него используйте `subsidies`.
 
       {% endnote %}
 
@@ -83,9 +83,9 @@ properties:
   partnerWarehouseId:
     deprecated: true
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
       {% endnote %}
 

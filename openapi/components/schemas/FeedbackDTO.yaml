@@ -51,9 +51,9 @@ properties:
     type: boolean
   verified:
     description: |
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
-      Этот параметр устарел. Не используйте его.
+      Не используйте его.
 
       {% endnote %}
 

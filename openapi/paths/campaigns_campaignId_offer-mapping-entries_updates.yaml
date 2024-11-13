@@ -11,10 +11,10 @@ post:
   operationId: updateOfferMappingEntries
   summary: Добавление и редактирование товаров в каталоге
   description: >
-    {% note warning "" %}
+    {% note warning "Этот метод устарел" %}
 
 
-    Этот метод устарел. Вместо него используйте [POST
+    Вместо него используйте [POST
     businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
 
 

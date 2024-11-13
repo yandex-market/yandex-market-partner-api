@@ -78,9 +78,9 @@ get:
       schema:
         type: string
     - description: |
-        {% note warning "" %}
+        {% note warning "Этот параметр устарел" %}
 
-        Этот параметр устарел. Вместо него используйте `region_id`.
+        Вместо него используйте `region_id`.
 
         {% endnote %}
       name: regionId

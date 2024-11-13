@@ -282,11 +282,10 @@ properties:
     $ref: ./AgeDTO.yaml
   params:
     description: >
-      {% note warning "" %}
+      {% note warning "Этот параметр устарел" %}
 
 
-      Этот параметр устарел. При передаче характеристик используйте
-      `parameterValues`.
+      При передаче характеристик используйте `parameterValues`.
 
 
       {% endnote %}

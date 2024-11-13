@@ -12,10 +12,10 @@ get:
   operationId: getCampaignRegion
   summary: Регион магазина
   description: >
-    {% note warning "" %}
+    {% note warning "Этот метод устарел" %}
 
 
-    Этот метод устарел. Вместо него используйте [GET
+    Вместо него используйте [GET
     campaigns/{campaignId}/settings](../../reference/campaigns/getCampaignSettings.md).
 
 

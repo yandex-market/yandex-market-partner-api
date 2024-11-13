@@ -13,11 +13,11 @@ get:
     Возвращает информацию о покупателе по идентификатору заказа.
 
 
-    {% note info "" %}
+    {% note info "Как получить информацию о покупателе, который является
+    юридическим лицом" %}
 
 
-    Чтобы получить информацию о покупателе, который является юридическим лицом,
-    воспользуйтесь запросом [POST
+    Воспользуйтесь запросом [POST
     campaigns/{campaignId}/orders/{orderId}/business-buyer](../../reference/order-business-information/getOrderBusinessBuyerInfo.md).
 
 

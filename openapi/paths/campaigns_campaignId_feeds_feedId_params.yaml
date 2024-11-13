@@ -11,10 +11,10 @@ post:
   operationId: setFeedParams
   summary: Изменение параметров прайс-листа
   description: >
-    {% note warning "" %}
+    {% note warning "Этот метод устарел" %}
 
 
-    Этот метод устарел. Не используйте его.
+    Не используйте его.
 
 
     {% endnote %}
