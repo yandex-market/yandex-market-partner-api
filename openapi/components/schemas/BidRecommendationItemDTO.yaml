@@ -1,4 +1,6 @@
-description: Рекомендованная ставка и возможная доля показов.
+description: >-
+  Рекомендованная ставка, возможная доля показов и доступные дополнительные
+  инструменты продвижения.
 type: object
 required:
   - bid
@@ -20,3 +22,12 @@ properties:
     format: int64
     minimum: 0
     maximum: 100
+  benefits:
+    description: |
+      Список доступных субсидий.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      $ref: ./BenefitType.yaml
