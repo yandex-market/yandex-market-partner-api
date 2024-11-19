@@ -30,6 +30,8 @@ description: >
   нет в переданных ссылках на изображение товара.
 
   * `LOCKED_DIMENSIONS` — переданы габариты упаковки, которые нельзя изменить.
+
+  * `INVALID_COMMODITY_CODE` — передан некорректный товарный код.
 type: string
 enum:
   - UNKNOWN_CATEGORY
@@ -43,3 +45,4 @@ enum:
   - INVALID_GROUP_ID_CHARACTERS
   - INVALID_PICKER_URL
   - LOCKED_DIMENSIONS
+  - INVALID_COMMODITY_CODE
