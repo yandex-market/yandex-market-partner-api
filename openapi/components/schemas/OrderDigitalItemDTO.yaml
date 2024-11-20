@@ -1,8 +1,7 @@
-description: Ключ цифрового товара.
+description: Цифровой товар.
 type: object
 required:
   - id
-  - code
   - slip
   - activate_till
 properties:
@@ -19,14 +18,32 @@ properties:
     type: integer
     format: int64
   code:
-    description: Сам ключ.
+    description: |
+      {% note warning "Этот параметр устарел" %}
+
+      Не используйте его.
+
+      {% endnote %}
+
+      Сам ключ.
     type: string
+    deprecated: true
+  codes:
+    description: Ключи, относящиеся к товару.
+    type: array
+    items:
+      type: string
+    minItems: 1
+    maxItems: 5000
+    uniqueItems: true
+    nullable: true
   slip:
     description: Инструкция по активации.
     type: string
+    maxLength: 10000
   activate_till:
     description: >
-      Дата, до которой нужно активировать ключ. Если ключ действует бессрочно,
+      Дата, до которой нужно активировать ключи. Если ключи действует бессрочно,
       укажите любую дату в отдаленном будущем.
 
 
