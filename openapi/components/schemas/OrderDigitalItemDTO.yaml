@@ -18,12 +18,16 @@ properties:
     type: integer
     format: int64
   code:
-    description: |
+    description: >
       {% note warning "Этот параметр устарел" %}
 
-      Не используйте его.
+
+      Вместо него используйте `codes`. Совместное использование обоих параметров
+      приведет к ошибке.
+
 
       {% endnote %}
+
 
       Сам ключ.
     type: string
