@@ -19,6 +19,10 @@ post:
     reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
+    {% include notitle
+    [reports](../../_auto/reports/goods/monthly/goods_realization.md) %}
+
+
     |**⚙️ Лимит:** 100 запросов в час|
 
     |-|

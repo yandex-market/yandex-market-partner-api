@@ -1,9 +1,10 @@
 description: |
   Формат отчета:
 
-  * `FILE` — файл с электронной таблицей.
+  * `FILE` — файл с электронной таблицей (XLSX).
   * `CSV` — ZIP-архив с CSV-файлами на каждый лист отчета.
 type: string
 enum:
   - FILE
   - CSV
+default: FILE

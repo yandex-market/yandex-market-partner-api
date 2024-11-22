@@ -32,6 +32,10 @@ post:
     {% endnote %}
 
 
+    {% include notitle
+    [reports](../../_auto/reports/masterstat/competitors_position.md) %}
+
+
     |**⚙️ Лимит:** 10 запросов в час|
 
     |-|

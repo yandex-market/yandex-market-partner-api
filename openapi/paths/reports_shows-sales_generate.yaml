@@ -21,6 +21,10 @@ post:
     reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
+    {% include notitle [reports](../../_auto/reports/masterstat/sales_funnel.md)
+    %}
+
+
     |**⚙️ Лимит:** 10 запросов в час|
 
     |-|

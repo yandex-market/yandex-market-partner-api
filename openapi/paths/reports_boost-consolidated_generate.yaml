@@ -22,6 +22,11 @@ post:
     reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
+    {% include notitle
+    [reports](../../_auto/reports/boost/consolidated/business_boost_consolidated.md)
+    %}
+
+
     |**⚙️ Лимит:** 100 запросов в час|
 
     |-|

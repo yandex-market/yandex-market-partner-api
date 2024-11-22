@@ -35,6 +35,10 @@ post:
     Заказать отчеты обоих типов одним запросом нельзя.
 
 
+    {% include notitle
+    [reports](../../_auto/reports/united/netting/generator/united_netting.md) %}
+
+
     |**⚙️ Лимит:** 100 запросов в час|
 
     |-|
