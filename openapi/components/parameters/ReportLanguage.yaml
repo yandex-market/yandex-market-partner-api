@@ -1,0 +1,6 @@
+description: Язык отчета.
+name: language
+in: query
+required: false
+schema:
+  $ref: ../schemas/ReportLanguageType.yaml

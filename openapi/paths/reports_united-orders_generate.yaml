@@ -42,6 +42,7 @@ post:
     |-|
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
+    - $ref: ../components/parameters/ReportLanguage.yaml
   requestBody:
     required: true
     content:
