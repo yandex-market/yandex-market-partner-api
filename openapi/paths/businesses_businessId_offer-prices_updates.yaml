@@ -16,6 +16,10 @@ post:
     businesses/{businessId}/offers/recommendations](../../reference/business-assortment/getOfferRecommendations.md).
 
 
+    При необходимости передавайте НДС с помощью параметра `vat` в запросе [POST
+    campaigns/{campaignId}/offers/update](../../reference/assortment/updateCampaignOffers.md).
+
+
     {% note info "Данные в каталоге обновляются не мгновенно" %}
 
 
