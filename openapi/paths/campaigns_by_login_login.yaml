@@ -41,6 +41,7 @@ get:
     |**⚙️ Лимит:** 100 запросов в час|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/Login.yaml
     - $ref: ../components/parameters/PageNum.yaml

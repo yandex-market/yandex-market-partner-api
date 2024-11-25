@@ -41,6 +41,7 @@ get:
     |**⚙️ Лимит:** 1000 запросов в час|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:
