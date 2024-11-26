@@ -22,6 +22,10 @@ get:
   operationId: searchRegionsByName
   summary: Поиск регионов по их имени
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/searchRegionsByName.md) %}
+
+
     Возвращает информацию о регионе, удовлетворяющем заданным в запросе условиям
     поиска.
 

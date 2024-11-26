@@ -13,6 +13,9 @@ post:
   operationId: getGoodsStats
   summary: Отчет по товарам
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getGoodsStats.md) %}
+
+
     Возвращает подробный отчет по товарам, которые вы разместили на Маркете. С
     помощью отчета вы можете узнать, например, об остатках на складе, об
     условиях хранения ваших товаров и т. д.

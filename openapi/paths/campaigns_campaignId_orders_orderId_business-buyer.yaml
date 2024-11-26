@@ -13,6 +13,10 @@ post:
   operationId: getOrderBusinessBuyerInfo
   summary: Информация о покупателе — юридическом лице
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getOrderBusinessBuyerInfo.md) %}
+
+
     Возвращает информацию о покупателе по идентификатору заказа.
 
 
