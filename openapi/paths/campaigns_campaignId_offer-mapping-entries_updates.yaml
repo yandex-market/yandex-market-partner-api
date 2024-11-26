@@ -51,12 +51,12 @@ post:
     укажите ее идентификатор (SKU на Маркете) во входном параметре mapping.
     Получить SKU на Маркете рекомендованной карточки товара можно с помощью
     запроса [POST
-    campaigns/{campaignId}/offer-mapping-entries/suggestions](../../reference/offer-mappings/getSuggestedOfferMappingEntries.md)
+    businesses/{businessId}/offer-mappings/suggestions](../../reference/business-assortment/getSuggestedOfferMappings.md)
     или через кабинет. Если SKU на Маркете не указан, сотрудники Маркета сами
     подберут или создадут подходящую карточку товара, либо у него появится
     статус `NEED_CONTENT` (нужно найти карточку или создать ее самостоятельно) в
-    выходных данных запроса [GET
-    campaigns/{campaignId}/offer-mapping-entries](../../reference/offer-mappings/getOfferMappingEntries.md).
+    выходных данных запроса [POST
+    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
 
 
     Перед публикацией товары проходят модерацию. Если в одном из отправленных
@@ -64,8 +64,8 @@ post:
     Request, и ни один из товаров не отправится на модерацию. При этом если вы
     не передадите все обязательные параметры для какого‑либо товара, после
     модерации у него появится статус `NEED_INFO` (в описании товара не хватает
-    информации) в выходных данных запроса [GET
-    campaigns/{campaignId}/offer-mapping-entries](../../reference/offer-mappings/getOfferMappingEntries.md).
+    информации) в выходных данных запроса [POST
+    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
 
 
     В одном запросе можно добавить не более 500 товаров.

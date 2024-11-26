@@ -46,7 +46,7 @@ post:
 
     Полученные SKU можно передать вместе с информацией о ваших товарах с помощью
     запроса [POST
-    campaigns/{campaignId}/offer-mapping-entries/updates](../../reference/offer-mappings/updateOfferMappingEntries.md).
+    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
 
 
     В одном запросе можно получить не более 500 рекомендаций.

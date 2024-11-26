@@ -105,7 +105,7 @@ properties:
 
 
       Возвращаются данные для маркировки, переданные в запросе [PUT
-      campaigns/{campaignId}/orders/{orderId}/cis](../../reference/orders/provideOrderItemCis.md).
+      campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).
 
 
       Если магазин еще не передавал коды для этого заказа, `instances`

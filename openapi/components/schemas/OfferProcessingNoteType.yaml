@@ -3,9 +3,8 @@ description: >
 
 
   * `ASSORTMENT` — товар производится в разных вариантах. Каждый из них нужно
-  описать как отдельный товар (входной параметр `offer-mapping-entry` запроса
-  [POST
-  campaigns/{campaignId}/offer-mapping-entries/updates](../../reference/offer-mappings/updateOfferMappingEntries.md)
+  описать как отдельный товар (параметр `offerMappings` в запросе [POST
+  businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md)
   или строка в каталоге, если вы загружаете товары через кабинет продавца на
   Маркете).
 
@@ -40,7 +39,7 @@ description: >
 
   * `NEED_PICTURES` — для идентификации товара нужны его изображения. Отправьте
   URL изображений товара в запросе [POST
-  campaigns/{campaignId}/offer-mapping-entries/updates](../../reference/offer-mappings/updateOfferMappingEntries.md)
+  businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md)
   или загрузите обновленный каталог через кабинет продавца на Маркете.
 
   * `NEED_VENDOR` — неверно указан производитель товара.

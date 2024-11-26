@@ -9,8 +9,8 @@ properties:
       Если параметр не указан, сотрудники Маркета сами подберут или создадут
       подходящую карточку товара, либо у него появится статус `NEED_CONTENT`
       (нужно найти карточку или создать ее самостоятельно) в выходных данных
-      запроса [GET
-      campaigns/{campaignId}/offer-mapping-entries](../../reference/offer-mappings/getOfferMappingEntries.md).
+      запроса [POST
+      businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
     $ref: ./OfferMappingDTO.yaml
   awaitingModerationMapping:
     description: >-
