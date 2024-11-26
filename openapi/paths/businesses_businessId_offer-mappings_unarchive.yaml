@@ -10,10 +10,16 @@ post:
     - offers-and-cards-management
   operationId: deleteOffersFromArchive
   summary: Удаление товаров из архива
-  description: |
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/deleteOffersFromArchive.md) %}
+
+
     Восстанавливает товары из архива.
 
+
     |**⚙️ Лимит:** 5000 товаров в минуту, не более 200 товаров в одном запросе|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

@@ -13,6 +13,9 @@ get:
   operationId: getReturnPhoto
   summary: Получение фотографии возврата
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getReturnPhoto.md) %}
+
+
     Получает фотографии, которые покупатель приложил к заявлению на возврат
     товара.
 

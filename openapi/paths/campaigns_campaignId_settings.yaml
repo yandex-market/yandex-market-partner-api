@@ -22,6 +22,10 @@ get:
   operationId: getCampaignSettings
   summary: Настройки магазина
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getCampaignSettings.md) %}
+
+
     Возвращает информацию о настройках магазина, идентификатор которого указан в
     запросе.
 

@@ -13,6 +13,8 @@ get:
   operationId: getReturn
   summary: Информация о невыкупе или возврате
   description: |
+    {% include notitle [access](../../_auto/method_scopes/getReturn.md) %}
+
     Получает информацию по одному невыкупу или возврату.
 
     |**⚙️ Лимит:** 10 000 запросов в час|

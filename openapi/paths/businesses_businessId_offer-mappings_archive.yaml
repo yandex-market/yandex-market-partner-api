@@ -11,6 +11,10 @@ post:
   operationId: addOffersToArchive
   summary: Добавление товаров в архив
   description: >
+    {% include notitle [access](../../_auto/method_scopes/addOffersToArchive.md)
+    %}
+
+
     Помещает товары в архив. Товары, помещенные в архив, скрыты с витрины во
     всех магазинах кабинета.
 

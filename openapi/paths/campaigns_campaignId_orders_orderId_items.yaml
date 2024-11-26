@@ -10,6 +10,10 @@ put:
   operationId: updateOrderItems
   summary: Удаление товара из заказа или уменьшение числа единиц
   description: >
+    {% include notitle [access](../../_auto/method_scopes/updateOrderItems.md)
+    %}
+
+
     {% note warning "Этот запрос только для DBS" %}
 
 

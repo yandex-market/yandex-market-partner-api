@@ -13,6 +13,10 @@ post:
   operationId: getOfferMappings
   summary: Информация о товарах в каталоге
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getOfferMappings.md)
+    %}
+
+
     Возвращает список товаров в каталоге, их категории на Маркете и
     характеристики каждого товара.
 

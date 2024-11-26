@@ -8,6 +8,10 @@ post:
   operationId: setReturnDecision
   summary: Принятие или изменение решения по возврату
   description: >
+    {% include notitle [access](../../_auto/method_scopes/setReturnDecision.md)
+    %}
+
+
     Выбирает решение по возврату от покупателя. После этого для подтверждения
     решения нужно выполнить запрос [POST
     campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit](../../reference/orders/submitReturnDecision.md).

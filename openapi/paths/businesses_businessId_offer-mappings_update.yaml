@@ -11,6 +11,10 @@ post:
   operationId: updateOfferMappings
   summary: Добавление товаров в каталог и изменение информации о них
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/updateOfferMappings.md) %}
+
+
     Добавляет товары в каталог, передает их категории на Маркете и
     характеристики, необходимые для этих категории. Также редактирует информацию
     об уже имеющихся товарах.

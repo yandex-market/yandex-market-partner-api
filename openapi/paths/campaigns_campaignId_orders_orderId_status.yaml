@@ -10,6 +10,10 @@ put:
   operationId: updateOrderStatus
   summary: Изменение статуса одного заказа
   description: >
+    {% include notitle [access](../../_auto/method_scopes/updateOrderStatus.md)
+    %}
+
+
     Изменяет статус заказа. Возможные изменения статусов:
 
 

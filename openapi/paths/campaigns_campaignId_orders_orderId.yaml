@@ -15,6 +15,9 @@ get:
   operationId: getOrder
   summary: Информация об одном заказе
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getOrder.md) %}
+
+
     Возвращает информацию о заказе.
 
 

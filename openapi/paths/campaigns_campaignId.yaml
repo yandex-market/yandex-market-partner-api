@@ -22,6 +22,8 @@ get:
   operationId: getCampaign
   summary: Информация о магазине
   description: |
+    {% include notitle [access](../../_auto/method_scopes/getCampaign.md) %}
+
     Возвращает информацию о магазине.
     |**⚙️ Лимит:** 1000 запросов в час|
     |-|

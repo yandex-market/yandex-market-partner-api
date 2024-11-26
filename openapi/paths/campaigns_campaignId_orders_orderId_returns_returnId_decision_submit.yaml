@@ -8,6 +8,10 @@ post:
   operationId: submitReturnDecision
   summary: Подтверждение решения по возврату
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/submitReturnDecision.md) %}
+
+
     Подтверждает выбранное решение по возврату, отправленное в запросе [POST
     campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision](../../reference/orders/setReturnDecision.md).
 

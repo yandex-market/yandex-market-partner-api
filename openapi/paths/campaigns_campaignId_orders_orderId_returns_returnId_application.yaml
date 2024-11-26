@@ -11,10 +11,16 @@ get:
     - inventory-and-order-processing:read-only
   operationId: getReturnApplication
   summary: Получение заявления на возврат
-  description: |
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getReturnApplication.md) %}
+
+
     Загружает заявление покупателя на возврат товара.
 
+
     |**⚙️ Лимит:** 10 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

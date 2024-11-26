@@ -22,6 +22,9 @@ get:
   operationId: getCampaigns
   summary: Список магазинов пользователя
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getCampaigns.md) %}
+
+
     **Для Api-Key-токена:** возвращает список магазинов в кабинете, для которого
     выдан токен. Нельзя получить список только подагентских магазинов.
 

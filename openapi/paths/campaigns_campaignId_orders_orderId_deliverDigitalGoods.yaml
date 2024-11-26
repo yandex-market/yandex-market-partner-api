@@ -8,6 +8,10 @@ post:
   operationId: provideOrderDigitalCodes
   summary: Передача ключей цифровых товаров
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/provideOrderDigitalCodes.md) %}
+
+
     Передает ключи цифровых товаров, которые покупатель заказал и оплатил. После
     выполнения запроса Маркет отправит ему письмо с ключами и инструкциями по
     активации, а также переведет заказ в финальный статус `DELIVERED`.

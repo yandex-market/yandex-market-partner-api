@@ -12,6 +12,10 @@ get:
   operationId: getCampaignRegion
   summary: Регион магазина
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getCampaignRegion.md)
+    %}
+
+
     {% note warning "Этот метод устарел" %}
 
 

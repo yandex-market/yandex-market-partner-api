@@ -22,6 +22,10 @@ get:
   operationId: getCampaignsByLogin
   summary: Магазины, доступные логину
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getCampaignsByLogin.md) %}
+
+
     {% note warning "Этот метод устарел" %}
 
 
