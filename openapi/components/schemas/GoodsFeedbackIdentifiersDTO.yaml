@@ -1,7 +1,6 @@
 description: Идентификаторы, которые связаны с отзывом.
 type: object
 required:
-  - orderId
   - modelId
 properties:
   orderId:
