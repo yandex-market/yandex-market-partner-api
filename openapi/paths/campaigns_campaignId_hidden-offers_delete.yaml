@@ -10,16 +10,25 @@ post:
     - offers-and-cards-management
   operationId: deleteHiddenOffers
   summary: Возобновление показа товаров
-  description: |
+  description: >
+    {% include notitle [access](../../_auto/method_scopes/deleteHiddenOffers.md)
+    %}
+
+
     Возобновляет показ скрытых вами товаров магазина на Маркете.
+
 
     {% note info "Данные в каталоге обновляются не мгновенно" %}
 
+
     Это занимает до нескольких минут.
+
 
     {% endnote %}
 
+
     |**⚙️ Лимит:** 5000 товаров в минуту|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

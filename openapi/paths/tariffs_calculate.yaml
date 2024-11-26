@@ -14,6 +14,10 @@ post:
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >
+    {% include notitle [access](../../_auto/method_scopes/calculateTariffs.md)
+    %}
+
+
     Рассчитывает стоимость услуг Маркета для товаров с заданными параметрами.
     Порядок товаров в запросе и ответе сохраняется, чтобы определить,
 

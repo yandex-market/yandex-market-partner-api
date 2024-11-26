@@ -12,6 +12,8 @@ post:
   operationId: getChats
   summary: Получение доступных чатов
   description: |
+    {% include notitle [access](../../_auto/method_scopes/getChats.md) %}
+
     Возвращает ваши чаты с покупателями.
 
     |**⚙️ Лимит:** 10000 запросов в час|

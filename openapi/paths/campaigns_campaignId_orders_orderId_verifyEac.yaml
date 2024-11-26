@@ -8,6 +8,9 @@ put:
   operationId: verifyOrderEac
   summary: Передача кода подтверждения
   description: >
+    {% include notitle [access](../../_auto/method_scopes/verifyOrderEac.md) %}
+
+
     Отправляет Маркету код подтверждения для его проверки.
 
 

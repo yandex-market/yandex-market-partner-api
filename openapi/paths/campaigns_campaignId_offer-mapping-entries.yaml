@@ -13,6 +13,10 @@ get:
   operationId: getOfferMappingEntries
   summary: Список товаров в каталоге
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getOfferMappingEntries.md) %}
+
+
     {% note warning "Этот метод устарел" %}
 
 

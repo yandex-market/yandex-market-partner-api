@@ -11,6 +11,8 @@ post:
   operationId: createChat
   summary: Создание нового чата с покупателем
   description: |
+    {% include notitle [access](../../_auto/method_scopes/createChat.md) %}
+
     Создает новый чат с покупателем.
 
     |**⚙️ Лимит:** 1000 запросов в час|

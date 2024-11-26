@@ -13,6 +13,9 @@ get:
   operationId: getFeeds
   summary: Список прайс-листов магазина
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getFeeds.md) %}
+
+
     {% note warning "Этот метод устарел" %}
 
 

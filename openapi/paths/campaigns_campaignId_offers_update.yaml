@@ -11,6 +11,10 @@ post:
   operationId: updateCampaignOffers
   summary: Изменение условий продажи товаров в магазине
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/updateCampaignOffers.md) %}
+
+
     Изменяет параметры продажи товаров в конкретном магазине: доступность
     товара, условия доставки и самовывоза, применяемую ставку НДС.
 

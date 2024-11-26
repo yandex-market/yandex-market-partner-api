@@ -13,6 +13,9 @@ get:
   operationId: getFeed
   summary: Информация о прайс-листе
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getFeed.md) %}
+
+
     {% note warning "Этот метод устарел" %}
 
 

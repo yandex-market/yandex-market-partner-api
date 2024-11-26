@@ -13,6 +13,10 @@ post:
   operationId: getCategoriesMaxSaleQuantum
   summary: Лимит на установку кванта продажи и минимального количества товаров в заказе
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getCategoriesMaxSaleQuantum.md) %}
+
+
     Возвращает лимит на установку [кванта](*quantum) и минимального количества
     товаров в заказе, которые вы можете задать для товаров указанных категорий.
 

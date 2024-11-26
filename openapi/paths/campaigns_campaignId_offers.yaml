@@ -13,6 +13,9 @@ get:
   operationId: getOffers
   summary: Предложения магазина
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getOffers.md) %}
+
+
     {% note warning "Этот метод устарел" %}
 
 
@@ -116,6 +119,10 @@ post:
   operationId: getCampaignOffers
   summary: Информация о товарах, которые размещены в заданном магазине
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getCampaignOffers.md)
+    %}
+
+
     Возвращает список товаров, которые размещены в заданном магазине. Для
     каждого товара указываются параметры размещения.
 

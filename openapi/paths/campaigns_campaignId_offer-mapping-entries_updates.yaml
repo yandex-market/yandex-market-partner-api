@@ -11,6 +11,10 @@ post:
   operationId: updateOfferMappingEntries
   summary: Добавление и редактирование товаров в каталоге
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/updateOfferMappingEntries.md) %}
+
+
     {% note warning "Этот метод устарел" %}
 
 

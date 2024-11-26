@@ -14,6 +14,10 @@ post:
   operationId: getQualityRatings
   summary: Индекс качества магазинов
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getQualityRatings.md)
+    %}
+
+
     Возвращает значение индекса качества магазинов и его составляющие.
 
 

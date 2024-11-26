@@ -8,6 +8,10 @@ post:
   operationId: setOrderDeliveryTrackCode
   summary: Передача трек‑номера посылки
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/setOrderDeliveryTrackCode.md) %}
+
+
     Передает Маркету трек‑номер, по которому покупатель может отследить посылку
     со своим заказом через службу доставки. Если покупатели смогут узнать, на
     каком этапе доставки находятся их заказы, доверие покупателей к вашему

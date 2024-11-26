@@ -8,6 +8,8 @@ put:
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
   description: |
+    {% include notitle [access](../../_auto/method_scopes/updateOutlet.md) %}
+
     Изменяет информацию о точке продаж магазина на Маркете.
 
     |**⚙️ Лимит:** 100 000 запросов в час|
@@ -89,6 +91,8 @@ get:
   operationId: getOutlet
   summary: Информация об одной точке продаж
   description: |
+    {% include notitle [access](../../_auto/method_scopes/getOutlet.md) %}
+
     Возвращает информацию о точках продаж магазина.
 
     |**⚙️ Лимит:** 100 000 запросов в час|
@@ -125,6 +129,8 @@ delete:
   operationId: deleteOutlet
   summary: Удаление точки продаж
   description: |
+    {% include notitle [access](../../_auto/method_scopes/deleteOutlet.md) %}
+
     Удаляет точку продаж магазина на Маркете.
 
     |**⚙️ Лимит:** 100 000 запросов в час|

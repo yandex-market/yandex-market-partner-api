@@ -13,6 +13,10 @@ post:
   operationId: getQualityRatingDetails
   summary: Заказы, которые повлияли на индекс качества
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getQualityRatingDetails.md) %}
+
+
     Возвращает список заказов, которые повлияли на индекс качества магазина.
     Чтобы узнать значение индекса качества, выполните запрос [POST
     businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).

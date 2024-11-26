@@ -8,6 +8,10 @@ put:
   operationId: setOrderDeliveryDate
   summary: Изменение даты доставки заказа
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/setOrderDeliveryDate.md) %}
+
+
     Метод изменяет дату доставки заказа в статусе `PROCESSING` или `DELIVERY`.
     Для заказов с другими статусами дату доставки изменить нельзя.
 

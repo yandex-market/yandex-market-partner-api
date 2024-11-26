@@ -12,16 +12,27 @@ post:
     - offers-and-cards-management:read-only
   operationId: getOfferCardsContentStatus
   summary: Получение информации о заполненности карточек магазина
-  description: |
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getOfferCardsContentStatus.md) %}
+
+
     Возвращает сведения о состоянии контента для заданных товаров:
 
+
     * создана ли карточка товара и в каком она статусе;
+
     * заполненность карточки в процентах;
+
     * переданные характеристики товаров;
+
     * есть ли ошибки или предупреждения, связанные с контентом;
+
     * рекомендации по заполнению карточки.
 
+
     |**⚙️ Лимит:** 600 запросов в минуту|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

@@ -8,6 +8,8 @@ post:
   operationId: createOutlet
   summary: Создание точки продаж
   description: |
+    {% include notitle [access](../../_auto/method_scopes/createOutlet.md) %}
+
     Создает точку продаж магазина на Маркете.
 
     |**⚙️ Лимит:** 100 000 запросов в час|
@@ -77,6 +79,8 @@ get:
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
   description: |
+    {% include notitle [access](../../_auto/method_scopes/getOutlets.md) %}
+
     Возвращает список точек продаж магазина.
 
     |**⚙️ Лимит:** 100 000 запросов в час|

@@ -11,6 +11,8 @@ post:
   operationId: sendFileToChat
   summary: Отправка файла в чат
   description: |
+    {% include notitle [access](../../_auto/method_scopes/sendFileToChat.md) %}
+
     Отправляет файл в чат с покупателем.
 
     |**⚙️ Лимит:** 1000 запросов в час|

@@ -10,10 +10,16 @@ post:
     - communication
   operationId: sendMessageToChat
   summary: Отправка сообщения в чат
-  description: |
+  description: >
+    {% include notitle [access](../../_auto/method_scopes/sendMessageToChat.md)
+    %}
+
+
     Отправляет сообщение в чат с покупателем.
 
+
     |**⚙️ Лимит:** 1000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

@@ -11,6 +11,10 @@ post:
   operationId: updateGoodsFeedbackComment
   summary: Добавление нового или изменение созданного комментария
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/updateGoodsFeedbackComment.md) %}
+
+
     Добавляет новый комментарий магазина или изменяет комментарий, который
     магазин оставлял ранее.
 

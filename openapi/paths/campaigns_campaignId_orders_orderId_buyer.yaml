@@ -10,6 +10,10 @@ get:
   operationId: getOrderBuyerInfo
   summary: Информация о покупателе — физическом лице
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getOrderBuyerInfo.md)
+    %}
+
+
     Возвращает информацию о покупателе по идентификатору заказа.
 
 

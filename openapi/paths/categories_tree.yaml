@@ -21,10 +21,16 @@ post:
     - communication
   operationId: getCategoriesTree
   summary: Дерево категорий
-  description: |
+  description: >
+    {% include notitle [access](../../_auto/method_scopes/getCategoriesTree.md)
+    %}
+
+
     Возвращает дерево категорий Маркета.
 
+
     |**⚙️ Лимит:** 1 000 запросов в час|
+
     |-|
   requestBody:
     required: false

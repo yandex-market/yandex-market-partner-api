@@ -10,10 +10,16 @@ post:
     - communication
   operationId: deleteGoodsFeedbackComment
   summary: Удаление комментария к отзыву
-  description: |
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/deleteGoodsFeedbackComment.md) %}
+
+
     Удаляет комментарий магазина.
 
+
     |**⚙️ Лимит:** 1 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

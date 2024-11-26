@@ -11,6 +11,10 @@ post:
   operationId: deleteCampaignOffers
   summary: Удаление товаров из ассортимента магазина
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/deleteCampaignOffers.md) %}
+
+
     Удаляет заданные товары из заданного магазина.
 
 

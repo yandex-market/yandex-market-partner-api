@@ -10,6 +10,9 @@ get:
   operationId: getModel
   summary: Информация об одной модели
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getModel.md) %}
+
+
     Возвращает информацию о модели товара.
 
 

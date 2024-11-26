@@ -10,6 +10,9 @@ post:
   operationId: getModels
   summary: Информация о нескольких моделях
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getModels.md) %}
+
+
     Возвращает информацию о моделях товаров.
 
 
@@ -75,6 +78,9 @@ get:
   operationId: searchModels
   summary: Поиск модели товара
   description: >
+    {% include notitle [access](../../_auto/method_scopes/searchModels.md) %}
+
+
     Возвращает информацию о моделях, удовлетворяющих заданным в запросе условиям
     поиска.
 

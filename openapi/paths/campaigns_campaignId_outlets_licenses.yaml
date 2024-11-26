@@ -8,10 +8,16 @@ get:
     - settings-management
   operationId: getOutletLicenses
   summary: Информация о лицензиях для точек продаж
-  description: |
+  description: >
+    {% include notitle [access](../../_auto/method_scopes/getOutletLicenses.md)
+    %}
+
+
     Возвращает информацию о лицензиях для точек продаж.
 
+
     |**⚙️ Лимит:** 100 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
@@ -55,10 +61,16 @@ delete:
     - settings-management
   operationId: deleteOutletLicenses
   summary: Удаление лицензий для точек продаж
-  description: |
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/deleteOutletLicenses.md) %}
+
+
     Удаляет информацию о лицензиях для точек продаж.
 
+
     |**⚙️ Лимит:** 100 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
@@ -98,6 +110,10 @@ post:
   operationId: updateOutletLicenses
   summary: Создание и изменение лицензий для точек продаж
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/updateOutletLicenses.md) %}
+
+
     Передает информацию о новых и существующих лицензиях для точек продаж.
     Поддерживаются только лицензии на розничную продажу алкоголя.
 

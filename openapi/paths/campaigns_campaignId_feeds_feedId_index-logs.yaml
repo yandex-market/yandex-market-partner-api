@@ -13,6 +13,10 @@ get:
   operationId: getFeedIndexLogs
   summary: Отчет по индексации прайс-листа
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getFeedIndexLogs.md)
+    %}
+
+
     {% note warning "Этот метод устарел" %}
 
 
