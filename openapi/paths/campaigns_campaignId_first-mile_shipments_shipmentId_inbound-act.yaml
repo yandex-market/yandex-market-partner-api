@@ -8,6 +8,10 @@ get:
   operationId: downloadShipmentInboundAct
   summary: Получение фактического акта приема-передачи
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/downloadShipmentInboundAct.md) %}
+
+
     Возвращает фактический акт приема-передачи для заданной отгрузки.
 
 

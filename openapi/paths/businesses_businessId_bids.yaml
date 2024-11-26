@@ -12,6 +12,10 @@ put:
   operationId: putBidsForBusiness
   summary: Включение буста продаж и установка ставок
   description: >
+    {% include notitle [access](../../_auto/method_scopes/putBidsForBusiness.md)
+    %}
+
+
     Запускает буст продаж — создает и включает кампанию, добавляет в нее товары
     и назначает на них ставки.
 

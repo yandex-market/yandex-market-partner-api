@@ -15,6 +15,10 @@ post:
   operationId: getBidsRecommendations
   summary: Рекомендованные ставки для заданных товаров
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getBidsRecommendations.md) %}
+
+
     Возвращает рекомендованные ставки для заданных товаров — такие ставки
     обеспечивают вашим предложениям определенную долю показов и дополнительные
     инструменты продвижения.

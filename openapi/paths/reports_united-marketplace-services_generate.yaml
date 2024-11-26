@@ -11,6 +11,11 @@ post:
   operationId: generateUnitedMarketplaceServicesReport
   summary: Отчет по стоимости услуг
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateUnitedMarketplaceServicesReport.md)
+    %}
+
+
     Запускает генерацию **отчета по стоимости услуг** за заданный период. [Что
     это за отчет](https://yandex.ru/support/marketplace/analytics/reports.html)
 

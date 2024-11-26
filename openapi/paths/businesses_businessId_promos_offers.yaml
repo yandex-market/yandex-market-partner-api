@@ -15,6 +15,8 @@ post:
   operationId: getPromoOffers
   summary: Получение списка товаров, которые участвуют или могут участвовать в акции
   description: |
+    {% include notitle [access](../../_auto/method_scopes/getPromoOffers.md) %}
+
     Возвращает список товаров, которые участвуют или могут участвовать в акции.
 
     {% note warning "Ограничение для параметра `limit`" %}

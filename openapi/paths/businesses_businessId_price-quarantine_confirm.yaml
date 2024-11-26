@@ -11,6 +11,10 @@ post:
   operationId: confirmBusinessPrices
   summary: Удаление товара из карантина по цене в кабинете
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/confirmBusinessPrices.md) %}
+
+
     Подтверждает основную цену на товары, которые попали в карантин, и удаляет
     их из карантина.
 

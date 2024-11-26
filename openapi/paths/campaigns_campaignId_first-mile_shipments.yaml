@@ -10,6 +10,8 @@ put:
   operationId: searchShipments
   summary: Получение информации о нескольких отгрузках
   description: |
+    {% include notitle [access](../../_auto/method_scopes/searchShipments.md) %}
+
     Возвращает информацию об отгрузках по заданным параметрам:
 
     * дате;

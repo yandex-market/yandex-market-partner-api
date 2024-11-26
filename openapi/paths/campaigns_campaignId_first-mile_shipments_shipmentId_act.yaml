@@ -8,6 +8,10 @@ get:
   operationId: downloadShipmentAct
   summary: Получение акта приема-передачи
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/downloadShipmentAct.md) %}
+
+
     {% note warning "Экспресс‑доставка" %}
 
 

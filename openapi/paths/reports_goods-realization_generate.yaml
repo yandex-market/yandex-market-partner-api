@@ -10,6 +10,10 @@ post:
   operationId: generateGoodsRealizationReport
   summary: Отчет по реализации
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateGoodsRealizationReport.md) %}
+
+
     Запускает генерацию **отчета по реализации** за заданный период. [Что это за
     отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#sales-report)
 

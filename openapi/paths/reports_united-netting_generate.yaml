@@ -11,6 +11,10 @@ post:
   operationId: generateUnitedNettingReport
   summary: Отчет по платежам
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateUnitedNettingReport.md) %}
+
+
     Запускает генерацию **отчета по платежам** за заданный период. [Что это за
     отчет](https://yandex.ru/support/marketplace/analytics/transactions.html)
 

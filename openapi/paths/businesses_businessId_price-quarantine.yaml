@@ -13,6 +13,10 @@ post:
   operationId: getBusinessQuarantineOffers
   summary: Список товаров, находящихся в карантине по цене в кабинете
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getBusinessQuarantineOffers.md) %}
+
+
     Возвращает список товаров, которые находятся в карантине по **основной
     цене**. Основная цена задается в каталоге и действует во всех магазинах
     кабинета.

@@ -11,6 +11,10 @@ post:
   operationId: generateGoodsFeedbackReport
   summary: Отчет по отзывам о товарах
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateGoodsFeedbackReport.md) %}
+
+
     Запускает генерацию **отчета по отзывам о товарах**. [Что это за
     отчет](https://yandex.ru/support2/marketplace/ru/marketing/plus-reviews#stat)
 

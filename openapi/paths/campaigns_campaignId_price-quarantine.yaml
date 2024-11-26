@@ -13,6 +13,10 @@ post:
   operationId: getCampaignQuarantineOffers
   summary: Список товаров, находящихся в карантине по цене в магазине
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getCampaignQuarantineOffers.md) %}
+
+
     Возвращает список товаров, которые находятся в карантине по цене,
     установленной в заданном магазине.
 

@@ -8,6 +8,9 @@ post:
   operationId: confirmShipment
   summary: Подтверждение отгрузки
   description: >
+    {% include notitle [access](../../_auto/method_scopes/confirmShipment.md) %}
+
+
     Подтверждает отгрузку товаров в сортировочный центр или пункт приема
     заказов.
 

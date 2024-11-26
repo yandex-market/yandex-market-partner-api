@@ -13,6 +13,9 @@ get:
   operationId: getPrices
   summary: Список цен
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getPrices.md) %}
+
+
     {% note warning "Этот метод устарел" %}
 
 
@@ -91,6 +94,10 @@ post:
   operationId: getPricesByOfferIds
   summary: Просмотр цен на указанные товары в магазине
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getPricesByOfferIds.md) %}
+
+
     Возвращает список цен на указанные товары в магазине.
 
 

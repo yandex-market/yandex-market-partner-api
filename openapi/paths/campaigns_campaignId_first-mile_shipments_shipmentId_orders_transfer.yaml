@@ -8,6 +8,10 @@ post:
   operationId: transferOrdersFromShipment
   summary: Перенос заказов в следующую отгрузку
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/transferOrdersFromShipment.md) %}
+
+
     Переносит указанные заказы из указанной отгрузки в следующую отгрузку. [Что
     такое
     отгрузка?](https://yandex.ru/support/marketplace/orders/fbs/process.html#ship)

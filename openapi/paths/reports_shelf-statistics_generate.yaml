@@ -12,6 +12,10 @@ post:
   operationId: generateShelfsStatisticsReport
   summary: Отчет по полкам
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateShelfsStatisticsReport.md) %}
+
+
     Запускает генерацию **сводного отчета по полкам** — рекламным блокам с
     баннером или видео и набором товаров. Подробнее о них читайте [в Справке
     Маркета для

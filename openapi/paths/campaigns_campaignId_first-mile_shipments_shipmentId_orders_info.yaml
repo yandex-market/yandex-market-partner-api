@@ -10,6 +10,10 @@ get:
   operationId: getShipmentOrdersInfo
   summary: Получение информации о возможности печати ярлыков (FBS)
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getShipmentOrdersInfo.md) %}
+
+
     Возвращает информацию о возможности печати ярлыков-наклеек для заказов в
     отгрузке.
 

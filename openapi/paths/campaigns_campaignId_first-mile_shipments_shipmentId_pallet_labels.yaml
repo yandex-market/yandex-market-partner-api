@@ -8,6 +8,10 @@ get:
   operationId: downloadShipmentPalletLabels
   summary: Ярлыки для доверительной приемки (FBS)
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/downloadShipmentPalletLabels.md) %}
+
+
     PDF-файл с ярлыками на каждый короб или палету в отгрузке для доверительной
     приемки. Подробнее про доверительную приемку написано в [Справке
     Маркета](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).

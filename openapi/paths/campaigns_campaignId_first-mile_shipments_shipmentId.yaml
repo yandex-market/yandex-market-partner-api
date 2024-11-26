@@ -10,6 +10,8 @@ get:
   operationId: getShipment
   summary: Получение информации об одной отгрузке
   description: |
+    {% include notitle [access](../../_auto/method_scopes/getShipment.md) %}
+
     Возвращает информацию об отгрузке по ее идентификатору.
     |**⚙️ Лимит:** 100 запросов в час|
     |-|

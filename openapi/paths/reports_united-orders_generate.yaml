@@ -13,6 +13,10 @@ post:
   operationId: generateUnitedOrdersReport
   summary: Отчет по заказам
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateUnitedOrdersReport.md) %}
+
+
     Запускает генерацию **отчета по заказам** за заданный период. [Что это за
     отчет](https://yandex.ru/support/marketplace/analytics/orders.html)
 

@@ -11,6 +11,10 @@ post:
   operationId: generateStocksOnWarehousesReport
   summary: Отчет по остаткам на складах
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateStocksOnWarehousesReport.md) %}
+
+
     Запускает генерацию **отчета по остаткам на складах**. Отчет содержит
     данные:
 

@@ -11,6 +11,10 @@ post:
   operationId: updateBusinessPrices
   summary: Установка цен на товары во всех магазинах
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/updateBusinessPrices.md) %}
+
+
     Устанавливает [базовые цены](*default-price). Чтобы получить рекомендации
     Маркета, касающиеся цен, выполните запрос [POST
     businesses/{businessId}/offers/recommendations](../../reference/business-assortment/getOfferRecommendations.md).

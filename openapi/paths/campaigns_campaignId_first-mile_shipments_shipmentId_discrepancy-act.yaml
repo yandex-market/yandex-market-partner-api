@@ -7,9 +7,15 @@ get:
     - inventory-and-order-processing
   operationId: downloadShipmentDiscrepancyAct
   summary: Получение акта расхождений
-  description: |
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/downloadShipmentDiscrepancyAct.md) %}
+
+
     Возвращает акт расхождений для заданной отгрузки.
+
     |**⚙️ Лимит:** 200 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

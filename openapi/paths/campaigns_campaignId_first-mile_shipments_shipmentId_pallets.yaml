@@ -8,6 +8,10 @@ put:
   operationId: setShipmentPalletsCount
   summary: Передача количества упаковок в отгрузке
   description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/setShipmentPalletsCount.md) %}
+
+
     Передает Маркету количество коробов или палет в отгрузке для доверительной
     приемки. Подробнее про доверительную приемку написано в [Справке
     Маркета](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).

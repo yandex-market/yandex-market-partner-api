@@ -22,6 +22,9 @@ get:
   operationId: getReportInfo
   summary: Получение заданного отчета
   description: >
+    {% include notitle [access](../../_auto/method_scopes/getReportInfo.md) %}
+
+
     Возвращает статус генерации заданного отчета и, если отчет готов, ссылку для
     скачивания.
 
