@@ -23,8 +23,12 @@ properties:
     minimum: 0
     maximum: 100
   benefits:
-    description: |
+    description: >
       Список доступных субсидий.
+
+
+      Чтобы получить необходимый инструмент продвижения, установите ставку,
+      которая будет рекомендована для этого инструмента или выше.
     type: array
     nullable: true
     minItems: 1
