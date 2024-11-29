@@ -10,11 +10,5 @@ properties:
     minimum: 0
     exclusiveMinimum: true
   currencyId:
-    description: >
-      Валюта.
-
-
-      При передаче валюты указывайте `RUR`(российский рубль), если в запросе
-      есть `BasePriceDTO`, `UpdatePriceWithDiscountDTO` или
-      `GetPriceWithDiscountDTO`.
+    description: Валюта.
     $ref: ./CurrencyType.yaml

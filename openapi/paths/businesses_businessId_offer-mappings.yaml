@@ -37,6 +37,7 @@ post:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/CatalogLanguage.yaml
   requestBody:
     required: false
     content:

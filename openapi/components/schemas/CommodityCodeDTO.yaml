@@ -1,0 +1,12 @@
+description: Товарный код.
+type: object
+required:
+  - code
+  - type
+properties:
+  code:
+    description: Товарный код.
+    type: string
+  type:
+    description: Тип товарного кода.
+    $ref: ./CommodityCodeType.yaml

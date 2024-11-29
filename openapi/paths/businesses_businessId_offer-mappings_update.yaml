@@ -84,6 +84,7 @@ post:
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/CatalogLanguage.yaml
   requestBody:
     required: true
     content:

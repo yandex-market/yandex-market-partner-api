@@ -205,13 +205,30 @@ properties:
     $ref: ./TimePeriodDTO.yaml
   customsCommodityCode:
     description: >
+      {% note warning "Этот параметр устарел" %}
+
+
+      Вместо него используйте `commodityCodes`.
+
+
+      {% endnote %}
+
+
       Код товара в единой Товарной номенклатуре внешнеэкономической деятельности
       (ТН ВЭД) — 10 или 14 цифр без пробелов.
 
 
       Обязательно укажите, если он есть.
+    deprecated: true
     example: 8517610008
     type: string
+  commodityCodes:
+    description: |
+      Товарные коды.
+    type: array
+    nullable: true
+    items:
+      $ref: ./CommodityCodeDTO.yaml
   certificates:
     description: >
       Номера документов на товар: сертификата, декларации соответствия и т. п.

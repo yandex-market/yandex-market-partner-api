@@ -1,0 +1,8 @@
+description: >-
+  Язык, на котором принимаются и возвращаются значения в параметрах `name` и
+  `description`.
+name: language
+in: query
+required: false
+schema:
+  $ref: ../schemas/CatalogLanguageType.yaml

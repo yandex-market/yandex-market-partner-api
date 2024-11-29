@@ -16,11 +16,21 @@ properties:
     format: int32
   url:
     description: >
+      {% note warning "Этот параметр устарел" %}
+
+
+      Не используйте его.
+
+
+      {% endnote %}
+
+
       URL файла с ярлыками‑наклейками на все коробки в заказе.
 
 
       Соответствует URL, по которому выполняется запрос [GET
       campaigns/{campaignId}/orders/{orderId}/delivery/labels](../../reference/orders/generateOrderLabels.md).
+    deprecated: true
     type: string
   parcelBoxLabels:
     description: Информация на ярлыке.
