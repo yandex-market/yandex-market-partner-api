@@ -1,0 +1,16 @@
+type: object
+description: |
+  Информация о медиафайле товара.
+properties:
+  url:
+    description: |
+      Ссылка на медиафайл.
+    type: string
+  title:
+    description: |
+      Название медиафайла.
+    type: string
+  uploadState:
+    description: |
+      Состояние загрузки медиафайла.
+    $ref: ./MediaFileUploadStateType.yaml

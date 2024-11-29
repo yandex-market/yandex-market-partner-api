@@ -1,0 +1,11 @@
+description: |
+  Состояние загрузки медиафайла:
+
+  * `UPLOADING` — загружается.
+  * `UPLOADED` — успешно загружен.
+  * `FAILED` — при загрузке произошла ошибка. Повторите попытку позже.
+type: string
+enum:
+  - UPLOADING
+  - UPLOADED
+  - FAILED

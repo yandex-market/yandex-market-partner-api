@@ -1,0 +1,25 @@
+description: |
+  Информация о медиафайлах товара.
+type: object
+properties:
+  videos:
+    description: |
+      Видеофайлы товара.
+    type: array
+    nullable: true
+    items:
+      $ref: ./OfferMediaFileDTO.yaml
+  pictures:
+    description: |
+      Изображения товара.
+    type: array
+    nullable: true
+    items:
+      $ref: ./OfferMediaFileDTO.yaml
+  manuals:
+    description: |
+      Руководства по использованию товара.
+    type: array
+    nullable: true
+    items:
+      $ref: ./OfferMediaFileDTO.yaml

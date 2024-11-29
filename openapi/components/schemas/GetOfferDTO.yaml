@@ -46,6 +46,8 @@ allOf:
         nullable: true
         items:
           $ref: ./OfferSellingProgramDTO.yaml
+      mediaFiles:
+        $ref: ./OfferMediaFilesDTO.yaml
       archived:
         description: |
           Товар помещен в архив.
