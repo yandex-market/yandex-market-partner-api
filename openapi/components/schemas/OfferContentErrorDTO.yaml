@@ -1,14 +1,14 @@
-description: Текст ошибки.
+description: Текст ошибки или предупреждения.
 type: object
 properties:
   type:
     $ref: ./OfferContentErrorType.yaml
   parameterId:
-    description: Идентификатор характеристики, с которой связана ошибка.
+    description: Идентификатор характеристики, с которой связана ошибка или предупреждение.
     type: integer
     format: int64
   message:
-    description: Текст ошибки.
+    description: Текст ошибки или предупреждения.
     type: string
 required:
   - type
