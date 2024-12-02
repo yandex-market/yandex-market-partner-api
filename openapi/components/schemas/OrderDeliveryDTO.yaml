@@ -1,5 +1,11 @@
 description: Информация о доставке.
 type: object
+required:
+  - type
+  - serviceName
+  - deliveryPartnerType
+  - dates
+  - deliveryServiceId
 properties:
   id:
     description: >

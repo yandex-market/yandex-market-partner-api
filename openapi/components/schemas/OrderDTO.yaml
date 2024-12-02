@@ -1,7 +1,21 @@
 description: Заказ.
 type: object
 required:
+  - id
+  - status
+  - substatus
+  - creationDate
+  - currency
+  - itemsTotal
+  - deliveryTotal
+  - buyerItemsTotalBeforeDiscount
+  - paymentType
+  - paymentMethod
+  - fake
   - items
+  - delivery
+  - buyer
+  - taxSystem
 properties:
   id:
     description: Идентификатор заказа.

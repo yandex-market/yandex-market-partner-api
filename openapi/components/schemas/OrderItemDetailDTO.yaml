@@ -1,5 +1,9 @@
 description: Детали по товару в заказе.
 type: object
+required:
+  - itemCount
+  - itemStatus
+  - updateDate
 properties:
   itemCount:
     description: Количество единиц товара.

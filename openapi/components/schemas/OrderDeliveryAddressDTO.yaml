@@ -9,8 +9,6 @@ properties:
   country:
     description: |
       Страна.
-
-      Обязательный параметр.
     type: string
   postcode:
     description: |
@@ -21,8 +19,6 @@ properties:
   city:
     description: |
       Город или населенный пункт.
-
-      Обязательный параметр.
     type: string
   district:
     description: Район.
@@ -33,14 +29,10 @@ properties:
   street:
     description: |
       Улица.
-
-      Обязательный параметр.
     type: string
   house:
     description: |
       Дом или владение.
-
-      Обязательный параметр.
     type: string
   block:
     description: Корпус или строение.
@@ -60,14 +52,10 @@ properties:
   phone:
     description: |
       Телефон получателя заказа.
-
-      Обязательный параметр.
     type: string
   recipient:
     description: |
       Фамилия, имя и отчество получателя заказа.
-
-      Обязательный параметр.
     type: string
   gps:
     description: GPS-координаты.

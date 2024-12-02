@@ -1,5 +1,7 @@
 description: Диапазон дат доставки.
 type: object
+required:
+  - fromDate
 properties:
   fromDate:
     description: |

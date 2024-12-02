@@ -1,5 +1,8 @@
 description: Информация о грузоместе.
 type: object
+required:
+  - id
+  - fulfilmentId
 properties:
   id:
     description: Идентификатор грузоместа.

@@ -1,5 +1,14 @@
 description: Список товаров в заказе.
 type: object
+required:
+  - id
+  - offerId
+  - offerName
+  - price
+  - buyerPrice
+  - buyerPriceBeforeDiscount
+  - count
+  - vat
 properties:
   id:
     description: |

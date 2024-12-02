@@ -1,5 +1,7 @@
 description: Информация о трек-номере посылки (DBS).
 type: object
+required:
+  - deliveryServiceId
 properties:
   trackCode:
     description: Трек‑номер посылки.

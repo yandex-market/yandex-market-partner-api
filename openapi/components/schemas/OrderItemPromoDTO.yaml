@@ -4,6 +4,7 @@ description: >-
 type: object
 required:
   - type
+  - subsidy
 properties:
   type:
     description: |

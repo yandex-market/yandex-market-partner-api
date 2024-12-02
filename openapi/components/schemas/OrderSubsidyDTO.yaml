@@ -5,6 +5,9 @@ description: |
   * по баллам Плюса;
   * по доставке (DBS).
 type: object
+required:
+  - type
+  - amount
 properties:
   type:
     $ref: ./OrderSubsidyType.yaml

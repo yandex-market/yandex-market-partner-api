@@ -4,6 +4,9 @@ description: |
   * по промокодам, купонам и акциям;
   * по баллам Плюса.
 type: object
+required:
+  - type
+  - amount
 properties:
   type:
     $ref: ./OrderItemSubsidyType.yaml
