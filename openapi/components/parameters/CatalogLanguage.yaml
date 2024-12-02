@@ -1,6 +1,9 @@
-description: >-
+description: >
   Язык, на котором принимаются и возвращаются значения в параметрах `name` и
   `description`.
+
+
+  Значение по умолчанию: `RU`.
 name: language
 in: query
 required: false
