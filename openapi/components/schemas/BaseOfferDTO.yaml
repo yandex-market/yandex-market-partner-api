@@ -208,7 +208,7 @@ properties:
       {% note warning "Этот параметр устарел" %}
 
 
-      Вместо него используйте `commodityCodes`.
+      Вместо него используйте `commodityCodes` с типом `CUSTOMS_COMMODITY_CODE`.
 
 
       {% endnote %}
