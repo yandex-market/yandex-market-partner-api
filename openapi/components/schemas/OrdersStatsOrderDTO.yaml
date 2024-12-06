@@ -4,6 +4,7 @@ required:
   - items
   - payments
   - commissions
+  - currency
 properties:
   id:
     description: Идентификатор заказа.
