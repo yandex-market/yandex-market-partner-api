@@ -108,7 +108,7 @@ post:
     отдельных магазинах.
 
 
-    Для просмотра базовых цен используйте [POST
+    Для просмотра цен, которые действуют во всех магазинах, используйте [POST
     businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
 
 

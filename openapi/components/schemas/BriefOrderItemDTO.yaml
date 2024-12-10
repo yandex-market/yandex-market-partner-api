@@ -9,7 +9,7 @@ properties:
     type: integer
     format: int64
   vat:
-    description: Ставка налога на добавленную стоимость (НДС) на услугу доставки заказа.
+    description: Налог на добавленную стоимость (НДС) на услугу доставки заказа.
     $ref: ./OrderVatType.yaml
   count:
     description: Количество единиц товара.

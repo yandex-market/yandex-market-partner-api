@@ -4,10 +4,10 @@ allOf:
   - $ref: ./BaseCampaignOfferDTO.yaml
   - properties:
       basicPrice:
-        description: Основная цена на товар.
+        description: Цена на товар для всех магазинов.
         $ref: ./GetPriceWithDiscountDTO.yaml
       campaignPrice:
-        description: Цена, установленная в магазине.
+        description: Цена, установленная в отдельном магазине.
         $ref: ./GetPriceWithVatDTO.yaml
       status:
         description: |
