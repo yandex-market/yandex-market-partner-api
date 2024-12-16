@@ -3,7 +3,7 @@ description: |
 
   * `false` — настоящий заказ покупателя.
 
-  * `true` — [тестовый](../../pushapi/concepts/sandbox.md) заказ Маркета.
+  * `true` — [тестовый](../../concepts/sandbox.md) заказ Маркета.
 name: fake
 in: query
 required: false

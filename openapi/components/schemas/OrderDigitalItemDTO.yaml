@@ -12,9 +12,7 @@ properties:
 
       Он приходит в ответе на запрос [GET
       campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
-      и в запросе Маркета [POST
-      order/accept](../../pushapi/reference/orderAccept.md) — параметр `id` в
-      `items`.
+      — параметр `id` в `items`.
     type: integer
     format: int64
   code:

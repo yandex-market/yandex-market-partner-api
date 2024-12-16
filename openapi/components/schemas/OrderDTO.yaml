@@ -127,7 +127,7 @@ properties:
 
       * `false` — настоящий заказ покупателя.
 
-      * `true` — [тестовый](../../pushapi/concepts/sandbox.md) заказ Маркета.
+      * `true` — [тестовый](../../concepts/sandbox.md) заказ Маркета.
     type: boolean
   items:
     description: Список товаров в заказе.

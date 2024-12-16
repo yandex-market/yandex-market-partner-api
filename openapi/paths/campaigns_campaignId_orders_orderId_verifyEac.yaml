@@ -26,8 +26,7 @@ put:
     из кабинета или приложения.
 
 
-    Если у магазина настроена работа с кодами подтверждения, в запросах [POST
-    order/status](../../pushapi/reference/postOrderStatus.md), [PUT
+    Если у магазина настроена работа с кодами подтверждения, в запросах [PUT
     campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md),
     [GET campaigns/{campaignId}/orders](../../reference/orders/getOrders.md),
     [GET

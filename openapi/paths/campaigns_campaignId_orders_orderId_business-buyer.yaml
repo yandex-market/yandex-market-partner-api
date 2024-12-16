@@ -35,11 +35,6 @@ post:
     `DELIVERY`, `PICKUP` или `DELIVERED`.
 
 
-    Если у вас настроена работа с push-компонентом, Маркет отправит уведомление
-    о смене статуса заказа с помощью запроса [POST
-    order/status](../../pushapi/reference/postOrderStatus.md).
-
-
     |**⚙️ Лимит:** 3 000 запросов в час|
 
     |-|

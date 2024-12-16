@@ -9,11 +9,21 @@ required:
 properties:
   id:
     description: >
+      {% note warning "Этот параметр устарел" %}
+
+
+      Не используйте его.
+
+
+      {% endnote %}
+
+
       Идентификатор доставки, присвоенный магазином.
 
 
       Указывается, только если магазин передал данный идентификатор в ответе на
-      запрос методом [POST cart](../../pushapi/reference/cart.md).
+      запрос методом `POST cart`.
+    deprecated: true
     type: string
   type:
     description: |
