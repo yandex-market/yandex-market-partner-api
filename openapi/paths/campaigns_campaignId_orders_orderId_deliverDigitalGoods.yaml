@@ -14,7 +14,8 @@ post:
 
     Передает ключи цифровых товаров, которые покупатель заказал и оплатил. После
     выполнения запроса Маркет отправит ему письмо с ключами и инструкциями по
-    активации, а также переведет заказ в финальный статус `DELIVERED`.
+    активации. Если письмо будет доставлено, Маркет переведет заказ в финальный
+    статус `DELIVERED`.
 
 
     Ключ нужно передать в течение 30 минут после перехода заказа в статус
@@ -43,7 +44,25 @@ post:
           $ref: ../components/schemas/ProvideOrderDigitalCodesRequest.yaml
   responses:
     '200':
-      description: Пустой ответ.
+      description: >
+        Пустой ответ.
+
+
+        {% note warning "Ответ 200 сам по себе не значит, что ключи переданы
+        покупателю" %}
+
+
+        Если письмо с ключами удалось доставить, Маркет переведет заказ в
+        финальный статус `DELIVERED`.
+
+
+        Статус заказа можно узнать с помощью метода [GET
+        campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
+        или [GET
+        campaigns/{campaignId}/orders](../../reference/orders/getOrders.md).
+
+
+        {% endnote %}
       content:
         application/json:
           schema:
