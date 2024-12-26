@@ -1,4 +1,4 @@
-description: "Возврат заказа.\n\nПараметров `logisticPickupPoint`, `shipmentRecipientType` и\_`shipmentStatus` может не быть в случае возврата:\n  * С опцией **Быстрый возврат денег за дешевый брак**, когда товар остается у покупателя (`fastReturn=true`).\n  * По заказу для бизнеса, если:\n    * статус возврата `STARTED_BY_USER` или `WAITING_FOR_DECISION`;\n    * возврат отменен до передачи товара.\n"
+description: "Возврат заказа.\n\nПараметров `logisticPickupPoint`, `shipmentRecipientType` и\_`shipmentStatus` может не быть в случае возврата:\n  * С опцией **Быстрый возврат денег за дешевый брак**, когда товар остается у покупателя (`fastReturn=true`).\n  * По заказу от бизнеса, если:\n    * статус возврата `STARTED_BY_USER` или `WAITING_FOR_DECISION`;\n    * возврат отменен до передачи товара.\n"
 type: object
 required:
   - id
