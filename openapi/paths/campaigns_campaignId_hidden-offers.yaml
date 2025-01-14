@@ -103,22 +103,6 @@ get:
         Если задан `limit`, параметры `page_number` и `page_size` игнорируются.
       deprecated: true
       $ref: ../components/parameters/PageLimit.yaml
-    - description: |
-        {% note warning "Этот параметр устарел" %}
-
-        Не используйте его.
-
-        {% endnote %}
-
-        Позиция в списке, начиная с которой возвращаются результаты ответа.
-
-        Используется вместе с параметром `limit`.
-
-        Если задан `offset`, параметры `page_number` и `page_size` игнорируются.
-
-        `offset` игнорируется, если задан `page_token`.
-      deprecated: true
-      $ref: ../components/parameters/PageOffset.yaml
     - description: >
         {% note warning "Этот параметр устарел" %}
 
