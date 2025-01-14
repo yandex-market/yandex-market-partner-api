@@ -4,7 +4,7 @@ description: |
 
   Используется вместе с параметром `page_number`.
 
-  `page_size` игнорируется, если задан `page_token`, `limit` или `offset`.
+  `page_size` игнорируется, если задан `page_token` или `limit`.
 in: query
 required: false
 schema:

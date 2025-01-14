@@ -10,7 +10,7 @@ description: >
   полученное при последнем запросе.
 
 
-  Если задан `page_token` и в запросе есть параметры `offset`, `page_number` и
+  Если задан `page_token` и в запросе есть параметры `page_number` и
   `page_size`, они игнорируются.
 in: query
 required: false
