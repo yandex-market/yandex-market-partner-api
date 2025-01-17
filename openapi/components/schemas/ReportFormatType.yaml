@@ -3,8 +3,10 @@ description: |
 
   * `FILE` — файл с электронной таблицей (XLSX).
   * `CSV` — ZIP-архив с CSV-файлами на каждый лист отчета.
+  * `JSON` — ZIP-архив с JSON-файлами на каждый лист отчета.
 type: string
 enum:
   - FILE
   - CSV
+  - JSON
 default: FILE
