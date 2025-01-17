@@ -1,4 +1,7 @@
-description: Вид маппинга.
+description: |
+  Вид маппинга:
+  * `ALL` — все товары.
+  * `ACTIVE` — готовые к продаже товары.
 type: string
 enum:
   - ACTIVE
