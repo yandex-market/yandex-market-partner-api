@@ -1,0 +1,11 @@
+description: Информация о грузовых местах в заказе.
+type: object
+required:
+  - boxes
+properties:
+  boxes:
+    description: Список грузовых мест. По его длине Маркет определяет количество мест.
+    type: array
+    items:
+      $ref: ./ParcelBoxRequestDTO.yaml
+    minItems: 1

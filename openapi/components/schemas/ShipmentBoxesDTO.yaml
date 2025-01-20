@@ -6,9 +6,8 @@ required:
   - boxes
 properties:
   boxes:
-    description: >
-      Список грузовых мест. Маркет определил количество мест по длине этого
-      списка.
+    description: |
+      Список грузовых мест. По его длине Маркет определил количество мест.
     type: array
     items:
       $ref: ./ParcelBoxDTO.yaml

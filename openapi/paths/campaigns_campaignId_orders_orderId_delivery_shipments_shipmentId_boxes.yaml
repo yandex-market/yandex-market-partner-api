@@ -143,8 +143,8 @@ put:
             $ref: ../components/schemas/SetOrderShipmentBoxesResponse.yaml
     '400':
       description: >-
-        Для указанного заказа сейчас нельзя задать количество грузомест. Либо
-        заказ в неподходящем статусе, либо вы ошиблись с его `id`.
+        Для указанного заказа сейчас нельзя задать количество грузомест, так как
+        у заказа неподходящий статус.
       $ref: ../components/responses/400.yaml
     '401':
       $ref: ../components/responses/401.yaml
