@@ -45,7 +45,12 @@ properties:
   deliveryRegion:
     $ref: ./OrdersStatsDeliveryRegionDTO.yaml
   items:
-    description: Список товаров в заказе после возможных изменений.
+    description: >
+      Список товаров в заказе после возможных изменений.
+
+
+      Информация о доставке заказа добавляется отдельным элементом в массиве
+      `items`— параметр `offerName` со значением `Доставка`.
     type: array
     items:
       $ref: ./OrdersStatsItemDTO.yaml
