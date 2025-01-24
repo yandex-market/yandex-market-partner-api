@@ -24,5 +24,5 @@ properties:
       Точность — два знака после запятой.
     type: number
   paymentOrder:
-    description: Информация о платежном получении.
+    description: Информация о платежном поручении.
     $ref: ./OrdersStatsPaymentOrderDTO.yaml

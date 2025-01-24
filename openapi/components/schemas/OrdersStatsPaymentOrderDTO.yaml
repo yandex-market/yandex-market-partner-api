@@ -1,4 +1,4 @@
-description: Информация о платежном получении.
+description: Информация о платежном поручении.
 type: object
 properties:
   id:
