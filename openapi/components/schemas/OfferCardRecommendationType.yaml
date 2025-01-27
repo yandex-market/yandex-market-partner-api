@@ -47,6 +47,10 @@ description: >
   `videos`).
   [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)
 
+  * `FIRST_VIDEO_SIZE` — замените первое видео на видео высокого качества
+  (параметр `videos`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)
+
   * `AVERAGE_VIDEO_SIZE` — замените все видео на видео высокого качества
   (параметр `videos`).
   [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)

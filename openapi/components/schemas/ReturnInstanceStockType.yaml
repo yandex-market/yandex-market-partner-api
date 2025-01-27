@@ -58,7 +58,7 @@ description: >
   * `FIRMWARE` — прошивка.
 
 
-  * `UNKNOWNS` — неизвестный тип товара.
+  * `UNKNOWN` — неизвестный тип товара.
 type: string
 enum:
   - FIT

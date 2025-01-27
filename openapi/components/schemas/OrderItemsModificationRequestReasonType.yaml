@@ -1,4 +1,8 @@
-description: Причина обновления состава заказа.
+description: |
+  Причина обновления состава заказа:
+
+  * `PARTNER_REQUESTED_REMOVE` — магазин удалил товар.
+  * `USER_REQUESTED_REMOVE` — покупатель попросил удалить товар.
 type: string
 enum:
   - PARTNER_REQUESTED_REMOVE
