@@ -11,6 +11,8 @@ post:
     - finance-and-accounting
     - pricing
     - pricing:read-only
+  x-restrictions:
+    - uz
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >
