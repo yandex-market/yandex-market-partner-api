@@ -9,6 +9,8 @@ post:
     - all-methods
     - pricing
     - promotion
+  x-restrictions:
+    - uz
   operationId: updatePromoOffers
   summary: Добавление товаров в акцию или изменение их цен
   description: >

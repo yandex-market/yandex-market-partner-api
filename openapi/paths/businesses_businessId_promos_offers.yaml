@@ -12,6 +12,8 @@ post:
     - pricing:read-only
     - promotion
     - promotion:read-only
+  x-restrictions:
+    - uz
   operationId: getPromoOffers
   summary: Получение списка товаров, которые участвуют или могут участвовать в акции
   description: |

@@ -12,6 +12,8 @@ post:
     - pricing:read-only
     - promotion
     - promotion:read-only
+  x-restrictions:
+    - uz
   operationId: getBidsRecommendations
   summary: Рекомендованные ставки для заданных товаров
   description: >

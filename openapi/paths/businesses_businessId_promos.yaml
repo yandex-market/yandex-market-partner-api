@@ -12,6 +12,8 @@ post:
     - promotion:read-only
     - pricing
     - pricing:read-only
+  x-restrictions:
+    - uz
   operationId: getPromos
   summary: Получение списка акций
   description: >

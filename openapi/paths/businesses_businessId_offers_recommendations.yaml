@@ -10,6 +10,8 @@ post:
     - all-methods:read-only
     - pricing
     - pricing:read-only
+  x-restrictions:
+    - uz
   operationId: getOfferRecommendations
   summary: Рекомендации Маркета, касающиеся цен
   description: >

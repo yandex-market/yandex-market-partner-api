@@ -9,6 +9,8 @@ put:
     - all-methods
     - pricing
     - promotion
+  x-restrictions:
+    - uz
   operationId: putBidsForCampaign
   summary: Включение буста продаж и установка ставок для магазина
   description: >
