@@ -61,7 +61,10 @@ properties:
     items:
       $ref: ./OrdersStatsItemDTO.yaml
   payments:
-    description: Информация о денежных переводах по заказу.
+    description: |
+      Информация о денежных переводах по заказу.
+
+      Может вернуться пустым, если нет данных о переводах.
     type: array
     items:
       $ref: ./OrdersStatsPaymentDTO.yaml
