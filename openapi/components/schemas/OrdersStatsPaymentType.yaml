@@ -6,4 +6,3 @@ type: string
 enum:
   - PAYMENT
   - REFUND
-  - UNKNOWN

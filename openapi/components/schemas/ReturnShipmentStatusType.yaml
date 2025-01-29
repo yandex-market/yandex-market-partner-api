@@ -13,13 +13,21 @@ description: |
 
   * `LOST` — возврат утерян при транспортировке.
 
+  * `EXPIRED` — покупатель не принес товар на возврат вовремя.
+
   * `CANCELLED` — возврат отменен.
 
   * `FULFILMENT_RECEIVED` — возврат принят на складе Маркета.
 
   * `PREPARED_FOR_UTILIZATION` — возврат передан в утилизацию.
 
+  * `NOT_IN_DEMAND` — возврат не забрали с почты.
+
   * `UTILIZED` — возврат утилизирован.
+
+  * `READY_FOR_EXPROPRIATION` — товары в возврате направлены на перепродажу.
+
+  * `RECEIVED_FOR_EXPROPRIATION` — товары в возврате приняты для перепродажи.
 type: string
 enum:
   - CREATED
