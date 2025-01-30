@@ -10,7 +10,7 @@ put:
     - pricing
     - promotion
   x-restrictions:
-    - uz
+    - market-yandex-go
   operationId: putBidsForCampaign
   summary: Включение буста продаж и установка ставок для магазина
   description: >

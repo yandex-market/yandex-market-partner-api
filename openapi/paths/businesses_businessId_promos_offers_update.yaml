@@ -10,7 +10,7 @@ post:
     - pricing
     - promotion
   x-restrictions:
-    - uz
+    - market-yandex-go
   operationId: updatePromoOffers
   summary: Добавление товаров в акцию или изменение их цен
   description: >

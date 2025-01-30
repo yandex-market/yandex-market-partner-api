@@ -11,7 +11,7 @@ post:
     - pricing
     - pricing:read-only
   x-restrictions:
-    - uz
+    - market-yandex-go
   operationId: getOfferRecommendations
   summary: Рекомендации Маркета, касающиеся цен
   description: >

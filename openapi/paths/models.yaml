@@ -7,6 +7,8 @@ post:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-restrictions:
+    - market-yandex-go
   operationId: getModels
   summary: Информация о нескольких моделях
   description: >

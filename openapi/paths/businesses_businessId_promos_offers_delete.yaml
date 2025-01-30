@@ -10,7 +10,7 @@ post:
     - pricing
     - promotion
   x-restrictions:
-    - uz
+    - market-yandex-go
   operationId: deletePromoOffers
   summary: Удаление товаров из акции
   description: >

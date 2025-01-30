@@ -12,7 +12,7 @@ post:
     - pricing
     - pricing:read-only
   x-restrictions:
-    - uz
+    - market-yandex-go
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >

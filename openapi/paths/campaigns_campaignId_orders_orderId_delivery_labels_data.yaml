@@ -10,7 +10,7 @@ get:
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
   x-restrictions:
-    - uz
+    - market-yandex-go
   operationId: getOrderLabelsData
   summary: Данные для самостоятельного изготовления ярлыков
   description: >
