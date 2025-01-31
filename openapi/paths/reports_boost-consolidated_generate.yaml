@@ -9,6 +9,8 @@ post:
     - all-methods
     - promotion
     - finance-and-accounting
+  x-restrictions:
+    - market-yandex-go
   operationId: generateBoostConsolidatedReport
   summary: Отчет по бусту продаж
   description: >
