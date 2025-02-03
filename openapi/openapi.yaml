@@ -227,8 +227,6 @@ paths:
     $ref: paths/campaigns_campaignId_outlets_outletId.yaml
   /campaigns/{campaignId}/outlets/licenses:
     $ref: paths/campaigns_campaignId_outlets_licenses.yaml
-  /campaigns/{campaignId}/feedback/updates:
-    $ref: paths/campaigns_campaignId_feedback_updates.yaml
   /businesses/{businessId}/goods-feedback:
     $ref: paths/businesses_businessId_goods-feedback.yaml
   /businesses/{businessId}/goods-feedback/skip-reaction:

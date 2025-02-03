@@ -1,6 +1,0 @@
-description: Информация о магазине.
-type: object
-properties:
-  name:
-    description: Название магазина.
-    type: string
