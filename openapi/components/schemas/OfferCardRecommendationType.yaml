@@ -55,7 +55,7 @@ description: >
   (параметр `videos`).
   [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)
 
-  * `VIDEO_COUNT` — добавьте больше видео (параметр `videos`).
+  * `VIDEO_COUNT` — добавьте хотя бы одно видео (параметр `videos`).
   [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)
 
     Для рекомендации приходит процент ее выполнения.

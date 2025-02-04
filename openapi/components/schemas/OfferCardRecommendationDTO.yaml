@@ -22,3 +22,11 @@ properties:
     minimum: 0
     maximum: 100
     exclusiveMaximum: true
+  remainingRatingPoints:
+    description: >
+      Максимальное количество баллов рейтинга карточки, которые можно
+      дополнительно получить за выполнение рекомендаций.
+    type: integer
+    format: int32
+    minimum: 1
+    maximum: 100

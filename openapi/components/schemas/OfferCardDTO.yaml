@@ -25,9 +25,18 @@ properties:
     description: Статус карточки.
     $ref: ./OfferCardStatusType.yaml
   contentRating:
-    description: Процент заполненности карточки.
+    description: Рейтинг карточки.
     type: integer
     format: int32
+  averageContentRating:
+    description: >-
+      Средний рейтинг карточки у товаров той категории, которая указана в
+      `marketCategoryId`.
+    type: integer
+    format: int32
+  contentRatingStatus:
+    description: Статус вычисления рейтинга карточки и рекомендаций.
+    $ref: ./OfferCardContentStatusType.yaml
   recommendations:
     description: >
       Список рекомендаций к заполнению карточки.
