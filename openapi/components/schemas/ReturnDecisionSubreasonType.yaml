@@ -1,6 +1,6 @@
 description: |
   Детали причин возврата:
-    * `DO_NOT_FIT`:
+    * `DOES_NOT_FIT`:
       * `USER_DID_NOT_LIKE` — товар не понравился.
       * `USER_CHANGED_MIND` — передумал покупать.
       * `DELIVERED_TOO_LONG` — передумал покупать из-за длительного срока доставки.
@@ -23,6 +23,8 @@ description: |
       * `WRONG_AMOUNT_DELIVERED` — неверное количество товара.
       * `PARCEL_MISSING` — часть заказа отсутствует.
       * `INCOMPLETE` — заказ не привезли полностью.
+
+    * `UNKNOWN` — детали причины не указаны.
 type: string
 enum:
   - USER_DID_NOT_LIKE

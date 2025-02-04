@@ -1,15 +1,13 @@
 description: |
   Тип товара:
 
+  * `FIT` — товар надлежащего качества.
+
   * `DEFECT` — товар бракованный.
 
-  * `FIT` — товар надлежащего качества.
+  * `EXPIRED` — товар с истекшим сроком годности.
 type: string
 enum:
   - FIT
-  - FREEZE
-  - AVAILABLE
-  - QUARANTINE
-  - UTILIZATION
   - DEFECT
   - EXPIRED
