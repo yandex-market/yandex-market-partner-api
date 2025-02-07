@@ -61,3 +61,10 @@ allOf:
           Передайте `true`, чтобы первое видео использовалось как видеообложка,
           или `false`, чтобы видеообложка не отображалась в карточке товара.
         type: boolean
+      deleteParameters:
+        description: "Параметры, которые вы ранее передали в `UpdateOfferDTO`, а теперь хотите удалить.\n\nЕсли передать `adult`, `downloadable` и `firstVideoAsCover`, они не удалятся —\_их значение изменится на `false`.\n\nМожно передать сразу несколько значений.\n\nНе используйте вместе с соответствующим параметром в `UpdateOfferDTO`. Это приведет к ошибке `400`.\n"
+        type: array
+        nullable: true
+        uniqueItems: true
+        items:
+          $ref: ./DeleteOfferParameterType.yaml

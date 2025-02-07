@@ -1,0 +1,86 @@
+description: >
+  Значения параметров, которые хотите удалить, и соответствующие параметры в
+  `UpdateOfferDTO`, в которых вы передали эти значения ранее:
+
+
+  * `ADDITIONAL_EXPENSES` — дополнительные расходы на товар (параметр
+  `additionalExpenses`).
+
+  * `ADULT` — пометка 18+ (параметр `adult`)
+
+  * `AGE` — возрастное ограничение для детей (параметр `age`).
+
+  * `BARCODES` — штрихкод (параметр `barcodes`).
+
+  * `BOX_COUNT` — количество грузовых мест (параметр `boxCount`).
+
+  * `CERTIFICATES` — номера документов на товар (параметр `certificates`).
+
+  * `COFINANCE_PRICE` — цена для скидок с Маркетом (параметр `cofinancePrice`).
+
+  * `COMMODITY_CODES` — товарные коды (параметр `commodityCodes`).
+
+  * `CONDITION` — состояние уцененного товара (параметр `condition`).
+
+  * `CUSTOMS_COMMODITY_CODE` — код товара в ТН ВЭД (параметр
+  `customsCommodityCode`).
+
+  * `DESCRIPTION` — описание товара (параметр `description`).
+
+  * `DOWNLOADABLE` — признак цифрового товара (параметр `downloadable`).
+
+  * `FIRST_VIDEO_AS_COVER` — использование первого видео в карточке как
+  видеообложки (параметр `firstVideoAsCover`).
+
+  * `GUARANTEE_PERIOD` — гарантийный срок (параметр `guaranteePeriod`).
+
+  * `LIFE_TIME` — срок службы (параметр `lifeTime`).
+
+  * `MANUALS` — список инструкций по использованию товара (параметр `manuals`).
+
+  * `MANUFACTURER_COUNTRIES` — страна производства (параметр
+  `manufacturerCountries`).
+
+  * `PARAMETERS` — характеристики товара (параметры `params`,
+  `parameterValues`).
+
+  * `PICTURES` — ссылки на изображения товара (параметр `pictures`).
+
+  * `PURCHASE_PRICE` — себестоимость (параметр `purchasePrice`).
+
+  * `SHELF_LIFE` — срок годности (параметр `shelfLife`).
+
+  * `TAGS` — метки товара, которые использует магазин (параметр `tags`).
+
+  * `TYPE` — особый тип товара (параметр `type`).
+
+  * `VENDOR_CODE` — название бренда или производителя (параметр `vendorCode`).
+
+  * `VIDEOS` — ссылки на видео товара (параметр `videos`).
+type: string
+enum:
+  - ADDITIONAL_EXPENSES
+  - ADULT
+  - AGE
+  - BARCODES
+  - BOX_COUNT
+  - CERTIFICATES
+  - COFINANCE_PRICE
+  - COMMODITY_CODES
+  - CONDITION
+  - CUSTOMS_COMMODITY_CODE
+  - DESCRIPTION
+  - DOWNLOADABLE
+  - FIRST_VIDEO_AS_COVER
+  - GUARANTEE_PERIOD
+  - LIFE_TIME
+  - MANUALS
+  - MANUFACTURER_COUNTRIES
+  - PARAMETERS
+  - PICTURES
+  - PURCHASE_PRICE
+  - SHELF_LIFE
+  - TAGS
+  - TYPE
+  - VENDOR_CODE
+  - VIDEOS
