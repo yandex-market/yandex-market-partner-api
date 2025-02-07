@@ -20,6 +20,8 @@ description: |
   * `COMPLETE_WITHOUT_REFUND` — возврат денег не требуется.
 
   * `CANCELLED` — возврат отменен.
+
+  * `UNKNOWN` — неизвестный статус.
 type: string
 enum:
   - STARTED_BY_USER
