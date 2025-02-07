@@ -21,6 +21,22 @@ get:
     Возвращает информацию о заказе.
 
 
+    {% note tip "Вы также можете настроить API-уведомления" %}
+
+
+    Маркет отправит вам
+    [запрос](../../push-notifications/reference/sendNotification.md), когда
+    появится новый заказ или изменится его статус. А полную информацию можно
+    получить с помощью этого метода или [GET
+    campaigns/{campaignId}/orders](../../reference/orders/getOrders.md).
+
+
+    [{#T}](../../push-notifications/index.md)
+
+
+    {% endnote %}
+
+
     Получить более подробную информацию о покупателе и его номере телефона можно
     с помощью запроса [GET
     campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).

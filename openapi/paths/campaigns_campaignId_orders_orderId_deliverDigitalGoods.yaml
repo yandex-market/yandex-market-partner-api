@@ -18,6 +18,21 @@ post:
     статус `DELIVERED`.
 
 
+    {% note tip "После передачи кода покупателю статус заказа изменится не
+    сразу" %}
+
+
+    Подключите API-уведомления — Маркет отправит вам запрос [POST
+    notification](../../push-notifications/reference/sendNotification.md), когда
+    заказ перейдет в статус `DELIVERED`.
+
+
+    [{#T}](../../push-notifications/index.md)
+
+
+    {% endnote %}
+
+
     Ключ нужно передать в течение 30 минут после перехода заказа в статус
     `PROCESSING`.
 

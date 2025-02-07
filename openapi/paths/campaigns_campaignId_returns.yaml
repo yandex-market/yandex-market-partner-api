@@ -24,6 +24,20 @@ get:
     campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).
 
 
+    {% note tip "Подключите API-уведомления" %}
+
+
+    Маркет отправит вам запрос [POST
+    notification](../../push-notifications/reference/sendNotification.md), когда
+    появится новый невыкуп или возврат.
+
+
+    [{#T}](../../push-notifications/index.md)
+
+
+    {% endnote %}
+
+
     |**⚙️ Лимит:** 10 000 запросов в час|
 
     |-|

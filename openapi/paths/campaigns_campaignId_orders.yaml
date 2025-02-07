@@ -22,6 +22,22 @@ get:
     нет ли новых заказов.
 
 
+    {% note tip "Вы также можете настроить API-уведомления" %}
+
+
+    Маркет отправит вам
+    [запрос](../../push-notifications/reference/sendNotification.md), когда
+    появится новый заказ или изменится его статус. А полную информацию можно
+    получить с помощью этого метода или [GET
+    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+
+
+    [{#T}](../../push-notifications/index.md)
+
+
+    {% endnote %}
+
+
     Доступна фильтрация по нескольким характеристикам заказов:
 
 
