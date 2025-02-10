@@ -20,8 +20,7 @@ post:
     {% note warning "Этот метод устарел" %}
 
 
-    Вместо него используйте [POST
-    businesses/{businessId}/offer-mappings/suggestions](../../reference/business-assortment/getSuggestedOfferMappings.md).
+    Не используйте его.
 
 
     {% endnote %}
