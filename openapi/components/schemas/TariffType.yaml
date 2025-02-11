@@ -58,9 +58,6 @@ description: >
   * `EXPRESS_CANCELLED_BY_PARTNER` — отмена заказа с экспресс-доставкой.
 
 
-  * `DELIVERY_TO_CUSTOMER_RETURN` — возврат доставляемого товара на склад.
-
-
   * `CROSSBORDER_DELIVERY` — доставка из-за рубежа.
 
 
@@ -106,7 +103,6 @@ enum:
   - MIDDLE_MILE
   - RETURN_PROCESSING
   - EXPRESS_CANCELLED_BY_PARTNER
-  - DELIVERY_TO_CUSTOMER_RETURN
   - CROSSBORDER_DELIVERY
   - INTAKE_SORTING_BULKY_CARGO
   - INTAKE_SORTING_SMALL_GOODS
