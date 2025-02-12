@@ -125,7 +125,7 @@ properties:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
     description: |
-      Информация об удалении товара из заказа.
+      Информация о невыкупленных или возвращенных товарах в заказе.
     type: array
     nullable: true
     items:
