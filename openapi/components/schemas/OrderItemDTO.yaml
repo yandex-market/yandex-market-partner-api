@@ -124,7 +124,17 @@ properties:
     items:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
-    description: |
+    description: >
+      {% note warning "Этот параметр устарел" %}
+
+
+      Для получения информации о возвратах и невыкупах используйте [GET
+      campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).
+
+
+      {% endnote %}
+
+
       Информация о невыкупленных или возвращенных товарах в заказе.
     type: array
     nullable: true
