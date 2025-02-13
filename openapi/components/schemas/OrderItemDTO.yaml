@@ -124,6 +124,7 @@ properties:
     items:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
+    deprecated: true
     description: >
       {% note warning "Этот параметр устарел" %}
 
