@@ -129,7 +129,7 @@ properties:
       {% note warning "Этот параметр устарел" %}
 
 
-      Для получения информации о возвратах и невыкупах используйте [GET
+      Для получения информации о невыкупах и возвратах используйте [GET
       campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).
 
 
