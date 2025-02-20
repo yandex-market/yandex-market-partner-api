@@ -12,5 +12,12 @@ properties:
     $ref: ./QuantumDTO.yaml
   available:
     description: |
+      {% note warning "Этот параметр устарел" %}
+
+      Не используйте его.
+
+      {% endnote %}
+
       Есть ли товар в продаже.
+    deprecated: true
     type: boolean
