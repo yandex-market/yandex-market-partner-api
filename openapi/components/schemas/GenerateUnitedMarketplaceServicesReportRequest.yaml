@@ -20,6 +20,7 @@ properties:
       Начало периода, включительно.
     format: date-time
     type: string
+    deprecated: true
   dateTimeTo:
     description: |
       {% note warning "Этот параметр устарел" %}
@@ -31,6 +32,7 @@ properties:
       Конец периода, включительно. Максимальный период — 3 месяца.
     format: date-time
     type: string
+    deprecated: true
   dateFrom:
     description: Начало периода, включительно.
     format: date

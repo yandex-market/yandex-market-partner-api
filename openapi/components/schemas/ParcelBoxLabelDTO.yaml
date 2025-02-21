@@ -66,6 +66,7 @@ properties:
 
       Общая масса всех товаров в заказе. Возвращается в формате: `weight кг`.
     type: string
+    deprecated: true
   deliveryServiceId:
     description: >-
       Идентификатор службы доставки. Информацию о службе доставки можно получить

@@ -160,6 +160,7 @@ properties:
       использования.
     type: integer
     format: int32
+    deprecated: true
   lifeTimeDays:
     description: >
       {% note warning "Этот параметр устарел" %}
@@ -176,6 +177,7 @@ properties:
       изготовитель — нести ответственность за его существенные недостатки.
     type: integer
     format: int32
+    deprecated: true
   guaranteePeriodDays:
     description: >
       Гарантийный срок товара: сколько дней возможно обслуживание и ремонт

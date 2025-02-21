@@ -67,3 +67,4 @@ properties:
       {% endnote %}
     maxLength: 200
     type: string
+    deprecated: true

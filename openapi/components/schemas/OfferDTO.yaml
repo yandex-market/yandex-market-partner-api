@@ -111,6 +111,7 @@ properties:
 
       Ставка на клик.
     type: number
+    deprecated: true
   cbid:
     description: |
       {% note warning "Этот параметр устарел" %}
@@ -121,6 +122,7 @@ properties:
 
       Ставка на клик.
     type: number
+    deprecated: true
   fee:
     description: |
       {% note warning "Этот параметр устарел" %}
@@ -131,6 +133,7 @@ properties:
 
       Процент комиссии на товар при продаже по CPA.
     type: number
+    deprecated: true
   blocked:
     description: >
       Признак блокировки предложения.
