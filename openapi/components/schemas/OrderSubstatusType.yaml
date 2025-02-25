@@ -37,6 +37,11 @@ description: >
 
       * `PROCESSING_EXPIRED` — значение более не используется.
 
+      * `TOO_MANY_DELIVERY_DATE_CHANGES` — заказ переносили слишком много раз.
+
+      * `DELIVERY_DATE_CHANGED_TOO_MUCH` — заказ перенесен на слишком много дней.
+
+
   * `TECHNICAL_ERROR` — техническая ошибка на стороне Маркета. Обратитесь в
   поддержку.
 
