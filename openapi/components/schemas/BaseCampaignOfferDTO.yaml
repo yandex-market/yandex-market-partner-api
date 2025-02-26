@@ -11,12 +11,28 @@ properties:
       значит?](https://yandex.ru/support/marketplace/assortment/fields/quantum.html)
     $ref: ./QuantumDTO.yaml
   available:
-    description: |
+    description: >
       {% note warning "Этот параметр устарел" %}
 
-      Не используйте его.
+
+      Вместо него используйте методы скрытия товаров с витрины:
+
+
+      * [GET
+      campaigns/{campaignId}/hidden-offers](../../reference/assortment/getHiddenOffers.md)
+      — просмотр скрытых товаров;
+
+      * [POST
+      campaigns/{campaignId}/hidden-offers](../../reference/assortment/addHiddenOffers.md)
+      — скрытие товаров;
+
+      * [POST
+      campaigns/{campaignId}/hidden-offers/delete](../../reference/assortment/deleteHiddenOffers.md)
+      — возобновление показа.
+
 
       {% endnote %}
+
 
       Есть ли товар в продаже.
     deprecated: true
