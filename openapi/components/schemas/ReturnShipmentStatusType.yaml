@@ -28,6 +28,8 @@ description: |
   * `READY_FOR_EXPROPRIATION` — товары в возврате направлены на перепродажу.
 
   * `RECEIVED_FOR_EXPROPRIATION` — товары в возврате приняты для перепродажи.
+
+  * `UNKNOWN` — неизвестный статус.
 type: string
 enum:
   - CREATED
@@ -44,3 +46,4 @@ enum:
   - UTILIZED
   - READY_FOR_EXPROPRIATION
   - RECEIVED_FOR_EXPROPRIATION
+  - UNKNOWN
