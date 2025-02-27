@@ -8,6 +8,7 @@ required:
   - draftCount
   - plannedCount
   - factCount
+  - signature
 properties:
   id:
     description: Идентификатор отгрузки.
