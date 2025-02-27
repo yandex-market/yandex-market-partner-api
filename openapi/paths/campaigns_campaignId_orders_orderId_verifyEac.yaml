@@ -7,45 +7,23 @@ put:
     - inventory-and-order-processing
   operationId: verifyOrderEac
   summary: Передача кода подтверждения
-  description: >
+  description: |
     {% include notitle [access](../../_auto/method_scopes/verifyOrderEac.md) %}
-
 
     Отправляет Маркету код подтверждения для его проверки.
 
+    **Если у магазина настроена работа с кодами подтверждения:**
 
-    Код подтверждает передачу заказа или невыкупа:
+      В запросах [PUT campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md), [GET campaigns/{campaignId}/orders](../../reference/orders/getOrders.md), [GET campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md) в параметре `delivery`, вложенном в `order`, возвращается параметр `eacType` с типом `Enum` — тип кода подтверждения для передачи заказа.
 
+      Возможные значения:
 
-    * курьеру — курьер должен назвать магазину код;
+      * `MERCHANT_TO_COURIER` (временно не возвращается) — продавец передает код курьеру для получения невыкупа;
+      * `COURIER_TO_MERCHANT` — курьер передает код продавцу для получения заказа.
 
-    * магазину — магазин называет код курьеру.
-
-
-    Если магазин получает невыкупленный заказ, то ему нужно назвать курьеру код
-    из кабинета или приложения.
-
-
-    Если у магазина настроена работа с кодами подтверждения, в запросах [PUT
-    campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md),
-    [GET campaigns/{campaignId}/orders](../../reference/orders/getOrders.md),
-    [GET
-    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
-    в параметре `delivery`, вложенном в `order` будет возвращаться параметр
-    `eacType` с типом `Enum` — тип кода подтверждения для передачи заказа.
-
-
-    Возможные значения: `MERCHANT_TO_COURIER` — магазин называет код курьеру,
-    `COURIER_TO_MERCHANT` — курьер называет код магазину.
-
-
-    Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`,
-    `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в
-    других статусах, параметр может отсутствовать.
-
+      Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`, `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в других статусах, параметр может отсутствовать.
 
     |**⚙️ Лимит:** 100 000 запросов в час|
-
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
