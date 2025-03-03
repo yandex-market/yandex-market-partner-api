@@ -1,6 +1,0 @@
-description: Логин пользователя.
-name: login
-in: path
-required: true
-schema:
-  type: string

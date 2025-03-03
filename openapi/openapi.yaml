@@ -39,12 +39,8 @@ paths:
     $ref: paths/campaigns.yaml
   /campaigns/{campaignId}:
     $ref: paths/campaigns_campaignId.yaml
-  /campaigns/{campaignId}/logins:
-    $ref: paths/campaigns_campaignId_logins.yaml
   /campaigns/{campaignId}/settings:
     $ref: paths/campaigns_campaignId_settings.yaml
-  /campaigns/by_login/{login}:
-    $ref: paths/campaigns_by_login_login.yaml
   /campaigns/{campaignId}/region:
     $ref: paths/campaigns_campaignId_region.yaml
   /campaigns/{campaignId}/orders/{orderId}:
