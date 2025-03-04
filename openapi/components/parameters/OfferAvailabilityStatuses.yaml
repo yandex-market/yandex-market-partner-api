@@ -15,7 +15,7 @@ description: >
   нескольких одинаковых параметрах. Например:
 
 
-  ```
+  ```text translate=no
 
   ...availability=INACTIVE,DELISTED...
 

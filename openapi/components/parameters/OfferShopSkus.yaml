@@ -5,7 +5,7 @@ description: >
   Параметр может быть указан несколько раз, например:
 
 
-  ```
+  ```text translate=no
 
   ...shop_sku=123&shop_sku=129&shop_sku=141...
 

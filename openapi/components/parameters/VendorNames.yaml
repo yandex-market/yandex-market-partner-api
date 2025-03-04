@@ -6,7 +6,7 @@ description: >
   нескольких одинаковых параметрах. Например:
 
 
-  ```
+  ```text translate=no
 
   ...vendor=Aqua%20Minerale,Borjomi...
 

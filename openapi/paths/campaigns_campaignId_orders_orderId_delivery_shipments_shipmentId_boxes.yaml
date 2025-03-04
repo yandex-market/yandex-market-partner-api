@@ -48,7 +48,7 @@ put:
     Структура тела PUT-запроса:
 
 
-    ```
+    ```text translate=no
 
     {
       "boxes":

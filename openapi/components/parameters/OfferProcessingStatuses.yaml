@@ -25,7 +25,7 @@ description: >
   нескольких одинаковых параметрах. Например:
 
 
-  ```
+  ```text translate=no
 
   ...status=READY,IN_WORK...
 

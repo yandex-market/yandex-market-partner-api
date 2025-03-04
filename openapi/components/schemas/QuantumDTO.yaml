@@ -9,7 +9,7 @@ description: >
   {% cut "Пример" %}
 
 
-  ```json
+  ```json translate=no
 
   {
     "offers": [
