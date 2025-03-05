@@ -21,8 +21,11 @@ properties:
     deprecated: true
     type: number
   amount:
-    description: Значение тарифа в рублях.
+    description: Значение тарифа.
     type: number
+  currency:
+    description: Валюта, в которой указано значение тарифа.
+    $ref: ./CurrencyType.yaml
   parameters:
     description: Параметры расчета тарифа.
     type: array

@@ -82,3 +82,7 @@ properties:
     minItems: 1
     items:
       $ref: ./OrdersStatsSubsidyDTO.yaml
+  currency:
+    description: |
+      Валюта, в которой указаны цены в заказе.
+    $ref: ./CurrencyType.yaml

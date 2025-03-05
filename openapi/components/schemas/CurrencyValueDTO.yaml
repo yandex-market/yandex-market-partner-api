@@ -1,0 +1,12 @@
+description: Значение с валютой.
+type: object
+required:
+  - value
+  - currencyId
+properties:
+  value:
+    description: Значение.
+    type: number
+  currencyId:
+    description: Валюта.
+    $ref: ./CurrencyType.yaml

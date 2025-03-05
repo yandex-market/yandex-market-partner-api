@@ -19,13 +19,35 @@ properties:
   decisionType:
     $ref: ./ReturnDecisionType.yaml
   refundAmount:
+    description: |
+      {% note warning "Этот параметр устарел" %}
+
+      Вместо него используйте `amount`.
+
+      {% endnote %}
+
+      Сумма возврата в копейках.
+    type: integer
+    format: int64
+    deprecated: true
+  amount:
     description: Сумма возврата.
-    type: integer
-    format: int64
+    $ref: ./CurrencyValueDTO.yaml
   partnerCompensation:
-    description: Компенсация за обратную доставку.
+    description: |
+      {% note warning "Этот параметр устарел" %}
+
+      Вместо него используйте `partnerCompensationAmount`.
+
+      {% endnote %}
+
+      Компенсация за обратную доставку в копейках.
     type: integer
     format: int64
+    deprecated: true
+  partnerCompensationAmount:
+    description: Компенсация за обратную доставку.
+    $ref: ./CurrencyValueDTO.yaml
   images:
     description: Список хеш-кодов фотографий товара от покупателя.
     type: array

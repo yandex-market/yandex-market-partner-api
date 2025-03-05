@@ -76,7 +76,7 @@ properties:
       такое?](https://yandex.ru/support/marketplace/marketing/smart-pricing.html#sponsored-discounts)
 
 
-      Указан в рублях. Точность — два знака после запятой.
+      Точность — два знака после запятой.
     type: number
   cofinanceValue:
     description: >
@@ -84,5 +84,5 @@ properties:
       такое?](https://yandex.ru/support/marketplace/marketing/smart-pricing.html#sponsored-discounts)
 
 
-      Указана в рублях. Точность — два знака после запятой.
+      Точность — два знака после запятой.
     type: number

@@ -42,9 +42,20 @@ properties:
     description: Статус передачи возврата.
     $ref: ./ReturnShipmentStatusType.yaml
   refundAmount:
-    description: Сумма возврата.
+    description: |
+      {% note warning "Этот параметр устарел" %}
+
+      Вместо него используйте `amount`.
+
+      {% endnote %}
+
+      Сумма возврата в копейках.
     type: integer
     format: int64
+    deprecated: true
+  amount:
+    description: Сумма возврата.
+    $ref: ./CurrencyValueDTO.yaml
   items:
     description: Список товаров в возврате.
     type: array
