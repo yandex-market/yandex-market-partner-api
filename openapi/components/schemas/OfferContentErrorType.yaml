@@ -24,6 +24,11 @@ description: >
 
   * `INVALID_GROUP_ID_CHARACTERS` — переданы [недопустимые
   символы](*ascii-code).
+
+
+  Проверить, какие категорийные характеристики доступны для заданной категории,
+  и получить их настройки можно с помощью запроса [POST
+  category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters).
 type: string
 enum:
   - OFFER_NOT_FOUND

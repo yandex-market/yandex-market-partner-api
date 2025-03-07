@@ -32,6 +32,11 @@ description: >
   * `LOCKED_DIMENSIONS` — переданы габариты упаковки, которые нельзя изменить.
 
   * `INVALID_COMMODITY_CODE` — передан некорректный товарный код.
+
+
+  Проверить, какие категорийные характеристики доступны для заданной категории,
+  и получить их настройки можно с помощью запроса [POST
+  category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters).
 type: string
 enum:
   - UNKNOWN_CATEGORY
