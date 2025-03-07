@@ -31,6 +31,7 @@ properties:
     format: date-time
     example: '2020-02-02T14:30:30+03:00'
   refundStatus:
+    description: Статус возврата денег актуален только для `returnType=RETURN`.
     $ref: ./RefundStatusType.yaml
   logisticPickupPoint:
     description: Пункт вывоза.
@@ -67,4 +68,6 @@ properties:
   fastReturn:
     description: |
       Используется ли опция **Быстрый возврат денег за дешевый брак**.
+
+      Актуально только для `returnType=RETURN`.
     type: boolean
