@@ -1,0 +1,8 @@
+type: object
+description: Информация о подписи акта приема-передачи.
+required:
+  - signed
+properties:
+  signed:
+    description: Подписан ли акт приема-передачи.
+    type: boolean
