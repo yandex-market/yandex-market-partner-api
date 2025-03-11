@@ -13,6 +13,10 @@ description: >
 
 
   Значение по умолчанию: текущая дата.
+
+
+  Если промежуток времени между `toDate` и `fromDate` меньше суток, то `toDate`
+  равен `fromDate` + сутки.
 name: toDate
 in: query
 required: false

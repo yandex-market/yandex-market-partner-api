@@ -11,6 +11,11 @@ description: >
 
 
   Конечная дата не включается в интервал для фильтрации.
+
+
+  Если промежуток времени между `supplierShipmentDateTo` и
+  `supplierShipmentDateFrom` меньше суток, то `supplierShipmentDateTo` равен
+  `supplierShipmentDateFrom` + сутки.
 name: supplierShipmentDateTo
 in: query
 required: false
