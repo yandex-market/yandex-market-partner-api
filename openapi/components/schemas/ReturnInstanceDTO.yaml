@@ -9,8 +9,9 @@ properties:
     $ref: ./ReturnInstanceStatusType.yaml
   cis:
     description: >-
-      Код идентификации единицы товара [в системе «Честный
-      ЗНАК»](https://честныйзнак.рф/).
+      Код идентификации единицы товара в системе [«Честный
+      ЗНАК»](https://честныйзнак.рф/) или [«ASL BELGISI»](https://aslbelgisi.uz)
+      (для продавцов Market Yandex Go).
     type: string
   imei:
     description: Международный идентификатор мобильного оборудования.
