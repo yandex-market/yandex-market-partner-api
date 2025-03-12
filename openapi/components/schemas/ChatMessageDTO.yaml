@@ -9,6 +9,7 @@ properties:
     description: Идентификатор сообщения.
     type: integer
     format: int64
+    minimum: 1
   createdAt:
     description: |
       Дата и время создания сообщения.
