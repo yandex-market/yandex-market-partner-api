@@ -1,0 +1,43 @@
+description: |
+  Данные, необходимые для генерации отчета.
+type: object
+required:
+  - businessId
+  - dateFrom
+  - dateTo
+properties:
+  businessId:
+    description: Идентификатор бизнеса.
+    format: int64
+    type: integer
+  dateFrom:
+    description: Начало периода, включительно.
+    format: date
+    type: string
+  dateTo:
+    description: Конец периода, включительно.
+    format: date
+    type: string
+  campaignIds:
+    description: Список магазинов, которые нужны в отчете.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: integer
+      format: int64
+  returnType:
+    $ref: ./ReturnType.yaml
+    nullable: true
+  returnStatusTypes:
+    description: |
+      Статусы передачи возвратов, которые нужны в отчете.
+
+      Если их не указать, вернется информация по всем возвратам.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      $ref: ./ReturnShipmentStatusType.yaml

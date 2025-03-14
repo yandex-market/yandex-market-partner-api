@@ -193,6 +193,8 @@ paths:
     $ref: paths/reports_united-marketplace-services_generate.yaml
   /reports/united-orders/generate:
     $ref: paths/reports_united-orders_generate.yaml
+  /reports/united-returns/generate:
+    $ref: paths/reports_united-returns_generate.yaml
   /reports/goods-realization/generate:
     $ref: paths/reports_goods-realization_generate.yaml
   /reports/prices/generate:

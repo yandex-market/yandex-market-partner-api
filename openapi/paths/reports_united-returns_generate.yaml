@@ -1,0 +1,66 @@
+post:
+  tags:
+    - reports
+    - fby
+    - fbs
+    - dbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - finance-and-accounting
+    - inventory-and-order-processing
+  operationId: generateUnitedReturnsReport
+  summary: Отчет по невыкупам и возвратам
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateUnitedReturnsReport.md) %}
+
+
+    Запускает генерацию **сводного отчета по невыкупам и возвратам** за заданный
+    период. [Что это за
+    отчет](https://yandex.ru/support/marketplace/ru/analytics/reports-fby-fbs.html#rejected-orders)
+
+
+    Отчет содержит информацию о невыкупах и возвратах за указанный период, а
+    также о тех, которые готовы к выдаче.
+
+
+    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
+    запроса [GET
+    reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+
+    {% include notitle
+    [reports](../../_auto/reports/united/returns/generator/united_returns.md) %}
+
+
+    |**⚙️ Лимит:** 100 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/ReportFormat.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GenerateUnitedReturnsRequest.yaml
+  responses:
+    '200':
+      description: >-
+        В ответ приходит идентификатор, который позволяет узнавать статус
+        генерации и скачать готовый отчет.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GenerateReportResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
