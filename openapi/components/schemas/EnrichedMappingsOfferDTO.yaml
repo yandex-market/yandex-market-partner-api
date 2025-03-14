@@ -9,7 +9,7 @@ allOf:
           Маркете.
 
 
-          Возвращается только вместе с параметром ##marketSku##.
+          Возвращается только вместе с параметром `marketSku`.
         type: integer
         format: int64
       marketCategoryName:
