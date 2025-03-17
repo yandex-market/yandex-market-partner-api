@@ -31,6 +31,10 @@ description: >
 
     * `BOUND_CARD_ON_DELIVERY` — привязанной картой при получении.
 
+    * `BNPL_BANK_ON_DELIVERY` — постоплатный суперсплит.
+
+    * `BNPL_ON_DELIVERY` — постоплатный сплит.
+
     * `CASH_ON_DELIVERY` — наличными.
 
     * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
@@ -44,6 +48,8 @@ enum:
   - CASH_ON_DELIVERY
   - CARD_ON_DELIVERY
   - BOUND_CARD_ON_DELIVERY
+  - BNPL_BANK_ON_DELIVERY
+  - BNPL_ON_DELIVERY
   - YANDEX
   - APPLE_PAY
   - EXTERNAL_CERTIFICATE
