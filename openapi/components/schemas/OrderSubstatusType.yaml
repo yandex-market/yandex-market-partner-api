@@ -37,6 +37,8 @@ description: >
 
       * `PROCESSING_EXPIRED` — значение более не используется.
 
+      * `PICKUP_EXPIRED` — закончился срок хранения заказа в ПВЗ.
+
       * `TOO_MANY_DELIVERY_DATE_CHANGES` — заказ переносили слишком много раз.
 
       * `DELIVERY_DATE_CHANGED_TOO_MUCH` — заказ перенесен на слишком много дней.

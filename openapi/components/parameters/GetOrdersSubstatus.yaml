@@ -55,6 +55,9 @@ description: >
   * `PROCESSING_EXPIRED` — значение более не используется.
 
 
+  * `PICKUP_EXPIRED` — закончился срок хранения заказа в ПВЗ.
+
+
   * `DELIVERY_SERVICE_UNDELIVERED` — служба доставки не смогла доставить заказ.
 
 
