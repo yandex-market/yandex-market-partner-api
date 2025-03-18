@@ -32,6 +32,7 @@ properties:
     uniqueItems: true
     maxItems: 5
     nullable: true
+    minItems: 1
     items:
       type: integer
       format: int32
@@ -56,6 +57,7 @@ properties:
     uniqueItems: true
     maxItems: 20
     nullable: true
+    minItems: 1
     items:
       type: integer
       format: int64

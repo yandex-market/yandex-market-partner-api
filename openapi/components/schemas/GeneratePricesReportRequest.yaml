@@ -22,6 +22,7 @@ properties:
     description: Фильтр по категориям на Маркете.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: integer
       format: int64

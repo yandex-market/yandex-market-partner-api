@@ -11,5 +11,6 @@ properties:
       Возвращается, только если есть такие товары.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./RejectedPromoOfferDeleteDTO.yaml

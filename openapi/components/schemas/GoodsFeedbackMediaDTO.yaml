@@ -5,11 +5,13 @@ properties:
     description: Ссылки на фото.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: string
   videos:
     description: Ссылки на видео.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: string

@@ -18,5 +18,6 @@ properties:
     description: Дочерние категории.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./CategoryDTO.yaml

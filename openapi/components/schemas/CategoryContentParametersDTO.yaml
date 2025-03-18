@@ -9,5 +9,6 @@ properties:
     description: Список характеристик.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./CategoryParameterDTO.yaml

@@ -7,5 +7,6 @@ properties:
     description: Список SKU товаров, которые не удалось удалить.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./ShopSku.yaml

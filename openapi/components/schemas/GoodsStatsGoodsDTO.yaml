@@ -35,6 +35,7 @@ properties:
       Параметр не приходит, если товара нет ни на одном складе.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./GoodsStatsWarehouseDTO.yaml
   tariffs:
@@ -51,11 +52,13 @@ properties:
       продавцов](https://yandex.ru/support2/marketplace/ru/introduction/rates/models/).
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./TariffDTO.yaml
   pictures:
     description: Ссылки (URL) изображений товара в хорошем качестве.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: string

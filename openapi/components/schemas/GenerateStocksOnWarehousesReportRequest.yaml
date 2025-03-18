@@ -15,6 +15,7 @@ properties:
       warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).
     type: array
     nullable: true
+    minItems: 1
     items:
       type: integer
       format: int64
@@ -28,6 +29,7 @@ properties:
     description: Фильтр по категориям на Маркете (кроме модели FBY).
     type: array
     nullable: true
+    minItems: 1
     items:
       type: integer
       format: int64

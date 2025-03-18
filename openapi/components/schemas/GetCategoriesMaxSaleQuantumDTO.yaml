@@ -12,5 +12,6 @@ properties:
     description: Ошибки, которые появились из-за переданных категорий.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./CategoryErrorDTO.yaml

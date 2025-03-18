@@ -16,6 +16,7 @@ properties:
     description: Фильтр по идентификаторам заказа в отгрузке.
     type: array
     nullable: true
+    minItems: 1
     items:
       description: Идентификатор заказа.
       format: int64

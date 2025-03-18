@@ -22,6 +22,7 @@ properties:
     description: Список магазинов, которые нужны в отчете.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: integer
       format: int64

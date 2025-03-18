@@ -19,6 +19,7 @@ properties:
       Список характеристик с их значениями.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./ParameterValueDTO.yaml
   cardStatus:
@@ -46,12 +47,14 @@ properties:
       было проще найти ваш товар и решиться на покупку.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferCardRecommendationDTO.yaml
   errors:
     description: Ошибки в контенте, препятствующие размещению товара на витрине.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferErrorDTO.yaml
   warnings:
@@ -60,5 +63,6 @@ properties:
       на витрине.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferErrorDTO.yaml

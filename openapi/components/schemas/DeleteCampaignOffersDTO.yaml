@@ -7,5 +7,6 @@ properties:
     description: Список SKU.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./ShopSku.yaml
