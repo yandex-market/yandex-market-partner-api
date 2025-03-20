@@ -29,7 +29,7 @@ post:
     businesses/{businessId}/price-quarantine](getBusinessQuarantineOffers.md).
 
 
-    |**⚙️ Лимит:** 5000 товаров в минуту, не более 200 товаров в одном запросе|
+    |**⚙️ Лимит:** 10000 товаров в минуту, не более 200 товаров в одном запросе|
 
     |-|
   parameters:

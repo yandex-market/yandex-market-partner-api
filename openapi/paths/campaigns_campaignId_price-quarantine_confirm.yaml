@@ -29,7 +29,7 @@ post:
     campaigns/{campaignId}/price-quarantine](getCampaignQuarantineOffers.md).
 
 
-    |**⚙️ Лимит:** 5000 товаров в минуту|
+    |**⚙️ Лимит:** 10000 товаров в минуту|
 
     |-|
   parameters:
