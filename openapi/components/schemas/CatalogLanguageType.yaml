@@ -2,7 +2,6 @@ description: |
   Язык:
 
   * `RU` — русский.
-
   * `UZ` — узбекский.
 type: string
 enum:
