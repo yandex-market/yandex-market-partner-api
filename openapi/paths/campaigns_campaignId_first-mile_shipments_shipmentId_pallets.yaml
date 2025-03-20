@@ -25,7 +25,7 @@ put:
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/params_ShipmentId.yaml
+    - $ref: ../components/parameters/ShipmentId.yaml
   requestBody:
     required: true
     content:

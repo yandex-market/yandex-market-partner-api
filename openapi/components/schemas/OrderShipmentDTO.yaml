@@ -5,7 +5,7 @@ description: |
 type: object
 properties:
   id:
-    description: Идентификатор посылки, присвоенный Маркетом.
+    description: Идентификатор отгрузки.
     type: integer
     format: int64
   shipmentDate:

@@ -1,0 +1,9 @@
+description: >
+  Параметр больше не используется. Вставьте любое число — просто чтобы получился
+  корректный URL.
+name: shipmentId
+in: path
+required: true
+schema:
+  type: integer
+  format: int64
