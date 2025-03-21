@@ -125,7 +125,7 @@ put:
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml
-    - $ref: ../components/parameters/FakeShipmentId.yaml
+    - $ref: ../components/parameters/ShipmentId.yaml
   requestBody:
     required: true
     content:

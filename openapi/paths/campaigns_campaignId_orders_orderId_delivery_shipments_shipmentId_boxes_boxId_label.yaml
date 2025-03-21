@@ -24,7 +24,7 @@ get:
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml
-    - $ref: ../components/parameters/FakeShipmentId.yaml
+    - $ref: ../components/parameters/generateOrderLabel_ShipmentId.yaml
     - $ref: ../components/parameters/BoxId.yaml
     - $ref: ../components/parameters/PageFormat.yaml
   responses:

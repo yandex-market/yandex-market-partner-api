@@ -26,7 +26,7 @@ get:
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/ShipmentId.yaml
+    - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
       description: Транспортная накладная в формате XLSX.
