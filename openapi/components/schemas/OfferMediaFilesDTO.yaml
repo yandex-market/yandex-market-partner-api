@@ -15,6 +15,7 @@ properties:
       Видеофайлы товара.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferMediaFileDTO.yaml
   pictures:
@@ -22,6 +23,7 @@ properties:
       Изображения товара.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferMediaFileDTO.yaml
   manuals:
@@ -29,5 +31,6 @@ properties:
       Руководства по использованию товара.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferMediaFileDTO.yaml

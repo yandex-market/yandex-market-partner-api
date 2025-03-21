@@ -16,6 +16,7 @@ description: >+
 
 type: array
 nullable: true
+minItems: 1
 items:
   type: string
   example: 46012300000000

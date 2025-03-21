@@ -35,6 +35,7 @@ properties:
     description: Цена или скидки на товар.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrdersStatsPriceDTO.yaml
   warehouse:
@@ -44,6 +45,7 @@ properties:
     description: Информация об удалении товара из заказа.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrdersStatsDetailsDTO.yaml
   cisList:
@@ -53,6 +55,7 @@ properties:
       (для продавцов Market Yandex Go).
     type: array
     nullable: true
+    minItems: 1
     items:
       type: string
   initialCount:

@@ -58,6 +58,7 @@ properties:
     description: Список товаров в заказе до изменений.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrdersStatsItemDTO.yaml
   payments:

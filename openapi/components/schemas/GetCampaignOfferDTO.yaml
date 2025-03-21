@@ -18,6 +18,7 @@ allOf:
           Ошибки, препятствующие размещению товара на витрине.
         type: array
         nullable: true
+        minItems: 1
         items:
           $ref: ./OfferErrorDTO.yaml
       warnings:
@@ -25,5 +26,6 @@ allOf:
           Предупреждения, не препятствующие размещению товара на витрине.
         type: array
         nullable: true
+        minItems: 1
         items:
           $ref: ./OfferErrorDTO.yaml

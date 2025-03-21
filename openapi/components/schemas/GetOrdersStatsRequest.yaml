@@ -47,6 +47,7 @@ properties:
     description: Список идентификаторов заказов.
     type: array
     nullable: true
+    minItems: 1
     items:
       description: >
         Список товаров в заказе после возможных изменений.
@@ -69,6 +70,7 @@ properties:
     description: Список статусов заказов.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrderStatsStatusType.yaml
   hasCis:

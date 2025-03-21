@@ -13,6 +13,7 @@ allOf:
           только одно, наиболее релевантное из них.
         type: array
         nullable: true
+        minItems: 1
         items:
           $ref: ./ModelOfferDTO.yaml
       offlineOffers:

@@ -8,5 +8,6 @@ properties:
     description: Причины, по которым товар не прошел модерацию.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferProcessingNoteDTO.yaml

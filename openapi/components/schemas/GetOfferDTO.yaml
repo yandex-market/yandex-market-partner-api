@@ -37,6 +37,7 @@ allOf:
           Список магазинов, в которых размещен товар.
         type: array
         nullable: true
+        minItems: 1
         items:
           $ref: ./OfferCampaignStatusDTO.yaml
       sellingPrograms:
@@ -44,6 +45,7 @@ allOf:
           Информация о том, какие для товара доступны модели размещения.
         type: array
         nullable: true
+        minItems: 1
         items:
           $ref: ./OfferSellingProgramDTO.yaml
       mediaFiles:

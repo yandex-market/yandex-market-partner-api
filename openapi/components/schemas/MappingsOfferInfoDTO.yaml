@@ -33,6 +33,7 @@ properties:
       Должен содержать один вложенный параметр url.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: string
   pictures:
@@ -46,12 +47,10 @@ properties:
       просмотра увеличенных изображений.
 
 
-      Обязательный параметр.
-
-
       Должен содержать хотя бы один вложенный параметр `picture`.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: string
   manufacturer:
@@ -71,6 +70,8 @@ properties:
       Должен содержать хотя бы одну, но не больше 5 стран.
     type: array
     nullable: true
+    minItems: 1
+    maxItems: 5
     items:
       type: string
   minShipment:
@@ -132,6 +133,7 @@ properties:
       Может содержать только один вложенный код ТН ВЭД.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: string
   weightDimensions:
@@ -142,6 +144,7 @@ properties:
     description: Дни недели, в которые продавец поставляет товары на склад.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./DayOfWeekType.yaml
   shelfLifeDays:

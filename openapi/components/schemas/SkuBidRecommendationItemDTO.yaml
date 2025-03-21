@@ -20,6 +20,7 @@ properties:
       больше дополнительных инструментов продвижения доступно.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./BidRecommendationItemDTO.yaml
   priceRecommendations:
@@ -34,5 +35,6 @@ properties:
     deprecated: true
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./PriceRecommendationItemDTO.yaml

@@ -106,6 +106,7 @@ properties:
       купонам и акциям.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrderItemPromoDTO.yaml
   instances:
@@ -121,6 +122,7 @@ properties:
       отсутствует.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
@@ -139,23 +141,27 @@ properties:
       Информация о невыкупленных или возвращенных товарах в заказе.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrderItemDetailDTO.yaml
   subsidies:
     description: Список субсидий по типам.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrderItemSubsidyDTO.yaml
   requiredInstanceTypes:
     description: Список необходимых маркировок товара.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrderItemInstanceType.yaml
   tags:
     description: Признаки товара.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrderItemTagType.yaml
