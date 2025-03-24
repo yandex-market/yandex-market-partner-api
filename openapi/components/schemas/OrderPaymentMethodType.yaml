@@ -31,9 +31,9 @@ description: >
 
     * `BOUND_CARD_ON_DELIVERY` — привязанной картой при получении.
 
-    * `BNPL_BANK_ON_DELIVERY` — постоплатный суперсплит.
+    * `BNPL_BANK_ON_DELIVERY` — супер Сплитом.
 
-    * `BNPL_ON_DELIVERY` — постоплатный сплит.
+    * `BNPL_ON_DELIVERY` — Сплитом.
 
     * `CASH_ON_DELIVERY` — наличными.
 
