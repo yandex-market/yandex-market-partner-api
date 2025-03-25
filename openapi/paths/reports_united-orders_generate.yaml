@@ -21,17 +21,6 @@ post:
     отчет](https://yandex.ru/support/marketplace/analytics/orders.html)
 
 
-    {% note info "Это новый отчет" %}
-
-
-    Раньше мы так называли генерацию детальной информации по заказам. [Как
-    получить детальную информацию по
-    заказам](../../reference/stats/getOrdersStats.md)
-
-
-    {% endnote %}
-
-
     Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
     запроса [GET
     reports/info/{reportId}](../../reference/reports/getReportInfo.md).
