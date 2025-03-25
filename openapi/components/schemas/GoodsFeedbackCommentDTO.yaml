@@ -5,6 +5,7 @@ required:
   - text
   - author
   - status
+  - feedbackId
 properties:
   id:
     $ref: ./GoodsFeedbackCommentId.yaml
@@ -20,3 +21,5 @@ properties:
     $ref: ./GoodsFeedbackCommentAuthorDTO.yaml
   status:
     $ref: ./GoodsFeedbackCommentStatusType.yaml
+  feedbackId:
+    $ref: ./GoodsFeedbackId.yaml
