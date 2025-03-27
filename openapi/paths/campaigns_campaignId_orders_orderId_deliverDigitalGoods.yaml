@@ -5,6 +5,8 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-restrictions:
+    - market-yandex-go
   operationId: provideOrderDigitalCodes
   summary: Передача ключей цифровых товаров
   description: >

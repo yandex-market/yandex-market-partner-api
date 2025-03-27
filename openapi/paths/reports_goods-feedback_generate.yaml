@@ -8,6 +8,8 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
+  x-restrictions:
+    - market-yandex-go
   operationId: generateGoodsFeedbackReport
   summary: Отчет по отзывам о товарах
   description: >
