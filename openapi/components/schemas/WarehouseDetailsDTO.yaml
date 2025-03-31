@@ -1,0 +1,55 @@
+description: Информация о складе.
+type: object
+required:
+  - id
+  - name
+  - campaignId
+  - express
+properties:
+  id:
+    description: Идентификатор склада.
+    type: integer
+    format: int64
+  name:
+    description: Название склада.
+    type: string
+  campaignId:
+    description: Идентификатор магазина, который связан со складом.
+    type: integer
+    format: int64
+  express:
+    description: Возможна ли доставка для модели Экспресс.
+    type: boolean
+  groupInfo:
+    $ref: ./WarehouseGroupInfoDTO.yaml
+  address:
+    description: >
+      Адрес склада.
+
+
+      Возвращается, только если в запросе параметр `components` принимает
+      значение `ADDRESS`.
+    $ref: ./WarehouseAddressDTO.yaml
+  status:
+    description: >
+      Статус склада.
+
+
+      Возвращается, только если в запросе параметр `components` принимает
+      значение `STATUS`.
+
+
+      {% note info "Статус склада, полученный через API, может не совпадать со
+      статусом в кабинете" %}
+
+
+      Например, сначала Маркет отключил склад, а затем вы с помощью метода [POST
+      campaigns/{campaignId}/warehouse/status](../../reference/warehouses/updateWarehouseStatus.md).
+
+
+      Статус в кабинете — **Отключен Маркетом**, а по API вернется
+      **DISABLED_MANUALLY** (отключен вами).
+
+
+      {% endnote %}
+    $ref: ./WarehouseStatusDTO.yaml

@@ -1,0 +1,7 @@
+description: Информация о статусе склада.
+type: object
+required:
+  - status
+properties:
+  status:
+    $ref: ./WarehouseStatusType.yaml

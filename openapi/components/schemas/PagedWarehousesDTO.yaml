@@ -1,0 +1,12 @@
+description: Информация о складах в кабинете.
+type: object
+required:
+  - warehouses
+properties:
+  warehouses:
+    description: Список складов.
+    type: array
+    items:
+      $ref: ./WarehouseDetailsDTO.yaml
+  paging:
+    $ref: ./ForwardScrollingPagerDTO.yaml

@@ -1,0 +1,52 @@
+post:
+  tags:
+    - warehouses
+    - fbs
+    - dbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-order-processing
+  operationId: updateWarehouseStatus
+  summary: Изменение статуса склада
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/updateWarehouseStatus.md) %}
+
+
+    Отключает или включает склад.
+
+
+    После отключения склада товары, которые находятся на нем, скрываются через
+    15 минут. После включения они возвращаются на витрину через 15 минут, а если
+    склад был выключен 30 дней или дольше — через 4 часа.
+
+
+    |**⚙️ Лимит:** 100 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateWarehouseStatusRequest.yaml
+  responses:
+    '200':
+      description: Новый статус склада.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdateWarehouseStatusResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

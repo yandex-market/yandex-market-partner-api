@@ -1,0 +1,21 @@
+description: >
+  Информация о группе, к которой принадлежит склад.
+
+
+  Возвращается только для складов в группах.
+
+
+  [Что такое группы складов и зачем они
+  нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks)
+type: object
+required:
+  - name
+  - id
+properties:
+  name:
+    description: Название группы, к которой принадлежит склад.
+    type: string
+  id:
+    description: Идентификатор группы складов.
+    type: integer
+    format: int64

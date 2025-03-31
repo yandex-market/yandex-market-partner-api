@@ -1,0 +1,30 @@
+description: Запрос на получение складов кабинета.
+type: object
+properties:
+  components:
+    description: >
+      Свойства складов, которые необходимо вернуть. Если какое-то значение
+      параметра не задано, этой информации в ответе не будет.
+
+
+      Передавайте параметр, только если нужна информация, которую он возвращает.
+
+
+      Можно передать сразу несколько значений.
+    type: array
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    items:
+      $ref: ./WarehouseComponentType.yaml
+  campaignIds:
+    description: Идентификаторы магазинов в кабинете, склады которых необходимо вернуть.
+    type: array
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    maxItems: 25
+    items:
+      type: integer
+      format: int64
+      minimum: 1

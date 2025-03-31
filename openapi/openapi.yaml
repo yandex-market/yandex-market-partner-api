@@ -275,6 +275,8 @@ paths:
     $ref: paths/businesses_businessId_warehouses.yaml
   /warehouses:
     $ref: paths/warehouses.yaml
+  /campaigns/{campaignId}/warehouse/status:
+    $ref: paths/campaigns_campaignId_warehouse_status.yaml
   /category/{categoryId}/parameters:
     $ref: paths/category_categoryId_parameters.yaml
   /businesses/{businessId}/offer-cards:
