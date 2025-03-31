@@ -70,7 +70,7 @@ properties:
     items:
       $ref: ./OrdersStatsPaymentDTO.yaml
   commissions:
-    description: Информация о комиссиях за заказ.
+    description: Информация о стоимости услуг.
     type: array
     items:
       $ref: ./OrdersStatsCommissionDTO.yaml
