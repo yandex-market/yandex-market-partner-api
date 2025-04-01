@@ -30,7 +30,7 @@ post:
     продавцов](https://yandex.ru/support2/marketplace/ru/assortment/fields/quantum).
 
 
-    |**⚙️ Лимит:** 1 000 запросов в час|
+    |**⚙️ Лимит:** 5 000 запросов в час|
 
     |-|
   requestBody:
