@@ -16,6 +16,7 @@ properties:
       кабинете.
     type: array
     nullable: true
+    minItems: 1
     items:
       description: Идентификатор магазина.
       type: integer

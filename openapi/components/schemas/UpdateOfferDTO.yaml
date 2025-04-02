@@ -26,6 +26,7 @@ allOf:
           Максимальное количество характеристик — 300.
         type: array
         nullable: true
+        minItems: 1
         maxItems: 300
         items:
           $ref: ./ParameterValueDTO.yaml
@@ -65,6 +66,7 @@ allOf:
         description: "Параметры, которые вы ранее передали в `UpdateOfferDTO`, а теперь хотите удалить.\n\nЕсли передать `adult`, `downloadable` и `firstVideoAsCover`, они не удалятся —\_их значение изменится на `false`.\n\nМожно передать сразу несколько значений.\n\nНе используйте вместе с соответствующим параметром в `UpdateOfferDTO`. Это приведет к ошибке `400`.\n"
         type: array
         nullable: true
+        minItems: 1
         uniqueItems: true
         items:
           $ref: ./DeleteOfferParameterType.yaml

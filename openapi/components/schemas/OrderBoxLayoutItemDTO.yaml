@@ -35,5 +35,6 @@ properties:
     description: Переданные вами коды маркировки.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./BriefOrderItemInstanceDTO.yaml

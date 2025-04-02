@@ -29,5 +29,6 @@ properties:
     description: Причины попадания товара в карантин.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./PriceQuarantineVerdictDTO.yaml

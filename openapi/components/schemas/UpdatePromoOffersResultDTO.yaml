@@ -8,6 +8,7 @@ properties:
       Возвращается, только если есть отклоненные изменения.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./RejectedPromoOfferUpdateDTO.yaml
   warningOffers:
@@ -19,5 +20,6 @@ properties:
       Возвращается, только если есть предупреждения.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./WarningPromoOfferUpdateDTO.yaml

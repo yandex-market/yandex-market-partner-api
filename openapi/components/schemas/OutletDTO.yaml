@@ -59,6 +59,7 @@ properties:
       Обязательный параметр, если параметр `type=DEPOT` или `type=MIXED`.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OutletDeliveryRuleDTO.yaml
   storagePeriod:

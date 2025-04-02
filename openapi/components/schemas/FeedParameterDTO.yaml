@@ -21,6 +21,7 @@ properties:
       Используется вместе с параметром `name`.
     type: array
     nullable: true
+    minItems: 1
     items:
       description: |
         Значение параметра.

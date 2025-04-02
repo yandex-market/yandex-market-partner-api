@@ -52,5 +52,6 @@ properties:
     description: Список хеш-кодов фотографий товара от покупателя.
     type: array
     nullable: true
+    minItems: 1
     items:
       type: string

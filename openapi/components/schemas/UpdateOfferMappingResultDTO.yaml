@@ -12,6 +12,7 @@ properties:
       обновится по всем переданным товарам.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferMappingErrorDTO.yaml
   warnings:
@@ -21,6 +22,7 @@ properties:
       Информация в каталоге обновится.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OfferMappingErrorDTO.yaml
 required:

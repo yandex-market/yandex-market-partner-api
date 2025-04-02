@@ -25,5 +25,6 @@ properties:
     description: Дочерние регионы.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./RegionDTO.yaml

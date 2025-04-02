@@ -138,6 +138,7 @@ properties:
     description: Список субсидий по типам.
     type: array
     nullable: true
+    minItems: 1
     items:
       $ref: ./OrderSubsidyDTO.yaml
   delivery:
