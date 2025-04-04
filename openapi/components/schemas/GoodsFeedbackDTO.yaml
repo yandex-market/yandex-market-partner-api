@@ -14,7 +14,20 @@ properties:
     type: string
     format: date-time
   needReaction:
-    description: Нужен ли ответ на отзыв.
+    description: >
+      Прочитан ли отзыв.
+
+
+      Принимает значение `false`, если магазин:
+
+
+      * Прочитал отзыв в кабинете продавца на Маркете.
+
+      * Отметил отзыв прочитанным — метод [POST
+      businesses/{businessId}/goods-feedback/skip-reaction](../../reference/goods-feedback/skipGoodsFeedbacksReaction.md).
+
+      * Оставил комментарий к отзыву — метод [POST
+      businesses/{businessId}/goods-feedback/comments/update](../../reference/goods-feedback/updateGoodsFeedbackComment.md).
     type: boolean
   identifiers:
     $ref: ./GoodsFeedbackIdentifiersDTO.yaml

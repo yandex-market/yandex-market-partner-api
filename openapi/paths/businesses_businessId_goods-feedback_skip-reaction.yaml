@@ -9,14 +9,14 @@ post:
     - all-methods
     - communication
   operationId: skipGoodsFeedbacksReaction
-  summary: Отказ от ответа на отзывы
+  summary: Пропуск реакции на отзывы
   description: >
     {% include notitle
     [access](../../_auto/method_scopes/skipGoodsFeedbacksReaction.md) %}
 
 
-    Пропускает отзывы — они больше не будут возвращаться в методе получения всех
-    отзывов [POST
+    Пропускает реакцию на отзыв — параметр `needReaction` принимает значение
+    `false` в методе получения всех отзывов [POST
     businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).
 
 
