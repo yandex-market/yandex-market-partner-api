@@ -4,6 +4,7 @@ post:
     - fby
     - fbs
     - express
+    - dbs
   x-auth-scopes:
     - all-methods
     - finance-and-accounting
@@ -23,9 +24,18 @@ post:
     reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
-    {% include notitle
-    [reports](../../_auto/reports/united/statistics/generator/united_statistics.md)
-    %}
+    {% list tabs %}
+
+
+    - FBY, FBS, Экспресс
+
+      {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2.md) %}
+
+    - DBS
+
+      {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2_dbs.md) %}
+
+    {% endlist %}
 
 
     |**⚙️ Лимит:** 100 запросов в час|
