@@ -1,4 +1,4 @@
-description: Список товаров в возврате.
+description: Список товаров в невыкупе или возврате.
 type: object
 required:
   - shopSku

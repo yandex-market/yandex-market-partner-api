@@ -1,4 +1,4 @@
-description: "Возврат заказа.\n\nПараметров `logisticPickupPoint`, `shipmentRecipientType` и\_`shipmentStatus` может не быть в случае возврата:\n  * С опцией **Быстрый возврат денег за дешевый брак**, когда товар остается у покупателя (`fastReturn=true`).\n  * По заказу от бизнеса, если:\n    * статус возврата `STARTED_BY_USER` или `WAITING_FOR_DECISION`;\n    * возврат отменен до передачи товара.\n\nСтатус возврата денег `refundStatus` актуален только для `returnType=RETURN`.\n"
+description: "Невыкуп или возврат в заказе.\n\nПараметров `logisticPickupPoint`, `shipmentRecipientType` и\_`shipmentStatus` может не быть в случае возврата:\n  * С опцией **Быстрый возврат денег за дешевый брак**, когда товар остается у покупателя (`fastReturn=true`).\n  * По заказу от бизнеса, если:\n    * статус возврата `STARTED_BY_USER` или `WAITING_FOR_DECISION`;\n    * возврат отменен до передачи товара.\n\nСтатус возврата денег `refundStatus` актуален только для `returnType=RETURN`.\n"
 type: object
 required:
   - id
@@ -7,7 +7,7 @@ required:
   - returnType
 properties:
   id:
-    description: Идентификатор возврата.
+    description: Идентификатор невыкупа или возврата.
     format: int64
     type: integer
   orderId:
@@ -16,7 +16,7 @@ properties:
     type: integer
   creationDate:
     description: |
-      Дата создания возврата клиентом.
+      Дата создания невыкупа или возврата клиентом.
 
       Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
@@ -24,7 +24,7 @@ properties:
     example: '2020-02-02T14:30:30+03:00'
   updateDate:
     description: |
-      Дата обновления возврата.
+      Дата обновления невыкупа или возврата.
 
       Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
@@ -57,7 +57,7 @@ properties:
     description: Сумма возврата.
     $ref: ./CurrencyValueDTO.yaml
   items:
-    description: Список товаров в возврате.
+    description: Список товаров в невыкупе или возврате.
     type: array
     items:
       $ref: ./ReturnItemDTO.yaml

@@ -11,13 +11,13 @@ get:
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
   operationId: getReturnPhoto
-  summary: Получение фотографии возврата
+  summary: Получение фотографий товаров в возврате
   description: >
     {% include notitle [access](../../_auto/method_scopes/getReturnPhoto.md) %}
 
 
-    Получает фотографии, которые покупатель приложил к заявлению на возврат
-    товара.
+    Получает фотографии товаров, которые покупатель приложил к заявлению на
+    возврат.
 
 
     |**⚙️ Лимит:** 10 000 запросов в час|
@@ -31,7 +31,7 @@ get:
     - $ref: ../components/parameters/ImageHash.yaml
   responses:
     '200':
-      description: Фотография возврата.
+      description: Фотография товаров.
       content:
         application/octet-stream:
           schema:

@@ -1,4 +1,4 @@
-description: Идентификатор возврата.
+description: Идентификатор невыкупа или возврата.
 name: returnId
 in: path
 required: true

@@ -42,7 +42,7 @@ get:
     - $ref: ../components/parameters/ReturnId.yaml
   responses:
     '200':
-      description: Детали возврата.
+      description: Детали невыкупа или возврата.
       content:
         application/json:
           schema:

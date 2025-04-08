@@ -1,4 +1,4 @@
-description: Возвраты.
+description: Невыкупы или возвраты.
 type: object
 required:
   - returns
@@ -7,7 +7,7 @@ properties:
     description: Информация о страницах с результатами.
     $ref: ./ForwardScrollingPagerDTO.yaml
   returns:
-    description: Список возвратов.
+    description: Список невыкупов или возвратов.
     type: array
     items:
       $ref: ./ReturnDTO.yaml
