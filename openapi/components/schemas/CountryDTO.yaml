@@ -1,0 +1,10 @@
+description: Страна и ее код в формате ISO 3166-1 alpha-2.
+type: object
+required:
+  - region
+  - countryCode
+properties:
+  region:
+    $ref: ./RegionDTO.yaml
+  countryCode:
+    $ref: ./CountryCode.yaml

@@ -107,6 +107,8 @@ paths:
     $ref: paths/regions_regionId.yaml
   /regions/{regionId}/children:
     $ref: paths/regions_regionId_children.yaml
+  /regions/countries:
+    $ref: paths/regions_countries.yaml
   /campaigns/{campaignId}/shipments/reception-transfer-act:
     $ref: paths/campaigns_campaignId_shipments_reception-transfer-act.yaml
   /campaigns/{campaignId}/first-mile/shipments/{shipmentId}:

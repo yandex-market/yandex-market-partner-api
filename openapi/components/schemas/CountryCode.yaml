@@ -1,0 +1,8 @@
+description: >
+  Страна производства в формате ISO 3166-1 alpha-2. [Как
+  получить](../../reference/regions/getRegionsCodes.md)
+type: string
+minLength: 2
+maxLength: 2
+pattern: ^[A-Z]{2}$
+example: RU

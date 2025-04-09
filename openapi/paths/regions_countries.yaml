@@ -1,0 +1,54 @@
+post:
+  tags:
+    - regions
+    - fby
+    - fbs
+    - dbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - settings-management
+    - finance-and-accounting
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
+    - pricing
+    - pricing:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+    - promotion
+    - promotion:read-only
+    - communication
+  operationId: getRegionsCodes
+  summary: Список допустимых кодов стран
+  description: >
+    {% include notitle [access](../../_auto/method_scopes/getRegionsCodes.md) %}
+
+
+    Возвращает список стран с их кодами в формате ISO 3166-1 alpha-2.
+
+
+    Страна производства `countryCode` понадобится при продаже товаров из-за
+    рубежа для бизнеса. [Инструкция](../../step-by-step/business-info.md)
+
+
+    |**⚙️ Лимит:** 100 запросов в час|
+
+    |-|
+  responses:
+    '200':
+      description: Список стран с их кодами в формате ISO 3166-1 alpha-2.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetRegionsCodesResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
