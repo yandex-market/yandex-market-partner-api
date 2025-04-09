@@ -4,3 +4,17 @@ type: object
 properties:
   feedbackId:
     $ref: ./GoodsFeedbackId.yaml
+  commentIds:
+    description: >
+      Идентификаторы комментариев.
+
+
+      ⚠️ Не используйте это поле одновременно с другими фильтрами. Если вы
+      хотите воспользоваться ими, оставьте поле пустым.
+    type: array
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    maxItems: 50
+    items:
+      $ref: ./GoodsFeedbackCommentId.yaml

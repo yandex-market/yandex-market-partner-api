@@ -6,7 +6,7 @@ required:
   - businessId
 properties:
   businessId:
-    description: Идентификатор бизнеса.
+    description: Идентификатор кабинета.
     format: int64
     type: integer
   dateTimeFrom:

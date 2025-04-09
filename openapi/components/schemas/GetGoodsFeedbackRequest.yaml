@@ -2,6 +2,20 @@ description: |
   Фильтр запроса отзывов в кабинете.
 type: object
 properties:
+  feedbackIds:
+    description: >
+      Идентификаторы отзывов.
+
+
+      ⚠️ Не используйте это поле одновременно с другими фильтрами. Если вы
+      хотите воспользоваться ими, оставьте поле пустым.
+    type: array
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    maxItems: 50
+    items:
+      $ref: ./GoodsFeedbackId.yaml
   dateTimeFrom:
     description: >
       Начало периода. Не включительно.

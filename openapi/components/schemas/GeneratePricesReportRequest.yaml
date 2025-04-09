@@ -3,7 +3,7 @@ type: object
 properties:
   businessId:
     description: |
-      Идентификатор бизнеса.
+      Идентификатор кабинета.
 
       В большинстве случаев обязателен. Не указывается, если задан `campaignId`.
     type: integer
