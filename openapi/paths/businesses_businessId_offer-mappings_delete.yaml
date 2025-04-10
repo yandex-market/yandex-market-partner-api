@@ -10,12 +10,16 @@ post:
     - offers-and-cards-management
   operationId: deleteOffers
   summary: Удаление товаров из каталога
-  description: |
+  description: >
     {% include notitle [access](../../_auto/method_scopes/deleteOffers.md) %}
+
 
     Удаляет товары из каталога.
 
-    |**⚙️ Лимит:** 10000 товаров в минуту, не более 200 товаров в одном запросе|
+
+    |**⚙️ Лимит:** 10 000 товаров в минуту, не более 200 товаров в одном
+    запросе|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
