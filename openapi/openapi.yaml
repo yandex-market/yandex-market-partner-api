@@ -321,6 +321,7 @@ components:
       in: header
     OAuth:
       type: oauth2
+      x-inline: true
       flows:
         implicit:
           authorizationUrl: https://oauth.yandex.ru/authorize
