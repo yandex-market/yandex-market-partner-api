@@ -11,8 +11,18 @@ post:
     - market-yandex-go
   operationId: getModelsOffers
   summary: Список предложений для нескольких моделей
+  deprecated: true
   description: >
     {% include notitle [access](../../_auto/method_scopes/getModelsOffers.md) %}
+
+
+    {% note warning "Этот метод устарел" %}
+
+
+    Не используйте его.
+
+
+    {% endnote %}
 
 
     Возвращает информацию о первых десяти предложениях, расположенных на

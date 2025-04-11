@@ -19,17 +19,31 @@ allOf:
         type: string
       marketModelId:
         description: |
+          {% note warning "Этот параметр устарел" %}
+
+          Не используйте его.
+
+          {% endnote %}
+
           Идентификатор модели на Маркете.
 
           Может отсутствовать в ответе, если товар еще не привязан к карточке.
+        deprecated: true
         type: integer
         format: int64
       marketModelName:
         description: |
+          {% note warning "Этот параметр устарел" %}
+
+          Не используйте его.
+
+          {% endnote %}
+
           Название модели на Маркете.
 
           Может отсутствовать в ответе, если товар еще не привязан к карточке.
         type: string
+        deprecated: true
       marketCategoryId:
         description: >
           Идентификатор категории на Маркете, в которую попал товар.

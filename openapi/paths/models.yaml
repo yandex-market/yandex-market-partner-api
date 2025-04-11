@@ -11,8 +11,18 @@ post:
     - market-yandex-go
   operationId: getModels
   summary: Информация о нескольких моделях
+  deprecated: true
   description: >
     {% include notitle [access](../../_auto/method_scopes/getModels.md) %}
+
+
+    {% note warning "Этот метод устарел" %}
+
+
+    Не используйте его.
+
+
+    {% endnote %}
 
 
     Возвращает информацию о моделях товаров.
@@ -70,8 +80,18 @@ get:
     - market-yandex-go
   operationId: searchModels
   summary: Поиск модели товара
+  deprecated: true
   description: >
     {% include notitle [access](../../_auto/method_scopes/searchModels.md) %}
+
+
+    {% note warning "Этот метод устарел" %}
+
+
+    Не используйте его.
+
+
+    {% endnote %}
 
 
     Возвращает информацию о моделях, удовлетворяющих заданным в запросе условиям

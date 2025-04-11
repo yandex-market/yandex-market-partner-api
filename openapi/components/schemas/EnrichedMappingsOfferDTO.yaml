@@ -20,16 +20,30 @@ allOf:
         type: string
       marketModelId:
         description: |
+          {% note warning "Этот параметр устарел" %}
+
+          Не используйте его.
+
+          {% endnote %}
+
           Идентификатор модели для рекомендованной карточки товара на Маркете.
 
           Может отсутствовать в ответе.
+        deprecated: true
         type: integer
         format: int64
       marketModelName:
         description: |
+          {% note warning "Этот параметр устарел" %}
+
+          Не используйте его.
+
+          {% endnote %}
+
           Название модели для рекомендованной карточки товара на Маркете.
 
           Возвращается только вместе с параметром ##marketSku##.
+        deprecated: true
         type: string
       marketSku:
         description: >

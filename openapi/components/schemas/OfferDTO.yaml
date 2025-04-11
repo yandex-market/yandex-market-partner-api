@@ -1,7 +1,5 @@
 description: Предложение.
 type: object
-required:
-  - modelId
 properties:
   price:
     description: |
@@ -67,6 +65,15 @@ properties:
     type: string
   modelId:
     description: >
+      {% note warning "Этот параметр устарел" %}
+
+
+      Не используйте его.
+
+
+      {% endnote %}
+
+
       Идентификатор модели Маркета, с которой соотнесено предложение.
 
 
@@ -82,6 +89,7 @@ properties:
 
 
       {% endnote %}
+    deprecated: true
     type: integer
     format: int64
   name:

@@ -11,8 +11,18 @@ get:
     - market-yandex-go
   operationId: getModel
   summary: Информация об одной модели
+  deprecated: true
   description: >
     {% include notitle [access](../../_auto/method_scopes/getModel.md) %}
+
+
+    {% note warning "Этот метод устарел" %}
+
+
+    Не используйте его.
+
+
+    {% endnote %}
 
 
     Возвращает информацию о модели товара.

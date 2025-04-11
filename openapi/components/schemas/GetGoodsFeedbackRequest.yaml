@@ -52,6 +52,15 @@ properties:
       format: int32
   modelIds:
     description: >
+      {% note warning "Этот параметр устарел" %}
+
+
+      Не используйте его.
+
+
+      {% endnote %}
+
+
       Фильтр по идентификатору модели товара.
 
 
@@ -67,6 +76,7 @@ properties:
 
 
       * [POST models](../../reference/models/getModels.md).
+    deprecated: true
     type: array
     uniqueItems: true
     maxItems: 20
