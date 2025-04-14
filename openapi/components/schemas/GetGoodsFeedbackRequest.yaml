@@ -72,10 +72,7 @@ properties:
 
 
       * [POST
-      businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md);
-
-
-      * [POST models](../../reference/models/getModels.md).
+      businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md).
     deprecated: true
     type: array
     uniqueItems: true
