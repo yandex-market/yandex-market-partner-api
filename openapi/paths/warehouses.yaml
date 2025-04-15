@@ -16,6 +16,7 @@ get:
     - promotion
     - promotion:read-only
     - communication
+    - supplies-management:read-only
   operationId: getFulfillmentWarehouses
   summary: Идентификаторы складов Маркета (FBY)
   description: >

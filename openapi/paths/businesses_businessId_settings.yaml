@@ -19,6 +19,7 @@ post:
     - promotion
     - promotion:read-only
     - communication
+    - supplies-management:read-only
   operationId: getBusinessSettings
   summary: Настройки кабинета
   description: >

@@ -19,6 +19,7 @@ get:
     - promotion
     - promotion:read-only
     - communication
+    - supplies-management:read-only
   operationId: getReportInfo
   summary: Получение заданного отчета
   description: >

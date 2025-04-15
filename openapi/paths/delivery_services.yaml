@@ -18,6 +18,7 @@ get:
     - promotion
     - promotion:read-only
     - communication
+    - supplies-management:read-only
   operationId: getDeliveryServices
   summary: Справочник служб доставки
   description: >
