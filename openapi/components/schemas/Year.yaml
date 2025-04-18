@@ -1,0 +1,4 @@
+description: Год.
+type: integer
+format: int32
+example: 2025

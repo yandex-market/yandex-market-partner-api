@@ -43,24 +43,16 @@ properties:
     type: string
   yearFrom:
     description: Начальный год формирования акта.
-    type: integer
-    format: int32
+    $ref: ./Year.yaml
   monthFrom:
     description: Начальный номер месяца формирования акта.
-    type: integer
-    format: int32
-    minimum: 1
-    maximum: 12
+    $ref: ./Month.yaml
   yearTo:
     description: Конечный год формирования акта.
-    type: integer
-    format: int32
+    $ref: ./Year.yaml
   monthTo:
     description: Конечный номер месяца формирования акта.
-    type: integer
-    format: int32
-    minimum: 1
-    maximum: 12
+    $ref: ./Month.yaml
   placementPrograms:
     description: |
       Список моделей, которые нужны в отчете.
