@@ -22,12 +22,7 @@ get:
     - supplies-management:read-only
   operationId: getCampaign
   summary: Информация о магазине
-  description: |
-    {% include notitle [access](../../_auto/method_scopes/getCampaign.md) %}
-
-    Возвращает информацию о магазине.
-    |**⚙️ Лимит:** 1000 запросов в час|
-    |-|
+  description: "{% include notitle [access](../../_auto/method_scopes/getCampaign.md) %}\n\nВозвращает информацию о магазине.\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:

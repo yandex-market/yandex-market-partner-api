@@ -1,4 +1,4 @@
-description: Информация о сообщениях.
+description: Информация о сообщении.
 type: object
 required:
   - messageId

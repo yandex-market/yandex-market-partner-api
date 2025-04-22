@@ -1,4 +1,4 @@
-description: Информация о чатах.
+description: Информация о чате.
 type: object
 required:
   - chatId

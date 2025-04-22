@@ -6,7 +6,7 @@ required:
   - url
 properties:
   name:
-    description: Имя файла.
+    description: Название файла.
     minLength: 1
     type: string
   url:

@@ -289,6 +289,8 @@ paths:
     $ref: paths/businesses_businessId_chats_new.yaml
   /businesses/{businessId}/chats:
     $ref: paths/businesses_businessId_chats.yaml
+  /businesses/{businessId}/chat:
+    $ref: paths/businesses_businessId_chat.yaml
   /businesses/{businessId}/chats/file/send:
     $ref: paths/businesses_businessId_chats_file_send.yaml
   /businesses/{businessId}/chats/message:

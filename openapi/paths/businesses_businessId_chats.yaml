@@ -11,12 +11,29 @@ post:
     - communication
   operationId: getChats
   summary: Получение доступных чатов
-  description: |
+  description: >
     {% include notitle [access](../../_auto/method_scopes/getChats.md) %}
 
-    Возвращает ваши чаты с покупателями.
+
+    Возвращает чаты с покупателями.
+
+
+    {% note tip "Подключите API-уведомления" %}
+
+
+    Маркет отправит вам запрос [POST
+    notification](../../push-notifications/reference/sendNotification.md), когда
+    появится новый чат или сообщение.
+
+
+    [{#T}](../../push-notifications/index.md)
+
+
+    {% endnote %}
+
 
     |**⚙️ Лимит:** 10 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
