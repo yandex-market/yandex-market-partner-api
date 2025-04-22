@@ -49,6 +49,8 @@ properties:
     description: Дата платежного поручения.
     format: date-time
     type: string
+  monthOfYear:
+    $ref: ./MonthOfYearDTO.yaml
   placementPrograms:
     description: |
       Список моделей, которые нужны в отчете.

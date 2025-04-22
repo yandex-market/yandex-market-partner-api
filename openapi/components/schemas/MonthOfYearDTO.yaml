@@ -1,0 +1,10 @@
+description: Месяц, за который нужен отчет о баллах Маркета.
+type: object
+required:
+  - year
+  - month
+properties:
+  year:
+    $ref: ./Year.yaml
+  month:
+    $ref: ./Month.yaml
