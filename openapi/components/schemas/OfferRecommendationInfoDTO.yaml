@@ -3,9 +3,6 @@ type: object
 properties:
   offerId:
     $ref: ./ShopSku.yaml
-  recommendedCofinancePrice:
-    description: Рекомендованное значение цены для участия в софинансировании скидки.
-    $ref: ./BasePriceDTO.yaml
   competitivenessThresholds:
     description: >-
       Максимальные значения цены, при которых она является привлекательной или
