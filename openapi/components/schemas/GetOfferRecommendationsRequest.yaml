@@ -15,11 +15,6 @@ properties:
       Фильтр, выводящий товары, для которых заданы (`SPECIFIED`) или не заданы
       (`EMPTY`) цены для участия в софинансировании.
     $ref: ./FieldStateType.yaml
-  recommendedCofinancePriceFilter:
-    description: >-
-      Фильтр, выводящий товары, для которых рассчитан (`SPECIFIED`) или не
-      рассчитан (`EMPTY`) [порог цены](*rule) для участия в софинасировании.
-    $ref: ./FieldStateType.yaml
   competitivenessFilter:
     description: >-
       Фильтр, выводящий товары, с привлекательными, умеренными и
