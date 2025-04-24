@@ -21,4 +21,4 @@ properties:
     type: string
   attributionType:
     description: Тип атрибуции.
-    $ref: ./ShelfsStatisticsAttributionType.yaml
+    $ref: ./StatisticsAttributionType.yaml
