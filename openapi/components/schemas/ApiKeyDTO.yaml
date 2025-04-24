@@ -1,0 +1,18 @@
+description: Информация о Api-Key-токене.
+type: object
+required:
+  - name
+  - authScopes
+properties:
+  name:
+    description: Название токена.
+    type: string
+    minLength: 1
+    maxLength: 100
+  authScopes:
+    description: Доступы к методам по Api-Key-токену.
+    type: array
+    nullable: false
+    uniqueItems: true
+    items:
+      $ref: ./ApiKeyScopeType.yaml

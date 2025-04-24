@@ -315,6 +315,8 @@ paths:
     $ref: paths/businesses_businessId_promos_offers_update.yaml
   /businesses/{businessId}/promos/offers/delete:
     $ref: paths/businesses_businessId_promos_offers_delete.yaml
+  /auth/api-key:
+    $ref: paths/auth_api-key.yaml
 components:
   securitySchemes:
     ApiKey:

@@ -1,0 +1,52 @@
+post:
+  tags:
+    - auth
+    - fby
+    - fbs
+    - dbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - settings-management
+    - finance-and-accounting
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
+    - pricing
+    - pricing:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+    - promotion
+    - promotion:read-only
+    - communication
+    - supplies-management:read-only
+  summary: Получение информации о Api-Key-токене
+  description: >
+    {% include notitle [access](../../_auto/method_scopes/getAuthApiKeyInfo.md)
+    %}
+
+
+    Возвращает информацию о переданном Api-Key-токене.
+
+
+    |**⚙️ Лимит:** 100 запросов в час|
+
+    |-|
+  operationId: getAuthApiKeyInfo
+  responses:
+    '200':
+      description: Информация о Api-Key-токене.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetApiKeyResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
