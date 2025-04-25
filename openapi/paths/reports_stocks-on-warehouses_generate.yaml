@@ -15,8 +15,11 @@ post:
     [access](../../_auto/method_scopes/generateStocksOnWarehousesReport.md) %}
 
 
-    Запускает генерацию **отчета по остаткам на складах**. Отчет содержит
-    данные:
+    Запускает генерацию **отчета по остаткам на складах**. [Что это за
+    отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#remains-history)
+
+
+    Отчет содержит данные:
 
 
     * Для модели FBY — об остатках на складах Маркета.
