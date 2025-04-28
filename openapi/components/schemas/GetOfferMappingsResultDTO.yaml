@@ -4,7 +4,7 @@ required:
   - offerMappings
 properties:
   paging:
-    description: Ссылка на следующую страницу.
+    description: Идентификатор следующей страницы.
     $ref: ./ScrollingPagerDTO.yaml
   offerMappings:
     description: Информация о товарах.

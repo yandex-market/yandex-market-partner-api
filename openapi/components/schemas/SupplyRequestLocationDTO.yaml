@@ -1,0 +1,23 @@
+type: object
+description: Информации о складе или ПВЗ в заявке.
+required:
+  - serviceId
+  - name
+  - address
+  - type
+properties:
+  requestedDate:
+    type: string
+    format: date-time
+    description: Дата и время поставки на склад или в ПВЗ.
+  serviceId:
+    type: integer
+    format: int64
+    description: Идентификатор склада или логистического партнера ПВЗ.
+  name:
+    type: string
+    description: Название склада или ПВЗ.
+  address:
+    $ref: ./SupplyRequestLocationAddressDTO.yaml
+  type:
+    $ref: ./SupplyRequestLocationType.yaml

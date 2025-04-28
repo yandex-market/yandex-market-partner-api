@@ -1,0 +1,12 @@
+type: object
+description: Информация о документах по заявке.
+required:
+  - documents
+properties:
+  documents:
+    description: Список документов.
+    type: array
+    nullable: false
+    minItems: 0
+    items:
+      $ref: ./SupplyRequestDocumentDTO.yaml

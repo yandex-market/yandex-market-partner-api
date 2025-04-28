@@ -1,0 +1,10 @@
+type: object
+description: Параметры сортировки.
+required:
+  - direction
+  - attribute
+properties:
+  direction:
+    $ref: ./SortOrderType.yaml
+  attribute:
+    $ref: ./SupplyRequestSortAttributeType.yaml

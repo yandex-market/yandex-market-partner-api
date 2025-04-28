@@ -1,0 +1,28 @@
+type: object
+description: Количество товаров в заявке.
+properties:
+  planCount:
+    description: Количество товаров в заявке на поставку.
+    type: integer
+    format: int32
+    minimum: 0
+  factCount:
+    description: Количество товаров, которые приняты на складе.
+    type: integer
+    format: int32
+    minimum: 0
+  surplusCount:
+    description: Количество лишних товаров.
+    type: integer
+    format: int32
+    minimum: 0
+  shortageCount:
+    description: Количество товаров с недостатками.
+    type: integer
+    format: int32
+    minimum: 0
+  defectCount:
+    description: Количество товаров с браком.
+    type: integer
+    format: int32
+    minimum: 0

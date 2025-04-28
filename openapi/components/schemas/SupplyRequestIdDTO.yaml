@@ -1,0 +1,19 @@
+type: object
+description: Идентификатор и номера заявки.
+required:
+  - id
+properties:
+  id:
+    $ref: ./SupplyRequestId.yaml
+  marketplaceRequestId:
+    type: string
+    description: |
+      Номер заявки на маркетплейсе.
+
+      Также указывается в кабинете продавца на Маркете.
+  warehouseRequestId:
+    type: string
+    description: |
+      Номер заявки на складе.
+
+      Также указывается в кабинете продавца на Маркете.

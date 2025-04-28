@@ -1,0 +1,16 @@
+type: object
+description: Информация о товарах в заявке.
+required:
+  - items
+properties:
+  items:
+    description: Список товаров.
+    type: array
+    nullable: false
+    minItems: 0
+    maxItems: 100
+    items:
+      $ref: ./SupplyRequestItemDTO.yaml
+  paging:
+    description: Информация о страницах с результатами.
+    $ref: ./ForwardScrollingPagerDTO.yaml

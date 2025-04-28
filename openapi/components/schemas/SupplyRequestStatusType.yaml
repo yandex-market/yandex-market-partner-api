@@ -1,0 +1,62 @@
+type: string
+description: >
+  Статус заявки на поставку:
+
+
+  * `CREATED` — создан черновик заявки.
+
+  * `FINISHED` — заявка завершена, товары:
+    * приняты на складе;
+    * переданы на другой склад при перемещении;
+    * переданы продавцу при вывозе;
+    * утилизированы.
+  * `CANCELLED` — заявка отменена.
+
+  * `INVALID` — ошибка обработки.
+
+  * `VALIDATED` — заявка в обработке.
+
+  * `PUBLISHED` — создана заявка.
+
+  * `ARRIVED_TO_SERVICE` — поставка прибыла на склад хранения.
+
+  * `ARRIVED_TO_XDOC_SERVICE` — поставка прибыла на транзитный склад.
+
+  * `SHIPPED_TO_SERVICE` — поставка отправлена с транзитного склада на склад
+  хранения.
+
+  * `CANCELLATION_REQUESTED` — запрошена отмена заявки.
+
+  * `CANCELLATION_REJECTED` — заявка не будет отменена.
+
+  * `REGISTERED_IN_ELECTRONIC_QUEUE` — поставка зарегистрирована в электронной
+  очереди.
+
+  * `READY_FOR_UTILIZATION` — товары готовы к утилизации.
+
+  * `TRANSIT_MOVING` — перемещение товаров на склад вывоза.
+
+  * `WAREHOUSE_HANDLING` — вторичная приемка товаров или их сборка для вывоза
+  или утилизации.
+
+  * `ACCEPTED_BY_WAREHOUSE_SYSTEM` — информация о заявке направлена на склад.
+
+  * `READY_TO_WITHDRAW` — товары готовы к выдаче.
+enum:
+  - CREATED
+  - FINISHED
+  - CANCELLED
+  - INVALID
+  - VALIDATED
+  - PUBLISHED
+  - ARRIVED_TO_SERVICE
+  - ARRIVED_TO_XDOC_SERVICE
+  - SHIPPED_TO_SERVICE
+  - CANCELLATION_REQUESTED
+  - CANCELLATION_REJECTED
+  - REGISTERED_IN_ELECTRONIC_QUEUE
+  - READY_FOR_UTILIZATION
+  - TRANSIT_MOVING
+  - WAREHOUSE_HANDLING
+  - ACCEPTED_BY_WAREHOUSE_SYSTEM
+  - READY_TO_WITHDRAW

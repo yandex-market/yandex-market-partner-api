@@ -1,0 +1,38 @@
+post:
+  tags:
+    - supply-requests
+    - fby
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - supplies-management:read-only
+  operationId: getSupplyRequests
+  summary: Получение информации о заявках на поставку, вывоз и утилизацию
+  description: "{% include notitle [access](../../_auto/method_scopes/getSupplyRequests.md) %}\n\nПо указанным фильтрам возвращает заявки на поставку, вывоз и утилизацию, а также информацию по ним.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
+  requestBody:
+    required: false
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetSupplyRequestsRequest.yaml
+  responses:
+    '200':
+      description: Список заявок и информация по ним.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetSupplyRequestsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

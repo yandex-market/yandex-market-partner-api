@@ -1,0 +1,47 @@
+type: object
+description: Информация о заявке на поставку, вывоз или утилизацию.
+required:
+  - id
+  - type
+  - subtype
+  - status
+  - updatedAt
+  - counters
+  - targetLocation
+properties:
+  id:
+    description: Идентификатор и номера заявки.
+    $ref: ./SupplyRequestIdDTO.yaml
+  type:
+    description: Тип заявки.
+    $ref: ./SupplyRequestType.yaml
+  subtype:
+    description: Подтип заявки.
+    $ref: ./SupplyRequestSubType.yaml
+  status:
+    description: Статус заявки.
+    $ref: ./SupplyRequestStatusType.yaml
+  updatedAt:
+    type: string
+    format: date-time
+    description: Дата и время последнего обновления заявки.
+  counters:
+    description: Количество товаров, коробок и палет в заявке.
+    $ref: ./SupplyRequestCountersDTO.yaml
+  parentLink:
+    description: Ссылка на родительскую заявку.
+    nullable: true
+    $ref: ./SupplyRequestReferenceDTO.yaml
+  childrenLinks:
+    type: array
+    nullable: true
+    minItems: 1
+    description: Ссылки на дочерние заявки.
+    items:
+      $ref: ./SupplyRequestReferenceDTO.yaml
+  targetLocation:
+    description: Информация о складе хранения или ПВЗ.
+    $ref: ./SupplyRequestLocationDTO.yaml
+  transitLocation:
+    description: Информация о транзитном складе или ПВЗ.
+    $ref: ./SupplyRequestLocationDTO.yaml

@@ -1,0 +1,53 @@
+type: object
+description: Количество товаров, коробок и палет в заявке.
+properties:
+  planCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество товаров в заявке на поставку.
+  factCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество товаров, которые приняты на складе.
+  undefinedCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество непринятых товаров.
+  surplusCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество лишних товаров.
+  shortageCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество товаров с недостатками.
+  defectCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество товаров с браком.
+  acceptableCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество товаров, которые можно привезти дополнительно.
+  unacceptableCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество товаров, которые нельзя привезти дополнительно.
+  actualPalletsCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество палет, которые приняты на складе.
+  actualBoxCount:
+    type: integer
+    format: int32
+    minimum: 0
+    description: Количество коробок, которые приняты на складе.

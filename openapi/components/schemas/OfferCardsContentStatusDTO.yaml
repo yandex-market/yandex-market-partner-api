@@ -9,5 +9,5 @@ properties:
     items:
       $ref: ./OfferCardDTO.yaml
   paging:
-    description: Ссылка на следующую страницу.
+    description: Идентификатор следующей страницы.
     $ref: ./ForwardScrollingPagerDTO.yaml

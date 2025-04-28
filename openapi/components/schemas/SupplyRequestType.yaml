@@ -1,0 +1,11 @@
+type: string
+description: |
+  Тип заявки:
+
+  * `SUPPLY` — поставка товаров.
+  * `WITHDRAW` — вывоз товаров.
+  * `UTILIZATION` — утилизация товаров.
+enum:
+  - SUPPLY
+  - WITHDRAW
+  - UTILIZATION

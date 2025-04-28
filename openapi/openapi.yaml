@@ -315,6 +315,12 @@ paths:
     $ref: paths/businesses_businessId_promos_offers_update.yaml
   /businesses/{businessId}/promos/offers/delete:
     $ref: paths/businesses_businessId_promos_offers_delete.yaml
+  /campaigns/{campaignId}/supply-requests:
+    $ref: paths/campaigns_campaignId_supply-requests.yaml
+  /campaigns/{campaignId}/supply-requests/items:
+    $ref: paths/campaigns_campaignId_supply-requests_items.yaml
+  /campaigns/{campaignId}/supply-requests/documents:
+    $ref: paths/campaigns_campaignId_supply-requests_documents.yaml
   /auth/api-key:
     $ref: paths/auth_api-key.yaml
 components:

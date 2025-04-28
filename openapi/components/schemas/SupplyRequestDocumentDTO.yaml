@@ -1,0 +1,16 @@
+type: object
+required:
+  - url
+  - type
+  - createdAt
+description: Документ по заявке.
+properties:
+  type:
+    $ref: ./SupplyRequestDocumentType.yaml
+  url:
+    type: string
+    description: Ссылка на документ.
+  createdAt:
+    type: string
+    format: date-time
+    description: Дата и время создания документа.

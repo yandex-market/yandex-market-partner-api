@@ -1,0 +1,22 @@
+type: string
+description: |
+  Тип связи между двумя заявками:
+
+  * `VIRTUAL_DISTRIBUTION` — [мультипоставка](*multisupply).
+
+  * `WITHDRAW` — вывоз непринятых товаров.
+
+      Подтипы заявки: `DEFAULT`, `XDOC`, `VIRTUAL_DISTRIBUTION_CENTER_CHILD` и `ANOMALY_WITHDRAW`.
+
+  * `UTILIZATION` — утилизация непринятых товаров.
+
+      Подтипы заявки: `DEFAULT`, `XDOC`, `VIRTUAL_DISTRIBUTION_CENTER_CHILD` и `FORCE_PLAN_ANOMALY_PER_SUPPLY`.
+
+  * `ADDITIONAL_SUPPLY` — дополнительная поставка.
+
+      Подтипы заявки: `DEFAULT`, `XDOC`, `VIRTUAL_DISTRIBUTION_CENTER_CHILD` и `ADDITIONAL_SUPPLY`.
+enum:
+  - VIRTUAL_DISTRIBUTION
+  - WITHDRAW
+  - UTILIZATION
+  - ADDITIONAL_SUPPLY

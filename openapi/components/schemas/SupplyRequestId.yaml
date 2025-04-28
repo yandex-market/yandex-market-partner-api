@@ -1,0 +1,15 @@
+type: integer
+format: int64
+minimum: 1
+description: >
+  Идентификатор заявки.
+
+
+  {% note warning "Используется только в API" %}
+
+
+  По нему не получится найти заявки в кабинете продавца на Маркете. Для этого
+  используйте `marketplaceRequestId` или `warehouseRequestId`.
+
+
+  {% endnote %}

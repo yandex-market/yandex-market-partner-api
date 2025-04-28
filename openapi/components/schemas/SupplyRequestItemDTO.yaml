@@ -1,0 +1,18 @@
+type: object
+description: Информация о товаре в заявке.
+required:
+  - offerId
+  - name
+  - counters
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  name:
+    description: Название товара.
+    type: string
+  price:
+    description: Цена за единицу товара.
+    $ref: ./CurrencyValueDTO.yaml
+  counters:
+    description: Количество товаров в заявке.
+    $ref: ./SupplyRequestItemCountersDTO.yaml

@@ -1,0 +1,11 @@
+type: object
+description: Адрес склада или ПВЗ.
+required:
+  - fullAddress
+  - gps
+properties:
+  fullAddress:
+    type: string
+    description: Полный адрес склада или ПВЗ.
+  gps:
+    $ref: ./GpsDTO.yaml

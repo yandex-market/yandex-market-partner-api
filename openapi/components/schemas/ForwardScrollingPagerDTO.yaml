@@ -1,5 +1,5 @@
 description: |
-  Ссылка на следующую страницу.
+  Идентификатор следующей страницы.
 type: object
 properties:
   nextPageToken:

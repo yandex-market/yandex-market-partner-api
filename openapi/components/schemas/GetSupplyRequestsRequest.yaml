@@ -1,0 +1,52 @@
+type: object
+description: >
+  Модель для фильтрации и сортировки заявок на поставку.
+
+  Фильтры по `requestDateFrom` и `requestDateTo` отбирают заявки по
+  targetLocation->requestedDate и transitLocation->requestedDate.
+properties:
+  requestIds:
+    type: array
+    description: Идентификаторы заявок.
+    minItems: 1
+    maxItems: 100
+    uniqueItems: true
+    nullable: true
+    items:
+      $ref: ./SupplyRequestId.yaml
+  requestDateFrom:
+    type: string
+    format: date-time
+    nullable: true
+    description: Дата начала периода для фильтрации заявок.
+  requestDateTo:
+    type: string
+    format: date-time
+    nullable: true
+    description: Дата окончания периода для фильтрации заявок.
+  requestTypes:
+    type: array
+    description: Типы заявок для фильтрации.
+    minItems: 1
+    uniqueItems: true
+    nullable: true
+    items:
+      $ref: ./SupplyRequestType.yaml
+  requestSubtypes:
+    type: array
+    description: Подтипы заявок для фильтрации.
+    minItems: 1
+    uniqueItems: true
+    nullable: true
+    items:
+      $ref: ./SupplyRequestSubType.yaml
+  requestStatuses:
+    type: array
+    description: Статусы заявок для фильтрации.
+    minItems: 1
+    uniqueItems: true
+    nullable: true
+    items:
+      $ref: ./SupplyRequestStatusType.yaml
+  sorting:
+    $ref: ./SupplyRequestSortingDTO.yaml

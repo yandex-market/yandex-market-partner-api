@@ -1,4 +1,4 @@
-description: Значение с валютой.
+description: Валюта и ее значение.
 type: object
 required:
   - value

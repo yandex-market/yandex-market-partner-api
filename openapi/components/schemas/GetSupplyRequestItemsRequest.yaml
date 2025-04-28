@@ -1,0 +1,6 @@
+type: object
+required:
+  - requestId
+properties:
+  requestId:
+    $ref: ./SupplyRequestId.yaml

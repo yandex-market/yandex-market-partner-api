@@ -1,0 +1,11 @@
+type: string
+description: |
+  Тип склада или ПВЗ:
+
+  * `FULFILLMENT` — склад хранения.
+  * `XDOC` — транзитный склад.
+  * `PICKUP_POINT` — ПВЗ.
+enum:
+  - FULFILLMENT
+  - XDOC
+  - PICKUP_POINT

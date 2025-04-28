@@ -1,0 +1,12 @@
+type: object
+description: Информация о связанных заявках.
+required:
+  - id
+  - type
+properties:
+  id:
+    description: Идентификаторы связанной заявки.
+    $ref: ./SupplyRequestIdDTO.yaml
+  type:
+    description: Тип связи.
+    $ref: ./SupplyRequestReferenceType.yaml
