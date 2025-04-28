@@ -59,6 +59,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    maxItems: 30
     items:
       type: string
   videos:
@@ -241,6 +242,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    maxItems: 6
     items:
       type: string
   boxCount:
