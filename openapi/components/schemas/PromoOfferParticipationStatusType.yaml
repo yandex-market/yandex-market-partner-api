@@ -23,6 +23,11 @@ description: >
   Маркета». Только для акций «Бестселлеры Маркета».
 
 
+  * `MINIMUM_FOR_PROMOS` — участвует в акции с ценой `maxPromoPrice` (установлен
+  минимум по цене для акций, который соответствует порогу `maxPromoPrice`).
+  Только для акций «Бестселлеры Маркета».
+
+
   Об автоматическом и ручном добавлении товаров в акцию читайте [в Справке
   Маркета для
   продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/index).
@@ -34,3 +39,4 @@ enum:
   - NOT_PARTICIPATING
   - RENEWED
   - RENEW_FAILED
+  - MINIMUM_FOR_PROMOS
