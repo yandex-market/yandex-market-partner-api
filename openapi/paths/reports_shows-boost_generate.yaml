@@ -11,20 +11,16 @@ post:
     - finance-and-accounting
   x-restrictions:
     - market-yandex-go
-  operationId: generateBoostConsolidatedReport
-  summary: Отчет по бусту продаж
+  operationId: generateShowsBoostReport
+  summary: Отчет по бусту показов
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/generateBoostConsolidatedReport.md) %}
+    [access](../../_auto/method_scopes/generateShowsBoostReport.md) %}
 
 
-    Запускает генерацию **сводного отчета по бусту продаж** за заданный период.
+    Запускает генерацию **сводного отчета по бусту показов** за заданный период.
     [Что такое буст
-    продаж](https://yandex.ru/support/marketplace/ru/marketing/campaigns)
-
-
-    Отчет содержит информацию по всем кампаниям, созданным и через API, и в
-    кабинете.
+    показов](https://yandex.ru/support/marketplace/ru/marketing/boost-shows)
 
 
     Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
@@ -33,7 +29,7 @@ post:
 
 
     {% include notitle
-    [reports](../../_auto/reports/boost/consolidated/business_boost_consolidated.md)
+    [reports](../../_auto/reports/cpm_boost/business_cpm_boost_consolidated.md)
     %}
 
 
@@ -47,7 +43,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/GenerateBoostConsolidatedRequest.yaml
+          $ref: ../components/schemas/GenerateShowsBoostRequest.yaml
   responses:
     '200':
       description: >-
