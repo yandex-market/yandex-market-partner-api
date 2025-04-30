@@ -1,0 +1,9 @@
+description: Список заказов.
+type: object
+required:
+  - shopOrderId
+properties:
+  shopOrderId:
+    description: Дополнительный идентификатор заказа.
+    type: string
+    minLength: 1

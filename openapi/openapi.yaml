@@ -64,6 +64,8 @@ paths:
     $ref: paths/campaigns_campaignId_orders_orderId_deliverDigitalGoods.yaml
   /campaigns/{campaignId}/orders/{orderId}/boxes:
     $ref: paths/campaigns_campaignId_orders_orderId_boxes.yaml
+  /campaigns/{campaignId}/orders/{orderId}/shop-order-id:
+    $ref: paths/campaigns_campaignId_orders_orderId_shop-order-id.yaml
   /campaigns/{campaignId}/orders/{orderId}/delivery/date:
     $ref: paths/campaigns_campaignId_orders_orderId_delivery_date.yaml
   /campaigns/{campaignId}/orders/{orderId}/delivery/track:
