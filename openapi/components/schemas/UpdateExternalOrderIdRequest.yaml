@@ -1,9 +1,9 @@
 description: Список заказов.
 type: object
 required:
-  - shopOrderId
+  - externalOrderId
 properties:
-  shopOrderId:
+  externalOrderId:
     description: Дополнительный идентификатор заказа.
     type: string
     minLength: 1

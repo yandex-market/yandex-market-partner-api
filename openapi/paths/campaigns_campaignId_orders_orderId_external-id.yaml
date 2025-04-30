@@ -7,11 +7,11 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
-  operationId: updateShopOrderId
+  operationId: updateExternalOrderId
   summary: Передача или изменение дополнительного идентификатора заказа
   description: >
-    {% include notitle [access](../../_auto/method_scopes/updateShopOrderId.md)
-    %}
+    {% include notitle
+    [access](../../_auto/method_scopes/updateExternalOrderId.md) %}
 
 
     При первом использовании запроса передает Маркету идентификатор заказа в
@@ -33,7 +33,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/UpdateShopOrderIdRequest.yaml
+          $ref: ../components/schemas/UpdateExternalOrderIdRequest.yaml
   responses:
     '200':
       description: Дополнительный идентификатор заказа успешно передан или изменен.
