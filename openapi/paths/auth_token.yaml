@@ -20,26 +20,16 @@ post:
     - promotion:read-only
     - communication
     - supplies-management:read-only
-  summary: Получение информации о Api-Key-токене
-  description: >
-    {% include notitle [access](../../_auto/method_scopes/getAuthApiKeyInfo.md)
-    %}
-
-
-    Возвращает информацию о переданном Api-Key-токене.
-
-
-    |**⚙️ Лимит:** 100 запросов в час|
-
-    |-|
-  operationId: getAuthApiKeyInfo
+  summary: Получение информации об авторизационном токене
+  description: "{% include notitle [access](../../_auto/method_scopes/getAuthTokenInfo.md) %}\n\n{% note info \"Метод доступен только для Api-Key-токена.\" %}\n\n\_\n\n{% endnote %}\n\nВозвращает информацию о переданном авторизационном токене.\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"
+  operationId: getAuthTokenInfo
   responses:
     '200':
-      description: Информация о Api-Key-токене.
+      description: Информация об авторизационном токене.
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/GetApiKeyResponse.yaml
+            $ref: ../components/schemas/GetTokenInfoResponse.yaml
     '400':
       $ref: ../components/responses/400.yaml
     '401':

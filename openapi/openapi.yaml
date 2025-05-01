@@ -325,8 +325,8 @@ paths:
     $ref: paths/campaigns_campaignId_supply-requests_items.yaml
   /campaigns/{campaignId}/supply-requests/documents:
     $ref: paths/campaigns_campaignId_supply-requests_documents.yaml
-  /auth/api-key:
-    $ref: paths/auth_api-key.yaml
+  /auth/token:
+    $ref: paths/auth_token.yaml
 components:
   securitySchemes:
     ApiKey:

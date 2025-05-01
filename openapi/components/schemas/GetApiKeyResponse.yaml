@@ -1,9 +1,0 @@
-description: Ответ на запрос получения информации о Api-Key-токене.
-type: object
-required:
-  - result
-allOf:
-  - $ref: ./ApiResponse.yaml
-  - properties:
-      result:
-        $ref: ./ApiKeyDTO.yaml

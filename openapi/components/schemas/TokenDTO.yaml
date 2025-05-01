@@ -1,0 +1,7 @@
+description: Информация об авторизационном токене.
+type: object
+required:
+  - apiKey
+properties:
+  apiKey:
+    $ref: ./ApiKeyDTO.yaml

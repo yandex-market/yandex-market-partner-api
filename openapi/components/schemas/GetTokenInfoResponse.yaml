@@ -1,0 +1,9 @@
+description: Ответ на запрос получения информации об авторизационном токене.
+type: object
+required:
+  - result
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./TokenDTO.yaml
