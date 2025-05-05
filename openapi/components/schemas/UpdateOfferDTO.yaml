@@ -33,7 +33,7 @@ allOf:
       basicPrice:
         description: |
           Цена.
-        $ref: ./UpdatePriceWithDiscountDTO.yaml
+        $ref: ./PriceWithDiscountDTO.yaml
       purchasePrice:
         description: >-
           Себестоимость — затраты на самостоятельное производство товара или

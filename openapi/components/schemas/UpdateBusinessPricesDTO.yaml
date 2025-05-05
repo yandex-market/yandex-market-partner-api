@@ -1,0 +1,5 @@
+description: Цены.
+type: object
+allOf:
+  - $ref: ./PriceWithDiscountDTO.yaml
+  - {}

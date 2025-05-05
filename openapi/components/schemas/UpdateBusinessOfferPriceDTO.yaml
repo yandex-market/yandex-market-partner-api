@@ -7,5 +7,4 @@ properties:
   offerId:
     $ref: ./ShopSku.yaml
   price:
-    description: Новая цена.
-    $ref: ./UpdatePriceWithDiscountDTO.yaml
+    $ref: ./UpdateBusinessPricesDTO.yaml
