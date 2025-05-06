@@ -225,6 +225,8 @@ paths:
     $ref: paths/reports_goods-feedback_generate.yaml
   /reports/shows-boost/generate:
     $ref: paths/reports_shows-boost_generate.yaml
+  /reports/banners-statistics/generate:
+    $ref: paths/reports_banners-statistics_generate.yaml
   /campaigns/{campaignId}/outlets:
     $ref: paths/campaigns_campaignId_outlets.yaml
   /campaigns/{campaignId}/outlets/{outletId}:
