@@ -9,7 +9,7 @@ properties:
     items:
       $ref: ./OfferPriceResponseDTO.yaml
   paging:
-    $ref: ./ScrollingPagerDTO.yaml
+    $ref: ./ForwardScrollingPagerDTO.yaml
   total:
     description: Количество всех цен магазина, измененных через API.
     type: integer
