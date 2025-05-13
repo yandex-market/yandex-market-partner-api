@@ -1,6 +1,6 @@
 description: >
-  Идентификатор кабинета. Чтобы узнать идентификатор, воспользуйтесь запросом
-  [GET campaigns](../../reference/campaigns/getCampaigns.md#businessdto).
+  Идентификатор кабинета. Чтобы его узнать, воспользуйтесь запросом [GET
+  campaigns](../../reference/campaigns/getCampaigns.md).
 
 
   ℹ️ [Что такое кабинет и магазин на

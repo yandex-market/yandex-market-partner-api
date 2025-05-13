@@ -12,14 +12,16 @@ description: >
 type: object
 properties:
   campaignIds:
-    description: |
-      Магазины, в которых товар добавлен в акцию автоматически.
+    description: >
+      Идентификаторы кампаний тех магазинов, в которых товар добавлен в акцию
+      автоматически.
+
 
       Возвращается, если статус товара в акции — `PARTIALLY_AUTO`.
     type: array
     nullable: true
     minItems: 1
     items:
-      description: Идентификатор магазина.
+      description: Идентификатор кампании.
       type: integer
       format: int64

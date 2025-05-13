@@ -9,7 +9,8 @@ properties:
     $ref: ./PromoOfferUpdateWarningCodeType.yaml
   campaignIds:
     description: >
-      Идентификаторы магазинов в кабинете, для которых получены предупреждения.
+      Идентификаторы кампаний тех магазинов, для которых получены
+      предупреждения.
 
 
       Не возвращается, если предупреждения действуют для всех магазинов в
@@ -18,6 +19,6 @@ properties:
     nullable: true
     minItems: 1
     items:
-      description: Идентификатор магазина.
+      description: Идентификатор кампании.
       type: integer
       format: int64
