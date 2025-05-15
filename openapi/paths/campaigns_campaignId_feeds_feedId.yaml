@@ -12,7 +12,7 @@ get:
     - pricing:read-only
   operationId: getFeed
   summary: Информация о прайс-листе
-  description: "{% include notitle [access](../../_auto/method_scopes/getFeed.md) %}\n\n{% note warning \"Этот метод устарел\" %}\n\nНе используйте его.\n\n{% endnote %}\n\nВозвращает информацию о прайс-листе, размещенном на Маркете для заданного магазина. Также ресурс возвращает результаты автоматических проверок прайс-листа.\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [access](../../_auto/method_scopes/getFeed.md) %}\n\nВозвращает информацию о прайс-листе, размещенном на Маркете для заданного магазина. Также ресурс возвращает результаты автоматических проверок прайс-листа.\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

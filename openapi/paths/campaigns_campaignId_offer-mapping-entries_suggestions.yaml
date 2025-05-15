@@ -17,15 +17,6 @@ post:
     [access](../../_auto/method_scopes/getSuggestedOfferMappingEntries.md) %}
 
 
-    {% note warning "Этот метод устарел" %}
-
-
-    Не используйте его.
-
-
-    {% endnote %}
-
-
     Возвращает идентификаторы карточек товаров на Маркете, рекомендованных для
     ваших товаров.
 

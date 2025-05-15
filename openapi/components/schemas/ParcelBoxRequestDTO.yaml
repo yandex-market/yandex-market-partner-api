@@ -4,12 +4,7 @@ description: >-
 type: object
 properties:
   fulfilmentId:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
+    description: "{% note warning \"Не используйте этот параметр.\" %}\n\n\_\n\n{% endnote %}\n"
     type: string
     pattern: ^[\p{Alnum}- ]*$
     deprecated: true

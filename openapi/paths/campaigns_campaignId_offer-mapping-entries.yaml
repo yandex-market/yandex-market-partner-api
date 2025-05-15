@@ -17,11 +17,11 @@ get:
     [access](../../_auto/method_scopes/getOfferMappingEntries.md) %}
 
 
-    {% note warning "Этот метод устарел" %}
+    {% note warning "Какой метод использовать вместо устаревшего" %}
 
 
-    Вместо него используйте [POST
-    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
+    [POST
+    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md)
 
 
     {% endnote %}

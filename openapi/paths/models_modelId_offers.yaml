@@ -16,15 +16,6 @@ get:
     {% include notitle [access](../../_auto/method_scopes/getModelOffers.md) %}
 
 
-    {% note warning "Этот метод устарел" %}
-
-
-    Не используйте его.
-
-
-    {% endnote %}
-
-
     Возвращает информацию о первых десяти предложениях, расположенных на
     карточке модели.
 

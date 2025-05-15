@@ -10,26 +10,12 @@ properties:
     format: int64
     type: integer
   dateTimeFrom:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Начало периода, включительно.
+    description: Начало периода, включительно.
     format: date-time
     type: string
     deprecated: true
   dateTimeTo:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Конец периода, включительно. Максимальный период — 3 месяца.
+    description: Конец периода, включительно. Максимальный период — 3 месяца.
     format: date-time
     type: string
     deprecated: true

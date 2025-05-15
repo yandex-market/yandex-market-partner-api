@@ -52,14 +52,7 @@ properties:
     format: decimal
   priceBeforeDiscount:
     deprecated: true
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Стоимость товара в валюте магазина до применения скидок.
+    description: Стоимость товара в валюте магазина до применения скидок.
     type: number
     format: decimal
   count:
@@ -70,35 +63,16 @@ properties:
     $ref: ./OrderVatType.yaml
   shopSku:
     deprecated: true
-    description: "{% note warning \"Этот параметр устарел\" %}\n\nВместо него используйте `offerId`.\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
+    description: "{% note warning \"Вместо него используйте `offerId`.\" %}\n\n\_\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
     $ref: ./ShopSku.yaml
   subsidy:
     deprecated: true
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Вместо него используйте `subsidies`.
-
-      {% endnote %}
-
-      Общее вознаграждение партнеру за DBS-доставку и все скидки на товар:
-
-      * по промокодам;
-      * по купонам;
-      * по баллам Плюса;
-      * по акциям.
+    description: "{% note warning \"Вместо него используйте `subsidies`.\" %}\n\n\_\n\n{% endnote %}\n\nОбщее вознаграждение партнеру за DBS-доставку и все скидки на товар:\n\n* по промокодам;\n* по купонам;\n* по баллам Плюса;\n* по акциям.\n"
     type: number
     format: decimal
   partnerWarehouseId:
     deprecated: true
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Идентификатор склада в системе партнера, на который сформирован заказ.
+    description: Идентификатор склада в системе партнера, на который сформирован заказ.
     type: string
   promos:
     description: >-
@@ -127,18 +101,7 @@ properties:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
     deprecated: true
-    description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Для получения информации о невыкупах и возвратах используйте [GET
-      campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).
-
-
-      {% endnote %}
-
-
-      Информация о невыкупленных или возвращенных товарах в заказе.
+    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
     type: array
     nullable: true
     minItems: 1

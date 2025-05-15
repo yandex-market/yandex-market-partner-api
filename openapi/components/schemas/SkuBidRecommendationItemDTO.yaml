@@ -24,14 +24,7 @@ properties:
     items:
       $ref: ./BidRecommendationItemDTO.yaml
   priceRecommendations:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Рекомендованные цены.
+    description: Рекомендованные цены.
     deprecated: true
     type: array
     nullable: true

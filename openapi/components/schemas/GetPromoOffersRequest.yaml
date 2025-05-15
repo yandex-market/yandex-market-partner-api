@@ -7,16 +7,7 @@ properties:
     description: Идентификатор акции.
     type: string
   statusType:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Вместо него используйте `statuses`.
-
-      {% endnote %}
-
-      Фильтр для товаров, которые добавлены в акцию вручную.
-
-      Если не передать параметр `statusType`, вернутся все товары.
+    description: "{% note warning \"Вместо него используйте `statuses`.\" %}\n\n\_\n\n{% endnote %}\n\nФильтр для товаров, которые добавлены в акцию вручную.\n\nЕсли не передать параметр `statusType`, вернутся все товары.\n"
     deprecated: true
     $ref: ./PromoOfferParticipationStatusFilterType.yaml
   statuses:

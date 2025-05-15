@@ -65,12 +65,7 @@ properties:
     type: integer
     format: int32
   inStock:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
+    description: "{% note warning \"Не используйте этот параметр.\" %}\n\n\_\n\n{% endnote %}\n"
     deprecated: true
     type: integer
     format: int32

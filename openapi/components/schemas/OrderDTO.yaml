@@ -57,32 +57,14 @@ properties:
     format: decimal
   buyerItemsTotal:
     deprecated: true
-    description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Не используйте его.
-
-
-      {% endnote %}
-
-
+    description: >-
       Стоимость всех товаров в заказе в валюте покупателя после применения
       скидок и без учета стоимости доставки.
     type: number
     format: decimal
   buyerTotal:
     deprecated: true
-    description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Не используйте его.
-
-
-      {% endnote %}
-
-
+    description: >-
       Стоимость всех товаров в заказе в валюте покупателя после применения
       скидок и с учетом стоимости доставки.
     type: number
@@ -102,16 +84,7 @@ properties:
     format: decimal
   buyerTotalBeforeDiscount:
     deprecated: true
-    description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Не используйте его.
-
-
-      {% endnote %}
-
-
+    description: >-
       Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
       с учетом стоимости доставки (`buyerItemsTotalBeforeDiscount` + стоимость
       доставки).

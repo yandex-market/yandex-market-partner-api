@@ -15,11 +15,11 @@ post:
     [access](../../_auto/method_scopes/updateOfferMappingEntries.md) %}
 
 
-    {% note warning "Этот метод устарел" %}
+    {% note warning "Какой метод использовать вместо устаревшего" %}
 
 
-    Вместо него используйте [POST
-    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
+    [POST
+    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md)
 
 
     {% endnote %}

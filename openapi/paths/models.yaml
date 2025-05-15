@@ -16,15 +16,6 @@ post:
     {% include notitle [access](../../_auto/method_scopes/getModels.md) %}
 
 
-    {% note warning "Этот метод устарел" %}
-
-
-    Не используйте его.
-
-
-    {% endnote %}
-
-
     Возвращает информацию о моделях товаров.
 
 
@@ -83,15 +74,6 @@ get:
   deprecated: true
   description: >
     {% include notitle [access](../../_auto/method_scopes/searchModels.md) %}
-
-
-    {% note warning "Этот метод устарел" %}
-
-
-    Не используйте его.
-
-
-    {% endnote %}
 
 
     Возвращает информацию о моделях, удовлетворяющих заданным в запросе условиям

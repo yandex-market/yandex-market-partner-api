@@ -9,15 +9,6 @@ required:
 properties:
   id:
     description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Не используйте его.
-
-
-      {% endnote %}
-
-
       Идентификатор доставки, присвоенный магазином.
 
 
@@ -34,14 +25,7 @@ properties:
     type: string
   price:
     deprecated: true
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Стоимость доставки смотрите в параметре `deliveryTotal`.
-
-      {% endnote %}
-
-      Стоимость доставки в валюте заказа.
+    description: "{% note warning \"Стоимость доставки смотрите в параметре `deliveryTotal`.\" %}\n\n\_\n\n{% endnote %}\n\nСтоимость доставки в валюте заказа.\n"
     type: number
     format: decimal
   deliveryPartnerType:

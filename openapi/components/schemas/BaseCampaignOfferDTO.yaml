@@ -12,10 +12,8 @@ properties:
     $ref: ./QuantumDTO.yaml
   available:
     description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Вместо него используйте методы скрытия товаров с витрины:
+      {% note warning "Вместо него используйте методы скрытия товаров с витрины"
+      %}
 
 
       * [GET

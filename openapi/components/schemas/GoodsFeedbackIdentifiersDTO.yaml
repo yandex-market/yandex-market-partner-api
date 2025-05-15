@@ -6,14 +6,7 @@ properties:
     type: integer
     format: int64
   modelId:
-    description: |
-      { % note warning "Этот параметр устарел" % }
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Идентификатор модели товара.
+    description: Идентификатор модели товара.
     deprecated: true
     type: integer
     format: int64

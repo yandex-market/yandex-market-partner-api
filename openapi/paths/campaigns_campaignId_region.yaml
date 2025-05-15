@@ -16,11 +16,11 @@ get:
     %}
 
 
-    {% note warning "Этот метод устарел" %}
+    {% note warning "Какой метод использовать вместо устаревшего" %}
 
 
-    Вместо него используйте [GET
-    campaigns/{campaignId}/settings](../../reference/campaigns/getCampaignSettings.md).
+    [GET
+    campaigns/{campaignId}/settings](../../reference/campaigns/getCampaignSettings.md)
 
 
     {% endnote %}

@@ -14,15 +14,6 @@ post:
     {% include notitle [access](../../_auto/method_scopes/setFeedParams.md) %}
 
 
-    {% note warning "Этот метод устарел" %}
-
-
-    Не используйте его.
-
-
-    {% endnote %}
-
-
     Позволяет магазину изменить параметры прайс-листа.
 
 

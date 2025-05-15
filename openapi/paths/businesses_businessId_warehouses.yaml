@@ -15,11 +15,11 @@ get:
     {% include notitle [access](../../_auto/method_scopes/getWarehouses.md) %}
 
 
-    {% note warning "Этот метод устарел" %}
+    {% note warning "Какой метод использовать вместо устаревшего" %}
 
 
-    Вместо него используйте [POST
-    businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md).
+    [POST
+    businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md)
 
 
     {% endnote %}

@@ -110,18 +110,7 @@ get:
       schema:
         type: string
         format: date
-    - description: >
-        {% note warning "Этот параметр устарел" %}
-
-
-        Вместо него используйте `fromDate`.
-
-
-        {% endnote %}
-
-
-        Начальная дата для фильтрации невыкупов или возвратов по дате
-        обновления.
+    - description: "{% note warning \"Вместо него используйте `fromDate`.\" %}\n\n\_\n\n{% endnote %}\n\nНачальная дата для фильтрации невыкупов или возвратов по дате обновления.\n"
       deprecated: true
       in: query
       name: from_date
@@ -130,14 +119,7 @@ get:
       schema:
         type: string
         format: date
-    - description: |
-        {% note warning "Этот параметр устарел" %}
-
-        Вместо него используйте `toDate`.
-
-        {% endnote %}
-
-        Конечная дата для фильтрации невыкупов или возвратов по дате обновления.
+    - description: "{% note warning \"Вместо него используйте `toDate`.\" %}\n\n\_\n\n{% endnote %}\n\nКонечная дата для фильтрации невыкупов или возвратов по дате обновления.\n"
       deprecated: true
       in: query
       name: to_date

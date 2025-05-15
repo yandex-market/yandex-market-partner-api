@@ -10,14 +10,7 @@ properties:
     description: Услуга Маркета, за которую начисляется тариф.
     $ref: ./TariffType.yaml
   percent:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Значение тарифа в процентах.
+    description: Значение тарифа в процентах.
     deprecated: true
     type: number
   amount:

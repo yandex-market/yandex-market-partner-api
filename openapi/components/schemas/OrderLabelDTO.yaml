@@ -16,15 +16,6 @@ properties:
     format: int32
   url:
     description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Не используйте его.
-
-
-      {% endnote %}
-
-
       URL файла с ярлыками‑наклейками на все коробки в заказе.
 
 

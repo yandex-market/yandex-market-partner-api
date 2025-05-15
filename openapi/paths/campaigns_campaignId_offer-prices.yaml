@@ -16,11 +16,11 @@ get:
     {% include notitle [access](../../_auto/method_scopes/getPrices.md) %}
 
 
-    {% note warning "Этот метод устарел" %}
+    {% note warning "Какой метод использовать вместо устаревшего" %}
 
 
-    Вместо него используйте [POST
-    campaigns/{campaignId}/offer-prices](../../reference/assortment/getPricesByOfferIds.md).
+    [POST
+    campaigns/{campaignId}/offer-prices](../../reference/assortment/getPricesByOfferIds.md)
 
 
     {% endnote %}

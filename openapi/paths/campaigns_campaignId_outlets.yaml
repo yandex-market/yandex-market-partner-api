@@ -108,12 +108,7 @@ get:
       required: false
       schema:
         type: string
-    - description: |
-        {% note warning "Этот параметр устарел" %}
-
-        Вместо него используйте `region_id`.
-
-        {% endnote %}
+    - description: "{% note warning \"Вместо него используйте `region_id`.\" %}\n\n\_\n\n{% endnote %}\n"
       name: regionId
       deprecated: true
       in: query

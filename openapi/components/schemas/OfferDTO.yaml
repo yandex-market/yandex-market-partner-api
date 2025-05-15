@@ -65,15 +65,6 @@ properties:
     type: string
   modelId:
     description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Не используйте его.
-
-
-      {% endnote %}
-
-
       Идентификатор модели Маркета, с которой соотнесено предложение.
 
 
@@ -110,36 +101,15 @@ properties:
       * `UAH` — украинская гривна.
     $ref: ./CurrencyType.yaml
   bid:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Ставка на клик.
+    description: Ставка на клик.
     type: number
     deprecated: true
   cbid:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Ставка на клик.
+    description: Ставка на клик.
     type: number
     deprecated: true
   fee:
-    description: |
-      {% note warning "Этот параметр устарел" %}
-
-      Не используйте его.
-
-      {% endnote %}
-
-      Процент комиссии на товар при продаже по CPA.
+    description: Процент комиссии на товар при продаже по CPA.
     type: number
     deprecated: true
   blocked:

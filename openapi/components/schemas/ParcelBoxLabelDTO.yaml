@@ -58,13 +58,9 @@ properties:
     type: string
   weight:
     description: |
-      {% note warning "Этот параметр устарел" %}
+      Общая масса всех товаров в заказе.
 
-      Не используйте его.
-
-      {% endnote %}
-
-      Общая масса всех товаров в заказе. Возвращается в формате: `weight кг`.
+      Возвращается в формате: `weight кг`.
     type: string
     deprecated: true
   deliveryServiceId:

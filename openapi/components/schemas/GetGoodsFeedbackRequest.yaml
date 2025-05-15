@@ -52,15 +52,6 @@ properties:
       format: int32
   modelIds:
     description: >
-      {% note warning "Этот параметр устарел" %}
-
-
-      Не используйте его.
-
-
-      {% endnote %}
-
-
       Фильтр по идентификатору модели товара.
 
 
