@@ -62,10 +62,12 @@ properties:
     items:
       $ref: ./OrdersStatsItemDTO.yaml
   payments:
-    description: |
+    description: >
       Информация о денежных переводах по заказу.
 
-      Может вернуться пустым, если нет данных о переводах.
+
+      Может вернуться пустым, если нет данных о переводах. Например, заказ
+      отменен или выбрана оплата при получении (для модели DBS).
     type: array
     items:
       $ref: ./OrdersStatsPaymentDTO.yaml
