@@ -61,7 +61,7 @@ properties:
       campaigns/{campaignId}/warehouse/status](../../reference/warehouses/updateWarehouseStatus.md).
 
 
-      Статус в кабинете — **Отключен Маркетом**, а по API вернется
+      Статус в кабинете — **Отключен Маркетом**, а через API вернется
       **DISABLED_MANUALLY** (отключен вами).
 
 
