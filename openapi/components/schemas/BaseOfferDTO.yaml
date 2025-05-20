@@ -156,11 +156,12 @@ properties:
       например, товары одной серии, коллекции или линейки.
 
 
-      Максимальная длина тега 20 символов. У одного товара может быть максимум
-      10 тегов. Всего можно создать не больше 50 разных тегов.
+      Максимальная длина тега — 20 символов. У одного товара может быть максимум
+      10 тегов.
     type: array
     nullable: true
     minItems: 1
+    maxItems: 50
     items:
       type: string
       example: до 500 рублей
@@ -244,6 +245,7 @@ properties:
       Для товаров, занимающих одно место, не передавайте этот параметр.
     type: integer
     format: int32
+    minimum: 2
   condition:
     description: >
       Состояние уцененного товара.
@@ -295,5 +297,6 @@ properties:
     nullable: true
     minItems: 1
     deprecated: true
+    maxItems: 600
     items:
       $ref: ./OfferParamDTO.yaml

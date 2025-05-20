@@ -6,6 +6,7 @@ properties:
     nullable: true
     minItems: 1
     maxItems: 200
+    uniqueItems: true
     items:
       $ref: ./ShopSku.yaml
   cardStatuses:
@@ -18,6 +19,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       $ref: ./OfferCardStatusType.yaml
   categoryIds:
@@ -25,6 +27,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       type: integer
   vendorNames:
@@ -32,6 +35,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       type: string
   tags:
@@ -39,6 +43,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       type: string
   archived:
