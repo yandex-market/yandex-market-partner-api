@@ -23,6 +23,13 @@ post:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml
     - $ref: ../components/parameters/ReturnId.yaml
+  requestBody:
+    required: false
+    description: description
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/SubmitReturnDecisionRequest.yaml
   responses:
     '200':
       description: Статус выполнения операции.

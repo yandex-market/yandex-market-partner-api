@@ -1,0 +1,4 @@
+description: Запрос на подтверждение решения по возврату.
+type: object
+required:
+  - returnItemDecisions

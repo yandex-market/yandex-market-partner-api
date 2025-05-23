@@ -5,24 +5,12 @@ required:
   - decisionType
 properties:
   returnItemId:
-    description: Идентификатор товара в возврате.
-    type: integer
-    format: int64
+    $ref: ./ReturnItemId.yaml
   decisionType:
     description: Решение по товару в возврате.
     $ref: ./ReturnRequestDecisionType.yaml
   comment:
-    description: |
-      Комментарий к решению. Укажите:
-
-      * для `REFUND_MONEY_INCLUDING_SHIPMENT`— стоимость обратной пересылки.
-
-      * для `REPAIR` — когда вы устраните недостатки товара.
-
-      * для `DECLINE_REFUND` — причину отказа.
-
-      * для `OTHER_DECISION` — какое решение вы предлагаете.
-    type: string
+    $ref: ./ReturnItemDecisionComment.yaml
 example:
   returnItemId: 1
   decisionType: REFUND_MONEY_INCLUDING_SHIPMENT
