@@ -2,6 +2,8 @@ post:
   tags:
     - returns
     - dbs
+    - fbs
+    - express
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
