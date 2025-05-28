@@ -259,8 +259,6 @@ paths:
     $ref: paths/businesses_businessId_offers_recommendations.yaml
   /campaigns/{campaignId}/feeds/{feedId}:
     $ref: paths/campaigns_campaignId_feeds_feedId.yaml
-  /campaigns/{campaignId}/feeds:
-    $ref: paths/campaigns_campaignId_feeds.yaml
   /models:
     $ref: paths/models.yaml
   /models/{modelId}:
