@@ -1,0 +1,21 @@
+description: >
+  Статус проверки УИНа:
+
+
+  * `FAILED` — не прошел проверку.
+
+
+  * `IN_PROGRESS` — в процессе проверки.
+
+
+  * `NOT_ON_VALIDATION` — УИН не отправлен на проверку или переданы не все УИНы
+  в заказе.
+
+
+  * `OK` — проверка успешно пройдена.
+type: string
+enum:
+  - OK
+  - IN_PROGRESS
+  - FAILED
+  - NOT_ON_VALIDATION

@@ -1,0 +1,10 @@
+description: Список идентификаторов товаров и статусы проверки УИНов.
+type: object
+required:
+  - items
+properties:
+  items:
+    description: Список идентификаторов товаров и статусы проверки УИНов.
+    type: array
+    items:
+      $ref: ./OrderItemValidationStatusDTO.yaml

@@ -1,0 +1,15 @@
+description: Идентификатор товара и статус проверки его УИНа.
+type: object
+required:
+  - id
+  - uin
+properties:
+  id:
+    description: Идентификатор товара в заказе.
+    type: integer
+    format: int64
+  uin:
+    description: Статусы проверки УИНов.
+    type: array
+    items:
+      $ref: ./UinDTO.yaml

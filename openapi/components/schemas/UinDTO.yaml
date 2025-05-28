@@ -1,0 +1,11 @@
+description: Статус проверки УИНа.
+type: object
+required:
+  - value
+  - status
+properties:
+  value:
+    type: string
+    description: УИН товара.
+  status:
+    $ref: ./UinStatusType.yaml

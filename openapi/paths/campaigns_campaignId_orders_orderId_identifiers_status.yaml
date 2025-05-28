@@ -1,0 +1,56 @@
+post:
+  tags:
+    - orders
+    - fbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+  operationId: getOrderIdentifiersStatus
+  summary: Статусы проверки УИНов
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getOrderIdentifiersStatus.md) %}
+
+
+    Возвращает статусы проверки [УИНов](*uin) в заказе.
+
+
+    Заказ, в котором есть ювелирные изделия, перейдет в статус `READY_TO_SHIP`,
+    только когда:
+
+
+    1. Вы передадите Маркету УИНы по каждому ювелирному изделию в заказе — метод
+    [PUT
+    campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
+
+    2. Все УИНы успешно пройдут проверку.
+
+
+    |**⚙️ Лимит:** 100 000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+    - $ref: ../components/parameters/OrderId.yaml
+  responses:
+    '200':
+      description: Информация по проверке УИНов.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOrderIdentifiersStatusResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml
