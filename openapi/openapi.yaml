@@ -261,8 +261,6 @@ paths:
     $ref: paths/campaigns_campaignId_feeds.yaml
   /campaigns/{campaignId}/feeds/{feedId}/params:
     $ref: paths/campaigns_campaignId_feeds_feedId_params.yaml
-  /campaigns/{campaignId}/feeds/{feedId}/refresh:
-    $ref: paths/campaigns_campaignId_feeds_feedId_refresh.yaml
   /models:
     $ref: paths/models.yaml
   /models/{modelId}:
