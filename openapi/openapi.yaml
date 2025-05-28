@@ -259,8 +259,6 @@ paths:
     $ref: paths/campaigns_campaignId_feeds_feedId.yaml
   /campaigns/{campaignId}/feeds:
     $ref: paths/campaigns_campaignId_feeds.yaml
-  /campaigns/{campaignId}/feeds/{feedId}/params:
-    $ref: paths/campaigns_campaignId_feeds_feedId_params.yaml
   /models:
     $ref: paths/models.yaml
   /models/{modelId}:
