@@ -2,6 +2,7 @@ get:
   tags:
     - returns
     - fbs
+    - fby
     - dbs
     - express
   x-auth-scopes:
