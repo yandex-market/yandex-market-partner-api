@@ -7,7 +7,7 @@ post:
     - offers-and-cards-management
     - inventory-and-order-processing
   operationId: generateGoodsMovementReport
-  summary: Отчет по движению товаров (FBY)
+  summary: Отчет по движению товаров
   description: >
     {% include notitle
     [access](../../_auto/method_scopes/generateGoodsMovementReport.md) %}

@@ -18,7 +18,7 @@ get:
     - communication
     - supplies-management:read-only
   operationId: getFulfillmentWarehouses
-  summary: Идентификаторы складов Маркета (FBY)
+  summary: Идентификаторы складов Маркета
   description: >
     {% include notitle
     [access](../../_auto/method_scopes/getFulfillmentWarehouses.md) %}

@@ -14,10 +14,10 @@ put:
     [access](../../_auto/method_scopes/provideOrderItemIdentifiers.md) %}
 
 
-    {% note warning "Этот запрос только для DBS" %}
+    {% note warning "Если вы работаете по модели FBS" %}
 
 
-    Если вы работаете по модели FBS, пользуйтесь [PUT
+    Используйте метод [PUT
     campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
 
 

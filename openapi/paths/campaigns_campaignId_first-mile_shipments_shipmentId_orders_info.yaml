@@ -8,7 +8,7 @@ get:
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
   operationId: getShipmentOrdersInfo
-  summary: Получение информации о возможности печати ярлыков (FBS)
+  summary: Получение информации о возможности печати ярлыков
   description: >
     {% include notitle
     [access](../../_auto/method_scopes/getShipmentOrdersInfo.md) %}
