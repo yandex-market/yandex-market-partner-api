@@ -1,0 +1,39 @@
+description: |
+  Данные, необходимые для генерации отчета.
+type: object
+required:
+  - businessId
+  - dateFrom
+  - dateTo
+properties:
+  businessId:
+    description: Идентификатор кабинета.
+    format: int64
+    type: integer
+  dateFrom:
+    description: Начало периода, включительно.
+    format: date
+    type: string
+  dateTo:
+    description: Конец периода, включительно.
+    format: date
+    type: string
+  categoryIds:
+    description: Идентификаторы категорий.
+    type: array
+    uniqueItems: true
+    minItems: 1
+    maxItems: 1000
+    nullable: true
+    items:
+      type: integer
+      format: int64
+  offerIds:
+    description: Идентификаторы товаров.
+    type: array
+    uniqueItems: true
+    minItems: 1
+    maxItems: 1000
+    nullable: true
+    items:
+      $ref: ./ShopSku.yaml
