@@ -253,8 +253,6 @@ paths:
     $ref: paths/campaigns_campaignId_offers_update.yaml
   /campaigns/{campaignId}/offers/delete:
     $ref: paths/campaigns_campaignId_offers_delete.yaml
-  /campaigns/{campaignId}/offers/all:
-    $ref: paths/campaigns_campaignId_offers_all.yaml
   /businesses/{businessId}/offers/recommendations:
     $ref: paths/businesses_businessId_offers_recommendations.yaml
   /models:
