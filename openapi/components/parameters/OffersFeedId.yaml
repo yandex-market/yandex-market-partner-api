@@ -1,7 +1,0 @@
-name: feedId
-description: Идентификатор прайс-листа.
-in: query
-required: false
-schema:
-  type: integer
-  format: int64
