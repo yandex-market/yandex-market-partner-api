@@ -21,6 +21,12 @@ description: |
 
   * `CANCELLED` — возврат отменен.
 
+  * `PREMODERATION_DISPUTE` — по возврату открыт спор.
+
+  * `PREMODERATION_DECISION_WAITING` — ожидает решения.
+
+  * `PREMODERATION_DECISION_MADE` — по возврату принято решение.
+
   * `UNKNOWN` — неизвестный статус.
 type: string
 enum:
@@ -34,4 +40,7 @@ enum:
   - REFUNDED_BY_SHOP
   - CANCELLED
   - COMPLETE_WITHOUT_REFUND
+  - PREMODERATION_DISPUTE
+  - PREMODERATION_DECISION_WAITING
+  - PREMODERATION_DECISION_MADE
   - UNKNOWN
