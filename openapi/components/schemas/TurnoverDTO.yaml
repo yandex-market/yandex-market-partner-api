@@ -9,6 +9,6 @@ properties:
   turnoverDays:
     description: >-
       Значение в днях. [Что это за
-      число?](https://yandex.ru/support/marketplace/analytics/turnover.html)
+      число?](https://yandex.ru/support/marketplace/ru/storage/logistics#turnover)
     type: number
     format: double
