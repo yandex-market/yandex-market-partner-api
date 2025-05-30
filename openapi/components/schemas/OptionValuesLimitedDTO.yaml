@@ -14,6 +14,7 @@ properties:
     description: |
       Идентификаторы допустимых значений ограничиваемой характеристики.
     type: array
+    uniqueItems: true
     items:
       type: integer
       format: int64

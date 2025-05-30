@@ -6,6 +6,7 @@ properties:
   models:
     description: Список моделей.
     type: array
+    uniqueItems: true
     items:
       description: Идентификатор модели.
       type: integer

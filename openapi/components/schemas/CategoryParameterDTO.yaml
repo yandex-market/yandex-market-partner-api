@@ -32,6 +32,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       $ref: ./OfferCardRecommendationType.yaml
   required:

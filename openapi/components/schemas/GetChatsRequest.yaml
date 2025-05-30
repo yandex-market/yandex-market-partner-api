@@ -15,6 +15,7 @@ properties:
     description: Фильтр по типам чатов.
     type: array
     nullable: true
+    uniqueItems: true
     items:
       $ref: ./ChatType.yaml
     minItems: 1
@@ -22,6 +23,7 @@ properties:
     description: Фильтр по статусам чатов.
     type: array
     nullable: true
+    uniqueItems: true
     items:
       $ref: ./ChatStatusType.yaml
     minItems: 1
