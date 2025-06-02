@@ -67,9 +67,6 @@ properties:
       Ссылки (URL) на видео товара.
 
 
-      Максимальное количество ссылок — 6.
-
-
       **Требования к ссылке**
 
 
@@ -140,6 +137,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       type: string
       example: Россия
@@ -162,6 +160,7 @@ properties:
     nullable: true
     minItems: 1
     maxItems: 50
+    uniqueItems: true
     items:
       type: string
       example: до 500 рублей
@@ -230,6 +229,7 @@ properties:
     nullable: true
     minItems: 1
     maxItems: 6
+    uniqueItems: true
     items:
       type: string
   boxCount:

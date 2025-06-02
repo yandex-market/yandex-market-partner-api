@@ -48,6 +48,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       description: >
         Список товаров в заказе после возможных изменений.
@@ -71,6 +72,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       $ref: ./OrderStatsStatusType.yaml
   hasCis:

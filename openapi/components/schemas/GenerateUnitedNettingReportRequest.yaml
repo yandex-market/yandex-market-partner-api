@@ -43,6 +43,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       $ref: ./PlacementType.yaml
   inns:
@@ -50,6 +51,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       type: string
   campaignIds:
@@ -71,6 +73,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       type: integer
       format: int64

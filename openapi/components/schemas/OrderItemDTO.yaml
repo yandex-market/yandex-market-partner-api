@@ -119,6 +119,7 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       $ref: ./OrderItemInstanceType.yaml
   tags:
@@ -126,5 +127,6 @@ properties:
     type: array
     nullable: true
     minItems: 1
+    uniqueItems: true
     items:
       $ref: ./OrderItemTagType.yaml

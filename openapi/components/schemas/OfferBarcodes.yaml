@@ -17,6 +17,7 @@ description: >+
 type: array
 nullable: true
 minItems: 1
+uniqueItems: true
 items:
   type: string
   example: 46012300000000
