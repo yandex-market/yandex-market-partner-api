@@ -51,13 +51,9 @@ get:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** рассчитывается по [формуле](*rule)|
+    |**⚙️ Лимит:** 10 000 товаров в минуту|
 
     |-|
-
-
-    [//]: <> (rule: суточный лимит товаров — количество товаров в каталоге
-    магазина * 25)
   deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

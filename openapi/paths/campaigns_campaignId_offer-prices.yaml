@@ -44,8 +44,7 @@ get:
     продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).
 
 
-    |**⚙️ Лимит:** ```(количество товаров партнера на витрине) * 25``` товаров в
-    сутки|
+    |**⚙️ Лимит:** 150 000 товаров в минуту|
 
     |-|
   deprecated: true
@@ -115,12 +114,9 @@ post:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** рассчитывается по [формуле](*rule)|
+    |**⚙️ Лимит:** 150 000 товаров в минуту|
 
     |-|
-
-
-    [//]: <> (rule: суточный лимит товаров — количество товаров на витрине * 25)
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
