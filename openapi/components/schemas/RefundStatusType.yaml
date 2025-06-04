@@ -21,7 +21,7 @@ description: |
 
   * `CANCELLED` — возврат отменен.
 
-  * `REJECTED` — отклонен модерацией или на ПВЗ
+  * `REJECTED` — возврат отклонен модерацией или на ПВЗ.
 
   * `PREMODERATION_DISPUTE` — по возврату открыт спор.
 
@@ -29,7 +29,7 @@ description: |
 
   * `PREMODERATION_DECISION_MADE` — по возврату принято решение.
 
-  * `PREMODERATION_SELECT_DELIVERY` — пользователь выбирает доставку
+  * `PREMODERATION_SELECT_DELIVERY` — пользователь выбирает доставку.
 
   * `UNKNOWN` — неизвестный статус.
 type: string
