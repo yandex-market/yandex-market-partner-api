@@ -14,10 +14,10 @@ put:
     [access](../../_auto/method_scopes/setOrderShipmentBoxes.md) %}
 
 
-    {% note warning "Если вы работаете по модели FBS" %}
+    {% note warning "Какой метод использовать вместо устаревшего" %}
 
 
-    Используйте метод [PUT
+    [PUT
     campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
 
 
@@ -122,6 +122,7 @@ put:
     |**⚙️ Лимит:** 100 000 запросов в час|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml
