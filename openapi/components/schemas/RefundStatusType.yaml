@@ -21,11 +21,15 @@ description: |
 
   * `CANCELLED` — возврат отменен.
 
+  * `REJECTED` — отклонен модерацией или на ПВЗ
+
   * `PREMODERATION_DISPUTE` — по возврату открыт спор.
 
   * `PREMODERATION_DECISION_WAITING` — ожидает решения.
 
   * `PREMODERATION_DECISION_MADE` — по возврату принято решение.
+
+  * `PREMODERATION_SELECT_DELIVERY` — пользователь выбирает доставку
 
   * `UNKNOWN` — неизвестный статус.
 type: string
@@ -39,8 +43,10 @@ enum:
   - REFUNDED_WITH_BONUSES
   - REFUNDED_BY_SHOP
   - CANCELLED
+  - REJECTED
   - COMPLETE_WITHOUT_REFUND
   - PREMODERATION_DISPUTE
   - PREMODERATION_DECISION_WAITING
   - PREMODERATION_DECISION_MADE
+  - PREMODERATION_SELECT_DELIVERY
   - UNKNOWN

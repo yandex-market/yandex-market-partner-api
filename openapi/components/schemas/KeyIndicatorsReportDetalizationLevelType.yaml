@@ -1,0 +1,10 @@
+description: |
+  За какой период нужна детализация:
+
+  * `WEEK` — по неделям.
+
+  * `MONTH` — по месяцам.
+type: string
+enum:
+  - WEEK
+  - MONTH
