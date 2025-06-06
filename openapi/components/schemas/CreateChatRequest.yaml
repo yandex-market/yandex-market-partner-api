@@ -1,8 +1,6 @@
 description: |
   Заказ, для которого нужно создать чат.
 type: object
-required:
-  - orderId
 properties:
   orderId:
     description: Идентификатор заказа на Маркете.
