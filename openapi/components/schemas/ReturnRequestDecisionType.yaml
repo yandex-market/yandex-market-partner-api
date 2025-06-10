@@ -2,6 +2,8 @@ description: >
   Решение по товару в возврате:
 
 
+  * `FAST_REFUND_MONEY` — вернуть деньги покупателю без возврата товара.
+
   * `REFUND_MONEY` — вернуть деньги за товар.
 
   * `REFUND_MONEY_INCLUDING_SHIPMENT` — вернуть деньги за товар и обратную
@@ -18,6 +20,7 @@ description: >
   * `OTHER_DECISION` — другое решение.
 type: string
 enum:
+  - FAST_REFUND_MONEY
   - REFUND_MONEY
   - REFUND_MONEY_INCLUDING_SHIPMENT
   - REPAIR
