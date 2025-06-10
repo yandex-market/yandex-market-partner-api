@@ -2,7 +2,6 @@ description: Информация о чате.
 type: object
 required:
   - chatId
-  - orderId
   - type
   - status
   - createdAt
