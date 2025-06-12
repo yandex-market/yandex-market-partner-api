@@ -1,7 +1,6 @@
 description: Информация о сообщениях.
 type: object
 required:
-  - orderId
   - messages
 properties:
   orderId:
