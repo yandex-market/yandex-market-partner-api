@@ -18,6 +18,7 @@ properties:
       Список дней, в которые служба доставки не работает. Дни магазин указал в
       кабинете продавца на Маркете.
     type: array
+    uniqueItems: true
     items:
       $ref: ./DateDdMmYyyy.yaml
   customWorkingDays:
@@ -25,6 +26,7 @@ properties:
       Список выходных и праздничных дней, в которые служба доставки работает.
       Дни магазин указал в кабинете продавца на Маркете.
     type: array
+    uniqueItems: true
     items:
       $ref: ./DateDdMmYyyy.yaml
   period:
@@ -35,11 +37,13 @@ properties:
       учетом выходных, нерабочих дней и государственных праздников. Информацию
       по ним магазин указывает в кабинете продавца на Маркете.
     type: array
+    uniqueItems: true
     items:
       $ref: ./DateDdMmYyyy.yaml
   weeklyHolidays:
     description: Список выходных дней недели и государственных праздников.
     type: array
+    uniqueItems: true
     items:
       description: |
         Номер дня недели.
