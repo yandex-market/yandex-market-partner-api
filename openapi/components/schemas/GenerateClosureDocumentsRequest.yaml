@@ -1,0 +1,28 @@
+description: |
+  Данные, необходимые для запроса закрывающих документов.
+type: object
+required:
+  - businessId
+  - monthOfYear
+properties:
+  businessId:
+    description: Идентификатор кабинета.
+    type: integer
+    format: int64
+  monthOfYear:
+    description: Месяц, за который нужны закрывающие документы.
+    $ref: ./ClosureDocumentsMonthOfYearDTO.yaml
+  contractTypes:
+    description: >
+      Типы договоров, по которым нужны закрывающие документы.
+
+
+      Если их не указать, вернется архив с документами по всем найденным
+      договорам.
+    type: array
+    uniqueItems: true
+    minItems: 1
+    maxItems: 3
+    nullable: true
+    items:
+      $ref: ./ClosureDocumentsContractType.yaml

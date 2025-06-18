@@ -1,0 +1,14 @@
+description: |
+  Месяц и год.
+type: object
+required:
+  - year
+  - month
+properties:
+  year:
+    description: Год.
+    type: integer
+    format: int32
+    example: 2025
+  month:
+    $ref: ./Month.yaml

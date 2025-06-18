@@ -1,4 +1,4 @@
-description: Формат отчета.
+description: Формат отчета или документа.
 name: format
 in: query
 required: false

@@ -1,4 +1,4 @@
-description: Ответ на запрос генерации отчета.
+description: Ответ на запрос генерации отчета или документа.
 type: object
 allOf:
   - $ref: ./ApiResponse.yaml

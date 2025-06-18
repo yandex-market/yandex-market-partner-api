@@ -229,6 +229,8 @@ paths:
     $ref: paths/reports_shows-boost_generate.yaml
   /reports/banners-statistics/generate:
     $ref: paths/reports_banners-statistics_generate.yaml
+  /reports/closure-documents/generate:
+    $ref: paths/reports_closure-documents_generate.yaml
   /reports/jewelry-fiscal/generate:
     $ref: paths/reports_jewelry-fiscal_generate.yaml
   /reports/sales-geography/generate:

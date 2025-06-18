@@ -1,4 +1,4 @@
-description: Статус генерации и ссылка на готовый отчет.
+description: Статус генерации и ссылка на готовый отчет или документ.
 type: object
 required:
   - status
@@ -17,7 +17,7 @@ properties:
     type: string
     format: date-time
   file:
-    description: Ссылка на готовый отчет.
+    description: Ссылка на готовый отчет или документ.
     type: string
   estimatedGenerationTime:
     description: Ожидаемая продолжительность генерации в миллисекундах.

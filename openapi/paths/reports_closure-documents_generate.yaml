@@ -1,0 +1,80 @@
+post:
+  tags:
+    - reports
+    - fby
+    - dbs
+    - fbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - finance-and-accounting
+  operationId: generateClosureDocumentsReport
+  summary: Закрывающие документы
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/generateClosureDocumentsReport.md) %}
+
+
+    Возвращает ZIP-архив с закрывающими документами в формате PDF за указанный
+    месяц.
+
+
+    {% cut "Состав документов в зависимости от типа договора" %}
+
+
+    * **Договор на размещение**
+
+      * [акт об оказанных услугах](*acts-main-act)
+      * [счет-фактура](*acts-main-invoice)
+      * [сводный отчет по данным статистики](*acts-main-report)
+      * [отчет об исполнении поручения и о зачете взаимных требований](*acts-main-agent) (отчет агента)
+
+    * **Договор на продвижение** (в России не заключается после 30 сентября 2024
+    года)
+
+      * [акт об оказании услуг](*acts-discounts-act)
+      * [счет-фактура](*acts-discounts-invoice), если этого требует схема налогообложения
+
+    * **Договор на маркетинг**
+
+      * [акт об оказанных услугах](*acts-marketing-act)
+      * [счет-фактура](*acts-main-invoice)
+      * [счет-фактура на аванс](*acts-marketing-invoice)
+      * [выписка по лицевому счету](*acts-marketing-account)
+      * [детализация к акту](*acts-marketing-details)
+
+    {% endcut %}
+
+
+    Узнать статус генерации и получить ссылку на архив можно с помощью запроса
+    [GET reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+
+    |**⚙️ Лимит:** 1 000 запросов в час|
+
+    |-|
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GenerateClosureDocumentsRequest.yaml
+  responses:
+    '200':
+      description: |
+        ZIP-архив с закрывающими документами в формате PDF.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GenerateReportResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

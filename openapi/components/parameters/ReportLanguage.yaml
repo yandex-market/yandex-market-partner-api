@@ -1,4 +1,4 @@
-description: Язык отчета.
+description: Язык отчета или документа.
 name: language
 in: query
 required: false
