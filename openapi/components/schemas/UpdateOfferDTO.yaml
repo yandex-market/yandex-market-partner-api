@@ -40,7 +40,6 @@ allOf:
         description: Дополнительные расходы на товар. Например, на доставку или упаковку.
         $ref: ./BasePriceDTO.yaml
       cofinancePrice:
-        description: "{% note warning \"Не используйте этот параметр.\" %}\n\n\_\n\n{% endnote %}\n"
         deprecated: true
         $ref: ./BasePriceDTO.yaml
       firstVideoAsCover:
