@@ -23,11 +23,17 @@ properties:
     format: int64
     type: integer
   shipmentId:
-    description: Идентификатор отгрузки.
+    description: |
+      Идентификатор отгрузки.
+
+      В запросе обязательно передавайте `shipmentId` или `orderIds`.
     format: int64
     type: integer
   orderIds:
-    description: Фильтр по идентификаторам заказа в отгрузке.
+    description: |
+      Фильтр по идентификаторам заказа в отгрузке.
+
+      В запросе обязательно передавайте `shipmentId` или `orderIds`.
     type: array
     nullable: true
     minItems: 1
