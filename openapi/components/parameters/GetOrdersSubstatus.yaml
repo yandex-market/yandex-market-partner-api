@@ -70,9 +70,6 @@ description: >
 
   * `RESERVATION_FAILED` — Маркет не может продолжить дальнейшую обработку
   заказа.
-
-
-  Также могут возвращаться другие значения. Обрабатывать их не требуется.
 name: substatus
 in: query
 required: false
