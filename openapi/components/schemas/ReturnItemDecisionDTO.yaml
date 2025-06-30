@@ -1,0 +1,16 @@
+description: Решения по товару в возврате.
+type: object
+required:
+  - returnItemId
+  - decisionType
+properties:
+  returnItemId:
+    $ref: ./ReturnItemId.yaml
+  decisionType:
+    description: Решение по товару в возврате.
+    $ref: ./ReturnRequestDecisionType.yaml
+  decisionReasonType:
+    description: Причина отказа.
+    $ref: ./ReturnRequestDecisionReasonType.yaml
+  comment:
+    $ref: ./ReturnItemDecisionComment.yaml

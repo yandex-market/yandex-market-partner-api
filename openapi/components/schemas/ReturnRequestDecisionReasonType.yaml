@@ -1,0 +1,28 @@
+description: >
+  Причина отказа:
+
+
+  * `ISSUE_WITH_THE_PRODUCT_WAS_NOT_CONFIRMED` — проблема с товаром не
+  подтвердилась.
+
+  * `MECHANICAL_DAMAGE` — есть механические повреждения товара.
+
+  * `WARRANTY_PERIOD_HAS_EXPIRED` — истек гарантийный срок.
+
+  * `CONFIGURATION_OR_PACKAGING_COMPROMISED` — нарушена комплектация или
+  упаковка.
+
+  * `PRODUCT_APPEARANCE_COMPROMISED` — нарушен товарный вид.
+
+  * `WARRANTY_TERMS_VIOLATED` — нарушены условия гарантии.
+
+  * `DEVICE_ACTIVATED` — устройство активировано.
+type: string
+enum:
+  - ISSUE_WITH_THE_PRODUCT_WAS_NOT_CONFIRMED
+  - MECHANICAL_DAMAGE
+  - WARRANTY_PERIOD_HAS_EXPIRED
+  - CONFIGURATION_OR_PACKAGING_COMPROMISED
+  - PRODUCT_APPEARANCE_COMPROMISED
+  - WARRANTY_TERMS_VIOLATED
+  - DEVICE_ACTIVATED

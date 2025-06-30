@@ -2,3 +2,10 @@ description: Запрос на подтверждение решения по в
 type: object
 required:
   - returnItemDecisions
+properties:
+  returnItemDecisions:
+    description: Решения по товарам в возврате.
+    minItems: 1
+    type: array
+    items:
+      $ref: ./ReturnItemDecisionDTO.yaml

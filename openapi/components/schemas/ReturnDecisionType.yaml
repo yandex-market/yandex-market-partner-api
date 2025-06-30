@@ -1,21 +1,31 @@
-description: |
+description: >
   Решение по возврату:
 
-  * `FAST_REFUND_MONEY` — вернуть деньги покупателю без возврата товара.
 
-  * `REFUND_MONEY` — вернуть деньги покупателю.
+  * `FAST_REFUND_MONEY` — вернуть покупателю деньги без возврата товара.
 
-  * `REFUND_MONEY_INCLUDING_SHIPMENT` — вернуть деньги за товар и пересылку.
+
+  * `REFUND_MONEY` — вернуть покупателю деньги за товар.
+
+
+  * `REFUND_MONEY_INCLUDING_SHIPMENT` — вернуть покупателю деньги за товар и
+  обратную пересылку.
+
 
   * `REPAIR` — отремонтировать товар.
 
+
   * `REPLACE` — заменить товар.
+
 
   * `SEND_TO_EXAMINATION` — взять товар на экспертизу.
 
+
   * `DECLINE_REFUND` — отказать в возврате.
 
+
   * `OTHER_DECISION` — другое решение.
+
 
   * `UNKNOWN` — не указано.
 type: string
