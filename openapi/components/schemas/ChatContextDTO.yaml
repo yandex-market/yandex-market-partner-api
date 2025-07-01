@@ -1,0 +1,13 @@
+description: Информация о заказе или возврате, по которому начат чат.
+type: object
+required:
+  - type
+  - id
+properties:
+  type:
+    $ref: ./ChatContextType.yaml
+  id:
+    description: Идентификатор заказа или возврата.
+    type: integer
+    format: int64
+    minimum: 1

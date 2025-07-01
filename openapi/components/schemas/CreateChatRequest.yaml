@@ -6,3 +6,6 @@ properties:
     description: Идентификатор заказа на Маркете.
     type: integer
     format: int64
+    deprecated: true
+  context:
+    $ref: ./ChatContextDTO.yaml

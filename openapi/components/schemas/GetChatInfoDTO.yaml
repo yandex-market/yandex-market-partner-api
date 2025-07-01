@@ -2,6 +2,7 @@ description: Информация о чате.
 type: object
 required:
   - chatId
+  - context
   - type
   - status
   - createdAt
@@ -17,6 +18,9 @@ properties:
     type: integer
     format: int64
     minimum: 1
+    deprecated: true
+  context:
+    $ref: ./ChatFullContextDTO.yaml
   type:
     $ref: ./ChatType.yaml
   status:

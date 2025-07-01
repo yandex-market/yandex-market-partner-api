@@ -33,7 +33,7 @@ post:
   responses:
     '200':
       description: |
-        История сообщений успешно получена.
+        История сообщений.
       content:
         application/json:
           schema:

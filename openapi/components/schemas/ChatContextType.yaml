@@ -1,0 +1,9 @@
+description: |
+  Тип чата:
+
+  * `ORDER` — по заказам.
+  * `RETURN` — по возвратам.
+type: string
+enum:
+  - ORDER
+  - RETURN

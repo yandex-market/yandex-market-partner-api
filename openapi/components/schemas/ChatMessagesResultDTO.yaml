@@ -1,12 +1,17 @@
 description: Информация о сообщениях.
 type: object
 required:
+  - context
   - messages
 properties:
   orderId:
     description: Идентификатор заказа.
     type: integer
     format: int64
+    deprecated: true
+  context:
+    description: Информация о заказе или возврате, по которому начат чат.
+    $ref: ./ChatFullContextDTO.yaml
   messages:
     description: Информация о сообщениях.
     type: array

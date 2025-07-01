@@ -11,6 +11,15 @@ properties:
       type: integer
       format: int64
     minItems: 1
+    deprecated: true
+  contexts:
+    description: Фильтр по заказам или возвратам, по которым начаты чаты.
+    type: array
+    nullable: true
+    uniqueItems: true
+    items:
+      $ref: ./ChatContextDTO.yaml
+    minItems: 1
   types:
     description: Фильтр по типам чатов.
     type: array
