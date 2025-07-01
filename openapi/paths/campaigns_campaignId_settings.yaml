@@ -5,6 +5,7 @@ get:
     - fbs
     - express
     - fby
+    - laas
   x-auth-scopes:
     - all-methods
     - all-methods:read-only
