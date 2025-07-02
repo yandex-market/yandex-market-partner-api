@@ -2,7 +2,7 @@ description: |
   Тип чата:
 
   * `ORDER` — по заказам.
-  * `RETURN` — по возвратам.
+  * `RETURN` — по возвратам (FBS).
 type: string
 enum:
   - ORDER
