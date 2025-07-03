@@ -237,6 +237,8 @@ paths:
     $ref: paths/reports_sales-geography_generate.yaml
   /reports/key-indicators/generate:
     $ref: paths/reports_key-indicators_generate.yaml
+  /reports/closure-documents/detalization/generate:
+    $ref: paths/reports_closure-documents_detalization_generate.yaml
   /campaigns/{campaignId}/outlets:
     $ref: paths/campaigns_campaignId_outlets.yaml
   /campaigns/{campaignId}/outlets/{outletId}:

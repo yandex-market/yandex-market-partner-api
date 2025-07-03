@@ -2,19 +2,23 @@ post:
   tags:
     - reports
     - fby
+    - dbs
+    - fbs
+    - express
   x-auth-scopes:
     - all-methods
-    - offers-and-cards-management
+    - all-methods:read-only
     - finance-and-accounting
-  operationId: generateGoodsTurnoverReport
-  summary: Отчет по оборачиваемости
+  operationId: generateClosureDocumentsDetalizationReport
+  summary: Отчет по схождению с закрывающими документами
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/generateGoodsTurnoverReport.md) %}
+    [access](../../_auto/method_scopes/generateClosureDocumentsDetalizationReport.md)
+    %}
 
 
-    Запускает генерацию отчета по оборачиваемости за заданную дату.  [Что это за
-    отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#turnover)
+    Запускает генерацию отчета по схождению с закрывающими документами в
+    зависимости от типа договора.
 
 
     Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
@@ -22,7 +26,22 @@ post:
     reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
-    {% include notitle [reports](../../_auto/reports/turnover/turnover.md) %}
+    {% list tabs %}
+
+
+    - Договор на размещение
+
+      {% include notitle [reports](../../_auto/reports/period_closure/period_closure_income.md) %}
+
+    - Договор на продвижение
+
+      {% include notitle [reports](../../_auto/reports/period_closure/period_closure_outcome.md) %}
+
+    - Договор на маркетинг
+
+      {% include notitle [reports](../../_auto/reports/advertiser_billing_operations/advertiser_billing_operations.md) %}
+
+    {% endlist %}
 
 
     |**⚙️ Лимит:** 100 запросов в час|
@@ -35,7 +54,8 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/GenerateGoodsTurnoverRequest.yaml
+          $ref: >-
+            ../components/schemas/GenerateClosureDocumentsDetalizationRequest.yaml
   responses:
     '200':
       description: >-

@@ -1,0 +1,34 @@
+description: |
+  Данные, необходимые для генерации отчета.
+type: object
+required:
+  - campaignId
+  - monthOfYear
+  - contractType
+properties:
+  campaignId:
+    description: >
+      Идентификатор кампании.
+
+
+      Его можно узнать с помощью запроса [GET
+      campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете
+      продавца на Маркете — нажмите на название своего бизнеса и перейдите на
+      страницу:
+
+        * **Модули и API** → блок **Передача данных Маркету**.
+        * **Лог запросов** → выпадающий список в блоке **Показывать логи**.
+
+      ⚠️ Не передавайте вместо него идентификатор магазина, который указан в
+      кабинете продавца на Маркете рядом с названием магазина и в некоторых
+      отчетах.
+    type: integer
+    format: int64
+  monthOfYear:
+    description: Месяц, за который сформированы необходимые закрывающие документы.
+    $ref: ./ClosureDocumentsMonthOfYearDTO.yaml
+  contractType:
+    description: >-
+      Тип договора, по которому нужно сгенерировать отчет по схождению с
+      закрывающими документами.
+    $ref: ./ClosureDocumentsContractType.yaml
