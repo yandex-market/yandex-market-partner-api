@@ -2,6 +2,7 @@ post:
   tags:
     - supply-requests
     - fby
+    - laas
   x-auth-scopes:
     - all-methods
     - all-methods:read-only
