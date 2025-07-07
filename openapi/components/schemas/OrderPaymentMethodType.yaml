@@ -7,8 +7,6 @@ description: >
 
     * `YANDEX` — банковской картой.
 
-    * `YA_PLUS_POINTS` — баллами Яндекс Плюса.
-
     * `APPLE_PAY` — Apple Pay.
 
     * `GOOGLE_PAY` — Google Pay.
@@ -53,7 +51,6 @@ enum:
   - BNPL_BANK_ON_DELIVERY
   - BNPL_ON_DELIVERY
   - YANDEX
-  - YA_PLUS_POINTS
   - APPLE_PAY
   - EXTERNAL_CERTIFICATE
   - CREDIT
