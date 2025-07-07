@@ -2,6 +2,7 @@ post:
   tags:
     - reports
     - fby
+    - laas
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management

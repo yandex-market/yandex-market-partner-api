@@ -5,6 +5,7 @@ post:
     - dbs
     - fbs
     - express
+    - laas
   x-auth-scopes:
     - all-methods
     - all-methods:read-only
