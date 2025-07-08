@@ -33,10 +33,17 @@ properties:
     type: string
   house:
     description: |
-      Дом или владение.
+      Дом.
+    type: string
+  estate:
+    description: |
+      Владение.
     type: string
   block:
-    description: Корпус или строение.
+    description: Корпус.
+    type: string
+  building:
+    description: Строение.
     type: string
   entrance:
     description: Подъезд.
