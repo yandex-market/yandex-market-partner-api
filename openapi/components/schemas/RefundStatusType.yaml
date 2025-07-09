@@ -35,17 +35,18 @@ description: >
   * `REJECTED` — возврат отклонен модерацией или в ПВЗ.
 
 
-  * `PREMODERATION_DISPUTE` — по возврату открыт спор (FBS).
+  * `PREMODERATION_DISPUTE` — по возврату открыт спор (FBS и Экспресс).
 
 
-  * `PREMODERATION_DECISION_WAITING` — ожидает решения (FBS).
+  * `PREMODERATION_DECISION_WAITING` — ожидает решения (FBS и Экспресс).
 
 
-  * `PREMODERATION_DECISION_MADE` — по возврату принято решение (FBS).
+  * `PREMODERATION_DECISION_MADE` — по возврату принято решение (FBS и
+  Экспресс).
 
 
-  * `PREMODERATION_SELECT_DELIVERY` — пользователь выбирает способ доставки
-  (FBS).
+  * `PREMODERATION_SELECT_DELIVERY` — пользователь выбирает способ доставки (FBS
+  и Экспресс).
 
 
   * `UNKNOWN` — неизвестный статус.
