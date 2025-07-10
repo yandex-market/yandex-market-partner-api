@@ -4,6 +4,6 @@ required:
   - externalOrderId
 properties:
   externalOrderId:
-    description: Дополнительный идентификатор заказа.
+    description: Внешний идентификатор заказа.
     type: string
     minLength: 1

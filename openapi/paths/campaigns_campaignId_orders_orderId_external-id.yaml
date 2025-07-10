@@ -8,7 +8,7 @@ post:
     - all-methods
     - inventory-and-order-processing
   operationId: updateExternalOrderId
-  summary: Передача или изменение дополнительного идентификатора заказа
+  summary: Передача или изменение внешнего идентификатора заказа
   description: >
     {% include notitle
     [access](../../_auto/method_scopes/updateExternalOrderId.md) %}
@@ -16,6 +16,10 @@ post:
 
     При первом использовании запроса передает Маркету идентификатор заказа в
     системе магазина. При повторном — изменяет его в системе Маркета.
+
+
+    Этот идентификатор отражается в документах отгрузки: акте приема-передачи,
+    листе сборки и ярлыках.
 
 
     Передать данные можно до перехода заказа в статус `PROCESSING` с подстатусом
@@ -36,7 +40,7 @@ post:
           $ref: ../components/schemas/UpdateExternalOrderIdRequest.yaml
   responses:
     '200':
-      description: Дополнительный идентификатор заказа успешно передан или изменен.
+      description: Внешний идентификатор заказа успешно передан или изменен.
       content:
         application/json:
           schema:
