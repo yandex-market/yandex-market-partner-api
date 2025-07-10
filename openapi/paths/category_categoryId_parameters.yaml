@@ -27,6 +27,7 @@ post:
     |-|
   parameters:
     - $ref: ../components/parameters/MarketCategoryId.yaml
+    - $ref: ../components/parameters/BusinessIdQuery.yaml
   responses:
     '200':
       description: Список характеристик товаров из заданной категории.

@@ -1,0 +1,14 @@
+description: >
+  Идентификатор кабинета. Чтобы его узнать, воспользуйтесь запросом [GET
+  campaigns](../../reference/campaigns/getCampaigns.md).
+
+
+  Передайте параметр, чтобы получить характеристики, которые являются
+  особенностями варианта товара в данном кабинете.
+name: businessId
+in: query
+required: false
+schema:
+  type: integer
+  format: int64
+  minimum: 1
