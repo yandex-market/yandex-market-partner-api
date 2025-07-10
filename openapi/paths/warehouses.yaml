@@ -2,6 +2,7 @@ get:
   tags:
     - warehouses
     - fby
+    - laas
   x-auth-scopes:
     - all-methods
     - all-methods:read-only

@@ -5,6 +5,7 @@ post:
     - fby
     - fbs
     - express
+    - laas
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
