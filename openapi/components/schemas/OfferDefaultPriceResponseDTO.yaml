@@ -1,0 +1,11 @@
+description: Информация об установленной цене на товар.
+type: object
+required:
+  - offerId
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  marketSku:
+    $ref: ./MarketSku.yaml
+  price:
+    $ref: ./OfferDefaultPriceDTO.yaml

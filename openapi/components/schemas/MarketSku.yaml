@@ -1,4 +1,4 @@
-description: SKU на Маркете.
+description: Идентификатор карточки товара на Маркете.
 type: integer
 format: int64
 minimum: 1

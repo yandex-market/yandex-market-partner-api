@@ -5,7 +5,7 @@ required:
   - count
 properties:
   marketSku:
-    description: SKU товара на Маркете.
+    description: Идентификатор карточки товара на Маркете.
     $ref: ./MarketSku.yaml
   shopSku:
     $ref: ./ShopSku.yaml

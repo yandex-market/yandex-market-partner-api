@@ -1,0 +1,20 @@
+description: >-
+  Цена с указанием валюты, скидки и времени последнего обновления, а также
+  минимальная цена для попадания в акцию «Бестселлеры Маркета».
+type: object
+allOf:
+  - $ref: ./GetPriceWithDiscountDTO.yaml
+  - properties:
+      minimumForBestseller:
+        description: >
+          Минимальная цена товара для попадания в акцию «Бестселлеры Маркета».
+          Подробнее об этой акции читайте [в Справке Маркета для
+          продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/bestsellers).
+
+
+          Передается в методе [POST
+          businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
+        type: number
+        minimum: 0
+        maximum: 100000000
+        exclusiveMinimum: true

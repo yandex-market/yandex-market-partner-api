@@ -2,4 +2,23 @@ description: Цены.
 type: object
 allOf:
   - $ref: ./PriceWithDiscountDTO.yaml
-  - {}
+  - properties:
+      minimumForBestseller:
+        description: >
+          Минимальная цена товара для попадания в акцию «Бестселлеры Маркета».
+          Подробнее об этой акции читайте [в Справке Маркета для
+          продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/bestsellers).
+
+
+          Если не передать параметр:
+
+
+          * Удалится значение, которое вы указали ранее.
+
+          * Товар не попадет в акцию «Бестселлеры Маркета» с помощью этого
+          способа. Только через [автоматическое участие](*auto) или [ручное
+          добавление товара в акцию](*updatePromoOffers).
+        type: number
+        minimum: 0
+        maximum: 100000000
+        exclusiveMinimum: true

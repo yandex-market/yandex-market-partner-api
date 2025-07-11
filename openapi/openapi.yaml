@@ -171,6 +171,8 @@ paths:
     $ref: paths/campaigns_campaignId_offer-prices.yaml
   /campaigns/{campaignId}/offer-prices/suggestions:
     $ref: paths/campaigns_campaignId_offer-prices_suggestions.yaml
+  /businesses/{businessId}/offer-prices:
+    $ref: paths/businesses_businessId_offer-prices.yaml
   /businesses/{businessId}/price-quarantine:
     $ref: paths/businesses_businessId_price-quarantine.yaml
   /businesses/{businessId}/price-quarantine/confirm:

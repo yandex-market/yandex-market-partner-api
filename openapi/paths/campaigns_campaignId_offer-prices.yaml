@@ -92,7 +92,7 @@ post:
     - pricing
     - pricing:read-only
   operationId: getPricesByOfferIds
-  summary: Просмотр цен на указанные товары в магазине
+  summary: Просмотр цен на указанные товары в конкретном магазине
   description: >
     {% include notitle
     [access](../../_auto/method_scopes/getPricesByOfferIds.md) %}

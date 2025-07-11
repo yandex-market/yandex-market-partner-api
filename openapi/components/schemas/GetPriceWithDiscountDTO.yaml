@@ -1,4 +1,4 @@
-description: Цена с указанием скидки и времени последнего обновления.
+description: Цена с указанием валюты, скидки и времени последнего обновления.
 type: object
 allOf:
   - $ref: ./PriceWithDiscountDTO.yaml

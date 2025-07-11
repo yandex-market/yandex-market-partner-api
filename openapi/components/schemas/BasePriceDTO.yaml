@@ -5,7 +5,7 @@ required:
   - currencyId
 properties:
   value:
-    description: Значение.
+    description: Цена товара.
     type: number
     minimum: 0
     exclusiveMinimum: true

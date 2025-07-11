@@ -1,0 +1,7 @@
+description: Ответ на запрос списка цен.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./OfferDefaultPriceListResponseDTO.yaml
