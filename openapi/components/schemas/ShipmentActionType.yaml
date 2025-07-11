@@ -5,6 +5,7 @@ description: |
   * `DOWNLOAD_ACT` — скачать акт приема-передачи отгрузки.
   * `DOWNLOAD_INBOUND_ACT` — скачать список принятых заказов.
   * `DOWNLOAD_DISCREPANCY_ACT` — скачать акт расхождений.
+  * `DOWNLOAD_TRANSPORTATION_WAYBILL` — скачать транспортную накладную.
   * `CHANGE_PALLETS_COUNT` — указать количество палет.
 type: string
 enum:
@@ -12,4 +13,5 @@ enum:
   - DOWNLOAD_ACT
   - DOWNLOAD_INBOUND_ACT
   - DOWNLOAD_DISCREPANCY_ACT
+  - DOWNLOAD_TRANSPORTATION_WAYBILL
   - CHANGE_PALLETS_COUNT
