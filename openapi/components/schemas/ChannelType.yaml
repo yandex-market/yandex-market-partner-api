@@ -60,6 +60,7 @@ description: >
 
 
   * `OTHER` — прочее.
+type: string
 enum:
   - PUSH
   - STRETCH_MAIN

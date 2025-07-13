@@ -3,6 +3,7 @@ description: |
 
   * `RU` — русский язык.
   * `EN` — английский язык.
+type: string
 enum:
   - RU
   - EN
