@@ -45,6 +45,9 @@ description: >
   * `MISGRADING_WITHDRAW` — пересортица в меньшую сторону.
 
   * `MAN_UTIL` — ручная утилизация по запросу склада.
+
+  * `EXTERNAL_WITHDRAW` – вывоз товаров со склада Маркета для дальнейшей
+  поставки на внешний склад.
 enum:
   - DEFAULT
   - XDOC
@@ -64,3 +67,4 @@ enum:
   - MISGRADING_SUPPLY
   - MISGRADING_WITHDRAW
   - MAN_UTIL
+  - EXTERNAL_WITHDRAW
