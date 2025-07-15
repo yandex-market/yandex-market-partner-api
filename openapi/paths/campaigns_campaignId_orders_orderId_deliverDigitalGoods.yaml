@@ -47,6 +47,73 @@ post:
     массиве `items`, а ключи товара — в массиве `codes`.
 
 
+    {% cut "Пример" %}
+
+
+    ```json translate=no
+
+    {
+      "items": [
+        {
+          "id": 1,
+          "codes": [
+            "code1", "code2", "code3"
+          ],
+          "slip": "slip",
+          "activate_till": "2025-02-18"
+        },
+        {
+          "id": 2,
+          "codes": [
+            "code4", "code5", "code6"
+          ],
+          "slip": "slip",
+          "activate_till": "2025-02-18"
+        }
+      ]
+    }
+
+    ```
+
+    {% endcut %}
+
+
+    Товары с одинаковыми `id` также можно передавать разными элементами в
+    массиве `items`.
+
+
+    {% cut "Пример" %}
+
+
+    ```json translate=no
+
+    {
+      "items": [
+        {
+          "id": 1,
+          "codes": [
+            "code1", "code2"
+          ],
+          "slip": "slip",
+          "activate_till": "2025-02-18"
+        },
+        {
+          "id": 1,
+          "codes": [
+            "code3"
+          ],
+          "slip": "slip",
+          "activate_till": "2025-02-18"
+        }
+      ]
+    }
+
+    ```
+
+    {% endcut %}
+
+
+
     |**⚙️ Лимит:** 100 000 запросов в час|
 
     |-|
