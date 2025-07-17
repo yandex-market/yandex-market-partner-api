@@ -30,6 +30,9 @@ properties:
     description: >
       Цена на товар в валюте заказа без учета вознаграждения продавцу за скидки
       по промокодам, купонам и акциям (параметр :no-translate[`subsidies`]).
+
+
+      Включает НДС.
     type: number
     format: decimal
   buyerPrice:
