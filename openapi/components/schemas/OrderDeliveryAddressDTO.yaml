@@ -2,8 +2,9 @@ description: >
   Адрес доставки.
 
 
-  Указывается, если параметр `type` принимает значение `DELIVERY`, `POST` или
-  `PICKUP` (только для модели DBS). Если `type=PICKUP`, возвращается адрес
+  Указывается, если параметр :no-translate[`type`] принимает значение
+  :no-translate[`DELIVERY`], :no-translate[`POST`] или :no-translate[`PICKUP`]
+  (только для модели DBS). Если :no-translate[`type=PICKUP`], возвращается адрес
   пункта выдачи.
 type: object
 properties:
@@ -12,10 +13,12 @@ properties:
       Страна.
     type: string
   postcode:
-    description: |
+    description: >
       Почтовый индекс.
 
-      Указывается, если выбрана доставка почтой (`delivery type=POST`).
+
+      Указывается, если выбрана доставка почтой (:no-translate[`delivery
+      type=POST`]).
     type: string
   city:
     description: |

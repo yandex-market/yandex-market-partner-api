@@ -2,32 +2,33 @@ description: >
   Решение по возврату:
 
 
-  * `FAST_REFUND_MONEY` — вернуть покупателю деньги без возврата товара.
+  * :no-translate[`FAST_REFUND_MONEY`] — вернуть покупателю деньги без возврата
+  товара.
 
 
-  * `REFUND_MONEY` — вернуть покупателю деньги за товар.
+  * :no-translate[`REFUND_MONEY`] — вернуть покупателю деньги за товар.
 
 
-  * `REFUND_MONEY_INCLUDING_SHIPMENT` — вернуть покупателю деньги за товар и
-  обратную пересылку.
+  * :no-translate[`REFUND_MONEY_INCLUDING_SHIPMENT`] — вернуть покупателю деньги
+  за товар и обратную пересылку.
 
 
-  * `REPAIR` — отремонтировать товар.
+  * :no-translate[`REPAIR`] — отремонтировать товар.
 
 
-  * `REPLACE` — заменить товар.
+  * :no-translate[`REPLACE`] — заменить товар.
 
 
-  * `SEND_TO_EXAMINATION` — взять товар на экспертизу.
+  * :no-translate[`SEND_TO_EXAMINATION`] — взять товар на экспертизу.
 
 
-  * `DECLINE_REFUND` — отказать в возврате.
+  * :no-translate[`DECLINE_REFUND`] — отказать в возврате.
 
 
-  * `OTHER_DECISION` — другое решение.
+  * :no-translate[`OTHER_DECISION`] — другое решение.
 
 
-  * `UNKNOWN` — не указано.
+  * :no-translate[`UNKNOWN`] — не указано.
 type: string
 enum:
   - FAST_REFUND_MONEY

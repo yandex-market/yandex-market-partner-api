@@ -1,10 +1,10 @@
 description: |
   Модель размещения:
 
-  * `FBY` — FBY.
-  * `FBS` — FBS.
-  * `DBS` — DBS.
-  * `EXPRESS` — Экспресс.
+  * :no-translate[`FBY`] — FBY.
+  * :no-translate[`FBS`] — FBS.
+  * :no-translate[`DBS`] — DBS.
+  * :no-translate[`EXPRESS`] — Экспресс.
 type: string
 enum:
   - FBY

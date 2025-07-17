@@ -12,13 +12,13 @@ properties:
 
       Возможные значения:
 
-      * `MONDAY` — понедельник.
-      * `TUESDAY` — вторник.
-      * `WEDNESDAY` — среда.
-      * `THURSDAY` — четверг.
-      * `FRIDAY` — пятница.
-      * `SATURDAY` — суббота.
-      * `SUNDAY` — воскресенье.
+      * :no-translate[`MONDAY`] — понедельник.
+      * :no-translate[`TUESDAY`] — вторник.
+      * :no-translate[`WEDNESDAY`] — среда.
+      * :no-translate[`THURSDAY`] — четверг.
+      * :no-translate[`FRIDAY`] — пятница.
+      * :no-translate[`SATURDAY`] — суббота.
+      * :no-translate[`SUNDAY`] — воскресенье.
     $ref: ./DayOfWeekType.yaml
   endDay:
     description: |
@@ -26,13 +26,13 @@ properties:
 
       Возможные значения:
 
-      * `MONDAY` — понедельник.
-      * `TUESDAY` — вторник.
-      * `WEDNESDAY` — среда.
-      * `THURSDAY` — четверг.
-      * `FRIDAY` — пятница.
-      * `SATURDAY` — суббота.
-      * `SUNDAY` — воскресенье.
+      * :no-translate[`MONDAY`] — понедельник.
+      * :no-translate[`TUESDAY`] — вторник.
+      * :no-translate[`WEDNESDAY`] — среда.
+      * :no-translate[`THURSDAY`] — четверг.
+      * :no-translate[`FRIDAY`] — пятница.
+      * :no-translate[`SATURDAY`] — суббота.
+      * :no-translate[`SUNDAY`] — воскресенье.
     $ref: ./DayOfWeekType.yaml
   startTime:
     description: |

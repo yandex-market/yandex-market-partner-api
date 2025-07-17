@@ -2,15 +2,16 @@ description: >
   Имя параметра причины скрытия товара по цене.
 
 
-  * `CURRENT_PRICE` — цена, из-за которой товар попал в карантин.
+  * :no-translate[`CURRENT_PRICE`] — цена, из-за которой товар попал в карантин.
 
-  * `LAST_VALID_PRICE` — последняя цена до попадания в карантин (только для
-  карантина типа `PRICE_CHANGE`).
+  * :no-translate[`LAST_VALID_PRICE`] — последняя цена до попадания в карантин
+  (только для карантина типа :no-translate[`PRICE_CHANGE`]).
 
-  * `MIN_PRICE` — порог попадания в карантин (только для карантина типов
-  `LOW_PRICE` и `LOW_PRICE_PROMO`).
+  * :no-translate[`MIN_PRICE`] — порог попадания в карантин (только для
+  карантина типов :no-translate[`LOW_PRICE`] и
+  :no-translate[`LOW_PRICE_PROMO`]).
 
-  * `CURRENCY` — валюта.
+  * :no-translate[`CURRENCY`] — валюта.
 type: string
 enum:
   - CURRENT_PRICE

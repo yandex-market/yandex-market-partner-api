@@ -1,8 +1,11 @@
-description: |
+description: >
   Тип лицензии:
 
-  * `ALCOHOL` — лицензия на розничную продажу алкогольной продукции.
-  * `UNKNOWN` — неизвестный тип лицензии.
+
+  * :no-translate[`ALCOHOL`] — лицензия на розничную продажу алкогольной
+  продукции.
+
+  * :no-translate[`UNKNOWN`] — неизвестный тип лицензии.
 type: string
 enum:
   - ALCOHOL

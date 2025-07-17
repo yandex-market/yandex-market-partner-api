@@ -23,7 +23,7 @@ properties:
 
 
       Если параметр не передан, координаты будут определены по значениям
-      параметров, вложенных в `address`.
+      параметров, вложенных в :no-translate[`address`].
     type: string
   isMain:
     description: |
@@ -31,8 +31,8 @@ properties:
 
       Возможные значения:
 
-      * `false` — неосновная точка продаж.
-      * `true` — основная точка продаж.
+      * :no-translate[`false`] — неосновная точка продаж.
+      * :no-translate[`true`] — основная точка продаж.
     type: boolean
   shopOutletCode:
     description: Идентификатор точки продаж, присвоенный магазином.
@@ -54,10 +54,12 @@ properties:
   workingSchedule:
     $ref: ./OutletWorkingScheduleDTO.yaml
   deliveryRules:
-    description: |
+    description: >
       Информация об условиях доставки для данной точки продаж.
 
-      Обязательный параметр, если параметр `type=DEPOT` или `type=MIXED`.
+
+      Обязательный параметр, если параметр :no-translate[`type=DEPOT`] или
+      :no-translate[`type=MIXED`].
     type: array
     nullable: true
     minItems: 1

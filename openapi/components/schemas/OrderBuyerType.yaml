@@ -1,9 +1,9 @@
 description: |
   Тип покупателя:
 
-  * `PERSON` — физическое лицо.
+  * :no-translate[`PERSON`] — физическое лицо.
 
-  * `BUSINESS` — организация.
+  * :no-translate[`BUSINESS`] — организация.
 type: string
 enum:
   - PERSON

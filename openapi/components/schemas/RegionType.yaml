@@ -3,27 +3,27 @@ description: |
 
   Возможные значения:
 
-  * `CITY_DISTRICT` — район города.
+  * :no-translate[`CITY_DISTRICT`] — район города.
 
-  * `CITY` — крупный город.
+  * :no-translate[`CITY`] — крупный город.
 
-  * `CONTINENT` — континент.
+  * :no-translate[`CONTINENT`] — континент.
 
-  * `COUNTRY_DISTRICT` — область.
+  * :no-translate[`COUNTRY_DISTRICT`] — область.
 
-  * `COUNTRY` — страна.
+  * :no-translate[`COUNTRY`] — страна.
 
-  * `REGION` — регион.
+  * :no-translate[`REGION`] — регион.
 
-  * `REPUBLIC_AREA` — район субъекта федерации.
+  * :no-translate[`REPUBLIC_AREA`] — район субъекта федерации.
 
-  * `REPUBLIC` — субъект федерации.
+  * :no-translate[`REPUBLIC`] — субъект федерации.
 
-  * `SUBWAY_STATION` — станция метро.
+  * :no-translate[`SUBWAY_STATION`] — станция метро.
 
-  * `VILLAGE` — город.
+  * :no-translate[`VILLAGE`] — город.
 
-  * `OTHER` — неизвестный регион.
+  * :no-translate[`OTHER`] — неизвестный регион.
 type: string
 enum:
   - OTHER

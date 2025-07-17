@@ -1,8 +1,8 @@
 description: |
   Язык:
 
-  * `RU` — русский.
-  * `UZ` — узбекский.
+  * :no-translate[`RU`] — русский.
+  * :no-translate[`UZ`] — узбекский.
 type: string
 enum:
   - RU

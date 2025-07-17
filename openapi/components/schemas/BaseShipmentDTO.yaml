@@ -16,18 +16,22 @@ properties:
     type: integer
     minimum: 1
   planIntervalFrom:
-    description: |
+    description: >
       Начало планового интервала отгрузки.
 
-      Формат даты: ISO 8601 со смещением относительно UTC.
+
+      Формат даты: :no-translate[ISO 8601] со смещением относительно
+      :no-translate[UTC].
     format: date-time
     type: string
     example: '2017-11-21T00:00:00+03:00'
   planIntervalTo:
-    description: |
+    description: >
       Конец планового интервала отгрузки.
 
-      Формат даты: ISO 8601 со смещением относительно UTC.
+
+      Формат даты: :no-translate[ISO 8601] со смещением относительно
+      :no-translate[UTC].
     format: date-time
     type: string
     example: '2017-11-21T00:00:00+03:00'
@@ -43,7 +47,7 @@ properties:
   externalId:
     description: >-
       Идентификатор отгрузки в вашей системе. Если вы еще не передавали
-      идентификатор, вернется идентификатор из параметра `id`.
+      идентификатор, вернется идентификатор из параметра :no-translate[`id`].
     type: string
   deliveryService:
     description: Служба доставки.

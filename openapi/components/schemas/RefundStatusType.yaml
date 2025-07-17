@@ -2,54 +2,58 @@ description: >
   Статус возврата денег:
 
 
-  * `STARTED_BY_USER` — создан клиентом из личного кабинета.
+  * :no-translate[`STARTED_BY_USER`] — создан клиентом из личного кабинета.
 
 
-  * `REFUND_IN_PROGRESS` — ждет решение о возврате денег.
+  * :no-translate[`REFUND_IN_PROGRESS`] — ждет решение о возврате денег.
 
 
-  * `REFUNDED` — деньги возвращены.
+  * :no-translate[`REFUNDED`] — деньги возвращены.
 
 
-  * `FAILED` — невозможно провести возврат покупателю.
+  * :no-translate[`FAILED`] — невозможно провести возврат покупателю.
 
 
-  * `WAITING_FOR_DECISION` — ожидает решения (DBS).
+  * :no-translate[`WAITING_FOR_DECISION`] — ожидает решения (DBS).
 
 
-  * `DECISION_MADE` — по возврату принято решение (DBS).
+  * :no-translate[`DECISION_MADE`] — по возврату принято решение (DBS).
 
 
-  * `REFUNDED_WITH_BONUSES` — возврат осуществлен баллами Плюса или промокодом.
+  * :no-translate[`REFUNDED_WITH_BONUSES`] — возврат осуществлен баллами Плюса
+  или промокодом.
 
 
-  * `REFUNDED_BY_SHOP` — магазин сделал самостоятельно возврат денег.
+  * :no-translate[`REFUNDED_BY_SHOP`] — магазин сделал самостоятельно возврат
+  денег.
 
 
-  * `COMPLETE_WITHOUT_REFUND` — возврат денег не требуется.
+  * :no-translate[`COMPLETE_WITHOUT_REFUND`] — возврат денег не требуется.
 
 
-  * `CANCELLED` — возврат отменен.
+  * :no-translate[`CANCELLED`] — возврат отменен.
 
 
-  * `REJECTED` — возврат отклонен модерацией или в ПВЗ.
+  * :no-translate[`REJECTED`] — возврат отклонен модерацией или в ПВЗ.
 
 
-  * `PREMODERATION_DISPUTE` — по возврату открыт спор (FBS и Экспресс).
-
-
-  * `PREMODERATION_DECISION_WAITING` — ожидает решения (FBS и Экспресс).
-
-
-  * `PREMODERATION_DECISION_MADE` — по возврату принято решение (FBS и
+  * :no-translate[`PREMODERATION_DISPUTE`] — по возврату открыт спор (FBS и
   Экспресс).
 
 
-  * `PREMODERATION_SELECT_DELIVERY` — пользователь выбирает способ доставки (FBS
-  и Экспресс).
+  * :no-translate[`PREMODERATION_DECISION_WAITING`] — ожидает решения (FBS и
+  Экспресс).
 
 
-  * `UNKNOWN` — неизвестный статус.
+  * :no-translate[`PREMODERATION_DECISION_MADE`] — по возврату принято решение
+  (FBS и Экспресс).
+
+
+  * :no-translate[`PREMODERATION_SELECT_DELIVERY`] — пользователь выбирает
+  способ доставки (FBS и Экспресс).
+
+
+  * :no-translate[`UNKNOWN`] — неизвестный статус.
 type: string
 enum:
   - STARTED_BY_USER

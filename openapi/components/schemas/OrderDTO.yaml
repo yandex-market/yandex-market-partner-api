@@ -23,8 +23,8 @@ properties:
     format: int64
   externalOrderId:
     description: >-
-      Внешний идентификатор заказа, который вы передали в [POST
-      campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+      Внешний идентификатор заказа, который вы передали в [:no-translate[POST
+      campaigns/{campaignId}/orders/{orderId}/external-id]](:no-translate[../../reference/orders/updateExternalOrderId.md]).
     type: string
     minLength: 1
   status:
@@ -92,8 +92,8 @@ properties:
     deprecated: true
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
-      с учетом стоимости доставки (`buyerItemsTotalBeforeDiscount` + стоимость
-      доставки).
+      с учетом стоимости доставки
+      (:no-translate[`buyerItemsTotalBeforeDiscount`] + стоимость доставки).
     type: number
     format: decimal
   paymentType:
@@ -101,12 +101,15 @@ properties:
   paymentMethod:
     $ref: ./OrderPaymentMethodType.yaml
   fake:
-    description: |
+    description: >
       Тип заказа:
 
-      * `false` — настоящий заказ покупателя.
 
-      * `true` — [тестовый](../../concepts/sandbox.md) заказ Маркета.
+      * :no-translate[`false`] — настоящий заказ покупателя.
+
+
+      * :no-translate[`true`] —
+      [тестовый](:no-translate[../../concepts/sandbox.md]) заказ Маркета.
     type: boolean
   items:
     description: Список товаров в заказе.

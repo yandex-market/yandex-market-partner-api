@@ -1,10 +1,10 @@
 description: |
   Внешний вид товара:
 
-  * `PERFECT` — идеальный.
-  * `EXCELLENT` — отличный.
-  * `GOOD` — хороший.
-  * `NOT_SPECIFIED` — не выбран.
+  * :no-translate[`PERFECT`] — идеальный.
+  * :no-translate[`EXCELLENT`] — отличный.
+  * :no-translate[`GOOD`] — хороший.
+  * :no-translate[`NOT_SPECIFIED`] — не выбран.
 type: string
 enum:
   - PERFECT

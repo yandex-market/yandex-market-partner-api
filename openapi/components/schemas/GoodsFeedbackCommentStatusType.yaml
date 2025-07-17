@@ -1,10 +1,10 @@
 description: |
   Статус комментария:
 
-  * `PUBLISHED` — опубликован.
-  * `UNMODERATED` — не проверен.
-  * `BANNED` — заблокирован.
-  * `DELETED` — удален.
+  * :no-translate[`PUBLISHED`] — опубликован.
+  * :no-translate[`UNMODERATED`] — не проверен.
+  * :no-translate[`BANNED`] — заблокирован.
+  * :no-translate[`DELETED`] — удален.
 type: string
 enum:
   - PUBLISHED

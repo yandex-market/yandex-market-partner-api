@@ -19,7 +19,7 @@ properties:
   decisionType:
     $ref: ./ReturnDecisionType.yaml
   refundAmount:
-    description: "{% note warning \"Вместо него используйте `amount`.\" %}\n\n\_\n\n{% endnote %}\n\nСумма возврата в копейках.\n"
+    description: "{% note warning \"Вместо него используйте :no-translate[`amount`].\" %}\n\n\_\n\n{% endnote %}\n\nСумма возврата в копейках.\n"
     type: integer
     format: int64
     deprecated: true
@@ -27,7 +27,7 @@ properties:
     description: Сумма возврата.
     $ref: ./CurrencyValueDTO.yaml
   partnerCompensation:
-    description: "{% note warning \"Вместо него используйте `partnerCompensationAmount`.\" %}\n\n\_\n\n{% endnote %}\n\nКомпенсация за обратную доставку в копейках.\n"
+    description: "{% note warning \"Вместо него используйте :no-translate[`partnerCompensationAmount`].\" %}\n\n\_\n\n{% endnote %}\n\nКомпенсация за обратную доставку в копейках.\n"
     type: integer
     format: int64
     deprecated: true

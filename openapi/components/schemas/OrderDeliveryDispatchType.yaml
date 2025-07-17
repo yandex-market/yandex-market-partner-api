@@ -1,13 +1,18 @@
-description: |
+description: >
   Способ отгрузки:
 
-  * `BUYER` — доставка покупателю.
 
-  * `MARKET_BRANDED_OUTLET` — доставка в пункт выдачи заказов Маркета.
+  * :no-translate[`BUYER`] — доставка покупателю.
 
-  * `SHOP_OUTLET` — доставка в пункт выдачи заказов магазина.
 
-  * `UNKNOWN` — неизвестный тип.
+  * :no-translate[`MARKET_BRANDED_OUTLET`] — доставка в пункт выдачи заказов
+  Маркета.
+
+
+  * :no-translate[`SHOP_OUTLET`] — доставка в пункт выдачи заказов магазина.
+
+
+  * :no-translate[`UNKNOWN`] — неизвестный тип.
 type: string
 enum:
   - UNKNOWN

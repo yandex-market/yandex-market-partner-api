@@ -1,8 +1,8 @@
 description: |
   Статус вычисления рейтинга карточки товара и рекомендаций:
 
-  * `UPDATING` — рейтинг обновляется.
-  * `ACTUAL` — рейтинг актуальный.
+  * :no-translate[`UPDATING`] — рейтинг обновляется.
+  * :no-translate[`ACTUAL`] — рейтинг актуальный.
 type: string
 enum:
   - UPDATING

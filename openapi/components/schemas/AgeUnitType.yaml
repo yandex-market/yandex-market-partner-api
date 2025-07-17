@@ -1,8 +1,8 @@
 description: |
   Единицы измерения возраста:
 
-  * `YEAR` — год.
-  * `MONTH` — месяц.
+  * :no-translate[`YEAR`] — год.
+  * :no-translate[`MONTH`] — месяц.
 type: string
 enum:
   - YEAR

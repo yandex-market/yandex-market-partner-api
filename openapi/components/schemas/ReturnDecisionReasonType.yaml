@@ -1,21 +1,30 @@
-description: |
+description: >
   Причины возврата:
 
-  * `BAD_QUALITY` — бракованный товар (есть недостатки).
 
-  * `DOES_NOT_FIT` — товар не подошел.
+  * :no-translate[`BAD_QUALITY`] — бракованный товар (есть недостатки).
 
-  * `WRONG_ITEM` — привезли не тот товар.
 
-  * `DAMAGE_DELIVERY` — товар поврежден при доставке.
+  * :no-translate[`DOES_NOT_FIT`] — товар не подошел.
 
-  * `LOYALTY_FAIL` — невозможно установить виновного в браке/пересорте.
 
-  * `CONTENT_FAIL` — ошибочное описание товара по вине Маркета.
+  * :no-translate[`WRONG_ITEM`] — привезли не тот товар.
 
-  * `DELIVERY_FAIL` — товар не привезли.
 
-  * `UNKNOWN` — причина не известна.
+  * :no-translate[`DAMAGE_DELIVERY`] — товар поврежден при доставке.
+
+
+  * :no-translate[`LOYALTY_FAIL`] — невозможно установить виновного в
+  браке/пересорте.
+
+
+  * :no-translate[`CONTENT_FAIL`] — ошибочное описание товара по вине Маркета.
+
+
+  * :no-translate[`DELIVERY_FAIL`] — товар не привезли.
+
+
+  * :no-translate[`UNKNOWN`] — причина не известна.
 type: string
 enum:
   - BAD_QUALITY

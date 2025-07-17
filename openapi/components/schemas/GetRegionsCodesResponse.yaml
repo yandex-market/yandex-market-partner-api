@@ -4,6 +4,6 @@ required:
 properties:
   countries:
     type: array
-    description: Список стран с их кодами в формате ISO 3166-1 alpha-2.
+    description: Список стран с их кодами в формате :no-translate[ISO 3166-1 alpha-2].
     items:
       $ref: ./CountryDTO.yaml

@@ -1,11 +1,15 @@
-description: |
+description: >
   Тип субсидии:
 
-  * `YANDEX_CASHBACK` — скидка по подписке Яндекс Плюс.
 
-  * `SUBSIDY` — скидка Маркета (по акциям, промокодам, купонам и т. д.)
+  * :no-translate[`YANDEX_CASHBACK`] — скидка по подписке Яндекс Плюс.
 
-  * `DELIVERY` — скидка за доставку (DBS).
+
+  * :no-translate[`SUBSIDY`] — скидка Маркета (по акциям, промокодам, купонам и
+  т. д.)
+
+
+  * :no-translate[`DELIVERY`] — скидка за доставку (DBS).
 type: string
 enum:
   - YANDEX_CASHBACK

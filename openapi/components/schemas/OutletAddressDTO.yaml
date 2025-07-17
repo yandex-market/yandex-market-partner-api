@@ -9,19 +9,21 @@ properties:
       Идентификатор региона.
 
 
-      Идентификатор можно получить c помощью запроса [GET
-      regions](../../reference/regions/searchRegionsByName.md).
+      Идентификатор можно получить c помощью запроса [:no-translate[GET
+      regions]](:no-translate[../../reference/regions/searchRegionsByName.md]).
 
 
       {% note alert "Типы регионов при создании и редактировании точек продаж"
       %}
 
 
-      Указывайте только регионы типов `TOWN` (город), `CITY` (крупный город) и
-      `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных
-      параметрах `type` запросов [GET
-      regions](../../reference/regions/searchRegionsByName.md) и [GET
-      regions/{regionId}](../../reference/regions/searchRegionsById.md).
+      Указывайте только регионы типов :no-translate[`TOWN`] (город),
+      :no-translate[`CITY`] (крупный город) и :no-translate[`REPUBLIC_AREA`]
+      (район субъекта федерации). Тип региона указан в выходных параметрах
+      :no-translate[`type`] запросов [:no-translate[GET
+      regions]](:no-translate[../../reference/regions/searchRegionsByName.md]) и
+      [:no-translate[GET
+      regions/{regionId}]](:no-translate[../../reference/regions/searchRegionsById.md]).
 
 
       {% endnote %}
@@ -57,7 +59,7 @@ properties:
     type: integer
     format: int32
   city:
-    description: "{% note warning \"В ответах города и населенные пункты возвращаются в параметре `regionId`.\" %}\n\n\_\n\n{% endnote %}\n"
+    description: "{% note warning \"В ответах города и населенные пункты возвращаются в параметре :no-translate[`regionId`].\" %}\n\n\_\n\n{% endnote %}\n"
     maxLength: 200
     type: string
     deprecated: true

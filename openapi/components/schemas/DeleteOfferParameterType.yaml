@@ -1,62 +1,79 @@
 description: >
   Значения параметров, которые хотите удалить, и соответствующие параметры в
-  `UpdateOfferDTO`, в которых вы передали эти значения ранее:
+  :no-translate[`UpdateOfferDTO`], в которых вы передали эти значения ранее:
 
 
-  * `ADDITIONAL_EXPENSES` — дополнительные расходы на товар (параметр
-  `additionalExpenses`).
+  * :no-translate[`ADDITIONAL_EXPENSES`] — дополнительные расходы на товар
+  (параметр :no-translate[`additionalExpenses`]).
 
-  * `ADULT` — пометка 18+ (параметр `adult`)
+  * :no-translate[`ADULT`] — пометка 18+ (параметр :no-translate[`adult`])
 
-  * `AGE` — возрастное ограничение для детей (параметр `age`).
+  * :no-translate[`AGE`] — возрастное ограничение для детей (параметр
+  :no-translate[`age`]).
 
-  * `BARCODES` — штрихкод (параметр `barcodes`).
+  * :no-translate[`BARCODES`] — штрихкод (параметр :no-translate[`barcodes`]).
 
-  * `BOX_COUNT` — количество грузовых мест (параметр `boxCount`).
+  * :no-translate[`BOX_COUNT`] — количество грузовых мест (параметр
+  :no-translate[`boxCount`]).
 
-  * `CERTIFICATES` — номера документов на товар (параметр `certificates`).
+  * :no-translate[`CERTIFICATES`] — номера документов на товар (параметр
+  :no-translate[`certificates`]).
 
-  * `COFINANCE_PRICE` — цена для скидок с Маркетом (параметр `cofinancePrice`).
+  * :no-translate[`COFINANCE_PRICE`] — цена для скидок с Маркетом (параметр
+  :no-translate[`cofinancePrice`]).
 
-  * `COMMODITY_CODES` — товарные коды (параметр `commodityCodes`).
+  * :no-translate[`COMMODITY_CODES`] — товарные коды (параметр
+  :no-translate[`commodityCodes`]).
 
-  * `CONDITION` — состояние уцененного товара (параметр `condition`).
+  * :no-translate[`CONDITION`] — состояние уцененного товара (параметр
+  :no-translate[`condition`]).
 
-  * `CUSTOMS_COMMODITY_CODE` — код товара в ТН ВЭД (параметр
-  `customsCommodityCode`).
+  * :no-translate[`CUSTOMS_COMMODITY_CODE`] — код товара в ТН ВЭД (параметр
+  :no-translate[`customsCommodityCode`]).
 
-  * `DESCRIPTION` — описание товара (параметр `description`).
+  * :no-translate[`DESCRIPTION`] — описание товара (параметр
+  :no-translate[`description`]).
 
-  * `DOWNLOADABLE` — признак цифрового товара (параметр `downloadable`).
+  * :no-translate[`DOWNLOADABLE`] — признак цифрового товара (параметр
+  :no-translate[`downloadable`]).
 
-  * `FIRST_VIDEO_AS_COVER` — использование первого видео в карточке как
-  видеообложки (параметр `firstVideoAsCover`).
+  * :no-translate[`FIRST_VIDEO_AS_COVER`] — использование первого видео в
+  карточке как видеообложки (параметр :no-translate[`firstVideoAsCover`]).
 
-  * `GUARANTEE_PERIOD` — гарантийный срок (параметр `guaranteePeriod`).
+  * :no-translate[`GUARANTEE_PERIOD`] — гарантийный срок (параметр
+  :no-translate[`guaranteePeriod`]).
 
-  * `LIFE_TIME` — срок службы (параметр `lifeTime`).
+  * :no-translate[`LIFE_TIME`] — срок службы (параметр
+  :no-translate[`lifeTime`]).
 
-  * `MANUALS` — список инструкций по использованию товара (параметр `manuals`).
+  * :no-translate[`MANUALS`] — список инструкций по использованию товара
+  (параметр :no-translate[`manuals`]).
 
-  * `MANUFACTURER_COUNTRIES` — страна производства (параметр
-  `manufacturerCountries`).
+  * :no-translate[`MANUFACTURER_COUNTRIES`] — страна производства (параметр
+  :no-translate[`manufacturerCountries`]).
 
-  * `PARAMETERS` — характеристики товара (параметры `params`,
-  `parameterValues`).
+  * :no-translate[`PARAMETERS`] — характеристики товара (параметры
+  :no-translate[`params`], :no-translate[`parameterValues`]).
 
-  * `PICTURES` — ссылки на изображения товара (параметр `pictures`).
+  * :no-translate[`PICTURES`] — ссылки на изображения товара (параметр
+  :no-translate[`pictures`]).
 
-  * `PURCHASE_PRICE` — себестоимость (параметр `purchasePrice`).
+  * :no-translate[`PURCHASE_PRICE`] — себестоимость (параметр
+  :no-translate[`purchasePrice`]).
 
-  * `SHELF_LIFE` — срок годности (параметр `shelfLife`).
+  * :no-translate[`SHELF_LIFE`] — срок годности (параметр
+  :no-translate[`shelfLife`]).
 
-  * `TAGS` — метки товара, которые использует магазин (параметр `tags`).
+  * :no-translate[`TAGS`] — метки товара, которые использует магазин (параметр
+  :no-translate[`tags`]).
 
-  * `TYPE` — особый тип товара (параметр `type`).
+  * :no-translate[`TYPE`] — особый тип товара (параметр :no-translate[`type`]).
 
-  * `VENDOR_CODE` — название бренда или производителя (параметр `vendorCode`).
+  * :no-translate[`VENDOR_CODE`] — название бренда или производителя (параметр
+  :no-translate[`vendorCode`]).
 
-  * `VIDEOS` — ссылки на видео товара (параметр `videos`).
+  * :no-translate[`VIDEOS`] — ссылки на видео товара (параметр
+  :no-translate[`videos`]).
 type: string
 enum:
   - ADDITIONAL_EXPENSES

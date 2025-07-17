@@ -1,10 +1,10 @@
 description: |
   Кто отправил сообщение:
 
-  * `PARTNER` — магазин.
-  * `CUSTOMER` — покупатель.
-  * `MARKET` — Маркет.
-  * `SUPPORT` — сотрудник службы поддержки Маркета.
+  * :no-translate[`PARTNER`] — магазин.
+  * :no-translate[`CUSTOMER`] — покупатель.
+  * :no-translate[`MARKET`] — Маркет.
+  * :no-translate[`SUPPORT`] — сотрудник службы поддержки Маркета.
 type: string
 enum:
   - PARTNER

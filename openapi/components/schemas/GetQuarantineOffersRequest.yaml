@@ -2,9 +2,9 @@ description: >
   Фильтрации товаров
 
 
-  В запросе можно указать либо фильтр offerIds, либо любые другие фильтры
-  товаров. Совместное использование фильтра offerIds с другими фильтрациями
-  приведет к ошибке.
+  В запросе можно указать либо фильтр :no-translate[`offerIds`], либо любые
+  другие фильтры товаров. Совместное использование фильтра
+  :no-translate[`offerIds`] с другими фильтрациями приведет к ошибке.
 type: object
 properties:
   offerIds:
@@ -29,7 +29,7 @@ properties:
 
 
       [Что такое карточка
-      товара](https://yandex.ru/support/marketplace/assortment/content/index.html)
+      товара](:no-translate[https://yandex.ru/support/marketplace/assortment/content/index.html])
     type: array
     nullable: true
     minItems: 1
@@ -37,7 +37,7 @@ properties:
     items:
       $ref: ./OfferCardStatusType.yaml
   categoryIds:
-    description: Фильтр по категориям на Маркете.
+    description: Фильтр по категориям на :no-translate[Маркете].
     type: array
     nullable: true
     minItems: 1

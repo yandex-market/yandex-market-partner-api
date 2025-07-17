@@ -1,14 +1,24 @@
-description: |
+description: >
   Статус отгрузки:
 
-  * `OUTBOUND_CREATED` — формируется.
-  * `OUTBOUND_READY_FOR_CONFIRMATION` — можно обрабатывать.
-  * `OUTBOUND_CONFIRMED` — подтверждена и готова к отправке.
-  * `OUTBOUND_SIGNED` — по ней подписан электронный акт приема-передачи.
-  * `ACCEPTED` — принята в сортировочном центре или пункте приема.
-  * `ACCEPTED_WITH_DISCREPANCIES` — принята с расхождениями.
-  * `FINISHED` — завершена.
-  * `ERROR` — отменена из-за ошибки.
+
+  * :no-translate[`OUTBOUND_CREATED`] — формируется.
+
+  * :no-translate[`OUTBOUND_READY_FOR_CONFIRMATION`] — можно обрабатывать.
+
+  * :no-translate[`OUTBOUND_CONFIRMED`] — подтверждена и готова к отправке.
+
+  * :no-translate[`OUTBOUND_SIGNED`] — по ней подписан электронный акт
+  приема-передачи.
+
+  * :no-translate[`ACCEPTED`] — принята в сортировочном центре или пункте
+  приема.
+
+  * :no-translate[`ACCEPTED_WITH_DISCREPANCIES`] — принята с расхождениями.
+
+  * :no-translate[`FINISHED`] — завершена.
+
+  * :no-translate[`ERROR`] — отменена из-за ошибки.
 type: string
 enum:
   - OUTBOUND_CREATED

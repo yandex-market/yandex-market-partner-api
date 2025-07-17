@@ -2,63 +2,65 @@ description: >
   Тип скидки:
 
 
-  * `DIRECT_DISCOUNT` — прямая скидка, которую устанавливает продавец или
-  Маркет.
+  * :no-translate[`DIRECT_DISCOUNT`] — прямая скидка, которую устанавливает
+  продавец или Маркет.
 
 
-  * `BLUE_SET` — комплекты.
+  * :no-translate[`BLUE_SET`] — комплекты.
 
 
-  * `BLUE_FLASH` — флеш-акция.
+  * :no-translate[`BLUE_FLASH`] — флеш-акция.
 
 
-  * `MARKET_COUPON` — скидка по промокоду Маркета.
+  * :no-translate[`MARKET_COUPON`] — скидка по промокоду Маркета.
 
 
-  * `MARKET_PROMOCODE` — скидка по промокоду магазина.
+  * :no-translate[`MARKET_PROMOCODE`] — скидка по промокоду магазина.
 
 
-  * `MARKET_BLUE` — скидка на Маркете.
+  * :no-translate[`MARKET_BLUE`] — скидка на Маркете.
 
 
-  * `CHEAPEST_AS_GIFT` — самый дешевый товар в подарок.
+  * :no-translate[`CHEAPEST_AS_GIFT`] — самый дешевый товар в подарок.
 
 
-  * `CASHBACK` — кешбэк.
+  * :no-translate[`CASHBACK`] — кешбэк.
 
 
-  * `SPREAD_DISCOUNT_COUNT` — скидка за количество одинаковых товаров.
+  * :no-translate[`SPREAD_DISCOUNT_COUNT`] — скидка за количество одинаковых
+  товаров.
 
 
-  * `SPREAD_DISCOUNT_RECEIPT` — скидка от суммы чека.
+  * :no-translate[`SPREAD_DISCOUNT_RECEIPT`] — скидка от суммы чека.
 
 
-  * `DISCOUNT_BY_PAYMENT_TYPE` — прямая скидка при оплате картой Плюса.
+  * :no-translate[`DISCOUNT_BY_PAYMENT_TYPE`] — прямая скидка при оплате картой
+  Плюса.
 
 
-  * `PERCENT_DISCOUNT` — прямая скидка в процентах.
+  * :no-translate[`PERCENT_DISCOUNT`] — прямая скидка в процентах.
 
 
-  * `DCO_EXTRA_DISCOUNT` — дополнительная скидка, необходимая для расчета
-  субсидии от Маркета.
+  * :no-translate[`DCO_EXTRA_DISCOUNT`] — дополнительная скидка, необходимая для
+  расчета субсидии от Маркета.
 
 
-  * `UNKNOWN` — неизвестный тип.
+  * :no-translate[`UNKNOWN`] — неизвестный тип.
 
 
   Устаревшие типы:
 
 
-  * `GENERIC_BUNDLE`.
+  * :no-translate[`GENERIC_BUNDLE`].
 
 
-  * `MARKET_COIN`.
+  * :no-translate[`MARKET_COIN`].
 
 
-  * `PRICE_DROP_AS_YOU_SHOP`.
+  * :no-translate[`PRICE_DROP_AS_YOU_SHOP`].
 
 
-  * `SECRET_SALE`.
+  * :no-translate[`SECRET_SALE`].
 type: string
 enum:
   - DIRECT_DISCOUNT

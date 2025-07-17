@@ -50,24 +50,26 @@ properties:
   allowCustomValues:
     description: >-
       Можно ли передавать собственное значение, которого нет в списке вариантов
-      Маркета. Только для характеристик типа `ENUM`.
+      Маркета. Только для характеристик типа :no-translate[`ENUM`].
     type: boolean
   values:
     description: >-
       Список допустимых значений параметра. Только для характеристик типа
-      `ENUM`.
+      :no-translate[`ENUM`].
     type: array
     nullable: true
     minItems: 1
     items:
       $ref: ./ParameterValueOptionDTO.yaml
   constraints:
-    description: Ограничения на значения. Только для характеристик типа `TEXT` и `NUMERIC`.
+    description: >-
+      Ограничения на значения. Только для характеристик типа
+      :no-translate[`TEXT`] и :no-translate[`NUMERIC`].
     $ref: ./ParameterValueConstraintsDTO.yaml
   valueRestrictions:
     description: >-
       Ограничения на значения, накладываемые другими характеристиками. Только
-      для характеристик типа `ENUM`.
+      для характеристик типа :no-translate[`ENUM`].
     type: array
     nullable: true
     minItems: 1

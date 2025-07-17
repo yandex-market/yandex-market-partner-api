@@ -1,8 +1,11 @@
-description: |
+description: >
   Статус склада:
 
-  * `DISABLED_MANUALLY` – отключен вами.
-  * `OTHER` – другой статус. Например, склад включен или отключен Маркетом.
+
+  * :no-translate[`DISABLED_MANUALLY`] – отключен вами.
+
+  * :no-translate[`OTHER`] – другой статус. Например, склад включен или отключен
+  Маркетом.
 type: string
 enum:
   - DISABLED_MANUALLY

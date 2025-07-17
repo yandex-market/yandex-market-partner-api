@@ -1,12 +1,12 @@
 description: |
   Статус чата:
 
-  * `NEW` — новый чат.
-  * `WAITING_FOR_CUSTOMER` — нужен ответ покупателя.
-  * `WAITING_FOR_PARTNER` — нужен ответ магазина.
-  * `WAITING_FOR_ARBITER` — нужен ответ арбитра.
-  * `WAITING_FOR_MARKET` — нужен ответ Маркета.
-  * `FINISHED` — чат завершен.
+  * :no-translate[`NEW`] — новый чат.
+  * :no-translate[`WAITING_FOR_CUSTOMER`] — нужен ответ покупателя.
+  * :no-translate[`WAITING_FOR_PARTNER`] — нужен ответ магазина.
+  * :no-translate[`WAITING_FOR_ARBITER`] — нужен ответ арбитра.
+  * :no-translate[`WAITING_FOR_MARKET`] — нужен ответ Маркета.
+  * :no-translate[`FINISHED`] — чат завершен.
 type: string
 enum:
   - NEW

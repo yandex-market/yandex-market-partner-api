@@ -18,7 +18,7 @@ properties:
   price:
     description: >-
       Цена предложения без скидки, которую получает покупатель при оплате через
-      Yandex Pay.
+      :no-translate[Yandex Pay].
     type: number
   regionId:
     description: >
@@ -26,8 +26,8 @@ properties:
 
 
       Сначала показываются предложения, доставляемые из региона, указанного в
-      запросе в параметре `regionId`. Предложения, доставляемые из других
-      регионов, показываются после них.
+      запросе в параметре :no-translate[`regionId`]. Предложения, доставляемые
+      из других регионов, показываются после них.
     type: integer
     format: int64
   shippingCost:

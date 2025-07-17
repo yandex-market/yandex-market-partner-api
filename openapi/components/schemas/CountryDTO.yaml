@@ -1,4 +1,4 @@
-description: Страна и ее код в формате ISO 3166-1 alpha-2.
+description: Страна и ее код в формате :no-translate[ISO 3166-1 alpha-2].
 type: object
 required:
   - region

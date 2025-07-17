@@ -2,11 +2,11 @@ type: string
 description: |
   Коды валют:
 
-  * `RUR` — российский рубль.
-  * `UAH` — украинская гривна.
-  * `BYR` — белорусский рубль.
-  * `KZT` — казахстанский тенге.
-  * `UZS` — узбекский сум.
+  * :no-translate[`RUR`] — российский рубль.
+  * :no-translate[`UAH`] — украинская гривна.
+  * :no-translate[`BYR`] — белорусский рубль.
+  * :no-translate[`KZT`] — казахстанский тенге.
+  * :no-translate[`UZS`] — узбекский сум.
 enum:
   - RUR
   - USD

@@ -2,64 +2,67 @@ description: >
   Тип остатка на складе:
 
 
-  * `FIT` — годный.
+  * :no-translate[`FIT`] — годный.
 
 
-  * `DEFECT` — бракованный.
+  * :no-translate[`DEFECT`] — бракованный.
 
 
-  * `ANOMALY` — аномалия.
+  * :no-translate[`ANOMALY`] — аномалия.
 
 
-  * `SURPLUS` — лишний.
+  * :no-translate[`SURPLUS`] — лишний.
 
 
-  * `EXPIRED` — просроченный.
+  * :no-translate[`EXPIRED`] — просроченный.
 
 
-  * `MISGRADING` — пересортица.
+  * :no-translate[`MISGRADING`] — пересортица.
 
 
-  * `UNDEFINED` — с неизвестным статусом.
+  * :no-translate[`UNDEFINED`] — с неизвестным статусом.
 
 
-  * `INCORRECT_IMEI` — товар с некорректным
-  [IMEI](https://ru.wikipedia.org/wiki/IMEI).
+  * :no-translate[`INCORRECT_IMEI`] — товар с некорректным
+  [:no-translate[IMEI]](:no-translate[https://ru.wikipedia.org/wiki/IMEI]).
 
 
-  * `INCORRECT_SERIAL_NUMBER` — товар с некорректным серийным номером.
+  * :no-translate[`INCORRECT_SERIAL_NUMBER`] — товар с некорректным серийным
+  номером.
 
 
-  * `INCORRECT_CIS` — товар с некорректным кодом идентификации единицы товара в
-  системе [«Честный ЗНАК»](https://честныйзнак.рф/) или [«ASL
-  BELGISI»](https://aslbelgisi.uz) (для продавцов Market Yandex Go).
+  * :no-translate[`INCORRECT_CIS`] — товар с некорректным кодом идентификации
+  единицы товара в системе [:no-translate[«Честный
+  ЗНАК»]](:no-translate[https://честныйзнак.рф/]) или [:no-translate[«ASL
+  BELGISI»]](:no-translate[https://aslbelgisi.uz]) (для продавцов
+  :no-translate[Market Yandex Go]).
 
 
-  * `PART_MISSING` — недостача.
+  * :no-translate[`PART_MISSING`] — недостача.
 
 
-  * `NON_COMPLIENT` — товар с множественными несоответствиями.
+  * :no-translate[`NON_COMPLIENT`] — товар с множественными несоответствиями.
 
 
-  * `NOT_ACCEPTABLE` — товар, который Маркет не принимает.
+  * :no-translate[`NOT_ACCEPTABLE`] — товар, который Маркет не принимает.
 
 
-  * `SERVICE` — сервисный сток.
+  * :no-translate[`SERVICE`] — сервисный сток.
 
 
-  * `MARKDOWN` — уценка.
+  * :no-translate[`MARKDOWN`] — уценка.
 
 
-  * `DEMO` — демо.
+  * :no-translate[`DEMO`] — демо.
 
 
-  * `REPAIR` — ремонт.
+  * :no-translate[`REPAIR`] — ремонт.
 
 
-  * `FIRMWARE` — прошивка.
+  * :no-translate[`FIRMWARE`] — прошивка.
 
 
-  * `UNKNOWN` — неизвестный тип товара.
+  * :no-translate[`UNKNOWN`] — неизвестный тип товара.
 type: string
 enum:
   - FIT

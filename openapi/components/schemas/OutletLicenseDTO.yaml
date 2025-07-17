@@ -13,13 +13,14 @@ properties:
 
 
       Параметр указывается, только если нужно изменить информацию о существующей
-      лицензии. Ее идентификатор можно узнать с помощью запроса [GET
-      campaigns/{campaignId}/outlets/licenses](../../reference/outlets/getOutletLicenses.md).
+      лицензии. Ее идентификатор можно узнать с помощью запроса
+      [:no-translate[GET
+      campaigns/{campaignId}/outlets/licenses]](:no-translate[../../reference/outlets/getOutletLicenses.md]).
       При передаче информации о новой лицензии указывать идентификатор не нужно.
 
 
       Идентификатор лицензии присваивается Маркетом. Не путайте его с номером,
-      указанным на лицензии: он передается в параметре `number`.
+      указанным на лицензии: он передается в параметре :no-translate[`number`].
     type: integer
     format: int64
   outletId:
@@ -45,7 +46,7 @@ properties:
 
 
       Не может быть позже даты окончания срока действия, указанной в параметре
-      `dateOfExpiry`.
+      :no-translate[`dateOfExpiry`].
     type: string
     format: date-time
     example: '2017-11-13T00:00:00+03:00'
@@ -61,7 +62,8 @@ properties:
       значение `2022-11-20T00:00:00+03:00`.
 
 
-      Не может быть раньше даты выдачи, указанной в параметре `dateOfIssue`.
+      Не может быть раньше даты выдачи, указанной в параметре
+      :no-translate[`dateOfIssue`].
     type: string
     format: date-time
     example: '2022-11-20T00:00:00+03:00'

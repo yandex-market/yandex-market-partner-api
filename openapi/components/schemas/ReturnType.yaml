@@ -1,9 +1,9 @@
 description: |
   Тип заказа для фильтрации:
 
-  * `UNREDEEMED` — невыкуп.
+  * :no-translate[`UNREDEEMED`] — невыкуп.
 
-  * `RETURN` — возврат.
+  * :no-translate[`RETURN`] — возврат.
 
   Если не указывать, в ответе будут и невыкупы, и возвраты.
 type: string

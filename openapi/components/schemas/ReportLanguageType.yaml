@@ -1,8 +1,8 @@
 description: |
   Язык отчета:
 
-  * `RU` — русский язык.
-  * `EN` — английский язык.
+  * :no-translate[`RU`] — русский язык.
+  * :no-translate[`EN`] — английский язык.
 type: string
 enum:
   - RU

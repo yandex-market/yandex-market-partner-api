@@ -2,7 +2,8 @@ description: >
   Информация о покупателе.
 
 
-  Параметры `id`, `lastName`, `firstName` и `middleName` возвращаются, только
+  Параметры :no-translate[`id`], :no-translate[`lastName`],
+  :no-translate[`firstName`] и :no-translate[`middleName`] возвращаются, только
   если вы работаете по модели DBS.
 type: object
 allOf:

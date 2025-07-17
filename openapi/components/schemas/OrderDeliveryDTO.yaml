@@ -13,7 +13,7 @@ properties:
 
 
       Указывается, только если магазин передал данный идентификатор в ответе на
-      запрос методом `POST cart`.
+      запрос методом :no-translate[`POST cart`].
     deprecated: true
     type: string
   type:
@@ -25,7 +25,7 @@ properties:
     type: string
   price:
     deprecated: true
-    description: "{% note warning \"Стоимость доставки смотрите в параметре `deliveryTotal`.\" %}\n\n\_\n\n{% endnote %}\n\nСтоимость доставки в валюте заказа.\n"
+    description: "{% note warning \"Стоимость доставки смотрите в параметре :no-translate[`deliveryTotal`].\" %}\n\n\_\n\n{% endnote %}\n\nСтоимость доставки в валюте заказа.\n"
     type: number
     format: decimal
   deliveryPartnerType:
@@ -57,11 +57,11 @@ properties:
   outletStorageLimitDate:
     description: >
       Дата, до которой заказ будет храниться в пункте выдачи. Возвращается,
-      когда заказ переходит в статус `PICKUP`.
+      когда заказ переходит в статус :no-translate[`PICKUP`].
 
 
-      Один раз дату можно поменять с помощью метода [PUT
-      campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit](../../reference/orders/updateOrderStorageLimit.md).
+      Один раз дату можно поменять с помощью метода [:no-translate[PUT
+      campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit]](:no-translate[../../reference/orders/updateOrderStorageLimit.md]).
     $ref: ./DateDdMmYyyy.yaml
   dispatchType:
     $ref: ./OrderDeliveryDispatchType.yaml
@@ -87,5 +87,5 @@ properties:
     $ref: ./OrderDeliveryEacType.yaml
   eacCode:
     description: |
-      Код подтверждения ЭАПП (для типа `MERCHANT_TO_COURIER`).
+      Код подтверждения ЭАПП (для типа :no-translate[`MERCHANT_TO_COURIER`]).
     type: string

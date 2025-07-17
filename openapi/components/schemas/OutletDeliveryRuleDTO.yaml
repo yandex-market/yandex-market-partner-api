@@ -12,31 +12,35 @@ properties:
       Максимальное значение: `60`.
 
 
-      Допустимые сроки доставки (разница между `minDeliveryDays` и
-      `maxDeliveryDays`) зависят от региона.
+      Допустимые сроки доставки (разница между :no-translate[`minDeliveryDays`]
+      и :no-translate[`maxDeliveryDays`]) зависят от региона.
 
 
       Для доставки по своему региону разница не должна превышать двух дней.
-      Например, если `minDeliveryDays` равно 1, то для `maxDeliveryDays`
-      допускаются значения от 1 до 3.
+      Например, если :no-translate[`minDeliveryDays`] равно 1, то для
+      :no-translate[`maxDeliveryDays`] допускаются значения от 1 до 3.
 
 
       Для доставки в другие регионы:
 
 
-      * Если `minDeliveryDays` до 18 дней, разница не должна превышать четырех
-      дней. Например, если `minDeliveryDays` равно 10, то для `maxDeliveryDays`
-      допускаются значения от 10 до 14.
+      * Если :no-translate[`minDeliveryDays`] до 18 дней, разница не должна
+      превышать четырех дней. Например, если :no-translate[`minDeliveryDays`]
+      равно 10, то для :no-translate[`maxDeliveryDays`] допускаются значения от
+      10 до 14.
 
-      * Если `minDeliveryDays` больше 18 дней, разница должна быть не больше чем
-      в два раза. Например, если `minDeliveryDays` равно 21, то для
-      `maxDeliveryDays` допускаются значения от 21 до 42.
+      * Если :no-translate[`minDeliveryDays`] больше 18 дней, разница должна
+      быть не больше чем в два раза. Например, если
+      :no-translate[`minDeliveryDays`] равно 21, то для
+      :no-translate[`maxDeliveryDays`] допускаются значения от 21 до 42.
 
 
-      Обязательный параметр, если `type="DEPOT"` или `type="MIXED"`.
+      Обязательный параметр, если :no-translate[`type="DEPOT"`] или
+      :no-translate[`type="MIXED"`].
 
 
-      Взаимоисключающий с параметром `unspecifiedDeliveryInterval`.
+      Взаимоисключающий с параметром
+      :no-translate[`unspecifiedDeliveryInterval`].
     type: integer
     format: int32
     minimum: 0
@@ -52,31 +56,35 @@ properties:
       Максимальное значение: `60`.
 
 
-      Допустимые сроки доставки (разница между `minDeliveryDays` и
-      `maxDeliveryDays`) зависят от региона.
+      Допустимые сроки доставки (разница между :no-translate[`minDeliveryDays`]
+      и :no-translate[`maxDeliveryDays`]) зависят от региона.
 
 
       Для доставки по своему региону разница не должна превышать двух дней.
-      Например, если `minDeliveryDays` равно 1, то для `maxDeliveryDays`
-      допускаются значения от 1 до 3.
+      Например, если :no-translate[`minDeliveryDays`] равно 1, то для
+      :no-translate[`maxDeliveryDays`] допускаются значения от 1 до 3.
 
 
       Для доставки в другие регионы:
 
 
-      * Если `minDeliveryDays` до 18 дней, разница не должна превышать четырех
-      дней. Например, если `minDeliveryDays` равно 10, то для `maxDeliveryDays`
-      допускаются значения от 10 до 14.
+      * Если :no-translate[`minDeliveryDays`] до 18 дней, разница не должна
+      превышать четырех дней. Например, если :no-translate[`minDeliveryDays`]
+      равно 10, то для :no-translate[`maxDeliveryDays`] допускаются значения от
+      10 до 14.
 
-      * Если `minDeliveryDays` больше 18 дней, разница должна быть не больше чем
-      в два раза. Например, если `minDeliveryDays` равно 21, то для
-      `maxDeliveryDays` допускаются значения от 21 до 42.
+      * Если :no-translate[`minDeliveryDays`] больше 18 дней, разница должна
+      быть не больше чем в два раза. Например, если
+      :no-translate[`minDeliveryDays`] равно 21, то для
+      :no-translate[`maxDeliveryDays`] допускаются значения от 21 до 42.
 
 
-      Обязательный параметр, если `type="DEPOT"` или `type="MIXED"`.
+      Обязательный параметр, если :no-translate[`type="DEPOT"`] или
+      :no-translate[`type="MIXED"`].
 
 
-      Взаимоисключающий с параметром `unspecifiedDeliveryInterval`.
+      Взаимоисключающий с параметром
+      :no-translate[`unspecifiedDeliveryInterval`].
     type: integer
     format: int32
     minimum: 0
@@ -86,19 +94,21 @@ properties:
       Идентификатор службы доставки товаров в точку продаж.
 
 
-      Информацию о службе доставки можно получить с помощью запроса [GET
-      delivery/services](../../reference/orders/getDeliveryServices.md).
+      Информацию о службе доставки можно получить с помощью запроса
+      [:no-translate[GET
+      delivery/services]](:no-translate[../../reference/orders/getDeliveryServices.md]).
     type: integer
     format: int64
   orderBefore:
     description: >
       Час, до которого покупателю нужно сделать заказ, чтобы он был доставлен в
-      точку продаж в сроки от `minDeliveryDays` до `maxDeliveryDays`.
+      точку продаж в сроки от :no-translate[`minDeliveryDays`] до
+      :no-translate[`maxDeliveryDays`].
 
 
       Если покупатель оформит заказ после указанного часа, он будет доставлен в
-      сроки от `minDeliveryDays` + 1 рабочий день до `maxDeliveryDays` + 1
-      рабочий день.
+      сроки от :no-translate[`minDeliveryDays`] + 1 рабочий день до
+      :no-translate[`maxDeliveryDays`] + 1 рабочий день.
 
 
       Значение по умолчанию: `24`.
@@ -128,11 +138,12 @@ properties:
 
       Возможные значения:
 
-      * `true` — товары доставляются в точку продаж на заказ.
+      * :no-translate[`true`] — товары доставляются в точку продаж на заказ.
 
 
-      Параметр указывается только со значением `true`.
+      Параметр указывается только со значением :no-translate[`true`].
 
 
-      Взаимоисключающий с параметрами `minDeliveryDays` и `maxDeliveryDays`.
+      Взаимоисключающий с параметрами :no-translate[`minDeliveryDays`] и
+      :no-translate[`maxDeliveryDays`].
     type: boolean

@@ -9,7 +9,7 @@ properties:
   deliveryServiceId:
     description: >-
       Идентификатор службы доставки. Информацию о службе доставки можно получить
-      с помощью запроса [GET
-      delivery/services](../../reference/orders/getDeliveryServices.md).
+      с помощью запроса [:no-translate[GET
+      delivery/services]](:no-translate[../../reference/orders/getDeliveryServices.md]).
     type: integer
     format: int64
