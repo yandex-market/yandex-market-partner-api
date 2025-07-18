@@ -1,10 +1,11 @@
 description: >
-  Идентификатор кабинета. Чтобы его узнать, воспользуйтесь запросом [GET
-  campaigns](../../reference/campaigns/getCampaigns.md).
+  Идентификатор кабинета. Чтобы его узнать, воспользуйтесь запросом
+  [:no-translate[GET
+  campaigns]](:no-translate[../../reference/campaigns/getCampaigns.md]).
 
 
   ℹ️ [Что такое кабинет и магазин на
-  Маркете](https://yandex.ru/support/marketplace/account/introduction.html)
+  Маркете](:no-translate[https://yandex.ru/support/marketplace/account/introduction.html])
 name: businessId
 in: path
 required: true

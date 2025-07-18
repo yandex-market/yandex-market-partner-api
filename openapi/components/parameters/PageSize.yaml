@@ -1,10 +1,13 @@
 name: pageSize
-description: |
+description: >
   Размер страницы.
 
-  Используется вместе с параметром `page_number`.
 
-  `page_size` игнорируется, если задан `page_token` или `limit`.
+  Используется вместе с параметром :no-translate[`page_number`].
+
+
+  :no-translate[`page_size`] игнорируется, если задан
+  :no-translate[`page_token`] или :no-translate[`limit`].
 in: query
 required: false
 schema:
