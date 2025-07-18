@@ -1,11 +1,11 @@
 description: |
-  Фильтрации удаляемых товаров по offerIds.
+  Фильтрации удаляемых товаров по :no-translate[offerIds].
 type: object
 required:
   - offerIds
 properties:
   offerIds:
-    description: Список SKU товаров, которые нужно удалить.
+    description: Список :no-translate[SKU] товаров, которые нужно удалить.
     type: array
     minItems: 1
     maxItems: 500

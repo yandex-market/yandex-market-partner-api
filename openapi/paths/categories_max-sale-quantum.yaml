@@ -15,11 +15,13 @@ post:
   summary: Лимит на установку кванта продажи и минимального количества товаров в заказе
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/getCategoriesMaxSaleQuantum.md) %}
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getCategoriesMaxSaleQuantum.md])
+    %}
 
 
-    Возвращает лимит на установку [кванта](*quantum) и минимального количества
-    товаров в заказе, которые вы можете задать для товаров указанных категорий.
+    Возвращает лимит на установку [кванта](:no-translate[*quantum]) и
+    минимального количества товаров в заказе, которые вы можете задать для
+    товаров указанных категорий.
 
 
     Если вы передадите значение кванта или минимального количества товаров выше
@@ -28,7 +30,7 @@ post:
 
     Подробнее о том, как продавать товары по несколько штук, читайте [в Справке
     Маркета для
-    продавцов](https://yandex.ru/support2/marketplace/ru/assortment/fields/quantum).
+    продавцов](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/quantum]).
 
 
     |**⚙️ Лимит:** 5 000 запросов в час|

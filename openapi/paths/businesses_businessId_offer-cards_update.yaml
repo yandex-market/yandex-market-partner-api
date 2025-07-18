@@ -12,7 +12,8 @@ post:
   operationId: updateOfferContent
   summary: Редактирование категорийных характеристик товара
   description: >
-    {% include notitle [access](../../_auto/method_scopes/updateOfferContent.md)
+    {% include notitle
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/updateOfferContent.md])
     %}
 
 
@@ -24,15 +25,16 @@ post:
 
 
     Если вам нужно изменить основные параметры товара (название, описание,
-    изображения, видео, производитель, штрихкод), воспользуйтесь запросом [POST
-    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
+    изображения, видео, производитель, штрихкод), воспользуйтесь запросом
+    [:no-translate[POST
+    businesses/{businessId}/offer-mappings/update]](:no-translate[../../reference/business-assortment/updateOfferMappings.md]).
 
 
     {% endnote %}
 
 
-    Чтобы удалить характеристики, которые заданы в параметрах с типом `string`,
-    передайте пустое значение.
+    Чтобы удалить характеристики, которые заданы в параметрах с типом
+    :no-translate[`string`], передайте пустое значение.
 
 
     {% note info "Данные в каталоге обновляются не мгновенно" %}
@@ -65,8 +67,8 @@ post:
         значения корректны" %}
 
 
-        Обязательно посмотрите детали ответа: `status` и перечень ошибок, если
-        он есть.
+        Обязательно посмотрите детали ответа: :no-translate[`status`] и перечень
+        ошибок, если он есть.
 
 
         Даже если ошибка допущена в характеристиках всего одного товара, никакие
@@ -76,7 +78,8 @@ post:
         {% endnote %}
 
 
-        Если в `status` вернулось `ERROR`, убедитесь, что:
+        Если в :no-translate[`status`] вернулось :no-translate[`ERROR`],
+        убедитесь, что:
 
 
         * все обязательные характеристики заполнены;
@@ -88,7 +91,8 @@ post:
         * ваши собственные значения имеют нужный тип данных.
 
 
-        Найти проблемы помогут поля `errors` и `warnings`.
+        Найти проблемы помогут поля :no-translate[`errors`] и
+        :no-translate[`warnings`].
       content:
         application/json:
           schema:

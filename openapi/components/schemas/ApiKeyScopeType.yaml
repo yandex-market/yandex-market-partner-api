@@ -1,20 +1,42 @@
-description: |
+description: >
   Доступы к методам:
 
-  * `ALL_METHODS` — полное управление кабинетом.
-  * `ALL_METHODS_READ_ONLY` — просмотр всей информации в кабинете.
-  * `INVENTORY_AND_ORDER_PROCESSING` — обработка заказов и учет товаров.
-  * `INVENTORY_AND_ORDER_PROCESSING_READ_ONLY` — просмотр информации о заказах.
-  * `PRICING` — управление ценами.
-  * `PRICING_READ_ONLY` — просмотр цен.
-  * `OFFERS_AND_CARDS_MANAGEMENT` — управление товарами и карточками.
-  * `OFFERS_AND_CARDS_MANAGEMENT_READ_ONLY` — просмотр товаров и карточек.
-  * `PROMOTION` — продвижение товаров.
-  * `PROMOTION_READ_ONLY` — просмотр информации о продвижении товаров.
-  * `FINANCE_AND_ACCOUNTING` — просмотр финансовой информации и отчётности.
-  * `COMMUNICATION` — общение с покупателями.
-  * `SETTINGS_MANAGEMENT` — настройка магазинов.
-  * `SUPPLIES_MANAGEMENT_READ_ONLY` — получение информации по FBY-заявкам.
+
+  * :no-translate[`ALL_METHODS`] — полное управление кабинетом.
+
+  * :no-translate[`ALL_METHODS_READ_ONLY`] — просмотр всей информации в
+  кабинете.
+
+  * :no-translate[`INVENTORY_AND_ORDER_PROCESSING`] — обработка заказов и учет
+  товаров.
+
+  * :no-translate[`INVENTORY_AND_ORDER_PROCESSING_READ_ONLY`] — просмотр
+  информации о заказах.
+
+  * :no-translate[`PRICING`] — управление ценами.
+
+  * :no-translate[`PRICING_READ_ONLY`] — просмотр цен.
+
+  * :no-translate[`OFFERS_AND_CARDS_MANAGEMENT`] — управление товарами и
+  карточками.
+
+  * :no-translate[`OFFERS_AND_CARDS_MANAGEMENT_READ_ONLY`] — просмотр товаров и
+  карточек.
+
+  * :no-translate[`PROMOTION`] — продвижение товаров.
+
+  * :no-translate[`PROMOTION_READ_ONLY`] — просмотр информации о продвижении
+  товаров.
+
+  * :no-translate[`FINANCE_AND_ACCOUNTING`] — просмотр финансовой информации и
+  отчётности.
+
+  * :no-translate[`COMMUNICATION`] — общение с покупателями.
+
+  * :no-translate[`SETTINGS_MANAGEMENT`] — настройка магазинов.
+
+  * :no-translate[`SUPPLIES_MANAGEMENT_READ_ONLY`] — получение информации по
+  FBY-заявкам.
 type: string
 enum:
   - ALL_METHODS

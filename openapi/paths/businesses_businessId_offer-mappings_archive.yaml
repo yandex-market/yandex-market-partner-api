@@ -11,7 +11,8 @@ post:
   operationId: addOffersToArchive
   summary: Добавление товаров в архив
   description: >
-    {% include notitle [access](../../_auto/method_scopes/addOffersToArchive.md)
+    {% include notitle
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/addOffersToArchive.md])
     %}
 
 

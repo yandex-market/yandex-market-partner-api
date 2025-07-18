@@ -12,15 +12,16 @@ get:
   operationId: getCampaignRegion
   summary: Регион магазина
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getCampaignRegion.md)
+    {% include notitle
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getCampaignRegion.md])
     %}
 
 
     {% note warning "Какой метод использовать вместо устаревшего" %}
 
 
-    [GET
-    campaigns/{campaignId}/settings](../../reference/campaigns/getCampaignSettings.md)
+    [:no-translate[GET
+    campaigns/{campaignId}/settings]](:no-translate[../../reference/campaigns/getCampaignSettings.md])
 
 
     {% endnote %}

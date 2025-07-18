@@ -12,7 +12,9 @@ post:
   operationId: getChats
   summary: Получение доступных чатов
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getChats.md) %}
+    {% include notitle
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getChats.md])
+    %}
 
 
     Возвращает чаты с покупателями.
@@ -21,12 +23,12 @@ post:
     {% note tip "Подключите API-уведомления" %}
 
 
-    Маркет отправит вам запрос [POST
-    notification](../../push-notifications/reference/sendNotification.md), когда
-    появится новый чат или сообщение.
+    Маркет отправит вам запрос [:no-translate[POST
+    notification]](:no-translate[../../push-notifications/reference/sendNotification.md]),
+    когда появится новый чат или сообщение.
 
 
-    [{#T}](../../push-notifications/index.md)
+    [{#T}](:no-translate[../../push-notifications/index.md])
 
 
     {% endnote %}

@@ -10,7 +10,7 @@ post:
     - communication
   operationId: sendFileToChat
   summary: Отправка файла в чат
-  description: "{% include notitle [access](../../_auto/method_scopes/sendFileToChat.md) %}\n\nОтправляет файл в чат с покупателем.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](:no-translate[../../_auto/method_scopes/sendFileToChat.md]) %}\n\nОтправляет файл в чат с покупателем.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/ChatId.yaml

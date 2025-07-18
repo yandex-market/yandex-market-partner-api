@@ -13,7 +13,8 @@ post:
   summary: Добавление товаров в каталог и изменение информации о них
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/updateOfferMappings.md) %}
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/updateOfferMappings.md])
+    %}
 
 
     Добавляет товары в каталог и передает:
@@ -30,10 +31,11 @@ post:
     добавленных товарах, в том числе цены в кабинете и категории товаров.
 
 
-    Список категорий Маркета можно получить с помощью запроса [POST
-    categories/tree](../../reference/categories/getCategoriesTree.md), а
-    характеристики товаров по категориям с помощью [POST
-    category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
+    Список категорий Маркета можно получить с помощью запроса
+    [:no-translate[POST
+    categories/tree]](:no-translate[../../reference/categories/getCategoriesTree.md]),
+    а характеристики товаров по категориям с помощью [:no-translate[POST
+    category/{categoryId}/parameters]](:no-translate[../../reference/content/getCategoryContentParameters.md]).
 
 
     {% cut "Добавить новый товар" %}
@@ -43,8 +45,10 @@ post:
     использовался в каталоге.
 
 
-    Обязательно укажите параметры: `offerId`, `name`, `marketCategoryId`,
-    `pictures`, `vendor`, `description`.
+    Обязательно укажите параметры: :no-translate[`offerId`],
+    :no-translate[`name`], :no-translate[`marketCategoryId`],
+    :no-translate[`pictures`], :no-translate[`vendor`],
+    :no-translate[`description`].
 
 
     Старайтесь сразу передать как можно больше информации — она потребуется
@@ -52,19 +56,21 @@ post:
 
 
     Если известно, какой карточке на Маркете соответствует товар, можно сразу
-    указать идентификатор этой карточки (**SKU на Маркете**) в поле `marketSKU`.
+    указать идентификатор этой карточки (**SKU на Маркете**) в поле
+    :no-translate[`marketSKU`].
 
 
     **Для продавцов Market Yandex Go:**
 
 
-    Когда вы добавляете товары в каталог, указывайте значения параметров `name`
-    и `description` на русском языке. Чтобы на витрине они отображались и на
-    другом языке, еще раз выполните запрос `POST
-    businesses/{businessId}/offer-mappings/update`, где укажите:
+    Когда вы добавляете товары в каталог, указывайте значения параметров
+    :no-translate[`name`] и :no-translate[`description`] на русском языке. Чтобы
+    на витрине они отображались и на другом языке, еще раз выполните запрос
+    :no-translate[`POST businesses/{businessId}/offer-mappings/update`], где
+    укажите:
 
-      * язык в параметре `language`;
-      * значения параметров `name` и `description` на указанном языке.
+      * язык в параметре :no-translate[`language`];
+      * значения параметров :no-translate[`name`] и :no-translate[`description`] на указанном языке.
 
       Повторно передавать остальные характеристики товара не нужно.
 
@@ -74,7 +80,8 @@ post:
     {% cut "Изменить информацию о товаре" %}
 
 
-    Передайте новые данные, указав в `offerId` соответствующий **ваш SKU**.
+    Передайте новые данные, указав в :no-translate[`offerId`] соответствующий
+    **ваш SKU**.
 
 
     Поля, в которых ничего не меняется, можно не передавать.
@@ -86,18 +93,19 @@ post:
     {% cut "Удалить переданные ранее параметры товара" %}
 
 
-    В `deleteParameters` укажите значения параметров, которые хотите удалить.
-    Можно передать сразу несколько значений.
+    В :no-translate[`deleteParameters`] укажите значения параметров, которые
+    хотите удалить. Можно передать сразу несколько значений.
 
 
-    Для параметров с типом `string` также можно передать пустое значение.
+    Для параметров с типом :no-translate[`string`] также можно передать пустое
+    значение.
 
 
     {% endcut %}
 
 
-    Параметр `offerId` должен быть **уникальным** для всех товаров, которые вы
-    передаете.
+    Параметр :no-translate[`offerId`] должен быть **уникальным** для всех
+    товаров, которые вы передаете.
 
 
     {% note warning "Правила использования SKU" %}
@@ -113,7 +121,7 @@ post:
 
     SKU товара можно изменить в кабинете продавца на Маркете. О том, как это
     сделать, читайте [в Справке Маркета для
-    продавцов](https://yandex.ru/support2/marketplace/ru/assortment/operations/edit-sku).
+    продавцов](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/operations/edit-sku]).
 
 
     {% endnote %}
@@ -151,8 +159,8 @@ post:
         значения корректны" %}
 
 
-        Обязательно посмотрите детали ответа: `status` и перечень ошибок, если
-        он есть.
+        Обязательно посмотрите детали ответа: :no-translate[`status`] и перечень
+        ошибок, если он есть.
 
 
         Даже если ошибка допущена в характеристиках всего одного товара, никакие
@@ -185,11 +193,13 @@ post:
 
         | **Offer at index ... cannot have parameter ... deleted and set at the
         same time** | Можно передать либо значение параметра в
-        `deleteParameters`, либо соответствующий параметр в `UpdateOfferDTO`. 
-        |Чтобы удалить ранее переданный параметр, укажите его значение в
-        `deleteParameters` и не передавайте в `UpdateOfferDTO`.<br><br>Если
-        хотите установить новое значение параметра, передайте его в
-        `UpdateOfferDTO` и не указывайте в `deleteParameters`.|
+        :no-translate[`deleteParameters`], либо соответствующий параметр в
+        :no-translate[`UpdateOfferDTO`].  |Чтобы удалить ранее переданный
+        параметр, укажите его значение в :no-translate[`deleteParameters`] и не
+        передавайте в :no-translate[`UpdateOfferDTO`].<br><br>Если хотите
+        установить новое значение параметра, передайте его в
+        :no-translate[`UpdateOfferDTO`] и не указывайте в
+        :no-translate[`deleteParameters`].|
       $ref: ../components/responses/400.yaml
     '401':
       $ref: ../components/responses/401.yaml

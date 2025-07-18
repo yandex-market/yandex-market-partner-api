@@ -23,7 +23,8 @@ get:
   summary: Справочник служб доставки
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/getDeliveryServices.md) %}
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getDeliveryServices.md])
+    %}
 
 
     Возвращает справочник служб доставки: идентификаторы и наименования.

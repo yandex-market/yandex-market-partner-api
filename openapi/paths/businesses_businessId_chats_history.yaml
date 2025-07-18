@@ -11,12 +11,17 @@ post:
     - communication
   operationId: getChatHistory
   summary: Получение истории сообщений в чате
-  description: |
-    {% include notitle [access](../../_auto/method_scopes/getChatHistory.md) %}
+  description: >
+    {% include notitle
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getChatHistory.md])
+    %}
+
 
     Возвращает историю сообщений в чате с покупателем.
 
+
     |**⚙️ Лимит:** 10 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

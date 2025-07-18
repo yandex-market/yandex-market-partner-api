@@ -24,7 +24,8 @@ post:
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getCategoriesTree.md)
+    {% include notitle
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getCategoriesTree.md])
     %}
 
 

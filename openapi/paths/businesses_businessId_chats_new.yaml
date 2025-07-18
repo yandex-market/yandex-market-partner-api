@@ -10,7 +10,7 @@ post:
     - communication
   operationId: createChat
   summary: Создание нового чата с покупателем
-  description: "{% include notitle [access](../../_auto/method_scopes/createChat.md) %}\n\nСоздает новый чат с покупателем.\n\nТипы чатов:\n\n* по заказам;\n* по возвратам (доступны только для FBS- и Экспресс-магазинов).\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](:no-translate[../../_auto/method_scopes/createChat.md]) %}\n\nСоздает новый чат с покупателем.\n\nТипы чатов:\n\n* по заказам;\n* по возвратам (доступны только для FBS- и Экспресс-магазинов).\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

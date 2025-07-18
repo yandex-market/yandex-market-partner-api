@@ -14,7 +14,8 @@ post:
   operationId: getOfferMappings
   summary: Информация о товарах в каталоге
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getOfferMappings.md)
+    {% include notitle
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getOfferMappings.md])
     %}
 
 
@@ -24,7 +25,7 @@ post:
 
     Можно использовать тремя способами:
 
-    * задать список интересующих SKU;
+    * задать список интересующих :no-translate[SKU];
 
     * задать фильтр — в этом случае результаты возвращаются постранично;
 

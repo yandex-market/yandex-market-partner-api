@@ -6,15 +6,15 @@ properties:
       Управление ценами на товары:
 
 
-      * `false` — можно установить цену, которая действует:
-        * во всех магазинах кабинета — [POST businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md);
-        * в конкретном магазине — [POST campaigns/{campaignId}/offer-prices/updates](../../reference/assortment/updatePrices.md).
-      * `true` — можно установить только цену, которая действует во всех
-      магазинах кабинета, — [POST
-      businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
+      * :no-translate[`false`] — можно установить цену, которая действует:
+        * во всех магазинах кабинета — [:no-translate[POST businesses/{businessId}/offer-prices/updates]](:no-translate[../../reference/business-assortment/updateBusinessPrices.md]);
+        * в конкретном магазине — [:no-translate[POST campaigns/{campaignId}/offer-prices/updates]](:no-translate[../../reference/assortment/updatePrices.md]).
+      * :no-translate[`true`] — можно установить только цену, которая действует
+      во всех магазинах кабинета, — [:no-translate[POST
+      businesses/{businessId}/offer-prices/updates]](:no-translate[../../reference/business-assortment/updateBusinessPrices.md]).
     type: boolean
   currency:
     description: >-
       Валюта [в кабинете продавца на
-      Маркете](https://partner.market.yandex.ru/).
+      Маркете](:no-translate[https://partner.market.yandex.ru/]).
     $ref: ./CurrencyType.yaml

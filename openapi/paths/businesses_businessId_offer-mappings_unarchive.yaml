@@ -12,7 +12,8 @@ post:
   summary: Удаление товаров из архива
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/deleteOffersFromArchive.md) %}
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/deleteOffersFromArchive.md])
+    %}
 
 
     Восстанавливает товары из архива.

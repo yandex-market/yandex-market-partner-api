@@ -4,7 +4,7 @@ description: >-
 type: object
 properties:
   notDeletedOfferIds:
-    description: Список SKU товаров, которые не удалось удалить.
+    description: Список :no-translate[SKU] товаров, которые не удалось удалить.
     type: array
     nullable: true
     minItems: 1

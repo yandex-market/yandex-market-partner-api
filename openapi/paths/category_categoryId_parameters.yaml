@@ -15,7 +15,8 @@ post:
   summary: Списки характеристик товаров по категориям
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/getCategoryContentParameters.md) %}
+    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getCategoryContentParameters.md])
+    %}
 
 
     Возвращает список характеристик с допустимыми значениями для заданной
