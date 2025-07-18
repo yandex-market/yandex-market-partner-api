@@ -13,7 +13,8 @@ post:
   summary: Получение комментариев к отзыву
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/getGoodsFeedbackComments.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/getGoodsFeedbackComments.md)
+    %}
 
 
     Возвращает комментарии к отзыву, кроме:
@@ -45,7 +46,7 @@ post:
     ранее.
 
 
-    |**⚙️ Лимит:** 1 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 1 000 запросов в час|
 
     |-|
   parameters:

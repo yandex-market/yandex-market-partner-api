@@ -11,7 +11,7 @@ post:
     - pricing
   operationId: updateBusinessPrices
   summary: Установка цен на товары для всех магазинов
-  description: "{% include notitle [access](../../_auto/method_scopes/updateBusinessPrices.md) %}\n\nУстанавливает цены, которые действуют во всех магазинах. Чтобы получить рекомендации Маркета, касающиеся цен, выполните запрос [POST businesses/{businessId}/offers/recommendations](../../reference/business-assortment/getOfferRecommendations.md).\n\nПри необходимости передавайте НДС с помощью параметра `vat` в запросе [POST campaigns/{campaignId}/offers/update](../../reference/assortment/updateCampaignOffers.md).\n\n{% note info \"Данные в каталоге обновляются не мгновенно\" %}\n\nЭто занимает до нескольких минут.\n\n{% endnote %}\n\n|**⚙️ Лимит:** 10\_000 товаров в минуту, не более 500 товаров в одном запросе|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/updateBusinessPrices.md) %}\n\nУстанавливает цены, которые действуют во всех магазинах. Чтобы получить рекомендации Маркета, касающиеся цен, выполните запрос [POST businesses/{businessId}/offers/recommendations](../../reference/business-assortment/getOfferRecommendations.md).\n\nПри необходимости передавайте НДС с помощью параметра `vat` в запросе [POST campaigns/{campaignId}/offers/update](../../reference/assortment/updateCampaignOffers.md).\n\n{% note info \"Данные в каталоге обновляются не мгновенно\" %}\n\nЭто занимает до нескольких минут.\n\n{% endnote %}\n\n|**:no-translate[⚙️] Лимит:** 10\_000 товаров в минуту, не более 500 товаров в одном запросе|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

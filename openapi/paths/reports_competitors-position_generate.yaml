@@ -13,7 +13,8 @@ post:
   summary: Отчет «Конкурентная позиция»
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/generateCompetitorsPositionReport.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/generateCompetitorsPositionReport.md)
+    %}
 
 
     Запускает генерацию отчета «Конкурентная позиция» за заданный период. [Что
@@ -29,18 +30,19 @@ post:
     {% note info "Значение -1 в отчете" %}
 
 
-    Если в CSV-файле в столбце **POSITION** стоит -1, в этот день не было
-    заказов с товарами в указанной категории.
+    Если в CSV-файле в столбце :no-translate[**POSITION**] стоит -1, в этот день
+    не было заказов с товарами в указанной категории.
 
 
     {% endnote %}
 
 
     {% include notitle
-    [reports](../../_auto/reports/masterstat/competitors_position.md) %}
+    [:no-translate[reports]](../../_auto/reports/masterstat/competitors_position.md)
+    %}
 
 
-    |**⚙️ Лимит:** 10 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 10 запросов в час|
 
     |-|
   parameters:

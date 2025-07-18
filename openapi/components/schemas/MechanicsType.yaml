@@ -1,11 +1,11 @@
 description: |
   Тип акции:
 
-  * :no-translate[`DIRECT_DISCOUNT`] — прямая скидка.
+  * `DIRECT_DISCOUNT` — прямая скидка.
 
-  * :no-translate[`BLUE_FLASH`] — флеш-акция.
+  * `BLUE_FLASH` — флеш-акция.
 
-  * :no-translate[`MARKET_PROMOCODE`] — скидка по промокоду.
+  * `MARKET_PROMOCODE` — скидка по промокоду.
 type: string
 enum:
   - DIRECT_DISCOUNT

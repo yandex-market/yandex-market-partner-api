@@ -12,7 +12,8 @@ post:
   summary: Отчет по реализации
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/generateGoodsRealizationReport.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/generateGoodsRealizationReport.md)
+    %}
 
 
     Запускает генерацию отчета по реализации за заданный период. [Что это за
@@ -27,18 +28,18 @@ post:
     {% list tabs %}
 
 
-    - FBY, FBS, Экспресс
+    - :no-translate[FBY, FBS,] Экспресс
 
-      {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2.md) %}
+      {% include notitle [:no-translate[reports]](../../_auto/reports/united/statistics/generator/united_statistics_v2.md) %}
 
-    - DBS
+    - :no-translate[DBS]
 
-      {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2_dbs.md) %}
+      {% include notitle [:no-translate[reports]](../../_auto/reports/united/statistics/generator/united_statistics_v2_dbs.md) %}
 
     {% endlist %}
 
 
-    |**⚙️ Лимит:** 100 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 запросов в час|
 
     |-|
   parameters:

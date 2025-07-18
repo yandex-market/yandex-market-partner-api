@@ -2,70 +2,66 @@ description: >
   Каналы продвижения товаров:
 
 
-  * :no-translate[`PUSH`] — пуш-уведомление из приложения Яндекс Маркет.
+  * `PUSH` — пуш-уведомление из приложения Яндекс Маркет.
 
 
-  * :no-translate[`STRETCH_MAIN`] — верхний баннер-растяжка на главной странице
+  * `STRETCH_MAIN` — верхний баннер-растяжка на главной странице Яндекс Маркета.
+
+
+  * `MAIN_PAGE_CAROUSEL` — карусель акций на главной странице Яндекс Маркета.
+
+
+  * `PRODUCT_RETAIL_PAGE` — товар на странице ритейл-повода.
+
+
+  * `MAIN_PAGE_CAROUSEL_WEB` — карусель акций на главной странице веб версии
   Яндекс Маркета.
 
 
-  * :no-translate[`MAIN_PAGE_CAROUSEL`] — карусель акций на главной странице
-  Яндекс Маркета.
+  * `PRODUCT_SEPARATE_LANDING` — товар на лендинге акции.
 
 
-  * :no-translate[`PRODUCT_RETAIL_PAGE`] — товар на странице ритейл-повода.
+  * `SUPER_SHELF_CATEGORY` — полка в категориях.
 
 
-  * :no-translate[`MAIN_PAGE_CAROUSEL_WEB`] — карусель акций на главной странице
-  веб версии Яндекс Маркета.
+  * `CAROUSEL_RETAIL_PAGE` — карусель на лендинге ритейл-повода.
 
 
-  * :no-translate[`PRODUCT_SEPARATE_LANDING`] — товар на лендинге акции.
+  * `POPUP_APPLICATION` — всплывающее окно в приложении Яндекс Маркет.
 
 
-  * :no-translate[`SUPER_SHELF_CATEGORY`] — полка в категориях.
+  * `POST_TELEGRAM` — пост в Телеграм-канале Яндекс Маркета.
 
 
-  * :no-translate[`CAROUSEL_RETAIL_PAGE`] — карусель на лендинге ритейл-повода.
+  * `CPA` — реклама в партнерской сети Яндекс Маркета.
 
 
-  * :no-translate[`POPUP_APPLICATION`] — всплывающее окно в приложении Яндекс
-  Маркет.
+  * `WEB_PERFORMANCE_DIRECT` — реклама в Яндекс Директе.
 
 
-  * :no-translate[`POST_TELEGRAM`] — пост в Телеграм-канале Яндекс Маркета.
+  * `APP_PERFORMANCE` — реклама в :no-translate[AppStore] и :no-translate[Google
+  Play].
 
 
-  * :no-translate[`CPA`] — реклама в партнерской сети Яндекс Маркета.
+  * `BANNER_PICKUP_POINT` — баннер в ПВЗ Маркета.
 
 
-  * :no-translate[`WEB_PERFORMANCE_DIRECT`] — реклама в Яндекс Директе.
+  * `BLOGGER_PERFORMANCE` — рекламная интеграция у блогеров.
 
 
-  * :no-translate[`APP_PERFORMANCE`] — реклама в :no-translate[AppStore] и
-  :no-translate[Google Play].
+  * `DIGITAL_CHANNEL_BANNER` — баннер в digital-каналах и социальных сетях
+  :no-translate[VK], :no-translate[Одноклассники].
 
 
-  * :no-translate[`BANNER_PICKUP_POINT`] — баннер в ПВЗ Маркета.
+  * `YANDEX_ECOSYSTEM_CHANNELS` — реклама в других сервисах Яндекса:
+  :no-translate[GO], :no-translate[Delivery], :no-translate[Еда].
 
 
-  * :no-translate[`BLOGGER_PERFORMANCE`] — рекламная интеграция у блогеров.
+  * `PARTNERS_MAIN_BANNER` — баннер на главной странице :no-translate[mail.ru],
+  :no-translate[auto.ru], :no-translate[ya.ru].
 
 
-  * :no-translate[`DIGITAL_CHANNEL_BANNER`] — баннер в digital-каналах и
-  социальных сетях :no-translate[VK], :no-translate[Одноклассники].
-
-
-  * :no-translate[`YANDEX_ECOSYSTEM_CHANNELS`] — реклама в других сервисах
-  :no-translate[Яндекса]: :no-translate[GO], :no-translate[Delivery],
-  :no-translate[Еда].
-
-
-  * :no-translate[`PARTNERS_MAIN_BANNER`] — баннер на главной странице
-  :no-translate[mail.ru], :no-translate[auto.ru], :no-translate[ya.ru].
-
-
-  * :no-translate[`OTHER`] — прочее.
+  * `OTHER` — прочее.
 type: string
 enum:
   - PUSH

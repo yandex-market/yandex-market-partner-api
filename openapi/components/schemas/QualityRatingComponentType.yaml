@@ -4,32 +4,29 @@ description: >
 
   **Для модели :no-translate[DBS]:**
 
-  * :no-translate[`DBS_CANCELLATION_RATE`] — доля отмененных товаров.
+  * `DBS_CANCELLATION_RATE` — доля отмененных товаров.
 
-  * :no-translate[`DBS_LATE_DELIVERY_RATE`] — доля заказов, доставленных после
-  плановой даты.
+  * `DBS_LATE_DELIVERY_RATE` — доля заказов, доставленных после плановой даты.
 
 
   **Для моделей :no-translate[FBS] и Экспресс:**
 
-  * :no-translate[`FBS_CANCELLATION_RATE`] — доля отмененных товаров.
+  * `FBS_CANCELLATION_RATE` — доля отмененных товаров.
 
-  * :no-translate[`FBS_LATE_SHIP_RATE`] — доля не вовремя отгруженных заказов.
+  * `FBS_LATE_SHIP_RATE` — доля не вовремя отгруженных заказов.
 
 
   **Для модели :no-translate[FBY]:**
 
-  * :no-translate[`FBY_LATE_DELIVERY_RATE`] — доля товаров, которые приехали на
-  склад с опозданием.
+  * `FBY_LATE_DELIVERY_RATE` — доля товаров, которые приехали на склад с
+  опозданием.
 
-  * :no-translate[`FBY_CANCELLATION_RATE`] — доля отмененных или недоставленных
-  товаров.
+  * `FBY_CANCELLATION_RATE` — доля отмененных или недоставленных товаров.
 
-  * :no-translate[`FBY_DELIVERY_DIFF_RATE`] — доля товаров, которые не прибыли
-  вместе с поставкой или которые не приняли.
+  * `FBY_DELIVERY_DIFF_RATE` — доля товаров, которые не прибыли вместе с
+  поставкой или которые не приняли.
 
-  * :no-translate[`FBY_LATE_EDITING_RATE`] — доля товаров, которые поздно убрали
-  из заявки.
+  * `FBY_LATE_EDITING_RATE` — доля товаров, которые поздно убрали из заявки.
 type: string
 enum:
   - DBS_CANCELLATION_RATE

@@ -9,14 +9,14 @@ get:
   operationId: getOutletLicenses
   summary: Информация о лицензиях для точек продаж
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getOutletLicenses.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getOutletLicenses.md) %}
 
 
     Возвращает информацию о лицензиях для точек продаж.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:
@@ -63,13 +63,14 @@ delete:
   summary: Удаление лицензий для точек продаж
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/deleteOutletLicenses.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/deleteOutletLicenses.md)
+    %}
 
 
     Удаляет информацию о лицензиях для точек продаж.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:
@@ -111,7 +112,8 @@ post:
   summary: Создание и изменение лицензий для точек продаж
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/updateOutletLicenses.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/updateOutletLicenses.md)
+    %}
 
 
     Передает информацию о новых и существующих лицензиях для точек продаж.
@@ -123,7 +125,7 @@ post:
     предложения в прайс-листе. Далее информация о лицензиях проходит проверку.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

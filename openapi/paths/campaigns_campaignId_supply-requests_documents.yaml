@@ -8,7 +8,7 @@ post:
     - all-methods:read-only
     - supplies-management:read-only
   summary: Получение документов по заявке на поставку, вывоз или утилизацию
-  description: "{% include notitle [access](../../_auto/method_scopes/getSupplyRequestDocuments.md) %}\n\nВозвращает документы по заявке.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getSupplyRequestDocuments.md) %}\n\nВозвращает документы по заявке.\n\n|**:no-translate[⚙️] Лимит:** 1\_000 запросов в час|\n|-|\n"
   operationId: getSupplyRequestDocuments
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

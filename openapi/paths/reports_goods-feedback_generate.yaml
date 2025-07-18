@@ -14,7 +14,8 @@ post:
   summary: Отчет по отзывам о товарах
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/generateGoodsFeedbackReport.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/generateGoodsFeedbackReport.md)
+    %}
 
 
     Запускает генерацию отчета по отзывам о товарах. [Что это за
@@ -27,10 +28,11 @@ post:
 
 
     {% include notitle
-    [reports](../../_auto/reports/paid_opinion_models/paid_opinion_models.md) %}
+    [:no-translate[reports]](../../_auto/reports/paid_opinion_models/paid_opinion_models.md)
+    %}
 
 
-    |**⚙️ Лимит:** 100 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 запросов в час|
 
     |-|
   parameters:

@@ -1,7 +1,7 @@
 type: object
 properties:
   offerIds:
-    description: "Идентификаторы товаров, информация о которых нужна.\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным :no-translate[SKU], не заполняйте:\n* :no-translate[`page_token`];\n* :no-translate[`limit`];\n* :no-translate[`cardStatuses`];\n* :no-translate[`categoryIds`];\n* :no-translate[`vendorNames`];\n* :no-translate[`tags`];\n* :no-translate[`archived`].\n\n{% endnote %}\n\n\_\n"
+    description: "Идентификаторы товаров, информация о которых нужна.\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным :no-translate[SKU], не заполняйте:\n* `page_token`;\n* `limit`;\n* `cardStatuses`;\n* `categoryIds`;\n* `vendorNames`;\n* `tags`;\n* `archived`.\n\n{% endnote %}\n\n\_\n"
     type: array
     nullable: true
     minItems: 1
@@ -15,7 +15,7 @@ properties:
 
 
       [Что такое карточка
-      товара](:no-translate[https://yandex.ru/support/marketplace/assortment/content/index.html])
+      товара](https://yandex.ru/support/marketplace/assortment/content/index.html)
     type: array
     nullable: true
     minItems: 1
@@ -51,7 +51,7 @@ properties:
       Фильтр по нахождению в архиве.
 
 
-      Передайте :no-translate[`true`], чтобы получить товары, находящиеся в
-      архиве. Если фильтр не заполнен или передано :no-translate[`false`], в
-      ответе возвращаются товары, не находящиеся в архиве.
+      Передайте `true`, чтобы получить товары, находящиеся в архиве. Если фильтр
+      не заполнен или передано `false`, в ответе возвращаются товары, не
+      находящиеся в архиве.
     type: boolean

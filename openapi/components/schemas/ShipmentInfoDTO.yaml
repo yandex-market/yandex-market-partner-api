@@ -10,10 +10,12 @@ allOf:
         description: Описание статуса отгрузки.
         type: string
       statusUpdateTime:
-        description: |
+        description: >
           Время последнего изменения статуса отгрузки
 
-          Формат даты: ISO 8601 со смещением относительно UTC.
+
+          Формат даты: :no-translate[ISO 8601] со смещением относительно
+          :no-translate[UTC].
         format: date-time
         type: string
         example: '2017-11-21T00:00:00+03:00'

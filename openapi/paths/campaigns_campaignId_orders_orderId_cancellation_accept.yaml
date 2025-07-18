@@ -9,7 +9,8 @@ put:
   summary: Отмена заказа покупателем
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/acceptOrderCancellation.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/acceptOrderCancellation.md)
+    %}
 
 
     Подтверждает или отклоняет заявку покупателя на отмену заказа, который
@@ -30,7 +31,7 @@ put:
 
     **Как узнать об отмененных заказах:**
 
-      * Отправьте запрос [GET campaigns/{campaignId}/orders](../../reference/orders/getOrders.md). В его URL добавьте входной параметр `onlyWaitingForCancellationApprove=true`.
+      * Отправьте запрос [GET campaigns/{campaignId}/orders](../../reference/orders/getOrders.md). В его :no-translate[URL] добавьте входной параметр `onlyWaitingForCancellationApprove=true`.
       * В кабинете или через почту — на нее придет уведомление об отмене.
       * Подключите API-уведомления. Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новая заявка на отмену заказа. [{#T}](../../push-notifications/index.md)
 
@@ -38,7 +39,7 @@ put:
     отменен автоматически.
 
 
-    |**⚙️ Лимит:** 500 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 500 запросов в час|
 
     |-|
   parameters:

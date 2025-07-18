@@ -1,9 +1,9 @@
 description: |
   Невыкупленный или возвращенный товар:
 
-  * :no-translate[`REJECTED`] — невыкупленный.
+  * `REJECTED` — невыкупленный.
 
-  * :no-translate[`RETURNED`] — возвращенный.
+  * `RETURNED` — возвращенный.
 type: string
 enum:
   - REJECTED

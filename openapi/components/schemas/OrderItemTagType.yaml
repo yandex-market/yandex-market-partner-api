@@ -1,13 +1,9 @@
-description: >
+description: |
   Признак товара:
 
-
-  * :no-translate[`ULTIMA`] — премиум-товар.
-
-  * :no-translate[`SAFE_TAG`] — товар с [защитной
-  меткой](:no-translate[*safe-tag]).
-
-  * :no-translate[`TURBO`] — товар, который быстро раскупают.
+  * `ULTIMA` — премиум-товар.
+  * `SAFE_TAG` — товар с [защитной меткой](*safe-tag).
+  * `TURBO` — товар, который быстро раскупают.
 type: string
 enum:
   - ULTIMA

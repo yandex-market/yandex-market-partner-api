@@ -16,7 +16,8 @@ get:
   operationId: getOrder
   summary: Информация об одном заказе
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getOrder.md) %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getOrder.md) %}
 
 
     Возвращает информацию о заказе.
@@ -43,7 +44,7 @@ get:
     campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

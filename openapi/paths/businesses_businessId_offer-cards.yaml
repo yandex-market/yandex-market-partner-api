@@ -15,7 +15,7 @@ post:
   summary: Получение информации о заполненности карточек магазина
   description: >
     {% include notitle
-    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getOfferCardsContentStatus.md])
+    [:no-translate[access]](../../_auto/method_scopes/getOfferCardsContentStatus.md)
     %}
 
 
@@ -33,7 +33,7 @@ post:
     * рекомендации по заполнению карточки.
 
 
-    |**⚙️ Лимит:** 600 запросов в минуту|
+    |**:no-translate[⚙️] Лимит:** 600 запросов в минуту|
 
     |-|
   parameters:

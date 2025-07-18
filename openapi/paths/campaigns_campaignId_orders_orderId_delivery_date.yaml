@@ -9,14 +9,15 @@ put:
   summary: Изменение даты доставки заказа
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/setOrderDeliveryDate.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/setOrderDeliveryDate.md)
+    %}
 
 
     Метод изменяет дату доставки заказа в статусе `PROCESSING` или `DELIVERY`.
     Для заказов с другими статусами дату доставки изменить нельзя.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

@@ -4,7 +4,7 @@ properties:
   shopSku:
     $ref: ./ShopSku.yaml
   marketSku:
-    description: SKU на Маркете — идентификатор карточки товара на Маркете.
+    description: ':no-translate[SKU] на Маркете — идентификатор карточки товара на Маркете.'
     $ref: ./MarketSku.yaml
   name:
     description: Название товара.
@@ -44,8 +44,8 @@ properties:
 
 
       По некоторым услугам могут возвращаться несколько разных стоимостей.
-      Например, в модели FBS стоимость услуги `SORTING` (обработка заказа)
-      зависит от способа отгрузки
+      Например, в модели :no-translate[FBS] стоимость услуги `SORTING`
+      (обработка заказа) зависит от способа отгрузки
 
       и количества заказов в отгрузке. Подробнее о тарифах на услуги читайте [в
       Справке Маркета для
@@ -56,7 +56,7 @@ properties:
     items:
       $ref: ./TariffDTO.yaml
   pictures:
-    description: Ссылки (URL) изображений товара в хорошем качестве.
+    description: Ссылки (:no-translate[URL]) изображений товара в хорошем качестве.
     type: array
     nullable: true
     minItems: 1

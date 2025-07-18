@@ -11,8 +11,8 @@ post:
   operationId: deleteHiddenOffers
   summary: Возобновление показа товаров
   description: >
-    {% include notitle [access](../../_auto/method_scopes/deleteHiddenOffers.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/deleteHiddenOffers.md) %}
 
 
     Возобновляет показ скрытых вами товаров магазина на Маркете.
@@ -27,7 +27,7 @@ post:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** 10 000 товаров в минуту|
+    |**:no-translate[⚙️] Лимит:** 10 000 товаров в минуту|
 
     |-|
   parameters:

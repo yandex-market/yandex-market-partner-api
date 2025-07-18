@@ -8,8 +8,8 @@ post:
   operationId: setReturnDecision
   summary: Принятие или изменение решения по возврату
   description: >
-    {% include notitle [access](../../_auto/method_scopes/setReturnDecision.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/setReturnDecision.md) %}
 
 
     {% note warning "Какой метод использовать вместо устаревшего" %}
@@ -28,7 +28,7 @@ post:
     campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit](../../reference/orders/submitReturnDecision.md).
 
 
-    |**⚙️ Лимит:** 10 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 10 000 запросов в час|
 
     |-|
   deprecated: true

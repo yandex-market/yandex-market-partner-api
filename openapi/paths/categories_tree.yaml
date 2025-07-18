@@ -25,14 +25,13 @@ post:
   summary: Дерево категорий
   description: >
     {% include notitle
-    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getCategoriesTree.md])
-    %}
+    [:no-translate[access]](../../_auto/method_scopes/getCategoriesTree.md) %}
 
 
     Возвращает дерево категорий Маркета.
 
 
-    |**⚙️ Лимит:** 1 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 1 000 запросов в час|
 
     |-|
   requestBody:

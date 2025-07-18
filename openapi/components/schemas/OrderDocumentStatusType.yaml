@@ -1,8 +1,8 @@
 description: |
   Статус документа:
 
-  * :no-translate[`READY`] — готов.
-  * :no-translate[`NOT_READY`] — не готов.
+  * `READY` — готов.
+  * `NOT_READY` — не готов.
 type: string
 enum:
   - READY

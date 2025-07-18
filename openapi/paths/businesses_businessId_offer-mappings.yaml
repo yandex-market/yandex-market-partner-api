@@ -15,8 +15,7 @@ post:
   summary: Информация о товарах в каталоге
   description: >
     {% include notitle
-    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getOfferMappings.md])
-    %}
+    [:no-translate[access]](../../_auto/method_scopes/getOfferMappings.md) %}
 
 
     Возвращает список товаров в каталоге, их категории на Маркете и
@@ -32,7 +31,8 @@ post:
     * не передавать тело запроса, чтобы получить список всех товаров в каталоге.
 
 
-    |**⚙️ Лимит:** 600 запросов в минуту, не более 200 товаров в одном запросе|
+    |**:no-translate[⚙️] Лимит:** 600 запросов в минуту, не более 200 товаров в
+    одном запросе|
 
     |-|
   parameters:

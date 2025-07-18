@@ -2,47 +2,47 @@ description: >
   Способ оплаты заказа:
 
 
-  * Значения, если выбрана оплата при оформлении заказа
-  (:no-translate[`"paymentType": "PREPAID"`]):
+  * Значения, если выбрана оплата при оформлении заказа (`"paymentType":
+  "PREPAID"`):
 
-    * :no-translate[`YANDEX`] — банковской картой.
+    * `YANDEX` — банковской картой.
 
-    * :no-translate[`APPLE_PAY`] — Apple Pay.
+    * `APPLE_PAY` — Apple Pay.
 
-    * :no-translate[`GOOGLE_PAY`] — Google Pay.
+    * `GOOGLE_PAY` — Google Pay.
 
-    * :no-translate[`CREDIT`] — в кредит.
+    * `CREDIT` — в кредит.
 
-    * :no-translate[`TINKOFF_CREDIT`] — в кредит в Тинькофф Банке.
+    * `TINKOFF_CREDIT` — в кредит в Тинькофф Банке.
 
-    * :no-translate[`TINKOFF_INSTALLMENTS`] — рассрочка в Тинькофф Банке.
+    * `TINKOFF_INSTALLMENTS` — рассрочка в Тинькофф Банке.
 
-    * :no-translate[`EXTERNAL_CERTIFICATE`] — подарочным сертификатом (например, из приложения «Сбербанк Онлайн»).
+    * `EXTERNAL_CERTIFICATE` — подарочным сертификатом (например, из приложения «Сбербанк Онлайн»).
 
-    * :no-translate[`SBP`] — через систему быстрых платежей.
+    * `SBP` — через систему быстрых платежей.
 
-    * :no-translate[`B2B_ACCOUNT_PREPAYMENT`] — заказ оплачивает организация.
-
-
-  * Значения, если выбрана оплата при получении заказа
-  (:no-translate[`"paymentType": "POSTPAID"`]):
-
-    * :no-translate[`CARD_ON_DELIVERY`] — банковской картой.
-
-    * :no-translate[`BOUND_CARD_ON_DELIVERY`] — привязанной картой при получении.
-
-    * :no-translate[`BNPL_BANK_ON_DELIVERY`] — супер Сплитом.
-
-    * :no-translate[`BNPL_ON_DELIVERY`] — Сплитом.
-
-    * :no-translate[`CASH_ON_DELIVERY`] — наличными.
-
-    * :no-translate[`B2B_ACCOUNT_POSTPAYMENT`] — заказ оплачивает организация после доставки.
-
-  * :no-translate[`UNKNOWN`] — неизвестный тип.
+    * `B2B_ACCOUNT_PREPAYMENT` — заказ оплачивает организация.
 
 
-  Значение по умолчанию: :no-translate[`CASH_ON_DELIVERY`].
+  * Значения, если выбрана оплата при получении заказа (`"paymentType":
+  "POSTPAID"`):
+
+    * `CARD_ON_DELIVERY` — банковской картой.
+
+    * `BOUND_CARD_ON_DELIVERY` — привязанной картой при получении.
+
+    * `BNPL_BANK_ON_DELIVERY` — супер Сплитом.
+
+    * `BNPL_ON_DELIVERY` — Сплитом.
+
+    * `CASH_ON_DELIVERY` — наличными.
+
+    * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
+
+  * `UNKNOWN` — неизвестный тип.
+
+
+  Значение по умолчанию: `CASH_ON_DELIVERY`.
 type: string
 enum:
   - CASH_ON_DELIVERY

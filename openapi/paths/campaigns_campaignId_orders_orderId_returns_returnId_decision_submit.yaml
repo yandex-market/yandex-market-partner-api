@@ -11,22 +11,23 @@ post:
   summary: Передача и подтверждение решения по возврату
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/submitReturnDecision.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/submitReturnDecision.md)
+    %}
 
 
     Позволяет выполнить одну из операций:
 
 
-    * **Для моделей FBS, Экспресс и DBS:** передать список решений по возврату и
-    подтвердить их.
+    * **Для моделей :no-translate[FBS], Экспресс и :no-translate[DBS]:**
+    передать список решений по возврату и подтвердить их.
 
 
-    * **Для модели DBS:** подтвердить решение, переданное в [POST
+    * **Для модели :no-translate[DBS]:** подтвердить решение, переданное в [POST
     campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision](../../reference/orders/setReturnDecision.md).
     Для этого используйте запрос без тела.
 
 
-    |**⚙️ Лимит:** 10 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 10 000 запросов в час|
 
     |-|
   parameters:

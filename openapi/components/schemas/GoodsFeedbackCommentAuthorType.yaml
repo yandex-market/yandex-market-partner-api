@@ -1,8 +1,8 @@
 description: |
   Тип автора:
 
-  * :no-translate[`USER`] — пользователь.
-  * :no-translate[`BUSINESS`] — кабинет.
+  * `USER` — пользователь.
+  * `BUSINESS` — кабинет.
 type: string
 enum:
   - USER

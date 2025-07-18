@@ -11,6 +11,6 @@ properties:
   paging:
     $ref: ./ForwardScrollingPagerDTO.yaml
   total:
-    description: Количество всех цен магазина, измененных через API.
+    description: Количество всех цен магазина, измененных через :no-translate[APIъ.
     type: integer
     format: int32

@@ -29,7 +29,7 @@ properties:
   price:
     description: >
       Цена на товар в валюте заказа без учета вознаграждения продавцу за скидки
-      по промокодам, купонам и акциям (параметр :no-translate[`subsidies`]).
+      по промокодам, купонам и акциям (параметр `subsidies`).
 
 
       Включает НДС.
@@ -66,11 +66,11 @@ properties:
     $ref: ./OrderVatType.yaml
   shopSku:
     deprecated: true
-    description: "{% note warning \"Вместо него используйте :no-translate[`offerId`].\" %}\n\n\_\n\n{% endnote %}\n\nВаш SKU — идентификатор товара в вашей системе.\n"
+    description: "{% note warning \"Вместо него используйте `offerId`.\" %}\n\n\_\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
     $ref: ./ShopSku.yaml
   subsidy:
     deprecated: true
-    description: "{% note warning \"Вместо него используйте :no-translate[`subsidies`].\" %}\n\n\_\n\n{% endnote %}\n\nОбщее вознаграждение продавцу за DBS-доставку и все скидки на товар:\n\n* по промокодам;\n* по купонам;\n* по баллам Плюса;\n* по акциям.\n"
+    description: "{% note warning \"Вместо него используйте `subsidies`.\" %}\n\n\_\n\n{% endnote %}\n\nОбщее вознаграждение продавцу за DBS-доставку и все скидки на товар:\n\n* по промокодам;\n* по купонам;\n* по баллам Плюса;\n* по акциям.\n"
     type: number
     format: decimal
   partnerWarehouseId:
@@ -91,13 +91,12 @@ properties:
       Информация о маркировке единиц товара.
 
 
-      Возвращаются данные для маркировки, переданные в запросе
-      [:no-translate[PUT
-      campaigns/{campaignId}/orders/{orderId}/identifiers]](:no-translate[../../reference/orders/provideOrderItemIdentifiers.md]).
+      Возвращаются данные для маркировки, переданные в запросе [PUT
+      campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).
 
 
-      Если магазин еще не передавал коды для этого заказа,
-      :no-translate[`instances`] отсутствует.
+      Если магазин еще не передавал коды для этого заказа, `instances`
+      отсутствует.
     type: array
     nullable: true
     minItems: 1
@@ -105,7 +104,7 @@ properties:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
     deprecated: true
-    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [:no-translate[GET campaigns/{campaignId}/returns]](:no-translate[../../reference/orders/getReturns.md]).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
+    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
     type: array
     nullable: true
     minItems: 1

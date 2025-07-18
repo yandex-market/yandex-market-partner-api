@@ -9,7 +9,7 @@ allOf:
           Маркете.
 
 
-          Возвращается только вместе с параметром :no-translate[`marketSku`].
+          Возвращается только вместе с параметром `marketSku`.
         type: integer
         format: int64
       marketCategoryName:
@@ -30,7 +30,7 @@ allOf:
         description: |
           Название модели для рекомендованной карточки товара на Маркете.
 
-          Возвращается только вместе с параметром :no-translate[##marketSku##].
+          Возвращается только вместе с параметром ##marketSku##.
         deprecated: true
         type: string
       marketSku:

@@ -1,30 +1,30 @@
 description: |
   Детали причин возврата:
-    * :no-translate[`DOES_NOT_FIT`]:
-      * :no-translate[`USER_DID_NOT_LIKE`] — товар не понравился.
-      * :no-translate[`USER_CHANGED_MIND`] — передумал покупать.
-      * :no-translate[`DELIVERED_TOO_LONG`] — передумал покупать из-за длительного срока доставки.
+    * `DOES_NOT_FIT`:
+      * `USER_DID_NOT_LIKE` — товар не понравился.
+      * `USER_CHANGED_MIND` — передумал покупать.
+      * `DELIVERED_TOO_LONG` — передумал покупать из-за длительного срока доставки.
 
-    * :no-translate[`BAD_QUALITY`]:
-      * :no-translate[`BAD_PACKAGE`] — заводская упаковка повреждена.
-      * :no-translate[`DAMAGED`] — царапины, сколы.
-      * :no-translate[`NOT_WORKING`] — не включается, не работает.
-      * :no-translate[`INCOMPLETENESS`] — некомплект (не хватает детали в наборе, к товару).
-      * :no-translate[`WRAPPING_DAMAGED`] — транспортная упаковка повреждена.
-      * :no-translate[`ITEM_WAS_USED`] — следы использования на товаре.
-      * :no-translate[`BROKEN`] — товар разбит.
-      * :no-translate[`BAD_FLOWERS`] — некачественные цветы.
+    * `BAD_QUALITY`:
+      * `BAD_PACKAGE` — заводская упаковка повреждена.
+      * `DAMAGED` — царапины, сколы.
+      * `NOT_WORKING` — не включается, не работает.
+      * `INCOMPLETENESS` — некомплект (не хватает детали в наборе, к товару).
+      * `WRAPPING_DAMAGED` — транспортная упаковка повреждена.
+      * `ITEM_WAS_USED` — следы использования на товаре.
+      * `BROKEN` — товар разбит.
+      * `BAD_FLOWERS` — некачественные цветы.
 
-    * :no-translate[`WRONG_ITEM`]:
-      * :no-translate[`WRONG_ITEM`] — не тот товар.
-      * :no-translate[`WRONG_COLOR`] — цвет не соответствует заявленному.
-      * :no-translate[`DID_NOT_MATCH_DESCRIPTION`] — описание или характеристики не соответствуют заявленным.
-      * :no-translate[`WRONG_ORDER`] — доставили чужой заказ.
-      * :no-translate[`WRONG_AMOUNT_DELIVERED`] — неверное количество товара.
-      * :no-translate[`PARCEL_MISSING`] — часть заказа отсутствует.
-      * :no-translate[`INCOMPLETE`] — заказ не привезли полностью.
+    * `WRONG_ITEM`:
+      * `WRONG_ITEM` — не тот товар.
+      * `WRONG_COLOR` — цвет не соответствует заявленному.
+      * `DID_NOT_MATCH_DESCRIPTION` — описание или характеристики не соответствуют заявленным.
+      * `WRONG_ORDER` — доставили чужой заказ.
+      * `WRONG_AMOUNT_DELIVERED` — неверное количество товара.
+      * `PARCEL_MISSING` — часть заказа отсутствует.
+      * `INCOMPLETE` — заказ не привезли полностью.
 
-    * :no-translate[`UNKNOWN`] — детали причины не указаны.
+    * `UNKNOWN` — детали причины не указаны.
 type: string
 enum:
   - USER_DID_NOT_LIKE

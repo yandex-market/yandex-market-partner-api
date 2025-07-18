@@ -12,7 +12,8 @@ post:
   summary: Добавление нового или изменение созданного комментария
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/updateGoodsFeedbackComment.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/updateGoodsFeedbackComment.md)
+    %}
 
 
     Добавляет новый комментарий магазина или изменяет комментарий, который
@@ -43,7 +44,7 @@ post:
     существующий комментарий.
 
 
-    |**⚙️ Лимит:** 1 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 1 000 запросов в час|
 
     |-|
   parameters:

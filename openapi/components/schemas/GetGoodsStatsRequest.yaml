@@ -5,7 +5,7 @@ required:
 properties:
   shopSkus:
     description: |
-      Список ваших идентификаторов SKU.
+      Список ваших идентификаторов :no-translate[SKU].
     type: array
     uniqueItems: true
     items:

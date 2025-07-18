@@ -10,7 +10,7 @@ properties:
 
 
       Если список задан, результаты возвращаются одной страницей, а параметры
-      :no-translate[`page_token`] и :no-translate[`limit`] игнорируются.
+      `page_token` и `limit` игнорируются.
     type: array
     minItems: 1
     maxItems: 1500

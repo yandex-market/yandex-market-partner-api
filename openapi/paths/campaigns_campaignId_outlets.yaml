@@ -7,12 +7,16 @@ post:
     - settings-management
   operationId: createOutlet
   summary: Создание точки продаж
-  description: |
-    {% include notitle [access](../../_auto/method_scopes/createOutlet.md) %}
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/createOutlet.md) %}
+
 
     Создает точку продаж магазина на Маркете.
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
@@ -39,25 +43,25 @@ post:
 
         |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 
-        | **datediff-is-to-big-local**       | При доставке по своему региону
-        разница между максимальным и минимальным сроком доставки не должна
-        превышать двух
+        | :no-translate[**datediff-is-to-big-local**]       | При доставке по
+        своему региону разница между максимальным и минимальным сроком доставки
+        не должна превышать двух
         дней.                                                      | Убедитесь,
         что разница между `maxDeliveryDays` и `minDeliveryDays` не превышает
         двух дней.           |
 
-        | **datediff-is-to-big-remote**      | При доставке в другие регионы
-        разница между максимальным и минимальным сроком доставки не должна
-        превышать четырех
+        | :no-translate[**datediff-is-to-big-remote**]      | При доставке в
+        другие регионы разница между максимальным и минимальным сроком доставки
+        не должна превышать четырех
         дней.                                                    | Убедитесь,
         что разница между `maxDeliveryDays` и `minDeliveryDays` не превышает
         четырех дней.        |
 
-        | **datediff-is-to-big-long-period** | При доставке в другие регионы,
-        где минимальный срок доставки больше 18 дней, разница между максимальным
-        и минимальным сроком доставки не должна превышать минимальный срок. |
-        Убедитесь, что разница между `maxDeliveryDays` и `minDeliveryDays` не
-        превышает `minDeliveryDays`.   |
+        | :no-translate[**datediff-is-to-big-long-period**] | При доставке в
+        другие регионы, где минимальный срок доставки больше 18 дней, разница
+        между максимальным и минимальным сроком доставки не должна превышать
+        минимальный срок. | Убедитесь, что разница между `maxDeliveryDays` и
+        `minDeliveryDays` не превышает `minDeliveryDays`.   |
     '401':
       $ref: ../components/responses/401.yaml
     '403':
@@ -78,12 +82,16 @@ get:
     - settings-management
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
-  description: |
-    {% include notitle [access](../../_auto/method_scopes/getOutlets.md) %}
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getOutlets.md) %}
+
 
     Возвращает список точек продаж магазина.
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

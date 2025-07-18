@@ -5,15 +5,14 @@ type: object
 properties:
   cis:
     description: >-
-      Код идентификации единицы товара в системе [:no-translate[«Честный
-      ЗНАК»]](:no-translate[https://честныйзнак.рф/]) без криптохвоста или
-      [:no-translate[«ASL BELGISI»]](:no-translate[https://aslbelgisi.uz]) (для
-      продавцов :no-translate[Market Yandex Go]).
+      Код идентификации единицы товара в системе [«Честный
+      ЗНАК»](https://честныйзнак.рф/) без криптохвоста или [«ASL
+      BELGISI»](https://aslbelgisi.uz) (для продавцов Market Yandex Go).
     type: string
   cisFull:
     description: >-
-      Код идентификации единицы товара в системе [:no-translate[«Честный
-      ЗНАК»]](:no-translate[https://честныйзнак.рф/]) с криптохвостом.
+      Код идентификации единицы товара в системе [«Честный
+      ЗНАК»](https://честныйзнак.рф/) с криптохвостом.
     type: string
   uin:
     description: >

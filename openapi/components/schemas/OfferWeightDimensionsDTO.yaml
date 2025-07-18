@@ -7,7 +7,7 @@ description: >
 
 
   ![Схема измерения многоместных
-  грузов](:no-translate[../../_images/reference/boxes-measure.png])
+  грузов](../../_images/reference/boxes-measure.png)
 type: object
 required:
   - length

@@ -1,20 +1,13 @@
-description: >
+description: |
   Статус точки продаж.
-
 
   Возможные значения:
 
-
-  * :no-translate[`AT_MODERATION`] — проверяется.
-
-  * :no-translate[`FAILED`] — не прошла проверку и отклонена модератором.
-
-  * :no-translate[`MODERATED`] — проверена и одобрена.
-
-  * :no-translate[`NONMODERATED`] — новая точка, нуждается в проверке.
-
-  * :no-translate[`UNKNOWN`] — статус не указан. При определении статуса
-  произошла ошибка.
+  * `AT_MODERATION` — проверяется.
+  * `FAILED` — не прошла проверку и отклонена модератором.
+  * `MODERATED` — проверена и одобрена.
+  * `NONMODERATED` — новая точка, нуждается в проверке.
+  * `UNKNOWN` — статус не указан. При определении статуса произошла ошибка.
 type: string
 enum:
   - AT_MODERATION

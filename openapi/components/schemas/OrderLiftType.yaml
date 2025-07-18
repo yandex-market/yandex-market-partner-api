@@ -2,23 +2,23 @@ description: >
   Тип подъема заказа на этаж:
 
 
-  * :no-translate[`NOT_NEEDED`] — не требуется.
+  * `NOT_NEEDED` — не требуется.
 
 
-  * :no-translate[`MANUAL`] — ручной.
+  * `MANUAL` — ручной.
 
 
-  * :no-translate[`ELEVATOR`] — лифт.
+  * `ELEVATOR` — лифт.
 
 
-  * :no-translate[`CARGO_ELEVATOR`] — грузовой лифт.
+  * `CARGO_ELEVATOR` — грузовой лифт.
 
 
-  * :no-translate[`FREE`] — любой из перечисленных выше, если включена опция
-  бесплатного подъема.
+  * `FREE` — любой из перечисленных выше, если включена опция бесплатного
+  подъема.
 
 
-  * :no-translate[`UNKNOWN`] — неизвестный тип.
+  * `UNKNOWN` — неизвестный тип.
 type: string
 enum:
   - NOT_NEEDED

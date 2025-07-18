@@ -33,16 +33,16 @@ properties:
       Относительные ссылки и ссылки на другие облачные хранилища — не работают.
 
 
-      ✅ :no-translate[`https://example-shop.ru/images/sku12345.jpg`]
+      ✅ `https://example-shop.ru/images/sku12345.jpg`
 
 
-      ✅ :no-translate[`https://yadi.sk/i/NaBoRsimVOLov`]
+      ✅ `https://yadi.sk/i/NaBoRsimVOLov`
 
 
-      ❌ :no-translate[`/images/sku12345.jpg`]
+      ❌ `/images/sku12345.jpg`
 
 
-      ❌ :no-translate[`https://www.dropbox.com/s/818f/tovar.jpg`]
+      ❌ `https://www.dropbox.com/s/818f/tovar.jpg`
 
 
       Ссылки на изображение должны быть постоянными. Нельзя использовать
@@ -55,7 +55,7 @@ properties:
 
 
       [Требования к
-      изображениям](:no-translate[https://yandex.ru/support/marketplace/assortment/fields/images.html])
+      изображениям](https://yandex.ru/support/marketplace/assortment/fields/images.html)
     type: array
     nullable: true
     minItems: 1
@@ -82,16 +82,16 @@ properties:
       Относительные ссылки и ссылки на другие облачные хранилища — не работают.
 
 
-      ✅ :no-translate[`https://example-shop.ru/video/sku12345.avi`]
+      ✅ `https://example-shop.ru/video/sku12345.avi`
 
 
-      ✅ :no-translate[`https://yadi.sk/i/NaBoRsimVOLov`]
+      ✅ `https://yadi.sk/i/NaBoRsimVOLov`
 
 
-      ❌ :no-translate[`/video/sku12345.avi`]
+      ❌ `/video/sku12345.avi`
 
 
-      ❌ :no-translate[`https://www.dropbox.com/s/818f/super-tovar.avi`]
+      ❌ `https://www.dropbox.com/s/818f/super-tovar.avi`
 
 
       Ссылки на видео должны быть постоянными. Нельзя использовать динамические
@@ -104,7 +104,7 @@ properties:
 
 
       [Требования к
-      видео](:no-translate[https://yandex.ru/support/marketplace/assortment/fields/video.html])
+      видео](https://yandex.ru/support/marketplace/assortment/fields/video.html)
     type: array
     nullable: true
     minItems: 1
@@ -135,7 +135,7 @@ properties:
 
 
       Записывайте названия стран так, как они записаны в
-      [списке](:no-translate[https://yastatic.net/s3/doc-binary/src/support/market/ru/countries.xlsx]).
+      [списке](https://yastatic.net/s3/doc-binary/src/support/market/ru/countries.xlsx).
     type: array
     nullable: true
     minItems: 1
@@ -207,7 +207,7 @@ properties:
       `Гарантия на аккумулятор — 6 месяцев`.
     $ref: ./TimePeriodDTO.yaml
   customsCommodityCode:
-    description: "{% note warning \"Вместо него используйте :no-translate[`commodityCodes`] с типом :no-translate[`CUSTOMS_COMMODITY_CODE`].\" %}\n\n\_\n\n{% endnote %}\n\nКод товара в единой Товарной номенклатуре внешнеэкономической деятельности (ТН ВЭД) — 10 или 14 цифр без пробелов.\n\nОбязательно укажите, если он есть.\n"
+    description: "{% note warning \"Вместо него используйте `commodityCodes` с типом `CUSTOMS_COMMODITY_CODE`.\" %}\n\n\_\n\n{% endnote %}\n\nКод товара в единой Товарной номенклатуре внешнеэкономической деятельности (ТН ВЭД) — 10 или 14 цифр без пробелов.\n\nОбязательно укажите, если он есть.\n"
     deprecated: true
     example: 8517610008
     type: string
@@ -226,7 +226,7 @@ properties:
 
       Передавать можно только номера документов, сканы которого загружены в
       кабинете продавца по
-      [инструкции](:no-translate[https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html]).
+      [инструкции](https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html).
     type: array
     nullable: true
     minItems: 1
@@ -257,7 +257,7 @@ properties:
 
 
       [Правила продажи уцененных
-      товаров](:no-translate[https://yandex.ru/support/marketplace/assortment/restrictions/used-goods.html])
+      товаров](https://yandex.ru/support/marketplace/assortment/restrictions/used-goods.html)
     $ref: ./OfferConditionDTO.yaml
   type:
     description: |
@@ -273,12 +273,11 @@ properties:
     $ref: ./OfferType.yaml
   downloadable:
     description: >
-      Признак цифрового товара. Укажите :no-translate[`true`], если товар
-      доставляется по электронной почте.
+      Признак цифрового товара. Укажите `true`, если товар доставляется по
+      электронной почте.
 
 
-      [Как работать с цифровыми
-      товарами](:no-translate[../../step-by-step/digital.md])
+      [Как работать с цифровыми товарами](../../step-by-step/digital.md)
     type: boolean
   adult:
     description: >
@@ -295,7 +294,7 @@ properties:
       или в месяцах (любое число от 0 до 12).
     $ref: ./AgeDTO.yaml
   params:
-    description: "{% note warning \"При передаче характеристик используйте :no-translate[`parameterValues`].\" %}\n\n\_\n\n{% endnote %}\n\nХарактеристики, которые есть только у товаров конкретной категории — например, диаметр колес велосипеда или материал подошвы обуви.\n"
+    description: "{% note warning \"При передаче характеристик используйте `parameterValues`.\" %}\n\n\_\n\n{% endnote %}\n\nХарактеристики, которые есть только у товаров конкретной категории — например, диаметр колес велосипеда или материал подошвы обуви.\n"
     type: array
     nullable: true
     minItems: 1

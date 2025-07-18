@@ -2,7 +2,7 @@ type: string
 description: |
   Тип связи между двумя заявками:
 
-  * `VIRTUAL_DISTRIBUTION` — [мультипоставка](*multisupply).
+  * `VIRTUAL_DISTRIBUTION` — [мультипоставка](:no-translate[*multisupply]).
 
   * `WITHDRAW` — вывоз непринятых товаров.
 

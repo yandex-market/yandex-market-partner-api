@@ -12,53 +12,51 @@ description: >
 
 
   Каждая такая рекомендация относится к **единственному параметру**. Чтобы
-  заполнить этот параметр, пользуйтесь запросом [:no-translate[POST
-  businesses/{businessId}/offer-mappings/update]](:no-translate[../../reference/business-assortment/updateOfferMappings.md]).
+  заполнить этот параметр, пользуйтесь запросом [POST
+  businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
 
 
-  Рекомендации по заполнению параметров в :no-translate[`updateOfferMappings`]:
+  Рекомендации по заполнению параметров в `updateOfferMappings`:
 
 
-  * :no-translate[`RECOGNIZED_VENDOR`] — напишите название производителя так,
-  как его пишет сам производитель (параметр :no-translate[`vendor`]).
+  * `RECOGNIZED_VENDOR` — напишите название производителя так, как его пишет сам
+  производитель (параметр `vendor`).
 
-  * :no-translate[`PICTURE_COUNT`] — добавьте изображения (параметр
-  :no-translate[`pictures`]).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/images])
+  * `PICTURE_COUNT` — добавьте изображения (параметр `pictures`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/images)
 
     Для рекомендации приходит процент ее выполнения.
-  * :no-translate[`FIRST_PICTURE_SIZE`]— замените первое изображение более
-  крупным (параметр :no-translate[`pictures`]).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/images])
+  * `FIRST_PICTURE_SIZE`— замените первое изображение более крупным (параметр
+  `pictures`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/images)
 
-  * :no-translate[`TITLE_LENGTH`] — измените название (параметр
-  :no-translate[`name`]). Составьте название по схеме: тип + бренд или
-  производитель + модель + особенности, если есть (размер, вес, цвет).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/title])
+  * `TITLE_LENGTH` — измените название (параметр `name`). Составьте название по
+  схеме: тип + бренд или производитель + модель + особенности, если есть
+  (размер, вес, цвет).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/title)
 
-  * :no-translate[`DESCRIPTION_LENGTH`] — добавьте описание рекомендуемого
-  размера (параметр :no-translate[`description`]).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/description])
+  * `DESCRIPTION_LENGTH` — добавьте описание рекомендуемого размера (параметр
+  `description`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/description)
 
-  * :no-translate[`AVERAGE_PICTURE_SIZE`] — замените все изображения на
-  изображения высокого качества (параметр :no-translate[`pictures`]).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/images])
+  * `AVERAGE_PICTURE_SIZE` — замените все изображения на изображения высокого
+  качества (параметр `pictures`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/images)
 
-  * :no-translate[`FIRST_VIDEO_LENGTH`] — добавьте первое видео рекомендуемой
-  длины (параметр :no-translate[`videos`]).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/video])
+  * `FIRST_VIDEO_LENGTH` — добавьте первое видео рекомендуемой длины (параметр
+  `videos`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)
 
-  * :no-translate[`FIRST_VIDEO_SIZE`] — замените первое видео на видео высокого
-  качества (параметр :no-translate[`videos`]).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/video])
+  * `FIRST_VIDEO_SIZE` — замените первое видео на видео высокого качества
+  (параметр `videos`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)
 
-  * :no-translate[`AVERAGE_VIDEO_SIZE`] — замените все видео на видео высокого
-  качества (параметр :no-translate[`videos`]).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/video])
+  * `AVERAGE_VIDEO_SIZE` — замените все видео на видео высокого качества
+  (параметр `videos`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)
 
-  * :no-translate[`VIDEO_COUNT`] — добавьте хотя бы одно видео (параметр
-  :no-translate[`videos`]).
-  [Требования](:no-translate[https://yandex.ru/support2/marketplace/ru/assortment/fields/video])
+  * `VIDEO_COUNT` — добавьте хотя бы одно видео (параметр `videos`).
+  [Требования](https://yandex.ru/support2/marketplace/ru/assortment/fields/video)
 
     Для рекомендации приходит процент ее выполнения.
 
@@ -67,39 +65,37 @@ description: >
 
   Каждая такая рекомендация предполагает заполнение **одной или нескольких
   характеристик**. Чтобы узнать, какие именно характеристики нужно заполнить,
-  воспользуйтесь запросом [:no-translate[POST
-  category/{categoryId}/parameters]](:no-translate[../../reference/content/getCategoryContentParameters.md]).
-  Например, если вы получили рекомендацию :no-translate[`MAIN`], нужно заполнить
-  характеристики, имеющие :no-translate[`MAIN`] в массиве
-  :no-translate[`recommendationTypes`].
+  воспользуйтесь запросом [POST
+  category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
+  Например, если вы получили рекомендацию `MAIN`, нужно заполнить
+  характеристики, имеющие `MAIN` в массиве `recommendationTypes`.
 
 
   Рекомендации:
 
 
-  * :no-translate[`MAIN`] — заполните ключевые характеристики товара, которые
-  используются в поиске и фильтрах.
+  * `MAIN` — заполните ключевые характеристики товара, которые используются в
+  поиске и фильтрах.
 
     Для рекомендации приходит процент ее выполнения.
-  * :no-translate[`ADDITIONAL`] — заполните дополнительные характеристики
-  товара.
+  * `ADDITIONAL` — заполните дополнительные характеристики товара.
 
     Для рекомендации приходит процент ее выполнения.
-  * :no-translate[`DISTINCTIVE`] — заполните характеристики, которыми отличаются
-  друг от друга варианты товара.
+  * `DISTINCTIVE` — заполните характеристики, которыми отличаются друг от друга
+  варианты товара.
 
     Для рекомендации приходит процент ее выполнения.
 
   **3. Устаревшие рекомендации**
 
 
-  * :no-translate[`HAS_VIDEO`].
+  * `HAS_VIDEO`.
 
-  * :no-translate[`FILTERABLE`].
+  * `FILTERABLE`.
 
-  * :no-translate[`HAS_DESCRIPTION`].
+  * `HAS_DESCRIPTION`.
 
-  * :no-translate[`HAS_BARCODE`].
+  * `HAS_BARCODE`.
 type: string
 enum:
   - HAS_VIDEO

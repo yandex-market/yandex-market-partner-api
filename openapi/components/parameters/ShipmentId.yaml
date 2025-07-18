@@ -1,6 +1,6 @@
 description: >
   Параметр больше не используется. Вставьте любое число — просто чтобы получился
-  корректный URL.
+  корректный :no-translate[URL].
 name: shipmentId
 in: path
 required: true

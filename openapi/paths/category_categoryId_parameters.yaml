@@ -15,7 +15,7 @@ post:
   summary: Списки характеристик товаров по категориям
   description: >
     {% include notitle
-    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getCategoryContentParameters.md])
+    [:no-translate[access]](../../_auto/method_scopes/getCategoryContentParameters.md)
     %}
 
 
@@ -23,7 +23,7 @@ post:
     листовой категории — той, у которой нет дочерних категорий.
 
 
-    |**⚙️ Лимит:** 100 категорий в минуту |
+    |**:no-translate[⚙️] Лимит:** 100 категорий в минуту |
 
     |-|
   parameters:

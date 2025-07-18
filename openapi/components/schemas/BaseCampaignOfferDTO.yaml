@@ -8,7 +8,7 @@ properties:
   quantum:
     description: >-
       Настройка продажи квантами. [Что это
-      значит?](:no-translate[https://yandex.ru/support/marketplace/assortment/fields/quantum.html])
+      значит?](https://yandex.ru/support/marketplace/assortment/fields/quantum.html)
     $ref: ./QuantumDTO.yaml
   available:
     description: >
@@ -16,16 +16,16 @@ properties:
       %}
 
 
-      * [:no-translate[GET
-      campaigns/{campaignId}/hidden-offers]](:no-translate[../../reference/assortment/getHiddenOffers.md])
+      * [GET
+      campaigns/{campaignId}/hidden-offers](../../reference/assortment/getHiddenOffers.md)
       — просмотр скрытых товаров;
 
-      * [:no-translate[POST
-      campaigns/{campaignId}/hidden-offers]](:no-translate[../../reference/assortment/addHiddenOffers.md])
+      * [POST
+      campaigns/{campaignId}/hidden-offers](../../reference/assortment/addHiddenOffers.md)
       — скрытие товаров;
 
-      * [:no-translate[POST
-      campaigns/{campaignId}/hidden-offers/delete]](:no-translate[../../reference/assortment/deleteHiddenOffers.md])
+      * [POST
+      campaigns/{campaignId}/hidden-offers/delete](../../reference/assortment/deleteHiddenOffers.md)
       — возобновление показа.
 
 

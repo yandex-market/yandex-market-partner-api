@@ -14,8 +14,8 @@ post:
   operationId: deletePromoOffers
   summary: Удаление товаров из акции
   description: >
-    {% include notitle [access](../../_auto/method_scopes/deletePromoOffers.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/deletePromoOffers.md) %}
 
 
     Убирает товары из акции.
@@ -24,7 +24,7 @@ post:
     Изменения начинают действовать в течение 4–6 часов.
 
 
-    |**⚙️ Лимит:** 10 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 10 000 запросов в час|
 
     |-|
   parameters:
@@ -54,16 +54,16 @@ post:
 
         |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-        | **Not enough parameters in request: offerIds or deleteAllOffers should
-        be specified**                          | Не передан параметр для
-        удаления товаров из
+        | :no-translate[**Not enough parameters in request: offerIds or
+        deleteAllOffers should be specified**]                          | Не
+        передан параметр для удаления товаров из
         акции.                                                          | Чтобы
         убрать все товары, передайте значение `true` в параметре
         `deleteAllOffers`. Чтобы удалить только некоторые товары, передайте их
         SKU в параметре `offerIds`. |
 
-        | **Promo has
-        ended**                                                                                           
+        | :no-translate[**Promo has
+        ended**]                                                                                           
         | Акция
         закончилась.                                                                                         
         | Чтобы узнать, в каких акциях можно поучаствовать, воспользуйтесь
@@ -71,11 +71,12 @@ post:
         /businesses/{businessId}/promos](../../reference/promos/getPromos.md).            
         |
 
-        | **Too many parameters in request: only one of parameters offerIds or
-        deleteAllOffers should be specified**     | Можно либо передать значение
-        `true` в параметре `deleteAllOffers`, либо SKU товаров в параметре
-        `offerIds`. | Передайте что-то одно  — или значение `true` в параметре
-        `deleteAllOffers`, или SKU товаров в параметре
+        | :no-translate[**Too many parameters in request: only one of parameters
+        offerIds or deleteAllOffers should be specified**]     | Можно либо
+        передать значение `true` в параметре `deleteAllOffers`, либо
+        :no-translate[SKU] товаров в параметре `offerIds`. | Передайте что-то
+        одно  — или значение `true` в параметре `deleteAllOffers`, или SKU
+        товаров в параметре
         `offerIds`.                                               |
       $ref: ../components/responses/400.yaml
     '401':

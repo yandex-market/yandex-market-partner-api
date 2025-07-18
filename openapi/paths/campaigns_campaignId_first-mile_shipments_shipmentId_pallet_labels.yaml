@@ -9,7 +9,8 @@ get:
   summary: Ярлыки для доверительной приемки
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/downloadShipmentPalletLabels.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/downloadShipmentPalletLabels.md)
+    %}
 
 
     PDF-файл с ярлыками на каждый короб или палету в отгрузке для доверительной
@@ -24,7 +25,7 @@ get:
     Количество упаковок в отгрузке задается в запросе [PUT
     campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](../../reference/shipments/setShipmentPalletsCount.md).
 
-    |**⚙️ Лимит:** 200 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 200 запросов в час|
 
     |-|
   parameters:

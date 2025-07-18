@@ -1,52 +1,35 @@
-description: >
+description: |
   Статус передачи возврата:
 
+  * `CREATED` — возврат создан.
 
-  * :no-translate[`CREATED`] — возврат создан.
+  * `RECEIVED` — принят у покупателя.
 
+  * `IN_TRANSIT` — возврат в пути.
 
-  * :no-translate[`RECEIVED`] — принят у покупателя.
+  * `READY_FOR_PICKUP` — возврат готов к выдаче магазину.
 
+  * `PICKED` — возврат выдан магазину.
 
-  * :no-translate[`IN_TRANSIT`] — возврат в пути.
+  * `LOST` — возврат утерян при транспортировке.
 
+  * `EXPIRED` — покупатель не принес товар на возврат вовремя.
 
-  * :no-translate[`READY_FOR_PICKUP`] — возврат готов к выдаче магазину.
+  * `CANCELLED` — возврат отменен.
 
+  * `FULFILMENT_RECEIVED` — возврат принят на складе Маркета.
 
-  * :no-translate[`PICKED`] — возврат выдан магазину.
+  * `PREPARED_FOR_UTILIZATION` — возврат передан в утилизацию.
 
+  * `NOT_IN_DEMAND` — возврат не забрали с почты.
 
-  * :no-translate[`LOST`] — возврат утерян при транспортировке.
+  * `UTILIZED` — возврат утилизирован.
 
+  * `READY_FOR_EXPROPRIATION` — товары в возврате направлены на перепродажу.
 
-  * :no-translate[`EXPIRED`] — покупатель не принес товар на возврат вовремя.
+  * `RECEIVED_FOR_EXPROPRIATION` — товары в возврате приняты для перепродажи.
 
-
-  * :no-translate[`CANCELLED`] — возврат отменен.
-
-
-  * :no-translate[`FULFILMENT_RECEIVED`] — возврат принят на складе Маркета.
-
-
-  * :no-translate[`PREPARED_FOR_UTILIZATION`] — возврат передан в утилизацию.
-
-
-  * :no-translate[`NOT_IN_DEMAND`] — возврат не забрали с почты.
-
-
-  * :no-translate[`UTILIZED`] — возврат утилизирован.
-
-
-  * :no-translate[`READY_FOR_EXPROPRIATION`] — товары в возврате направлены на
-  перепродажу.
-
-
-  * :no-translate[`RECEIVED_FOR_EXPROPRIATION`] — товары в возврате приняты для
-  перепродажи.
-
-
-  * :no-translate[`UNKNOWN`] — неизвестный статус.
+  * `UNKNOWN` — неизвестный статус.
 type: string
 enum:
   - CREATED

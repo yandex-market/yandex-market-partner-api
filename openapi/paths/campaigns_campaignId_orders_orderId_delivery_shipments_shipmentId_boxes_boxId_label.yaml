@@ -10,15 +10,15 @@ get:
   operationId: generateOrderLabel
   summary: Готовый ярлык‑наклейка для коробки в заказе
   description: >
-    {% include notitle [access](../../_auto/method_scopes/generateOrderLabel.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/generateOrderLabel.md) %}
 
 
     Формирует ярлык‑наклейку для коробки в заказе и возвращает ярлык в
     PDF‑файле.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

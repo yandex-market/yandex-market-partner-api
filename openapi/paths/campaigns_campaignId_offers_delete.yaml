@@ -13,7 +13,8 @@ post:
   summary: Удаление товаров из ассортимента магазина
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/deleteCampaignOffers.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/deleteCampaignOffers.md)
+    %}
 
 
     Удаляет заданные товары из заданного магазина.
@@ -32,7 +33,7 @@ post:
     Товар не получится удалить, если он хранится на складах Маркета.
 
 
-    |**⚙️ Лимит:** 10 000 товаров в минуту|
+    |**:no-translate[⚙️] Лимит:** 10 000 товаров в минуту|
 
     |-|
   parameters:

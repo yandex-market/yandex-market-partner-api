@@ -5,7 +5,7 @@ description: |
   * **Документы, которые загружает магазин**
     * `SUPPLY` — список товаров.
     * `ADDITIONAL_SUPPLY` — список товаров в дополнительной поставке.
-    * `VIRTUAL_DISTRIBUTION_CENTER_SUPPLY` — список товаров в [мультипоставке](*multisupply).
+    * `VIRTUAL_DISTRIBUTION_CENTER_SUPPLY` — список товаров в [мультипоставке](:no-translate[*multisupply]).
     * `TRANSFER` — список товаров для утилизации.
     * `WITHDRAW` — список товаров для вывоза.
 

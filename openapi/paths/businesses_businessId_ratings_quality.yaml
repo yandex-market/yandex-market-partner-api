@@ -14,8 +14,8 @@ post:
   operationId: getQualityRatings
   summary: Индекс качества магазинов
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getQualityRatings.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getQualityRatings.md) %}
 
 
     Возвращает значение индекса качества магазинов и его составляющие.
@@ -25,7 +25,7 @@ post:
     продавцов](https://yandex.ru/support2/marketplace/ru/quality/score/).
 
 
-    |**⚙️ Лимит:** 10 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 10 000 запросов в час|
 
     |-|
   parameters:

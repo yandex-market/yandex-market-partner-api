@@ -15,7 +15,8 @@ post:
   summary: Отчет по охватному продвижению
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/generateBannersStatisticsReport.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/generateBannersStatisticsReport.md)
+    %}
 
 
     Запускает генерацию сводного отчета по охватному продвижению. Что это за
@@ -31,10 +32,11 @@ post:
 
 
     {% include notitle
-    [reports](../../_auto/reports/incuts/banners_statistics.md) %}
+    [:no-translate[reports]](../../_auto/reports/incuts/banners_statistics.md)
+    %}
 
 
-    |**⚙️ Лимит:** 100 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 запросов в час|
 
     |-|
   parameters:

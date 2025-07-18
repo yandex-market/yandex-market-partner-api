@@ -11,10 +11,12 @@ properties:
     format: int64
     minimum: 1
   createdAt:
-    description: |
+    description: >
       Дата и время создания сообщения.
 
-      Формат даты: ISO 8601 со смещением относительно UTC.
+
+      Формат даты: :no-translate[ISO 8601] со смещением относительно
+      :no-translate[UTC].
     type: string
     format: date-time
     example: '2017-11-21T00:00:00+03:00'

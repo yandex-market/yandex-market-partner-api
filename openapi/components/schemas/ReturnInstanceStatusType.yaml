@@ -1,29 +1,29 @@
 description: |
   Логистический статус конкретного товара:
 
-  * :no-translate[`CREATED`] — возврат создан.
+  * `CREATED` — возврат создан.
 
-  * :no-translate[`RECEIVED`] — возврат принят у отправителя.
+  * `RECEIVED` — возврат принят у отправителя.
 
-  * :no-translate[`IN_TRANSIT`] — возврат в пути.
+  * `IN_TRANSIT` — возврат в пути.
 
-  * :no-translate[`READY_FOR_PICKUP`] — возврат готов к выдаче магазину.
+  * `READY_FOR_PICKUP` — возврат готов к выдаче магазину.
 
-  * :no-translate[`PICKED`] — возврат выдан магазину.
+  * `PICKED` — возврат выдан магазину.
 
-  * :no-translate[`RECEIVED_ON_FULFILLMENT`] — возврат принят на складе Маркета.
+  * `RECEIVED_ON_FULFILLMENT` — возврат принят на складе Маркета.
 
-  * :no-translate[`CANCELLED`] — возврат отменен.
+  * `CANCELLED` — возврат отменен.
 
-  * :no-translate[`LOST`] — возврат утерян.
+  * `LOST` — возврат утерян.
 
-  * :no-translate[`UTILIZED`] — возврат утилизирован.
+  * `UTILIZED` — возврат утилизирован.
 
-  * :no-translate[`PREPARED_FOR_UTILIZATION`] — возврат готов к утилизации.
+  * `PREPARED_FOR_UTILIZATION` — возврат готов к утилизации.
 
-  * :no-translate[`EXPROPRIATED`] — товары в возврате направлены на перепродажу.
+  * `EXPROPRIATED` — товары в возврате направлены на перепродажу.
 
-  * :no-translate[`NOT_IN_DEMAND`] — возврат не забрали с почты.
+  * `NOT_IN_DEMAND` — возврат не забрали с почты.
 type: string
 enum:
   - CREATED

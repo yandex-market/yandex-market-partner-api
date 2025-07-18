@@ -7,10 +7,13 @@ put:
     - inventory-and-order-processing
   operationId: verifyOrderEac
   summary: Передача кода подтверждения
-  description: |
-    {% include notitle [access](../../_auto/method_scopes/verifyOrderEac.md) %}
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/verifyOrderEac.md) %}
+
 
     Отправляет Маркету код подтверждения для его проверки.
+
 
     **Если у магазина настроена работа с кодами подтверждения:**
 
@@ -23,7 +26,8 @@ put:
 
       Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`, `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в других статусах, параметр может отсутствовать.
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
+
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

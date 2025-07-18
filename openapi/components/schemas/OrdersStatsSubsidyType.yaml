@@ -5,7 +5,7 @@ description: |
 
   * `SUBSIDY` — скидка Маркета (по акциям, промокодам, купонам и т. д.)
 
-  * `DELIVERY` — скидка за доставку (DBS).
+  * `DELIVERY` — скидка за доставку (:no-translate[DBS]).
 type: string
 enum:
   - YANDEX_CASHBACK

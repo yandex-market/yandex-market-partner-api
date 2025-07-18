@@ -9,12 +9,13 @@ get:
   summary: Получение акта расхождений
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/downloadShipmentDiscrepancyAct.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/downloadShipmentDiscrepancyAct.md)
+    %}
 
 
     Возвращает акт расхождений для заданной отгрузки.
 
-    |**⚙️ Лимит:** 200 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 200 запросов в час|
 
     |-|
   parameters:
@@ -22,7 +23,7 @@ get:
     - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
-      description: Акт расхождений в формате XLSX.
+      description: Акт расхождений в формате :no-translate[XLSX].
       content:
         application/vnd.ms-excel:
           schema:

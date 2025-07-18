@@ -13,7 +13,8 @@ post:
   summary: Отчет по заказам с ювелирными изделиями
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/generateJewelryFiscalReport.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/generateJewelryFiscalReport.md)
+    %}
 
 
     Запускает генерацию отчета по заказам с ювелирными изделиями.
@@ -25,11 +26,11 @@ post:
 
 
     {% include notitle
-    [reports](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md)
+    [:no-translate[reports]](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md)
     %}
 
 
-    |**⚙️ Лимит:** 100 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 запросов в час|
 
     |-|
   parameters:

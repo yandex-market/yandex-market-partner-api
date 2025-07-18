@@ -1,4 +1,4 @@
-description: "Способ доставки заказа:\n\n* :no-translate[`DELIVERY`] — курьерская доставка.\n\n* :no-translate[`PICKUP`] — самовывоз.\n\n* :no-translate[`POST`] — почта.\n\n* :no-translate[`DIGITAL`] —\_для цифровых товаров.\n\n* :no-translate[`UNKNOWN`] — неизвестный тип.\n"
+description: "Способ доставки заказа:\n\n* `DELIVERY` — курьерская доставка.\n\n* `PICKUP` — самовывоз.\n\n* `POST` — почта.\n\n* `DIGITAL` —\_для цифровых товаров.\n\n* `UNKNOWN` — неизвестный тип.\n"
 type: string
 enum:
   - DELIVERY

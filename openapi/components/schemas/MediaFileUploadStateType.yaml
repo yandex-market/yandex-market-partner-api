@@ -1,13 +1,9 @@
-description: >
+description: |
   Состояние загрузки медиафайла:
 
-
-  * :no-translate[`UPLOADING`] — загружается.
-
-  * :no-translate[`UPLOADED`] — успешно загружен.
-
-  * :no-translate[`FAILED`] — при загрузке произошла ошибка. Повторите попытку
-  позже.
+  * `UPLOADING` — загружается.
+  * `UPLOADED` — успешно загружен.
+  * `FAILED` — при загрузке произошла ошибка. Повторите попытку позже.
 type: string
 enum:
   - UPLOADING

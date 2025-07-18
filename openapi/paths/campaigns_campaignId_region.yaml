@@ -13,15 +13,14 @@ get:
   summary: Регион магазина
   description: >
     {% include notitle
-    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getCampaignRegion.md])
-    %}
+    [:no-translate[access]](../../_auto/method_scopes/getCampaignRegion.md) %}
 
 
     {% note warning "Какой метод использовать вместо устаревшего" %}
 
 
-    [:no-translate[GET
-    campaigns/{campaignId}/settings]](:no-translate[../../reference/campaigns/getCampaignSettings.md])
+    [GET
+    campaigns/{campaignId}/settings](../../reference/campaigns/getCampaignSettings.md)
 
 
     {% endnote %}
@@ -29,7 +28,7 @@ get:
 
     Возвращает регион, в котором находится магазин.
 
-    |**⚙️ Лимит:** 5 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 5 000 запросов в час|
 
     |-|
   deprecated: true

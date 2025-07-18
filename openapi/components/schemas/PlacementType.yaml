@@ -1,9 +1,9 @@
 description: |
   Модель, по которой работает магазин:
 
-  * :no-translate[`FBS`] — FBS или Экспресс.
-  * :no-translate[`FBY`] — FBY.
-  * :no-translate[`DBS`] — DBS.
+  * `FBS` — FBS или Экспресс.
+  * `FBY` — FBY.
+  * `DBS` — DBS.
 type: string
 enum:
   - FBS

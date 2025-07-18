@@ -9,7 +9,8 @@ put:
   summary: Продление срока хранения заказа
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/updateOrderStorageLimit.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/updateOrderStorageLimit.md)
+    %}
 
 
     Продлевает срок хранения заказа в пункте выдачи продавца.
@@ -24,7 +25,7 @@ put:
     campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

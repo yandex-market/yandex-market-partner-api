@@ -22,7 +22,7 @@ properties:
 
 
       [Что такое карточка
-      товара](:no-translate[https://yandex.ru/support/marketplace/assortment/content/index.html])
+      товара](https://yandex.ru/support/marketplace/assortment/content/index.html)
     type: array
     uniqueItems: true
     nullable: true

@@ -9,7 +9,8 @@ get:
   summary: Получение фактического акта приема-передачи
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/downloadShipmentInboundAct.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/downloadShipmentInboundAct.md)
+    %}
 
 
     Возвращает фактический акт приема-передачи для заданной отгрузки.
@@ -20,7 +21,7 @@ get:
     расхождения.
 
 
-    |**⚙️ Лимит:** 200 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 200 запросов в час|
 
     |-|
   parameters:
@@ -28,7 +29,7 @@ get:
     - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
-      description: Акт в формате PDF.
+      description: Акт в формате :no-translate[PDF].
       content:
         application/pdf:
           schema:

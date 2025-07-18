@@ -1,5 +1,5 @@
 description: |
-  Фильтрации удаляемых товаров по :no-translate[offerIds].
+  Фильтрации удаляемых товаров по offerIds.
 type: object
 required:
   - offerIds

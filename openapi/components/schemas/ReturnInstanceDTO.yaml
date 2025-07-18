@@ -10,9 +10,9 @@ properties:
   cis:
     description: >-
       Код идентификации единицы товара в системе [:no-translate[«Честный
-      ЗНАК»]](:no-translate[https://честныйзнак.рф/]) или [:no-translate[«ASL
-      BELGISI»]](:no-translate[https://aslbelgisi.uz]) (для продавцов
-      :no-translate[Market Yandex Go]).
+      ЗНАК»]](https://честныйзнак.рф/) или [:no-translate[«ASL
+      BELGISI»]](https://aslbelgisi.uz) (для продавцов :no-translate[Market
+      Yandex Go]).
     type: string
   imei:
     description: Международный идентификатор мобильного оборудования.

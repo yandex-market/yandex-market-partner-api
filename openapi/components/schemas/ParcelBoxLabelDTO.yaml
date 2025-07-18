@@ -15,7 +15,7 @@ required:
 properties:
   url:
     description: >
-      Соответствует URL, по которому выполняется запрос [GET
+      Соответствует :no-translate[URL], по которому выполняется запрос [GET
       campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label](../../reference/orders/generateOrderLabel.md).
     type: string
   supplierName:
@@ -60,7 +60,7 @@ properties:
     description: |
       Общая масса всех товаров в заказе.
 
-      Возвращается в формате: `weight кг`.
+      Возвращается в формате: :no-translate[`weight кг`].
     type: string
     deprecated: true
   deliveryServiceId:

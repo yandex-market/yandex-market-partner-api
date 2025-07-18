@@ -1,4 +1,4 @@
-description: "Невыкуп или возврат в заказе.\n\nПараметров :no-translate[`logisticPickupPoint`], :no-translate[`shipmentRecipientType`] и\_:no-translate[`shipmentStatus`] может не быть в случае возврата:\n  * С опцией **Быстрый возврат денег за дешевый брак**, когда товар остается у покупателя (:no-translate[`fastReturn=true`]).\n  * По заказу от бизнеса, если:\n    * статус возврата :no-translate[`STARTED_BY_USER`] или :no-translate[`WAITING_FOR_DECISION`];\n    * возврат отменен до передачи товара.\n\nСтатус возврата денег :no-translate[`refundStatus`] актуален только для :no-translate[`returnType=RETURN`].\n"
+description: "Невыкуп или возврат в заказе.\n\nПараметров `logisticPickupPoint`, `shipmentRecipientType` и\_`shipmentStatus` может не быть в случае возврата:\n  * С опцией **Быстрый возврат денег за дешевый брак**, когда товар остается у покупателя (`fastReturn=true`).\n  * По заказу от бизнеса, если:\n    * статус возврата `STARTED_BY_USER` или `WAITING_FOR_DECISION`;\n    * возврат отменен до передачи товара.\n\nСтатус возврата денег `refundStatus` актуален только для `returnType=RETURN`.\n"
 type: object
 required:
   - id
@@ -46,7 +46,7 @@ properties:
     description: Статус передачи возврата.
     $ref: ./ReturnShipmentStatusType.yaml
   refundAmount:
-    description: "{% note warning \"Вместо него используйте :no-translate[`amount`].\" %}\n\n\_\n\n{% endnote %}\n\nСумма возврата в копейках.\n"
+    description: "{% note warning \"Вместо него используйте `amount`.\" %}\n\n\_\n\n{% endnote %}\n\nСумма возврата в копейках.\n"
     type: integer
     format: int64
     deprecated: true
@@ -65,5 +65,5 @@ properties:
     description: |
       Используется ли опция **Быстрый возврат денег за дешевый брак**.
 
-      Актуально только для :no-translate[`returnType=RETURN`].
+      Актуально только для `returnType=RETURN`.
     type: boolean

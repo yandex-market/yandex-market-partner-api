@@ -19,5 +19,5 @@ properties:
     description: >
       Тип покупателя: физическое лицо или организация. Этот параметр
       используется FBS- и FBY-магазинами, размещающими товары на витрине
-      :no-translate[business.market.yandex.ru].
+      business.market.yandex.ru.
     $ref: ./OrderBuyerType.yaml

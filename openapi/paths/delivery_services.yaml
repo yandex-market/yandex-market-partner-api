@@ -23,13 +23,12 @@ get:
   summary: Справочник служб доставки
   description: >
     {% include notitle
-    [:no-translate[access]](:no-translate[../../_auto/method_scopes/getDeliveryServices.md])
-    %}
+    [:no-translate[access]](../../_auto/method_scopes/getDeliveryServices.md) %}
 
 
     Возвращает справочник служб доставки: идентификаторы и наименования.
 
-    |**⚙️ Лимит:** 5 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 5 000 запросов в час|
 
     |-|
   responses:

@@ -3,7 +3,7 @@ description: >
 
 
   Если у товара несколько значений одного параметра, передайте их с одним и тем
-  же :no-translate[`name`], но разными :no-translate[`value`].
+  же `name`, но разными `value`.
 
 
   {% cut "Пример" %}
@@ -37,8 +37,8 @@ properties:
 
 
       Должно совпадать с названием характеристики на Маркете. Узнать его можно
-      из Excel-шаблона категории или через запрос [:no-translate[POST
-      category/{categoryId}/parameters]](:no-translate[../../reference/content/getCategoryContentParameters.md]).
+      из Excel-шаблона категории или через запрос [POST
+      category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
     example: Wi-Fi
     type: string
     maxLength: 200

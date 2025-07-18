@@ -1,20 +1,13 @@
-description: >
+description: |
   Составляющие индекса качества.
 
-
   **Для модели :no-translate[DBS]:**
-
-  * :no-translate[`DBS_CANCELLATION_RATE`] — доля отмененных товаров.
-
-  * :no-translate[`DBS_LATE_DELIVERY_RATE`] — доля заказов, доставленных после
-  плановой даты.
-
+  * `DBS_CANCELLATION_RATE` — доля отмененных товаров.
+  * `DBS_LATE_DELIVERY_RATE` — доля заказов, доставленных после плановой даты.
 
   **Для моделей :no-translate[FBS] и Экспресс:**
-
-  * :no-translate[`FBS_CANCELLATION_RATE`] — доля отмененных товаров.
-
-  * :no-translate[`FBS_LATE_SHIP_RATE`] — доля не вовремя отгруженных заказов.
+  * `FBS_CANCELLATION_RATE` — доля отмененных товаров.
+  * `FBS_LATE_SHIP_RATE` — доля не вовремя отгруженных заказов.
 type: string
 enum:
   - DBS_CANCELLATION_RATE

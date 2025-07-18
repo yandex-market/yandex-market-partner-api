@@ -13,14 +13,15 @@ get:
   operationId: getReturnPhoto
   summary: Получение фотографий товаров в возврате
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getReturnPhoto.md) %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getReturnPhoto.md) %}
 
 
     Получает фотографии товаров, которые покупатель приложил к заявлению на
     возврат.
 
 
-    |**⚙️ Лимит:** 10 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 10 000 запросов в час|
 
     |-|
   parameters:

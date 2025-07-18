@@ -2,20 +2,17 @@ description: >
   Типы карантина:
 
 
-  * :no-translate[`PRICE_CHANGE`] — новая цена слишком сильно отличается от
-  прежней. В поле :no-translate[`params`] будет новая цена
-  :no-translate[`CURRENT_PRICE`] и последняя цена до попадания в карантин
-  :no-translate[`LAST_VALID_PRICE`].
+  * `PRICE_CHANGE` — новая цена слишком сильно отличается от прежней. В поле
+  `params` будет  новая цена `CURRENT_PRICE` и последняя цена до попадания в
+  карантин `LAST_VALID_PRICE`.
 
-  * :no-translate[`LOW_PRICE`] — установленная цена слишком сильно отличается от
-  рыночной. В поле :no-translate[`params`] будет установленная вами цена
-  :no-translate[`CURRENT_PRICE`] и порог попадания в карантин
-  :no-translate[`MIN_PRICE`].
+  * `LOW_PRICE` — установленная цена слишком сильно отличается от рыночной. В
+  поле `params` будет установленная вами цена `CURRENT_PRICE` и порог попадания
+  в карантин `MIN_PRICE`.
 
-  * :no-translate[`LOW_PRICE_PROMO`] — цена после применения акций слишком
-  сильно отличается от рыночной. В поле :no-translate[`params`] будет цена после
-  применения акций :no-translate[`CURRENT_PRICE`] и порог попадания в карантин
-  :no-translate[`MIN_PRICE`].
+  * `LOW_PRICE_PROMO` — цена после применения акций слишком сильно отличается от
+  рыночной. В поле `params` будет цена после применения акций `CURRENT_PRICE` и
+  порог попадания в карантин `MIN_PRICE`.
 type: string
 enum:
   - PRICE_CHANGE

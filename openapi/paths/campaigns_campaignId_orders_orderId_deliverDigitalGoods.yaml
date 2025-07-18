@@ -11,7 +11,8 @@ post:
   summary: Передача ключей цифровых товаров
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/provideOrderDigitalCodes.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/provideOrderDigitalCodes.md)
+    %}
 
 
     Передает ключи цифровых товаров, которые покупатель заказал и оплатил. После
@@ -114,7 +115,7 @@ post:
 
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

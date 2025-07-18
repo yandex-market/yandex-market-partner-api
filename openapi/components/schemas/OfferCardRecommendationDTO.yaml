@@ -12,11 +12,11 @@ properties:
 
       Указывается для рекомендаций некоторых типов:
 
-      * :no-translate[`PICTURE_COUNT`].
-      * :no-translate[`VIDEO_COUNT`].
-      * :no-translate[`MAIN`].
-      * :no-translate[`ADDITIONAL`].
-      * :no-translate[`DISTINCTIVE`].
+      * `PICTURE_COUNT`.
+      * `VIDEO_COUNT`.
+      * `MAIN`.
+      * `ADDITIONAL`.
+      * `DISTINCTIVE`.
     type: integer
     format: int32
     minimum: 0

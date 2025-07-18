@@ -1,8 +1,8 @@
 description: |
   Тип чата:
 
-  * :no-translate[`ORDER`] — по заказам.
-  * :no-translate[`RETURN`] — по возвратам (FBS и Экспресс).
+  * `ORDER` — по заказам.
+  * `RETURN` — по возвратам (:no-translate[FBS] и Экспресс).
 type: string
 enum:
   - ORDER

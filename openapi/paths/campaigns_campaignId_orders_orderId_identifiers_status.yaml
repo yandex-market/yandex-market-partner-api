@@ -12,10 +12,11 @@ post:
   summary: Статусы проверки УИНов
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/getOrderIdentifiersStatus.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/getOrderIdentifiersStatus.md)
+    %}
 
 
-    Возвращает статусы проверки [УИНов](*uin) в заказе.
+    Возвращает статусы проверки [УИНов](:no-translate[*uin]) в заказе.
 
 
     Заказ, в котором есть ювелирные изделия, перейдет в статус `READY_TO_SHIP`,
@@ -29,7 +30,7 @@ post:
     2. Все УИНы успешно пройдут проверку.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

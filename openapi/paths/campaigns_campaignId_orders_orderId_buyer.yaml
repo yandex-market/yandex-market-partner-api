@@ -10,8 +10,8 @@ get:
   operationId: getOrderBuyerInfo
   summary: Информация о покупателе — физическом лице
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getOrderBuyerInfo.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getOrderBuyerInfo.md) %}
 
 
     Возвращает информацию о покупателе по идентификатору заказа.
@@ -32,7 +32,7 @@ get:
     `DELIVERY` или `PICKUP`.
 
 
-    |**⚙️ Лимит:** 3 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 3 000 запросов в час|
 
     |-|
   parameters:

@@ -13,7 +13,8 @@ post:
   summary: Список предложений для нескольких моделей
   deprecated: true
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getModelsOffers.md) %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getModelsOffers.md) %}
 
 
     Возвращает информацию о первых десяти предложениях, расположенных на
@@ -37,7 +38,7 @@ post:
     количество моделей, информация о которых запрошена при помощи этих методов.
 
 
-    |**⚙️ Лимит:** 100 000 предложений в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 предложений в час|
 
     |-|
   parameters:

@@ -1,16 +1,11 @@
-description: >
+description: |
   Комментарий к решению. Укажите:
 
+  * для `REFUND_MONEY_INCLUDING_SHIPMENT`— стоимость обратной пересылки.
 
-  * для :no-translate[`REFUND_MONEY_INCLUDING_SHIPMENT`]— стоимость обратной
-  пересылки.
+  * для `REPAIR` — когда вы устраните недостатки товара.
 
+  * для `DECLINE_REFUND` — причину отказа.
 
-  * для :no-translate[`REPAIR`] — когда вы устраните недостатки товара.
-
-
-  * для :no-translate[`DECLINE_REFUND`] — причину отказа.
-
-
-  * для :no-translate[`OTHER_DECISION`] — какое решение вы предлагаете.
+  * для `OTHER_DECISION` — какое решение вы предлагаете.
 type: string

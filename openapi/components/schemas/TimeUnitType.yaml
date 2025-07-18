@@ -1,11 +1,11 @@
 description: |
   Единица измерения времени:
 
-  * :no-translate[`HOUR`] — час.
-  * :no-translate[`DAY`] — сутки.
-  * :no-translate[`WEEK`] — неделя.
-  * :no-translate[`MONTH`] — месяц.
-  * :no-translate[`YEAR`] — год.
+  * `HOUR` — час.
+  * `DAY` — сутки.
+  * `WEEK` — неделя.
+  * `MONTH` — месяц.
+  * `YEAR` — год.
 type: string
 enum:
   - HOUR

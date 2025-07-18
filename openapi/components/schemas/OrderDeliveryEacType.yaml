@@ -2,16 +2,14 @@ description: >
   Тип кода подтверждения ЭАПП:
 
 
-  * :no-translate[`MERCHANT_TO_COURIER`] (временно не возвращается) — продавец
-  передает код курьеру для получения невыкупа.
+  * `MERCHANT_TO_COURIER` (временно не возвращается) — продавец передает код
+  курьеру для получения невыкупа.
 
 
-  * :no-translate[`COURIER_TO_MERCHANT`] — курьер передает код продавцу для
-  получения заказа.
+  * `COURIER_TO_MERCHANT` — курьер передает код продавцу для получения заказа.
 
 
-  * :no-translate[`CHECKING_BY_MERCHANT`] — продавец проверяет код на своей
-  стороне.
+  * `CHECKING_BY_MERCHANT` — продавец проверяет код на своей стороне.
 type: string
 enum:
   - MERCHANT_TO_COURIER

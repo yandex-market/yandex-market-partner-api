@@ -14,8 +14,8 @@ post:
   operationId: updatePromoOffers
   summary: Добавление товаров в акцию или изменение их цен
   description: >
-    {% include notitle [access](../../_auto/method_scopes/updatePromoOffers.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/updatePromoOffers.md) %}
 
 
     Добавляет товары в акцию или изменяет цены на товары, которые участвуют в
@@ -25,7 +25,7 @@ post:
     Изменения начинают действовать в течение 4–6 часов.
 
 
-    |**⚙️ Лимит:** 10 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 10 000 запросов в час|
 
     |-|
   parameters:
@@ -51,8 +51,8 @@ post:
 
         |---------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-        | **Promo has ended** | Акция закончилась. | Чтобы узнать, в каких
-        акциях можно поучаствовать, воспользуйтесь методом [POST
+        | :no-translate[**Promo has ended**] | Акция закончилась. | Чтобы
+        узнать, в каких акциях можно поучаствовать, воспользуйтесь методом [POST
         /businesses/{businessId}/promos](../../reference/promos/getPromos.md). |
       $ref: ../components/responses/400.yaml
     '401':

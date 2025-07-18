@@ -1,8 +1,8 @@
 description: |
   Тип чата:
 
-  * :no-translate[`CHAT`] — чат с покупателем.
-  * :no-translate[`ARBITRAGE`] — спор.
+  * `CHAT` — чат с покупателем.
+  * `ARBITRAGE` — спор.
 type: string
 enum:
   - CHAT

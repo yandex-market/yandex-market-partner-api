@@ -14,15 +14,15 @@ post:
   operationId: getCampaignOffers
   summary: Информация о товарах, которые размещены в заданном магазине
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getCampaignOffers.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getCampaignOffers.md) %}
 
 
     Возвращает список товаров, которые размещены в заданном магазине. Для
     каждого товара указываются параметры размещения.
 
 
-    |**⚙️ Лимит:** 10 000 товаров в минуту|
+    |**:no-translate[⚙️] Лимит:** 10 000 товаров в минуту|
 
     |-|
   parameters:

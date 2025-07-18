@@ -1,11 +1,11 @@
 description: |
   Тип договора:
 
-  * :no-translate[`INCOME`] — договор на размещение.
+  * `INCOME` — договор на размещение.
 
-  * :no-translate[`OUTCOME`] — договор на продвижение.
+  * `OUTCOME` — договор на продвижение.
 
-  * :no-translate[`MARKETING`] — договор на маркетинг.
+  * `MARKETING` — договор на маркетинг.
 type: string
 enum:
   - INCOME

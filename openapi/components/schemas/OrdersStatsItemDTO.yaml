@@ -50,9 +50,10 @@ properties:
       $ref: ./OrdersStatsDetailsDTO.yaml
   cisList:
     description: >-
-      Список кодов идентификации товара в системе [«Честный
-      ЗНАК»](https://честныйзнак.рф/) или [«ASL BELGISI»](https://aslbelgisi.uz)
-      (для продавцов Market Yandex Go).
+      Список кодов идентификации товара в системе [:no-translate[«Честный
+      ЗНАК»]](https://честныйзнак.рф/) или [:no-translate[«ASL
+      BELGISI»]](https://aslbelgisi.uz) (для продавцов :no-translate[Market
+      Yandex Go]).
     type: array
     nullable: true
     minItems: 1

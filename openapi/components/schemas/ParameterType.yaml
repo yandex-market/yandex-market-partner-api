@@ -1,10 +1,10 @@
 description: |
   Тип данных:
 
-  * :no-translate[`TEXT`] — текст.
-  * :no-translate[`ENUM`] — список возможных значений.
-  * :no-translate[`BOOLEAN`] — :no-translate[`true`] или :no-translate[`false`].
-  * :no-translate[`NUMERIC`] — число.
+  * `TEXT` — текст.
+  * `ENUM` — список возможных значений.
+  * `BOOLEAN` — `true` или `false`.
+  * `NUMERIC` — число.
 type: string
 enum:
   - TEXT

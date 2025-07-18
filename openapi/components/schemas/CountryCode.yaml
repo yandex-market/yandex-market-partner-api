@@ -1,6 +1,6 @@
 description: >
   Страна производства в формате ISO 3166-1 alpha-2. [Как
-  получить](:no-translate[../../reference/regions/getRegionsCodes.md])
+  получить](../../reference/regions/getRegionsCodes.md)
 type: string
 minLength: 2
 maxLength: 2

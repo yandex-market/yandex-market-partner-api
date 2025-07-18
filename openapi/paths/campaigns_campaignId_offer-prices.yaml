@@ -14,7 +14,8 @@ get:
   operationId: getPrices
   summary: Список цен
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getPrices.md) %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getPrices.md) %}
 
 
     {% note warning "Какой метод использовать вместо устаревшего" %}
@@ -28,7 +29,7 @@ get:
 
 
     Возвращает список цен, установленных вами на товары любым способом:
-    например, через API или в файле с каталогом.
+    например, через :no-translate[APIъ или в файле с каталогом.
 
 
     {% note info "Как считается общее количество товаров" %}
@@ -45,7 +46,7 @@ get:
     продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).
 
 
-    |**⚙️ Лимит:** 150 000 товаров в минуту|
+    |**:no-translate[⚙️] Лимит:** 150 000 товаров в минуту|
 
     |-|
   deprecated: true
@@ -95,7 +96,7 @@ post:
   summary: Просмотр цен на указанные товары в конкретном магазине
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/getPricesByOfferIds.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/getPricesByOfferIds.md) %}
 
 
     Возвращает список цен на указанные товары в магазине.
@@ -115,7 +116,7 @@ post:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** 150 000 товаров в минуту|
+    |**:no-translate[⚙️] Лимит:** 150 000 товаров в минуту|
 
     |-|
   parameters:

@@ -30,7 +30,7 @@ security:
   - OAuth:
       - market:partner-api
 externalDocs:
-  description: Документация API
+  description: Документация :no-translate[API]
   url: https://yandex.ru/dev/market/partner-api/doc/
 paths:
   /businesses/{businessId}/settings:
@@ -344,4 +344,6 @@ components:
         implicit:
           authorizationUrl: https://oauth.yandex.ru/authorize
           scopes:
-            market:partner-api: API Яндекс.Маркета / Поиска по товарам для партнеров
+            market:partner-api: >-
+              :no-translate[API] Яндекс.Маркета / Поиска по товарам для
+              партнеров

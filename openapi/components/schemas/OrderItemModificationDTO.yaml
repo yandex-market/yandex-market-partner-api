@@ -37,8 +37,10 @@ properties:
 
 
       Обязательный параметр, если в заказе от бизнеса есть товары, подлежащие
-      маркировке в системе [«Честный ЗНАК»](https://честныйзнак.рф/) или [«ASL
-      BELGISI»](https://aslbelgisi.uz) (для продавцов Market Yandex Go).
+      маркировке в системе [:no-translate[«Честный
+      ЗНАК»]](https://честныйзнак.рф/) или [:no-translate[«ASL
+      BELGISI»]](https://aslbelgisi.uz) (для продавцов :no-translate[Market
+      Yandex Go]).
     type: array
     nullable: true
     minItems: 1

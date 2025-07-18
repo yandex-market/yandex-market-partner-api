@@ -10,11 +10,11 @@ put:
   operationId: setOrderBoxLayout
   summary: Подготовка заказа
   description: >
-    {% include notitle [access](../../_auto/method_scopes/setOrderBoxLayout.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/setOrderBoxLayout.md) %}
 
 
-    {% note tip "Подходит и для DBS" %}
+    {% note tip "Подходит и для :no-translate[DBS]" %}
 
 
     Запрос предназначен для работы с FBS-заказами, но вы можете использовать его
@@ -62,9 +62,9 @@ put:
     ## Как передавать коды маркировки
 
 
-    {% note info "Маркировка товаров в системе [«Честный
-    ЗНАК»](https://честныйзнак.рф/) необязательна для заказов от физических лиц"
-    %}
+    {% note info "Маркировка товаров в системе [:no-translate[«Честный
+    ЗНАК»]](https://честныйзнак.рф/) необязательна для заказов от физических
+    лиц" %}
 
 
     Для заказов от бизнеса все еще нужно передавать коды маркировки.
@@ -81,8 +81,9 @@ put:
     Принимаются коды следующих типов:
 
 
-    * Коды в системе [«Честный ЗНАК»](https://честныйзнак.рф/) или [«ASL
-    BELGISI»](https://aslbelgisi.uz) (для продавцов Market Yandex Go).
+    * Коды в системе [:no-translate[«Честный ЗНАК»]](https://честныйзнак.рф/)
+    или [:no-translate[«ASL BELGISI»]](https://aslbelgisi.uz) (для продавцов
+    :no-translate[Market Yandex Go]).
 
     * УИН для ювелирных изделий.
 
@@ -337,7 +338,7 @@ put:
     {% endcut %}
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

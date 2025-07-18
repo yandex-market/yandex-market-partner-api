@@ -12,8 +12,7 @@ post:
   summary: Добавление товаров в архив
   description: >
     {% include notitle
-    [:no-translate[access]](:no-translate[../../_auto/method_scopes/addOffersToArchive.md])
-    %}
+    [:no-translate[access]](../../_auto/method_scopes/addOffersToArchive.md) %}
 
 
     Помещает товары в архив. Товары, помещенные в архив, скрыты с витрины во
@@ -30,8 +29,8 @@ post:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** 10 000 товаров в минуту, не более 200 товаров в одном
-    запросе|
+    |**:no-translate[⚙️] Лимит:** 10 000 товаров в минуту, не более 200 товаров
+    в одном запросе|
 
     |-|
   parameters:

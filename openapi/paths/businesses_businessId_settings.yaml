@@ -23,7 +23,7 @@ post:
     - supplies-management:read-only
   operationId: getBusinessSettings
   summary: Настройки кабинета
-  description: "{% include notitle [:no-translate[access]](:no-translate[../../_auto/method_scopes/getBusinessSettings.md]) %}\n\nВозвращает информацию о настройках кабинета, идентификатор которого указан в запросе.\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getBusinessSettings.md) %}\n\nВозвращает информацию о настройках кабинета, идентификатор которого указан в запросе.\n|**:no-translate[⚙️] Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   responses:

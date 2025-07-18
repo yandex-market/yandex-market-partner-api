@@ -1,9 +1,9 @@
 description: |
   Язык:
 
-  * :no-translate[`RU`] — русский.
+  * `RU` — русский.
 
-  * :no-translate[`EN`] — английский.
+  * `EN` — английский.
 type: string
 enum:
   - RU

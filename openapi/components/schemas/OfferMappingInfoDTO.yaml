@@ -7,10 +7,10 @@ properties:
 
 
       Если параметр не указан, сотрудники Маркета сами подберут или создадут
-      подходящую карточку товара, либо у него появится статус
-      :no-translate[`NEED_CONTENT`] (нужно найти карточку или создать ее
-      самостоятельно) в выходных данных запроса :no-translate[POST
-      businesses/{businessId}/offer-mappings].
+      подходящую карточку товара, либо у него появится статус `NEED_CONTENT`
+      (нужно найти карточку или создать ее самостоятельно) в выходных данных
+      запроса [POST
+      businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
     $ref: ./OfferMappingDTO.yaml
   awaitingModerationMapping:
     description: >-

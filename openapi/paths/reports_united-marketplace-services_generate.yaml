@@ -13,7 +13,7 @@ post:
   summary: Отчет по стоимости услуг
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/generateUnitedMarketplaceServicesReport.md)
+    [:no-translate[access]](../../_auto/method_scopes/generateUnitedMarketplaceServicesReport.md)
     %}
 
 
@@ -43,11 +43,11 @@ post:
 
 
     {% include notitle
-    [reports](../../_auto/reports/united/services/generator/united_marketplace_services.md)
+    [:no-translate[reports]](../../_auto/reports/united/services/generator/united_marketplace_services.md)
     %}
 
 
-    |**⚙️ Лимит:** 100 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 запросов в час|
 
     |-|
   parameters:

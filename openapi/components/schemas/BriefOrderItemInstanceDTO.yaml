@@ -7,7 +7,7 @@ description: >
 
 
   Подробно о работе с маркируемыми товарами рассказано [в Справке Маркета для
-  продавцов](:no-translate[https://yandex.ru/support/marketplace/orders/cz.html]).
+  продавцов](https://yandex.ru/support/marketplace/orders/cz.html).
 type: object
 properties:
   cis:

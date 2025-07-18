@@ -1,11 +1,11 @@
 description: |
   Способ возврата товара покупателем:
 
-  * :no-translate[`SHOP`] — в точку возврата магазина.
+  * `SHOP` — в точку возврата магазина.
 
-  * :no-translate[`DELIVERY_SERVICE`] — отправить курьером.
+  * `DELIVERY_SERVICE` — отправить курьером.
 
-  * :no-translate[`POST`] — почта.
+  * `POST` — почта.
 type: string
 enum:
   - SHOP

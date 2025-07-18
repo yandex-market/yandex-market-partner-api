@@ -2,21 +2,21 @@ description: >
   Причина отказа:
 
 
-  * :no-translate[`ISSUE_WITH_THE_PRODUCT_WAS_NOT_CONFIRMED`] — проблема с
-  товаром не подтвердилась.
+  * `ISSUE_WITH_THE_PRODUCT_WAS_NOT_CONFIRMED` — проблема с товаром не
+  подтвердилась.
 
-  * :no-translate[`MECHANICAL_DAMAGE`] — есть механические повреждения товара.
+  * `MECHANICAL_DAMAGE` — есть механические повреждения товара.
 
-  * :no-translate[`WARRANTY_PERIOD_HAS_EXPIRED`] — истек гарантийный срок.
+  * `WARRANTY_PERIOD_HAS_EXPIRED` — истек гарантийный срок.
 
-  * :no-translate[`CONFIGURATION_OR_PACKAGING_COMPROMISED`] — нарушена
-  комплектация или упаковка.
+  * `CONFIGURATION_OR_PACKAGING_COMPROMISED` — нарушена комплектация или
+  упаковка.
 
-  * :no-translate[`PRODUCT_APPEARANCE_COMPROMISED`] — нарушен товарный вид.
+  * `PRODUCT_APPEARANCE_COMPROMISED` — нарушен товарный вид.
 
-  * :no-translate[`WARRANTY_TERMS_VIOLATED`] — нарушены условия гарантии.
+  * `WARRANTY_TERMS_VIOLATED` — нарушены условия гарантии.
 
-  * :no-translate[`DEVICE_ACTIVATED`] — устройство активировано.
+  * `DEVICE_ACTIVATED` — устройство активировано.
 type: string
 enum:
   - ISSUE_WITH_THE_PRODUCT_WAS_NOT_CONFIRMED

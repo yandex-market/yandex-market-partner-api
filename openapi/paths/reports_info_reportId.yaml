@@ -24,7 +24,8 @@ get:
   operationId: getReportInfo
   summary: Получение заданного отчета или документа
   description: >
-    {% include notitle [access](../../_auto/method_scopes/getReportInfo.md) %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getReportInfo.md) %}
 
 
     Возвращает статус генерации заданного отчета или документа и, если он готов,
@@ -35,7 +36,7 @@ get:
     отчета или документа. [Инструкция](../../step-by-step/reports.md)
 
 
-    |**⚙️ Лимит:** 100 запросов в минуту|
+    |**:no-translate[⚙️] Лимит:** 100 запросов в минуту|
 
     |-|
   parameters:

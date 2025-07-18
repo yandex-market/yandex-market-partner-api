@@ -16,8 +16,8 @@ post:
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >
-    {% include notitle [access](../../_auto/method_scopes/calculateTariffs.md)
-    %}
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/calculateTariffs.md) %}
 
 
     Рассчитывает стоимость услуг Маркета для товаров с заданными параметрами.
@@ -34,7 +34,7 @@ post:
     Совместное использование параметров приведет к ошибке.
 
 
-    |**⚙️ Лимит:** 100 запросов в минуту|
+    |**:no-translate[⚙️] Лимит:** 100 запросов в минуту|
 
     |-|
   requestBody:

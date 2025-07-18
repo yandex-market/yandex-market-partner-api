@@ -3,11 +3,11 @@ description: >
 
 
   При изменении категории убедитесь, что характеристики товара и их значения в
-  параметре :no-translate[`parameterValues`] вы передаете для новой категории.
+  параметре `parameterValues` вы передаете для новой категории.
 
 
-  Список категорий Маркета можно получить с помощью запроса [:no-translate[POST
-  categories/tree]](:no-translate[../../reference/categories/getCategoriesTree.md]).
+  Список категорий Маркета можно получить с помощью запроса  [POST
+  categories/tree](../../reference/categories/getCategoriesTree.md).
 format: int32
 type: integer
 minimum: 1

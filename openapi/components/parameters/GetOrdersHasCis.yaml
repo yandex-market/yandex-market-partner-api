@@ -1,7 +1,9 @@
 description: >
   Нужно ли вернуть только те заказы, в составе которых есть хотя бы один товар с
-  кодом идентификации в системе [«Честный ЗНАК»](https://честныйзнак.рф/) или
-  [«ASL BELGISI»](https://aslbelgisi.uz) (для продавцов Market Yandex Go):
+  кодом идентификации в системе [:no-translate[«Честный
+  ЗНАК»]](https://честныйзнак.рф/) или [:no-translate[«ASL
+  BELGISI»]](https://aslbelgisi.uz) (для продавцов :no-translate[Market Yandex
+  Go]):
 
 
   * `true` — да.

@@ -4,11 +4,11 @@ properties:
   offerId:
     $ref: ./ShopSku.yaml
   currentPrice:
-    description: "{% note warning \"Вместо него используйте значение из :no-translate[`verdicts`] → :no-translate[`params`].\" %}\n\n\_\n\n{% endnote %}\n\nНовая цена.\n"
+    description: "{% note warning \"Вместо него используйте значение из `verdicts` → `params`.\" %}\n\n\_\n\n{% endnote %}\n\nНовая цена.\n"
     deprecated: true
     $ref: ./BasePriceDTO.yaml
   lastValidPrice:
-    description: "{% note warning \"Вместо него используйте значение из :no-translate[`verdicts`] → :no-translate[`params`].\" %}\n\n\_\n\n{% endnote %}\n\nПоследняя цена до попадания в карантин.\n"
+    description: "{% note warning \"Вместо него используйте значение из `verdicts` → `params`.\" %}\n\n\_\n\n{% endnote %}\n\nПоследняя цена до попадания в карантин.\n"
     deprecated: true
     $ref: ./BasePriceDTO.yaml
   verdicts:

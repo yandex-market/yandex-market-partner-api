@@ -9,7 +9,8 @@ post:
   summary: Передача трек‑номера посылки
   description: >
     {% include notitle
-    [access](../../_auto/method_scopes/setOrderDeliveryTrackCode.md) %}
+    [:no-translate[access]](../../_auto/method_scopes/setOrderDeliveryTrackCode.md)
+    %}
 
 
     Передает Маркету трек‑номер, по которому покупатель может отследить посылку
@@ -22,7 +23,7 @@ post:
     `PROCESSING`, `DELIVERY` или `PICKUP`.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:
