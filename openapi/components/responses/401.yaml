@@ -1,4 +1,6 @@
-description: В запросе не указаны данные для авторизации.
+description: >-
+  В запросе не указаны данные для авторизации. [Подробнее об
+  ошибке](../../concepts/error-codes.md#401)
 content:
   application/json:
     schema:

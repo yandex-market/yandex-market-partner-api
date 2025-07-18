@@ -1,4 +1,6 @@
-description: Превышено ограничение на доступ к ресурсу.
+description: >-
+  Превышено ограничение на доступ к ресурсу. [Подробнее об
+  ошибке](../../concepts/error-codes.md#420)
 content:
   application/json:
     schema:

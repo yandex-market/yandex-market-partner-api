@@ -1,4 +1,6 @@
-description: Запрашиваемый ресурс не найден.
+description: >-
+  Запрашиваемый ресурс не найден. [Подробнее об
+  ошибке](../../concepts/error-codes.md#404)
 content:
   application/json:
     schema:

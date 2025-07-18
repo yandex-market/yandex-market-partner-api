@@ -1,4 +1,6 @@
-description: К ресурсу нельзя применить указанный метод.
+description: >-
+  К ресурсу нельзя применить указанный метод. [Подробнее об
+  ошибке](../../concepts/error-codes.md#423)
 content:
   application/json:
     schema:

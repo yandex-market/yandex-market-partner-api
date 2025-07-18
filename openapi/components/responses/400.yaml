@@ -1,4 +1,6 @@
-description: Запрос содержит неправильные данные.
+description: >-
+  Запрос содержит неправильные данные. [Подробнее об
+  ошибке](../../concepts/error-codes.md#400)
 content:
   application/json:
     schema:
