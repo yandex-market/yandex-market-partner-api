@@ -18,3 +18,14 @@ allOf:
         minimum: 0
         maximum: 100000000
         exclusiveMinimum: true
+      excludedFromBestsellers:
+        description: >
+          Признак того, что товар не попадает в акцию «Бестселлеры Маркета».
+          Подробнее об акции читайте [в Справке Маркета для
+          продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/bestsellers).
+
+
+          Если значение `true`, в методе [POST
+          businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md)
+          параметр `minimumForBestseller` игнорируется.
+        type: boolean
