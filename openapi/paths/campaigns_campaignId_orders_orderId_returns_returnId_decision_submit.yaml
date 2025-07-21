@@ -4,6 +4,7 @@ post:
     - dbs
     - fbs
     - express
+    - fby
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
