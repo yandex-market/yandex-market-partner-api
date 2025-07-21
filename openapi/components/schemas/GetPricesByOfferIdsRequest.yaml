@@ -2,7 +2,7 @@ description: Запрос списка цен.
 type: object
 properties:
   offerIds:
-    description: "Список :no-translate[SKUъ.\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным :no-translate[SKUъ, не заполняйте:\n\n* `page_token`\n* `limit`\n\n{% endnote %}\n\n\_\n"
+    description: "Список :no-translate[SKU].\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным :no-translate[SKU], не заполняйте:\n\n* `page_token`\n* `limit`\n\n{% endnote %}\n\n\_\n"
     type: array
     minItems: 1
     maxItems: 2000
