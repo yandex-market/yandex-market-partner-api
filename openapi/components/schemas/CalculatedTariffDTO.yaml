@@ -10,6 +10,9 @@ properties:
   amount:
     description: Стоимость услуги в рублях.
     type: number
+  currency:
+    description: Валюта, в которой рассчитывается услуга.
+    $ref: ./CurrencyType.yaml
   parameters:
     description: Параметры расчета тарифа.
     type: array

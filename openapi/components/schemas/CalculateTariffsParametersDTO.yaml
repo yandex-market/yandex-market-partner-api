@@ -37,9 +37,18 @@ properties:
       Модель размещения.
 
 
+      **Для продавцов Market Yandex Go** недоступны модели DBS и Экспресс.
+
+
       Обязательный параметр, если не указан параметр `campaignId`. Совместное
       использование параметров приведет к ошибке.
     $ref: ./SellingProgramType.yaml
   frequency:
     description: Частота выплат.
     $ref: ./PaymentFrequencyType.yaml
+  currency:
+    description: |
+      Валюта, в которой рассчитывается услуга.
+
+      Значение по умолчанию: `RUR`.
+    $ref: ./CurrencyType.yaml
