@@ -17,12 +17,13 @@ description: >
       При перемещении между складами создаются 2 заявки — `MOVEMENT_SUPPLY` и `MOVEMENT_WITHDRAW`.
   * `ADDITIONAL_SUPPLY` — дополнительная поставка непринятых товаров.
 
-  * `VIRTUAL_DISTRIBUTION_CENTER` — родительская заявка при
-  [мультипоставке](:no-translate[*multisupply]).
+  * `VIRTUAL_DISTRIBUTION_CENTER` — родительская заявка при поставке товаров на
+  склад хранения или [мультипоставке](:no-translate[*multisupply]).
 
-  * `VIRTUAL_DISTRIBUTION_CENTER_CHILD` — дочерняя заявка при
-  [мультипоставке](:no-translate[*multisupply]).
+  * `VIRTUAL_DISTRIBUTION_CENTER_CHILD` — дочерняя заявка при поставке товаров
+  на склад хранения или [мультипоставке](:no-translate[*multisupply]).
 
+      Для нее не возвращается `transitLocation`.
   * `FORCE_PLAN` — автоматическая утилизация по запросу склада.
 
   * `FORCE_PLAN_ANOMALY_PER_SUPPLY` — утилизация непринятых товаров.
