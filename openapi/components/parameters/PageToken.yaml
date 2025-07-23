@@ -11,7 +11,7 @@ description: >
 
 
   Если задан :no-translate[`page_token`] и в запросе есть параметры
-  :no-translate[`page_number`] и :no-translate[`page_size`], они игнорируются.
+  :no-translate[`page`] и :no-translate[`pageSize`], они игнорируются.
 in: query
 required: false
 example: eyBuZXh0SWQ6IDIzNDIgfQ==

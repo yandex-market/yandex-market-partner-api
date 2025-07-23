@@ -16,11 +16,11 @@ description: >
   Номер страницы результатов.
 
 
-  Используется вместе с параметром :no-translate[`page_size`].
+  Используется вместе с параметром :no-translate[`pageSize`].
 
 
-  :no-translate[`page_number`] игнорируется, если задан
-  :no-translate[`page_token`] или :no-translate[`limit`].
+  :no-translate[`page`] игнорируется, если задан :no-translate[`page_token`] или
+  :no-translate[`limit`].
 in: query
 required: false
 schema:
