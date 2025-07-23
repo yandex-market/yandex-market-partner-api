@@ -21,7 +21,8 @@ properties:
   renewalEnabled:
     description: >
       Включен ли автоматический перенос ассортимента между акциями «Бестселлеры
-      Маркета».
+      Маркета». О том, как это работает, читайте [в Справке Маркета для
+      продавцов](https://yandex.ru/support/marketplace/ru/marketing/promos/market/bestsellers#next).
 
 
       Параметр возвращается только для текущих и будущих акций «Бестселлеры
