@@ -3,6 +3,7 @@ put:
     - orders
     - fbs
     - dbs
+    - laas
     - express
   x-auth-scopes:
     - all-methods
