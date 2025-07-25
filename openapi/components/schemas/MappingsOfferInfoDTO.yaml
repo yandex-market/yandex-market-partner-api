@@ -95,6 +95,7 @@ properties:
     type: integer
     format: int32
   quantumOfSupply:
+    deprecated: true
     description: >
       Добавочная партия: по сколько единиц товара можно добавлять к минимальному
       количеству `minShipment`.

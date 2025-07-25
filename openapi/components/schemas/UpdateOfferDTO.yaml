@@ -53,6 +53,7 @@ allOf:
         deprecated: true
         $ref: ./BasePriceDTO.yaml
       firstVideoAsCover:
+        deprecated: true
         description: >
           Использовать первое видео в карточке как видеообложку.
 

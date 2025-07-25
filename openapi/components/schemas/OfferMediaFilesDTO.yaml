@@ -3,6 +3,7 @@ description: |
 type: object
 properties:
   firstVideoAsCover:
+    deprecated: true
     description: >
       Использовать первое видео в карточке как видеообложку.
 
