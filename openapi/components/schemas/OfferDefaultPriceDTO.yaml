@@ -8,8 +8,8 @@ allOf:
       minimumForBestseller:
         description: >
           Минимальная цена товара для попадания в акцию «Бестселлеры Маркета».
-          Подробнее об этой акции читайте [в Справке Маркета для
-          продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/bestsellers).
+          Подробнее об этом способе участия читайте [в Справке Маркета для
+          продавцов](https://yandex.ru/support/marketplace/ru/marketing/promos/market/bestsellers#minimum).
 
 
           Передается в методе [POST

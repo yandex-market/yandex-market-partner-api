@@ -6,19 +6,27 @@ allOf:
       minimumForBestseller:
         description: >
           Минимальная цена товара для попадания в акцию «Бестселлеры Маркета».
-          Подробнее об этой акции читайте [в Справке Маркета для
-          продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/bestsellers).
+          Подробнее об этом способе участия читайте [в Справке Маркета для
+          продавцов](https://yandex.ru/support/marketplace/ru/marketing/promos/market/bestsellers#minimum).
 
 
-          Если не передать параметр:
+          При передаче цены ориентируйтесь на значение параметра `maxPromoPrice`
+          (максимально возможная цена для участия в акции) в методе [POST
+          businesses/{businessId}/promos/offers](../../reference/promos/getPromoOffers.md).
 
 
-          * Удалится значение, которое вы указали ранее.
+          Товар не попадет в акцию с помощью этого способа, если:
 
-          * Товар не попадет в акцию «Бестселлеры Маркета» с помощью этого
-          способа. Только через [автоматическое участие](:no-translate[*auto])
-          или [ручное добавление товара в
-          акцию](:no-translate[*updatePromoOffers]).
+
+          * Не передать этот параметр. Удалится значение, которое вы указали
+          ранее.
+
+          * В методе [POST
+          businesses/{businessId}/offer-prices](../../reference/prices/getDefaultPrices.md)
+          для этого товара возвращается параметр `excludedFromBestsellers` со
+          значением `true`.
+
+            Но товар по-прежнему сможет попасть в акцию через [автоматическое участие](:no-translate[*auto]) или [ручное добавление](:no-translate[*updatePromoOffers]).
         type: number
         minimum: 0
         maximum: 100000000
