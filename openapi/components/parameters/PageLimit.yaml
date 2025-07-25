@@ -7,3 +7,4 @@ example: 20
 schema:
   type: integer
   format: int32
+  minimum: 1
