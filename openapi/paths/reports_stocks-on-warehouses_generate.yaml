@@ -41,9 +41,22 @@ post:
     reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
-    {% include notitle
-    [:no-translate[reports]](../../_auto/reports/stocks/stocks_on_warehouses.md)
-    %}
+    {% list tabs %}
+
+
+    - Склад Маркета
+
+      {% include notitle [:no-translate[reports]](../../_auto/reports/stocks/stocks_on_warehouses.md) %}
+
+    - Склад магазина
+
+      {% include notitle [:no-translate[reports]](../../_auto/reports/offers/mass/mass_shared_stocks_business_csv_config.md) %}
+
+    - Все склады магазинов в кабинете, кроме :no-translate[FBY].
+
+      {% include notitle [:no-translate[reports]](../../_auto/reports/offers/stocks_business_config.md) %}
+
+    {% endlist %}
 
 
     |**:no-translate[⚙️] Лимит:** 100 запросов в час|
