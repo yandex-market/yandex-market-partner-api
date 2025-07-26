@@ -6,5 +6,3 @@ type: object
 properties:
   discountParams:
     $ref: ./PromoOfferDiscountParamsDTO.yaml
-  promocodeParams:
-    $ref: ./PromoOfferPromocodeParamsDTO.yaml
