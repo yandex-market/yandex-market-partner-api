@@ -6,9 +6,6 @@ properties:
   price:
     description: Цена на товар в каталоге.
     $ref: ./BasePriceDTO.yaml
-  cofinancePrice:
-    description: Заданная цена для участия в софинансировании скидок.
-    $ref: ./GetPriceDTO.yaml
   competitiveness:
     description: Привлекательность цены на товар.
     $ref: ./PriceCompetitivenessType.yaml

@@ -11,11 +11,6 @@ properties:
     uniqueItems: true
     items:
       $ref: ./ShopSku.yaml
-  cofinancePriceFilter:
-    description: >-
-      Фильтр, выводящий товары, для которых заданы (`SPECIFIED`) или не заданы
-      (`EMPTY`) цены для участия в софинансировании.
-    $ref: ./FieldStateType.yaml
   competitivenessFilter:
     description: >-
       Фильтр, выводящий товары, с привлекательными, умеренными и

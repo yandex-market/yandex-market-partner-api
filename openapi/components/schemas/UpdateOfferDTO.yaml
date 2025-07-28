@@ -49,9 +49,6 @@ allOf:
       additionalExpenses:
         description: Дополнительные расходы на товар. Например, на доставку или упаковку.
         $ref: ./BasePriceDTO.yaml
-      cofinancePrice:
-        deprecated: true
-        $ref: ./BasePriceDTO.yaml
       firstVideoAsCover:
         deprecated: true
         description: >

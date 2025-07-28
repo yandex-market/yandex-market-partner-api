@@ -16,8 +16,6 @@ description: >
 
   * `CERTIFICATES` — номера документов на товар (параметр `certificates`).
 
-  * `COFINANCE_PRICE` — цена для скидок с Маркетом (параметр `cofinancePrice`).
-
   * `COMMODITY_CODES` — товарные коды (параметр `commodityCodes`).
 
   * `CONDITION` — состояние уцененного товара (параметр `condition`).
@@ -65,7 +63,6 @@ enum:
   - BARCODES
   - BOX_COUNT
   - CERTIFICATES
-  - COFINANCE_PRICE
   - COMMODITY_CODES
   - CONDITION
   - CUSTOMS_COMMODITY_CODE
