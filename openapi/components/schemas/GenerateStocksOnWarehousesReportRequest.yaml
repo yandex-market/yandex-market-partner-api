@@ -68,7 +68,7 @@ properties:
       :no-translate[FBY]).
 
 
-      Не передавайте вместе с `businessId`.
+      Передавайте вместе с `businessId`.
     type: array
     nullable: true
     minItems: 1
