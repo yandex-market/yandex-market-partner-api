@@ -55,7 +55,10 @@ properties:
     items:
       $ref: ./OrdersStatsItemDTO.yaml
   initialItems:
-    description: Список товаров в заказе до изменений.
+    description: |
+      Список товаров в заказе.
+
+      Возвращается, только если было изменение количества товаров.
     type: array
     nullable: true
     minItems: 1
