@@ -39,9 +39,15 @@ properties:
       допустимых значений, полученного от Маркета.
 
 
+      Передавайте вместе с `value`.
+
+
       Только для характеристик типа `ENUM`.
     type: integer
     format: int64
   value:
-    description: Значение.
+    description: |
+      Значение.
+
+      Для характеристик типа `ENUM` передавайте вместе с `valueId`.
     type: string
