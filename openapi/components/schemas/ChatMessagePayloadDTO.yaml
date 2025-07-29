@@ -7,7 +7,6 @@ required:
 properties:
   name:
     description: Название файла.
-    minLength: 1
     type: string
   url:
     description: Ссылка для скачивания файла.
