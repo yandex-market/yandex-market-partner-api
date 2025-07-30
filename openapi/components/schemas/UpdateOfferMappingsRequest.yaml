@@ -3,7 +3,7 @@ required:
   - offerMappings
 properties:
   offerMappings:
-    description: Перечень товаров, которые нужно добавить или обновить.
+    description: "Список товаров, которые нужно добавить или обновить.\n\n{% note warning \"Скоро мы уменьшим максимальное количество товаров в запросе\" %}\n\nУже сейчас не передавайте больше 100.\n\n{% endnote %}\n\n\_\n"
     type: array
     minItems: 1
     maxItems: 500
