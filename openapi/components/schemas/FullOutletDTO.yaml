@@ -14,11 +14,13 @@ allOf:
       region:
         $ref: ./RegionDTO.yaml
       shopOutletId:
-        description: Идентификатор точки продаж, заданный магазином.
+        description: "{% note warning \"Вместо него используйте `shopOutletCode`.\" %}\n\n\_\n\n{% endnote %}\n\nИдентификатор точки продаж, заданный магазином.\n"
         type: string
+        deprecated: true
       workingTime:
-        description: Рабочее время.
+        description: "{% note warning \"Вместо него используйте `workingSchedule`.\" %}\n\n\_\n\n{% endnote %}\n\nРабочее время.\n"
         type: string
+        deprecated: true
       moderationReason:
         description: Статус модерации.
         type: string
