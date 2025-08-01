@@ -41,8 +41,6 @@ paths:
     $ref: paths/campaigns_campaignId.yaml
   /campaigns/{campaignId}/settings:
     $ref: paths/campaigns_campaignId_settings.yaml
-  /campaigns/{campaignId}/region:
-    $ref: paths/campaigns_campaignId_region.yaml
   /campaigns/{campaignId}/orders/{orderId}:
     $ref: paths/campaigns_campaignId_orders_orderId.yaml
   /campaigns/{campaignId}/orders:
