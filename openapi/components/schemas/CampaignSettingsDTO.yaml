@@ -17,6 +17,7 @@ properties:
       * `false` — магазин не размещен на сайтах партнеров Яндекс Дистрибуции.
       * `true` — магазин размещен на сайтах партнеров Яндекс Дистрибуции.
     type: boolean
+    deprecated: true
   showInPremium:
     description: >
       Признак показа предложений магазина в блоке над результатами поиска
@@ -28,6 +29,7 @@ properties:
 
       * `true` — предложения показываются в блоке cпецразмещения.
     type: boolean
+    deprecated: true
   useOpenStat:
     description: |
       Признак использования внешней интернет-статистики.
@@ -35,5 +37,6 @@ properties:
       * `false` — внешняя интернет-статистика не используется.
       * `true` — внешняя интернет-статистика используется.
     type: boolean
+    deprecated: true
   localRegion:
     $ref: ./CampaignSettingsLocalRegionDTO.yaml

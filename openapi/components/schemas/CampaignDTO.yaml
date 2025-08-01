@@ -2,7 +2,7 @@ description: Информация о магазине.
 type: object
 properties:
   domain:
-    description: URL магазина.
+    description: Название магазина.
     type: string
   id:
     description: >
@@ -24,6 +24,7 @@ properties:
     description: Идентификатор плательщика в Яндекс Балансе.
     type: integer
     format: int64
+    deprecated: true
   business:
     $ref: ./BusinessDTO.yaml
   placementType:
