@@ -88,6 +88,15 @@ get:
     campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
 
 
+    {% note warning "Ограничение для параметра `limit`" %}
+
+
+    Не передавайте значение больше 50.
+
+
+    {% endnote %}
+
+
     |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
 
     |-|
