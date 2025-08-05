@@ -21,25 +21,21 @@ properties:
     example: 65.55
     type: number
     minimum: 0
-    exclusiveMinimum: true
   width:
     description: |
       Ширина упаковки в см.
     example: 50.7
     type: number
     minimum: 0
-    exclusiveMinimum: true
   height:
     description: |
       Высота упаковки в см.
     example: 20
     type: number
     minimum: 0
-    exclusiveMinimum: true
   weight:
     description: |
       Вес товара в кг с учетом упаковки (брутто).
     example: 1.001
     type: number
     minimum: 0
-    exclusiveMinimum: true

@@ -12,4 +12,4 @@ properties:
     description: |
       Название инструкции, которое будет отображаться на карточке товара.
     type: string
-    maxLength: 200
+    maxLength: 500

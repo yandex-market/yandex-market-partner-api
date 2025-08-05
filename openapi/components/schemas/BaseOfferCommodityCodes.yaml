@@ -1,0 +1,7 @@
+description: |
+  Товарные коды.
+type: array
+nullable: true
+minItems: 1
+items:
+  $ref: ./CommodityCodeDTO.yaml

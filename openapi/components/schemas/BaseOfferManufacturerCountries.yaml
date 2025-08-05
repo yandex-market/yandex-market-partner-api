@@ -1,0 +1,13 @@
+description: >
+  Страна, где был произведен товар.
+
+
+  Записывайте названия стран так, как они записаны в
+  [списке](https://yastatic.net/s3/doc-binary/src/support/market/ru/countries.xlsx).
+type: array
+nullable: true
+minItems: 1
+uniqueItems: true
+items:
+  type: string
+  example: Россия

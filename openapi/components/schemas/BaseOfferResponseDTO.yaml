@@ -6,7 +6,25 @@ properties:
   offerId:
     $ref: ./ShopSku.yaml
   name:
-    $ref: ./OfferName.yaml
+    description: >
+      Составляйте название по схеме: тип + бренд или производитель + модель +
+      особенности, если есть (например, цвет, размер или вес) и количество в
+      упаковке.
+
+
+      Не включайте в название условия продажи (например, «скидка», «бесплатная
+      доставка» и т. д.), эмоциональные характеристики («хит», «супер» и т. д.).
+      Не пишите слова большими буквами — кроме устоявшихся названий брендов и
+      моделей.
+
+
+      Оптимальная длина — 50–60 символов.
+
+
+      [Рекомендации и
+      правила](https://yandex.ru/support/marketplace/assortment/fields/title.html)
+    example: Ударная дрель Makita HP1630, 710 Вт
+    type: string
   marketCategoryId:
     $ref: ./PartnerMarketCategoryId.yaml
   category:
@@ -59,7 +77,6 @@ properties:
     type: array
     nullable: true
     minItems: 1
-    maxItems: 30
     uniqueItems: false
     items:
       type: string
@@ -108,7 +125,6 @@ properties:
     type: array
     nullable: true
     minItems: 1
-    maxItems: 6
     uniqueItems: false
     items:
       type: string
@@ -118,7 +134,6 @@ properties:
     type: array
     nullable: true
     minItems: 1
-    maxItems: 6
     items:
       $ref: ./OfferManualDTO.yaml
   vendor:
@@ -126,7 +141,40 @@ properties:
   barcodes:
     $ref: ./OfferBarcodes.yaml
   description:
-    $ref: ./OfferDescription.yaml
+    description: >
+      Подробное описание товара: например, его преимущества и особенности.
+
+
+      Не давайте в описании инструкций по установке и сборке. Не используйте
+      слова «скидка», «распродажа», «дешевый», «подарок» (кроме подарочных
+      категорий), «бесплатно», «акция», «специальная цена», «новинка», «new»,
+      «аналог», «заказ», «хит». Не указывайте никакой контактной информации и не
+      давайте ссылок.
+
+
+      Для форматирования текста можно использовать теги HTML:
+
+
+      * \<h>, \<h1>, \<h2> и так далее — для заголовков;
+
+      * \<br> и \<p> — для переноса строки;
+
+      * \<ol> — для нумерованного списка;
+
+      * \<ul> — для маркированного списка;
+
+      * \<li> — для создания элементов списка (должен находиться внутри \<ol>
+      или \<ul>);
+
+      * \<div> — поддерживается, но не влияет на отображение текста.
+
+
+      Оптимальная длина — 400–600 символов.
+
+
+      [Рекомендации и
+      правила](https://yandex.ru/support/marketplace/assortment/fields/description.html)
+    type: string
   manufacturerCountries:
     $ref: ./BaseOfferManufacturerCountries.yaml
   weightDimensions:
@@ -192,7 +240,6 @@ properties:
     type: array
     nullable: true
     minItems: 1
-    maxItems: 6
     uniqueItems: true
     items:
       type: string

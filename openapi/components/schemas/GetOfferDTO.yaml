@@ -1,7 +1,7 @@
 description: Параметры товара.
 type: object
 allOf:
-  - $ref: ./BaseOfferDTO.yaml
+  - $ref: ./BaseOfferResponseDTO.yaml
   - properties:
       basicPrice:
         description: |
