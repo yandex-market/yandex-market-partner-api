@@ -27,9 +27,6 @@ description: >
 
   * `DOWNLOADABLE` — признак цифрового товара (параметр `downloadable`).
 
-  * `FIRST_VIDEO_AS_COVER` — использование первого видео в карточке как
-  видеообложки (параметр `firstVideoAsCover`).
-
   * `GUARANTEE_PERIOD` — гарантийный срок (параметр `guaranteePeriod`).
 
   * `LIFE_TIME` — срок службы (параметр `lifeTime`).
@@ -68,7 +65,6 @@ enum:
   - CUSTOMS_COMMODITY_CODE
   - DESCRIPTION
   - DOWNLOADABLE
-  - FIRST_VIDEO_AS_COVER
   - GUARANTEE_PERIOD
   - LIFE_TIME
   - MANUALS
