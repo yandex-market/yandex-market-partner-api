@@ -7,3 +7,10 @@ properties:
   mapping:
     description: Информация о карточке товара на Маркете.
     $ref: ./GetMappingDTO.yaml
+  showcaseUrls:
+    description: Ссылки на один и тот же товар на разных витринах Маркета.
+    type: array
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./ShowcaseUrlDTO.yaml

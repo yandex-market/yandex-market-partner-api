@@ -1,0 +1,12 @@
+description: Ссылка на товар на витрине и ее тип.
+type: object
+required:
+  - showcaseType
+  - showcaseUrl
+properties:
+  showcaseType:
+    description: Тип витрины.
+    $ref: ./ShowcaseType.yaml
+  showcaseUrl:
+    description: Ссылка на товар.
+    type: string

@@ -1,0 +1,14 @@
+description: >
+  Тип витрины:
+
+
+  * `B2B` — [Яндекс Маркет для бизнеса](https://business.market.yandex.ru/)
+  (товары для юридических лиц и ИП). Подробнее о сервисе читайте в
+  [Справке](https://yandex.ru/support/market-for-enterprise/ru/).
+
+  * `B2C` — [основная витрина Маркета](https://market.yandex.ru/) (товары для
+  физических лиц).
+type: string
+enum:
+  - B2B
+  - B2C
