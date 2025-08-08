@@ -4,16 +4,4 @@ allOf:
   - $ref: ./BasePriceDTO.yaml
   - properties:
       discountBase:
-        description: >
-          Зачеркнутая цена.
-
-
-          Число должно быть целым. Вы можете указать цену со скидкой от 5 до
-          99%.
-
-
-          Передавайте этот параметр при каждом обновлении цены, если
-          предоставляете скидку на товар.
-        type: number
-        minimum: 0
-        exclusiveMinimum: true
+        $ref: ./DiscountBase.yaml

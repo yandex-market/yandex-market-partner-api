@@ -4,17 +4,10 @@ properties:
   value:
     description: Цена на товар.
     type: number
+    minimum: 0
+    exclusiveMinimum: true
   discountBase:
-    description: >
-      Цена на товар без скидки.
-
-
-      Число должно быть целым. Вы можете указать цену со скидкой от 5 до 99%.
-
-
-      Передавайте этот параметр при каждом обновлении цены, если предоставляете
-      скидку на товар.
-    type: number
+    $ref: ./DiscountBase.yaml
   currencyId:
     description: |
       Валюта, в которой указана цена на товар.
