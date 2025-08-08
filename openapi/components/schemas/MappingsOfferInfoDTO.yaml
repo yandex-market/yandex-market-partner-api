@@ -36,7 +36,7 @@ properties:
     minItems: 1
     uniqueItems: true
     items:
-      type: string
+      $ref: ./Url.yaml
   pictures:
     description: >
       Ссылки (:no-translate[URL]) изображений товара в хорошем качестве.
@@ -52,7 +52,7 @@ properties:
     maxItems: 30
     uniqueItems: false
     items:
-      type: string
+      $ref: ./Url.yaml
   manufacturer:
     description: >
       Изготовитель товара: компания, которая произвела товар, ее адрес и

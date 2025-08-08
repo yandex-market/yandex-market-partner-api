@@ -79,7 +79,7 @@ properties:
     minItems: 1
     uniqueItems: false
     items:
-      type: string
+      $ref: ./Url.yaml
   videos:
     description: >
       Ссылки (URL) на видео товара.
@@ -127,7 +127,7 @@ properties:
     minItems: 1
     uniqueItems: false
     items:
-      type: string
+      $ref: ./Url.yaml
   manuals:
     description: |
       Список инструкций по использованию товара.

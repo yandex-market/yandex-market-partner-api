@@ -22,7 +22,7 @@ properties:
       Соответствует URL, по которому выполняется запрос [GET
       campaigns/{campaignId}/orders/{orderId}/delivery/labels](../../reference/orders/generateOrderLabels.md).
     deprecated: true
-    type: string
+    $ref: ./Url.yaml
   parcelBoxLabels:
     description: Информация на ярлыке.
     type: array

@@ -6,8 +6,7 @@ description: |
 properties:
   url:
     description: Ссылка на инструкцию.
-    type: string
-    maxLength: 512
+    $ref: ./Url.yaml
   title:
     description: |
       Название инструкции, которое будет отображаться на карточке товара.

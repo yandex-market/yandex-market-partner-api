@@ -10,7 +10,7 @@ properties:
     type: string
   url:
     description: Ссылка для скачивания файла.
-    type: string
+    $ref: ./Url.yaml
   size:
     description: Размер файла в байтах.
     type: integer

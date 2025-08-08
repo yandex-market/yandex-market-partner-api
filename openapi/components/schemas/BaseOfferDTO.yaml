@@ -20,11 +20,7 @@ properties:
       **Требования к ссылкам**
 
 
-      * Ссылок может быть до 30.
-
       * Указывайте ссылку целиком, включая протокол http или https.
-
-      * Максимальная длина — 512 символов.
 
       * Русские буквы в URL можно.
 
@@ -62,7 +58,7 @@ properties:
     maxItems: 30
     uniqueItems: false
     items:
-      type: string
+      $ref: ./Url.yaml
   videos:
     description: >
       Ссылки (URL) на видео товара.
@@ -72,8 +68,6 @@ properties:
 
 
       * Указывайте ссылку целиком, включая протокол http или https.
-
-      * Максимальная длина — 512 символов.
 
       * Русские буквы в URL можно.
 
@@ -111,7 +105,7 @@ properties:
     maxItems: 6
     uniqueItems: false
     items:
-      type: string
+      $ref: ./Url.yaml
   manuals:
     description: |
       Список инструкций по использованию товара.

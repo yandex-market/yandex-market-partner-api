@@ -62,4 +62,4 @@ properties:
     minItems: 1
     uniqueItems: true
     items:
-      type: string
+      $ref: ./Url.yaml

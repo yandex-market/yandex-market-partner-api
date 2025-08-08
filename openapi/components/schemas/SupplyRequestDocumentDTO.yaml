@@ -8,8 +8,8 @@ properties:
   type:
     $ref: ./SupplyRequestDocumentType.yaml
   url:
-    type: string
     description: Ссылка на документ.
+    $ref: ./Url.yaml
   createdAt:
     type: string
     format: date-time

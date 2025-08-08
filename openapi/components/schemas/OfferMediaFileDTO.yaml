@@ -5,7 +5,7 @@ properties:
   url:
     description: |
       Ссылка на медиафайл.
-    type: string
+    $ref: ./Url.yaml
   title:
     description: |
       Название медиафайла.
