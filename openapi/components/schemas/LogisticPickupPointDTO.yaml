@@ -5,7 +5,6 @@ properties:
     type: integer
     format: int64
     description: Идентификатор пункта вывоза.
-    deprecated: true
   name:
     type: string
     description: Название пункта вывоза.
