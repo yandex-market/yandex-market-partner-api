@@ -27,7 +27,9 @@ properties:
     nullable: true
     items:
       type: integer
-      format: int64
+      format: int32
+      minimum: 0
+      exclusiveMinimum: true
   offerIds:
     description: Идентификаторы товаров.
     type: array

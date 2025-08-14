@@ -26,3 +26,5 @@ description: >
   categories/tree](../../reference/categories/getCategoriesTree.md).
 type: integer
 format: int64
+minimum: 0
+exclusiveMinimum: true

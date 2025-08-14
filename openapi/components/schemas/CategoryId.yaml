@@ -10,4 +10,5 @@ description: >
   categories/tree](../../reference/categories/getCategoriesTree.md).
 format: int32
 type: integer
-minimum: 1
+minimum: 0
+exclusiveMinimum: true

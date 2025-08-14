@@ -39,7 +39,9 @@ properties:
     uniqueItems: true
     items:
       type: integer
-      format: int64
+      format: int32
+      minimum: 0
+      exclusiveMinimum: true
   creationDateFrom:
     description: |
       Фильтр по времени появления предложения — начало периода.

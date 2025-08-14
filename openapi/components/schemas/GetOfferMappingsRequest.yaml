@@ -30,6 +30,9 @@ properties:
     uniqueItems: true
     items:
       type: integer
+      format: int32
+      minimum: 0
+      exclusiveMinimum: true
   vendorNames:
     description: Фильтр по брендам.
     type: array

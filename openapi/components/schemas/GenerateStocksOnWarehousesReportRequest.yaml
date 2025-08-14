@@ -72,7 +72,9 @@ properties:
     uniqueItems: true
     items:
       type: integer
-      format: int64
+      format: int32
+      minimum: 0
+      exclusiveMinimum: true
   hasStocks:
     description: Фильтр по наличию остатков (кроме модели :no-translate[FBY]).
     type: boolean
