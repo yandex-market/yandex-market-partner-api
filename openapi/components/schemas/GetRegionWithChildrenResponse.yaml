@@ -3,4 +3,4 @@ properties:
   pager:
     $ref: ./FlippingPagerDTO.yaml
   regions:
-    $ref: ./RegionDTO.yaml
+    $ref: ./RegionWithChildrenDTO.yaml

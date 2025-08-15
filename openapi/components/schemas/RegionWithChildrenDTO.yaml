@@ -1,0 +1,12 @@
+description: Информация о родительском и дочерних регионах.
+type: object
+allOf:
+  - $ref: ./RegionDTO.yaml
+  - properties:
+      children:
+        description: Дочерние регионы.
+        type: array
+        nullable: true
+        minItems: 1
+        items:
+          $ref: ./RegionDTO.yaml
