@@ -213,6 +213,8 @@ paths:
     $ref: paths/reports_shows-sales_generate.yaml
   /reports/competitors-position/generate:
     $ref: paths/reports_competitors-position_generate.yaml
+  /reports/goods-prices/generate:
+    $ref: paths/reports_goods-prices_generate.yaml
   /reports/goods-turnover/generate:
     $ref: paths/reports_goods-turnover_generate.yaml
   /reports/boost-consolidated/generate:

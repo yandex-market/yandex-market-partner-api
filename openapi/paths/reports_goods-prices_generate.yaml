@@ -1,0 +1,81 @@
+post:
+  tags:
+    - reports
+    - fby
+    - fbs
+    - dbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - finance-and-accounting
+    - pricing
+    - promotion
+  operationId: generateGoodsPricesReport
+  summary: Отчет «Цены»
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/generateGoodsPricesReport.md)
+    %}
+
+
+    Запускает генерацию отчета «Цены».
+
+
+    **Какая информация вернется:**
+
+
+    * если передать `businessId` — по единым ценам кабинета;
+
+    * если [включены магазинные цены](*onlyDefaultPrice-false) и указать
+    `campaignId` — по ценам в соответствующем магазине.
+
+
+    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
+    запроса [GET
+    reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+
+    {% list tabs %}
+
+
+    - Цены во всех магазинах кабинета
+
+      {% include notitle [:no-translate[reports]](../../_auto/reports/prices/mass_assortment_business_price_v2.md) %}
+
+    - Магазинные цены
+
+      {% include notitle [:no-translate[reports]](../../_auto/reports/prices/mass_assortment_price_v2.md) %}
+
+    {% endlist %}
+
+
+    |**:no-translate[⚙️] Лимит:** 100 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/ReportFormat.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GenerateGoodsPricesReportRequest.yaml
+  responses:
+    '200':
+      description: >-
+        В ответ приходит идентификатор, который позволяет узнавать статус
+        генерации и скачать готовый отчет.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GenerateReportResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

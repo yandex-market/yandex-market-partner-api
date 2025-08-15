@@ -18,6 +18,16 @@ post:
     %}
 
 
+    {% note warning "Какой метод использовать вместо устаревшего" %}
+
+
+    [POST
+    reports/goods-prices/generate](../../reference/reports/generateGoodsPricesReport.md)
+
+
+    {% endnote %}
+
+
     Запускает генерацию отчета «Цены на рынке».
 
 
@@ -48,6 +58,7 @@ post:
     |**:no-translate[⚙️] Лимит:** 100 запросов в час|
 
     |-|
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:
