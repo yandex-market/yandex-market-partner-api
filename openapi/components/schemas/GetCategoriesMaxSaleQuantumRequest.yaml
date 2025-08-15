@@ -6,9 +6,7 @@ required:
   - marketCategoryIds
 properties:
   marketCategoryIds:
-    description: >-
-      Идентификаторы листовых категории на Маркете — тех, у которых нет дочерних
-      категорий.
+    description: Идентификаторы [листовых категорий](*list-categories) на Маркете.
     type: array
     uniqueItems: true
     minItems: 1
