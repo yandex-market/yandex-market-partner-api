@@ -5,7 +5,7 @@ required:
   - id
 properties:
   type:
-    $ref: ./ChatContextType.yaml
+    $ref: ./ChatContextIdentifiableType.yaml
   id:
     description: Идентификатор заказа или возврата.
     type: integer

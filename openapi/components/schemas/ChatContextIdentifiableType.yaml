@@ -1,0 +1,15 @@
+description: >
+  Тип чата:
+
+
+  * `ORDER` — по заказам. Подробнее о чатах по заказам читайте в [Справке
+  Маркета для
+  продавцов](https://yandex.ru/support/marketplace/ru/orders/communication/about-orders).
+
+  * `RETURN` — по возвратам (:no-translate[FBS] и Экспресс). Подробнее о чатах
+  по возвратам читайте в [Справке Маркета для
+  продавцов](https://yandex.ru/support/marketplace/ru/orders/communication/about-orders).
+type: string
+enum:
+  - ORDER
+  - RETURN
