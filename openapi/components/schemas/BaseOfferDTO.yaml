@@ -126,6 +126,8 @@ properties:
   weightDimensions:
     description: |
       Габариты упаковки и вес товара.
+
+      Должны быть больше 0.
     $ref: ./OfferWeightDimensionsDTO.yaml
   vendorCode:
     $ref: ./OfferVendorCode.yaml
