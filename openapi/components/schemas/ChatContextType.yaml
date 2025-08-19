@@ -2,16 +2,17 @@ description: >
   Тип чата:
 
 
-  * `ORDER` — по заказам. Подробнее о чатах по заказам читайте в [Справке
-  Маркета для
-  продавцов](https://yandex.ru/support/marketplace/ru/orders/communication/about-orders).
-
-  * `RETURN` — по возвратам (:no-translate[FBS] и Экспресс). Подробнее о чатах
-  по возвратам читайте в [Справке Маркета для
-  продавцов](https://yandex.ru/support/marketplace/ru/orders/communication/about-orders).
-
-  * `DIRECT` — чат, который начал покупатель. Подробнее о таком типе читайте в
+  * :no-translate[`ORDER`] — по заказам. Подробнее о чатах по заказам читайте в
   [Справке Маркета для
+  продавцов](https://yandex.ru/support/marketplace/ru/orders/communication/about-orders).
+
+  * :no-translate[`RETURN`] — по возвратам (:no-translate[FBY],
+  :no-translate[FBS] и Экспресс). Подробнее о чатах по возвратам читайте в
+  [Справке Маркета для
+  продавцов](https://yandex.ru/support/marketplace/ru/orders/communication/about-orders).
+
+  * :no-translate[`DIRECT`] — чат, который начал покупатель. Подробнее о таком
+  типе читайте в [Справке Маркета для
   продавцов](https://yandex.ru/support/marketplace/ru/orders/communication/with-users).
 type: string
 enum:

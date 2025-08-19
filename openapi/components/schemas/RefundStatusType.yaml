@@ -35,20 +35,20 @@ description: >
   * `REJECTED` — возврат отклонен модерацией или в ПВЗ.
 
 
-  * `PREMODERATION_DISPUTE` — по возврату открыт спор (:no-translate[FBS] и
-  Экспресс).
+  * :no-translate[`PREMODERATION_DISPUTE`] — по возврату открыт спор
+  (:no-translate[FBY], :no-translate[FBS] и Экспресс).
 
 
-  * `PREMODERATION_DECISION_WAITING` — ожидает решения (:no-translate[FBS] и
-  Экспресс).
+  * :no-translate[`PREMODERATION_DECISION_WAITING`] — ожидает решения
+  (:no-translate[FBY], :no-translate[FBS] и Экспресс).
 
 
-  * `PREMODERATION_DECISION_MADE` — по возврату принято решение
-  (:no-translate[FBS] и Экспресс).
+  * :no-translate[`PREMODERATION_DECISION_MADE`] — по возврату принято решение
+  (:no-translate[FBY], :no-translate[FBS] и Экспресс).
 
 
-  * `PREMODERATION_SELECT_DELIVERY` — пользователь выбирает способ доставки
-  (:no-translate[FBS] и Экспресс).
+  * :no-translate[`PREMODERATION_SELECT_DELIVERY`] — пользователь выбирает
+  способ доставки (:no-translate[FBY], :no-translate[FBS] и Экспресс).
 
 
   * `UNKNOWN` — неизвестный статус.
