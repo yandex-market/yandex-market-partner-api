@@ -63,7 +63,7 @@ get:
           format: int64
           example: 123543
     - description: |
-        Статусы невыкупов или возвратов — для фильтрации результатов.
+        Фильтр по статусам возврата денег за возвраты.
 
         Несколько статусов перечисляются через запятую.
       in: query
@@ -75,6 +75,19 @@ get:
         uniqueItems: true
         items:
           $ref: ../components/schemas/RefundStatusType.yaml
+    - description: |
+        Фильтр по логистическим статусам невыкупов и возвратов.
+
+        Несколько статусов перечисляются через запятую.
+      in: query
+      name: shipmentStatuses
+      required: false
+      example: READY_FOR_PICKUP,IN_TRANSIT
+      schema:
+        type: array
+        uniqueItems: true
+        items:
+          $ref: ../components/schemas/ReturnShipmentStatusType.yaml
     - description: |
         Тип заказа для фильтрации:
 
