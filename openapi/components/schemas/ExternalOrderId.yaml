@@ -1,0 +1,5 @@
+description: >-
+  Внешний идентификатор заказа, который вы передали в [POST
+  campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+type: string
+minLength: 1
