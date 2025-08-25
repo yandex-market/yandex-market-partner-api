@@ -29,3 +29,5 @@ properties:
     $ref: ./BusinessDTO.yaml
   placementType:
     $ref: ./PlacementType.yaml
+  apiAvailability:
+    $ref: ./ApiAvailabilityStatusType.yaml

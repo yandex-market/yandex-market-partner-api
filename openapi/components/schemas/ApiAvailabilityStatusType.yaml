@@ -1,0 +1,12 @@
+description: >
+  Возможность использовать API:
+
+
+  * `AVAILABLE` — методы API доступны для выполнения запросов.
+
+  * `DISABLED_BY_INACTIVITY` — методы API недоступны из-за [неактивности
+  магазина или кабинета](*inactivity).
+type: string
+enum:
+  - AVAILABLE
+  - DISABLED_BY_INACTIVITY
