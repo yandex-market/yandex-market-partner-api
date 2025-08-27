@@ -2,7 +2,6 @@ description: Идентификатор товара и статус прове�
 type: object
 required:
   - id
-  - uin
 properties:
   id:
     description: Идентификатор товара в заказе.
@@ -11,5 +10,7 @@ properties:
   uin:
     description: Статусы проверки УИНов.
     type: array
+    nullable: true
+    minItems: 1
     items:
       $ref: ./UinDTO.yaml
