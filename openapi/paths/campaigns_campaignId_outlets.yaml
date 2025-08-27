@@ -96,6 +96,7 @@ get:
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
+    - $ref: ../components/parameters/PageLimit.yaml
     - description: >
         Идентификатор региона.
 
