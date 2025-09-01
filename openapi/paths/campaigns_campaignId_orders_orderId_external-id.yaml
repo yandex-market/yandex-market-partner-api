@@ -8,30 +8,8 @@ post:
     - all-methods
     - inventory-and-order-processing
   operationId: updateExternalOrderId
-  summary: Передача или изменение внешнего идентификатора заказа
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateExternalOrderId.md)
-    %}
-
-
-    Передает Маркету идентификатор заказа в системе магазина.
-
-
-    Этот идентификатор отражается в документах отгрузки: акте приема-передачи,
-    листе сборки и ярлыках.
-
-
-    Передать данные можно до перехода заказа в статус `PROCESSING` с подстатусом
-    `READY_TO_SHIP`.
-
-
-    Не передавайте внешний идентификатор заказа больше одного раза.
-
-
-    |**:no-translate[⚙️] Лимит:** 10 000 запросов в час|
-
-    |-|
+  summary: Передача внешнего идентификатора заказа
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/updateExternalOrderId.md) %}\n\nПередает Маркету идентификатор заказа в системе магазина.\n\nЕго нельзя передавать:\n\n* больше одного раза;\n* после перехода заказа в статус `PROCESSING` с подстатусом `READY_TO_SHIP`.\n\nЭтот идентификатор отражается в документах отгрузки: акте приема-передачи, листе сборки и ярлыках.\n\n|**:no-translate[⚙️] Лимит:** 10\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml
