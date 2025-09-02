@@ -1,0 +1,10 @@
+type: object
+description: Результат получения статусов операций.
+required:
+  - operations
+properties:
+  operations:
+    description: Список операций.
+    type: array
+    items:
+      $ref: ./OperationResultDTO.yaml

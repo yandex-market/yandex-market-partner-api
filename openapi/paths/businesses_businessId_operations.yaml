@@ -1,0 +1,53 @@
+post:
+  tags:
+    - operations
+    - fbs
+    - fby
+    - dbs
+    - express
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+    - communication
+    - finance-and-accounting
+  operationId: getOperations
+  summary: Получение статусов асинхронных операций
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getOperations.md) %}
+
+
+    Позволяет получить статусы асинхронных операций по их идентификаторам.
+
+
+    |**:no-translate[⚙️] Лимит:** 1 000 товаров в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetOperationsRequest.yaml
+  responses:
+    '200':
+      description: Статусы операций успешно получены
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOperationsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

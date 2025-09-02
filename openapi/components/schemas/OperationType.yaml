@@ -1,0 +1,19 @@
+description: |
+  Тип асинхронной операции:
+
+  * `ORDER_RECIPIENT_UPDATE` — изменение информации о получателе.
+
+  * `ORDER_DELIVERY_DATES_UPDATE` — изменение интервала дат доставки.
+
+  * `ORDER_STATUS_UPDATE` — обновление статуса заказа.
+
+  * `RETURN_CREATION` — создание возврата.
+
+  * `RETURN_CANCELLATION` — отмена возврата.
+type: string
+enum:
+  - ORDER_RECIPIENT_UPDATE
+  - ORDER_DELIVERY_DATES_UPDATE
+  - ORDER_STATUS_UPDATE
+  - RETURN_CREATION
+  - RETURN_CANCELLATION

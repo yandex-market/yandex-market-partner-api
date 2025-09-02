@@ -1,0 +1,17 @@
+type: object
+description: Запрос на получение статусов операций.
+required:
+  - operationType
+  - operationIds
+properties:
+  operationType:
+    $ref: ./OperationType.yaml
+  operationIds:
+    description: |
+      Список идентификаторов операций для получения статусов.
+    type: array
+    minItems: 1
+    maxItems: 100
+    uniqueItems: true
+    items:
+      $ref: ./OperationId.yaml
