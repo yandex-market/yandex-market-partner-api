@@ -1,7 +1,0 @@
-type: object
-description: Ответ с статусами операций.
-allOf:
-  - $ref: ./ApiResponse.yaml
-  - properties:
-      result:
-        $ref: ./GetOperationsResultDTO.yaml

@@ -331,8 +331,6 @@ paths:
     $ref: paths/campaigns_campaignId_supply-requests_documents.yaml
   /auth/token:
     $ref: paths/auth_token.yaml
-  /businesses/{businessId}/operations:
-    $ref: paths/businesses_businessId_operations.yaml
 components:
   securitySchemes:
     ApiKey:

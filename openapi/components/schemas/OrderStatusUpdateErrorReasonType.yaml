@@ -1,7 +1,0 @@
-description: |
-  Причина неуспешной смены статуса заказа:
-
-  * `ALREADY_DELIVERED` — заказ уже доставлен.
-type: string
-enum:
-  - ALREADY_DELIVERED

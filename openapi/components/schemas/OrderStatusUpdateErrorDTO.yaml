@@ -1,7 +1,0 @@
-type: object
-description: Ошибка при обновлении статуса заказа.
-required:
-  - reason
-properties:
-  reason:
-    $ref: ./OrderStatusUpdateErrorReasonType.yaml
