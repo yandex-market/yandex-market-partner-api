@@ -39,6 +39,20 @@ properties:
   logisticPickupPoint:
     description: Пункт вывоза.
     $ref: ./LogisticPickupPointDTO.yaml
+  pickupTillDate:
+    description: >
+      Дата, до которой можно забрать товар.
+
+
+      Только для невыкупов и возвратов в логистическом статусе
+      `READY_FOR_PICKUP`.
+
+
+      Формат даты: :no-translate[ISO 8601] со смещением относительно
+      :no-translate[UTC].
+    type: string
+    format: date-time
+    example: '2020-02-02T14:30:30+03:00'
   shipmentRecipientType:
     description: Способ возврата товара покупателем.
     $ref: ./RecipientType.yaml
