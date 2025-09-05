@@ -1,4 +1,12 @@
-description: Идентификатор грузоместа.
+deprecated: true
+description: |
+  { % note warning "Параметр больше не используется" % }
+
+  Передайте любое число, чтобы получился корректный :no-translate[URL].
+
+  { % endnote % }
+
+  Идентификатор грузоместа.
 name: shipmentId
 in: path
 required: true

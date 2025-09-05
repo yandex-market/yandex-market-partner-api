@@ -5,6 +5,7 @@ description: |
 type: object
 properties:
   id:
+    deprecated: true
     description: Идентификатор посылки, присвоенный Маркетом.
     type: integer
     format: int64

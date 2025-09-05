@@ -1,6 +1,11 @@
-description: >
-  Параметр больше не используется. Вставьте любое число — просто чтобы получился
-  корректный :no-translate[URL].
+description: |
+  { % note warning "Параметр больше не используется" % }
+
+  Передайте любое число, чтобы получился корректный :no-translate[URL].
+
+  { % endnote % }
+
+  Идентификатор грузоместа.
 name: shipmentId
 in: path
 required: true
