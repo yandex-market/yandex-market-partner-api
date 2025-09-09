@@ -32,6 +32,8 @@ get:
     |**:no-translate[⚙️] Лимит:** 100 запросов в минуту|
 
     |-|
+  parameters:
+    - $ref: ../components/parameters/GetFulfillmentWarehousesCampaignId.yaml
   responses:
     '200':
       description: Список складов.
