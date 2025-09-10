@@ -22,7 +22,7 @@ get:
 
 
     [POST
-    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md)
+    v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md)
 
 
     {% endnote %}

@@ -25,7 +25,7 @@ post:
 
     Если вам нужно изменить основные параметры товара (название, описание,
     изображения, видео, производитель, штрихкод), воспользуйтесь запросом [POST
-    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
+    v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
 
 
     {% endnote %}

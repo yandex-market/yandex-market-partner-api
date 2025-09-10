@@ -38,7 +38,7 @@ post:
 
     Полученные :no-translate[SKU] можно передать вместе с информацией о ваших
     товарах с помощью запроса [POST
-    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
+    v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
 
 
     В одном запросе можно получить не более 500 рекомендаций.

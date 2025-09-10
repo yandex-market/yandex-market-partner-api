@@ -24,7 +24,7 @@ post:
 
 
     * **Для модели :no-translate[DBS]:** подтвердить решение, переданное в [POST
-    campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision](../../reference/orders/setReturnDecision.md).
+    v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision](../../reference/orders/setReturnDecision.md).
     Для этого используйте запрос без тела.
 
 

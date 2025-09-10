@@ -28,7 +28,7 @@ description: >
 
   Проверить, какие категорийные характеристики доступны для заданной категории,
   и получить их настройки можно с помощью запроса [POST
-  category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters).
+  v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters).
 type: string
 enum:
   - OFFER_NOT_FOUND

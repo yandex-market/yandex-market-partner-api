@@ -104,7 +104,7 @@ get:
         выходных данных будут отображены точки продаж всех дочерних регионов.
 
         Идентификатор региона можно получить c помощью метода [GET
-        regions](../../reference/regions/searchRegionsByName.md).
+        v2/regions](../../reference/regions/searchRegionsByName.md).
       name: region_id
       in: query
       required: false

@@ -3,7 +3,7 @@ description: >
 
 
   Его можно узнать с помощью запроса [:no-translate[GET
-  campaigns]](:no-translate[../../reference/campaigns/getCampaigns.md]) или
+  v2/campaigns]](:no-translate[../../reference/campaigns/getCampaigns.md]) или
   найти в кабинете продавца на Маркете — нажмите на название своего бизнеса и
   перейдите на страницу:
 

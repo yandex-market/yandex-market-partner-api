@@ -23,7 +23,7 @@ get:
 
     Чтобы получить информацию по одному невыкупу или возврату, выполните запрос
     [GET
-    campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).
+    v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).
 
 
     {% note tip "Подключите API-уведомления" %}

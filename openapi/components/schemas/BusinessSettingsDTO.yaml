@@ -7,11 +7,11 @@ properties:
 
 
       * `false` — можно установить цену, которая действует:
-        * во всех магазинах кабинета — [POST businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md);
-        * в конкретном магазине — [POST campaigns/{campaignId}/offer-prices/updates](../../reference/assortment/updatePrices.md).
+        * во всех магазинах кабинета — [POST v2/businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md);
+        * в конкретном магазине — [POST v2/campaigns/{campaignId}/offer-prices/updates](../../reference/assortment/updatePrices.md).
       * `true` — можно установить только цену, которая действует во всех
       магазинах кабинета, — [POST
-      businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
+      v2/businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
     type: boolean
   currency:
     description: >-

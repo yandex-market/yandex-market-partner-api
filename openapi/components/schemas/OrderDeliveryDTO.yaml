@@ -61,7 +61,7 @@ properties:
 
 
       Один раз дату можно поменять с помощью метода [PUT
-      campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit](../../reference/orders/updateOrderStorageLimit.md).
+      v2/campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit](../../reference/orders/updateOrderStorageLimit.md).
     $ref: ./DateDdMmYyyy.yaml
   dispatchType:
     $ref: ./OrderDeliveryDispatchType.yaml

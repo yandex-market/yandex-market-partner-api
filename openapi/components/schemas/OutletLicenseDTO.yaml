@@ -14,7 +14,7 @@ properties:
 
       Параметр указывается, только если нужно изменить информацию о существующей
       лицензии. Ее идентификатор можно узнать с помощью запроса [GET
-      campaigns/{campaignId}/outlets/licenses](../../reference/outlets/getOutletLicenses.md).
+      v2/campaigns/{campaignId}/outlets/licenses](../../reference/outlets/getOutletLicenses.md).
       При передаче информации о новой лицензии указывать идентификатор не нужно.
 
 

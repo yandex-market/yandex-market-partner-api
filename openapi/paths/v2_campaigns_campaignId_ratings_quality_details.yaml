@@ -20,7 +20,7 @@ post:
 
     Возвращает список заказов, которые повлияли на индекс качества магазина.
     Чтобы узнать значение индекса качества, выполните запрос [POST
-    businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).
+    v2/businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).
 
 
     |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|

@@ -38,7 +38,7 @@ properties:
 
       Должно совпадать с названием характеристики на Маркете. Узнать его можно
       из Excel-шаблона категории или через запрос [POST
-      category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
+      v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
     example: Wi-Fi
     type: string
     maxLength: 200

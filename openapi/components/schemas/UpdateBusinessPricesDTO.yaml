@@ -12,7 +12,7 @@ allOf:
 
           При передаче цены ориентируйтесь на значение параметра `maxPromoPrice`
           (максимально возможная цена для участия в акции) в методе [POST
-          businesses/{businessId}/promos/offers](../../reference/promos/getPromoOffers.md).
+          v2/businesses/{businessId}/promos/offers](../../reference/promos/getPromoOffers.md).
 
 
           Товар не попадет в акцию с помощью этого способа, если:
@@ -22,7 +22,7 @@ allOf:
           ранее.
 
           * В методе [POST
-          businesses/{businessId}/offer-prices](../../reference/prices/getDefaultPrices.md)
+          v2/businesses/{businessId}/offer-prices](../../reference/prices/getDefaultPrices.md)
           для этого товара возвращается параметр `excludedFromBestsellers` со
           значением `true`.
 

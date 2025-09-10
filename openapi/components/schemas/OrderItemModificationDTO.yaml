@@ -15,9 +15,9 @@ properties:
 
 
       Получить идентификатор можно с помощью ресурсов [GET
-      campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или
+      v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или
       [GET
-      campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+      v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
 
 
       Обязательный параметр.

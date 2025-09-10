@@ -6,7 +6,7 @@ description: >
 
   Чтобы узнать идентификатор категории, к которой относится интересующий вас
   товар, воспользуйтесь запросом [:no-translate[POST
-  categories/tree]](:no-translate[../../reference/categories/getCategoriesTree.md]).
+  v2/categories/tree]](:no-translate[../../reference/categories/getCategoriesTree.md]).
 required: true
 schema:
   type: integer

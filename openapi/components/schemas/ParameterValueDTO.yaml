@@ -8,7 +8,7 @@ description: >
   * Тип характеристики — `ENUM`.
 
   * В ответе на запрос [POST
-  category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md)
+  v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md)
   у данной характеристики поле `multivalue` имеет значение `true`.
 
 

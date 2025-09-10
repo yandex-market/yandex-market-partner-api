@@ -21,7 +21,7 @@ post:
 
 
     [POST
-    reports/goods-prices/generate](../../reference/reports/generateGoodsPricesReport.md)
+    v2/reports/goods-prices/generate](../../reference/reports/generateGoodsPricesReport.md)
 
 
     {% endnote %}
@@ -54,7 +54,7 @@ post:
 
 
     Установить цены на товары можно с помощью запроса [POST
-    campaigns/{campaignId}/offer-prices/updates](../../reference/assortment/updatePrices.md)
+    v2/campaigns/{campaignId}/offer-prices/updates](../../reference/assortment/updatePrices.md)
     или другими способами: например, указать их в файле с каталогом. Также вы
     можете использовать стратегии для автоматической установки рекомендованных
     цен или минимальных цен на Маркете.

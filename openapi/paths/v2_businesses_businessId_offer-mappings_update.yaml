@@ -32,9 +32,9 @@ post:
 
 
     Список категорий Маркета можно получить с помощью запроса [POST
-    categories/tree](../../reference/categories/getCategoriesTree.md), а
+    v2/categories/tree](../../reference/categories/getCategoriesTree.md), а
     характеристики товаров по категориям с помощью [POST
-    category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
+    v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
 
 
     {% cut "Добавить новый товар" %}
@@ -63,7 +63,7 @@ post:
     Когда вы добавляете товары в каталог, указывайте значения параметров `name`
     и `description` на русском языке. Чтобы на витрине они отображались и на
     другом языке, еще раз выполните запрос `POST
-    businesses/{businessId}/offer-mappings/update`, где укажите:
+    v2/businesses/{businessId}/offer-mappings/update`, где укажите:
 
       * язык в параметре `language`;
       * значения параметров `name` и `description` на указанном языке.

@@ -19,9 +19,9 @@ properties:
 
 
       Его можно узнать с помощью запроса [GET
-      campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете
-      продавца на Маркете — нажмите на название своего бизнеса и перейдите на
-      страницу:
+      v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в
+      кабинете продавца на Маркете — нажмите на название своего бизнеса и
+      перейдите на страницу:
 
         * **Модули и :no-translate[API]** → блок **Передача данных Маркету**.
         * **Лог запросов** → выпадающий список в блоке **Показывать логи**.
@@ -58,7 +58,7 @@ properties:
 
 
       Например, сначала Маркет отключил склад, а затем вы с помощью метода [POST
-      campaigns/{campaignId}/warehouse/status](../../reference/warehouses/updateWarehouseStatus.md).
+      v2/campaigns/{campaignId}/warehouse/status](../../reference/warehouses/updateWarehouseStatus.md).
 
 
       Статус в кабинете — **Отключен Маркетом**, а через API вернется

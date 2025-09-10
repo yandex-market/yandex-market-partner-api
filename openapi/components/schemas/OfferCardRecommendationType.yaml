@@ -13,7 +13,7 @@ description: >
 
   Каждая такая рекомендация относится к **единственному параметру**. Чтобы
   заполнить этот параметр, пользуйтесь запросом [POST
-  businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
+  v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).
 
 
   Рекомендации по заполнению параметров в `updateOfferMappings`:
@@ -66,7 +66,7 @@ description: >
   Каждая такая рекомендация предполагает заполнение **одной или нескольких
   характеристик**. Чтобы узнать, какие именно характеристики нужно заполнить,
   воспользуйтесь запросом [POST
-  category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
+  v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
   Например, если вы получили рекомендацию `MAIN`, нужно заполнить
   характеристики, имеющие `MAIN` в массиве `recommendationTypes`.
 

@@ -4,7 +4,7 @@ description: >
 
   Чтобы узнать идентификатор категории, к которой относится товар,
   воспользуйтесь запросом [POST
-  categories/tree](../../reference/categories/getCategoriesTree.md).
+  v2/categories/tree](../../reference/categories/getCategoriesTree.md).
 
 
   Можно указать несколько идентификаторов в одном параметре, через запятую, или

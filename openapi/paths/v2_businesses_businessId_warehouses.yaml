@@ -20,7 +20,7 @@ get:
 
 
     [POST
-    businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md)
+    v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md)
 
 
     {% endnote %}

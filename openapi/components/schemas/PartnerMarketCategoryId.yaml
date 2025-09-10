@@ -23,7 +23,7 @@ description: >
 
 
   Список категорий Маркета можно получить с помощью запроса  [POST
-  categories/tree](../../reference/categories/getCategoriesTree.md).
+  v2/categories/tree](../../reference/categories/getCategoriesTree.md).
 type: integer
 format: int64
 minimum: 0

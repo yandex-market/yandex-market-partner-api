@@ -16,7 +16,7 @@ properties:
   url:
     description: >
       Соответствует :no-translate[URL], по которому выполняется запрос [GET
-      campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label](../../reference/orders/generateOrderLabel.md).
+      v2/campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label](../../reference/orders/generateOrderLabel.md).
     $ref: ./Url.yaml
   supplierName:
     description: Юридическое название магазина.

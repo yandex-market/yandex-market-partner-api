@@ -10,7 +10,7 @@ properties:
 
 
       Он приходит в ответе на запрос [GET
-      campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
+      v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
       — параметр `id` в `items`.
     type: integer
     format: int64

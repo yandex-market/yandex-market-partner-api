@@ -35,7 +35,7 @@ get:
     [запрос](../../push-notifications/reference/sendNotification.md), когда
     появится новый заказ или изменится его статус. А полную информацию можно
     получить с помощью этого метода или [GET
-    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+    v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
 
 
     [{#T}](../../push-notifications/index.md)
@@ -71,9 +71,9 @@ get:
     Информация о заказах, доставленных или отмененных больше 30 дней назад, не
     возвращается. Ее можно получить с помощью запроса информации об отдельном
     заказе [GET
-    campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
+    v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
     (если у вас есть идентификатор заказа) или запроса отчета по заказам [POST
-    campaigns/{campaignId}/stats/orders](../../reference/stats/getOrdersStats.md).
+    v2/campaigns/{campaignId}/stats/orders](../../reference/stats/getOrdersStats.md).
 
 
     Максимальный диапазон дат за один запрос к ресурсу — 30 дней.
@@ -85,7 +85,7 @@ get:
 
     Получить более подробную информацию о покупателе и его номере телефона можно
     с помощью запроса [GET
-    campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
+    v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
 
 
     {% note warning "Ограничение для параметра `limit`" %}

@@ -18,7 +18,7 @@ post:
 
     Узнать статус генерации и получить ссылку на готовый документ можно с
     помощью запроса [GET
-    reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+    v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
     |**:no-translate[⚙️] Лимит:** 100 запросов в час|

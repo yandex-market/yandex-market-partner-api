@@ -22,7 +22,7 @@ get:
 
 
     Воспользуйтесь запросом [POST
-    campaigns/{campaignId}/orders/{orderId}/business-buyer](../../reference/order-business-information/getOrderBusinessBuyerInfo.md).
+    v2/campaigns/{campaignId}/orders/{orderId}/business-buyer](../../reference/order-business-information/getOrderBusinessBuyerInfo.md).
 
 
     {% endnote %}

@@ -50,7 +50,7 @@ post:
 
 
     Узнать статус генерации и получить ссылку на архив можно с помощью запроса
-    [GET reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+    [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
     |**:no-translate[⚙️] Лимит:** 1 000 запросов в час|

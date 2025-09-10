@@ -20,7 +20,7 @@ post:
 
 
     [POST
-    businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md)
+    v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md)
 
 
     {% endnote %}
@@ -55,7 +55,7 @@ post:
     указан, сотрудники Маркета сами подберут или создадут подходящую карточку
     товара, либо у него появится статус `NEED_CONTENT` (нужно найти карточку или
     создать ее самостоятельно) в выходных данных запроса [POST
-    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
+    v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
 
 
     Перед публикацией товары проходят модерацию. Если в одном из отправленных
@@ -64,7 +64,7 @@ post:
     модерацию. При этом если вы не передадите все обязательные параметры для
     какого‑либо товара, после модерации у него появится статус `NEED_INFO` (в
     описании товара не хватает информации) в выходных данных запроса [POST
-    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
+    v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
 
 
     В одном запросе можно добавить не более 500 товаров.

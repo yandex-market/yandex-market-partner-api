@@ -30,7 +30,7 @@ get:
     [запрос](../../push-notifications/reference/sendNotification.md), когда
     появится новый заказ или изменится его статус. А полную информацию можно
     получить с помощью этого метода или [GET
-    campaigns/{campaignId}/orders](../../reference/orders/getOrders.md).
+    v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md).
 
 
     [{#T}](../../push-notifications/index.md)
@@ -41,7 +41,7 @@ get:
 
     Получить более подробную информацию о покупателе и его номере телефона можно
     с помощью запроса [GET
-    campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
+    v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
 
 
     |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|

@@ -10,7 +10,7 @@ properties:
 
 
       Идентификатор можно получить c помощью запроса [GET
-      regions](../../reference/regions/searchRegionsByName.md).
+      v2/regions](../../reference/regions/searchRegionsByName.md).
 
 
       {% note alert "Типы регионов при создании и редактировании точек продаж"
@@ -20,8 +20,8 @@ properties:
       Указывайте только регионы типов `TOWN` (город), `CITY` (крупный город) и
       `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных
       параметрах `type` запросов [GET
-      regions](../../reference/regions/searchRegionsByName.md) и [GET
-      regions/{regionId}](../../reference/regions/searchRegionsById.md).
+      v2/regions](../../reference/regions/searchRegionsByName.md) и [GET
+      v2/regions/{regionId}](../../reference/regions/searchRegionsById.md).
 
 
       {% endnote %}

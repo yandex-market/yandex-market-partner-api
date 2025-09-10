@@ -10,7 +10,7 @@ properties:
     type: integer
     format: int64
   shipmentDate:
-    description: "День, в который нужно отгрузить заказ службе доставки.\n\nФормат даты: `ДД-ММ-ГГГГ`.\n\nЕсли заказ сделан организацией, параметр не возвращается до согласования даты доставки.\n\n{% cut \"Иногда Маркет может перенести дату отгрузки\" %}\n\nУ таких заказов обновится параметр `updatedAt`. Чтобы найти их, в запросе [GET campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) укажите параметры `updatedAtFrom` и `updatedAtTo`.\n\n{% endcut %}\n\n\_\n"
+    description: "День, в который нужно отгрузить заказ службе доставки.\n\nФормат даты: `ДД-ММ-ГГГГ`.\n\nЕсли заказ сделан организацией, параметр не возвращается до согласования даты доставки.\n\n{% cut \"Иногда Маркет может перенести дату отгрузки\" %}\n\nУ таких заказов обновится параметр `updatedAt`. Чтобы найти их, в запросе [GET v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) укажите параметры `updatedAtFrom` и `updatedAtTo`.\n\n{% endcut %}\n\n\_\n"
     $ref: ./DateDdMmYyyy.yaml
   shipmentTime:
     description: >

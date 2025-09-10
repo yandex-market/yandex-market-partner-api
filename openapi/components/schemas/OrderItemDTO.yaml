@@ -92,7 +92,7 @@ properties:
 
 
       Возвращаются данные для маркировки, переданные в запросе [PUT
-      campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).
+      v2/campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).
 
 
       Если магазин еще не передавал коды для этого заказа, `instances`
@@ -104,7 +104,7 @@ properties:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
     deprecated: true
-    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
+    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET v2/campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
     type: array
     nullable: true
     minItems: 1

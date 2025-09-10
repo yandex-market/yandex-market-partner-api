@@ -21,7 +21,7 @@ get:
 
 
     [POST
-    campaigns/{campaignId}/offer-prices](../../reference/assortment/getPricesByOfferIds.md)
+    v2/campaigns/{campaignId}/offer-prices](../../reference/assortment/getPricesByOfferIds.md)
 
 
     {% endnote %}
@@ -110,7 +110,7 @@ post:
 
 
     Для просмотра цен, которые действуют во всех магазинах, используйте [POST
-    businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
+    v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
 
 
     {% endnote %}

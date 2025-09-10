@@ -17,15 +17,15 @@ properties:
 
 
       * [GET
-      campaigns/{campaignId}/hidden-offers](../../reference/assortment/getHiddenOffers.md)
+      v2/campaigns/{campaignId}/hidden-offers](../../reference/assortment/getHiddenOffers.md)
       — просмотр скрытых товаров;
 
       * [POST
-      campaigns/{campaignId}/hidden-offers](../../reference/assortment/addHiddenOffers.md)
+      v2/campaigns/{campaignId}/hidden-offers](../../reference/assortment/addHiddenOffers.md)
       — скрытие товаров;
 
       * [POST
-      campaigns/{campaignId}/hidden-offers/delete](../../reference/assortment/deleteHiddenOffers.md)
+      v2/campaigns/{campaignId}/hidden-offers/delete](../../reference/assortment/deleteHiddenOffers.md)
       — возобновление показа.
 
 

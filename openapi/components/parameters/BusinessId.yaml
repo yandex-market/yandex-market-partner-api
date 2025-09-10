@@ -1,7 +1,7 @@
 description: >
   Идентификатор кабинета. Чтобы его узнать, воспользуйтесь запросом
   [:no-translate[GET
-  campaigns]](:no-translate[../../reference/campaigns/getCampaigns.md]).
+  v2/campaigns]](:no-translate[../../reference/campaigns/getCampaigns.md]).
 
 
   ℹ️ [Что такое кабинет и магазин на

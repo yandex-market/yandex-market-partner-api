@@ -12,7 +12,7 @@ properties:
 
       **Для модели :no-translate[FBY]:** получить список складов Маркета можно с
       помощью метода [GET
-      warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).
+      v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).
     type: integer
     format: int64
     minimum: 1

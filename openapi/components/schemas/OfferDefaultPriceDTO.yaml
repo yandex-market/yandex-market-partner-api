@@ -11,7 +11,7 @@ properties:
 
 
       Передается в методе [POST
-      businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
+      v2/businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md).
     type: number
     minimum: 0
     maximum: 100000000
@@ -24,7 +24,7 @@ properties:
 
 
       Если значение `true`, в методе [POST
-      businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md)
+      v2/businesses/{businessId}/offer-prices/updates](../../reference/business-assortment/updateBusinessPrices.md)
       параметр `minimumForBestseller` игнорируется.
     type: boolean
   value:

@@ -25,7 +25,7 @@ post:
 
     1. Вы передадите Маркету УИНы по каждому ювелирному изделию в заказе — метод
     [PUT
-    campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
+    v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
 
     2. Все УИНы успешно пройдут проверку.
 

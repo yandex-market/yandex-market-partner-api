@@ -19,7 +19,7 @@ put:
 
 
     [PUT
-    campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md)
+    v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md)
 
 
     {% endnote %}

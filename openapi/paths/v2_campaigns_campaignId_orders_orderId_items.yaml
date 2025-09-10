@@ -18,7 +18,7 @@ put:
 
 
     Используйте метод [PUT
-    campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
+    v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
 
 
     {% endnote %}
@@ -62,7 +62,7 @@ put:
 
 
     В таком случае отмените заказ — в методе [PUT
-    campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md)
+    v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md)
     передайте статус заказа `CANCELLED` с причиной отмены `SHOP_FAILED`.
 
 

@@ -142,9 +142,9 @@ post:
 
 
         Статус заказа можно узнать с помощью метода [GET
-        campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
+        v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
         или [GET
-        campaigns/{campaignId}/orders](../../reference/orders/getOrders.md).
+        v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md).
 
 
         {% endnote %}

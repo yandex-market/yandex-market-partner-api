@@ -9,7 +9,7 @@ post:
     - inventory-and-order-processing
   operationId: generateMassOrderLabelsReport
   summary: Готовые ярлыки‑наклейки на все коробки в нескольких заказах
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateMassOrderLabelsReport.md) %}\n\nЗапускает генерацию PDF-файла с ярлыками для переданных заказов. Подробно о том, зачем они нужны и как выглядят, рассказано [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).\n\nУзнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**:no-translate[⚙️] Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateMassOrderLabelsReport.md) %}\n\nЗапускает генерацию PDF-файла с ярлыками для переданных заказов. Подробно о том, зачем они нужны и как выглядят, рассказано [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).\n\nУзнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**:no-translate[⚙️] Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/MassOrderLabelsGenerationPageFormat.yaml
   requestBody:
