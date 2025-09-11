@@ -25,7 +25,7 @@ properties:
     minimum: 0
     exclusiveMinimum: true
   price:
-    description: Цена на товар в рублях.
+    description: Цена товара в рублях.
     type: number
     minimum: 0
     exclusiveMinimum: true

@@ -33,11 +33,11 @@ properties:
     type: string
   house:
     description: |
-      Дом.
+      Номер дома.
     type: string
   estate:
     description: |
-      Владение.
+      Номер владения.
     type: string
   block:
     description: Корпус.
@@ -46,7 +46,7 @@ properties:
     description: Строение.
     type: string
   entrance:
-    description: Подъезд.
+    description: Номер подъезда.
     type: string
   entryphone:
     description: Код домофона.
@@ -55,7 +55,7 @@ properties:
     description: Этаж.
     type: string
   apartment:
-    description: Квартира или офис.
+    description: Номер квартиры или офиса.
     type: string
   phone:
     description: |

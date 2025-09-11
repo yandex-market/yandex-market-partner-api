@@ -2,7 +2,7 @@ description: Цена или скидки на товар.
 type: object
 properties:
   type:
-    description: Тип скидки или цена на товар.
+    description: Тип скидки или цена товара.
     $ref: ./OrdersStatsPriceType.yaml
   costPerItem:
     description: |

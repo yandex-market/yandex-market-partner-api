@@ -4,5 +4,5 @@ allOf:
   - $ref: ./MappingsOfferInfoDTO.yaml
   - properties:
       price:
-        description: Цена на товар.
+        description: Цена товара.
         type: number

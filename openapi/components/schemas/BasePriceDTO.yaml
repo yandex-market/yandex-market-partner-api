@@ -1,4 +1,4 @@
-description: Цена на товар.
+description: Цена товара.
 type: object
 required:
   - value

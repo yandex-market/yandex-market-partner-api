@@ -2,7 +2,7 @@ description: Цена с указанием скидки, валюты и вре
 type: object
 properties:
   value:
-    description: Цена на товар.
+    description: Цена товара.
     type: number
     minimum: 0
     exclusiveMinimum: true
@@ -10,7 +10,7 @@ properties:
     $ref: ./DiscountBase.yaml
   currencyId:
     description: |
-      Валюта, в которой указана цена на товар.
+      Валюта, в которой указана цена товара.
     $ref: ./CurrencyType.yaml
   vat:
     $ref: ./VatType.yaml

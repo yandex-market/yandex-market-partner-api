@@ -17,5 +17,5 @@ properties:
     $ref: ./OfferVendorCode.yaml
   basicPrice:
     description: |
-      Цена на товар.
+      Цена товара.
     $ref: ./BasePriceDTO.yaml

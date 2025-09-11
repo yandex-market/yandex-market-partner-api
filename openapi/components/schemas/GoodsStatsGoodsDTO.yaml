@@ -11,7 +11,7 @@ properties:
     type: string
   price:
     description: >-
-      Цена на товар в валюте, которая установлена [в кабинете продавца на
+      Цена товара в валюте, которая установлена [в кабинете продавца на
       Маркете](https://partner.market.yandex.ru/).
     type: number
   categoryId:
