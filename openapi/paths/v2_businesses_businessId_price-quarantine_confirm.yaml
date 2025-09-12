@@ -44,7 +44,7 @@ post:
           $ref: ../components/schemas/ConfirmPricesRequest.yaml
   responses:
     '200':
-      description: Ответ 200 обозначает, что цены подтверждены.
+      description: Ответ `200` обозначает, что цены подтверждены.
       content:
         application/json:
           schema:
