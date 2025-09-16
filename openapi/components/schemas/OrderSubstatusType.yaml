@@ -43,6 +43,7 @@ description: >
 
       * `TOO_LONG_DELIVERY` — заказ доставляется слишком долго.
 
+      * `INCORRECT_PERSONAL_DATA` — введены неправильные персональные данные.
 
   * `TECHNICAL_ERROR` — техническая ошибка на стороне Маркета. Обратитесь в
   поддержку.
@@ -165,4 +166,5 @@ enum:
   - TOO_LONG_DELIVERY
   - DEFERRED_PAYMENT
   - POSTPAID_FAILED
+  - INCORRECT_PERSONAL_DATA
   - UNKNOWN
