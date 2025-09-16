@@ -31,7 +31,7 @@ properties:
 
 
       Формат даты: :no-translate[ISO 8601] со смещением относительно
-      :no-translate[UTC.
+      :no-translate[UTC].
     format: date-time
     type: string
     example: '2017-11-21T00:00:00+03:00'
