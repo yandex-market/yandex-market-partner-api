@@ -1,0 +1,11 @@
+description: Информация о покупателе в чате.
+type: object
+properties:
+  name:
+    description: "Публичное имя покупателя в Яндекс\_Паспорте, которое отображается в сервисах Яндекса.\n"
+    type: string
+    minLength: 1
+  publicId:
+    description: "Публичный идентификатор пользователя в Яндекс\_Паспорте.\n\n{% cut \"Примеры, где используется\" %}\n\n* Маркет: `https://market.yandex.ru/user/{public-id}/reviews`\n* Дзен: `https://zen.yandex.ru/user/{public-id}`\n* Отзывы: `https://yandex.ru/user/{public-id}`\n\n{% endcut %}\n\nПодробнее о публичных данных читайте в [документации Яндекс ID](https://yandex.ru/support/id/ru/data/public-data).\n"
+    type: string
+    minLength: 1

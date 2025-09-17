@@ -13,12 +13,20 @@ properties:
     minItems: 1
     deprecated: true
   contexts:
-    description: Фильтр по заказам или возвратам, по которым начаты чаты.
+    description: Фильтр по контексту чата.
     type: array
     nullable: true
     uniqueItems: true
     items:
       $ref: ./ChatContextDTO.yaml
+    minItems: 1
+  contextTypes:
+    description: Фильтр по типу контекста чата.
+    type: array
+    nullable: true
+    uniqueItems: true
+    items:
+      $ref: ./ChatContextType.yaml
     minItems: 1
   types:
     description: Фильтр по типам чатов.

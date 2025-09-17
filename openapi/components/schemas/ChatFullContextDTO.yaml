@@ -5,6 +5,16 @@ required:
 properties:
   type:
     $ref: ./ChatContextType.yaml
+  customer:
+    description: Информация о покупателе.
+    $ref: ./ChatCustomerDTO.yaml
+  campaignId:
+    description: |
+      Идентификатор кампании.
+
+      Возвращается для заказов и возвратов.
+    type: integer
+    format: int64
   orderId:
     description: |
       Идентификатор заказа.

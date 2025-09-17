@@ -3,7 +3,7 @@ description: |
 
   * `PARTNER` — магазин.
   * `CUSTOMER` — покупатель.
-  * `MARKET` — Маркет.
+  * `MARKET` — Маркет ([автоматическое сообщение](*market-notification)).
   * `SUPPORT` — сотрудник службы поддержки Маркета.
 type: string
 enum:
