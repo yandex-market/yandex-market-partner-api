@@ -78,6 +78,16 @@ properties:
     items:
       type: integer
       format: int64
+  offerIds:
+    description: |
+      Фильтр по идентификатору товара.
+    type: array
+    uniqueItems: true
+    maxItems: 20
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./ShopSku.yaml
   paid:
     description: Фильтр отзывов за баллы Плюса.
     type: boolean
