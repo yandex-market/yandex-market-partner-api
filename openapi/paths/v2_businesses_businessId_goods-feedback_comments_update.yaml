@@ -63,7 +63,30 @@ post:
           schema:
             $ref: ../components/schemas/UpdateGoodsFeedbackCommentResponse.yaml
     '400':
-      $ref: ../components/responses/400.yaml
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об
+        ошибке](../../concepts/error-codes.md#400)
+
+
+        Специфичные ошибки для метода обновления комментария:
+
+
+        |**Описание**        
+        |**Пояснение**                                                      
+        |**Способы
+        решения**                                                       |
+
+        |---------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------|
+
+        |**Duplicate comment**|Уже есть комментарий с таким текстом.|—|
+
+        |**Illegal url in comment text**| В тексте комментария найдены ссылки на
+        сторонние ресурсы.| Удалите ссылки и при необходимости добавьте те,
+        которые ведут на Маркет. |
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':
