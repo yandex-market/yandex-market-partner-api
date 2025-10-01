@@ -11,5 +11,6 @@ properties:
       лицензии.
     type: array
     minItems: 1
+    maxItems: 500
     items:
       $ref: ./OutletLicenseDTO.yaml

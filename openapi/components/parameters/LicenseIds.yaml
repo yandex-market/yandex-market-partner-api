@@ -5,6 +5,8 @@ required: false
 schema:
   type: array
   uniqueItems: true
+  maxItems: 500
+  minItems: 1
   items:
     type: integer
     format: int64
