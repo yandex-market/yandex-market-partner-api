@@ -50,6 +50,14 @@ properties:
     minItems: 1
     items:
       $ref: ./OfferCardRecommendationDTO.yaml
+  groupId:
+    type: string
+    description: >
+      Идентификатор группы товаров.
+
+
+      Если товары получилось объединить в одну группу, у них будет совпадать
+      этот идентификатор.
   errors:
     description: Ошибки в контенте, препятствующие размещению товара на витрине.
     type: array
