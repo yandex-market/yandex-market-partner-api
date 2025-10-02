@@ -74,8 +74,7 @@ properties:
     type: number
     format: decimal
   partnerWarehouseId:
-    deprecated: true
-    description: Идентификатор склада в системе магазина, на который сформирован заказ.
+    description: Идентификатор склада, на который сформирован заказ.
     type: string
   promos:
     description: >-
