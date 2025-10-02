@@ -7,9 +7,7 @@ required:
 properties:
   latitude:
     type: number
-    format: decimal
     description: Широта.
   longitude:
     type: number
-    format: decimal
     description: Долгота.

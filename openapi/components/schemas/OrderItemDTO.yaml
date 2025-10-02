@@ -34,7 +34,6 @@ properties:
 
       Включает НДС.
     type: number
-    format: decimal
   buyerPrice:
     description: |
       Цена товара в валюте покупателя. В цене уже учтены скидки по:
@@ -43,7 +42,6 @@ properties:
       * купонам;
       * промокодам.
     type: number
-    format: decimal
   buyerPriceBeforeDiscount:
     description: |
       Стоимость товара в валюте покупателя до применения скидок по:
@@ -52,12 +50,10 @@ properties:
       * купонам;
       * промокодам.
     type: number
-    format: decimal
   priceBeforeDiscount:
     deprecated: true
     description: Стоимость товара в валюте магазина до применения скидок.
     type: number
-    format: decimal
   count:
     description: Количество единиц товара.
     type: integer
@@ -72,7 +68,6 @@ properties:
     deprecated: true
     description: "{% note warning \"Вместо него используйте `subsidies`.\" %}\n\n\_\n\n{% endnote %}\n\nОбщее вознаграждение продавцу за DBS-доставку и все скидки на товар:\n\n* по промокодам;\n* по купонам;\n* по баллам Плюса;\n* по акциям.\n"
     type: number
-    format: decimal
   partnerWarehouseId:
     description: Идентификатор склада, на который сформирован заказ.
     type: string

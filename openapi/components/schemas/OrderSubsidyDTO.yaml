@@ -16,4 +16,3 @@ properties:
   amount:
     description: Сумма субсидии.
     type: number
-    format: decimal

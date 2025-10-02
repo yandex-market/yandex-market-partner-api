@@ -14,12 +14,10 @@ properties:
     description: |
       Размер пользовательской скидки в валюте покупателя.
     type: number
-    format: decimal
   subsidy:
     description: |
       Вознаграждение продавцу от Маркета за товар, проданный в рамках акции.
     type: number
-    format: decimal
   shopPromoId:
     description: |
       Идентификатор акции поставщика.

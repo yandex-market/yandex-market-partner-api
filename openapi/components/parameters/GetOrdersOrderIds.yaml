@@ -13,5 +13,5 @@ schema:
   items:
     type: integer
     format: int64
-    minItems: 1
-    maxItems: 50
+  minItems: 1
+  maxItems: 50

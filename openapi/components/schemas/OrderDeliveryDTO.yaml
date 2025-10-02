@@ -27,7 +27,6 @@ properties:
     deprecated: true
     description: "{% note warning \"Стоимость доставки смотрите в параметре `deliveryTotal`.\" %}\n\n\_\n\n{% endnote %}\n\nСтоимость доставки в валюте заказа.\n"
     type: number
-    format: decimal
   deliveryPartnerType:
     description: Тип сотрудничества со службой доставки в рамках конкретного заказа.
     $ref: ./OrderDeliveryPartnerType.yaml
@@ -50,7 +49,6 @@ properties:
   liftPrice:
     description: Стоимость подъема на этаж.
     type: number
-    format: decimal
   outletCode:
     description: Идентификатор пункта самовывоза, присвоенный магазином.
     type: string

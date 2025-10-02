@@ -20,4 +20,4 @@ properties:
   postcode:
     type: string
     description: Почтовый индекс.
-    example: 123518
+    example: '123518'

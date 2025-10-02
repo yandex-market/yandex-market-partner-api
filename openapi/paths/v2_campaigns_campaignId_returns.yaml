@@ -78,7 +78,9 @@ get:
       in: query
       name: statuses
       required: false
-      example: STARTED_BY_USER,WAITING_FOR_DECISION
+      example:
+        - STARTED_BY_USER
+        - WAITING_FOR_DECISION
       schema:
         type: array
         uniqueItems: true
@@ -91,7 +93,9 @@ get:
       in: query
       name: shipmentStatuses
       required: false
-      example: READY_FOR_PICKUP,IN_TRANSIT
+      example:
+        - READY_FOR_PICKUP
+        - IN_TRANSIT
       schema:
         type: array
         uniqueItems: true

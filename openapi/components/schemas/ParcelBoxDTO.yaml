@@ -8,5 +8,5 @@ properties:
   fulfilmentId:
     description: "{% note warning \"Не используйте этот параметр.\" %}\n\n\_\n\n{% endnote %}\n"
     type: string
-    pattern: ^[\p{Alnum}- ]*$
+    pattern: ^[[a-zA-Z0-9]- ]*$
     deprecated: true

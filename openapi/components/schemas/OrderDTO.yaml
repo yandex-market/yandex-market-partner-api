@@ -51,26 +51,22 @@ properties:
     description: |
       Платеж покупателя.
     type: number
-    format: decimal
   deliveryTotal:
     description: |
       Стоимость доставки.
     type: number
-    format: decimal
   buyerItemsTotal:
     deprecated: true
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя после применения
       скидок и без учета стоимости доставки.
     type: number
-    format: decimal
   buyerTotal:
     deprecated: true
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя после применения
       скидок и с учетом стоимости доставки.
     type: number
-    format: decimal
   buyerItemsTotalBeforeDiscount:
     description: >
       Стоимость всех товаров в заказе в валюте покупателя без учета стоимости
@@ -83,7 +79,6 @@ properties:
 
       * промокодам.
     type: number
-    format: decimal
   buyerTotalBeforeDiscount:
     deprecated: true
     description: >-
@@ -91,7 +86,6 @@ properties:
       с учетом стоимости доставки (`buyerItemsTotalBeforeDiscount` + стоимость
       доставки).
     type: number
-    format: decimal
   paymentType:
     $ref: ./OrderPaymentType.yaml
   paymentMethod:

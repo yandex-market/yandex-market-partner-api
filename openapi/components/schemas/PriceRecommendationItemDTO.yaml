@@ -28,5 +28,4 @@ properties:
       товара должна быть не выше этого значения. [Подробно о рекомендованных
       ценах](https://yandex.ru/support/marketplace/marketing/campaigns.html#prices)
     type: number
-    format: decimal
     minimum: 1
