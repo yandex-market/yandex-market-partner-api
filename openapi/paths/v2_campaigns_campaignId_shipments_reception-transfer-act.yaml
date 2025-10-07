@@ -35,6 +35,10 @@ get:
             format: binary
     '400':
       description: >
+        Запрос содержит неправильные данные. [Подробнее об
+        ошибке](../../concepts/error-codes.md#400)
+
+
         |
         **Описание**                                                                                                                 
         |
@@ -88,7 +92,10 @@ get:
         и [POST
         v2/campaigns/{campaignId}/orders/status‑update](../../reference/orders/updateOrderStatuses.md).                                                                                                                                                                                                                   
         |
-      $ref: ../components/responses/400.yaml
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':
