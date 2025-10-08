@@ -72,13 +72,29 @@ description: >
   * `INTAKE_SORTING_DAILY` — организация забора заказов со склада продавца.
 
 
-  * `FF_STORAGE_BILLING` — хранения товаров на складе.
+  * `FF_STORAGE_BILLING` — хранение товаров на складе.
 
 
   * `CANCELLED_ORDER_FEE_QI` — отмена заказа по вине продавца.
 
 
   * `LATE_ORDER_EXECUTION_FEE_QI` — несвоевременная отгрузка или доставка.
+
+
+  * `VOLUME_STORAGE` — стоимость хранения товара на складе — из расчёта за один
+  кубический метр в сутки.
+
+
+  * `GOODS_ACCEPTANCE` — окончательная приемка товара на складе.
+
+
+  * `CARGO_ACCEPTANCE` — первичная приемка товара на складе.
+
+
+  * `ORDER_PROCESSING` — обработка заказа.
+
+
+  * `WITHDRAW_EXTERNAL` — отгрузка на внешний маркетплейс.
 
 
   Подробнее об услугах Маркета читайте [в Справке Маркета для
@@ -110,3 +126,8 @@ enum:
   - FF_STORAGE_BILLING
   - CANCELLED_ORDER_FEE_QI
   - LATE_ORDER_EXECUTION_FEE_QI
+  - VOLUME_STORAGE
+  - GOODS_ACCEPTANCE
+  - CARGO_ACCEPTANCE
+  - ORDER_PROCESSING
+  - WITHDRAW_EXTERNAL
