@@ -57,8 +57,8 @@ get:
         статус.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
         |
 
-        | :no-translate[**No orders for closest shipment
-        found**]                                                                                     
+        | :no-translate[**No orders for closest shipment have been processed
+        yet**]                                                                   
         | Нет заказов в ближайшей
         отгрузке.                                                | Проверьте,
         что у заказов параметр `status` имеет значение `PROCESSING`, а параметр
