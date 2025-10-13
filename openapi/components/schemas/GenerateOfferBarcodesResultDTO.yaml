@@ -1,0 +1,18 @@
+description: >
+  Товары, для которых не удалось сгенерировать штрихкоды.
+
+
+  Проверьте корректность переданных `offerId`. Если ошибка повторяется,
+  обратитесь в службу поддержки — перейдите в [кабинет продавца на
+  Маркете](https://partner.market.yandex.ru/business/any/support) и нажмите
+  кнопку **Создать обращение**.
+type: object
+required:
+  - unprocessedOfferIds
+properties:
+  unprocessedOfferIds:
+    description: Список товаров, для которых не удалось сгенерировать штрихкоды.
+    type: array
+    uniqueItems: true
+    items:
+      $ref: ./ShopSku.yaml

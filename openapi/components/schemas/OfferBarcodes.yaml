@@ -1,9 +1,10 @@
-description: >+
+description: >
+  Штрихкод.
+
+
   Указывайте в виде последовательности цифр. Подойдут коды :no-translate[EAN-13,
-  EAN-8, UPC-A, UPC-E] или :no-translate[Code 128].
-
-
-  Для книг указывайте :no-translate[ISBN].
+  EAN-8, UPC-A, UPC-E] или :no-translate[Code 128]. Для книг —
+  :no-translate[ISBN].
 
 
   Для товаров [определенных категорий и торговых
@@ -14,7 +15,6 @@ description: >+
 
 
   [Что такое :no-translate[GTIN]](:no-translate[*gtin])
-
 type: array
 nullable: true
 minItems: 1

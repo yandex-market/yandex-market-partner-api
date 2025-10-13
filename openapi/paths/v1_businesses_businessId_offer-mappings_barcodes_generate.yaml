@@ -1,0 +1,46 @@
+post:
+  tags:
+    - business-offer-mappings
+    - dbs
+    - fby
+    - fbs
+    - express
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards-management
+  operationId: generateOfferBarcodes
+  summary: Генерация штрихкодов
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateOfferBarcodes.md) %}\n\nГенерирует штрихкоды и присваивает их указанным товарам.\n\nЕсли у товара на упаковке уже есть штрихкод производителя, передайте его в параметре `barcodes` в методе [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md). Генерировать новый не нужно.\n\n|**:no-translate[⚙️] Лимит:** 10\_000 товаров в минуту, не более 100 товаров в одном запросе|\n|-|\n"
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GenerateOfferBarcodesRequest.yaml
+  responses:
+    '200':
+      description: >
+        Пустой ответ, если генерация успешно завершилась для всех переданных
+        товаров.
+
+
+        Или список товаров, для которых не удалось сгенерировать штрихкоды.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GenerateOfferBarcodesResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '423':
+      $ref: ../components/responses/423.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

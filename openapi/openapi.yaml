@@ -156,6 +156,8 @@ paths:
     $ref: paths/v2_businesses_businessId_offer-mappings_archive.yaml
   /v2/businesses/{businessId}/offer-mappings/unarchive:
     $ref: paths/v2_businesses_businessId_offer-mappings_unarchive.yaml
+  /v1/businesses/{businessId}/offer-mappings/barcodes/generate:
+    $ref: paths/v1_businesses_businessId_offer-mappings_barcodes_generate.yaml
   /v2/campaigns/{campaignId}/offer-mapping-entries:
     $ref: paths/v2_campaigns_campaignId_offer-mapping-entries.yaml
   /v2/campaigns/{campaignId}/offer-mapping-entries/updates:
@@ -242,6 +244,8 @@ paths:
     $ref: paths/v2_reports_key-indicators_generate.yaml
   /v2/reports/closure-documents/detalization/generate:
     $ref: paths/v2_reports_closure-documents_detalization_generate.yaml
+  /v1/reports/documents/barcodes/generate:
+    $ref: paths/v1_reports_documents_barcodes_generate.yaml
   /v2/campaigns/{campaignId}/outlets:
     $ref: paths/v2_campaigns_campaignId_outlets.yaml
   /v2/campaigns/{campaignId}/outlets/{outletId}:

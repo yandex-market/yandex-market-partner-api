@@ -1,0 +1,14 @@
+description: Информация о штрихкодах.
+type: object
+required:
+  - offerId
+  - barcodeCount
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  barcodeCount:
+    description: Количество штрихкодов для печати.
+    type: integer
+    format: int64
+    maximum: 100
+    minimum: 1

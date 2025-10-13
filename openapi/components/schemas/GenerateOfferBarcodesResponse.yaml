@@ -1,0 +1,7 @@
+description: Результат генерации штрихкодов.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GenerateOfferBarcodesResultDTO.yaml

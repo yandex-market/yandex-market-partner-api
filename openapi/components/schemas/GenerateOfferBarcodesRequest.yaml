@@ -1,0 +1,22 @@
+description: |
+  Товары, для которых нужно сгенерировать штрихкоды.
+type: object
+required:
+  - offerIds
+properties:
+  offerIds:
+    description: Список товаров, для которых нужно сгенерировать штрихкоды.
+    type: array
+    minItems: 1
+    maxItems: 100
+    uniqueItems: true
+    items:
+      $ref: ./ShopSku.yaml
+  skipIfExists:
+    description: |
+      Для каких товаров нужно сгенерировать штрихкоды:
+
+      * `false` — для всех, которые переданы в запросе.
+      * `true` — только для тех, у которых их нет.
+    type: boolean
+    default: true
