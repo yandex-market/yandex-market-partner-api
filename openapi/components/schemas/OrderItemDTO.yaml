@@ -69,7 +69,10 @@ properties:
     description: "{% note warning \"Вместо него используйте `subsidies`.\" %}\n\n\_\n\n{% endnote %}\n\nОбщее вознаграждение продавцу за DBS-доставку и все скидки на товар:\n\n* по промокодам;\n* по купонам;\n* по баллам Плюса;\n* по акциям.\n"
     type: number
   partnerWarehouseId:
-    description: Идентификатор склада, на который сформирован заказ.
+    description: |
+      **Только для модели :no-translate[FBY]**
+
+      Идентификатор склада, на который сформирован заказ.
     type: string
   promos:
     description: >-
