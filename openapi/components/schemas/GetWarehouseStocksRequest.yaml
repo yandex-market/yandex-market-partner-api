@@ -18,6 +18,9 @@ properties:
     minimum: 1
   hasStocks:
     description: >
+      **Только для модели FBY**
+
+
       Фильтр по наличию товаров. Используйте только вместе со
       `stocksWarehouseId`.
 
