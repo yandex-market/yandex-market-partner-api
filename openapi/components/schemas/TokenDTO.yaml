@@ -1,4 +1,4 @@
-description: Информация об авторизационном токене.
+description: Информация о токене авторизации.
 type: object
 required:
   - apiKey

@@ -21,12 +21,12 @@ post:
     - promotion:read-only
     - communication
     - supplies-management:read-only
-  summary: Получение информации об авторизационном токене
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getAuthTokenInfo.md) %}\n\n{% note info \"Метод доступен только для Api-Key-токена.\" %}\n\n\_\n\n{% endnote %}\n\nВозвращает информацию о переданном авторизационном токене.\n\n|**:no-translate[⚙️] Лимит:** 100 запросов в час|\n|-|\n"
+  summary: Получение информации о токене авторизации
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getAuthTokenInfo.md) %}\n\n{% note info \"Метод доступен только для Api-Key-токена.\" %}\n\n\_\n\n{% endnote %}\n\nВозвращает информацию о переданном токене авторизации.\n\n|**:no-translate[⚙️] Лимит:** 100 запросов в час|\n|-|\n"
   operationId: getAuthTokenInfo
   responses:
     '200':
-      description: Информация об авторизационном токене.
+      description: Информация о токене авторизации.
       content:
         application/json:
           schema:
