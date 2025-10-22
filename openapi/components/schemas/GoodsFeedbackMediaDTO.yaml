@@ -1,8 +1,8 @@
-description: Фото и видео.
+description: Фотографии и видео.
 type: object
 properties:
   photos:
-    description: Ссылки на фото.
+    description: Ссылки на фотографии.
     type: array
     nullable: true
     minItems: 1
