@@ -15,22 +15,18 @@ properties:
     format: int64
     type: integer
   creationDate:
-    description: >
+    description: |
       Дата создания невыкупа или возврата клиентом.
 
-
-      Формат даты: :no-translate[ISO 8601] со смещением относительно
-      :no-translate[UTC].
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
     example: '2020-02-02T14:30:30+03:00'
   updateDate:
-    description: >
+    description: |
       Дата обновления невыкупа или возврата.
 
-
-      Формат даты: :no-translate[ISO 8601] со смещением относительно
-      :no-translate[UTC].
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
     example: '2020-02-02T14:30:30+03:00'
@@ -48,8 +44,7 @@ properties:
       `READY_FOR_PICKUP`.
 
 
-      Формат даты: :no-translate[ISO 8601] со смещением относительно
-      :no-translate[UTC].
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
     example: '2020-02-02T14:30:30+03:00'

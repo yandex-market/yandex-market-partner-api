@@ -21,7 +21,7 @@ post:
     v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).
 
 
-    |**:no-translate[⚙️] Лимит:** 1 000 запросов в час|
+    |**⚙️ Лимит:** 1 000 запросов в час|
 
     |-|
   parameters:

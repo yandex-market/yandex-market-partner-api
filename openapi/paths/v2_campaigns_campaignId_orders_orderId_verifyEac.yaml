@@ -26,7 +26,7 @@ put:
 
       Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`, `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в других статусах, параметр может отсутствовать.
 
-    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
+    |**⚙️ Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

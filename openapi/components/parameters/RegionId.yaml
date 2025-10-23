@@ -2,8 +2,8 @@ description: >
   Идентификатор региона.
 
 
-  Идентификатор региона можно получить c помощью запроса [:no-translate[GET
-  v2/regions]](:no-translate[../../reference/regions/searchRegionsByName.md]).
+  Идентификатор региона можно получить c помощью запроса [GET
+  v2/regions](../../reference/regions/searchRegionsByName.md).
 name: regionId
 in: path
 required: true

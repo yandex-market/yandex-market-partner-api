@@ -1,4 +1,4 @@
-description: Информация о трек-номере посылки (:no-translate[DBS]).
+description: Информация о трек-номере посылки (DBS).
 type: object
 required:
   - deliveryServiceId

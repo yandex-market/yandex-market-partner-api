@@ -26,7 +26,7 @@ post:
     v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md).
 
 
-    |**:no-translate[⚙️] Лимит:** 10 000 запросов в час|
+    |**⚙️ Лимит:** 10 000 запросов в час|
 
     |-|
   parameters:
@@ -75,10 +75,9 @@ post:
 
         | :no-translate[**Too many parameters in request: only one of parameters
         offerIds or deleteAllOffers should be specified**]     | Можно либо
-        передать значение `true` в параметре `deleteAllOffers`, либо
-        :no-translate[SKU] товаров в параметре `offerIds`. | Передайте что-то
-        одно  — или значение `true` в параметре `deleteAllOffers`, или SKU
-        товаров в параметре
+        передать значение `true` в параметре `deleteAllOffers`, либо SKU товаров
+        в параметре `offerIds`. | Передайте что-то одно  — или значение `true` в
+        параметре `deleteAllOffers`, или SKU товаров в параметре
         `offerIds`.                                               |
       $ref: ../components/responses/400.yaml
     '401':

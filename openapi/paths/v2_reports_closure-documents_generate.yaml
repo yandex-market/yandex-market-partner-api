@@ -27,24 +27,24 @@ post:
 
     * **Договор на размещение**
 
-      * [акт об оказанных услугах](:no-translate[*acts-main-act])
-      * [счет-фактура](:no-translate[*acts-main-invoice])
-      * [сводный отчет по данным статистики](:no-translate[*acts-main-report])
-      * [отчет об исполнении поручения и о зачете взаимных требований](:no-translate[*acts-main-agent]) (отчет агента)
+      * [акт об оказанных услугах](*acts-main-act)
+      * [счет-фактура](*acts-main-invoice)
+      * [сводный отчет по данным статистики](*acts-main-report)
+      * [отчет об исполнении поручения и о зачете взаимных требований](*acts-main-agent) (отчет агента)
 
     * **Договор на продвижение** (в России не заключается после 30 сентября 2024
     года)
 
-      * [акт об оказании услуг](:no-translate[*acts-discounts-act])
-      * [счет-фактура](:no-translate[*acts-discounts-invoice]), если этого требует схема налогообложения
+      * [акт об оказании услуг](*acts-discounts-act)
+      * [счет-фактура](*acts-discounts-invoice), если этого требует схема налогообложения
 
     * **Договор на маркетинг**
 
-      * [акт об оказанных услугах](:no-translate[*acts-marketing-act])
-      * [счет-фактура](:no-translate[*acts-main-invoice])
-      * [счет-фактура на аванс](:no-translate[*acts-marketing-invoice])
-      * [выписка по лицевому счету](:no-translate[*acts-marketing-account])
-      * [детализация к акту](:no-translate[*acts-marketing-details])
+      * [акт об оказанных услугах](*acts-marketing-act)
+      * [счет-фактура](*acts-main-invoice)
+      * [счет-фактура на аванс](*acts-marketing-invoice)
+      * [выписка по лицевому счету](*acts-marketing-account)
+      * [детализация к акту](*acts-marketing-details)
 
     {% endcut %}
 
@@ -53,7 +53,7 @@ post:
     [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
-    |**:no-translate[⚙️] Лимит:** 1 000 запросов в час|
+    |**⚙️ Лимит:** 1 000 запросов в час|
 
     |-|
   requestBody:

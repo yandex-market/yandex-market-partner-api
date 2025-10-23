@@ -10,7 +10,7 @@ post:
     - communication
   operationId: sendMessageToChat
   summary: Отправка сообщения в чат
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/sendMessageToChat.md) %}\n\nОтправляет сообщение в чат с покупателем.\n\n|**:no-translate[⚙️] Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/sendMessageToChat.md) %}\n\nОтправляет сообщение в чат с покупателем.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/ChatId.yaml
@@ -53,7 +53,7 @@ get:
     - communication
   operationId: getChatMessage
   summary: Получение сообщения в чате
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getChatMessage.md) %}\n\nВозвращает сообщение по его идентификатору.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n|**:no-translate[⚙️] Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getChatMessage.md) %}\n\nВозвращает сообщение по его идентификатору.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/ChatId.yaml

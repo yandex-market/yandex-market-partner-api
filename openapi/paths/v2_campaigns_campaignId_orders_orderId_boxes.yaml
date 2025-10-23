@@ -14,7 +14,7 @@ put:
     [:no-translate[access]](../../_auto/method_scopes/setOrderBoxLayout.md) %}
 
 
-    {% note tip "Подходит и для :no-translate[DBS]" %}
+    {% note tip "Подходит и для DBS" %}
 
 
     Запрос предназначен для работы с FBS-заказами, но вы можете использовать его
@@ -338,7 +338,7 @@ put:
     {% endcut %}
 
 
-    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
+    |**⚙️ Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

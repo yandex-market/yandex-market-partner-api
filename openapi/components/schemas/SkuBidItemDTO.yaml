@@ -5,9 +5,7 @@ required:
   - bid
 properties:
   sku:
-    description: >-
-      :no-translate[SKU] товара, которому соответствует ставка из параметра
-      `bid`.
+    description: SKU товара, которому соответствует ставка из параметра `bid`.
     $ref: ./ShopSku.yaml
   bid:
     description: >

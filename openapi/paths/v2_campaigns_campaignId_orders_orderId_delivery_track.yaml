@@ -23,7 +23,7 @@ post:
     `PROCESSING`, `DELIVERY` или `PICKUP`.
 
 
-    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
+    |**⚙️ Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

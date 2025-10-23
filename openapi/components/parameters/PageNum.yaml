@@ -1,26 +1,18 @@
 name: page
-description: >
-  {% note warning "Если в методе есть :no-translate[`page_token`]" %}
+description: |
+  {% note warning "Если в методе есть `page_token`" %}
 
+  Используйте его вместо параметра `page`.
 
-  Используйте его вместо параметра :no-translate[`page`].
-
-
-  [Подробнее о типах пагинации и их
-  использовании](:no-translate[../../concepts/pagination.md])
-
+  [Подробнее о типах пагинации и их использовании](../../concepts/pagination.md)
 
   {% endnote %}
 
-
   Номер страницы результатов.
 
+  Используется вместе с параметром `pageSize`.
 
-  Используется вместе с параметром :no-translate[`pageSize`].
-
-
-  :no-translate[`page`] игнорируется, если задан :no-translate[`page_token`] или
-  :no-translate[`limit`].
+  `page` игнорируется, если задан `page_token` или `limit`.
 in: query
 required: false
 schema:

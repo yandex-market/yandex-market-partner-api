@@ -25,7 +25,7 @@ put:
     v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
 
 
-    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
+    |**⚙️ Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

@@ -23,7 +23,7 @@ post:
     v2/businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).
 
 
-    |**:no-translate[⚙️] Лимит:** 100 000 запросов в час|
+    |**⚙️ Лимит:** 100 000 запросов в час|
 
     |-|
   parameters:

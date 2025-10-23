@@ -1,7 +1,7 @@
 type: object
 properties:
   offerIds:
-    description: "Идентификаторы товаров, информация о которых нужна.\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным :no-translate[SKU], не заполняйте:\n* `page_token`;\n* `limit`;\n* `cardStatuses`;\n* `categoryIds`;\n* `vendorNames`;\n* `tags`;\n* `archived`.\n\n{% endnote %}\n\n\_\n"
+    description: "Идентификаторы товаров, информация о которых нужна.\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным SKU, не заполняйте:\n* `page_token`;\n* `limit`;\n* `cardStatuses`;\n* `categoryIds`;\n* `vendorNames`;\n* `tags`;\n* `archived`.\n\n{% endnote %}\n\n\_\n"
     type: array
     nullable: true
     minItems: 1

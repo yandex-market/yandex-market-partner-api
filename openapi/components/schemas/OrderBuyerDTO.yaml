@@ -3,7 +3,7 @@ description: >
 
 
   Параметры `id`, `lastName`, `firstName` и `middleName` возвращаются, только
-  если вы работаете по модели :no-translate[DBS].
+  если вы работаете по модели DBS.
 type: object
 allOf:
   - $ref: ./OrderBuyerBasicInfoDTO.yaml

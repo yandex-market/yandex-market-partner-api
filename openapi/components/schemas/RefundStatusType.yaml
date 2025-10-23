@@ -14,10 +14,10 @@ description: >
   * `FAILED` — невозможно провести возврат покупателю.
 
 
-  * `WAITING_FOR_DECISION` — ожидает решения (:no-translate[DBS]).
+  * `WAITING_FOR_DECISION` — ожидает решения (DBS).
 
 
-  * `DECISION_MADE` — по возврату принято решение (:no-translate[DBS]).
+  * `DECISION_MADE` — по возврату принято решение (DBS).
 
 
   * `REFUNDED_WITH_BONUSES` — возврат осуществлен баллами Плюса или промокодом.
@@ -35,20 +35,18 @@ description: >
   * `REJECTED` — возврат отклонен модерацией или в ПВЗ.
 
 
-  * :no-translate[`PREMODERATION_DISPUTE`] — по возврату открыт спор
-  (:no-translate[FBY], :no-translate[FBS] и Экспресс).
+  * `PREMODERATION_DISPUTE` — по возврату открыт спор (FBY, FBS и Экспресс).
 
 
-  * :no-translate[`PREMODERATION_DECISION_WAITING`] — ожидает решения
-  (:no-translate[FBY], :no-translate[FBS] и Экспресс).
+  * `PREMODERATION_DECISION_WAITING` — ожидает решения (FBY, FBS и Экспресс).
 
 
-  * :no-translate[`PREMODERATION_DECISION_MADE`] — по возврату принято решение
-  (:no-translate[FBY], :no-translate[FBS] и Экспресс).
+  * `PREMODERATION_DECISION_MADE` — по возврату принято решение (FBY, FBS и
+  Экспресс).
 
 
-  * :no-translate[`PREMODERATION_SELECT_DELIVERY`] — пользователь выбирает
-  способ доставки (:no-translate[FBY], :no-translate[FBS] и Экспресс).
+  * `PREMODERATION_SELECT_DELIVERY` — пользователь выбирает способ доставки
+  (FBY, FBS и Экспресс).
 
 
   * `UNKNOWN` — неизвестный статус.

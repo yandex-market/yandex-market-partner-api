@@ -2,14 +2,13 @@ description: >
   Тип контекста:
 
 
-  * :no-translate[`ORDER`] — чат по заказу. [Чаты о заказах и
+  * `ORDER` — чат по заказу. [Чаты о заказах и
   возвратах](https://yandex.ru/support/marketplace/ru/orders/communication/about-orders)
 
-  * :no-translate[`RETURN`] — чат по возврату (:no-translate[FBY],
-  :no-translate[FBS] и Экспресс). [Чаты о заказах и
+  * `RETURN` — чат по возврату (FBY, FBS и Экспресс). [Чаты о заказах и
   возвратах](https://yandex.ru/support/marketplace/ru/orders/communication/about-orders)
 
-  * :no-translate[`DIRECT`] — чат, который начал покупатель. [Сообщения от
+  * `DIRECT` — чат, который начал покупатель. [Сообщения от
   покупателей](https://yandex.ru/support/marketplace/ru/orders/communication/with-users)
 type: string
 enum:

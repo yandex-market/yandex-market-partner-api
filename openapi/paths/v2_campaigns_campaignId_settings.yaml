@@ -23,7 +23,7 @@ get:
     - supplies-management:read-only
   operationId: getCampaignSettings
   summary: Настройки магазина
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCampaignSettings.md) %}\n\nВозвращает информацию о настройках магазина, идентификатор которого указан в запросе.\n|**:no-translate[⚙️] Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCampaignSettings.md) %}\n\nВозвращает информацию о настройках магазина, идентификатор которого указан в запросе.\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:

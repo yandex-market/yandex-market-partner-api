@@ -21,7 +21,7 @@ put:
     Получить PDF-файл с ярлыками для упаковок можно с помощью запроса [GET
     v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](../../reference/shipments/downloadShipmentPalletLabels.md).
 
-    |**:no-translate[⚙️] Лимит:** 200 запросов в час|
+    |**⚙️ Лимит:** 200 запросов в час|
 
     |-|
   parameters:

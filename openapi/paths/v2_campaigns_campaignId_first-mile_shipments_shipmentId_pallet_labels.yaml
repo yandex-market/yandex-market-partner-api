@@ -25,7 +25,7 @@ get:
     Количество упаковок в отгрузке задается в запросе [PUT
     v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](../../reference/shipments/setShipmentPalletsCount.md).
 
-    |**:no-translate[⚙️] Лимит:** 200 запросов в час|
+    |**⚙️ Лимит:** 200 запросов в час|
 
     |-|
   parameters:

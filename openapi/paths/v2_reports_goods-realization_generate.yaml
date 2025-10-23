@@ -28,18 +28,18 @@ post:
     {% list tabs %}
 
 
-    - :no-translate[FBY, FBS,] Экспресс
+    - FBY, FBS, Экспресс
 
       {% include notitle [:no-translate[reports]](../../_auto/reports/united/statistics/generator/united_statistics_v2.md) %}
 
-    - :no-translate[DBS]
+    - DBS
 
       {% include notitle [:no-translate[reports]](../../_auto/reports/united/statistics/generator/united_statistics_v2_dbs.md) %}
 
     {% endlist %}
 
 
-    |**:no-translate[⚙️] Лимит:** 100 запросов в час|
+    |**⚙️ Лимит:** 100 запросов в час|
 
     |-|
   parameters:

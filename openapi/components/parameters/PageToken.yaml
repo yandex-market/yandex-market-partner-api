@@ -6,12 +6,12 @@ description: >
   Если параметр не указан, возвращается первая страница.
 
 
-  Рекомендуем передавать значение выходного параметра
-  :no-translate[`nextPageToken`], полученное при последнем запросе.
+  Рекомендуем передавать значение выходного параметра `nextPageToken`,
+  полученное при последнем запросе.
 
 
-  Если задан :no-translate[`page_token`] и в запросе есть параметры
-  :no-translate[`page`] и :no-translate[`pageSize`], они игнорируются.
+  Если задан `page_token` и в запросе есть параметры `page` и `pageSize`, они
+  игнорируются.
 in: query
 required: false
 example: eyBuZXh0SWQ6IDIzNDIgfQ==

@@ -14,7 +14,7 @@ description: >
   :no-translate[Code 128] не являются :no-translate[GTIN].
 
 
-  [Что такое :no-translate[GTIN]](:no-translate[*gtin])
+  [Что такое :no-translate[GTIN]](*gtin)
 type: array
 nullable: true
 minItems: 1

@@ -1,5 +1,5 @@
 type: object
-description: Модель для ответа :no-translate[API] списка информации по заказам.
+description: Модель для ответа API списка информации по заказам.
 required:
   - orders
 properties:

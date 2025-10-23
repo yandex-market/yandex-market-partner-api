@@ -8,12 +8,10 @@ properties:
     description: Описание статуса отгрузки.
     type: string
   updateTime:
-    description: >
+    description: |
       Время последнего изменения статуса отгрузки.
 
-
-      Формат даты: :no-translate[ISO 8601] со смещением относительно
-      :no-translate[UTC].
+      Формат даты: ISO 8601 со смещением относительно UTC.
     format: date-time
     type: string
     example: '2017-11-21T00:00:00+03:00'

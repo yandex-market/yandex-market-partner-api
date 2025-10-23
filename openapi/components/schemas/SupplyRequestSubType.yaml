@@ -18,10 +18,10 @@ description: >
   * `ADDITIONAL_SUPPLY` — дополнительная поставка непринятых товаров.
 
   * `VIRTUAL_DISTRIBUTION_CENTER` — родительская заявка при поставке товаров на
-  склад хранения или [мультипоставке](:no-translate[*multisupply]).
+  склад хранения или [мультипоставке](*multisupply).
 
   * `VIRTUAL_DISTRIBUTION_CENTER_CHILD` — дочерняя заявка при поставке товаров
-  на склад хранения или [мультипоставке](:no-translate[*multisupply]).
+  на склад хранения или [мультипоставке](*multisupply).
 
       Для нее не возвращается `transitLocation`.
   * `FORCE_PLAN` — автоматическая утилизация по запросу склада.

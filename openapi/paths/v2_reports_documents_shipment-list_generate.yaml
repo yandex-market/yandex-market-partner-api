@@ -21,7 +21,7 @@ post:
     v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 
-    |**:no-translate[⚙️] Лимит:** 100 запросов в час|
+    |**⚙️ Лимит:** 100 запросов в час|
 
     |-|
   requestBody:

@@ -1,9 +1,9 @@
 description: >
-  Язык, на котором принимаются и возвращаются значения в параметрах
-  :no-translate[`name`] и :no-translate[`description`].
+  Язык, на котором принимаются и возвращаются значения в параметрах `name` и
+  `description`.
 
 
-  Значение по умолчанию: :no-translate[`RU`].
+  Значение по умолчанию: `RU`.
 name: language
 in: query
 required: false

@@ -1,4 +1,4 @@
-description: Склад Маркета (:no-translate[FBY]).
+description: Склад Маркета (FBY).
 type: object
 required:
   - id

@@ -10,8 +10,8 @@ properties:
       Если параметр указан, возвращаются только товары на переданном складе.
 
 
-      **Для модели :no-translate[FBY]:** получить список складов Маркета можно с
-      помощью метода [GET
+      **Для модели FBY:** получить список складов Маркета можно с помощью метода
+      [GET
       v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).
     type: integer
     format: int64
@@ -51,7 +51,7 @@ properties:
       возвращается информация о товарах, которые не находятся в архиве.
     type: boolean
   offerIds:
-    description: "Фильтр по вашим :no-translate[SKU] товаров.\n\nВозвращается информация об остатках всех переданных :no-translate[SKU], включая товары в архиве.\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным :no-translate[SKU], не заполняйте:\n\n* `page_token`\n* `limit`\n* `archived`\n* `stocksOnWarehouse`\n\n{% endnote %}\n\n\_\n"
+    description: "Фильтр по вашим SKU товаров.\n\nВозвращается информация об остатках всех переданных SKU, включая товары в архиве.\n\n{% note warning \"Такой список возвращается только целиком\" %}\n\nЕсли вы запрашиваете информацию по конкретным SKU, не заполняйте:\n\n* `page_token`\n* `limit`\n* `archived`\n* `stocksOnWarehouse`\n\n{% endnote %}\n\n\_\n"
     type: array
     uniqueItems: true
     minItems: 1

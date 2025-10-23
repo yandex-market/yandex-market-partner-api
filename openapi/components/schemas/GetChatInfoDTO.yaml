@@ -26,22 +26,18 @@ properties:
   status:
     $ref: ./ChatStatusType.yaml
   createdAt:
-    description: >
+    description: |
       Дата и время создания чата.
 
-
-      Формат даты: :no-translate[ISO 8601] со смещением относительно
-      :no-translate[UTC].
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
     example: '2017-11-21T00:00:00+03:00'
   updatedAt:
-    description: >
+    description: |
       Дата и время последнего сообщения в чате.
 
-
-      Формат даты: :no-translate[ISO 8601] со смещением относительно
-      :no-translate[UTC].
+      Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
     format: date-time
     example: '2017-11-21T00:00:00+03:00'

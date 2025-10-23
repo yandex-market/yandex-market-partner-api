@@ -33,7 +33,7 @@ properties:
     type: string
   tracks:
     description: |
-      **Только для модели :no-translate[DBS]**
+      **Только для модели DBS**
 
       Информация для отслеживания перемещений посылки.
     type: array

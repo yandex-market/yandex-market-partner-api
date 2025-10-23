@@ -21,7 +21,7 @@ get:
     расхождения.
 
 
-    |**:no-translate[⚙️] Лимит:** 200 запросов в час|
+    |**⚙️ Лимит:** 200 запросов в час|
 
     |-|
   parameters:
@@ -29,7 +29,7 @@ get:
     - $ref: ../components/parameters/params_ShipmentId.yaml
   responses:
     '200':
-      description: Акт в формате :no-translate[PDF].
+      description: Акт в формате PDF.
       content:
         application/pdf:
           schema:
