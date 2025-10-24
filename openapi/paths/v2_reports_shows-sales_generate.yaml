@@ -26,7 +26,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[reports]](../../_auto/reports/masterstat/sales_funnel_promotions.md)
+    [:no-translate[reports]](../../_auto/reports/masterstat/sales_funnel_by_created_at.md)
     %}
 
 
