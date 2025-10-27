@@ -46,6 +46,9 @@ description: >
   * `MISGRADING_WITHDRAW` — пересортица в меньшую сторону.
 
   * `MAN_UTIL` — ручная утилизация по запросу склада.
+
+  * `WITHDRAW_AUTO_UTILIZATION` — автоматическая утилизация изъятия по истечении
+  срока хранения.
 enum:
   - DEFAULT
   - XDOC
@@ -65,3 +68,4 @@ enum:
   - MISGRADING_SUPPLY
   - MISGRADING_WITHDRAW
   - MAN_UTIL
+  - WITHDRAW_AUTO_UTILIZATION
