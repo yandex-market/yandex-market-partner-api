@@ -10,48 +10,7 @@ post:
     - finance-and-accounting
   operationId: generateUnitedNettingReport
   summary: Отчет по платежам
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/generateUnitedNettingReport.md)
-    %}
-
-
-    Запускает генерацию отчета по платежам за заданный период. [Что это за
-    отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#all-pay)
-
-
-    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
-    запроса [GET
-    v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
-
-
-    Тип отчета зависит от того, какие поля заполнены в запросе:
-
-
-    #|
-
-    || **Тип отчета** | **Какие поля нужны** ||
-
-    || О платежах за период | `dateFrom` и `dateTo` ||
-
-    || О платежном поручении | `bankOrderId` и `bankOrderDateTime` ||
-
-    || [О баллах Маркета](*баллы_маркета) | `monthOfYear` ||
-
-    |#
-
-
-    Заказать отчеты нескольких типов одним запросом нельзя.
-
-
-    {% include notitle
-    [:no-translate[reports]](../../_auto/reports/united/netting/generator/united_netting.md)
-    %}
-
-
-    |**⚙️ Лимит:** 100 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateUnitedNettingReport.md) %}\n\nЗапускает генерацию отчета по платежам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#all-pay)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\nТип отчета зависит от того, какие поля заполнены в запросе:\n\n#|\n|| **Тип отчета** | **Какие поля нужны** | **Комментарий** ||\n|| О платежах за период | `dateFrom` и `dateTo` |\n  В отчет попадают все платежи, которые были выплачены и начислены в выбранный период.\n\n  Пример: если перевод выполнен 31\_августа и зачислен 1\_сентября, он попадет в отчет за оба месяца.\n||\n|| О платежном поручении | `bankOrderId` и `bankOrderDateTime` |—||\n|| [О баллах Маркета](*баллы_маркета) | `monthOfYear` |—||\n|#\n\nЗаказать отчеты нескольких типов одним запросом нельзя.\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/united/netting/generator/united_netting.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
     - $ref: ../components/parameters/ReportLanguage.yaml
