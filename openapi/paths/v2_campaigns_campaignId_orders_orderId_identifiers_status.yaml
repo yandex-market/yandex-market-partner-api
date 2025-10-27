@@ -10,36 +10,14 @@ post:
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
   operationId: getOrderIdentifiersStatus
-  summary: Статусы проверки УИНов
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOrderIdentifiersStatus.md)
-    %}
-
-
-    Возвращает статусы проверки [УИНов](*uin) в заказе.
-
-
-    Заказ, в котором есть ювелирные изделия, перейдет в статус `READY_TO_SHIP`,
-    только когда:
-
-
-    1. Вы передадите Маркету УИНы по каждому ювелирному изделию в заказе — метод
-    [PUT
-    v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
-
-    2. Все УИНы успешно пройдут проверку.
-
-
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+  summary: Статусы проверки кодов маркировки
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getOrderIdentifiersStatus.md) %}\n\nВозвращает статусы проверки кодов маркировки в заказе.\n\nЗаказ, в котором есть ювелирные изделия или товары с обязательной маркировкой в системе [:no-translate[«Честный ЗНАК»]](https://честныйзнак.рф/), перейдет в статус `READY_TO_SHIP`, только когда:\n\n1. В методе [PUT v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md) вы передадите Маркету:\n\n    * [УИНы](:no-translate[*uin]) по каждому ювелирному изделию в заказе;\n\n    * коды маркировки в системе :no-translate[«Честный ЗНАК»] по всем товарам в заказе, для которых она обязательна.\n2. Все коды маркировки успешно пройдут проверку.\n\n|**⚙️ Лимит:** 100\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml
   responses:
     '200':
-      description: Информация по проверке УИНов.
+      description: Информация по проверке кодов маркировки.
       content:
         application/json:
           schema:

@@ -1,0 +1,13 @@
+description: Статус проверки и код маркировки в системе :no-translate[«Честный ЗНАК»].
+type: object
+required:
+  - value
+  - status
+properties:
+  value:
+    type: string
+    description: Код маркировки в системе :no-translate[«Честный ЗНАК»].
+  status:
+    $ref: ./CisStatusType.yaml
+  substatus:
+    $ref: ./CisSubstatusType.yaml

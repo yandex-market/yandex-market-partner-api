@@ -1,0 +1,78 @@
+type: string
+description: >
+  Детализация ошибки при проверке кода маркировки в системе
+  :no-translate[«Честный ЗНАК»]:
+
+
+  * `WRONG_OWNER_INN` — проверка не пройдена. ИНН владельца кода отличается от
+  ИНН продавца.
+
+
+  * `CIS_VALIDATION_ERROR` — проверка не пройдена.
+
+
+  * `CIS_GTIN_NOT_FOUND` — код маркировки не содержит
+  [:no-translate[GTIN]](:no-translate[*gtin]).
+
+
+  * `CIS_SERIAL_NUMBER_NOT_FOUND` — код маркировки не содержит серийный номер.
+
+
+  * `INVALID_SYMBOLS_FOUND` — код маркировки содержит недопустимые символы.
+
+
+  * `CRYPTO_TAIL_FORMAT_MISMATCH_CIS_TYPE` — формат криптоподписи не
+  соответствует типу кода маркировки.
+
+
+  * `INVALID_CRYPTO_TAIL` — криптоподпись не валидна.
+
+
+  * `INVALID_CRYPTO_KEY` — криптоключ не валиден.
+
+
+  * `VERIFICATION_FAILED_IN_EMITTER_COUNTRY` — код маркировки не прошел
+  верификацию в стране эмитента.
+
+
+  * `UNSUPPORTED_AI_FOUND` — найденные в коде маркировки AI не поддерживаются.
+
+
+  * `CIS_NOT_FOUND_IN_GIS_MT` — код маркировки не найден в :no-translate[ГИС
+  МТ].
+
+
+  * `NOT_PLACED_ON_MARKET` — код маркировки не введен в оборот.
+
+
+  * `NOT_PRINTED_ON_PACKAGE` — код маркировки не нанесен на упаковку.
+
+
+  * `EXPIRED_ITEM` — у маркированного товара истек срок годности.
+
+
+  * `SALE_BLOCKED_BY_OGB` — розничная продажа продукции заблокирована по решению
+  ОГВ.
+
+
+  * `ITEM_SOLD` — маркированный товар был продан.
+
+
+  Возвращается только для статуса `INVALID`.
+enum:
+  - WRONG_OWNER_INN
+  - CIS_VALIDATION_ERROR
+  - CIS_GTIN_NOT_FOUND
+  - CIS_SERIAL_NUMBER_NOT_FOUND
+  - INVALID_SYMBOLS_FOUND
+  - CRYPTO_TAIL_FORMAT_MISMATCH_CIS_TYPE
+  - INVALID_CRYPTO_TAIL
+  - INVALID_CRYPTO_KEY
+  - VERIFICATION_FAILED_IN_EMITTER_COUNTRY
+  - UNSUPPORTED_AI_FOUND
+  - CIS_NOT_FOUND_IN_GIS_MT
+  - NOT_PLACED_ON_MARKET
+  - NOT_PRINTED_ON_PACKAGE
+  - EXPIRED_ITEM
+  - SALE_BLOCKED_BY_OGB
+  - ITEM_SOLD

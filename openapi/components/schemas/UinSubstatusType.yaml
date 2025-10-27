@@ -1,0 +1,20 @@
+description: >
+  Детализация ошибки при проверке :no-translate[УИНа].
+
+
+  * `UIN_MERCHANT_MISMATCH` — :no-translate[УИН] не принадлежит вашему магазину.
+
+
+  * `UIN_MERCHANT_UNREGISTERED` — магазин не подключен к системе
+  :no-translate[ГИИС ДМДК].
+
+
+  * `UIN_NO_DATA` — :no-translate[УИН] не найден или заблокирован.
+
+
+  Возвращается только для статуса `FAILED`.
+type: string
+enum:
+  - UIN_MERCHANT_MISMATCH
+  - UIN_MERCHANT_UNREGISTERED
+  - UIN_NO_DATA

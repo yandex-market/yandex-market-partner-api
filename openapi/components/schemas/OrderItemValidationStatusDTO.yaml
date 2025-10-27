@@ -1,4 +1,4 @@
-description: Идентификатор товара и статус проверки его УИНа.
+description: Идентификаторы товаров и информация по проверке их кодов.
 type: object
 required:
   - id
@@ -8,9 +8,18 @@ properties:
     type: integer
     format: int64
   uin:
-    description: Статусы проверки УИНов.
+    description: Информация по проверке :no-translate[УИНов].
     type: array
     nullable: true
     minItems: 1
     items:
       $ref: ./UinDTO.yaml
+  cis:
+    description: >-
+      Информация по проверке кодов маркировки в системе :no-translate[«Честный
+      ЗНАК»].
+    type: array
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./CisDTO.yaml
