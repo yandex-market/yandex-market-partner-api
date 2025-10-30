@@ -15,7 +15,8 @@ properties:
     type: boolean
   parentId:
     description: Идентификатор родительского комментария.
-    $ref: ./GoodsFeedbackCommentId.yaml
+    type: integer
+    format: int64
   author:
     $ref: ./GoodsFeedbackCommentAuthorDTO.yaml
   status:

@@ -11,6 +11,7 @@ properties:
     $ref: ./GoodsFeedbackCommentId.yaml
   parentId:
     description: Идентификатор родительского комментария, на который нужно ответить.
-    $ref: ./GoodsFeedbackCommentId.yaml
+    type: integer
+    format: int64
   text:
     $ref: ./GoodsFeedbackCommentText.yaml
