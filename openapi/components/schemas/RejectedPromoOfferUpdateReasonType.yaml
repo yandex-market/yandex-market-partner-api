@@ -37,10 +37,10 @@ description: >
   цены.
 
 
-  * `PRICE_TOO_BIG` - слишком большая цена по акции.
+  * `PRICE_TOO_BIG` — слишком большая цена по акции.
 
 
-  * `OLD_PRICE_TOO_BIG` - слишком большая зачеркнутая цена.
+  * `OLD_PRICE_TOO_BIG` — слишком большая зачеркнутая цена.
 type: string
 enum:
   - OFFER_DOES_NOT_EXIST
