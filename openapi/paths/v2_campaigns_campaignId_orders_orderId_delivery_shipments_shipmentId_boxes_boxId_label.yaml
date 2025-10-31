@@ -18,6 +18,11 @@ get:
     PDF‑файле.
 
 
+    Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в
+    методе [POST
+    v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+
+
     |**⚙️ Лимит:** 100 000 запросов в час|
 
     |-|

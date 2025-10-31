@@ -21,7 +21,7 @@ post:
           $ref: ../components/schemas/UpdateExternalOrderIdRequest.yaml
   responses:
     '200':
-      description: Внешний идентификатор заказа успешно передан или изменен.
+      description: Внешний идентификатор заказа успешно передан.
       content:
         application/json:
           schema:

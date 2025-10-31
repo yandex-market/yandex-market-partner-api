@@ -16,6 +16,11 @@ post:
     Запускает генерацию **листа сборки** для отгрузки.
 
 
+    Чтобы на в листе сборки отображался внешний идентификатор заказа, передайте
+    его в методе [POST
+    v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+
+
     Узнать статус генерации и получить ссылку на готовый документ можно с
     помощью запроса [GET
     v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
