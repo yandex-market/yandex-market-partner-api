@@ -39,13 +39,9 @@ properties:
     type: integer
     format: int64
   dateFrom:
-    description: Начало периода, включительно.
-    type: string
-    format: date
+    $ref: ./PeriodDateFrom.yaml
   dateTo:
-    description: Конец периода, включительно.
-    type: string
-    format: date
+    $ref: ./PeriodDateTo.yaml
   grouping:
     description: Группировка данных отчета.
     $ref: ./ShowsSalesGroupingType.yaml

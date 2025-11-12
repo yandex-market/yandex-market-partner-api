@@ -8,6 +8,9 @@ properties:
     description: Номер документа.
     type: string
   date:
-    description: Дата создания документа.
+    description: |
+      Дата создания документа.
+
+      Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date

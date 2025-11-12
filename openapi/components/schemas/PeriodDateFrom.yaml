@@ -1,0 +1,7 @@
+type: string
+format: date
+description: |
+  Начало периода, включительно.
+
+  Формат даты: `ГГГГ-ММ-ДД`.
+example: '2025-08-22'

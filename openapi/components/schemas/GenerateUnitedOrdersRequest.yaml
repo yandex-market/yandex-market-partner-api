@@ -11,11 +11,12 @@ properties:
     format: int64
     type: integer
   dateFrom:
-    description: Начало периода, включительно.
-    format: date
-    type: string
+    $ref: ./PeriodDateFrom.yaml
   dateTo:
-    description: Конец периода, включительно. Максимальный период — 1 год.
+    description: |
+      Конец периода, включительно. Максимальный период — 1 год.
+
+      Формат даты: `ГГГГ-ММ-ДД`.
     format: date
     type: string
   campaignIds:

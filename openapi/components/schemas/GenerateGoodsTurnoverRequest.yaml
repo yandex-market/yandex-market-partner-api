@@ -23,8 +23,11 @@ properties:
     format: int64
     type: integer
   date:
-    description: >-
+    description: >
       Дата, за которую нужно рассчитать оборачиваемость. Если параметр не
       указан, используется текущая дата.
+
+
+      Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date

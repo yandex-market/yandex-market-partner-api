@@ -59,9 +59,12 @@ properties:
       type: integer
       format: int64
   reportDate:
-    description: >-
+    description: >
       Фильтр по дате (для модели FBY). В отчет попадут данные за
       **предшествующий** дате день.
+
+
+      Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date
   categoryIds:
