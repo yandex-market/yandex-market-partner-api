@@ -2,15 +2,7 @@ description: Информация о карточке товара.
 type: object
 properties:
   mapping:
-    description: >
-      Информация о карточке товара на Маркете.
-
-
-      Если параметр не указан, сотрудники Маркета сами подберут или создадут
-      подходящую карточку товара, либо у него появится статус `NEED_CONTENT`
-      (нужно найти карточку или создать ее самостоятельно) в выходных данных
-      запроса [POST
-      v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).
+    description: "Информация о карточке товара на Маркете.\n\nЕсли параметр не указан, сотрудники Маркета сами подберут или создадут подходящую карточку товара, либо у него появится статус `NEED_CONTENT` (нужно найти карточку или создать ее самостоятельно) в выходных данных запроса [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n"
     $ref: ./OfferMappingDTO.yaml
   awaitingModerationMapping:
     description: >-

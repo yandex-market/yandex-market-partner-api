@@ -11,33 +11,7 @@ get:
     - inventory-and-order-processing:read-only
   operationId: getWarehouses
   summary: Список складов и групп складов
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getWarehouses.md) %}
-
-
-    {% note warning "Какой метод использовать вместо устаревшего" %}
-
-
-    [POST
-    v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md)
-
-
-    {% endnote %}
-
-
-    Возвращает список складов и, если склады объединены, список групп складов.
-    [Что такое группы складов и зачем они
-    нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks)
-
-
-    Среди прочего запрос позволяет определить идентификатор, который нужно
-    использовать при передаче остатков для группы складов.
-
-
-    |**⚙️ Лимит:** 100 запросов в минуту|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getWarehouses.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md)\n\n{% endnote %}\n\nВозвращает список складов и, если склады объединены, список групп складов. [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks)\n\nСреди прочего запрос позволяет определить идентификатор, который нужно использовать при передаче остатков для группы складов.\n\n|**⚙️ Лимит:** 100 запросов в минуту|\n|-|\n"
   deprecated: true
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

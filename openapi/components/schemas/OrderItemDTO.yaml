@@ -84,16 +84,7 @@ properties:
     items:
       $ref: ./OrderItemPromoDTO.yaml
   instances:
-    description: >
-      Информация о маркировке единиц товара.
-
-
-      Возвращаются данные для маркировки, переданные в запросе [PUT
-      v2/campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).
-
-
-      Если магазин еще не передавал коды для этого заказа, `instances`
-      отсутствует.
+    description: "Информация о маркировке единиц товара.\n\nВозвращаются данные для маркировки, переданные в запросе [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).\n\nЕсли магазин еще не передавал коды для этого заказа, `instances` отсутствует.\n"
     type: array
     nullable: true
     minItems: 1
@@ -101,7 +92,7 @@ properties:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
     deprecated: true
-    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET v2/campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
+    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET\_v2/campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
     type: array
     nullable: true
     minItems: 1

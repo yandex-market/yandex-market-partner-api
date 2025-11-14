@@ -7,27 +7,7 @@ put:
     - inventory-and-order-processing
   operationId: updateOrderStorageLimit
   summary: Продление срока хранения заказа
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateOrderStorageLimit.md)
-    %}
-
-
-    Продлевает срок хранения заказа в пункте выдачи продавца.
-
-
-    Заказ должен быть в статусе `PICKUP`. Продлить срок можно только один раз,
-    не больше чем на 30 дней.
-
-
-    Новый срок хранения можно получить в параметре `outletStorageLimitDate`
-    запроса [GET
-    v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
-
-
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/updateOrderStorageLimit.md) %}\n\nПродлевает срок хранения заказа в пункте выдачи продавца.\n\nЗаказ должен быть в статусе `PICKUP`. Продлить срок можно только один раз, не больше чем на 30 дней.\n\nНовый срок хранения можно получить в параметре `outletStorageLimitDate` запроса [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).\n\n|**⚙️ Лимит:** 100 000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

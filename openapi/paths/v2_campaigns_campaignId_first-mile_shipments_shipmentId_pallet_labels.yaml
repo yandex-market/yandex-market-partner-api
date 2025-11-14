@@ -7,27 +7,7 @@ get:
     - inventory-and-order-processing
   operationId: downloadShipmentPalletLabels
   summary: Ярлыки для доверительной приемки
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/downloadShipmentPalletLabels.md)
-    %}
-
-
-    PDF-файл с ярлыками на каждый короб или палету в отгрузке для доверительной
-    приемки. Подробнее про доверительную приемку написано в [Справке Маркета для
-    продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).
-
-
-    Распечатайте по несколько копий каждого ярлыка: на одну тару нужно наклеить
-    минимум 2 ярлыка с разных сторон.
-
-
-    Количество упаковок в отгрузке задается в запросе [PUT
-    v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](../../reference/shipments/setShipmentPalletsCount.md).
-
-    |**⚙️ Лимит:** 200 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/downloadShipmentPalletLabels.md) %}\n\nPDF-файл с ярлыками на каждый короб или палету в отгрузке для доверительной приемки. Подробнее про доверительную приемку написано в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).\n\nРаспечатайте по несколько копий каждого ярлыка: на одну тару нужно наклеить минимум 2 ярлыка с разных сторон.\n\nКоличество упаковок в отгрузке задается в запросе [PUT\_v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](../../reference/shipments/setShipmentPalletsCount.md).\n|**⚙️ Лимит:** 200 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

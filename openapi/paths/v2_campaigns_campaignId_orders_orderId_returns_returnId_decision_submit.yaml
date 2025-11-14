@@ -10,27 +10,7 @@ post:
     - inventory-and-order-processing
   operationId: submitReturnDecision
   summary: Передача и подтверждение решения по возврату
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/submitReturnDecision.md)
-    %}
-
-
-    Позволяет выполнить одну из операций:
-
-
-    * **Для всех моделей:** передать список решений по возврату и подтвердить
-    их.
-
-
-    * **Для модели DBS:** подтвердить решение, переданное в [POST
-    v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision](../../reference/orders/setReturnDecision.md).
-    Для этого используйте запрос без тела.
-
-
-    |**⚙️ Лимит:** 10 000 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/submitReturnDecision.md) %}\n\nПозволяет выполнить одну из операций:\n\n* **Для всех моделей:** передать список решений по возврату и подтвердить их.\n\n* **Для модели DBS:** подтвердить решение, переданное в [POST\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision](../../reference/orders/setReturnDecision.md). Для этого используйте запрос без тела.\n\n|**⚙️ Лимит:** 10 000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

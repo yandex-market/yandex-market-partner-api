@@ -7,23 +7,7 @@ put:
     - inventory-and-order-processing
   operationId: setShipmentPalletsCount
   summary: Передача количества упаковок в отгрузке
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/setShipmentPalletsCount.md)
-    %}
-
-
-    Передает Маркету количество коробов или палет в отгрузке для доверительной
-    приемки. Подробнее про доверительную приемку написано в [Справке Маркета для
-    продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).
-
-
-    Получить PDF-файл с ярлыками для упаковок можно с помощью запроса [GET
-    v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](../../reference/shipments/downloadShipmentPalletLabels.md).
-
-    |**⚙️ Лимит:** 200 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/setShipmentPalletsCount.md) %}\n\nПередает Маркету количество коробов или палет в отгрузке для доверительной приемки. Подробнее про доверительную приемку написано в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).\n\nПолучить PDF-файл с ярлыками для упаковок можно с помощью запроса [GET\_v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](../../reference/shipments/downloadShipmentPalletLabels.md).\n|**⚙️ Лимит:** 200 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

@@ -97,14 +97,7 @@ get:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - $ref: ../components/parameters/PageLimit.yaml
-    - description: >
-        Идентификатор региона.
-
-        Если задать идентификатор родительского региона любого уровня, в
-        выходных данных будут отображены точки продаж всех дочерних регионов.
-
-        Идентификатор региона можно получить c помощью метода [GET
-        v2/regions](../../reference/regions/searchRegionsByName.md).
+    - description: "Идентификатор региона.\nЕсли задать идентификатор родительского региона любого уровня, в выходных данных будут отображены точки продаж всех дочерних регионов.\nИдентификатор региона можно получить c помощью метода [GET\_v2/regions](../../reference/regions/searchRegionsByName.md).\n"
       name: region_id
       in: query
       required: false

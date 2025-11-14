@@ -12,52 +12,7 @@ post:
     - promotion
   operationId: generatePricesReport
   summary: Отчет «Цены на рынке»
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/generatePricesReport.md)
-    %}
-
-
-    {% note warning "Какой метод использовать вместо устаревшего" %}
-
-
-    [POST
-    v2/reports/goods-prices/generate](../../reference/reports/generateGoodsPricesReport.md)
-
-
-    {% endnote %}
-
-
-    Запускает генерацию отчета «Цены на рынке».
-
-
-    В отчете возвращается информация только по 50 000 товаров. Если у вас их
-    больше, используйте фильтры.
-
-
-    {% note warning "Данные в этом отчете постоянно обновляются" %}
-
-
-    Поэтому информация в нем и в кабинете продавца на Маркете на странице
-    **Цены** может отличаться.
-
-
-    {% endnote %}
-
-
-    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
-    запроса [GET
-    v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
-
-
-    {% include notitle
-    [:no-translate[reports]](../../_auto/reports/prices/business_prices_v2.md)
-    %}
-
-
-    |**⚙️ Лимит:** 100 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generatePricesReport.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/reports/goods-prices/generate](../../reference/reports/generateGoodsPricesReport.md)\n\n{% endnote %}\n\nЗапускает генерацию отчета «Цены на рынке».\n\nВ отчете возвращается информация только по 50 000 товаров. Если у вас их больше, используйте фильтры.\n\n{% note warning \"Данные в этом отчете постоянно обновляются\" %}\n\nПоэтому информация в нем и в кабинете продавца на Маркете на странице **Цены** может отличаться.\n\n{% endnote %}\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/prices/business_prices_v2.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"
   deprecated: true
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml

@@ -6,13 +6,7 @@ required:
   - activate_till
 properties:
   id:
-    description: >
-      Идентификатор товара в заказе.
-
-
-      Он приходит в ответе на запрос [GET
-      v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
-      — параметр `id` в `items`.
+    description: "Идентификатор товара в заказе.\n\nОн приходит в ответе на запрос [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md) — параметр `id` в `items`.\n"
     type: integer
     format: int64
   code:

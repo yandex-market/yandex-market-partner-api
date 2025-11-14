@@ -10,20 +10,7 @@ post:
     - communication
   operationId: skipGoodsFeedbacksReaction
   summary: Пропуск реакции на отзывы
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/skipGoodsFeedbacksReaction.md)
-    %}
-
-
-    Пропускает реакцию на отзыв — параметр `needReaction` принимает значение
-    `false` в методе получения всех отзывов [POST
-    v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).
-
-
-    |**⚙️ Лимит:** 1 000 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/skipGoodsFeedbacksReaction.md) %}\n\nПропускает реакцию на отзыв — параметр `needReaction` принимает значение `false` в методе получения всех отзывов [POST\_v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).\n\n|**⚙️ Лимит:** 1 000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

@@ -4,29 +4,7 @@ allOf:
   - $ref: ./PriceWithDiscountDTO.yaml
   - properties:
       minimumForBestseller:
-        description: >
-          Минимальная цена товара для попадания в акцию «Бестселлеры Маркета».
-          Подробнее об этом способе участия читайте [в Справке Маркета для
-          продавцов](https://yandex.ru/support/marketplace/ru/marketing/promos/market/bestsellers#minimum).
-
-
-          При передаче цены ориентируйтесь на значение параметра `maxPromoPrice`
-          (максимально возможная цена для участия в акции) в методе [POST
-          v2/businesses/{businessId}/promos/offers](../../reference/promos/getPromoOffers.md).
-
-
-          Товар не попадет в акцию с помощью этого способа, если:
-
-
-          * Не передать этот параметр. Удалится значение, которое вы указали
-          ранее.
-
-          * В методе [POST
-          v2/businesses/{businessId}/offer-prices](../../reference/prices/getDefaultPrices.md)
-          для этого товара возвращается параметр `excludedFromBestsellers` со
-          значением `true`.
-
-            Но товар по-прежнему сможет попасть в акцию через [автоматическое участие](*auto) или [ручное добавление](*updatePromoOffers).
+        description: "Минимальная цена товара для попадания в акцию «Бестселлеры Маркета». Подробнее об этом способе участия читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/marketing/promos/market/bestsellers#minimum).\n\nПри передаче цены ориентируйтесь на значение параметра `maxPromoPrice` (максимально возможная цена для участия в акции) в методе [POST\_v2/businesses/{businessId}/promos/offers](../../reference/promos/getPromoOffers.md).\n\nТовар не попадет в акцию с помощью этого способа, если:\n\n* Не передать этот параметр. Удалится значение, которое вы указали ранее.\n* В методе [POST\_v2/businesses/{businessId}/offer-prices](../../reference/prices/getDefaultPrices.md) для этого товара возвращается параметр `excludedFromBestsellers` со значением `true`.\n\n  Но товар по-прежнему сможет попасть в акцию через [автоматическое участие](*auto) или [ручное добавление](*updatePromoOffers).\n"
         type: number
         minimum: 0
         maximum: 100000000

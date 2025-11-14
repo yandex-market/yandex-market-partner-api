@@ -9,23 +9,7 @@ get:
     - inventory-and-order-processing
   operationId: generateOrderLabel
   summary: Готовый ярлык‑наклейка для коробки в заказе
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/generateOrderLabel.md) %}
-
-
-    Формирует ярлык‑наклейку для коробки в заказе и возвращает ярлык в
-    PDF‑файле.
-
-
-    Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в
-    методе [POST
-    v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
-
-
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateOrderLabel.md) %}\n\nФормирует ярлык‑наклейку для коробки в заказе и возвращает ярлык в PDF‑файле.\n\nЧтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST\_v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).\n\n|**⚙️ Лимит:** 100 000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

@@ -11,29 +11,7 @@ post:
     - promotion
   operationId: generateShelfsStatisticsReport
   summary: Отчет по полкам
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/generateShelfsStatisticsReport.md)
-    %}
-
-
-    Запускает генерацию сводного отчета по полкам — рекламным блокам с баннером
-    или видео и набором товаров. Подробнее о них читайте [в Справке Маркета для
-    продавцов](https://yandex.ru/support2/marketplace/ru/marketing/shelf).
-
-
-    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
-    запроса [GET
-    v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
-
-
-    {% include notitle
-    [:no-translate[reports]](../../_auto/reports/incuts/shelfs_statistics.md) %}
-
-
-    |**⚙️ Лимит:** 100 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateShelfsStatisticsReport.md) %}\n\nЗапускает генерацию сводного отчета по полкам — рекламным блокам с баннером или видео и набором товаров. Подробнее о них читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/marketing/shelf).\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/incuts/shelfs_statistics.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:

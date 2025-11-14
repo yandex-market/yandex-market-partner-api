@@ -32,13 +32,7 @@ required:
   - value
 properties:
   name:
-    description: >
-      Название характеристики.
-
-
-      Должно совпадать с названием характеристики на Маркете. Узнать его можно
-      из Excel-шаблона категории или через запрос [POST
-      v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).
+    description: "Название характеристики.\n\nДолжно совпадать с названием характеристики на Маркете. Узнать его можно из Excel-шаблона категории или через запрос [POST\_v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md).\n"
     example: Wi-Fi
     type: string
     maxLength: 200

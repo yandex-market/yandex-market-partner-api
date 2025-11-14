@@ -12,50 +12,7 @@ post:
     - finance-and-accounting
   operationId: generateClosureDocumentsReport
   summary: Закрывающие документы
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/generateClosureDocumentsReport.md)
-    %}
-
-
-    Возвращает ZIP-архив с закрывающими документами в формате PDF за указанный
-    месяц.
-
-
-    {% cut "Состав документов в зависимости от типа договора" %}
-
-
-    * **Договор на размещение**
-
-      * [акт об оказанных услугах](*acts-main-act)
-      * [счет-фактура](*acts-main-invoice)
-      * [сводный отчет по данным статистики](*acts-main-report)
-      * [отчет об исполнении поручения и о зачете взаимных требований](*acts-main-agent) (отчет агента)
-
-    * **Договор на продвижение** (в России не заключается после 30 сентября 2024
-    года)
-
-      * [акт об оказании услуг](*acts-discounts-act)
-      * [счет-фактура](*acts-discounts-invoice), если этого требует схема налогообложения
-
-    * **Договор на маркетинг**
-
-      * [акт об оказанных услугах](*acts-marketing-act)
-      * [счет-фактура](*acts-main-invoice)
-      * [счет-фактура на аванс](*acts-marketing-invoice)
-      * [выписка по лицевому счету](*acts-marketing-account)
-      * [детализация к акту](*acts-marketing-details)
-
-    {% endcut %}
-
-
-    Узнать статус генерации и получить ссылку на архив можно с помощью запроса
-    [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
-
-
-    |**⚙️ Лимит:** 1 000 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateClosureDocumentsReport.md) %}\n\nВозвращает ZIP-архив с закрывающими документами в формате PDF за указанный месяц.\n\n{% cut \"Состав документов в зависимости от типа договора\" %}\n\n* **Договор на размещение**\n\n  * [акт об оказанных услугах](*acts-main-act)\n  * [счет-фактура](*acts-main-invoice)\n  * [сводный отчет по данным статистики](*acts-main-report)\n  * [отчет об исполнении поручения и о зачете взаимных требований](*acts-main-agent) (отчет агента)\n\n* **Договор на продвижение** (в России не заключается после 30 сентября 2024 года)\n\n  * [акт об оказании услуг](*acts-discounts-act)\n  * [счет-фактура](*acts-discounts-invoice), если этого требует схема налогообложения\n\n* **Договор на маркетинг**\n\n  * [акт об оказанных услугах](*acts-marketing-act)\n  * [счет-фактура](*acts-main-invoice)\n  * [счет-фактура на аванс](*acts-marketing-invoice)\n  * [выписка по лицевому счету](*acts-marketing-account)\n  * [детализация к акту](*acts-marketing-details)\n\n{% endcut %}\n\nУзнать статус генерации и получить ссылку на архив можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**⚙️ Лимит:** 1 000 запросов в час|\n|-|\n"
   requestBody:
     required: true
     content:

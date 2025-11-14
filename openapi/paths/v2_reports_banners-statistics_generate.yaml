@@ -13,32 +13,7 @@ post:
     - market-yandex-go
   operationId: generateBannersStatisticsReport
   summary: Отчет по охватному продвижению
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/generateBannersStatisticsReport.md)
-    %}
-
-
-    Запускает генерацию сводного отчета по охватному продвижению. Что это за
-    отчет: [для
-    баннеров](https://yandex.ru/support/marketplace/ru/marketing/advertising-tools/banner#statistics),
-    [для
-    пуш-уведомлений](https://yandex.ru/support/marketplace/ru/marketing/advertising-tools/push-notifications#statistics).
-
-
-    Узнать статус генерации и получить ссылку на готовый отчет можно с помощью
-    запроса [GET
-    v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
-
-
-    {% include notitle
-    [:no-translate[reports]](../../_auto/reports/incuts/banners_statistics.md)
-    %}
-
-
-    |**⚙️ Лимит:** 100 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateBannersStatisticsReport.md) %}\n\nЗапускает генерацию сводного отчета по охватному продвижению. Что это за отчет: [для баннеров](https://yandex.ru/support/marketplace/ru/marketing/advertising-tools/banner#statistics), [для пуш-уведомлений](https://yandex.ru/support/marketplace/ru/marketing/advertising-tools/push-notifications#statistics).\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/incuts/banners_statistics.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:

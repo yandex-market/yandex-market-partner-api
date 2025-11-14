@@ -1,13 +1,4 @@
-description: >
-  Идентификатор категории на Маркете.
-
-
-  При изменении категории убедитесь, что характеристики товара и их значения в
-  параметре `parameterValues` вы передаете для новой категории.
-
-
-  Список категорий Маркета можно получить с помощью запроса  [POST
-  v2/categories/tree](../../reference/categories/getCategoriesTree.md).
+description: "Идентификатор категории на Маркете.\n\nПри изменении категории убедитесь, что характеристики товара и их значения в параметре `parameterValues` вы передаете для новой категории.\n\nСписок категорий Маркета можно получить с помощью запроса  [POST\_v2/categories/tree](../../reference/categories/getCategoriesTree.md).\n"
 format: int32
 type: integer
 minimum: 0

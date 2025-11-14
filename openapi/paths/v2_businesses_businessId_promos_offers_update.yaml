@@ -13,23 +13,7 @@ post:
     - market-yandex-go
   operationId: updatePromoOffers
   summary: Добавление товаров в акцию или изменение их цен
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updatePromoOffers.md) %}
-
-
-    Добавляет товары в акцию или изменяет цены на товары, которые участвуют в
-    акции.
-
-
-    Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли
-    они, можно с помощью параметра `processing` в ответе метода [POST
-    v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md).
-
-
-    |**⚙️ Лимит:** 10 000 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/updatePromoOffers.md) %}\n\nДобавляет товары в акцию или изменяет цены на товары, которые участвуют в акции.\n\nИзменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST\_v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md).\n\n|**⚙️ Лимит:** 10 000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:
@@ -46,16 +30,7 @@ post:
           schema:
             $ref: ../components/schemas/UpdatePromoOffersResponse.yaml
     '400':
-      description: >
-        | **Описание**        | **Пояснение**      | **Способы
-        решения**                                                                                                                                  
-        |
-
-        |---------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-        | :no-translate[**Promo has ended**] | Акция закончилась. | Чтобы
-        узнать, в каких акциях можно поучаствовать, воспользуйтесь методом [POST
-        /businesses/{businessId}/promos](../../reference/promos/getPromos.md). |
+      description: "| **Описание**        | **Пояснение**      | **Способы решения**                                                                                                                                   |\n|---------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|\n| :no-translate[**Promo has ended**] | Акция закончилась. | Чтобы узнать, в каких акциях можно поучаствовать, воспользуйтесь методом [POST\_v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md). |\n"
       $ref: ../components/responses/400.yaml
     '401':
       $ref: ../components/responses/401.yaml

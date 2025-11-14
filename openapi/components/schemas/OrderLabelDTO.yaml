@@ -15,12 +15,7 @@ properties:
     type: integer
     format: int32
   url:
-    description: >
-      URL файла с ярлыками‑наклейками на все коробки в заказе.
-
-
-      Соответствует URL, по которому выполняется запрос [GET
-      v2/campaigns/{campaignId}/orders/{orderId}/delivery/labels](../../reference/orders/generateOrderLabels.md).
+    description: "URL файла с ярлыками‑наклейками на все коробки в заказе.\n\nСоответствует URL, по которому выполняется запрос [GET\_v2/campaigns/{campaignId}/orders/{orderId}/delivery/labels](../../reference/orders/generateOrderLabels.md).\n"
     deprecated: true
     $ref: ./Url.yaml
   parcelBoxLabels:

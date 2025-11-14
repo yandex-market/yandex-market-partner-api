@@ -1,9 +1,4 @@
-description: >
-  Идентификатор региона.
-
-
-  Идентификатор региона можно получить c помощью запроса [GET
-  v2/regions](../../reference/regions/searchRegionsByName.md).
+description: "Идентификатор региона.\n\nИдентификатор региона можно получить c помощью запроса [GET\_v2/regions](../../reference/regions/searchRegionsByName.md).\n"
 name: regionId
 in: query
 required: true

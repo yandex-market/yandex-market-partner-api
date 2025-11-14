@@ -15,38 +15,7 @@ get:
     - finance-and-accounting
   operationId: getOrder
   summary: Информация об одном заказе
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOrder.md) %}
-
-
-    Возвращает информацию о заказе.
-
-
-    {% note tip "Вы также можете настроить API-уведомления" %}
-
-
-    Маркет отправит вам
-    [запрос](../../push-notifications/reference/sendNotification.md), когда
-    появится новый заказ или изменится его статус. А полную информацию можно
-    получить с помощью этого метода или [GET
-    v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md).
-
-
-    [{#T}](../../push-notifications/index.md)
-
-
-    {% endnote %}
-
-
-    Получить более подробную информацию о покупателе и его номере телефона можно
-    с помощью запроса [GET
-    v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).
-
-
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getOrder.md) %}\n\nВозвращает информацию о заказе.\n\n{% note tip \"Вы также можете настроить API-уведомления\" %}\n\nМаркет отправит вам [запрос](../../push-notifications/reference/sendNotification.md), когда появится новый заказ или изменится его статус. А полную информацию можно получить с помощью этого метода или [GET\_v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md).\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\nПолучить более подробную информацию о покупателе и его номере телефона можно с помощью запроса [GET\_v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).\n\n|**⚙️ Лимит:** 100 000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

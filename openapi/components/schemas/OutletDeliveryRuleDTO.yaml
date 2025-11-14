@@ -82,12 +82,7 @@ properties:
     minimum: 0
     maximum: 60
   deliveryServiceId:
-    description: >
-      Идентификатор службы доставки товаров в точку продаж.
-
-
-      Информацию о службе доставки можно получить с помощью запроса [GET
-      delivery/services](../../reference/orders/getDeliveryServices.md).
+    description: "Идентификатор службы доставки товаров в точку продаж.\n\nИнформацию о службе доставки можно получить с помощью запроса [GET\_delivery/services](../../reference/orders/getDeliveryServices.md).\n"
     type: integer
     format: int64
   orderBefore:

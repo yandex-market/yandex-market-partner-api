@@ -1,5 +1,3 @@
-description: >-
-  Внешний идентификатор заказа, который вы передали в [POST
-  v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+description: "Внешний идентификатор заказа, который вы передали в [POST\_v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md)."
 type: string
 minLength: 1

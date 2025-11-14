@@ -14,9 +14,7 @@ required:
   - deliveryServiceId
 properties:
   url:
-    description: >
-      Соответствует URL, по которому выполняется запрос [GET
-      v2/campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label](../../reference/orders/generateOrderLabel.md).
+    description: "Соответствует URL, по которому выполняется запрос [GET\_v2/campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label](../../reference/orders/generateOrderLabel.md).\n"
     $ref: ./Url.yaml
   supplierName:
     description: Юридическое название магазина.
@@ -64,10 +62,7 @@ properties:
     type: string
     deprecated: true
   deliveryServiceId:
-    description: >-
-      Идентификатор службы доставки. Информацию о службе доставки можно получить
-      с помощью запроса [GET
-      delivery/services](../../reference/orders/getDeliveryServices.md).
+    description: "Идентификатор службы доставки. Информацию о службе доставки можно получить с помощью запроса [GET\_delivery/services](../../reference/orders/getDeliveryServices.md)."
     type: string
   deliveryAddress:
     description: Адрес получателя.

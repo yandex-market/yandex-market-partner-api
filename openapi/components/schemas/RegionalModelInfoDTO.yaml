@@ -4,12 +4,6 @@ properties:
   currency:
     $ref: ./CurrencyType.yaml
   regionId:
-    description: >
-      Идентификатор региона, для которого выводится информация о предложениях
-      модели (доставляемых в этот регион).
-
-
-      Информацию о регионе по идентификатору можно получить с помощью запроса
-      [GET v2/regions/{regionId}](../../reference/regions/searchRegionsById.md).
+    description: "Идентификатор региона, для которого выводится информация о предложениях модели (доставляемых в этот регион).\n\nИнформацию о регионе по идентификатору можно получить с помощью запроса [GET\_v2/regions/{regionId}](../../reference/regions/searchRegionsById.md).\n"
     type: integer
     format: int64

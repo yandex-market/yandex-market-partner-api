@@ -10,17 +10,7 @@ description: >
 type: object
 properties:
   id:
-    description: >
-      Идентификатор товара в рамках заказа.
-
-
-      Получить идентификатор можно с помощью ресурсов [GET
-      v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или
-      [GET
-      v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
-
-
-      Обязательный параметр.
+    description: "Идентификатор товара в рамках заказа.\n\nПолучить идентификатор можно с помощью ресурсов [GET\_v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).\n\nОбязательный параметр.\n"
     type: integer
     format: int64
   count:
