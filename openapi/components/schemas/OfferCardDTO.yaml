@@ -30,9 +30,13 @@ properties:
     type: integer
     format: int32
   averageContentRating:
-    description: >-
+    description: >
       Средний рейтинг карточки у товаров той категории, которая указана в
       `marketCategoryId`.
+
+
+      Возвращается, только если параметр `withRecommendations` имеет значение
+      `true`.
     type: integer
     format: int32
   contentRatingStatus:
@@ -41,6 +45,10 @@ properties:
   recommendations:
     description: >
       Список рекомендаций к заполнению карточки.
+
+
+      Возвращается, только если параметр `withRecommendations` имеет значение
+      `true`.
 
 
       Рекомендации Маркета помогают заполнять карточку так, чтобы покупателям

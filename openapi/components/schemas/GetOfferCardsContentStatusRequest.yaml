@@ -38,3 +38,13 @@ properties:
     minItems: 1
     items:
       $ref: ./CategoryId.yaml
+  withRecommendations:
+    description: >
+      Возвращать ли список рекомендаций к заполнению карточки и средний рейтинг
+      карточки у товаров той категории, которая указана в `marketCategoryId`.
+
+
+      Значение по умолчанию: `false`. Если информация нужна, передайте значение
+      `true`.
+    type: boolean
+    default: false
