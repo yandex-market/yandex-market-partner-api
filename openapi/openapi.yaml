@@ -170,8 +170,6 @@ paths:
     $ref: paths/v2_campaigns_campaignId_offer-prices_updates.yaml
   /v2/campaigns/{campaignId}/offer-prices:
     $ref: paths/v2_campaigns_campaignId_offer-prices.yaml
-  /v2/campaigns/{campaignId}/offer-prices/suggestions:
-    $ref: paths/v2_campaigns_campaignId_offer-prices_suggestions.yaml
   /v2/businesses/{businessId}/offer-prices:
     $ref: paths/v2_businesses_businessId_offer-prices.yaml
   /v2/businesses/{businessId}/price-quarantine:
