@@ -42,6 +42,8 @@ description: >
   * `ACCEPTED_BY_WAREHOUSE_SYSTEM` — информация о заявке направлена на склад.
 
   * `READY_TO_WITHDRAW` — товары готовы к выдаче.
+
+  * `NEED_PREPARATION` — ожидается информация от продавца.
 enum:
   - CREATED
   - FINISHED
@@ -60,3 +62,4 @@ enum:
   - WAREHOUSE_HANDLING
   - ACCEPTED_BY_WAREHOUSE_SYSTEM
   - READY_TO_WITHDRAW
+  - NEED_PREPARATION
