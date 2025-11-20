@@ -1,0 +1,78 @@
+type: object
+description: Запрос на получение информации о заказах бизнеса.
+properties:
+  orderIds:
+    description: Идентификаторы заказов.
+    nullable: true
+    uniqueItems: true
+    type: array
+    items:
+      type: integer
+      format: int64
+    minItems: 1
+    maxItems: 50
+  externalOrderIds:
+    description: Внешние идентификаторы заказов.
+    nullable: true
+    uniqueItems: true
+    type: array
+    items:
+      $ref: ./ExternalOrderId.yaml
+    minItems: 1
+    maxItems: 50
+  programTypes:
+    description: Модели работы магазина на Маркете.
+    nullable: true
+    uniqueItems: true
+    type: array
+    items:
+      $ref: ./SellingProgramType.yaml
+    minItems: 1
+  campaignIds:
+    description: Идентификаторы кампаний.
+    nullable: true
+    uniqueItems: true
+    type: array
+    items:
+      type: integer
+      format: int64
+    minItems: 1
+    maxItems: 50
+  statuses:
+    description: Статусы заказов.
+    nullable: true
+    uniqueItems: true
+    type: array
+    items:
+      $ref: ./OrderStatusType.yaml
+    minItems: 1
+  substatuses:
+    description: Этапы обработки или причины отмены заказов.
+    nullable: true
+    uniqueItems: true
+    type: array
+    items:
+      $ref: ./OrderSubstatusType.yaml
+    minItems: 1
+  dates:
+    description: Даты заказов.
+    $ref: ./OrderDatesFilterDTO.yaml
+  fake:
+    description: |
+      Тип заказа:
+
+      * `false` — настоящий заказ покупателя.
+
+      * `true` — [тестовый заказ](../../concepts/sandbox.md) Маркета.
+    type: boolean
+  waitingForCancellationApprove:
+    description: >
+      **Только для модели DBS**
+
+
+      Фильтр для получения заказов, по которым есть запросы на отмену.
+
+
+      При значении `true` возвращаются только те заказы, которые находятся в
+      статусе `DELIVERY` или `PICKUP`, и пользователи решили их отменить.
+    type: boolean

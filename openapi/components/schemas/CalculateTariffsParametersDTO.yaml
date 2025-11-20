@@ -8,7 +8,7 @@ properties:
     minimum: 1
   sellingProgram:
     description: >
-      Модель размещения.
+      Модель работы.
 
 
       **Для продавцов Market Yandex Go** недоступны модели DBS и Экспресс.

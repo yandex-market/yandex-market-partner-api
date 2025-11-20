@@ -1,0 +1,5 @@
+description: Услуги, добавленные в заказ.
+type: object
+properties:
+  liftType:
+    $ref: ./OrderLiftType.yaml

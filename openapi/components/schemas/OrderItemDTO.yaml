@@ -14,7 +14,7 @@ properties:
     description: |
       Идентификатор товара в заказе.
 
-      Позволяет идентифицировать товар в рамках данного заказа.
+      Позволяет идентифицировать товар в рамках заказа.
     type: integer
     format: int64
   offerId:
@@ -58,7 +58,7 @@ properties:
     description: Количество единиц товара.
     type: integer
   vat:
-    description: Налог на добавленную стоимость (НДС) на товар.
+    description: НДС на товар.
     $ref: ./OrderVatType.yaml
   shopSku:
     deprecated: true
@@ -76,7 +76,7 @@ properties:
     type: string
   promos:
     description: >-
-      Информация о вознаграждениях продавцу за скидки на товар по промокодам,
+      Информация о вознаграждении продавцу за скидки на товар по промокодам,
       купонам и акциям.
     type: array
     nullable: true

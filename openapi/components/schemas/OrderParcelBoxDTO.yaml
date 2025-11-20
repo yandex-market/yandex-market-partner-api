@@ -5,9 +5,9 @@ required:
   - fulfilmentId
 properties:
   id:
-    description: Идентификатор грузоместа.
+    description: Идентификатор грузового места.
     type: integer
     format: int64
   fulfilmentId:
-    description: Идентификатор грузового места в информационной системе магазина.
+    description: Идентификатор грузового места в системе магазина.
     type: string

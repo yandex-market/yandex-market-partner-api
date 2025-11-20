@@ -26,7 +26,7 @@ description: >
 
   * `UNKNOWN_VALUE` — неизвестное значение.
 
-  Используется только совместно с параметром `payment-method=YANDEX`.
+  Используется только вместе с параметром `payment-method=YANDEX`.
 type: string
 enum:
   - OSN

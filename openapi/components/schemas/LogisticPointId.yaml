@@ -1,0 +1,4 @@
+type: integer
+description: "Идентификатор пункта выдачи.\n\nЕго можно узнать с помощью метода [POST\_v1/businesses/{businessId}/logistics-points](../../reference/logistic-points/getLogisticPoints.md).\n"
+format: int64
+minimum: 1

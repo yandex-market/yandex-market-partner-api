@@ -96,7 +96,7 @@ properties:
 
       * `false` — настоящий заказ покупателя.
 
-      * `true` — [тестовый](../../concepts/sandbox.md) заказ Маркета.
+      * `true` — [тестовый заказ](../../concepts/sandbox.md) Маркета.
     type: boolean
   items:
     description: Список товаров в заказе.

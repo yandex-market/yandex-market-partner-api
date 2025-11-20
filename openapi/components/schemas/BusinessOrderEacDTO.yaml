@@ -1,0 +1,12 @@
+description: Информация о коде подтверждения.
+type: object
+required:
+  - eacType
+properties:
+  eacType:
+    description: Тип кода подтверждения ЭАПП.
+    $ref: ./OrderDeliveryEacType.yaml
+  eacCode:
+    description: |
+      Код подтверждения ЭАПП (для типа `MERCHANT_TO_COURIER`).
+    type: string

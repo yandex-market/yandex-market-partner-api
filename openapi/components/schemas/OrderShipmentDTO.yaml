@@ -35,7 +35,7 @@ properties:
     description: |
       **Только для модели DBS**
 
-      Информация для отслеживания перемещений посылки.
+      Информация для отслеживания посылки.
     type: array
     nullable: true
     minItems: 1

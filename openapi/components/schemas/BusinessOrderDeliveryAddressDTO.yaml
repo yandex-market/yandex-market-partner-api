@@ -1,0 +1,48 @@
+description: >
+  Адрес доставки.
+
+
+  Указывается, если параметр `type` принимает значение `DELIVERY`, `POST` или
+  `PICKUP` (только для модели DBS). Если `type=PICKUP`, возвращается адрес
+  пункта выдачи.
+type: object
+properties:
+  country:
+    description: Страна.
+    type: string
+  postcode:
+    description: Почтовый индекс.
+    type: string
+  city:
+    description: Город или населенный пункт.
+    type: string
+  district:
+    description: Район.
+    type: string
+  subway:
+    description: Станция метро.
+    type: string
+  street:
+    description: Улица.
+    type: string
+  house:
+    description: Номер дома.
+    type: string
+  block:
+    description: Корпус.
+    type: string
+  entrance:
+    description: Номер подъезда.
+    type: string
+  entryphone:
+    description: Код домофона.
+    type: string
+  floor:
+    description: Этаж.
+    type: string
+  apartment:
+    description: Номер квартиры или офиса.
+    type: string
+  gps:
+    description: GPS-координаты.
+    $ref: ./GpsDTO.yaml

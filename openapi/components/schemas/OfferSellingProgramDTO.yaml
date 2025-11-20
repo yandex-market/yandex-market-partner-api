@@ -6,7 +6,7 @@ required:
 properties:
   sellingProgram:
     description: |
-      Модель размещения.
+      Модель работы.
     $ref: ./SellingProgramType.yaml
   status:
     description: |

@@ -1,0 +1,14 @@
+type: object
+description: Ответ со списком заказов бизнеса.
+required:
+  - orders
+properties:
+  orders:
+    description: Список заказов в кабинете.
+    type: array
+    maxItems: 50
+    items:
+      $ref: ./BusinessOrderDTO.yaml
+  paging:
+    description: Информация о страницах результатов.
+    $ref: ./ForwardScrollingPagerDTO.yaml

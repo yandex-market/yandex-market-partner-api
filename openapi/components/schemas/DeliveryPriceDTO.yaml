@@ -1,0 +1,20 @@
+description: |
+  Информация о стоимости доставки, включая подъем на этаж.
+
+  {% note info "Как рассчитывается стоимость доставки" %}
+
+  * Стоимость доставки складывается из параметров `payment` и `subsidy`.
+  * Все суммы указаны в валюте магазина.
+
+  {% endnote %}
+type: object
+properties:
+  payment:
+    description: Платеж покупателя за доставку.
+    $ref: ./CurrencyValueDTO.yaml
+  subsidy:
+    description: Вознаграждение Маркета за доставку.
+    $ref: ./CurrencyValueDTO.yaml
+  vat:
+    description: НДС на доставку.
+    $ref: ./OrderVatType.yaml

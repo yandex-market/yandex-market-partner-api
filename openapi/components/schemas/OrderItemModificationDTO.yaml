@@ -10,7 +10,7 @@ description: >
 type: object
 properties:
   id:
-    description: "Идентификатор товара в рамках заказа.\n\nПолучить идентификатор можно с помощью ресурсов [GET\_v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md) или [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).\n\nОбязательный параметр.\n"
+    description: "Идентификатор товара в рамках заказа.\n\nПолучить идентификатор можно с помощью одного из методов:\n\n* [GET\_v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md);\n\n* [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md);\n\n* [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).\n\nОбязательный параметр.\n"
     type: integer
     format: int64
   count:

@@ -45,6 +45,8 @@ paths:
     $ref: paths/v2_campaigns_campaignId_orders_orderId.yaml
   /v2/campaigns/{campaignId}/orders:
     $ref: paths/v2_campaigns_campaignId_orders.yaml
+  /v1/businesses/{businessId}/orders:
+    $ref: paths/v1_businesses_businessId_orders.yaml
   /v2/campaigns/{campaignId}/orders/{orderId}/identifiers:
     $ref: paths/v2_campaigns_campaignId_orders_orderId_identifiers.yaml
   /v2/campaigns/{campaignId}/orders/{orderId}/items:

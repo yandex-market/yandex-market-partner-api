@@ -1,4 +1,4 @@
-description: "**Только для модели DBS**\n\nФильтрация заказов по наличию запросов покупателей на отмену.\n\nПри значении `true` возвращаются только заказы, которые находятся в статусе `DELIVERY` или `PICKUP` и которые пользователи решили отменить.\n\nЧтобы подтвердить или отклонить отмену, отправьте запрос [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation).\n"
+description: "**Только для модели DBS**\n\nФильтр для получения заказов, по которым был запрос на отмену.\n\nПри значении `true` возвращаются только заказы, которые находятся в статусе `DELIVERY` или `PICKUP` и которые пользователи решили отменить.\n\nЧтобы подтвердить или отклонить отмену, отправьте запрос [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation).\n"
 name: onlyWaitingForCancellationApprove
 in: query
 required: false

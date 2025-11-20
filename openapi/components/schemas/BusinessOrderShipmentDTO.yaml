@@ -1,0 +1,22 @@
+description: Информация об отгрузке заказа.
+type: object
+required:
+  - shipmentDate
+properties:
+  id:
+    description: Идентификатор отгрузки.
+    nullable: true
+    type: integer
+    format: int64
+  shipmentDate:
+    description: |
+      Дата отгрузки.
+
+      Формат даты: `ГГГГ-ММ-ДД`.
+    type: string
+    format: date
+  shipmentTime:
+    description: Время отгрузки.
+    nullable: true
+    type: string
+    format: time

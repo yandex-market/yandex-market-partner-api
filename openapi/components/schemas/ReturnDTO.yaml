@@ -16,7 +16,7 @@ properties:
     type: integer
   creationDate:
     description: |
-      Дата создания невыкупа или возврата клиентом.
+      Дата создания невыкупа или возврата.
 
       Формат даты: ISO 8601 со смещением относительно UTC.
     type: string

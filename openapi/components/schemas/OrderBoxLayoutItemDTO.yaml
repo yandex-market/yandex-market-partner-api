@@ -19,14 +19,14 @@ properties:
     minimum: 1
   partialCount:
     description: >
-      Часть товара в коробке.
+      Информация о части товара в коробке.
 
 
       Используйте это поле, если в коробке поедет часть большого товара. Не
       используйте это поле одновременно с `fullCount`.
     $ref: ./OrderBoxLayoutPartialCountDTO.yaml
   instances:
-    description: Переданные вами коды маркировки.
+    description: Переданные коды маркировки.
     type: array
     nullable: true
     minItems: 1

@@ -5,7 +5,7 @@ properties:
     description: |
       Идентификатор товара в заказе.
 
-      Позволяет идентифицировать товар в рамках данного заказа.
+      Позволяет идентифицировать товар в рамках заказа.
     type: integer
     format: int64
   vat:
@@ -27,7 +27,7 @@ properties:
     description: Ваш идентификатор товара.
     $ref: ./ShopSku.yaml
   instances:
-    description: Переданные вами коды маркировки.
+    description: Переданные коды маркировки.
     type: array
     nullable: true
     minItems: 1

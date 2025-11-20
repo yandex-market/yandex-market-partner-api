@@ -1,0 +1,89 @@
+description: Информация о заказе.
+type: object
+required:
+  - orderId
+  - campaignId
+  - status
+  - substatus
+  - creationDate
+  - paymentType
+  - paymentMethod
+  - fake
+  - items
+  - delivery
+properties:
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  campaignId:
+    description: Идентификатор кампании.
+    type: integer
+    format: int64
+  programType:
+    description: Тип программы кампании магазина.
+    $ref: ./SellingProgramType.yaml
+  externalOrderId:
+    $ref: ./ExternalOrderId.yaml
+  status:
+    $ref: ./OrderStatusType.yaml
+  substatus:
+    $ref: ./OrderSubstatusType.yaml
+  creationDate:
+    description: |
+      Дата создания невыкупа или возврата.
+
+      Формат даты: ISO 8601 со смещением относительно UTC.
+    type: string
+    format: date-time
+    example: '2020-02-02T14:30:30+03:00'
+  updateDate:
+    description: |
+      Дата и время последнего обновления заказа.
+
+      Формат даты: ISO 8601 со смещением относительно UTC.
+    type: string
+    format: date-time
+    example: '2020-02-02T14:30:30+03:00'
+  paymentType:
+    $ref: ./OrderPaymentType.yaml
+  paymentMethod:
+    $ref: ./OrderPaymentMethodType.yaml
+  fake:
+    description: |
+      Тип заказа:
+
+      * `false` — настоящий заказ покупателя.
+
+      * `true` — [тестовый заказ](../../concepts/sandbox.md) Маркета.
+    type: boolean
+  items:
+    description: Список товаров в заказе.
+    type: array
+    items:
+      $ref: ./BusinessOrderItemDTO.yaml
+  prices:
+    description: |
+      Информация о стоимости заказа, доставки и вознаграждениях.
+    $ref: ./OrderPriceDTO.yaml
+  delivery:
+    $ref: ./BusinessOrderDeliveryDTO.yaml
+  services:
+    $ref: ./BusinessOrderServicesDTO.yaml
+  buyerType:
+    description: >
+      Тип покупателя: физическое лицо или организация.
+
+
+      Только для FBS- и FBY-магазинов, которые размещают товары на витрине
+      [business.market.yandex.ru](https://business.market.yandex.ru).
+    $ref: ./OrderBuyerType.yaml
+  notes:
+    description: Комментарий к заказу.
+    type: string
+  cancelRequested:
+    description: |
+      **Только для модели DBS**
+
+      Запрошена ли отмена.
+    type: boolean

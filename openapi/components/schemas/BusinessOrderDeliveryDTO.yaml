@@ -1,0 +1,59 @@
+description: Информация о доставке заказа.
+type: object
+required:
+  - type
+  - serviceName
+  - deliveryServiceId
+  - deliveryPartnerType
+  - dates
+properties:
+  type:
+    description: |
+      Способ доставки заказа.
+    $ref: ./OrderDeliveryType.yaml
+  serviceName:
+    description: Название службы доставки.
+    type: string
+  deliveryServiceId:
+    description: Идентификатор службы доставки.
+    type: integer
+    format: int64
+  warehouseId:
+    description: Идентификатор склада в системе магазина, на который сформирован заказ.
+    type: string
+  deliveryPartnerType:
+    description: Тип сотрудничества со службой доставки в рамках указанного заказа.
+    $ref: ./OrderDeliveryPartnerType.yaml
+  dispatchType:
+    $ref: ./OrderDeliveryDispatchType.yaml
+  dates:
+    $ref: ./BusinessOrderDeliveryDatesDTO.yaml
+  shipment:
+    description: Информация об отгрузке.
+    $ref: ./BusinessOrderShipmentDTO.yaml
+  courier:
+    description: Информация о курьерской доставке.
+    $ref: ./BusinessOrderCourierDeliveryDTO.yaml
+  pickup:
+    description: Информация о доставке в пункт выдачи.
+    $ref: ./BusinessOrderPickupDeliveryDTO.yaml
+  transfer:
+    description: Информация о курьере и код подтверждения.
+    $ref: ./BusinessOrderTransferDTO.yaml
+  boxesLayout:
+    description: Раскладка товаров по коробкам.
+    type: array
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./BusinessOrderBoxLayoutDTO.yaml
+  tracks:
+    description: Информация для отслеживания посылки.
+    type: array
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./OrderTrackDTO.yaml
+  estimated:
+    description: Приблизительная ли дата доставки.
+    type: boolean

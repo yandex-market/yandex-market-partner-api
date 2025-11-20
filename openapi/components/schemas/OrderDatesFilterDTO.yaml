@@ -1,0 +1,27 @@
+type: object
+description: Фильтр по датам заказов.
+properties:
+  creationDateFrom:
+    description: Начальная дата оформления заказа (ГГГГ-ММ-ДД).
+    type: string
+    format: date
+  creationDateTo:
+    description: Конечная дата оформления заказа (ГГГГ-ММ-ДД).
+    type: string
+    format: date
+  shipmentDateFrom:
+    description: Начальная дата отгрузки (ГГГГ-ММ-ДД).
+    type: string
+    format: date
+  shipmentDateTo:
+    description: Конечная дата отгрузки (ГГГГ-ММ-ДД).
+    type: string
+    format: date
+  updateDateFrom:
+    description: Начальная дата обновления заказа (ISO 8601).
+    type: string
+    format: date-time
+  updateDateTo:
+    description: Конечная дата обновления заказа (ISO 8601).
+    type: string
+    format: date-time

@@ -1,0 +1,51 @@
+description: Информация о товаре.
+type: object
+required:
+  - id
+  - offerId
+  - offerName
+  - count
+properties:
+  id:
+    description: |
+      Идентификатор товара в заказе.
+
+      Позволяет идентифицировать товар в рамках заказа.
+    type: integer
+    format: int64
+  offerId:
+    description: Идентификатор товарного предложения.
+    $ref: ./ShopSku.yaml
+  offerName:
+    description: Название товара.
+    type: string
+  count:
+    description: Количество единиц товара.
+    type: integer
+  prices:
+    description: |
+      Информация о выплатах и вознаграждениях.
+    $ref: ./ItemPriceDTO.yaml
+  instances:
+    description: "Информация о маркировке единиц товара.\n\nВозвращаются данные для маркировки, переданные в запросе [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).\n\nЕсли магазин еще не передавал коды для этого заказа, `instances` отсутствует.\n"
+    type: array
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./OrderItemInstanceDTO.yaml
+  requiredInstanceTypes:
+    description: Список необходимых маркировок товара.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      $ref: ./OrderItemInstanceType.yaml
+  tags:
+    description: Признаки товара.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      $ref: ./OrderItemTagType.yaml

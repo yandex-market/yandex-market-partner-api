@@ -21,14 +21,14 @@ properties:
       Способ доставки заказа.
     $ref: ./OrderDeliveryType.yaml
   serviceName:
-    description: Наименование службы доставки.
+    description: Название службы доставки.
     type: string
   price:
     deprecated: true
     description: "{% note warning \"Стоимость доставки смотрите в параметре `deliveryTotal`.\" %}\n\n\_\n\n{% endnote %}\n\nСтоимость доставки в валюте заказа.\n"
     type: number
   deliveryPartnerType:
-    description: Тип сотрудничества со службой доставки в рамках конкретного заказа.
+    description: Тип сотрудничества со службой доставки в рамках указанного заказа.
     $ref: ./OrderDeliveryPartnerType.yaml
   courier:
     $ref: ./OrderCourierDTO.yaml
@@ -50,7 +50,7 @@ properties:
     description: Стоимость подъема на этаж.
     type: number
   outletCode:
-    description: Идентификатор пункта самовывоза, присвоенный магазином.
+    description: Идентификатор пункта выдачи, присвоенный магазином.
     type: string
   outletStorageLimitDate:
     description: "Дата, до которой заказ будет храниться в пункте выдачи. Возвращается, когда заказ переходит в статус `PICKUP`.\n\nОдин раз дату можно поменять с помощью метода [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit](../../reference/orders/updateOrderStorageLimit.md).\n"
@@ -58,7 +58,7 @@ properties:
   dispatchType:
     $ref: ./OrderDeliveryDispatchType.yaml
   tracks:
-    description: Информация для отслеживания перемещений посылки.
+    description: Информация для отслеживания посылки.
     type: array
     nullable: true
     minItems: 1

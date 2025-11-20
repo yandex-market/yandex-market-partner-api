@@ -7,9 +7,9 @@ description: >
 
     * `YANDEX` — банковской картой.
 
-    * `APPLE_PAY` — Apple Pay.
+    * `APPLE_PAY` — Apple Pay (не используется).
 
-    * `GOOGLE_PAY` — Google Pay.
+    * `GOOGLE_PAY` — Google Pay (не используется).
 
     * `CREDIT` — в кредит.
 

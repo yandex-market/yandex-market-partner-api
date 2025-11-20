@@ -5,7 +5,7 @@ description: |
 
   { % endnote % }
 
-  Идентификатор грузоместа.
+  Идентификатор грузового места.
 name: shipmentId
 in: path
 required: true

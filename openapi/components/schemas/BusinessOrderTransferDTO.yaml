@@ -1,0 +1,7 @@
+description: Информация о курьере и код подтверждения.
+type: object
+properties:
+  courier:
+    $ref: ./OrderCourierDTO.yaml
+  eac:
+    $ref: ./BusinessOrderEacDTO.yaml

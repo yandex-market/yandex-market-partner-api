@@ -9,5 +9,5 @@ properties:
     type: integer
     format: int64
   name:
-    description: Наименование службы доставки.
+    description: Название службы доставки.
     type: string

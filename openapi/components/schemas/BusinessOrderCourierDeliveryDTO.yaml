@@ -1,0 +1,7 @@
+description: Информация о курьерской доставке.
+type: object
+properties:
+  address:
+    $ref: ./BusinessOrderDeliveryAddressDTO.yaml
+  region:
+    $ref: ./RegionDTO.yaml

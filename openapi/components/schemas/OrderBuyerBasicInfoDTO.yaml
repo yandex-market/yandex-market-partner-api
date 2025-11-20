@@ -7,17 +7,19 @@ properties:
     description: Идентификатор покупателя.
     type: string
   lastName:
-    description: Фамилия покупателя.
+    description: Фамилия.
     type: string
   firstName:
-    description: Имя покупателя.
+    description: Имя.
     type: string
   middleName:
-    description: Отчество покупателя.
+    description: Отчество.
     type: string
   type:
     description: >
-      Тип покупателя: физическое лицо или организация. Этот параметр
-      используется FBS- и FBY-магазинами, размещающими товары на витрине
-      business.market.yandex.ru.
+      Тип покупателя: физическое лицо или организация.
+
+
+      Только для FBS- и FBY-магазинов, которые размещают товары на витрине
+      [business.market.yandex.ru](https://business.market.yandex.ru).
     $ref: ./OrderBuyerType.yaml
