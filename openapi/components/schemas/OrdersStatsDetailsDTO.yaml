@@ -10,11 +10,18 @@ properties:
     format: int64
   updateDate:
     description: |
-      Дата, когда товар получил статус, указанный в параметре `itemStatus`.
+      **Только для модели FBY**
+
+      Дата, когда возврат был обработан на складе Маркета.
 
       Формат даты: `ГГГГ-ММ-ДД`.
     type: string
     format: date
   stockType:
-    description: Тип товара.
+    description: |
+      **Только для модели FBY**
+
+      Тип товара.
+
+      Возвращается только после обработки возврата на складе Маркета.
     $ref: ./OrdersStatsStockType.yaml
