@@ -12,6 +12,9 @@ description: >
   * `INVENTORYING_SUPPLY_WAREHOUSE_BASED_PER_SUPPLIER` — инвентаризация на
   складе по запросу склада.
 
+  * `INVENTORYING_SUPPLY_PER_SUPPLIER` — инвентаризация на складе по запросу
+  учетной системы.
+
   * `MOVEMENT_SUPPLY` — входящее перемещение между складами.
 
       При перемещении между складами создаются 2 заявки — `MOVEMENT_SUPPLY` и `MOVEMENT_WITHDRAW`.
@@ -54,6 +57,7 @@ enum:
   - XDOC
   - INVENTORYING_SUPPLY
   - INVENTORYING_SUPPLY_WAREHOUSE_BASED_PER_SUPPLIER
+  - INVENTORYING_SUPPLY_PER_SUPPLIER
   - MOVEMENT_SUPPLY
   - ADDITIONAL_SUPPLY
   - VIRTUAL_DISTRIBUTION_CENTER
