@@ -9,17 +9,6 @@ properties:
     description: "Идентификатор товара в заказе.\n\nОн приходит в ответе на запрос [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md) — параметр `id` в `items`.\n"
     type: integer
     format: int64
-  code:
-    description: |
-      {% note warning "Вместо него используйте `codes`" %}
-
-      Совместное использование обоих параметров приведет к ошибке.
-
-      {% endnote %}
-
-      Сам ключ.
-    type: string
-    deprecated: true
   codes:
     description: Ключи, относящиеся к товару.
     type: array
