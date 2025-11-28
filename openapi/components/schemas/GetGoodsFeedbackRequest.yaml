@@ -28,6 +28,7 @@ properties:
       Максимальный интервал 6 месяцев.
     type: string
     format: date-time
+    example: '2020-02-02T14:30:30+03:00'
   dateTimeTo:
     description: |
       Конец периода. Не включительно.
@@ -37,6 +38,7 @@ properties:
       Максимальный интервал 6 месяцев.
     type: string
     format: date-time
+    example: '2020-02-02T14:30:30+03:00'
   reactionStatus:
     description: >
       Нужно ли вернуть только непрочитанные отзывы. Для этого передайте значение
