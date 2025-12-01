@@ -17,9 +17,7 @@ properties:
     type: integer
     format: int64
   campaignId:
-    description: Идентификатор кампании.
-    type: integer
-    format: int64
+    $ref: ./CampaignId.yaml
   programType:
     description: Тип программы кампании магазина.
     $ref: ./SellingProgramType.yaml

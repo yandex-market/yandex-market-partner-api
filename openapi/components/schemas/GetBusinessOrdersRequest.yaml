@@ -29,13 +29,12 @@ properties:
       $ref: ./SellingProgramType.yaml
     minItems: 1
   campaignIds:
-    description: Идентификаторы кампаний.
+    description: Идентификаторы кампаний магазинов.
     nullable: true
     uniqueItems: true
     type: array
     items:
-      type: integer
-      format: int64
+      $ref: ./CampaignId.yaml
     minItems: 1
     maxItems: 50
   statuses:

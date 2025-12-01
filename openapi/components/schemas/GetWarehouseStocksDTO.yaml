@@ -6,7 +6,15 @@ properties:
   paging:
     $ref: ./ScrollingPagerDTO.yaml
   warehouses:
-    description: Страница списка складов.
+    description: >
+      Страница списка складов.
+
+
+      **Для модели FBY:** может содержать несколько складов Маркета.
+
+
+      **Для модели FBS:** может содержать как партнерский склад, так и склад
+      возвратов Маркета.
     type: array
     items:
       $ref: ./WarehouseOffersDTO.yaml

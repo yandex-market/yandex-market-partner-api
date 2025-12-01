@@ -25,6 +25,4 @@ properties:
     minItems: 1
     maxItems: 25
     items:
-      type: integer
-      format: int64
-      minimum: 1
+      $ref: ./CampaignId.yaml

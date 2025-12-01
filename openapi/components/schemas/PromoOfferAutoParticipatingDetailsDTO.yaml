@@ -23,6 +23,4 @@ properties:
     minItems: 1
     uniqueItems: true
     items:
-      description: Идентификатор кампании.
-      type: integer
-      format: int64
+      $ref: ./CampaignId.yaml

@@ -9,12 +9,8 @@ properties:
     description: Информация о покупателе.
     $ref: ./ChatCustomerDTO.yaml
   campaignId:
-    description: |
-      Идентификатор кампании.
-
-      Возвращается для заказов и возвратов.
-    type: integer
-    format: int64
+    description: Возвращается для заказов и возвратов.
+    $ref: ./CampaignId.yaml
   orderId:
     description: |
       Идентификатор заказа.
