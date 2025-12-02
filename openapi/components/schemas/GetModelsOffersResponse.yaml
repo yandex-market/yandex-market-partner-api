@@ -1,5 +1,0 @@
-description: Ответ на запрос списка предложений для моделей.
-type: object
-allOf:
-  - $ref: ./EnrichedModelsDTO.yaml
-  - $ref: ./RegionalModelInfoDTO.yaml

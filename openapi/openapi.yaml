@@ -270,14 +270,6 @@ paths:
     $ref: paths/v2_campaigns_campaignId_offers_delete.yaml
   /v2/businesses/{businessId}/offers/recommendations:
     $ref: paths/v2_businesses_businessId_offers_recommendations.yaml
-  /v2/models:
-    $ref: paths/v2_models.yaml
-  /v2/models/{modelId}:
-    $ref: paths/v2_models_modelId.yaml
-  /v2/models/offers:
-    $ref: paths/v2_models_offers.yaml
-  /v2/models/{modelId}/offers:
-    $ref: paths/v2_models_modelId_offers.yaml
   /v2/businesses/{businessId}/bids:
     $ref: paths/v2_businesses_businessId_bids.yaml
   /v2/campaigns/{campaignId}/bids:

@@ -1,8 +1,0 @@
-description: Количество предложений на странице ответа.
-name: count
-in: query
-required: false
-schema:
-  type: integer
-  format: int32
-  default: 10

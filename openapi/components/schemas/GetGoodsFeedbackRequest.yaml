@@ -57,17 +57,6 @@ properties:
     items:
       type: integer
       format: int32
-  modelIds:
-    description: "Фильтр по идентификатору модели товара.\n\nПолучить идентификатор модели можно с помощью одного из запросов:\n\n* [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md);\n\n* [POST\_v2/businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md).\n"
-    deprecated: true
-    type: array
-    uniqueItems: true
-    maxItems: 20
-    nullable: true
-    minItems: 1
-    items:
-      type: integer
-      format: int64
   offerIds:
     description: |
       Фильтр по идентификатору товара.

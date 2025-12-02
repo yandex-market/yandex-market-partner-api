@@ -17,14 +17,6 @@ allOf:
 
           Может отсутствовать в ответе, если товар еще не привязан к карточке.
         type: string
-      marketModelId:
-        description: |
-          Идентификатор модели на Маркете.
-
-          Может отсутствовать в ответе, если товар еще не привязан к карточке.
-        deprecated: true
-        type: integer
-        format: int64
       marketModelName:
         description: |
           Название модели на Маркете.

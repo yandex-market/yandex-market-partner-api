@@ -1,7 +1,0 @@
-description: "Идентификатор региона.\n\nИдентификатор региона можно получить c помощью запроса [GET\_v2/regions](../../reference/regions/searchRegionsByName.md).\n"
-name: regionId
-in: query
-required: true
-schema:
-  type: integer
-  format: int64

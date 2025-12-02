@@ -1,6 +1,0 @@
-description: Поисковый запрос по названию модели товара.
-name: query
-in: query
-required: true
-schema:
-  type: string

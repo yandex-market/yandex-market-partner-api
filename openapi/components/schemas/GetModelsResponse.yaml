@@ -1,5 +1,0 @@
-description: Ответ на запрос информации о моделях.
-type: object
-allOf:
-  - $ref: ./ModelsDTO.yaml
-  - $ref: ./RegionalModelInfoDTO.yaml

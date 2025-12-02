@@ -5,11 +5,6 @@ properties:
     description: Идентификатор заказа на Маркете.
     type: integer
     format: int64
-  modelId:
-    description: Идентификатор модели товара.
-    deprecated: true
-    type: integer
-    format: int64
   offerId:
     description: Идентификатор товара.
     $ref: ./ShopSku.yaml

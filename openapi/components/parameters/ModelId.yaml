@@ -1,9 +1,0 @@
-description: Идентификатор модели товара.
-name: modelId
-in: path
-required: true
-schema:
-  type: integer
-  format: int64
-  minimum: 0
-  exclusiveMinimum: true

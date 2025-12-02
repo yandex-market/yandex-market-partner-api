@@ -18,14 +18,6 @@ allOf:
 
           Может отсутствовать в ответе.
         type: string
-      marketModelId:
-        description: |
-          Идентификатор модели для рекомендованной карточки товара на Маркете.
-
-          Может отсутствовать в ответе.
-        deprecated: true
-        type: integer
-        format: int64
       marketModelName:
         description: |
           Название модели для рекомендованной карточки товара на Маркете.
