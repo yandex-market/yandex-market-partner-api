@@ -14,8 +14,7 @@ properties:
     description: Название склада.
     type: string
   campaignId:
-    allOf:
-      - $ref: ./CampaignId.yaml
+    $ref: ./CampaignId.yaml
     description: |
       Идентификатор кампании того магазина, который связан со складом.
   express:
