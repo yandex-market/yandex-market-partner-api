@@ -8,9 +8,7 @@ required:
   - dateTo
 properties:
   businessId:
-    description: Идентификатор кабинета.
-    format: int64
-    type: integer
+    $ref: ./BusinessId.yaml
   dateFrom:
     description: Начало периода, включительно.
     format: date

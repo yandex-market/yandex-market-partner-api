@@ -7,9 +7,7 @@ required:
   - categoryId
 properties:
   businessId:
-    description: Идентификатор кабинета.
-    type: integer
-    format: int64
+    $ref: ./BusinessId.yaml
   categoryId:
     description: Идентификатор категории.
     type: integer

@@ -2,12 +2,7 @@ description: Данные, необходимые для генерации от
 type: object
 properties:
   businessId:
-    description: |
-      Идентификатор кабинета.
-
-      В большинстве случаев обязателен. Не указывается, если задан `campaignId`.
-    type: integer
-    format: int64
+    $ref: ./BusinessId.yaml
   campaignId:
     $ref: ./CampaignId.yaml
   categoryIds:

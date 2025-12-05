@@ -22,8 +22,7 @@ properties:
 
       Идентификатор кабинета, по магазинам которого нужно сформировать отчет
       (кроме FBY-магазинов).
-    format: int64
-    type: integer
+    $ref: ./BusinessId.yaml
   warehouseIds:
     description: "Фильтр по идентификаторам складов (только модель FBY). Чтобы узнать идентификатор, воспользуйтесь запросом [GET\_v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md)."
     type: array

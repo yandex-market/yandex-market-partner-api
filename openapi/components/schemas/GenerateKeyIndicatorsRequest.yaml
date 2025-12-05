@@ -1,19 +1,15 @@
-description: |
+description: >
   Данные, необходимые для генерации отчета.
+
+
+  В запросе обязательно должен быть либо `businessId`, либо `campaignId`, но не
+  оба сразу.
 type: object
 required:
   - detalizationLevel
 properties:
   businessId:
-    description: >
-      Идентификатор кабинета.
-
-
-      Указывается, если нужно составить отчет по всем магазинам в кабинете. В
-      запросе обязательно должен быть либо `businessId`, либо `campaignId`, но
-      не оба сразу.
-    format: int64
-    type: integer
+    $ref: ./BusinessId.yaml
   campaignId:
     $ref: ./CampaignId.yaml
   detalizationLevel:

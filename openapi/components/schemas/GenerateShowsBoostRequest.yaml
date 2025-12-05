@@ -8,9 +8,7 @@ required:
   - attributionType
 properties:
   businessId:
-    description: Идентификатор кабинета.
-    format: int64
-    type: integer
+    $ref: ./BusinessId.yaml
   dateFrom:
     $ref: ./PeriodDateFrom.yaml
   dateTo:

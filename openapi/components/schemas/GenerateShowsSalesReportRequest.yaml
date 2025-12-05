@@ -1,4 +1,9 @@
-description: Данные, необходимые для генерации отчета.
+description: >
+  Данные, необходимые для генерации отчета.
+
+
+  В запросе обязательно должен быть либо `businessId`, либо `campaignId`, но не
+  оба сразу.
 type: object
 required:
   - dateFrom
@@ -6,15 +11,7 @@ required:
   - grouping
 properties:
   businessId:
-    description: >
-      Идентификатор кабинета.
-
-
-      Указывается, если нужно составить отчет по всем магазинам в кабинете. В
-      запросе обязательно должен быть либо `businessId`, либо `campaignId`, но
-      не оба сразу.
-    type: integer
-    format: int64
+    $ref: ./BusinessId.yaml
   campaignId:
     $ref: ./CampaignId.yaml
   dateFrom:

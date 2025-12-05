@@ -6,9 +6,7 @@ required:
   - orderIds
 properties:
   businessId:
-    description: Идентификатор кабинета.
-    format: int64
-    type: integer
+    $ref: ./BusinessId.yaml
   orderIds:
     description: Список идентификаторов заказов.
     type: array

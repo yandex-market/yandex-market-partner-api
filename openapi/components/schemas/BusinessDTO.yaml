@@ -2,9 +2,7 @@ description: Информация о кабинете.
 type: object
 properties:
   id:
-    description: Идентификатор кабинета.
-    type: integer
-    format: int64
+    $ref: ./BusinessId.yaml
   name:
     description: Название бизнеса.
     type: string
