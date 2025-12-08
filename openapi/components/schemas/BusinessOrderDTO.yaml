@@ -29,7 +29,7 @@ properties:
     $ref: ./OrderSubstatusType.yaml
   creationDate:
     description: |
-      Дата создания невыкупа или возврата.
+      Дата и время оформления заказа.
 
       Формат даты: ISO 8601 со смещением относительно UTC.
     type: string
