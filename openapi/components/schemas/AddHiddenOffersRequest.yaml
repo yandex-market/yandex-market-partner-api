@@ -4,8 +4,12 @@ required:
   - hiddenOffers
 properties:
   hiddenOffers:
-    description: |
+    description: >
       Список скрытых товаров.
+
+
+      В рамках одного запроса все значения `offerId` должны быть уникальными. Не
+      допускается передача двух объектов с одинаковым `offerId`.
     type: array
     minItems: 1
     maxItems: 500

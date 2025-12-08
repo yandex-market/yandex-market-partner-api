@@ -4,8 +4,12 @@ required:
   - skus
 properties:
   skus:
-    description: |
+    description: >
       Данные об остатках товаров.
+
+
+      В рамках одного запроса все значения `sku` должны быть уникальными. Не
+      допускается передача двух объектов с одинаковым `sku`.
     type: array
     minItems: 1
     maxItems: 2000
