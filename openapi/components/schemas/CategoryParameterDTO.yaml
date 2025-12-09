@@ -62,7 +62,11 @@ properties:
     items:
       $ref: ./ParameterValueOptionDTO.yaml
   constraints:
-    description: Ограничения на значения. Только для характеристик типа `TEXT` и `NUMERIC`.
+    description: |
+      Ограничения на значения. Только для характеристик типа `TEXT` и `NUMERIC`.
+
+      - Для `NUMERIC` используются поля `minValue` и `maxValue`.
+      - Для `TEXT` используется поле `maxLength`.
     $ref: ./ParameterValueConstraintsDTO.yaml
   valueRestrictions:
     description: >-

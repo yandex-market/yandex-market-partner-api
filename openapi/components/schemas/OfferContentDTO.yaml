@@ -20,8 +20,8 @@ properties:
       нужно.
 
 
-      Чтобы **удалить** значение заданной характеристики, передайте ее
-      `parameterId` с пустым `value`.
+      Подробнее читайте в [«Передача значений
+      характеристики»](../../step-by-step/parameter-values.md).
     type: array
     maxItems: 300
     minItems: 1
