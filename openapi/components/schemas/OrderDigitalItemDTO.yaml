@@ -10,7 +10,10 @@ properties:
     type: integer
     format: int64
   codes:
-    description: Ключи, относящиеся к товару.
+    description: |
+      Ключи, относящиеся к товару.
+
+      Поле обязательно для заполнения.
     type: array
     items:
       type: string
