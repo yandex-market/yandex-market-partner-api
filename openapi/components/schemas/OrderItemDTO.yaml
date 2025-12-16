@@ -8,7 +8,6 @@ required:
   - buyerPrice
   - buyerPriceBeforeDiscount
   - count
-  - vat
 properties:
   id:
     description: |
