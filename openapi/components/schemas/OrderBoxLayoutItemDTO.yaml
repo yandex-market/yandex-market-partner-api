@@ -4,7 +4,7 @@ required:
   - id
 properties:
   id:
-    description: "Идентификатор товара в заказе.\n\nОн приходит в ответе на запрос [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md) — параметр `id` в `items`.\n"
+    description: "Идентификатор товара в заказе.\n\nОн приходит в ответе метода [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md) — параметр `id` в `items`.\n"
     type: integer
     format: int64
   fullCount:

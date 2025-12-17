@@ -21,7 +21,7 @@ post:
           $ref: ../components/schemas/ProvideOrderDigitalCodesRequest.yaml
   responses:
     '200':
-      description: "Пустой ответ.\n\n{% note warning \"Ответ `200` сам по себе не значит, что ключи переданы покупателю\" %}\n\nЕсли письмо с ключами удалось доставить, Маркет переведет заказ в финальный статус `DELIVERED`.\n\nСтатус заказа можно узнать с помощью одного из методов:\n\n* [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md);\n\n* [GET\_v2/campaigns/{campaignId}/orders](../../reference/orders/getOrders.md);\n\n* [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).\n\n{% endnote %}\n"
+      description: "Пустой ответ.\n\n{% note warning \"Ответ `200` сам по себе не значит, что ключи переданы покупателю\" %}\n\nЕсли письмо с ключами удалось доставить, Маркет переведет заказ в финальный статус `DELIVERED`.\n\nСтатус заказа можно узнать с помощью метода [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).\n\n{% endnote %}\n"
       content:
         application/json:
           schema:
