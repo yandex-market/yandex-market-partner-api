@@ -4,5 +4,6 @@ in: query
 required: false
 schema:
   type: array
+  uniqueItems: true
   items:
     type: integer

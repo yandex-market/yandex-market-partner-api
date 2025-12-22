@@ -42,5 +42,6 @@ in: query
 required: false
 schema:
   type: array
+  uniqueItems: true
   items:
     $ref: ../schemas/OfferProcessingStatusType.yaml
