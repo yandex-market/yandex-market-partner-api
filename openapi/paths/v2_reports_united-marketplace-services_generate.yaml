@@ -37,6 +37,8 @@ post:
       $ref: ../components/responses/401.yaml
     '403':
       $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
     '420':
       $ref: ../components/responses/420.yaml
     '500':
