@@ -30,8 +30,13 @@ post:
           schema:
             $ref: ../components/schemas/DeletePromoOffersResponse.yaml
     '400':
-      description: "| **Описание**                                                                                                   | **Пояснение**                                                                                               | **Способы решения**                                                                                                                                               |\n|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| :no-translate[**Not enough parameters in request: offerIds or deleteAllOffers should be specified**]                          | Не передан параметр для удаления товаров из акции.                                                          | Чтобы убрать все товары, передайте значение `true` в параметре `deleteAllOffers`. Чтобы удалить только некоторые товары, передайте их SKU в параметре `offerIds`. |\n| :no-translate[**Promo has ended**]                                                                                            | Акция закончилась.                                                                                          | Чтобы узнать, в каких акциях можно поучаствовать, воспользуйтесь методом [POST\_/businesses/{businessId}/promos](../../reference/promos/getPromos.md).             |\n| :no-translate[**Too many parameters in request: only one of parameters offerIds or deleteAllOffers should be specified**]     | Можно либо передать значение `true` в параметре `deleteAllOffers`, либо SKU товаров в параметре `offerIds`. | Передайте что-то одно  — или значение `true` в параметре `deleteAllOffers`, или SKU товаров в параметре `offerIds`.                                               |\n"
-      $ref: ../components/responses/400.yaml
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+        акциями](../../concepts/error-codes#promos)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':

@@ -24,7 +24,13 @@ post:
           schema:
             $ref: ../components/schemas/GetBusinessBuyerInfoResponse.yaml
     '400':
-      $ref: ../components/responses/400.yaml
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+        заказами](../../concepts/error-codes#orders)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':

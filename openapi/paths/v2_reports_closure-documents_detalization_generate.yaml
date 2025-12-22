@@ -32,7 +32,13 @@ post:
           schema:
             $ref: ../components/schemas/GenerateReportResponse.yaml
     '400':
-      $ref: ../components/responses/400.yaml
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках в отчетах и
+        документах](../../concepts/error-codes#reports)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':

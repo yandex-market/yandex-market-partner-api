@@ -57,8 +57,13 @@ post:
           schema:
             $ref: ../components/schemas/GetPromoOffersResponse.yaml
     '400':
-      description: "| **Описание**        | **Пояснение**      | **Способы решения**                                                                                                                                   |\n|---------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|\n| :no-translate[**Promo has ended**] | Акция закончилась. | Чтобы узнать, в каких акциях можно поучаствовать, воспользуйтесь методом [POST\_/businesses/{businessId}/promos](../../reference/promos/getPromos.md). |\n"
-      $ref: ../components/responses/400.yaml
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+        акциями](../../concepts/error-codes#promos)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':
