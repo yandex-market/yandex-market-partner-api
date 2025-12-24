@@ -4,8 +4,20 @@ description: >
 
   * `AVAILABLE` — методы API доступны для выполнения запросов.
 
-  * `DISABLED_BY_INACTIVITY` — методы API недоступны из-за [неактивности
-  магазина или кабинета](*inactivity).
+  * `DISABLED_BY_INACTIVITY` — методы API недоступны, так как магазин не
+  размещал товары на витрине больше 90 дней.
+
+  * `DISABLED_BY_NO_ACTIVE_CONTRACT` — методы API недоступны из-за отсутствия
+  активного договора с Маркетом.
+
+  * `MANUALLY_DISABLED` — методы API недоступны, так как интеграция выключена
+  вручную.
+
+  * `DISABLED_BY_NO_PLACEMENT_TYPE` — методы API недоступны, так как магазин не
+  подключен к программе размещения.
+
+
+  [Подробная инструкция по восстановлению доступа](../../concepts/api-access.md)
 type: string
 enum:
   - AVAILABLE
