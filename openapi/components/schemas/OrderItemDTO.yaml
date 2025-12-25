@@ -83,7 +83,7 @@ properties:
     items:
       $ref: ./OrderItemPromoDTO.yaml
   instances:
-    description: "Информация о маркировке единиц товара.\n\nВозвращаются данные для маркировки, переданные в запросе [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md).\n\nЕсли магазин еще не передавал коды для этого заказа, `instances` отсутствует.\n"
+    description: "Информация о маркировке единиц товара.\n\nВозвращаются данные для маркировки, переданные в запросе:\n\n* Для DBS — [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/identifiers](../../reference/orders/provideOrderItemIdentifiers.md) или [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).\n* Для FBS и EXPRESS — [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).\n\nДля FBY возвращаются коды маркировки, переданные во время поставки.\n\nЕсли магазин еще не передавал коды для этого заказа, `instances` отсутствует.\n"
     type: array
     nullable: true
     minItems: 1
