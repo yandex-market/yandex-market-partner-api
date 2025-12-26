@@ -1,0 +1,15 @@
+type: object
+description: |
+  Идентификатор вопроса, ответа или комментария.
+required:
+  - id
+  - type
+properties:
+  id:
+    description: Идентификатор вопроса, ответа или комментария.
+    type: integer
+    format: int64
+    minimum: 1
+  type:
+    description: Тип сущности (вопрос, ответ или комментарий).
+    $ref: ./QuestionsTextEntityType.yaml

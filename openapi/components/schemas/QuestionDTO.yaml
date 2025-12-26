@@ -1,0 +1,24 @@
+type: object
+description: Вопрос.
+required:
+  - questionIdentifiers
+  - businessId
+  - text
+  - createdAt
+  - votes
+  - author
+properties:
+  questionIdentifiers:
+    $ref: ./QuestionIdentifiersDTO.yaml
+  businessId:
+    $ref: ./BusinessId.yaml
+  text:
+    $ref: ./QuestionsTextContent.yaml
+  createdAt:
+    description: Дата и время создания вопроса.
+    type: string
+    format: date-time
+  votes:
+    $ref: ./VotesDTO.yaml
+  author:
+    $ref: ./QuestionsTextContentAuthorDTO.yaml

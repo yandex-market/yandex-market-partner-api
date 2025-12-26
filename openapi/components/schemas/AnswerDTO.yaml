@@ -1,0 +1,38 @@
+description: Ответ на вопрос.
+type: object
+required:
+  - id
+  - text
+  - canModify
+  - status
+  - questionId
+  - createdAt
+  - votes
+properties:
+  id:
+    $ref: ./AnswerId.yaml
+  text:
+    $ref: ./QuestionsTextContent.yaml
+  canModify:
+    description: Может ли продавец изменять комментарий или удалять его.
+    type: boolean
+  author:
+    $ref: ./QuestionsTextContentAuthorDTO.yaml
+  status:
+    $ref: ./QuestionsTextContentModerationStatusType.yaml
+  questionId:
+    $ref: ./QuestionId.yaml
+  createdAt:
+    type: string
+    description: Дата и время создания ответа.
+    format: date-time
+  votes:
+    $ref: ./VotesDTO.yaml
+  comments:
+    description: Список комментариев.
+    type: array
+    minItems: 0
+    maxItems: 100
+    nullable: true
+    items:
+      $ref: ./CommentDTO.yaml

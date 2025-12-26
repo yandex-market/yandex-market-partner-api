@@ -1,0 +1,6 @@
+description: |
+  Фильтр запроса ответов на вопрос.
+type: object
+properties:
+  questionId:
+    $ref: ./QuestionId.yaml

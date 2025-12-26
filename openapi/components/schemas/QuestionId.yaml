@@ -1,0 +1,5 @@
+description: |
+  Идентификатор вопроса.
+type: integer
+format: int64
+minimum: 1

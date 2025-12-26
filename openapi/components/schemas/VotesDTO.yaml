@@ -1,0 +1,15 @@
+type: object
+required:
+  - likes
+  - dislikes
+description: |
+  Количество лайков и дизлайков на вопросе, ответе или комментарии.
+properties:
+  likes:
+    description: Количество лайков.
+    type: integer
+    format: int64
+  dislikes:
+    description: Количество дизлайков.
+    type: integer
+    format: int64

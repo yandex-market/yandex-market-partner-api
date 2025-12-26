@@ -1,0 +1,12 @@
+description: |
+  Тип автора:
+  * `USER` — пользователь.
+  * `BUSINESS` — кабинет.
+  * `VENDOR` — производитель.
+  * `BRAND` — бренд.
+type: string
+enum:
+  - USER
+  - BUSINESS
+  - VENDOR
+  - BRAND

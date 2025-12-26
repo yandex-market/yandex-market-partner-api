@@ -1,0 +1,8 @@
+type: string
+description: |
+  Порядок сортировки вопросов.
+  * `CREATED_AT_DESC` — по дате создания вопроса по убыванию;
+  * `CREATED_AT_ASC` — по дате создания вопроса по возрастанию.
+enum:
+  - CREATED_AT_DESC
+  - CREATED_AT_ASC

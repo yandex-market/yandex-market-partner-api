@@ -1,0 +1,18 @@
+type: object
+description: Список вопросов.
+required:
+  - questions
+  - totalCount
+properties:
+  questions:
+    type: array
+    description: Список вопросов.
+    items:
+      $ref: ./QuestionDTO.yaml
+  paging:
+    $ref: ./ForwardScrollingPagerDTO.yaml
+  totalCount:
+    description: |
+      Общее количество вопросов, которые попадают под фильтр.
+    type: integer
+    format: int64

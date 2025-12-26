@@ -1,0 +1,15 @@
+type: object
+description: Идентификаторы вопроса.
+required:
+  - offerId
+  - id
+properties:
+  id:
+    $ref: ./QuestionId.yaml
+  categoryId:
+    description: Идентификатор категории.
+    type: integer
+    format: int64
+    minimum: 0
+  offerId:
+    $ref: ./ShopSku.yaml

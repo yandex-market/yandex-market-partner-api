@@ -1,0 +1,48 @@
+type: object
+required:
+  - operationType
+description: |
+  Запрос на создание, обновление или удаление вопроса, ответа или комментария.
+
+  **Параметры для разных операций:**
+
+  * `CREATE` — создание ответа или комментария:
+    * Обязательно: `operationType`, `parentEntityId`, `text`.
+    * `parentEntityId` — идентификатор родителя (для ответа — вопроса, для комментария — ответа).
+
+  * `UPDATE` — обновление ответа или комментария:
+    * Обязательно: `operationType`, `entityId`, `text`.
+    * `entityId` — идентификатор ответа или комментария.
+
+  * `DELETE` — удаление ответа или комментария:
+    * Обязательно: `operationType`, `entityId`.
+    * `text` не требуется.
+properties:
+  entityId:
+    description: |
+      Идентификатор обновляемого или удаляемого ответа или комментария.
+
+      Обязателен для операций `UPDATE` и `DELETE`.
+    $ref: ./TypedQuestionsTextEntityIdDTO.yaml
+  parentEntityId:
+    description: >
+      Идентификатор родительского вопроса или ответа.
+
+
+      Обязателен для операции `CREATE`. Используется для создания ответа или
+      комментария:
+
+      * При создании ответа — указывайте идентификатор вопроса.
+
+      * При создании комментария к ответу — указывайте идентификатор ответа.
+    $ref: ./TypedQuestionsTextEntityIdDTO.yaml
+  text:
+    description: >
+      Текст ответа или комментария.
+
+
+      Обязателен для операций `CREATE` и `UPDATE`. Не требуется для операции
+      `DELETE`.
+    $ref: ./QuestionsTextContent.yaml
+  operationType:
+    $ref: ./QuestionsTextEntityOperationType.yaml

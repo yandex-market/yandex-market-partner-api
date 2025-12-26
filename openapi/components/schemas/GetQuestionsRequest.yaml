@@ -1,0 +1,46 @@
+type: object
+description: Запрос на получение вопросов о товарах продавца.
+properties:
+  categoryIds:
+    type: array
+    description: Идентификаторы категорий товаров.
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    items:
+      type: integer
+      format: int64
+      minimum: 0
+  dateFrom:
+    description: >
+      Дата начала периода создания вопроса.
+
+
+      Если параметр не указан, возвращается информация за 1 месяц до указанной в
+      `dateTo` даты.
+
+
+      Максимальный интервал 1 месяц.
+    type: string
+    format: date
+    example: '2020-02-02'
+  dateTo:
+    description: |
+      Дата окончания периода создания вопроса.
+
+      Если параметр не указан, используется текущая дата.
+
+      Максимальный интервал 1 месяц.
+    type: string
+    format: date
+    example: '2020-02-02'
+  needAnswer:
+    description: |
+      Нужен ли ответ на вопрос.
+
+      * `true` — только вопросы, которые ждут ответа.
+      * `false` — все вопросы.
+    type: boolean
+    default: false
+  sort:
+    $ref: ./QuestionSortOrderType.yaml

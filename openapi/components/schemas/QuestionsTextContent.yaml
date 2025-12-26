@@ -1,0 +1,5 @@
+description: |
+  Текстовое содержимое.
+type: string
+minLength: 1
+maxLength: 5000

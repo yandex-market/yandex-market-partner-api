@@ -1,0 +1,62 @@
+post:
+  tags:
+    - goods-questions
+    - fby
+    - fbs
+    - dbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - communication
+  operationId: updateGoodsQuestionTextEntity
+  summary: Создание, изменение и удаление ответа или комментария
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/updateGoodsQuestionTextEntity.md)
+    %}
+
+
+    Создание, изменение и удаление ответа или комментария.
+
+
+    |**⚙️ Лимит:** 1000 запросов в час|
+
+    |-|
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateGoodsQuestionTextEntityRequest.yaml
+  responses:
+    '200':
+      description: >
+        Информация о созданном ответе или комментарии.
+
+
+        Возвращается только при операции создания (`operationType` = `CREATE`).
+        При обновлении и удалении возвращается пустой ответ.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdateGoodsQuestionTextEntityResponse.yaml
+    '400':
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об
+        ошибке](../../concepts/error-codes.md#questions)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

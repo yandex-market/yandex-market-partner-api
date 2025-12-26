@@ -1,0 +1,12 @@
+description: Ответы на вопрос.
+type: object
+required:
+  - answers
+properties:
+  answers:
+    description: Список ответов.
+    type: array
+    items:
+      $ref: ./AnswerDTO.yaml
+  paging:
+    $ref: ./ForwardScrollingPagerDTO.yaml

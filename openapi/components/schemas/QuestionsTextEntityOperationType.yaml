@@ -1,0 +1,10 @@
+description: |
+  Операция над ответом или комментарием.
+  * `UPDATE` — обновление.
+  * `CREATE` — создание.
+  * `DELETE` — удаление.
+type: string
+enum:
+  - UPDATE
+  - CREATE
+  - DELETE

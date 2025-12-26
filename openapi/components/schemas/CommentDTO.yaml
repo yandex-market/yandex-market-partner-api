@@ -1,0 +1,31 @@
+description: Комментарий к ответу.
+type: object
+required:
+  - id
+  - text
+  - status
+  - answerId
+  - createdAt
+properties:
+  id:
+    $ref: ./CommentId.yaml
+  text:
+    $ref: ./QuestionsTextContent.yaml
+  canModify:
+    description: Может ли продавец изменять комментарий или удалять его.
+    type: boolean
+  parentId:
+    description: Идентификатор родительского комментария.
+    $ref: ./CommentId.yaml
+  author:
+    $ref: ./QuestionsTextContentAuthorDTO.yaml
+  status:
+    $ref: ./QuestionsTextContentModerationStatusType.yaml
+  answerId:
+    $ref: ./AnswerId.yaml
+  createdAt:
+    description: Дата создания комментария.
+    type: string
+    format: date-time
+  votes:
+    $ref: ./VotesDTO.yaml

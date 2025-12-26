@@ -1,0 +1,10 @@
+type: object
+description: |
+  Информация о созданном ответе или комментария.
+
+  Возвращается только для запроса создания.
+required:
+  - entity
+properties:
+  entity:
+    $ref: ./TypedQuestionsTextEntityIdDTO.yaml

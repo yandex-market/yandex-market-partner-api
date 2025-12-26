@@ -262,6 +262,12 @@ paths:
     $ref: paths/v2_businesses_businessId_goods-feedback_comments_delete.yaml
   /v2/businesses/{businessId}/goods-feedback/comments:
     $ref: paths/v2_businesses_businessId_goods-feedback_comments.yaml
+  /v1/businesses/{businessId}/goods-questions:
+    $ref: paths/v1_businesses_businessId_goods-questions.yaml
+  /v1/businesses/{businessId}/goods-questions/answers:
+    $ref: paths/v1_businesses_businessId_goods-questions_answers.yaml
+  /v1/businesses/{businessId}/goods-questions/update:
+    $ref: paths/v1_businesses_businessId_goods-questions_update.yaml
   /v2/campaigns/{campaignId}/offers:
     $ref: paths/v2_campaigns_campaignId_offers.yaml
   /v2/campaigns/{campaignId}/offers/update:

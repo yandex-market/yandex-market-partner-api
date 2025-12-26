@@ -1,0 +1,5 @@
+description: |
+  Идентификатор комментария к ответу.
+type: integer
+format: int64
+minimum: 1

@@ -1,0 +1,8 @@
+type: object
+description: |
+  Ответ на запрос получения ответов на вопрос.
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./AnswerListDTO.yaml

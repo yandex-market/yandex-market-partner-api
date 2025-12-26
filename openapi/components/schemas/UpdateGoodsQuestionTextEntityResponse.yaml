@@ -1,0 +1,9 @@
+type: object
+description: >
+  Ответ на запрос создания, обновления или удаления вопроса, ответа или
+  комментария.
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./UpdateGoodsQuestionTextEntityDTO.yaml

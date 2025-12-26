@@ -1,0 +1,11 @@
+description: |
+  Тип сущности:
+
+  * `QUESTION` — вопрос о товаре.
+  * `ANSWER` — ответ на вопрос.
+  * `COMMENT` — комментарий к ответу.
+type: string
+enum:
+  - QUESTION
+  - ANSWER
+  - COMMENT
