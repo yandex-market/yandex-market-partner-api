@@ -42,12 +42,19 @@ properties:
       * промокодам.
     type: number
   buyerPriceBeforeDiscount:
-    description: |
+    description: >
       Стоимость товара в валюте покупателя до применения скидок по:
 
+
       * акциям;
+
       * купонам;
+
       * промокодам.
+
+
+      Это зачеркнутая цена, которая отображается покупателю на карточке товара
+      до применения скидок.
     type: number
   priceBeforeDiscount:
     deprecated: true
