@@ -206,8 +206,6 @@ paths:
     $ref: paths/v2_reports_united-returns_generate.yaml
   /v2/reports/goods-realization/generate:
     $ref: paths/v2_reports_goods-realization_generate.yaml
-  /v2/reports/prices/generate:
-    $ref: paths/v2_reports_prices_generate.yaml
   /v2/reports/stocks-on-warehouses/generate:
     $ref: paths/v2_reports_stocks-on-warehouses_generate.yaml
   /v2/reports/goods-movement/generate:
