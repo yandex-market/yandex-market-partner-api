@@ -17,6 +17,7 @@ properties:
     type: array
     items:
       type: string
+      maxLength: 256
     minItems: 1
     maxItems: 5000
     uniqueItems: true
