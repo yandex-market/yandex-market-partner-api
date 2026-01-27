@@ -29,7 +29,6 @@ security:
   - ApiKey: []
   - OAuth:
       - market:partner-api
-  - TvmAuth: []
 externalDocs:
   description: Документация API
   url: https://yandex.ru/dev/market/partner-api/doc/
@@ -347,6 +346,3 @@ components:
           authorizationUrl: https://oauth.yandex.ru/authorize
           scopes:
             market:partner-api: API Яндекс.Маркета / Поиска по товарам для партнеров
-    TvmAuth:
-      type: http
-      scheme: tvmAuth
