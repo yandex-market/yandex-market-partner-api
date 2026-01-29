@@ -23,6 +23,8 @@ description: >
 
     * `B2B_ACCOUNT_PREPAYMENT` — заказ оплачивает организация.
 
+    * `MICROCREDIT` - Сплит на основе МКК (Микрокредитной компании).
+
 
   * Значения, если выбрана оплата при получении заказа (`"paymentType":
   "POSTPAID"`):
@@ -60,4 +62,5 @@ enum:
   - TINKOFF_INSTALLMENTS
   - B2B_ACCOUNT_PREPAYMENT
   - B2B_ACCOUNT_POSTPAYMENT
+  - MICROCREDIT
   - UNKNOWN

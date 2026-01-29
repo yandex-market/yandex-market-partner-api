@@ -7,10 +7,10 @@ properties:
   awaitingModerationMapping:
     description: >-
       Информация о карточке товара на Маркете, проходящей модерацию для данного
-      товара
+      товара.
     $ref: ./OfferMappingDTO.yaml
   rejectedMapping:
     description: >-
       Информация о последней карточке товара на Маркете, отклоненной на
-      модерации для данного товара
+      модерации для данного товара.
     $ref: ./OfferMappingDTO.yaml
