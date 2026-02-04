@@ -11,6 +11,7 @@ post:
     - all-methods:read-only
     - pricing
     - pricing:read-only
+  x-resource-limit: resp.result.offers
   operationId: getDefaultPrices
   summary: Просмотр цен на указанные товары во всех магазинах
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getDefaultPrices.md) %}\n\nВозвращает список цен, которые вы установили для всех магазинов любым способом. Например, через API или с помощью Excel-шаблона.\n\nО способах установки цен читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).\n\n|**⚙️ Лимит:** 10\_000 товаров в минуту|\n|-|\n"

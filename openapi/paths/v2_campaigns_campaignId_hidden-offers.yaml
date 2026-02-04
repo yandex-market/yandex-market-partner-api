@@ -8,6 +8,7 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
+  x-resource-limit: req.hiddenOffers
   operationId: addHiddenOffers
   summary: Скрытие товаров и настройки скрытия
   description: >

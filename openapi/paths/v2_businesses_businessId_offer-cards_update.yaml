@@ -9,6 +9,7 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
+  x-resource-limit: req.offersContent
   operationId: updateOfferContent
   summary: Редактирование категорийных характеристик товара
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/updateOfferContent.md) %}\n\nРедактирует характеристики товара, которые специфичны для категории, к которой он относится.\n\n{% note warning \"Здесь только то, что относится к конкретной категории\" %}\n\nЕсли вам нужно изменить основные параметры товара (название, описание, изображения, видео, производитель, штрихкод), воспользуйтесь запросом [POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).\n\n{% endnote %}\n\nЧтобы удалить характеристики, которые заданы в параметрах с типом `string`, передайте пустое значение.\n\n{% note info \"Данные в каталоге обновляются не мгновенно\" %}\n\nЭто занимает до нескольких минут.\n\n{% endnote %}\n\n|**⚙️ Лимит:** 10 000 товаров в минуту|\n|-|\n"

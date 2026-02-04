@@ -21,6 +21,7 @@ get:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-resource-limit: resp.regions.children
   operationId: searchRegionChildren
   summary: Информация о дочерних регионах
   description: >
@@ -43,7 +44,7 @@ get:
     зависит от суммарного количества регионов.
 
 
-    |**⚙️ Лимит:** 50 000 запросов в час|
+    |**⚙️ Лимит:** 50 000 дочерних регионов в час|
 
     |-|
   parameters:

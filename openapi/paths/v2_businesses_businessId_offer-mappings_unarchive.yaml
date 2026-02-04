@@ -8,6 +8,7 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
+  x-resource-limit: req.offerIds
   operationId: deleteOffersFromArchive
   summary: Удаление товаров из архива
   description: >

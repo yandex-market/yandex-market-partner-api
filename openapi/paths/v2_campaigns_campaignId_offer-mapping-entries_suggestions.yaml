@@ -10,6 +10,7 @@ post:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-resource-limit: req.offers
   operationId: getSuggestedOfferMappingEntries
   summary: Рекомендованные карточки для товаров
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getSuggestedOfferMappingEntries.md) %}\n\nВозвращает идентификаторы карточек товаров на Маркете, рекомендованных для ваших товаров.\n\nКаждому товару, который вы размещаете, должна соответствовать карточка товара на Маркете со своим идентификатором — SKU на Маркете. Он указывается в URL карточки товара, после :no-translate[«...sku=»], например:\n\n##https://market.yandex.ru/product--yandex-kniga/484830016?sku=484830016…##\n\nЧтобы получить для товаров рекомендованные SKU на Маркете, передайте в теле POST-запроса как можно больше информации о них: названия, производителей, штрихкоды, цены и т. д.\n\nПолученные SKU можно передать вместе с информацией о ваших товарах с помощью запроса [POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md).\n\nВ одном запросе можно получить не более 500 рекомендаций.\n\n|**⚙️ Лимит:** 100 000 рекомендаций в час|\n|-|\n"

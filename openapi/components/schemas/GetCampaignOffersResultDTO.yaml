@@ -4,7 +4,7 @@ required:
   - offers
 properties:
   paging:
-    $ref: ./ScrollingPagerDTO.yaml
+    $ref: ./ForwardScrollingPagerDTO.yaml
   offers:
     description: Страница списка товаров.
     type: array

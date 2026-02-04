@@ -9,6 +9,7 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
+  x-resource-limit: req.offerIds
   operationId: deleteOffers
   summary: Удаление товаров из каталога
   description: >

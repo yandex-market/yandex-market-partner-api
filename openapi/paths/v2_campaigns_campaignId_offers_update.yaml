@@ -9,6 +9,7 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
+  x-resource-limit: req.offers
   operationId: updateCampaignOffers
   summary: Изменение условий продажи товаров в магазине
   description: >

@@ -8,6 +8,7 @@ post:
   x-auth-scopes:
     - all-methods
     - pricing
+  x-resource-limit: req.offerIds
   operationId: confirmCampaignPrices
   summary: Удаление товара из карантина по цене в магазине
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/confirmCampaignPrices.md) %}\n\nПодтверждает в заданном магазине цену на товары, которые попали в карантин, и удаляет их из карантина.\n\nТовар попадает в карантин, если его цена меняется слишком резко. [Как настроить карантин](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)\n\nЧтобы увидеть список товаров, которые попали в карантин, используйте запрос [POST\_v2/campaigns/{campaignId}/price-quarantine](getCampaignQuarantineOffers.md).\n\n|**⚙️ Лимит:** 10 000 товаров в минуту|\n|-|\n"

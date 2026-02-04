@@ -8,6 +8,7 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit: resp.result.orders
   operationId: updateOrderStatuses
   summary: Изменение статусов нескольких заказов
   description: >

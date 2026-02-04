@@ -4,7 +4,7 @@ required:
   - offerMappingEntries
 properties:
   paging:
-    $ref: ./ScrollingPagerDTO.yaml
+    $ref: ./ForwardScrollingPagerDTO.yaml
   offerMappingEntries:
     description: Информация о товарах в каталоге.
     type: array

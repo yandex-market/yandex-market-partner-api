@@ -10,6 +10,7 @@ post:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-resource-limit: resp.result.shopSkus
   operationId: getGoodsStats
   summary: Отчет по товарам
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getGoodsStats.md) %}\n\nВозвращает подробный отчет по товарам, которые вы разместили на Маркете. С помощью отчета вы можете узнать, например, об остатках на складе, об условиях хранения ваших товаров и т. д.\n\n|**⚙️ Лимит:** 5\_000 товаров в минуту|\n|-|\n"

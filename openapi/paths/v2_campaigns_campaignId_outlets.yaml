@@ -59,6 +59,7 @@ get:
     - all-methods
     - all-methods:read-only
     - settings-management
+  x-resource-limit: resp.outlets
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
   description: >
@@ -69,7 +70,7 @@ get:
     Возвращает список точек продаж магазина.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
+    |**⚙️ Лимит:** 100 000 точек продаж в час|
 
     |-|
   parameters:

@@ -9,6 +9,7 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
+  x-resource-limit: req.offerIds
   operationId: deleteCampaignOffers
   summary: Удаление товаров из ассортимента магазина
   description: >

@@ -44,6 +44,8 @@ description: >
   * `READY_TO_WITHDRAW` — товары готовы к выдаче.
 
   * `NEED_PREPARATION` — ожидается информация от продавца.
+
+  * `WAREHOUSE_SIGNED_ACT` — ЭАПП подписан складом.
 enum:
   - CREATED
   - FINISHED
@@ -63,3 +65,4 @@ enum:
   - ACCEPTED_BY_WAREHOUSE_SYSTEM
   - READY_TO_WITHDRAW
   - NEED_PREPARATION
+  - WAREHOUSE_SIGNED_ACT
