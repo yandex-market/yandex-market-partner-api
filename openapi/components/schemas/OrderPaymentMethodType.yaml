@@ -25,6 +25,8 @@ description: >
 
     * `MICROCREDIT` - Сплит на основе МКК (Микрокредитной компании).
 
+    * `BNPL_TBYB` - Оплата после доставки на основе Сплита.
+
 
   * Значения, если выбрана оплата при получении заказа (`"paymentType":
   "POSTPAID"`):
@@ -63,4 +65,5 @@ enum:
   - B2B_ACCOUNT_PREPAYMENT
   - B2B_ACCOUNT_POSTPAYMENT
   - MICROCREDIT
+  - BNPL_TBYB
   - UNKNOWN
