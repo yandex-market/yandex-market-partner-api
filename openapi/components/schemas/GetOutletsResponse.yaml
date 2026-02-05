@@ -10,5 +10,3 @@ properties:
       $ref: ./FullOutletDTO.yaml
   paging:
     $ref: ./ForwardScrollingPagerDTO.yaml
-  pager:
-    $ref: ./FlippingPagerDTO.yaml
