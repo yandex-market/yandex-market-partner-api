@@ -9,6 +9,10 @@ post:
     - all-methods
     - promotion
     - finance-and-accounting
+  x-resource-limit-config:
+    path: resp
+    amount: 10
+    period: hours
   operationId: generateCompetitorsPositionReport
   summary: Отчет «Конкурентная позиция»
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateCompetitorsPositionReport.md) %}\n\nЗапускает генерацию отчета «Конкурентная позиция» за заданный период. [Что это за отчет](https://yandex.ru/support2/marketplace/ru/analytics/competitors.html)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% note info \"Значение -1 в отчете\" %}\n\nЕсли в CSV-файле в столбце :no-translate[**POSITION**] стоит -1, в этот день не было заказов с товарами в указанной категории.\n\n{% endnote %}\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/masterstat/competitors_position.md) %}\n\n|**⚙️ Лимит:** 10 запросов в час|\n|-|\n"

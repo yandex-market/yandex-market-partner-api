@@ -5,6 +5,10 @@ get:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 200
+    period: hours
   operationId: downloadShipmentDiscrepancyAct
   summary: Получение акта расхождений
   description: >

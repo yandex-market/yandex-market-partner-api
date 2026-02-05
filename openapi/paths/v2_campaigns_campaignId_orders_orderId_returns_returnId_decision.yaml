@@ -5,6 +5,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
   operationId: setReturnDecision
   summary: Принятие или изменение решения по возврату
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/setReturnDecision.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit](../../reference/orders/submitReturnDecision.md)\n\n{% endnote %}\n\n\nВыбирает решение по возврату от покупателя. После этого для подтверждения решения нужно выполнить запрос [POST\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit](../../reference/orders/submitReturnDecision.md).\n\n|**⚙️ Лимит:** 10 000 запросов в час|\n|-|\n"

@@ -10,6 +10,10 @@ post:
     - settings-management
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   operationId: getQualityRatingDetails
   summary: Заказы, которые повлияли на индекс качества
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getQualityRatingDetails.md) %}\n\nВозвращает список заказов, которые повлияли на индекс качества магазина. Чтобы узнать значение индекса качества, выполните запрос [POST\_v2/businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).\n\n|**⚙️ Лимит:** 100 000 запросов в час|\n|-|\n"

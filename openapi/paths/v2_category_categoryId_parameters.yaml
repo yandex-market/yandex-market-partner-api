@@ -11,6 +11,10 @@ post:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: minutes
   operationId: getCategoryContentParameters
   summary: Списки характеристик товаров по категориям
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCategoryContentParameters.md) %}\n\nВозвращает список характеристик с допустимыми значениями для заданной [листовой категории](*list-category).\n\nПоля в ответе определяют правила передачи характеристики в методах:\n- [POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md)\n- [POST\_v2/businesses/{businessId}/offer-cards/update](../../reference/content/updateOfferContent.md)\n\n|**⚙️ Лимит:** 100 категорий в минуту |\n|-|\n"

@@ -9,6 +9,10 @@ get:
     - all-methods:read-only
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   x-restrictions:
     - market-yandex-go
   operationId: getOrderLabelsData

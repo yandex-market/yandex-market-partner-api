@@ -9,6 +9,10 @@ post:
     - all-methods
     - pricing
     - promotion
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
   x-restrictions:
     - market-yandex-go
   operationId: updatePromoOffers

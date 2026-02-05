@@ -9,6 +9,10 @@ put:
     - all-methods
     - pricing
     - promotion
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: minutes
   x-restrictions:
     - market-yandex-go
   operationId: putBidsForCampaign

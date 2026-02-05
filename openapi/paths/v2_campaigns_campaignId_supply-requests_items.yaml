@@ -7,6 +7,10 @@ post:
     - all-methods
     - all-methods:read-only
     - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   summary: Получение товаров в заявке на поставку, вывоз или утилизацию
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getSupplyRequestItems.md) %}\n\nВозвращает список товаров в заявке и информацию по ним.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   operationId: getSupplyRequestItems

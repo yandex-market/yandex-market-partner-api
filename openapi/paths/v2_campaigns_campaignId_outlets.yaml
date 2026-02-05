@@ -5,6 +5,10 @@ post:
   x-auth-scopes:
     - all-methods
     - settings-management
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   operationId: createOutlet
   summary: Создание точки продаж
   description: >
@@ -59,7 +63,10 @@ get:
     - all-methods
     - all-methods:read-only
     - settings-management
-  x-resource-limit: resp.outlets
+  x-resource-limit-config:
+    path: resp.outlets
+    amount: 100000
+    period: hours
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
   description: >

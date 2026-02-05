@@ -8,6 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: sendFileToChat
   summary: Отправка файла в чат
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/sendFileToChat.md) %}\n\nОтправляет файл в чат с покупателем.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"

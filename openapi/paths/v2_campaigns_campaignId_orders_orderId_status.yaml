@@ -8,6 +8,10 @@ put:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   operationId: updateOrderStatus
   summary: Изменение статуса одного заказа
   description: >

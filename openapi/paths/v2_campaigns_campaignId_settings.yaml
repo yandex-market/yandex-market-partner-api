@@ -21,6 +21,10 @@ get:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: getCampaignSettings
   summary: Настройки магазина
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCampaignSettings.md) %}\n\nВозвращает информацию о настройках магазина, идентификатор которого указан в запросе.\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"

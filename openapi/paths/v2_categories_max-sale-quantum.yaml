@@ -11,6 +11,10 @@ post:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 5000
+    period: hours
   operationId: getCategoriesMaxSaleQuantum
   summary: Лимит на установку кванта продажи и минимального количества товаров в заказе
   description: >

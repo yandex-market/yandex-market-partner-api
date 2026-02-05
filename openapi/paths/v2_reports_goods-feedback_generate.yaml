@@ -8,6 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   x-restrictions:
     - market-yandex-go
   operationId: generateGoodsFeedbackReport

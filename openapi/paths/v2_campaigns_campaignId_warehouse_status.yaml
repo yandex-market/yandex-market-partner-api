@@ -7,6 +7,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: updateWarehouseStatus
   summary: Изменение статуса склада
   description: >

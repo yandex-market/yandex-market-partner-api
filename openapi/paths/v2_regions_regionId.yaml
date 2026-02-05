@@ -21,6 +21,10 @@ get:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 50000
+    period: hours
   operationId: searchRegionsById
   summary: Информация о регионе
   description: >

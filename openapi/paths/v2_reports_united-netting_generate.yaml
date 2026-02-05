@@ -8,6 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - finance-and-accounting
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateUnitedNettingReport
   summary: Отчет по платежам
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateUnitedNettingReport.md) %}\n\nЗапускает генерацию отчета по платежам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#all-pay)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\nТип отчета зависит от того, какие поля заполнены в запросе:\n\n#|\n|| **Тип отчета** | **Какие поля нужны** | **Комментарий** ||\n|| О платежах за период | `dateFrom` и `dateTo` |\n  В отчет попадают все платежи, которые были выплачены и начислены в выбранный период.\n\n  Пример: если перевод выполнен 31\_августа и зачислен 1\_сентября, он попадет в отчет за оба месяца.\n||\n|| О платежном поручении | `bankOrderId` и `bankOrderDateTime` |—||\n|| [О баллах Маркета](*баллы_маркета) | `monthOfYear` |—||\n|#\n\nЗаказать отчеты нескольких типов одним запросом нельзя.\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/united/netting/generator/united_netting.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

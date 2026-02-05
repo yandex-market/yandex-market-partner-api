@@ -18,6 +18,10 @@ get:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: minutes
   operationId: getFulfillmentWarehouses
   summary: Идентификаторы складов Маркета
   description: >

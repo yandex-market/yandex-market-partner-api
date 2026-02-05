@@ -11,6 +11,10 @@ post:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 600
+    period: minutes
   operationId: getOfferCardsContentStatus
   summary: Получение информации о заполненности карточек магазина
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getOfferCardsContentStatus.md) %}\n\nВозвращает сведения о состоянии контента для заданных товаров:\n\n* создана ли карточка товара и в каком она статусе;\n* рейтинг карточки — на сколько процентов она заполнена;\n* переданные характеристики товаров;\n* есть ли ошибки или предупреждения, связанные с контентом;\n* рекомендации по заполнению карточки.\n\nЧтобы получить другие характеристики товаров, воспользуйтесь методом [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n\n|**⚙️ Лимит:** 600 запросов в минуту|\n|-|\n"

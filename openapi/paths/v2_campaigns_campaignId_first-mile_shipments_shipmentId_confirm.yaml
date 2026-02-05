@@ -5,6 +5,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: confirmShipment
   summary: Подтверждение отгрузки
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/confirmShipment.md) %}\n\nПодтверждает отгрузку товаров в сортировочный центр или пункт приема заказов. Действие доступно только после того, как отгрузка сформирована.\n\nГрафик отгрузок настраивается отдельно для каждого склада в личном кабинете и недоступен через API.\nПроверить возможность подтверждения отгрузки можно с помощью метода [GET\_v2/campaigns/{campaignId}/shipments/{shipmentId}](../../reference/shipments/getShipment): среди доступных действий `availableActions` должно быть действие `CONFIRM`.\nДо наступления времени подтверждения метод вернет код `400` и ошибку :no-translate[\"Cutoff time for shipments has not been reached yet\"].\n\nПодробнее о приеме заказов и расписании отгрузок читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/orders/fbs/settings/shipment#schedule).\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

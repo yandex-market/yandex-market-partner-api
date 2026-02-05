@@ -5,6 +5,10 @@ put:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 200
+    period: hours
   operationId: setShipmentPalletsCount
   summary: Передача количества упаковок для доверительной приемки
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/setShipmentPalletsCount.md) %}\n\nПередает Маркету количество упаковок в отгрузке для доверительной приемки. Подробнее о таком виде приемки читайте в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).\n\n{% note info \"Как передавать упаковки\" %}\n\nПередавайте количество упаковок, которые вы везете в отгрузке, а не сумму грузомест по заказам.\n\n**Пример:** в отгрузке 2 заказа, в каждом по 5 грузомест. Если вы везете их в 2 палетах — передайте в запросе `2`, а не `10`.\n\n{% endnote %}\n\nПолучить PDF-файл с ярлыками для упаковок можно с помощью метода [GET\_v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](../../reference/shipments/downloadShipmentPalletLabels.md).\n|**⚙️ Лимит:** 200 запросов в час|\n|-|\n"

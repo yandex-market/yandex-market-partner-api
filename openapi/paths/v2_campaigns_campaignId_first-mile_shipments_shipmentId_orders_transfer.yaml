@@ -5,6 +5,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 200
+    period: hours
   operationId: transferOrdersFromShipment
   summary: Перенос заказов в следующую отгрузку
   description: >

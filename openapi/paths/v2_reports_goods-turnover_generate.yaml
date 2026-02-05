@@ -6,6 +6,10 @@ post:
     - all-methods
     - offers-and-cards-management
     - finance-and-accounting
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateGoodsTurnoverReport
   summary: Отчет по оборачиваемости
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateGoodsTurnoverReport.md) %}\n\nЗапускает генерацию отчета по оборачиваемости за заданную дату.  [Что это за отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#turnover)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/turnover/turnover.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

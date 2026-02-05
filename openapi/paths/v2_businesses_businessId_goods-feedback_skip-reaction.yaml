@@ -8,6 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: skipGoodsFeedbacksReaction
   summary: Пропуск реакции на отзывы
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/skipGoodsFeedbacksReaction.md) %}\n\nПропускает реакцию на отзыв — параметр `needReaction` принимает значение `false` в методе получения всех отзывов [POST\_v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).\n\n|**⚙️ Лимит:** 1 000 запросов в час|\n|-|\n"

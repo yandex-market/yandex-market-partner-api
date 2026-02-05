@@ -7,6 +7,10 @@ get:
     - all-methods:read-only
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: getShipment
   summary: Получение информации об одной отгрузке
   description: >

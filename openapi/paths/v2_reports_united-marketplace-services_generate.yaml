@@ -9,6 +9,10 @@ post:
   x-auth-scopes:
     - all-methods
     - finance-and-accounting
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateUnitedMarketplaceServicesReport
   summary: Отчет по стоимости услуг
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateUnitedMarketplaceServicesReport.md) %}\n\nЗапускает генерацию отчета по стоимости услуг за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#reports)\n\nТип отчета зависит от того, какие поля заполнены в запросе:\n\n|**Тип отчета**               |**Какие поля нужны**             |\n|-----------------------------|---------------------------------|\n|По дате начисления услуги    |`dateFrom` и `dateTo`            |\n|По дате формирования акта    |`year` и `month`                 |\n\nЗаказать отчеты обоих типов одним запросом нельзя.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/united/services/generator/united_marketplace_services.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

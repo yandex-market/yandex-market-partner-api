@@ -8,7 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
-  x-resource-limit: req.hiddenOffers
+  x-resource-limit-config:
+    path: req.hiddenOffers
+    amount: 10000
+    period: minutes
   operationId: deleteHiddenOffers
   summary: Возобновление показа товаров
   description: >

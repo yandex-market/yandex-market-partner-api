@@ -9,7 +9,10 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
-  x-resource-limit: req.offerIds
+  x-resource-limit-config:
+    path: req.offerIds
+    amount: 10000
+    period: minutes
   operationId: generateOfferBarcodes
   summary: Генерация штрихкодов
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateOfferBarcodes.md) %}\n\nГенерирует штрихкоды и присваивает их указанным товарам.\n\nЕсли у товара на упаковке уже есть штрихкод производителя, передайте его в параметре `barcodes` в методе [POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md). Генерировать новый не нужно.\n\n|**⚙️ Лимит:** 10\_000 товаров в минуту, не более 100 товаров в одном запросе|\n|-|\n"

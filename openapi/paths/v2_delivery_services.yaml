@@ -19,6 +19,10 @@ get:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 5000
+    period: hours
   operationId: getDeliveryServices
   summary: Справочник служб доставки
   description: >

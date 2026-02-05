@@ -9,6 +9,10 @@ post:
     - all-methods
     - promotion
     - finance-and-accounting
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateKeyIndicatorsReport
   summary: Отчет по ключевым показателям
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateKeyIndicatorsReport.md) %}\n\nЗапускает генерацию отчета по ключевым показателям. [Что это за отчет](https://yandex.ru/support/marketplace/ru/analytics/key-metrics)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/key_indicators/key_indicators.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

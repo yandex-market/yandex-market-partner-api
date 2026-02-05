@@ -8,6 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: createChat
   summary: Создание нового чата с покупателем
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/createChat.md) %}\n\nСоздает новый чат с покупателем и возвращает информацию о нем или созданном ранее.\n\nТипы чатов, которые может начать продавец:\n\n* по заказам;\n* по возвратам (доступны только для FBY-, FBS- и Экспресс-магазинов).\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"

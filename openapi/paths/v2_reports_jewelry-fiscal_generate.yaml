@@ -9,6 +9,10 @@ post:
     - all-methods
     - finance-and-accounting
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateJewelryFiscalReport
   summary: Отчет по заказам с ювелирными изделиями
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateJewelryFiscalReport.md) %}\n\nЗапускает генерацию отчета по заказам с ювелирными изделиями.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

@@ -5,6 +5,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateShipmentListDocumentReport
   summary: Получение листа сборки
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateShipmentListDocumentReport.md) %}\n\nЗапускает генерацию **листа сборки** для отгрузки.\n\nЧтобы на в листе сборки отображался внешний идентификатор заказа, передайте его в методе [POST\_v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).\n\nУзнать статус генерации и получить ссылку на готовый документ можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

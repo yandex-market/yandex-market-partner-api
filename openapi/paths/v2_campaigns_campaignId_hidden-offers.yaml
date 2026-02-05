@@ -8,7 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - offers-and-cards-management
-  x-resource-limit: req.hiddenOffers
+  x-resource-limit-config:
+    path: req.hiddenOffers
+    amount: 10000
+    period: minutes
   operationId: addHiddenOffers
   summary: Скрытие товаров и настройки скрытия
   description: >
@@ -77,6 +80,10 @@ get:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: minutes
   operationId: getHiddenOffers
   summary: Информация о скрытых вами товарах
   description: >
@@ -91,7 +98,7 @@ get:
     YML-фида, в кабинете и так далее.
 
 
-    |**⚙️ Лимит:** 10 000 товаров в минуту, не более 500 товаров в одном
+    |**⚙️ Лимит:** 10 000 запросов в минуту, не более 500 товаров в одном
     запросе|
 
     |-|

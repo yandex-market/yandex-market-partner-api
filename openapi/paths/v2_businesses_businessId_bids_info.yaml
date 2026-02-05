@@ -12,6 +12,10 @@ post:
     - pricing:read-only
     - promotion
     - promotion:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: minutes
   x-restrictions:
     - market-yandex-go
   operationId: getBidsInfoForBusiness

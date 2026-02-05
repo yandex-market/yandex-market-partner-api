@@ -21,6 +21,10 @@ post:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: getRegionsCodes
   summary: Список допустимых кодов стран
   description: >

@@ -11,6 +11,10 @@ post:
     - settings-management
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
   operationId: getQualityRatings
   summary: Индекс качества магазинов
   description: >

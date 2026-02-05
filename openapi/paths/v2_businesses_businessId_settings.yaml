@@ -21,6 +21,10 @@ post:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: getBusinessSettings
   summary: Настройки кабинета
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getBusinessSettings.md) %}\n\nВозвращает информацию о настройках кабинета, идентификатор которого указан в запросе.\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"

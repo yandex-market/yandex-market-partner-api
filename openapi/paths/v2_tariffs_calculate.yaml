@@ -11,6 +11,10 @@ post:
     - finance-and-accounting
     - pricing
     - pricing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: minutes
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >

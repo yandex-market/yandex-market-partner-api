@@ -5,6 +5,10 @@ get:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 200
+    period: hours
   operationId: downloadShipmentPalletLabels
   summary: Ярлыки для доверительной приемки
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/downloadShipmentPalletLabels.md) %}\n\nPDF-файл с ярлыками на каждую упаковку в отгрузке для доверительной приемки. Подробнее о таком виде приемки читайте в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).\n\nРаспечатайте по несколько копий каждого ярлыка: на одну упаковку нужно наклеить минимум 2 ярлыка с разных сторон.\n\nКоличество упаковок в отгрузке передается в методе [PUT\_v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](../../reference/shipments/setShipmentPalletsCount.md).\n|**⚙️ Лимит:** 200 запросов в час|\n|-|\n"

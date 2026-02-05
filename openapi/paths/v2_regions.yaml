@@ -21,7 +21,10 @@ get:
     - promotion:read-only
     - communication
     - supplies-management:read-only
-  x-resource-limit: resp.regions
+  x-resource-limit-config:
+    path: resp.regions
+    amount: 50000
+    period: hours
   operationId: searchRegionsByName
   summary: Поиск регионов по их имени
   description: >

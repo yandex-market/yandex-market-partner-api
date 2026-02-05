@@ -5,6 +5,10 @@ put:
   x-auth-scopes:
     - all-methods
     - settings-management
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
   description: >
@@ -60,6 +64,10 @@ get:
     - all-methods
     - all-methods:read-only
     - settings-management
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   operationId: getOutlet
   summary: Информация об одной точке продаж
   description: >
@@ -102,6 +110,10 @@ delete:
   x-auth-scopes:
     - all-methods
     - settings-management
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   operationId: deleteOutlet
   summary: Удаление точки продаж
   description: >

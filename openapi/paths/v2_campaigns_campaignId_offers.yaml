@@ -11,6 +11,10 @@ post:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: minutes
   operationId: getCampaignOffers
   summary: Информация о товарах, которые размещены в заданном магазине
   description: >
@@ -22,7 +26,7 @@ post:
     каждого товара указываются параметры размещения.
 
 
-    |**⚙️ Лимит:** 10 000 товаров в минуту|
+    |**⚙️ Лимит:** 10 000 запросов в минуту|
 
     |-|
   parameters:

@@ -6,6 +6,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: generateBarcodesReport
   summary: Получение файла со штрихкодами
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateBarcodesReport.md) %}\n\nЗапускает генерацию PDF-файла со штрихкодами переданных товаров или товаров в указанной заявке на поставку.\n\nФайл не получится сгенерировать, если в нем будет более 1\_500 штрихкодов.\n\nУзнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"

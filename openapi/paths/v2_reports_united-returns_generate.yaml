@@ -10,6 +10,10 @@ post:
     - all-methods
     - finance-and-accounting
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateUnitedReturnsReport
   summary: Отчет по невыкупам и возвратам
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateUnitedReturnsReport.md) %}\n\nЗапускает генерацию сводного отчета по невыкупам и возвратам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/orders/returns/logistic#rejected-orders)\n\nОтчет содержит информацию о невыкупах и возвратах за указанный период, а также о тех, которые готовы к выдаче.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/united/returns/generator/united_returns.md) %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

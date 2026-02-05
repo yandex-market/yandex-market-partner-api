@@ -7,6 +7,10 @@ put:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   operationId: provideOrderItemIdentifiers
   summary: Передача кодов маркировки единиц товара
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/provideOrderItemIdentifiers.md) %}\n\n{% note warning \"Если вы работаете по модели FBS\" %}\n\nИспользуйте метод [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).\n\n{% endnote %}\n\nПередает Маркету коды маркировки для единиц товара в указанном заказе. Подробнее о работе с маркируемыми товарами читайте в [Справке продавца на Маркете](https://yandex.ru/support/marketplace/orders/cz.html).\n\nМаркировка товаров в системе [:no-translate[«Честный ЗНАК»]](https://честныйзнак.рф/) **необязательна** для заказов от физических лиц, но **обязательна** для заказов от бизнеса.\n\nДля модели DBS коды маркировки в системе [:no-translate[«Честный ЗНАК»]](https://честныйзнак.рф/) не проверяются в ГИС МТ — проверка выполняется только для моделей FBS и Экспресс.\n\nПринимаются коды следующих типов:\n\n* Коды в системе [:no-translate[«Честный ЗНАК»]](https://честныйзнак.рф/) или [:no-translate[«ASL BELGISI»]](https://aslbelgisi.uz) (для продавцов :no-translate[Market Yandex Go]).\n* УИН для ювелирных изделий.\n* РНПТ и ГТД для импортных прослеживаемых товаров.\n\nДля каждой позиции в заказе, требующей маркировки, нужно передать список кодов — по одному для каждой единицы товара. Например, если в заказе две пары тапочек и одна пара туфель, получится список из двух кодов для первой позиции и список из одного кода для второй.\n\n|**⚙️ Лимит:** 100 000 запросов в час|\n|-|\n"

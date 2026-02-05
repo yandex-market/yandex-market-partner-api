@@ -12,6 +12,10 @@ post:
     - pricing:read-only
     - promotion
     - promotion:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
   x-restrictions:
     - market-yandex-go
   operationId: getPromoOffers

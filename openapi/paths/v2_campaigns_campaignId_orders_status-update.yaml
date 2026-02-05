@@ -8,7 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
-  x-resource-limit: resp.result.orders
+  x-resource-limit-config:
+    path: resp.result.orders
+    amount: 100000
+    period: hours
   operationId: updateOrderStatuses
   summary: Изменение статусов нескольких заказов
   description: >

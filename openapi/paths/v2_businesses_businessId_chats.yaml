@@ -9,6 +9,10 @@ post:
     - all-methods
     - all-methods:read-only
     - communication
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
   operationId: getChats
   summary: Получение доступных чатов
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getChats.md) %}\n\nВозвращает чаты с покупателями.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% note warning \"Ограничение для параметра `limit`\" %}\n\nНе передавайте значение больше 20.\n\n{% endnote %}\n\n|**⚙️ Лимит:** 10 000 запросов в час|\n|-|\n"

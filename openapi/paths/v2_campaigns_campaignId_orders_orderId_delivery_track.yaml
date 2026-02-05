@@ -5,6 +5,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 100000
+    period: hours
   operationId: setOrderDeliveryTrackCode
   summary: Передача трек‑номера посылки
   description: >

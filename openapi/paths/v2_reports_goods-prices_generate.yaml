@@ -10,6 +10,10 @@ post:
     - finance-and-accounting
     - pricing
     - promotion
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateGoodsPricesReport
   summary: Отчет «Цены»
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateGoodsPricesReport.md) %}\n\nЗапускает генерацию отчета «Цены».\n\n**Какая информация вернется:**\n\n* если передать `businessId` — по единым ценам кабинета;\n* если [включены магазинные цены](*onlyDefaultPrice-false) и указать `campaignId` — по ценам в соответствующем магазине.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% list tabs %}\n\n- Цены во всех магазинах кабинета\n\n  {% include notitle [:no-translate[reports]](../../_auto/reports/prices/mass_assortment_business_price_v2.md) %}\n\n- Магазинные цены\n\n  {% include notitle [:no-translate[reports]](../../_auto/reports/prices/mass_assortment_price_v2.md) %}\n\n{% endlist %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

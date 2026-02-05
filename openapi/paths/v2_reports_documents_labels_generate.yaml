@@ -7,6 +7,10 @@ post:
   x-auth-scopes:
     - all-methods
     - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: generateMassOrderLabelsReport
   summary: Готовые ярлыки‑наклейки на все коробки в нескольких заказах
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateMassOrderLabelsReport.md) %}\n\nЗапускает генерацию PDF-файла с ярлыками для переданных заказов. Подробно о том, зачем они нужны и как выглядят, рассказано [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).\n\nЧтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST\_v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).\n\nУзнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"

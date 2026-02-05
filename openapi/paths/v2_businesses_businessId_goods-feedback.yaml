@@ -9,6 +9,10 @@ post:
     - all-methods
     - all-methods:read-only
     - communication
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: getGoodsFeedbacks
   summary: Получение отзывов о товарах продавца
   description: >

@@ -8,6 +8,10 @@ post:
   x-auth-scopes:
     - all-methods
     - finance-and-accounting
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: hours
   operationId: generateGoodsRealizationReport
   summary: Отчет по реализации
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateGoodsRealizationReport.md) %}\n\nЗапускает генерацию отчета по реализации за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#sales-report)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% list tabs %}\n\n- FBY, FBS, Экспресс\n\n  {% include notitle [:no-translate[reports]](../../_auto/reports/united/statistics/generator/united_statistics_v2.md) %}\n\n- DBS\n\n  {% include notitle [:no-translate[reports]](../../_auto/reports/united/statistics/generator/united_statistics_v2_dbs.md) %}\n\n{% endlist %}\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"

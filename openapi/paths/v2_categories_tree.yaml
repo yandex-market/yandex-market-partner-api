@@ -21,6 +21,10 @@ post:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: >

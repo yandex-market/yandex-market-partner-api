@@ -10,6 +10,10 @@ post:
     - all-methods:read-only
     - pricing
     - pricing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 100
+    period: minutes
   x-restrictions:
     - market-yandex-go
   operationId: getOfferRecommendations

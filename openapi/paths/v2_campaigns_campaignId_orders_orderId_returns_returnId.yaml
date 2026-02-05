@@ -11,6 +11,10 @@ get:
     - all-methods:read-only
     - inventory-and-order-processing
     - inventory-and-order-processing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
   operationId: getReturn
   summary: Информация о невыкупе или возврате
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getReturn.md) %}\n\nПолучает информацию по одному невыкупу или возврату.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый невыкуп или возврат.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n|**⚙️ Лимит:** 10 000 запросов в час|\n|-|\n"

@@ -9,6 +9,10 @@ get:
     - all-methods
     - all-methods:read-only
     - communication
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
   operationId: getChat
   summary: Получение чата по идентификатору
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getChat.md) %}\n\nВозвращает чат по его идентификатору.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
