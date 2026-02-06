@@ -61,7 +61,7 @@ post:
     - offers-and-cards-management
     - offers-and-cards-management:read-only
   x-resource-limit-config:
-    path: resp
+    path: resp.result.warehouses.offers.offerId
     amount: 100000
     period: minutes
   operationId: getStocks
