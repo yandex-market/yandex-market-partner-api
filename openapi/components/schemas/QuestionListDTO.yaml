@@ -10,7 +10,7 @@ properties:
     items:
       $ref: ./QuestionDTO.yaml
   paging:
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml
   totalCount:
     description: |
       Общее количество вопросов, которые попадают под фильтр.

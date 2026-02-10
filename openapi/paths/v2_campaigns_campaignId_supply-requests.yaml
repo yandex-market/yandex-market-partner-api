@@ -16,8 +16,8 @@ post:
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getSupplyRequests.md) %}\n\nПо указанным фильтрам возвращает заявки на поставку, вывоз и утилизацию, а также информацию по ним.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit100.yaml
   requestBody:
     required: false
     content:

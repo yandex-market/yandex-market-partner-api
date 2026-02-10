@@ -1,0 +1,19 @@
+name: pageToken
+description: >
+  Идентификатор страницы c результатами.
+
+
+  Если параметр не указан, возвращается первая страница.
+
+
+  Передавайте значение выходного параметра `nextPageToken`, полученное при
+  последнем запросе.
+in: query
+required: false
+example: eyBuZXh0SWQ6IDIzNDIgfQ
+x-transform: token
+x-aliases:
+  - pageToken
+  - page_token
+schema:
+  type: string

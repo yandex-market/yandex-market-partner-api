@@ -1,0 +1,13 @@
+name: limit
+description: Количество значений на одной странице.
+in: query
+required: false
+x-transform: limit
+x-limit-config:
+  default: 250
+  maximum: 500
+  mode: strict
+schema:
+  type: integer
+  format: int32
+  minimum: 1

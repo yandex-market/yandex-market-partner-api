@@ -1,0 +1,8 @@
+description: |
+  Идентификатор следующей страницы.
+type: object
+properties:
+  nextPageToken:
+    description: Идентификатор следующей страницы результатов.
+    type: string
+    x-serialize-transform: token

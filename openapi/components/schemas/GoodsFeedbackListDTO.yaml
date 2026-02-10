@@ -10,4 +10,4 @@ properties:
     items:
       $ref: ./GoodsFeedbackDTO.yaml
   paging:
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

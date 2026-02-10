@@ -53,8 +53,8 @@ post:
     |-|
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit50.yaml
   requestBody:
     required: false
     content:

@@ -5,7 +5,7 @@ required:
 properties:
   paging:
     description: Информация о страницах с результатами.
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml
   returns:
     description: Список невыкупов или возвратов.
     type: array

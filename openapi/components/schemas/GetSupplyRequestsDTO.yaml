@@ -13,4 +13,4 @@ properties:
       $ref: ./SupplyRequestDTO.yaml
   paging:
     description: Информация о страницах с результатами.
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml
