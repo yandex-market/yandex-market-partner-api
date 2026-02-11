@@ -1,0 +1,14 @@
+name: shop_sku
+in: query
+x-transform: trim
+required: false
+deprecated: true
+description: |
+  Идентификаторы товаров в каталоге.
+
+  Используйте параметр `offer_id` вместо этого параметра.
+schema:
+  type: array
+  uniqueItems: true
+  items:
+    $ref: ../schemas/ShopSku.yaml

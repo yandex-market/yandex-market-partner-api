@@ -104,16 +104,7 @@ get:
     |-|
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - description: |
-        Идентификатор скрытого предложения.
-      name: offer_id
-      in: query
-      x-transform: trim
-      schema:
-        type: array
-        uniqueItems: true
-        items:
-          $ref: ../components/schemas/ShopSku.yaml
+    - $ref: ../components/parameters/hidden-offers_OfferIds.yaml
     - $ref: ../components/parameters/PageToken.yaml
     - $ref: ../components/parameters/PageLimit.yaml
   responses:

@@ -20,30 +20,8 @@ get:
   deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - name: offer_id
-      in: query
-      x-transform: trim
-      required: false
-      description: Идентификаторы товаров в каталоге.
-      schema:
-        type: array
-        uniqueItems: true
-        items:
-          $ref: ../components/schemas/ShopSku.yaml
-    - name: shop_sku
-      in: query
-      x-transform: trim
-      required: false
-      deprecated: true
-      description: |
-        Идентификаторы товаров в каталоге.
-
-        Используйте параметр `offer_id` вместо этого параметра.
-      schema:
-        type: array
-        uniqueItems: true
-        items:
-          $ref: ../components/schemas/ShopSku.yaml
+    - $ref: ../components/parameters/OfferIds.yaml
+    - $ref: ../components/parameters/OfferShopSkus.yaml
     - $ref: ../components/parameters/OfferMappingKind.yaml
     - $ref: ../components/parameters/OfferProcessingStatuses.yaml
     - $ref: ../components/parameters/OfferAvailabilityStatuses.yaml

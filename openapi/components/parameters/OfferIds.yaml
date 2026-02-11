@@ -1,0 +1,10 @@
+name: offer_id
+in: query
+x-transform: trim
+required: false
+description: Идентификаторы товаров в каталоге.
+schema:
+  type: array
+  uniqueItems: true
+  items:
+    $ref: ../schemas/ShopSku.yaml

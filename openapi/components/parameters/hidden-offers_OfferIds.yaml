@@ -1,0 +1,10 @@
+description: |
+  Идентификатор скрытого предложения.
+name: offer_id
+in: query
+x-transform: trim
+schema:
+  type: array
+  uniqueItems: true
+  items:
+    $ref: ../schemas/ShopSku.yaml
