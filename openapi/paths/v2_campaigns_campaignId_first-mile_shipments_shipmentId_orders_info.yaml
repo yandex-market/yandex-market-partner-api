@@ -9,7 +9,7 @@ get:
     - inventory-and-order-processing:read-only
   x-resource-limit-config:
     path: resp
-    amount: 100
+    amount: 200
     period: hours
   operationId: getShipmentOrdersInfo
   summary: Получение информации о возможности печати ярлыков
@@ -22,7 +22,7 @@ get:
     Возвращает информацию о возможности печати ярлыков-наклеек для заказов в
     отгрузке.
 
-    |**⚙️ Лимит:** 100 запросов в час|
+    |**⚙️ Лимит:** 200 запросов в час|
 
     |-|
   parameters:

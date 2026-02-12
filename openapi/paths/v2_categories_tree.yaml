@@ -24,7 +24,7 @@ post:
   x-resource-limit-config:
     path: resp
     amount: 1000
-    period: hours
+    period: minutes
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: >
@@ -35,7 +35,7 @@ post:
     Возвращает дерево категорий Маркета.
 
 
-    |**⚙️ Лимит:** 1 000 запросов в час|
+    |**⚙️ Лимит:** 1 000 запросов в минуту|
 
     |-|
   requestBody:
