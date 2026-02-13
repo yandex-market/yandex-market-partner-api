@@ -18,7 +18,7 @@ properties:
       оставьте поле пустым.
     type: array
     minItems: 1
-    maxItems: 500
+    maxItems: 200
     uniqueItems: true
     nullable: true
     items:

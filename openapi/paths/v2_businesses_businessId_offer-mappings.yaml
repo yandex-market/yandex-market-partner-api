@@ -20,8 +20,8 @@ post:
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getOfferMappings.md) %}\n\nВозвращает список товаров в каталоге, их категории на Маркете и характеристики каждого товара.\n\nМожно использовать тремя способами:\n* задать список интересующих SKU;\n* задать фильтр — в этом случае результаты возвращаются постранично;\n* не передавать тело запроса, чтобы получить список всех товаров в каталоге.\n\nЧтобы получить категорийные характеристики товаров, воспользуйтесь методом [POST\_v2/businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md).\n\n|**⚙️ Лимит:** 600 запросов в минуту, не более 100 товаров в одном запросе|\n|-|\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit100Truncate.yaml
     - $ref: ../components/parameters/CatalogLanguage.yaml
   requestBody:
     required: false

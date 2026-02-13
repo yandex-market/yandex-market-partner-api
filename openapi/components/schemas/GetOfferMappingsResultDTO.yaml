@@ -5,7 +5,7 @@ required:
 properties:
   paging:
     description: Идентификатор следующей страницы.
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml
   offerMappings:
     description: Информация о товарах.
     type: array

@@ -27,8 +27,8 @@ get:
     - $ref: ../components/parameters/OfferAvailabilityStatuses.yaml
     - $ref: ../components/parameters/CategoryIds.yaml
     - $ref: ../components/parameters/VendorNames.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit200.yaml
   responses:
     '200':
       description: Информация о товарах в каталоге.

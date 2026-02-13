@@ -10,5 +10,7 @@ description: |
 schema:
   type: array
   uniqueItems: true
+  minItems: 1
+  maxItems: 200
   items:
     $ref: ../schemas/ShopSku.yaml
