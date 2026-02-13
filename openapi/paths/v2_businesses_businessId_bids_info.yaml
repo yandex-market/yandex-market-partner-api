@@ -20,7 +20,7 @@ post:
     - market-yandex-go
   operationId: getBidsInfoForBusiness
   summary: Информация об установленных ставках
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getBidsInfoForBusiness.md) %}\n\nВозвращает значения ставок для заданных товаров.\n\n{% note warning \"Получить информацию по кампаниям, созданным в кабинете, не получится\" %}\n\nВ ответе возвращаются значения только тех ставок, которые вы установили через запрос [PUT\_v2/businesses/{businessId}/bids](../../reference/bids/putBidsForBusiness.md).\n\n{% endnote %}\n\nВ одном запросе может быть максимум 1500 товаров.\n\n|**⚙️ Лимит:** 1\_000 запросов в минуту|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getBidsInfoForBusiness.md) %}\n\nВозвращает значения ставок для заданных товаров.\n\n{% note warning \"Получить информацию по кампаниям, созданным в кабинете, не получится\" %}\n\nВ ответе возвращаются значения только тех ставок, которые вы установили через запрос [PUT\_v2/businesses/{businessId}/bids](../../reference/bids/putBidsForBusiness.md).\n\n{% endnote %}\n\nВ одном запросе может быть максимум 1500 товаров.\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getBidsInfoForBusiness.md) %}\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/PageToken.yaml

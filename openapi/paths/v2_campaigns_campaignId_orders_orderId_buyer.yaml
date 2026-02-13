@@ -13,7 +13,7 @@ get:
     period: hours
   operationId: getOrderBuyerInfo
   summary: Информация о покупателе — физическом лице
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getOrderBuyerInfo.md) %}\n\nВозвращает информацию о покупателе по идентификатору заказа.\n\n{% note info \"Как получить информацию о покупателе, который является юридическим лицом\" %}\n\nВоспользуйтесь запросом [POST\_v2/campaigns/{campaignId}/orders/{orderId}/business-buyer](../../reference/order-business-information/getOrderBusinessBuyerInfo.md).\n\n{% endnote %}\n\nПолучить данные можно, только если заказ находится в статусе `PROCESSING`, `DELIVERY` или `PICKUP`.\n\n|**⚙️ Лимит:** 3 000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getOrderBuyerInfo.md) %}\n\nВозвращает информацию о покупателе по идентификатору заказа.\n\n{% note info \"Как получить информацию о покупателе, который является юридическим лицом\" %}\n\nВоспользуйтесь запросом [POST\_v2/campaigns/{campaignId}/orders/{orderId}/business-buyer](../../reference/order-business-information/getOrderBusinessBuyerInfo.md).\n\n{% endnote %}\n\nПолучить данные можно, только если заказ находится в статусе `PROCESSING`, `DELIVERY` или `PICKUP`.\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getOrderBuyerInfo.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

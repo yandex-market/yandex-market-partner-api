@@ -61,9 +61,8 @@ get:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** 50 000 регионов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/searchRegionsByName.md) %}
   parameters:
     - $ref: ../components/parameters/RegionName.yaml
     - $ref: ../components/parameters/PageToken.yaml

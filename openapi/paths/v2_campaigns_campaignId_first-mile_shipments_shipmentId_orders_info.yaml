@@ -22,9 +22,10 @@ get:
     Возвращает информацию о возможности печати ярлыков-наклеек для заказов в
     отгрузке.
 
-    |**⚙️ Лимит:** 200 запросов в час|
 
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getShipmentOrdersInfo.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

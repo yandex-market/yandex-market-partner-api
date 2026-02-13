@@ -40,9 +40,8 @@ put:
     отмены заказа `"substatus": "SHOP_FAILED"`.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/updateOrderStatus.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

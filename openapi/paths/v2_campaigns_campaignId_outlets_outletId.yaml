@@ -19,9 +19,8 @@ put:
     Изменяет информацию о точке продаж магазина на Маркете.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/updateOutlet.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletId.yaml
@@ -78,9 +77,8 @@ get:
     Возвращает информацию о точках продаж магазина.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getOutlet.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletId.yaml
@@ -124,9 +122,8 @@ delete:
     Удаляет точку продаж магазина на Маркете.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/deleteOutlet.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletId.yaml

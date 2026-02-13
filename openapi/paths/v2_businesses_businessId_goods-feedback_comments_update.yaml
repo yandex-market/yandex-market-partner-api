@@ -48,9 +48,9 @@ post:
     существующий комментарий.
 
 
-    |**⚙️ Лимит:** 1 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/updateGoodsFeedbackComment.md)
+    %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

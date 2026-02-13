@@ -23,9 +23,9 @@ post:
     Создание, изменение и удаление ответа или комментария.
 
 
-    |**⚙️ Лимит:** 1000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/updateGoodsQuestionTextEntity.md)
+    %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

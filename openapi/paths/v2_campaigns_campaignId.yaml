@@ -27,7 +27,16 @@ get:
     period: hours
   operationId: getCampaign
   summary: Информация о магазине
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCampaign.md) %}\n\nВозвращает информацию о магазине.\n|**⚙️ Лимит:** 5\_000 запросов в час|\n|-|\n"
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getCampaign.md) %}
+
+
+    Возвращает информацию о магазине.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getCampaign.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:

@@ -31,9 +31,8 @@ post:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** 10 000 товаров в минуту|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/addHiddenOffers.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:
@@ -98,10 +97,8 @@ get:
     YML-фида, в кабинете и так далее.
 
 
-    |**⚙️ Лимит:** 10 000 запросов в минуту, не более 500 товаров в одном
-    запросе|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getHiddenOffers.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/hidden-offers_OfferIds.yaml

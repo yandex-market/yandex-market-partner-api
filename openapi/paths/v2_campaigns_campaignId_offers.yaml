@@ -26,9 +26,8 @@ post:
     каждого товара указываются параметры размещения.
 
 
-    |**⚙️ Лимит:** 10 000 запросов в минуту|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getCampaignOffers.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

@@ -33,9 +33,9 @@ get:
     Возвращает список складов Маркета с их идентификаторами.
 
 
-    |**⚙️ Лимит:** 100 запросов в минуту|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getFulfillmentWarehouses.md)
+    %}
   parameters:
     - $ref: ../components/parameters/GetFulfillmentWarehousesCampaignId.yaml
   responses:

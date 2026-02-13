@@ -19,9 +19,10 @@ get:
 
     Возвращает акт расхождений для заданной отгрузки.
 
-    |**⚙️ Лимит:** 200 запросов в час|
 
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/downloadShipmentDiscrepancyAct.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

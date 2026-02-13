@@ -13,7 +13,17 @@ post:
     period: hours
   operationId: getSupplyRequests
   summary: Получение информации о заявках на поставку, вывоз и утилизацию
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getSupplyRequests.md) %}\n\nПо указанным фильтрам возвращает заявки на поставку, вывоз и утилизацию, а также информацию по ним.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getSupplyRequests.md) %}
+
+
+    По указанным фильтрам возвращает заявки на поставку, вывоз и утилизацию, а
+    также информацию по ним.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getSupplyRequests.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

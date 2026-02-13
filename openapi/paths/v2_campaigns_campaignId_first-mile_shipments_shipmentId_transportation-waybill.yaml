@@ -27,9 +27,9 @@ get:
     центр.
 
 
-    |**⚙️ Лимит:** 200 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/downloadShipmentTransportationWaybill.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

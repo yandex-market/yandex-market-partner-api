@@ -19,9 +19,8 @@ post:
     Создает точку продаж магазина на Маркете.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/createOutlet.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:
@@ -77,9 +76,8 @@ get:
     Возвращает список точек продаж магазина.
 
 
-    |**⚙️ Лимит:** 100 000 точек продаж в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getOutlets.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

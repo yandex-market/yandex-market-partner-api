@@ -25,9 +25,8 @@ get:
     Возвращает информацию на ярлыках, которые клеятся на коробки в заказе.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getOrderLabelsData.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

@@ -16,7 +16,7 @@ get:
     period: minutes
   operationId: getPrices
   summary: Список цен
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getPrices.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/campaigns/{campaignId}/offer-prices](../../reference/assortment/getPricesByOfferIds.md)\n\n{% endnote %}\n\nВозвращает список цен, установленных вами на товары любым способом: например, через API или в файле с каталогом.\n\n{% note info \"Как считается общее количество товаров\" %}\n\nПо данным за последние семь дней (не включая сегодня) и не может быть выше 2 миллионов.\n\n{% endnote %}\n\nСпособы установки цен описаны [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).\n\n|**⚙️ Лимит:** 150 000 товаров в минуту|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getPrices.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/campaigns/{campaignId}/offer-prices](../../reference/assortment/getPricesByOfferIds.md)\n\n{% endnote %}\n\nВозвращает список цен, установленных вами на товары любым способом: например, через API или в файле с каталогом.\n\n{% note info \"Как считается общее количество товаров\" %}\n\nПо данным за последние семь дней (не включая сегодня) и не может быть выше 2 миллионов.\n\n{% endnote %}\n\nСпособы установки цен описаны [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getPrices.md) %}\n"
   deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
@@ -67,7 +67,7 @@ post:
     period: minutes
   operationId: getPricesByOfferIds
   summary: Просмотр цен на указанные товары в конкретном магазине
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n\n{% endnote %}\n\n|**⚙️ Лимит:** 150 000 товаров в минуту|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getPricesByOfferIds.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml

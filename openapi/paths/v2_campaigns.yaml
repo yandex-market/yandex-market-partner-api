@@ -27,7 +27,31 @@ get:
     period: hours
   operationId: getCampaigns
   summary: Список магазинов пользователя
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCampaigns.md) %}\n\n**Для Api-Key-токена:** возвращает список магазинов в кабинете, для которого выдан токен. Нельзя получить список только подагентских магазинов.\n\n**Для OAuth-токена:** возвращает список магазинов, к которым имеет доступ пользователь — владелец токена авторизации, использованного в запросе. Для агентских пользователей список состоит из подагентских магазинов.\n\n{% note warning \"Ограничение для параметра `pageSize`\" %}\n\nНе передавайте значение больше 100.\n\n{% endnote %}\n\n|**⚙️ Лимит:** 5\_000 запросов в час|\n|-|\n"
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getCampaigns.md) %}
+
+
+    **Для Api-Key-токена:** возвращает список магазинов в кабинете, для которого
+    выдан токен. Нельзя получить список только подагентских магазинов.
+
+
+    **Для OAuth-токена:** возвращает список магазинов, к которым имеет доступ
+    пользователь — владелец токена авторизации, использованного в запросе. Для
+    агентских пользователей список состоит из подагентских магазинов.
+
+
+    {% note warning "Ограничение для параметра `pageSize`" %}
+
+
+    Не передавайте значение больше 100.
+
+
+    {% endnote %}
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getCampaigns.md) %}
   parameters:
     - $ref: ../components/parameters/PageNum.yaml
     - $ref: ../components/parameters/PageSize.yaml

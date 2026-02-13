@@ -27,9 +27,8 @@ post:
     вопросов.
 
 
-    |**⚙️ Лимит:** 10 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getGoodsQuestions.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

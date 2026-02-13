@@ -28,9 +28,9 @@ post:
     Получить данные можно после того, как заказ перейдет в статус `DELIVERED`.
 
 
-    |**⚙️ Лимит:** 3 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getOrderBusinessDocumentsInfo.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

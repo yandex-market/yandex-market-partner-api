@@ -11,7 +11,7 @@ put:
     period: hours
   operationId: updateOrderStorageLimit
   summary: Продление срока хранения заказа
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/updateOrderStorageLimit.md) %}\n\nПродлевает срок хранения заказа в пункте выдачи продавца.\n\nЗаказ должен быть в статусе `PICKUP`. Продлить срок можно только один раз, не больше чем на 30 дней.\n\nНовый срок хранения можно получить в параметре `outletStorageLimitDate` в ответе метода [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).\n\n|**⚙️ Лимит:** 100 000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/updateOrderStorageLimit.md) %}\n\nПродлевает срок хранения заказа в пункте выдачи продавца.\n\nЗаказ должен быть в статусе `PICKUP`. Продлить срок можно только один раз, не больше чем на 30 дней.\n\nНовый срок хранения можно получить в параметре `outletStorageLimitDate` в ответе метода [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/updateOrderStorageLimit.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

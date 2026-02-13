@@ -27,9 +27,9 @@ post:
     склад был выключен 30 дней или дольше — через 4 часа.
 
 
-    |**⚙️ Лимит:** 100 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/updateWarehouseStatus.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

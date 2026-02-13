@@ -23,9 +23,9 @@ post:
     Удаляет комментарий магазина.
 
 
-    |**⚙️ Лимит:** 1 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/deleteGoodsFeedbackComment.md)
+    %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

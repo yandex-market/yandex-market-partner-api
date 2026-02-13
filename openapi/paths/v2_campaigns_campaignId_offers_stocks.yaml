@@ -13,7 +13,33 @@ put:
     period: minutes
   operationId: updateStocks
   summary: Передача информации об остатках
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/updateStocks.md) %}\n\nПередает данные об остатках товаров на витрине.\n\nДля группы складов передавайте остатки только для **одного любого склада**. Информация для остальных складов в этой группе обновится автоматически.\n\nОбязательно указывайте SKU **в точности** так, как он указан в каталоге. Например, _557722_ и _0557722_ — это два разных SKU.\n\n{% note info \"Данные в каталоге обновляются не мгновенно\" %}\n\nЭто занимает до нескольких минут.\n\n{% endnote %}\n\n|**⚙️ Лимит:** 100\_000 товаров в минуту|\n|-|\n"
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/updateStocks.md) %}
+
+
+    Передает данные об остатках товаров на витрине.
+
+
+    Для группы складов передавайте остатки только для **одного любого склада**.
+    Информация для остальных складов в этой группе обновится автоматически.
+
+
+    Обязательно указывайте SKU **в точности** так, как он указан в каталоге.
+    Например, _557722_ и _0557722_ — это два разных SKU.
+
+
+    {% note info "Данные в каталоге обновляются не мгновенно" %}
+
+
+    Это занимает до нескольких минут.
+
+
+    {% endnote %}
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/updateStocks.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:
@@ -66,7 +92,7 @@ post:
     period: minutes
   operationId: getStocks
   summary: Информация об остатках и оборачиваемости
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getStocks.md) %}\n\nВозвращает данные об остатках товаров (для всех моделей) и об [оборачиваемости](*turnover) товаров (для модели FBY).\n\n{% note info \"По умолчанию данные по оборачивамости не возращаются\" %}\n\nЧтобы они были в ответе, передавайте `true` в поле `withTurnover`.\n\n{% endnote %}\n\n**Для модели FBY:** информация об остатках может возвращаться с нескольких складов Маркета, у которых будут разные `warehouseId`. Получить список складов Маркета можно с помощью метода [GET\_v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).\n\n**Для модели FBS:** в ответе может вернуться не только партнерский склад, но и склад возвратов Маркета. Это возможно, если возврат поступил в указанную продавцом точку возвратов и долго не был забран.\n\n{% note warning \"Ограничение для параметра `limit`\" %}\n\nНе передавайте значение больше 200.\n\n{% endnote %}\n\n|**⚙️ Лимит:** 100 000 товаров в минуту|\n|-|\n\n[//]: <> (turnover: Среднее количество дней, за которое товар продается. Подробно об оборачиваемости рассказано в Справке Маркета для продавцов https://yandex.ru/support/marketplace/analytics/turnover.html.)\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getStocks.md) %}\n\nВозвращает данные об остатках товаров (для всех моделей) и об [оборачиваемости](*turnover) товаров (для модели FBY).\n\n{% note info \"По умолчанию данные по оборачивамости не возращаются\" %}\n\nЧтобы они были в ответе, передавайте `true` в поле `withTurnover`.\n\n{% endnote %}\n\n**Для модели FBY:** информация об остатках может возвращаться с нескольких складов Маркета, у которых будут разные `warehouseId`. Получить список складов Маркета можно с помощью метода [GET\_v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).\n\n**Для модели FBS:** в ответе может вернуться не только партнерский склад, но и склад возвратов Маркета. Это возможно, если возврат поступил в указанную продавцом точку возвратов и долго не был забран.\n\n{% note warning \"Ограничение для параметра `limit`\" %}\n\nНе передавайте значение больше 200.\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getStocks.md) %}\n\n[//]: <> (turnover: Среднее количество дней, за которое товар продается. Подробно об оборачиваемости рассказано в Справке Маркета для продавцов https://yandex.ru/support/marketplace/analytics/turnover.html.)\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml

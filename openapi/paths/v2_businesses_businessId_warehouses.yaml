@@ -15,7 +15,7 @@ get:
     period: minutes
   operationId: getWarehouses
   summary: Список складов и групп складов
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getWarehouses.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md)\n\n{% endnote %}\n\nВозвращает список складов и, если склады объединены, список групп складов. [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks)\n\nСреди прочего запрос позволяет определить идентификатор, который нужно использовать при передаче остатков для группы складов.\n\n|**⚙️ Лимит:** 100 запросов в минуту|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getWarehouses.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md)\n\n{% endnote %}\n\nВозвращает список складов и, если склады объединены, список групп складов. [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks)\n\nСреди прочего запрос позволяет определить идентификатор, который нужно использовать при передаче остатков для группы складов.\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getWarehouses.md) %}\n"
   deprecated: true
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
@@ -55,7 +55,25 @@ post:
     period: hours
   operationId: getPagedWarehouses
   summary: Список складов
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getPagedWarehouses.md) %}\n\nВозвращает список складов и информацию о них.\n\n{% note warning \"Ограничение для параметра `limit`\" %}\n\nНе передавайте значение больше 25.\n\n{% endnote %}\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getPagedWarehouses.md) %}
+
+
+    Возвращает список складов и информацию о них.
+
+
+    {% note warning "Ограничение для параметра `limit`" %}
+
+
+    Не передавайте значение больше 25.
+
+
+    {% endnote %}
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getPagedWarehouses.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/PageToken.yaml

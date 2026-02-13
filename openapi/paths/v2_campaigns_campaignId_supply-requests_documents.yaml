@@ -12,7 +12,18 @@ post:
     amount: 1000
     period: hours
   summary: Получение документов по заявке на поставку, вывоз или утилизацию
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getSupplyRequestDocuments.md) %}\n\nВозвращает документы по заявке.\n\n|**⚙️ Лимит:** 1\_000 запросов в час|\n|-|\n"
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getSupplyRequestDocuments.md)
+    %}
+
+
+    Возвращает документы по заявке.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getSupplyRequestDocuments.md)
+    %}
   operationId: getSupplyRequestDocuments
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

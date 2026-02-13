@@ -17,7 +17,21 @@ post:
     period: minutes
   operationId: getDefaultPrices
   summary: Просмотр цен на указанные товары во всех магазинах
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getDefaultPrices.md) %}\n\nВозвращает список цен, которые вы установили для всех магазинов любым способом. Например, через API или с помощью Excel-шаблона.\n\nО способах установки цен читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).\n\n|**⚙️ Лимит:** 10\_000 товаров в минуту|\n|-|\n"
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getDefaultPrices.md) %}
+
+
+    Возвращает список цен, которые вы установили для всех магазинов любым
+    способом. Например, через API или с помощью Excel-шаблона.
+
+
+    О способах установки цен читайте [в Справке Маркета для
+    продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getDefaultPrices.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/PageToken.yaml

@@ -21,9 +21,8 @@ put:
     Для заказов с другими статусами дату доставки изменить нельзя.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/setOrderDeliveryDate.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

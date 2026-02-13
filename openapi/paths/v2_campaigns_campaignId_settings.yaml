@@ -27,7 +27,17 @@ get:
     period: hours
   operationId: getCampaignSettings
   summary: Настройки магазина
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCampaignSettings.md) %}\n\nВозвращает информацию о настройках магазина, идентификатор которого указан в запросе.\n|**⚙️ Лимит:** 5\_000 запросов в час|\n|-|\n"
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getCampaignSettings.md) %}
+
+
+    Возвращает информацию о настройках магазина, идентификатор которого указан в
+    запросе.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getCampaignSettings.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:

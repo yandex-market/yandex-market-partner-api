@@ -47,9 +47,8 @@ get:
     зависит от суммарного количества регионов.
 
 
-    |**⚙️ Лимит:** 50 000 дочерних регионов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/searchRegionChildren.md) %}
   parameters:
     - $ref: ../components/parameters/RegionId.yaml
     - $ref: ../components/parameters/PageNum.yaml

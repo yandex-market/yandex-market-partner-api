@@ -39,9 +39,9 @@ post:
     В запросе можно использовать фильтры. Результаты возвращаются постранично.
 
 
-    |**⚙️ Лимит:** 100 запросов в минуту|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getOfferRecommendations.md)
+    %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

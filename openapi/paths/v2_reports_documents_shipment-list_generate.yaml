@@ -11,7 +11,7 @@ post:
     period: hours
   operationId: generateShipmentListDocumentReport
   summary: Получение листа сборки
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateShipmentListDocumentReport.md) %}\n\nЗапускает генерацию **листа сборки** для отгрузки.\n\nЧтобы на в листе сборки отображался внешний идентификатор заказа, передайте его в методе [POST\_v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).\n\nУзнать статус генерации и получить ссылку на готовый документ можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n|**⚙️ Лимит:** 1000 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateShipmentListDocumentReport.md) %}\n\nЗапускает генерацию **листа сборки** для отгрузки.\n\nЧтобы на в листе сборки отображался внешний идентификатор заказа, передайте его в методе [POST\_v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).\n\nУзнать статус генерации и получить ссылку на готовый документ можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateShipmentListDocumentReport.md) %}\n"
   requestBody:
     required: true
     content:

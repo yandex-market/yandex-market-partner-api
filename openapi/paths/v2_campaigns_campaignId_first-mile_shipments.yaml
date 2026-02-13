@@ -40,9 +40,8 @@ put:
     {% endnote %}
 
 
-    |**⚙️ Лимит:** 200 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/searchShipments.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/PageToken.yaml

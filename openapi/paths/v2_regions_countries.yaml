@@ -40,9 +40,8 @@ post:
     рубежа для бизнеса. [Инструкция](../../step-by-step/business-info.md)
 
 
-    |**⚙️ Лимит:** 100 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getRegionsCodes.md) %}
   responses:
     '200':
       description: Список стран с их кодами в формате :no-translate[ISO 3166-1 alpha-2].

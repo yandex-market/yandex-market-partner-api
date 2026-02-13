@@ -20,9 +20,8 @@ get:
     Возвращает информацию о лицензиях для точек продаж.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getOutletLicenses.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletIds.yaml
@@ -78,9 +77,8 @@ delete:
     Удаляет информацию о лицензиях для точек продаж.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/deleteOutletLicenses.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - description: >
@@ -137,9 +135,8 @@ post:
     предложения в прайс-листе. Далее информация о лицензиях проходит проверку.
 
 
-    |**⚙️ Лимит:** 100 000 запросов в час|
-
-    |-|
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/updateOutletLicenses.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

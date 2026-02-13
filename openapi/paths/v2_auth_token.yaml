@@ -26,7 +26,7 @@ post:
     amount: 100
     period: hours
   summary: Получение информации о токене авторизации
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getAuthTokenInfo.md) %}\n\n{% note info \"Метод доступен только для Api-Key-токена.\" %}\n\n\_\n\n{% endnote %}\n\nВозвращает информацию о переданном токене авторизации.\n\n|**⚙️ Лимит:** 100 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getAuthTokenInfo.md) %}\n\n{% note info \"Метод доступен только для Api-Key-токена.\" %}\n\n\_\n\n{% endnote %}\n\nВозвращает информацию о переданном токене авторизации.\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getAuthTokenInfo.md) %}\n"
   operationId: getAuthTokenInfo
   responses:
     '200':

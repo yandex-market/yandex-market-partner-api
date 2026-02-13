@@ -17,7 +17,7 @@ post:
     period: minutes
   operationId: getCategoryContentParameters
   summary: Списки характеристик товаров по категориям
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCategoryContentParameters.md) %}\n\nВозвращает список характеристик с допустимыми значениями для заданной [листовой категории](*list-category).\n\nПоля в ответе определяют правила передачи характеристики в методах:\n- [POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md)\n- [POST\_v2/businesses/{businessId}/offer-cards/update](../../reference/content/updateOfferContent.md)\n\n|**⚙️ Лимит:** 100 категорий в минуту |\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getCategoryContentParameters.md) %}\n\nВозвращает список характеристик с допустимыми значениями для заданной [листовой категории](*list-category).\n\nПоля в ответе определяют правила передачи характеристики в методах:\n- [POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md)\n- [POST\_v2/businesses/{businessId}/offer-cards/update](../../reference/content/updateOfferContent.md)\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getCategoryContentParameters.md) %}\n"
   parameters:
     - $ref: ../components/parameters/MarketCategoryId.yaml
     - $ref: ../components/parameters/BusinessIdQuery.yaml

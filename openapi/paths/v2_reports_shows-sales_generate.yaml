@@ -14,7 +14,7 @@ post:
     period: hours
   operationId: generateShowsSalesReport
   summary: Отчет «Аналитика продаж»
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateShowsSalesReport.md) %}\n\nЗапускает генерацию отчета «Аналитика продаж» за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/shows-sales.html)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/masterstat/sales_funnel_by_created_at.md) %}\n\n|**⚙️ Лимит:** 10 запросов в час|\n|-|\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateShowsSalesReport.md) %}\n\nЗапускает генерацию отчета «Аналитика продаж» за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/shows-sales.html)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/masterstat/sales_funnel_by_created_at.md) %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateShowsSalesReport.md) %}\n"
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:
