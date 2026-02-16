@@ -10,4 +10,4 @@ properties:
       $ref: ./ShipmentInfoDTO.yaml
   paging:
     description: Страницы с результатами поиска.
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

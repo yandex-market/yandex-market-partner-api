@@ -44,8 +44,8 @@ put:
     [:no-translate[limit]](../../_auto/method_limits/searchShipments.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit30.yaml
   requestBody:
     required: true
     content:
