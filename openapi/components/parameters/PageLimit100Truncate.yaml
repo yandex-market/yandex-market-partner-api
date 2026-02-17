@@ -2,12 +2,10 @@ name: limit
 description: Количество значений на одной странице.
 in: query
 required: false
-x-transform: limit
-x-limit-config:
-  default: 50
-  maximum: 100
-  mode: truncate
+x-transform: truncateLimit
 schema:
   type: integer
   format: int32
   minimum: 1
+  default: 50
+  maximum: 100
