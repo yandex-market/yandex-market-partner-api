@@ -6,6 +6,6 @@ required: false
 schema:
   type: integer
   format: int32
-  minimum: 1
-  default: 15
-  maximum: 30
+  minimum: 50
+  default: 250
+  maximum: 1500

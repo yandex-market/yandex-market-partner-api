@@ -1,5 +1,6 @@
 name: limit
-description: Количество значений на одной странице.
+description: |
+  {{ limit-truncate-param-description }}
 in: query
 required: false
 x-transform: truncateLimit

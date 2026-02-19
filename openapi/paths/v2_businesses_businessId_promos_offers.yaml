@@ -44,8 +44,8 @@ post:
     [:no-translate[limit]](../../_auto/method_limits/getPromoOffers.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit500.yaml
   requestBody:
     required: true
     content:

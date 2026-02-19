@@ -102,8 +102,8 @@ get:
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/hidden-offers_OfferIds.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit500.yaml
   responses:
     '200':
       description: Информация о скрытых вами товарах.

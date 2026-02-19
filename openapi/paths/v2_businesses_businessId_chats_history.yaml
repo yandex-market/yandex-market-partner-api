@@ -28,8 +28,8 @@ post:
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/ChatId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit100.yaml
   requestBody:
     required: true
     description: description

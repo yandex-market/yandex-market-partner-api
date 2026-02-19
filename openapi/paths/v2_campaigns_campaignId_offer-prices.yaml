@@ -20,8 +20,8 @@ get:
   deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit2000.yaml
     - description: Фильтр по нахождению в архиве.
       in: query
       name: archived
@@ -70,8 +70,8 @@ post:
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getPricesByOfferIds.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit2000.yaml
   requestBody:
     required: false
     content:

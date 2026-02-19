@@ -5,7 +5,7 @@ required:
   - hiddenOffers
 properties:
   paging:
-    $ref: ./ScrollingPagerDTO.yaml
+    $ref: ./PackagingScrollingPagerDTO.yaml
   hiddenOffers:
     description: Список скрытых товаров.
     type: array

@@ -1,5 +1,6 @@
 name: limit
-description: Количество значений на одной странице.
+description: |
+  {{ limit-param-description }}
 in: query
 required: false
 schema:

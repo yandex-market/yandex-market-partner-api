@@ -9,4 +9,4 @@ properties:
     items:
       $ref: ./OrdersStatsOrderDTO.yaml
   paging:
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

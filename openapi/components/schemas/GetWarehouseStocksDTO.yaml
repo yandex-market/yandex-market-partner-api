@@ -4,7 +4,7 @@ required:
   - warehouses
 properties:
   paging:
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml
   warehouses:
     description: >
       Страница списка складов.

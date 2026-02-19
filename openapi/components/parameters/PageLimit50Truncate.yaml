@@ -1,11 +1,12 @@
 name: limit
 description: |
-  {{ limit-param-description }}
+  {{ limit-truncate-param-description }}
 in: query
 required: false
+x-transform: truncateLimit
 schema:
   type: integer
   format: int32
   minimum: 1
-  default: 15
-  maximum: 30
+  default: 50
+  maximum: 50

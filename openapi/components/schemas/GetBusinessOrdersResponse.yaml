@@ -11,4 +11,4 @@ properties:
       $ref: ./BusinessOrderDTO.yaml
   paging:
     description: Информация о страницах результатов.
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

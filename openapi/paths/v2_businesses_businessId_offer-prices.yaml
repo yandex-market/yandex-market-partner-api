@@ -34,8 +34,8 @@ post:
     [:no-translate[limit]](../../_auto/method_limits/getDefaultPrices.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit2000.yaml
   requestBody:
     required: false
     content:
