@@ -1,0 +1,17 @@
+name: limit
+description: |
+  {{ limit-truncate-param-description }}
+
+  {% note warning %}
+
+  У данного лимита нет значения по умолчанию.
+
+  {% endnote %}
+in: query
+required: false
+x-transform: truncateLimit
+schema:
+  type: integer
+  format: int32
+  minimum: 1
+  maximum: 50

@@ -40,8 +40,8 @@ get:
     - $ref: ../components/parameters/GetOrdersBuyerType.yaml
     - $ref: ../components/parameters/PageNum.yaml
     - $ref: ../components/parameters/PageSize.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit50TruncateWithoutDefault.yaml
   responses:
     '200':
       description: Информация о заказах.
