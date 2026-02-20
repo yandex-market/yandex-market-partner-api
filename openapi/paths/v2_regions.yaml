@@ -52,15 +52,6 @@ get:
     зависит от суммарного количества регионов.
 
 
-    {% note warning "Ограничение для параметра `limit`" %}
-
-
-    Не передавайте значение больше 20.
-
-
-    {% endnote %}
-
-
     {% include notitle
     [:no-translate[limit]](../../_auto/method_limits/searchRegionsByName.md) %}
   parameters:

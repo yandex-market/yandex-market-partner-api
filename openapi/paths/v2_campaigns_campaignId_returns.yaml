@@ -17,7 +17,7 @@ get:
     period: hours
   operationId: getReturns
   summary: Список невыкупов и возвратов
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getReturns.md) %}\n\nПолучает список невыкупов и возвратов.\n\nЧтобы получить информацию по одному невыкупу или возврату, выполните запрос [GET\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый невыкуп или возврат.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% note warning \"Ограничение для параметра `limit`\" %}\n\nНе передавайте значение больше 100.\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getReturns.md) %}\n"
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getReturns.md) %}\n\nПолучает список невыкупов и возвратов.\n\nЧтобы получить информацию по одному невыкупу или возврату, выполните запрос [GET\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый невыкуп или возврат.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getReturns.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

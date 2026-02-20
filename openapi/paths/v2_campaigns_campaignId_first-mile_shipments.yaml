@@ -31,15 +31,6 @@ put:
     Результаты возвращаются постранично.
 
 
-    {% note warning "Ограничение для параметра `limit`" %}
-
-
-    Не передавайте значение больше 30.
-
-
-    {% endnote %}
-
-
     {% include notitle
     [:no-translate[limit]](../../_auto/method_limits/searchShipments.md) %}
   parameters:

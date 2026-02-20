@@ -63,15 +63,6 @@ post:
     Возвращает список складов и информацию о них.
 
 
-    {% note warning "Ограничение для параметра `limit`" %}
-
-
-    Не передавайте значение больше 25.
-
-
-    {% endnote %}
-
-
     {% include notitle
     [:no-translate[limit]](../../_auto/method_limits/getPagedWarehouses.md) %}
   parameters:
