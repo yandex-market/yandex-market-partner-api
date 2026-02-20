@@ -9,6 +9,7 @@ post:
     path: resp
     amount: 100000
     period: hours
+    parallel-limit-value: 6
   x-restrictions:
     - market-yandex-go
   operationId: provideOrderDigitalCodes

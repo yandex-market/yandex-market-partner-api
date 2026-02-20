@@ -17,6 +17,7 @@ get:
     path: resp
     amount: 100000
     period: hours
+    parallel-limit-value: 6
   operationId: getOrder
   summary: Информация об одном заказе в магазине
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getOrder.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md)\n\n{% endnote %}\n\nВозвращает информацию о заказе в магазине.\n\n{% note tip \"Вы также можете настроить API-уведомления\" %}\n\nМаркет отправит вам [запрос](../../push-notifications/reference/sendNotification.md), когда появится новый заказ или изменится его статус. А полную информацию можно получить с помощью метода [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\nПолучить более подробную информацию о покупателе и его номере телефона можно с помощью запроса [GET\_v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/orders/getOrderBuyerInfo.md).\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getOrder.md) %}\n"
