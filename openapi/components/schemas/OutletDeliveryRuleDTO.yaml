@@ -85,6 +85,7 @@ properties:
     description: "Идентификатор службы доставки товаров в точку продаж.\n\nИнформацию о службе доставки можно получить с помощью запроса [GET\_delivery/services](../../reference/orders/getDeliveryServices.md).\n"
     type: integer
     format: int64
+    minimum: 1
   orderBefore:
     description: >
       Час, до которого покупателю нужно сделать заказ, чтобы он был доставлен в
