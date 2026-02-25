@@ -56,8 +56,8 @@ get:
     [:no-translate[limit]](../../_auto/method_limits/searchRegionsByName.md) %}
   parameters:
     - $ref: ../components/parameters/RegionName.yaml
-    - $ref: ../components/parameters/PageToken.yaml
-    - $ref: ../components/parameters/PageLimit.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit20.yaml
   responses:
     '200':
       description: Список найденных регионов.

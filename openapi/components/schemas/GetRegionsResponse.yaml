@@ -9,4 +9,4 @@ properties:
       $ref: ./RegionDTO.yaml
   paging:
     description: Идентификатор следующей страницы.
-    $ref: ./ForwardScrollingPagerDTO.yaml
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

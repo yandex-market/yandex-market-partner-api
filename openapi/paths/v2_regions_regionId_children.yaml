@@ -51,6 +51,8 @@ get:
     [:no-translate[limit]](../../_auto/method_limits/searchRegionChildren.md) %}
   parameters:
     - $ref: ../components/parameters/RegionId.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit50.yaml
     - $ref: ../components/parameters/PageNum.yaml
     - $ref: ../components/parameters/PageSize.yaml
   responses:

@@ -2,5 +2,7 @@ type: object
 properties:
   pager:
     $ref: ./FlippingPagerDTO.yaml
+  paging:
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml
   regions:
     $ref: ./RegionWithChildrenDTO.yaml
