@@ -10,7 +10,6 @@ description: >
   последнем запросе.
 in: query
 required: false
-example: eyBuZXh0SWQ6IDIzNDIgfQ
 x-transform: token
 x-aliases:
   - pageToken
