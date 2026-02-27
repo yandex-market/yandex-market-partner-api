@@ -1,0 +1,56 @@
+type: object
+description: Адрес пункта выдачи.
+required:
+  - fullAddress
+  - gps
+  - regionId
+properties:
+  fullAddress:
+    type: string
+    description: Полный адрес.
+    minLength: 1
+    maxLength: 512
+  gps:
+    $ref: ./GpsDTO.yaml
+  regionId:
+    type: integer
+    format: int64
+    description: "Идентификатор региона.\n\nИнформацию о регионе можно получить c помощью метода [GET\_v2/regions](../../reference/regions/searchRegionsById.md).\n"
+  city:
+    type: string
+    description: Город.
+    minLength: 1
+    maxLength: 128
+  street:
+    type: string
+    description: Улица.
+    minLength: 1
+    maxLength: 128
+  house:
+    type: string
+    description: Номер дома.
+    minLength: 1
+    maxLength: 16
+  building:
+    type: string
+    description: Номер строения.
+    minLength: 1
+    maxLength: 16
+  block:
+    type: string
+    description: Номер корпуса.
+    minLength: 1
+    maxLength: 16
+  km:
+    description: |
+      Порядковый номер километра, на котором располагается пункт выдачи.
+
+      Указывается, если в адресе нет улицы.
+    type: integer
+    format: int32
+    minimum: 0
+  additional:
+    type: string
+    description: Дополнительная информация.
+    minLength: 1
+    maxLength: 1024

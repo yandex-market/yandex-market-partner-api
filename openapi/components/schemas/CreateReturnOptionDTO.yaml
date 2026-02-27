@@ -1,0 +1,7 @@
+type: object
+description: Информация о способе возврата.
+required:
+  - pickupReturn
+properties:
+  pickupReturn:
+    $ref: ./OrderPickupReturnDTO.yaml

@@ -3,13 +3,13 @@ description: |
 type: object
 properties:
   stocksWarehouseId:
-    description: "Идентификатор склада.\n\nЕсли параметр указан, возвращаются только товары на переданном складе.\n\n**Для модели FBY:** получить список складов Маркета можно с помощью метода [GET\_v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).\n"
+    description: "Идентификатор склада.\n\nЕсли параметр указан, возвращаются только товары на переданном складе.\n\n**Для моделей FBY и LaaS:** получить список складов Маркета можно с помощью метода [GET\_v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md).\n"
     type: integer
     format: int64
     minimum: 1
   hasStocks:
     description: >
-      **Только для модели FBY**
+      **Только для моделей FBY и LaaS**
 
 
       Фильтр по наличию товаров. Используйте только вместе со
@@ -22,7 +22,7 @@ properties:
     type: boolean
   withTurnover:
     description: >
-      **Только для модели FBY**
+      **Только для моделей FBY и LaaS**
 
 
       Возвращать ли информацию по оборачиваемости.

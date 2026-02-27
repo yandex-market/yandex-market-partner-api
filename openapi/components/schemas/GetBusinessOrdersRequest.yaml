@@ -75,3 +75,11 @@ properties:
       При значении `true` возвращаются только те заказы, которые находятся в
       статусе `DELIVERY` или `PICKUP`, и пользователи решили их отменить.
     type: boolean
+  sourcePlatforms:
+    description: Площадки-источники заказов.
+    nullable: true
+    uniqueItems: true
+    type: array
+    items:
+      $ref: ./OrderSourcePlatformType.yaml
+    minItems: 1

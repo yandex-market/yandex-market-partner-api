@@ -1,0 +1,31 @@
+type: object
+description: Данные получателя заказа или отправителя возврата.
+required:
+  - firstName
+  - lastName
+  - phone
+properties:
+  firstName:
+    type: string
+    description: Имя.
+    minLength: 1
+    maxLength: 512
+  lastName:
+    type: string
+    description: Фамилия.
+    minLength: 1
+    maxLength: 512
+  middleName:
+    type: string
+    description: Отчество.
+    minLength: 1
+    maxLength: 512
+  phone:
+    type: string
+    description: |
+      Номер телефона.
+
+      Формат: `+<код_страны><код_региона><номер_телефона>`.
+    minLength: 5
+    maxLength: 16
+    pattern: ^\+[0-9]+$

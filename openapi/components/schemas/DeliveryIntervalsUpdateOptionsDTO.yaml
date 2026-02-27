@@ -1,0 +1,17 @@
+type: object
+description: |
+  Доступные интервалы для курьерской доставки.
+
+  Возвращается только для типа изменения `UPDATE_DELIVERY_INTERVAL`.
+required:
+  - availableDeliveryIntervals
+properties:
+  availableDeliveryIntervals:
+    description: |
+      Интервалы дат и времени.
+
+      Если доступных интервалов нет, возвращается пустой массив.
+    type: array
+    minItems: 0
+    items:
+      $ref: ./DeliveryIntervalsUpdateOptionDTO.yaml

@@ -1,0 +1,87 @@
+post:
+  tags:
+    - returns
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
+  x-restrictions:
+    - market-yandex-go
+  operationId: cancelReturn
+  summary: Отмена возврата
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/cancelReturn.md) %}
+
+
+    Отменяет возврат.
+
+
+    Это можно сделать только до принятия в пункте выдачи (`"shipmentStatus":
+    "CREATED"`).
+
+
+    {% note info "Возврат отменяется не мгновенно" %}
+
+
+    Отмена возврата применяется в течение нескольких минут и только в случае
+    успешного завершения операции. [Как проверить статус
+    операции](../../reference/operations/getOperations.md)
+
+
+    {% endnote %}
+
+
+    {% note tip "Используйте этот метод в подобных ситуациях" %}
+
+
+    Вы создали возврат, в котором указали 3 товара. Но покупатель передумал и
+    решил вернуть только 2. Отмените возврат и создайте новый.
+
+
+    {% endnote %}
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/cancelReturn.md) %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CancelReturnRequest.yaml
+  responses:
+    '200':
+      description: >
+        Информация об операции по отмене возврата.
+
+
+        {% note warning "Ответ `200` не значит, что возврат отменен" %}
+
+
+        При успешном выполнении запроса это произойдет через некоторое время.
+        [Как проверить статус
+        операции](../../reference/operations/getOperations.md)
+
+
+        {% endnote %}
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/CancelReturnResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -1,0 +1,14 @@
+type: object
+description: |
+  Информация о созданных заказах.
+
+  По одному заказу для каждого склада.
+required:
+  - orders
+properties:
+  orders:
+    type: array
+    description: Созданные заказы.
+    minItems: 1
+    items:
+      $ref: ./CreatedOrderDTO.yaml

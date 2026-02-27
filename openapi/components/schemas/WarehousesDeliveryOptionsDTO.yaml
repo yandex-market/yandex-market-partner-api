@@ -1,0 +1,17 @@
+type: object
+description: Варианты доставки со склада.
+required:
+  - warehouseId
+  - deliveryOptions
+  - items
+properties:
+  warehouseId:
+    $ref: ./WarehouseId.yaml
+  deliveryOptions:
+    $ref: ./WarehouseDeliveryOptionsDTO.yaml
+  items:
+    type: array
+    description: Товары в заказе.
+    minItems: 1
+    items:
+      $ref: ./BasicOrderItemDTO.yaml

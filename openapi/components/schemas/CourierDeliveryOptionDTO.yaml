@@ -1,0 +1,14 @@
+type: object
+description: Временные интервалы и способ оплаты.
+required:
+  - deliveryDateInterval
+  - deliveryTimeInterval
+  - paymentMethods
+  - price
+properties:
+  deliveryDateInterval:
+    $ref: ./DeliveryDateIntervalDTO.yaml
+  deliveryTimeInterval:
+    $ref: ./TimeIntervalDTO.yaml
+  price:
+    $ref: ./DeliveryOptionPriceDTO.yaml

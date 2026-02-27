@@ -1,0 +1,34 @@
+type: object
+description: Ограничения по размеру одного товара.
+required:
+  - weight
+  - height
+  - width
+  - length
+  - dimensionsSum
+properties:
+  weight:
+    type: integer
+    format: int32
+    description: Максимальный вес в граммах.
+    minimum: 1
+  height:
+    type: integer
+    format: int32
+    description: Максимальная высота в сантиметрах.
+    minimum: 1
+  width:
+    type: integer
+    format: int32
+    description: Максимальная ширина в сантиметрах.
+    minimum: 1
+  length:
+    type: integer
+    format: int32
+    description: Максимальная длина в сантиметрах.
+    minimum: 1
+  dimensionsSum:
+    type: integer
+    format: int32
+    description: Максимальная сумма измерений в сантиметрах.
+    minimum: 1

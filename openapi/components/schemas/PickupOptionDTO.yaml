@@ -1,0 +1,10 @@
+type: object
+description: Временной интервал и стоимость доставки.
+required:
+  - deliveryDateInterval
+  - price
+properties:
+  deliveryDateInterval:
+    $ref: ./DeliveryDateIntervalDTO.yaml
+  price:
+    $ref: ./DeliveryOptionPriceDTO.yaml

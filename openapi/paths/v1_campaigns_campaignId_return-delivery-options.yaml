@@ -1,0 +1,65 @@
+post:
+  tags:
+    - delivery-options
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - pricing
+    - pricing:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
+  x-restrictions:
+    - market-yandex-go
+  operationId: getReturnDeliveryOptions
+  summary: Получение подходящих для возврата пунктов выдачи
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getReturnDeliveryOptions.md)
+    %}
+
+
+    Возвращает список идентификаторов пунктов выдачи, которые могут принять
+    возврат указанных товаров.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getReturnDeliveryOptions.md)
+    %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetReturnDeliveryOptionsRequest.yaml
+  responses:
+    '200':
+      description: >-
+        Информация о пунктах выдачи, которые могут принять возврат указанных
+        товаров.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetReturnDeliveryOptionsResponse.yaml
+    '400':
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+        заказами](../../concepts/error-codes#orders)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

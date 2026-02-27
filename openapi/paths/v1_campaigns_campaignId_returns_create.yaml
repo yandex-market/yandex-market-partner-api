@@ -1,0 +1,47 @@
+post:
+  tags:
+    - returns
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
+  x-restrictions:
+    - market-yandex-go
+  operationId: createReturn
+  summary: Создание возврата
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/createReturn.md) %}\n\nСоздает новый возврат.\n\nЭто можно сделать только для заказа в статусе `DELIVERED`.\n\n{% note warning \"Перед вызовом метода\" %}\n\nПроверьте, подходят ли пункты выдачи для возврата указанных товаров, — [POST\_v1/campaigns/{campaignId}/return-delivery-options](../../reference/delivery-options/getReturnDeliveryOptions.md).\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/createReturn.md) %}\n"
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CreateReturnRequest.yaml
+  responses:
+    '200':
+      description: Информация о cозданном возврате.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/CreateReturnResponse.yaml
+    '400':
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+        заказами](../../concepts/error-codes#orders)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

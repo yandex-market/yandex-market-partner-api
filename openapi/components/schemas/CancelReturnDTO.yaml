@@ -1,0 +1,8 @@
+type: object
+description: Информация об операции по отмене возврата.
+required:
+  - operation
+properties:
+  operation:
+    description: Запущенная операция отмены возврата.
+    $ref: ./OperationDTO.yaml

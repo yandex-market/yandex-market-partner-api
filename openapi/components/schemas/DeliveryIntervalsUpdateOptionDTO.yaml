@@ -1,0 +1,10 @@
+type: object
+description: Интервалы дат и времени.
+required:
+  - deliveryDateInterval
+  - deliveryTimeInterval
+properties:
+  deliveryDateInterval:
+    $ref: ./DeliveryDateIntervalDTO.yaml
+  deliveryTimeInterval:
+    $ref: ./TimeIntervalDTO.yaml

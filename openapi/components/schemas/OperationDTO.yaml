@@ -1,0 +1,10 @@
+type: object
+description: Информация об операции.
+required:
+  - id
+  - type
+properties:
+  id:
+    $ref: ./OperationId.yaml
+  type:
+    $ref: ./OperationType.yaml

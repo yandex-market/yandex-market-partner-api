@@ -1,0 +1,13 @@
+type: object
+description: Результат выполнения.
+required:
+  - id
+  - type
+  - status
+properties:
+  id:
+    $ref: ./OperationId.yaml
+  type:
+    $ref: ./OperationType.yaml
+  status:
+    $ref: ./OperationStatusType.yaml

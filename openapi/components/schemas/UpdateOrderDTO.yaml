@@ -1,0 +1,18 @@
+type: object
+description: Информация, которую нужно изменить.
+required:
+  - id
+properties:
+  id:
+    description: Идентификатор заказа, в котором нужны изменения.
+    type: integer
+    format: int64
+  deliveryInterval:
+    description: |
+      Интервалы дат и времени, на которые можно изменить.
+
+      Только для курьерской доставки.
+    $ref: ./DeliveryIntervalsUpdateOptionDTO.yaml
+  customer:
+    description: Данные получателя заказа.
+    $ref: ./CustomerDTO.yaml

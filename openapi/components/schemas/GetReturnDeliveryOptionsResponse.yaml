@@ -1,0 +1,7 @@
+description: Информация о доступных пунктах выдачи.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GetReturnDeliveryOptionsDTO.yaml

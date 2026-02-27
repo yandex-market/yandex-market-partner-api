@@ -1,0 +1,13 @@
+description: |
+  Причины возврата:
+
+  * `BAD_QUALITY` — бракованный товар (есть недостатки).
+
+  * `DOES_NOT_FIT` — товар не подошел.
+
+  * `WRONG_ITEM` — привезли не тот товар.
+type: string
+enum:
+  - BAD_QUALITY
+  - DOES_NOT_FIT
+  - WRONG_ITEM

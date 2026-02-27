@@ -1,0 +1,7 @@
+description: |
+  Тип оплаты заказа:
+
+  * `PREPAID` — оплата при оформлении заказа.
+type: string
+enum:
+  - PREPAID

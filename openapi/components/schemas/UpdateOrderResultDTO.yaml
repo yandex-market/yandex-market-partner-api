@@ -1,0 +1,12 @@
+type: object
+description: Информация об операции по изменению заказа.
+required:
+  - operations
+properties:
+  operations:
+    description: |
+      Информация о запущенных операциях по изменению заказа.
+    type: array
+    minItems: 1
+    items:
+      $ref: ./OperationDTO.yaml

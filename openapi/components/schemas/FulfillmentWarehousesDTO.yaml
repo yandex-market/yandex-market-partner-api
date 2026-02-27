@@ -1,10 +1,10 @@
-description: Список складов Маркета (FBY).
+description: Список фулфилмент-складов Маркета.
 type: object
 required:
   - warehouses
 properties:
   warehouses:
-    description: Список складов Маркета (FBY).
+    description: Список фулфилмент-складов Маркета.
     type: array
     items:
       $ref: ./FulfillmentWarehouseDTO.yaml

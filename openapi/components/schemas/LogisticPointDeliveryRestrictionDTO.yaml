@@ -1,0 +1,7 @@
+type: object
+description: Ограничения на доставку в пункт выдачи.
+required:
+  - dimensionsRestrictions
+properties:
+  dimensionsRestrictions:
+    $ref: ./LogisticPointDimensionRestrictionsDTO.yaml

@@ -11,3 +11,20 @@ properties:
     $ref: ./CisStatusType.yaml
   substatus:
     $ref: ./CisSubstatusType.yaml
+  crptRequestId:
+    description: >
+      **Только для модели LaaS**
+
+
+      Идентификатор запроса проверки кода маркировки в [ЦРПТ](https://crpt.ru/),
+      на основании которой принято решение о продаже товара.
+    type: string
+  crptRequestDateTime:
+    description: >
+      **Только для модели LaaS**
+
+
+      Время проверки кода маркировки в [ЦРПТ](https://crpt.ru/), на основании
+      которой принято решение о продаже товара.
+    type: string
+    format: date-time

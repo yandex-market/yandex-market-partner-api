@@ -1,0 +1,11 @@
+type: object
+description: Список доступных вариантов для разных складов.
+required:
+  - warehousesDeliveryOptions
+properties:
+  warehousesDeliveryOptions:
+    type: array
+    description: Варианты доставки для разных складов.
+    minItems: 1
+    items:
+      $ref: ./WarehousesDeliveryOptionsDTO.yaml

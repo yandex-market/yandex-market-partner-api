@@ -43,6 +43,34 @@ post:
     отмены заказа `"substatus": "SHOP_FAILED"`.
 
 
+    {% cut "**Как подтвердить LaaS-заказ**" %}
+
+
+    Для подтверждения черновика заказа передайте статус `"status": "PROCESSING"`
+    с подстатусом `"substatus": "STARTED"`.
+
+
+    Подтверждение заказа, созданного с параметром `draft` равным `false`, не
+    требуется.
+
+
+    {% endcut %}
+
+
+    {% cut "**Как отменить LaaS-заказ**" %}
+
+
+    Передайте статус `"status": "CANCELLED"` с причиной отмены заказа
+    `"substatus": "SHOP_FAILED"`.
+
+
+    При успешном выполнении запроса отмена произойдет через некоторое время.
+    [Как проверить статус операции](../../reference/operations/getOperations.md)
+
+
+    {% endcut %}
+
+
     {% include notitle
     [:no-translate[limit]](../../_auto/method_limits/updateOrderStatuses.md) %}
   parameters:

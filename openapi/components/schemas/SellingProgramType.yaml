@@ -5,6 +5,7 @@ description: |
   * `FBS` — FBS.
   * `DBS` — DBS.
   * `EXPRESS` — Экспресс.
+  * `LAAS` — LaaS.
 type: string
 enum:
   - FBY

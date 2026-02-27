@@ -1,0 +1,12 @@
+type: object
+description: >
+  Информация о пункте выдачи, в который нужно вернуть товары.
+
+
+  [Как получить список подходящих пунктов
+  выдачи](../../reference/delivery-options/getReturnDeliveryOptions.md)
+required:
+  - logisticPointId
+properties:
+  logisticPointId:
+    $ref: ./LogisticPointId.yaml

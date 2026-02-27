@@ -1,0 +1,9 @@
+type: object
+description: Информация о созданном заказе.
+required:
+  - id
+properties:
+  id:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64

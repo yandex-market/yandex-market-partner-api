@@ -68,6 +68,12 @@ paths:
     $ref: paths/v2_campaigns_campaignId_orders_orderId_external-id.yaml
   /v2/campaigns/{campaignId}/orders/{orderId}/identifiers/status:
     $ref: paths/v2_campaigns_campaignId_orders_orderId_identifiers_status.yaml
+  /v1/campaigns/{campaignId}/orders/create:
+    $ref: paths/v1_campaigns_campaignId_orders_create.yaml
+  /v1/campaigns/{campaignId}/orders/update:
+    $ref: paths/v1_campaigns_campaignId_orders_update.yaml
+  /v1/campaigns/{campaignId}/orders/update-options:
+    $ref: paths/v1_campaigns_campaignId_orders_update-options.yaml
   /v2/campaigns/{campaignId}/orders/{orderId}/delivery/date:
     $ref: paths/v2_campaigns_campaignId_orders_orderId_delivery_date.yaml
   /v2/campaigns/{campaignId}/orders/{orderId}/delivery/track:
@@ -106,6 +112,10 @@ paths:
   /v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/{itemId}/image/{imageHash}:
     $ref: >-
       paths/v2_campaigns_campaignId_orders_orderId_returns_returnId_decision_itemId_image_imageHash.yaml
+  /v1/campaigns/{campaignId}/returns/create:
+    $ref: paths/v1_campaigns_campaignId_returns_create.yaml
+  /v1/campaigns/{campaignId}/returns/cancel:
+    $ref: paths/v1_campaigns_campaignId_returns_cancel.yaml
   /v2/regions:
     $ref: paths/v2_regions.yaml
   /v2/regions/{regionId}:
@@ -190,6 +200,10 @@ paths:
     $ref: paths/v2_campaigns_campaignId_offers_stocks.yaml
   /v2/delivery/services:
     $ref: paths/v2_delivery_services.yaml
+  /v1/campaigns/{campaignId}/delivery-options:
+    $ref: paths/v1_campaigns_campaignId_delivery-options.yaml
+  /v1/campaigns/{campaignId}/return-delivery-options:
+    $ref: paths/v1_campaigns_campaignId_return-delivery-options.yaml
   /v2/campaigns/{campaignId}/stats/orders:
     $ref: paths/v2_campaigns_campaignId_stats_orders.yaml
   /v2/campaigns/{campaignId}/stats/skus:
@@ -248,6 +262,8 @@ paths:
     $ref: paths/v2_campaigns_campaignId_outlets.yaml
   /v2/campaigns/{campaignId}/outlets/{outletId}:
     $ref: paths/v2_campaigns_campaignId_outlets_outletId.yaml
+  /v1/businesses/{businessId}/logistics-points:
+    $ref: paths/v1_businesses_businessId_logistics-points.yaml
   /v2/campaigns/{campaignId}/outlets/licenses:
     $ref: paths/v2_campaigns_campaignId_outlets_licenses.yaml
   /v2/businesses/{businessId}/goods-feedback:
@@ -332,6 +348,8 @@ paths:
     $ref: paths/v2_campaigns_campaignId_supply-requests_documents.yaml
   /v2/auth/token:
     $ref: paths/v2_auth_token.yaml
+  /v1/businesses/{businessId}/operations:
+    $ref: paths/v1_businesses_businessId_operations.yaml
 components:
   securitySchemes:
     ApiKey:

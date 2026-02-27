@@ -1,0 +1,42 @@
+type: object
+description: "Информация о заказе.\n\nПередайте выбранный вариант доставки из ответа метода [POST\_v1/campaigns/{campaignId}/delivery-options](../../reference/delivery-options/getDeliveryOptions.md).\n"
+required:
+  - externalOrderId
+  - itemsDelivery
+  - destination
+  - customer
+  - packaging
+  - paymentType
+properties:
+  externalOrderId:
+    description: Внешний идентификатор заказа в системе магазина.
+    type: string
+    minLength: 1
+  itemsDelivery:
+    description: Список товаров в заказе.
+    type: array
+    items:
+      $ref: ./CreateOrderWarehouseItemsDTO.yaml
+    minItems: 1
+    maxItems: 1000
+  destination:
+    $ref: ./CreateOrderDeliveryOptionDTO.yaml
+  customer:
+    $ref: ./CustomerDTO.yaml
+  packaging:
+    $ref: ./CreateOrderPackagingDTO.yaml
+  paymentType:
+    $ref: ./DeliveryPaymentType.yaml
+  draft:
+    type: boolean
+    description: >
+      Признак создания черновика заказа.
+
+
+      * `true` — Маркет создаст заказ в статусе `RESERVED` и будет ждать
+      подтверждения от магазина.
+
+      * `false` — Маркет создаст заказ в статусе `PROCESSING` с подстатусом
+      `STARTED` и начнёт его обработку, дополнительных подтверждений не
+      требуется.
+    default: false

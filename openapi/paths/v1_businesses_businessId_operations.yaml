@@ -1,0 +1,66 @@
+post:
+  tags:
+    - operations
+    - fbs
+    - fby
+    - dbs
+    - express
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - settings-management
+    - finance-and-accounting
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
+    - pricing
+    - pricing:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+    - promotion
+    - promotion:read-only
+    - communication
+    - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: hours
+  x-restrictions:
+    - market-yandex-go
+  operationId: getOperations
+  summary: Получение статусов операций
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getOperations.md) %}
+
+
+    Возвращает статусы запущенных операций по их идентификаторам.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getOperations.md) %}
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetOperationsRequest.yaml
+  responses:
+    '200':
+      description: Информация об операциях.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOperationsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

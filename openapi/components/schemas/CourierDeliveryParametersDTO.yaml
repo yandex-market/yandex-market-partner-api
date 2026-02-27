@@ -1,0 +1,13 @@
+type: object
+description: |
+  Информация о курьерской доставке.
+
+  Не передавайте вместе с `pickupDelivery`.
+required:
+  - fullAddress
+properties:
+  fullAddress:
+    type: string
+    description: Полный адрес с точностью до номера дома.
+    minLength: 1
+    maxLength: 512

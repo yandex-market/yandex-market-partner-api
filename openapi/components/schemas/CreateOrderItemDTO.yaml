@@ -1,0 +1,9 @@
+description: Товар в заказе.
+type: object
+required:
+  - price
+allOf:
+  - $ref: ./BasicOrderItemDTO.yaml
+  - properties:
+      price:
+        $ref: ./BasePriceDTO.yaml

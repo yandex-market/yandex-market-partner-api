@@ -1,0 +1,15 @@
+type: object
+description: |
+  Информация о курьерской доставке.
+
+  Не передавайте вместе с `pickupDelivery`.
+required:
+  - address
+properties:
+  address:
+    $ref: ./CourierDeliveryAddressDTO.yaml
+  notes:
+    type: string
+    description: Комментарий к заказу.
+    minLength: 1
+    maxLength: 3000

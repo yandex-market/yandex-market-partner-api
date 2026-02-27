@@ -1,0 +1,66 @@
+post:
+  tags:
+    - delivery-options
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - pricing
+    - pricing:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 1000
+    period: minutes
+    parallel-limit-value: 10
+  x-restrictions:
+    - market-yandex-go
+  operationId: getDeliveryOptions
+  summary: Получение доступных вариантов доставки заказов
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getDeliveryOptions.md) %}
+
+
+    Возвращает список вариантов для доставки заказов. Выберите подходящий
+    вариант доставки из ответа и передайте его при создании заказа.
+
+
+    Укажите `courierDelivery` для курьерской доставки или `pickupDelivery` для
+    доставки в пункт выдачи. Не передавайте оба параметра одновременно.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getDeliveryOptions.md) %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetDeliveryOptionsRequest.yaml
+  responses:
+    '200':
+      description: Список доступных вариантов доставки с разных складов.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetDeliveryOptionsResponse.yaml
+    '400':
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+        заказами](../../concepts/error-codes#orders)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

@@ -1,0 +1,28 @@
+type: object
+description: Информация о возврате.
+required:
+  - externalReturnId
+  - orderId
+  - items
+  - customer
+  - returnOption
+properties:
+  externalReturnId:
+    description: Внешний идентификатор возврата в системе магазина.
+    type: string
+    minLength: 1
+  orderId:
+    description: Идентификатор заказа, по которому нужно сделать возврат.
+    type: integer
+    format: int64
+  items:
+    description: Список товаров в возврате.
+    type: array
+    items:
+      $ref: ./CreateReturnItemDTO.yaml
+    minItems: 1
+    maxItems: 1000
+  customer:
+    $ref: ./CustomerDTO.yaml
+  returnOption:
+    $ref: ./CreateReturnOptionDTO.yaml

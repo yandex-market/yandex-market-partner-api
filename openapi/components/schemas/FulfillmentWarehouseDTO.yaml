@@ -1,4 +1,4 @@
-description: Склад Маркета (FBY).
+description: Фулфилмент-склад Маркета.
 type: object
 required:
   - id

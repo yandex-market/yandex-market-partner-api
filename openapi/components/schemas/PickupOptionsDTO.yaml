@@ -1,0 +1,15 @@
+type: object
+description: Временной интервал, идентификатор пункта выдачи и способ оплаты.
+required:
+  - logisticPointId
+  - options
+  - paymentMethods
+properties:
+  logisticPointId:
+    $ref: ./LogisticPointId.yaml
+  options:
+    type: array
+    description: Варианты доставки в ПВЗ.
+    minItems: 1
+    items:
+      $ref: ./PickupOptionDTO.yaml

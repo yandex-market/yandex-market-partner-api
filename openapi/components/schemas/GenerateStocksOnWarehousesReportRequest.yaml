@@ -21,10 +21,10 @@ properties:
 
 
       Идентификатор кабинета, по магазинам которого нужно сформировать отчет
-      (кроме FBY-магазинов).
+      (кроме моделей FBY и LaaS).
     $ref: ./BusinessId.yaml
   warehouseIds:
-    description: "Фильтр по идентификаторам складов (только модель FBY). Чтобы узнать идентификатор, воспользуйтесь запросом [GET\_v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md)."
+    description: "Фильтр по идентификаторам складов (только модели FBY и LaaS). Чтобы узнать идентификатор, воспользуйтесь запросом [GET\_v2/warehouses](../../reference/warehouses/getFulfillmentWarehouses.md)."
     type: array
     nullable: true
     minItems: 1
@@ -34,7 +34,7 @@ properties:
       format: int64
   reportDate:
     description: >
-      Фильтр по дате (для модели FBY). В отчет попадут данные за
+      Фильтр по дате (для моделей FBY и LaaS). В отчет попадут данные за
       **предшествующий** дате день.
 
 
@@ -42,7 +42,7 @@ properties:
     type: string
     format: date
   categoryIds:
-    description: Фильтр по категориям на Маркете (кроме модели FBY).
+    description: Фильтр по категориям на Маркете (кроме моделей FBY и LaaS).
     type: array
     nullable: true
     minItems: 1
@@ -53,11 +53,11 @@ properties:
       minimum: 0
       exclusiveMinimum: true
   hasStocks:
-    description: Фильтр по наличию остатков (кроме модели FBY).
+    description: Фильтр по наличию остатков (кроме моделей FBY и LaaS).
     type: boolean
   campaignIds:
     description: |
-      Фильтр по магазинам для отчета по кабинету (кроме модели FBY).
+      Фильтр по магазинам для отчета по кабинету (кроме моделей FBY и LaaS).
 
       Передавайте вместе с `businessId`.
     type: array

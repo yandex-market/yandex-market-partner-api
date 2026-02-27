@@ -1,0 +1,32 @@
+type: object
+description: Список товаров в заказе.
+required:
+  - warehouseId
+  - items
+  - deliveryDateInterval
+properties:
+  warehouseId:
+    description: "Идентификатор фулфилмент-склада Маркета.\n\nПолучите его с помощью метода [POST\_v2/campaigns/{campaignId}/delivery-options](../../reference/delivery-options/getDeliveryOptions.md).\n"
+    type: integer
+    format: int64
+    minimum: 1
+  items:
+    type: array
+    description: >
+      Список товаров в заказе.
+
+
+      В рамках одного запроса все значения `offerId` должны быть уникальными. Не
+      допускается передача двух объектов с одинаковым `offerId`.
+    minItems: 1
+    maxItems: 1000
+    items:
+      $ref: ./CreateOrderItemDTO.yaml
+  deliveryDateInterval:
+    $ref: ./DeliveryDateIntervalDTO.yaml
+  deliveryTimeInterval:
+    description: |
+      Интервал времени доставки.
+
+      Обязателен для курьерской доставки.
+    $ref: ./TimeIntervalDTO.yaml

@@ -1,0 +1,4 @@
+description: "Свойство пункта выдачи:\n\n* `RETURN_ALLOWED` — пункт выдачи принимает возвраты.\n\n{% note warning \"Проверка ограничений\" %}\n\nПризнак не учитывает ограничения ПВЗ на прием различных товаров в возврате.\nДля проверки по конкретному набору товаров используйте метод [POST\_v1/campaigns/{campaignId}/return-delivery-options](../../reference/delivery-options/getReturnDeliveryOptions.md).\n\n{% endnote %}\n"
+type: string
+enum:
+  - RETURN_ALLOWED

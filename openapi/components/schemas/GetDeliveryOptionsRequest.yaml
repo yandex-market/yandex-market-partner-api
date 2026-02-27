@@ -1,0 +1,26 @@
+type: object
+description: >
+  Запрос для получения вариантов доставки.
+
+
+  Используйте `pickupDelivery` для получения вариантов доставки самовывозом и
+  `courierDelivery` для получения вариантов доставки курьером.
+required:
+  - items
+properties:
+  items:
+    type: array
+    description: >
+      Товары на складах, для которых нужно вернуть варианты доставки.
+
+
+      В рамках одного запроса все значения `offerId` должны быть уникальными. Не
+      допускается передача двух объектов с одинаковым `offerId`.
+    minItems: 1
+    maxItems: 1000
+    items:
+      $ref: ./GetDeliveryOptionsItemDTO.yaml
+  pickupDelivery:
+    $ref: ./PickupDeliveryParametersDTO.yaml
+  courierDelivery:
+    $ref: ./CourierDeliveryParametersDTO.yaml

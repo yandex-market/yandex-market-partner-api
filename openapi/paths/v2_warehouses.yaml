@@ -23,7 +23,7 @@ get:
     amount: 100
     period: minutes
   operationId: getFulfillmentWarehouses
-  summary: Идентификаторы складов Маркета
+  summary: Идентификаторы фулфилмент-складов Маркета
   description: >
     {% include notitle
     [:no-translate[access]](../../_auto/method_scopes/getFulfillmentWarehouses.md)

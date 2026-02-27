@@ -1,0 +1,4 @@
+description: Идентификатор фулфилмент-склада Маркета.
+type: integer
+format: int64
+minimum: 1

@@ -85,3 +85,5 @@ properties:
 
       Запрошена ли отмена.
     type: boolean
+  sourcePlatform:
+    $ref: ./OrderSourcePlatformType.yaml

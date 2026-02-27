@@ -1,0 +1,9 @@
+type: object
+description: Информация о созданном возврате.
+required:
+  - id
+properties:
+  id:
+    description: Идентификатор возврата.
+    type: integer
+    format: int64

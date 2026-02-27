@@ -1,0 +1,19 @@
+description: Товар, для которого нужно вернуть варианты доставки.
+type: object
+allOf:
+  - $ref: ./BasicOrderItemDTO.yaml
+  - properties:
+      warehouseId:
+        description: >
+          Идентификатор фулфилмент-склада Маркета.
+
+
+          Передайте этот параметр, чтобы вернулись варианты доставки для
+          указанного склада. Иначе Маркет сам выберет склад.
+
+
+          [Как узнать остатки товаров на
+          складах](../../reference/stocks/getStocks.md)
+        type: integer
+        format: int64
+        minimum: 1

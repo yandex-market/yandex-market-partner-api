@@ -3,3 +3,9 @@ type: object
 properties:
   order:
     $ref: ./OrderDTO.yaml
+  operation:
+    description: |
+      **Только для модели LaaS**
+
+      Информация о запущенной операции по обновлению статуса.
+    $ref: ./OperationDTO.yaml

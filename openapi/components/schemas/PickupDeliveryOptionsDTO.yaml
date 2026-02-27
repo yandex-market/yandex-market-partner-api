@@ -1,0 +1,10 @@
+type: object
+description: Информация о доставке в пункт выдачи.
+required:
+  - pickupOptions
+properties:
+  pickupOptions:
+    type: array
+    description: Информация о доставке в пункт выдачи.
+    items:
+      $ref: ./PickupOptionsDTO.yaml

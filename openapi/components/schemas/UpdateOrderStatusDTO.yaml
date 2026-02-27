@@ -20,3 +20,9 @@ properties:
 
       Возвращается, если параметр `updateStatus` принимает значение `ERROR`.
     type: string
+  operation:
+    description: |
+      **Только для модели LaaS**
+
+      Информация о запущенной операции по обновлению статуса.
+    $ref: ./OperationDTO.yaml

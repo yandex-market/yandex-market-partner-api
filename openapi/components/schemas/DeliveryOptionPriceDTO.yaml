@@ -1,0 +1,4 @@
+type: object
+description: Стоимость, которую магазин должен заплатить за доставку с выбранным вариантом.
+allOf:
+  - $ref: ./CurrencyValueDTO.yaml

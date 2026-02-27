@@ -1,0 +1,7 @@
+type: object
+description: Информация о пунктах выдачи.
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GetLogisticsPointsDTO.yaml

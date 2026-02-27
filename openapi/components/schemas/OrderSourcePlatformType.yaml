@@ -1,0 +1,12 @@
+description: |
+  Площадка-источник заказа:
+
+  * `MARKET` — заказ, оформленный на Маркете.
+
+  * `OTHER` — LaaS-заказ, созданный продавцом.
+type: string
+enum:
+  - MARKET
+  - OZON
+  - WILDBERRIES
+  - OTHER

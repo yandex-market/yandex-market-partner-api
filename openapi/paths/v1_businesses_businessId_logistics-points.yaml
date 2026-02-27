@@ -1,0 +1,62 @@
+post:
+  tags:
+    - logistic-points
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - settings-management
+    - finance-and-accounting
+    - offers-and-cards-management
+    - offers-and-cards-management:read-only
+    - pricing
+    - pricing:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+    - promotion
+    - promotion:read-only
+    - communication
+    - supplies-management:read-only
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
+  x-restrictions:
+    - market-yandex-go
+  operationId: getLogisticPoints
+  summary: Получение точек ПВЗ Маркета
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getLogisticPoints.md) %}
+
+
+    Возвращает список пунктов выдачи заказов Маркета.
+
+
+    Регулярно запрашивайте эту информацию, чтобы в системе магазина хранить
+    актуальные данные. Например, раз в день.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getLogisticPoints.md) %}
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit500.yaml
+  responses:
+    '200':
+      description: Информация о пунктах выдачи заказов Маркета.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetLogisticPointsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

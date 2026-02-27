@@ -1,0 +1,20 @@
+type: object
+description: Интервал дат доставки.
+required:
+  - fromDate
+  - toDate
+properties:
+  fromDate:
+    type: string
+    format: date
+    description: |
+      Начало интервала.
+
+      Формат даты: `ГГГГ-ММ-ДД`.
+  toDate:
+    type: string
+    format: date
+    description: |
+      Конец интервала.
+
+      Формат даты: `ГГГГ-ММ-ДД`.

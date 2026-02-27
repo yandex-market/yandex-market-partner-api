@@ -76,7 +76,7 @@ properties:
     type: number
   partnerWarehouseId:
     description: |
-      **Только для модели FBY**
+      **Только для моделей FBY и LaaS**
 
       Идентификатор склада, на который сформирован заказ.
     type: string

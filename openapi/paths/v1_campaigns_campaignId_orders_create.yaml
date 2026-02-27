@@ -1,0 +1,47 @@
+post:
+  tags:
+    - orders
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
+  x-restrictions:
+    - market-yandex-go
+  operationId: createOrder
+  summary: Создание заказа
+  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/createOrder.md) %}\n\nСоздает новый заказ, если на складе Маркета есть нужное количество товаров.\n\nУкажите `courierDelivery` для курьерской доставки или `pickupDelivery` для доставки в пункт выдачи. Не передавайте оба параметра одновременно.\n\nЗначение параметра `draft`:\n\n* `true` — Маркет создаст заказ в статусе `RESERVED` и будет ждать подтверждения от магазина. Когда будете готовы, передайте статус `PROCESSING` с подстатусом `STARTED` в методе [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md). Если не сделать это в течение часа после создания заказа, Маркет отменит его.\n* `false` — Маркет создаст заказ в статусе `PROCESSING` с подстатусом `STARTED`, подтверждение не требуется.\n\n{% note warning \"Перед вызовом метода\" %}\n\nПолучите доступные варианты доставки — [POST\_v2/campaigns/{campaignId}/delivery-options](../../reference/delivery-options/getDeliveryOptions.md).\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/createOrder.md) %}\n"
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CreateOrderRequest.yaml
+  responses:
+    '200':
+      description: Информация о созданных заказах.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/CreateOrderResponse.yaml
+    '400':
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+        заказами](../../concepts/error-codes#orders)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

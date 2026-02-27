@@ -1,0 +1,53 @@
+post:
+  tags:
+    - orders
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
+  x-restrictions:
+    - market-yandex-go
+  operationId: getOrderUpdateOptions
+  summary: Получение временных интервалов для изменения заказа
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getOrderUpdateOptions.md)
+    %}
+
+
+    Возвращает список доступных интервалов для изменения даты и времени
+    курьерской доставки.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getOrderUpdateOptions.md)
+    %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetOrderUpdateOptionsRequest.yaml
+  responses:
+    '200':
+      description: Список доступных интервалов.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetOrderUpdateOptionsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

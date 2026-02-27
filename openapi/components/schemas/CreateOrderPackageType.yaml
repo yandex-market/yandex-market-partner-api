@@ -1,0 +1,12 @@
+description: |
+  Требования к упаковке:
+
+  * `WHITELABEL` — коробка.
+
+  * `BRAND` — [брендированная упаковка](*brand-package) магазина.
+
+  Если не передать `packageType`, заказ приедет в коробке или без упаковки.
+type: string
+enum:
+  - WHITELABEL
+  - BRAND

@@ -1,0 +1,11 @@
+type: object
+description: Информация о пунктах выдачи.
+required:
+  - logisticPointIds
+properties:
+  logisticPointIds:
+    type: array
+    description: Идентификаторы пунктов выдачи.
+    uniqueItems: true
+    items:
+      $ref: ./LogisticPointId.yaml

@@ -1,0 +1,7 @@
+type: object
+description: Список доступных интервалов.
+required:
+  - deliveryIntervals
+properties:
+  deliveryIntervals:
+    $ref: ./DeliveryIntervalsUpdateOptionsDTO.yaml

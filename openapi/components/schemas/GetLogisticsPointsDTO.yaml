@@ -1,0 +1,13 @@
+type: object
+description: Информация о пунктах выдачи заказов.
+required:
+  - logisticPoints
+properties:
+  logisticPoints:
+    type: array
+    description: Пункты выдачи заказов.
+    items:
+      $ref: ./LogisticPointDTO.yaml
+  paging:
+    description: Идентификатор следующей страницы.
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

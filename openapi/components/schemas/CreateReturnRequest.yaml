@@ -1,0 +1,6 @@
+type: object
+required:
+  - newReturn
+properties:
+  newReturn:
+    $ref: ./CreateReturnDTO.yaml

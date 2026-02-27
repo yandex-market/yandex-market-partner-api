@@ -1,0 +1,15 @@
+type: object
+description: Запрос для получения вариантов доставки возвратов.
+required:
+  - items
+  - pickupDelivery
+properties:
+  items:
+    type: array
+    description: Товары в возврате.
+    minItems: 1
+    maxItems: 1000
+    items:
+      $ref: ./BasicOrderItemDTO.yaml
+  pickupDelivery:
+    $ref: ./PickupDeliveryParametersDTO.yaml

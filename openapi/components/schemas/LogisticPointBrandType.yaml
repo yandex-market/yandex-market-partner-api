@@ -1,0 +1,7 @@
+description: |
+  Тип пункта выдачи:
+
+  * `MARKET` — пункт выдачи Маркета.
+type: string
+enum:
+  - MARKET

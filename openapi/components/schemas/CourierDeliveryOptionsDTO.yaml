@@ -1,0 +1,11 @@
+type: object
+description: Информация о курьерской доставке.
+required:
+  - courierDeliveryOptions
+properties:
+  courierDeliveryOptions:
+    type: array
+    description: Информация о курьерской доставке.
+    minItems: 1
+    items:
+      $ref: ./CourierDeliveryOptionDTO.yaml

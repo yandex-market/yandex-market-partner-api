@@ -1,0 +1,93 @@
+post:
+  tags:
+    - orders
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - inventory-and-order-processing
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
+  x-restrictions:
+    - market-yandex-go
+  operationId: updateOrder
+  summary: Изменение заказа
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/updateOrder.md) %}
+
+
+    Изменяет в заказе:
+
+
+    * данные получателя;
+
+    * интервал дат курьерской доставки.
+
+
+    Передавайте только ту информацию, которую хотите изменить. При необходимости
+    вы можете отредактировать и данные получателя, и интервал доставки
+    одновременно.
+
+
+    Заказ можно изменить в любом статусе до вручения покупателю или отмены
+    (`DELIVERED` или `CANCELLED`).
+
+
+    {% note info "Данные заказа обновляются не мгновенно" %}
+
+
+    Изменения применяются в течение нескольких минут и только в случае успешного
+    завершения операции. [Как проверить статус
+    операции](../../reference/operations/getOperations.md)
+
+
+    {% endnote %}
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/updateOrder.md) %}
+  parameters:
+    - $ref: ../components/parameters/CampaignId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateOrderRequest.yaml
+  responses:
+    '200':
+      description: >
+        Информация об операции по изменению заказа.
+
+
+        {% note warning "Ответ `200` не значит, что данные изменены" %}
+
+
+        При успешном выполнении запроса это произойдет через некоторое время.
+        [Как проверить статус
+        операции](../../reference/operations/getOperations.md)
+
+
+        {% endnote %}
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdateOrderResponse.yaml
+    '400':
+      description: >
+        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+        заказами](../../concepts/error-codes#orders)
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

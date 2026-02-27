@@ -1,0 +1,14 @@
+description: Товар в заказе или возврате.
+type: object
+required:
+  - offerId
+  - count
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  count:
+    description: Количество единиц товара.
+    type: integer
+    format: int32
+    minimum: 1
+    maximum: 1000

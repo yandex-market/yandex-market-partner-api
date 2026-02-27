@@ -1,0 +1,16 @@
+description: |
+  Тип операции:
+
+  * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя.
+
+  * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
+
+  * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
+
+  * `RETURN_CANCELLATION` — отмена возврата.
+type: string
+enum:
+  - ORDER_RECIPIENT_UPDATE
+  - ORDER_DELIVERY_INTERVAL_UPDATE
+  - ORDER_STATUS_UPDATE
+  - RETURN_CANCELLATION

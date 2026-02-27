@@ -1,0 +1,36 @@
+type: object
+description: Информация о пункте выдачи.
+required:
+  - logisticPointId
+  - brand
+  - address
+  - workingSchedule
+  - deliveryRestrictions
+  - paymentTypes
+  - storagePeriod
+properties:
+  logisticPointId:
+    $ref: ./LogisticPointId.yaml
+  brand:
+    $ref: ./LogisticPointBrandType.yaml
+  address:
+    $ref: ./LogisticPointAddressDTO.yaml
+  workingSchedule:
+    $ref: ./LogisticPointScheduleDTO.yaml
+  deliveryRestrictions:
+    $ref: ./LogisticPointDeliveryRestrictionDTO.yaml
+  features:
+    type: array
+    description: Свойства пункта выдачи.
+    minItems: 1
+    nullable: true
+    uniqueItems: true
+    items:
+      $ref: ./LogisticPointFeatureType.yaml
+  storagePeriod:
+    type: integer
+    format: int64
+    description: |
+      Срок хранения заказа в пункте выдачи.
+
+      Указывается в днях.

@@ -1,0 +1,16 @@
+type: object
+description: |
+  Информация о доставке в пункт выдачи.
+
+  Не передавайте вместе с `courierDelivery`.
+required:
+  - logisticPointsIds
+properties:
+  logisticPointsIds:
+    description: Идентификаторы пунктов выдачи.
+    type: array
+    minItems: 1
+    maxItems: 20
+    uniqueItems: true
+    items:
+      $ref: ./LogisticPointId.yaml

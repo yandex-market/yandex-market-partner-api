@@ -1,0 +1,9 @@
+type: object
+description: Запрос вариантов изменения интервала курьерской доставки.
+required:
+  - id
+properties:
+  id:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64

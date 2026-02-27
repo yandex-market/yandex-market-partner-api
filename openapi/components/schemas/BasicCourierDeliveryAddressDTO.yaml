@@ -1,0 +1,10 @@
+type: object
+description: Адрес доставки.
+required:
+  - fullAddress
+properties:
+  fullAddress:
+    type: string
+    description: Полный адрес с точностью до номера дома.
+    minLength: 1
+    maxLength: 512

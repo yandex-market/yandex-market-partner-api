@@ -1,0 +1,13 @@
+description: |
+  Статус выполнения операции:
+
+  * `IN_PROGRESS` — выполняется.
+
+  * `DONE` — успешно завершена.
+
+  * `FAILED` — завершена с ошибкой.
+type: string
+enum:
+  - IN_PROGRESS
+  - DONE
+  - FAILED

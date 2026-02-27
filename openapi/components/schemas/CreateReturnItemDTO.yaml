@@ -1,0 +1,36 @@
+description: Товар в возврате.
+type: object
+required:
+  - offerId
+  - count
+  - reasonType
+  - subreasonType
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  count:
+    description: Количество единиц товара.
+    type: integer
+    format: int32
+    minimum: 1
+    maximum: 1000
+  reasonType:
+    $ref: ./ExternalReturnDecisionReasonType.yaml
+  subreasonType:
+    $ref: ./ExternalReturnDecisionSubreasonType.yaml
+  comment:
+    description: Комментарий к товару в возврате.
+    type: string
+    minLength: 1
+    maxLength: 3000
+  pictures:
+    description: Ссылки (URL) на изображения товара в возврате.
+    type: array
+    nullable: true
+    minItems: 1
+    maxItems: 10
+    uniqueItems: true
+    items:
+      type: string
+      minLength: 1
+      maxLength: 2000

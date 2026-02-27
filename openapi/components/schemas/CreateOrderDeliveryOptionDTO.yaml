@@ -1,0 +1,10 @@
+type: object
+description: |
+  Информация о доставке.
+
+  Не передавайте одновременно `courierDelivery` и `pickupDelivery`.
+properties:
+  pickupDelivery:
+    $ref: ./OrderPickupDeliveryDTO.yaml
+  courierDelivery:
+    $ref: ./OrderCourierDeliveryDTO.yaml

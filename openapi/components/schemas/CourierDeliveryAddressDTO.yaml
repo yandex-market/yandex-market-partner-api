@@ -1,0 +1,19 @@
+type: object
+description: Адрес доставки.
+allOf:
+  - $ref: ./BasicCourierDeliveryAddressDTO.yaml
+  - properties:
+      entrance:
+        type: string
+        description: Номер подъезда.
+        minLength: 1
+        maxLength: 16
+      floor:
+        type: integer
+        format: int32
+        description: Этаж.
+      apartment:
+        type: string
+        description: Номер квартиры или офиса.
+        minLength: 1
+        maxLength: 16

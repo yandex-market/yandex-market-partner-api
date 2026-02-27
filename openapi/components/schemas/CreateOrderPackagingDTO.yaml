@@ -1,0 +1,5 @@
+type: object
+description: Правила упаковки товаров в заказе.
+properties:
+  packageType:
+    $ref: ./CreateOrderPackageType.yaml

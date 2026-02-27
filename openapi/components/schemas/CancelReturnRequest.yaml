@@ -1,0 +1,8 @@
+type: object
+required:
+  - returnId
+properties:
+  returnId:
+    description: Идентификатор возврата.
+    type: integer
+    format: int64
