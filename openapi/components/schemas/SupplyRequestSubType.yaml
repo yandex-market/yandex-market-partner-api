@@ -49,6 +49,12 @@ description: >
 
   * `WITHDRAW_AUTO_UTILIZATION` — автоматическая утилизация товаров в заявке на
   вывоз, когда истек срок их хранения.
+
+  * `EXTERNAL_WITHDRAW_INT_OZON` — вывоз товаров на маркетплейс Ozon. Заявка на
+  поставку оформлена в Личном кабинете Ozon.
+
+  * `EXTERNAL_WITHDRAW_INT_WB` — вывоз товаров на маркетплейс Wildberries.
+  Заявка на поставку оформлена в Личном кабинете Wildberries.
 enum:
   - DEFAULT
   - XDOC
@@ -69,3 +75,5 @@ enum:
   - MISGRADING_WITHDRAW
   - MAN_UTIL
   - WITHDRAW_AUTO_UTILIZATION
+  - EXTERNAL_WITHDRAW_INT_OZON
+  - EXTERNAL_WITHDRAW_INT_WB
