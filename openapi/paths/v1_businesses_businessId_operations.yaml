@@ -1,10 +1,6 @@
 post:
   tags:
     - operations
-    - fbs
-    - fby
-    - dbs
-    - express
     - laas
   x-auth-scopes:
     - all-methods
