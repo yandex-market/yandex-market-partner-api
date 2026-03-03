@@ -10,3 +10,5 @@ properties:
       $ref: ./CampaignDTO.yaml
   pager:
     $ref: ./FlippingPagerDTO.yaml
+  paging:
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

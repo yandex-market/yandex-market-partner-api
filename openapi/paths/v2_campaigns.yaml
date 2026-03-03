@@ -53,6 +53,8 @@ get:
     {% include notitle
     [:no-translate[limit]](../../_auto/method_limits/getCampaigns.md) %}
   parameters:
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit100WithoutDefault.yaml
     - $ref: ../components/parameters/PageNum.yaml
     - $ref: ../components/parameters/PageSize.yaml
   responses:
