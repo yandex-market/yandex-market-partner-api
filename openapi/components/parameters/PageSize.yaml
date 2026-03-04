@@ -1,12 +1,19 @@
 name: pageSize
 description: |
+  {% note warning "Устаревший параметр" %}
+
+  Вместо `page` и `pageSize` используйте пагинацию по `pageToken` и `limit`.
+
+  [Подробнее о типах пагинации и их использовании](../../concepts/pagination.md)
+
+  {% endnote %}
+
   Размер страницы.
 
   Используется вместе с параметром `page`.
-
-  `pageSize` игнорируется, если задан `page_token` или `limit`.
 in: query
 required: false
+deprecated: true
 schema:
   type: integer
   format: int32
