@@ -21,12 +21,18 @@ properties:
     description: Частота выплат.
     $ref: ./PaymentFrequencyType.yaml
   paymentDelayWeeks:
-    description: |
+    description: >
       Задержка выплат в неделях.
+
 
       Допустимые значения: 0, 1, 2 или 4.
 
-      Используйте только вместе с параметром `frequency`.
+
+      Значения параметра `paymentDelayWeeks`, отличные от 0, допускаются только
+      вместе с параметром `frequency` равным 'WEEKLY'.
+
+      Использование других значений параметра `frequency` совместно с
+      `paymentDelayWeeks` приведет к ошибке.
     type: integer
     format: int32
     minimum: 0
