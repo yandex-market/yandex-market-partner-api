@@ -8,6 +8,8 @@ post:
   x-auth-scopes:
     - all-methods
     - finance-and-accounting
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 100

@@ -8,6 +8,8 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 1000
@@ -64,6 +66,8 @@ get:
     - all-methods
     - all-methods:read-only
     - communication
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 1000

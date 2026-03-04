@@ -11,6 +11,8 @@ post:
     - all-methods:read-only
     - offers-and-cards-management
     - offers-and-cards-management:read-only
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 5000

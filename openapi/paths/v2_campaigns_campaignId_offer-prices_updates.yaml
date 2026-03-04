@@ -9,6 +9,8 @@ post:
   x-auth-scopes:
     - all-methods
     - pricing
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: req.offers
     amount: 10000

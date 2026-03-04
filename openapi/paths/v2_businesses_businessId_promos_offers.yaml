@@ -18,6 +18,7 @@ post:
     period: hours
   x-restrictions:
     - market-yandex-go
+    - urbanads
   operationId: getPromoOffers
   summary: Получение списка товаров, которые участвуют или могут участвовать в акции
   description: >

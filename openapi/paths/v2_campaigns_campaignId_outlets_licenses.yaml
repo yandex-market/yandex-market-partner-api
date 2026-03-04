@@ -6,6 +6,8 @@ get:
     - all-methods
     - all-methods:read-only
     - settings-management
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 100000
@@ -62,6 +64,8 @@ delete:
   x-auth-scopes:
     - all-methods
     - settings-management
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 100000
@@ -114,6 +118,8 @@ post:
   x-auth-scopes:
     - all-methods
     - settings-management
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 100000

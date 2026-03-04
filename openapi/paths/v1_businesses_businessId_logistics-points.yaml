@@ -23,6 +23,7 @@ post:
     period: hours
   x-restrictions:
     - market-yandex-go
+    - urbanads
   operationId: getLogisticPoints
   summary: Получение точек ПВЗ Маркета
   description: >

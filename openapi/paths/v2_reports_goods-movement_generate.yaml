@@ -7,6 +7,8 @@ post:
     - all-methods
     - offers-and-cards-management
     - inventory-and-order-processing
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 100

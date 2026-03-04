@@ -16,6 +16,7 @@ post:
     period: minutes
   x-restrictions:
     - market-yandex-go
+    - urbanads
   operationId: getOfferRecommendations
   summary: Рекомендации Маркета, касающиеся цен
   description: >

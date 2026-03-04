@@ -11,6 +11,7 @@ post:
     period: hours
   x-restrictions:
     - market-yandex-go
+    - urbanads
   operationId: getOrderUpdateOptions
   summary: Получение временных интервалов для изменения заказа
   description: >

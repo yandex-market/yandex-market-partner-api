@@ -23,6 +23,7 @@ post:
     period: hours
   x-restrictions:
     - market-yandex-go
+    - urbanads
   operationId: getOperations
   summary: Получение статусов операций
   description: >

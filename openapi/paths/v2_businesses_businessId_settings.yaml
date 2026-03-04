@@ -21,6 +21,8 @@ post:
     - promotion:read-only
     - communication
     - supplies-management:read-only
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 1000

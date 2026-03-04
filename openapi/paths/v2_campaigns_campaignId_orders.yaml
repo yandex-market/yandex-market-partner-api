@@ -13,6 +13,8 @@ get:
     - inventory-and-order-processing:read-only
     - communication
     - finance-and-accounting
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 100000

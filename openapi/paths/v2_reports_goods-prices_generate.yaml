@@ -10,6 +10,8 @@ post:
     - finance-and-accounting
     - pricing
     - promotion
+  x-restrictions:
+    - urbanads
   x-resource-limit-config:
     path: resp
     amount: 100

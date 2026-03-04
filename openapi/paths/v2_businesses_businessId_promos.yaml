@@ -18,6 +18,7 @@ post:
     period: hours
   x-restrictions:
     - market-yandex-go
+    - urbanads
   operationId: getPromos
   summary: Получение списка акций
   description: >

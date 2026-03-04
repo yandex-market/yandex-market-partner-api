@@ -15,6 +15,7 @@ get:
     period: hours
   x-restrictions:
     - market-yandex-go
+    - urbanads
   operationId: getOrderLabelsData
   summary: Данные для самостоятельного изготовления ярлыков
   description: >
