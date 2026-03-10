@@ -1,0 +1,27 @@
+type: object
+required:
+  - region
+properties:
+  regions:
+    type: array
+    deprecated: true
+    nullable: true
+    minItems: 1
+    maxItems: 1
+    description: >
+      Регион доставки.
+
+
+      {% note warning %}
+
+
+      В массиве всегда возвращается один регион, используйте поле `region`
+      вместо него.
+
+
+      {% endnote %}
+    items:
+      $ref: ./RegionDTO.yaml
+  region:
+    description: Регион доставки.
+    $ref: ./RegionDTO.yaml

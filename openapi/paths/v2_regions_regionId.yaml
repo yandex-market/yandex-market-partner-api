@@ -57,7 +57,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/GetRegionsResponse.yaml
+            $ref: ../components/schemas/GetRegionByIdResponse.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':
