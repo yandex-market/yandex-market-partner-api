@@ -25,7 +25,7 @@ post:
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml
-    - $ref: ../components/parameters/PageLimit500TruncateBids.yaml
+    - $ref: ../components/parameters/PageLimit500Truncate.yaml
   requestBody:
     required: false
     description: description
