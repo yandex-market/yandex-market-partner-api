@@ -162,8 +162,6 @@ paths:
     $ref: paths/v2_businesses_businessId_offer-mappings.yaml
   /v2/businesses/{businessId}/offer-mappings/update:
     $ref: paths/v2_businesses_businessId_offer-mappings_update.yaml
-  /v2/businesses/{businessId}/offer-mappings/suggestions:
-    $ref: paths/v2_businesses_businessId_offer-mappings_suggestions.yaml
   /v2/businesses/{businessId}/offer-mappings/archive:
     $ref: paths/v2_businesses_businessId_offer-mappings_archive.yaml
   /v2/businesses/{businessId}/offer-mappings/unarchive:
