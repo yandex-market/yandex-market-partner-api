@@ -105,7 +105,7 @@ get:
     [:no-translate[limit]](../../_auto/method_limits/getHiddenOffers.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/hidden-offers_OfferIds.yaml
+    - $ref: ../components/parameters/OfferIds.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml
     - $ref: ../components/parameters/PageLimit500.yaml
   responses:

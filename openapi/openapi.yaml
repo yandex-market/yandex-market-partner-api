@@ -168,12 +168,6 @@ paths:
     $ref: paths/v2_businesses_businessId_offer-mappings_unarchive.yaml
   /v1/businesses/{businessId}/offer-mappings/barcodes/generate:
     $ref: paths/v1_businesses_businessId_offer-mappings_barcodes_generate.yaml
-  /v2/campaigns/{campaignId}/offer-mapping-entries:
-    $ref: paths/v2_campaigns_campaignId_offer-mapping-entries.yaml
-  /v2/campaigns/{campaignId}/offer-mapping-entries/updates:
-    $ref: paths/v2_campaigns_campaignId_offer-mapping-entries_updates.yaml
-  /v2/campaigns/{campaignId}/offer-mapping-entries/suggestions:
-    $ref: paths/v2_campaigns_campaignId_offer-mapping-entries_suggestions.yaml
   /v2/businesses/{businessId}/offer-prices/updates:
     $ref: paths/v2_businesses_businessId_offer-prices_updates.yaml
   /v2/campaigns/{campaignId}/offer-prices/updates:

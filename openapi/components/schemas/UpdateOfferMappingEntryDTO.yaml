@@ -1,9 +1,0 @@
-description: |
-  Список товаров.
-type: object
-allOf:
-  - properties:
-      offer:
-        description: Информация о товаре из каталога.
-        $ref: ./UpdateMappingsOfferDTO.yaml
-  - $ref: ./OfferMappingInfoDTO.yaml
