@@ -27,6 +27,7 @@ get:
     path: resp
     amount: 100
     period: minutes
+  x-responsible-team: API
   operationId: getReportInfo
   summary: Получение заданного отчета или документа
   description: >
