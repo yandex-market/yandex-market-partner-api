@@ -106,6 +106,8 @@ paths:
   /v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit:
     $ref: >-
       paths/v2_campaigns_campaignId_orders_orderId_returns_returnId_decision_submit.yaml
+  /v1/businesses/{businessId}/returns/decisions:
+    $ref: paths/v1_businesses_businessId_returns_decisions.yaml
   /v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/application:
     $ref: >-
       paths/v2_campaigns_campaignId_orders_orderId_returns_returnId_application.yaml

@@ -1,0 +1,59 @@
+post:
+  tags:
+    - returns
+    - dbs
+    - fbs
+    - express
+    - fby
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
+  x-restrictions:
+    - urbanads
+  x-resource-limit-config:
+    path: resp
+    amount: 10000
+    period: hours
+  operationId: getReturnAvailableDecisions
+  summary: Получение возможных решений по возврату
+  description: >
+    {% include notitle
+    [:no-translate[access]](../../_auto/method_scopes/getReturnAvailableDecisions.md)
+    %}
+
+
+    Возвращает список доступных решений по возврату.
+
+
+    {% include notitle
+    [:no-translate[limit]](../../_auto/method_limits/getReturnAvailableDecisions.md)
+    %}
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetReturnAvailableDecisionsRequest.yaml
+  responses:
+    '200':
+      description: Возможные решения по возврату.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetReturnAvailableDecisionsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

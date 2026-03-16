@@ -1,0 +1,10 @@
+description: Запрос на получение возможных решений по возврату.
+type: object
+required:
+  - campaignId
+  - returnId
+properties:
+  campaignId:
+    $ref: ./CampaignId.yaml
+  returnId:
+    $ref: ./ReturnId.yaml

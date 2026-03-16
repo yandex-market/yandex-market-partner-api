@@ -1,0 +1,4 @@
+description: Идентификатор невыкупа или возврата.
+type: integer
+format: int64
+minimum: 1

@@ -1,0 +1,10 @@
+description: Возможные решения по возврату.
+type: object
+required:
+  - availableDecisions
+properties:
+  availableDecisions:
+    description: Список доступных решений.
+    type: array
+    items:
+      $ref: ./ReturnAvailableDecisionDTO.yaml

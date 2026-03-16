@@ -1,0 +1,15 @@
+description: Доступное решение по возврату.
+type: object
+required:
+  - decisionType
+properties:
+  decisionType:
+    $ref: ./ReturnDecisionType.yaml
+  decisionReasonTypes:
+    description: Возможные причины отказа (только для решения DECLINE_REFUND).
+    type: array
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    items:
+      $ref: ./ReturnRequestDecisionReasonType.yaml
