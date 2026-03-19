@@ -17,6 +17,7 @@ post:
     path: resp.result.offers
     amount: 10000
     period: minutes
+  x-responsible-team: PROMO
   operationId: getDefaultPrices
   summary: Просмотр цен на указанные товары во всех магазинах
   description: >

@@ -13,6 +13,7 @@ post:
     path: resp
     amount: 100
     period: hours
+  x-responsible-team: ADV_MONETIZATION
   operationId: generateShelfsStatisticsReport
   summary: Отчет по полкам
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateShelfsStatisticsReport.md) %}\n\nЗапускает генерацию сводного отчета по полкам — рекламным блокам с баннером или видео и набором товаров. Подробнее о них читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/marketing/shelf).\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/incuts/shelfs_statistics.md) %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateShelfsStatisticsReport.md) %}\n"

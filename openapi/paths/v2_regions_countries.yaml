@@ -27,6 +27,7 @@ post:
     path: resp
     amount: 100
     period: hours
+  x-responsible-team: BASE_COMPONENTS
   operationId: getRegionsCodes
   summary: Список допустимых кодов стран
   description: >

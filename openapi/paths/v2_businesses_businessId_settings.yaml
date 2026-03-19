@@ -27,6 +27,7 @@ post:
     path: resp
     amount: 1000
     period: hours
+  x-responsible-team: BASE_COMPONENTS
   operationId: getBusinessSettings
   summary: Настройки кабинета
   description: >

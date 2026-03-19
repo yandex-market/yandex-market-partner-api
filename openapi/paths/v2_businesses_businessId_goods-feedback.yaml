@@ -15,6 +15,7 @@ post:
     path: resp
     amount: 10000
     period: hours
+  x-responsible-team: CONTENT_PROMOTION
   operationId: getGoodsFeedbacks
   summary: Получение отзывов о товарах продавца
   description: >
