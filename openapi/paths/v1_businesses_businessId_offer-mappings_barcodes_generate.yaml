@@ -15,6 +15,7 @@ post:
     path: req.offerIds
     amount: 10000
     period: minutes
+  x-responsible-team: DATACAMP
   operationId: generateOfferBarcodes
   summary: Генерация штрихкодов
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateOfferBarcodes.md) %}\n\nГенерирует штрихкоды и присваивает их указанным товарам.\n\nЕсли у товара на упаковке уже есть штрихкод производителя, передайте его в параметре `barcodes` в методе [POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-assortment/updateOfferMappings.md). Генерировать новый не нужно.\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateOfferBarcodes.md) %}\n"

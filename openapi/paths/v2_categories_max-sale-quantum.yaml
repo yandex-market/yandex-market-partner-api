@@ -17,6 +17,7 @@ post:
     path: resp
     amount: 5000
     period: hours
+  x-responsible-team: CONTENT_RECEIVING
   operationId: getCategoriesMaxSaleQuantum
   summary: Лимит на установку кванта продажи и минимального количества товаров в заказе
   description: >

@@ -15,6 +15,7 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-responsible-team: CONTENT_PROMOTION
   operationId: generateGoodsFeedbackReport
   summary: Отчет по отзывам о товарах
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateGoodsFeedbackReport.md) %}\n\nЗапускает генерацию отчета по отзывам о товарах. [Что это за отчет](https://yandex.ru/support/marketplace/ru/marketing/plus-reviews#stat)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/paid_opinion_models/paid_opinion_models.md) %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateGoodsFeedbackReport.md) %}\n"

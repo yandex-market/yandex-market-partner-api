@@ -12,6 +12,7 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-responsible-team: FBY_PRODUCT
   operationId: createOrder
   summary: Создание заказа
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/createOrder.md) %}\n\nСоздает новый заказ, если на складе Маркета есть нужное количество товаров.\n\nУкажите `courierDelivery` для курьерской доставки или `pickupDelivery` для доставки в пункт выдачи. Не передавайте оба параметра одновременно.\n\nЗначение параметра `draft`:\n\n* `true` — Маркет создаст заказ в статусе `RESERVED` и будет ждать подтверждения от магазина. Когда будете готовы, передайте статус `PROCESSING` с подстатусом `STARTED` в методе [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md). Если не сделать это в течение часа после создания заказа, Маркет отменит его.\n* `false` — Маркет создаст заказ в статусе `PROCESSING` с подстатусом `STARTED`, подтверждение не требуется.\n\n{% note warning \"Перед вызовом метода\" %}\n\nПолучите доступные варианты доставки — [POST\_v2/campaigns/{campaignId}/delivery-options](../../reference/delivery-options/getDeliveryOptions.md).\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/createOrder.md) %}\n"

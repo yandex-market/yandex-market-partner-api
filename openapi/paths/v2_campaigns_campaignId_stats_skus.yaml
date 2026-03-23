@@ -16,6 +16,7 @@ post:
     path: resp.result.shopSkus
     amount: 5000
     period: minutes
+  x-responsible-team: FINANCE
   operationId: getGoodsStats
   summary: Отчет по товарам
   description: >

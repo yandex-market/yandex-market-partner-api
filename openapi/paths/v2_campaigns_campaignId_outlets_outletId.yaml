@@ -11,6 +11,7 @@ put:
     path: resp
     amount: 100000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
   description: >
@@ -71,6 +72,7 @@ get:
     path: resp
     amount: 100000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getOutlet
   summary: Информация об одной точке продаж
   description: >
@@ -118,6 +120,7 @@ delete:
     path: resp
     amount: 100000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: deleteOutlet
   summary: Удаление точки продаж
   description: >

@@ -14,6 +14,7 @@ post:
     path: req.offerIds
     amount: 10000
     period: minutes
+  x-responsible-team: DATACAMP
   operationId: deleteOffersFromArchive
   summary: Удаление товаров из архива
   description: >

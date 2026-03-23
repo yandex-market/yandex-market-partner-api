@@ -25,6 +25,7 @@ get:
     path: resp
     amount: 5000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getDeliveryServices
   summary: Справочник служб доставки
   description: >

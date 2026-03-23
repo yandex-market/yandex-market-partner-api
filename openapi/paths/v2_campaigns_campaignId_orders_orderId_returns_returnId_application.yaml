@@ -16,6 +16,7 @@ get:
     path: resp
     amount: 10000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getReturnApplication
   summary: Получение заявления на возврат
   description: >

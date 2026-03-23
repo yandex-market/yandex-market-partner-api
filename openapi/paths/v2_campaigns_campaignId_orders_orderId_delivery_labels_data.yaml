@@ -16,6 +16,7 @@ get:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getOrderLabelsData
   summary: Данные для самостоятельного изготовления ярлыков
   description: >

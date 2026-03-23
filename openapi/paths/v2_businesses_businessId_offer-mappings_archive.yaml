@@ -14,6 +14,7 @@ post:
     path: req.offerIds
     amount: 10000
     period: minutes
+  x-responsible-team: DATACAMP
   operationId: addOffersToArchive
   summary: Добавление товаров в архив
   description: >

@@ -15,6 +15,7 @@ get:
     path: resp
     amount: 100
     period: minutes
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getWarehouses
   summary: Список складов и групп складов
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getWarehouses.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md)\n\n{% endnote %}\n\nВозвращает список складов и, если склады объединены, список групп складов. [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks)\n\nСреди прочего запрос позволяет определить идентификатор, который нужно использовать при передаче остатков для группы складов.\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getWarehouses.md) %}\n"
@@ -57,6 +58,7 @@ post:
     path: resp
     amount: 1000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getPagedWarehouses
   summary: Список складов
   description: >

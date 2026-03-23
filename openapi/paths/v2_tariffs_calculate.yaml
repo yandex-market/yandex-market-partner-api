@@ -17,6 +17,7 @@ post:
     path: resp
     amount: 100
     period: minutes
+  x-responsible-team: FINANCE
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >

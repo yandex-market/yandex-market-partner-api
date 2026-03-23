@@ -11,6 +11,7 @@ post:
     path: resp
     amount: 100000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: createOutlet
   summary: Создание точки продаж
   description: >
@@ -70,6 +71,7 @@ get:
     path: resp.outlets
     amount: 100000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
   description: >

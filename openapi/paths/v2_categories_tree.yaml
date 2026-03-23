@@ -27,6 +27,7 @@ post:
     path: resp
     amount: 500
     period: hours
+  x-responsible-team: CONTENT_RECEIVING
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: >

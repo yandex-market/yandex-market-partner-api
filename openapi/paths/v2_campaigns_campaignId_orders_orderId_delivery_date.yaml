@@ -11,6 +11,7 @@ put:
     path: resp
     amount: 100000
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: setOrderDeliveryDate
   summary: Изменение даты доставки заказа
   description: >

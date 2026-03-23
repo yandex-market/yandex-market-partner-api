@@ -13,6 +13,7 @@ put:
     path: resp
     amount: 200
     period: hours
+  x-responsible-team: FBS_DBS_PRODUCT
   operationId: searchShipments
   summary: Получение информации о нескольких отгрузках
   description: >

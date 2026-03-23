@@ -15,6 +15,7 @@ post:
     path: req.offers
     amount: 10000
     period: minutes
+  x-responsible-team: DATACAMP
   operationId: updateCampaignOffers
   summary: Изменение условий продажи товаров в магазине
   description: >

@@ -17,6 +17,7 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-responsible-team: FBY_PRODUCT
   operationId: getDeliveryOptions
   summary: Получение доступных вариантов доставки заказов
   description: >

@@ -24,6 +24,7 @@ get:
     path: resp
     amount: 100
     period: minutes
+  x-responsible-team: FBY_PRODUCT
   operationId: getFulfillmentWarehouses
   summary: Идентификаторы фулфилмент-складов Маркета
   description: >
