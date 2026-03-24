@@ -13,7 +13,6 @@ post:
     path: resp
     amount: 1000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: updateExternalOrderId
   summary: Передача внешнего идентификатора заказа
   description: >

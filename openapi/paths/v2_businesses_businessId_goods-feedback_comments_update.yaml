@@ -14,7 +14,6 @@ post:
     path: resp
     amount: 1000
     period: hours
-  x-responsible-team: CONTENT_PROMOTION
   operationId: updateGoodsFeedbackComment
   summary: Добавление нового или изменение созданного комментария
   description: >

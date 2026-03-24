@@ -15,7 +15,6 @@ post:
     path: resp
     amount: 10000
     period: hours
-  x-responsible-team: CONTENT_PROMOTION
   operationId: getGoodsQuestionAnswers
   summary: Получение ответов на вопрос
   description: >

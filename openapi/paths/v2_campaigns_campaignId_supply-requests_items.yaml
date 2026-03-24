@@ -26,7 +26,6 @@ post:
     {% include notitle
     [:no-translate[limit]](../../_auto/method_limits/getSupplyRequestItems.md)
     %}
-  x-responsible-team: FBY_PRODUCT
   operationId: getSupplyRequestItems
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

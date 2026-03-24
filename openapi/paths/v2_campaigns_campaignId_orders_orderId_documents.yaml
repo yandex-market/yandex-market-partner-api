@@ -16,7 +16,6 @@ post:
     path: resp
     amount: 3000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getOrderBusinessDocumentsInfo
   summary: Информация о документах
   description: >

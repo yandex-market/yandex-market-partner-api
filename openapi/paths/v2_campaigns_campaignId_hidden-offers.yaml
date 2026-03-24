@@ -14,7 +14,6 @@ post:
     path: req.hiddenOffers
     amount: 10000
     period: minutes
-  x-responsible-team: DATACAMP
   operationId: addHiddenOffers
   summary: Скрытие товаров и настройки скрытия
   description: >
@@ -88,7 +87,6 @@ get:
     path: resp
     amount: 10000
     period: minutes
-  x-responsible-team: DATACAMP
   operationId: getHiddenOffers
   summary: Информация о скрытых вами товарах
   description: >

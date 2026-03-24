@@ -11,7 +11,6 @@ post:
     path: resp
     amount: 100000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: setOrderDeliveryTrackCode
   summary: Передача трек‑номера посылки
   description: >

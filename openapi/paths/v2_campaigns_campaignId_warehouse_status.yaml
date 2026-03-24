@@ -13,7 +13,6 @@ post:
     path: resp
     amount: 100
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: updateWarehouseStatus
   summary: Изменение статуса склада
   description: >

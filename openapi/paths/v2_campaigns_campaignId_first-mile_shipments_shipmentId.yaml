@@ -13,7 +13,6 @@ get:
     path: resp
     amount: 200
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getShipment
   summary: Получение информации об одной отгрузке
   description: >

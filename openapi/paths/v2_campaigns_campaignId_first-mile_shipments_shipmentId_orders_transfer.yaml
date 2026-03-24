@@ -11,7 +11,6 @@ post:
     path: resp
     amount: 200
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: transferOrdersFromShipment
   summary: Перенос заказов в следующую отгрузку
   description: >

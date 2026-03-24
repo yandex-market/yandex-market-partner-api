@@ -27,7 +27,6 @@ get:
     path: resp
     amount: 5000
     period: hours
-  x-responsible-team: BASE_COMPONENTS
   operationId: getCampaignSettings
   summary: Настройки магазина
   description: >

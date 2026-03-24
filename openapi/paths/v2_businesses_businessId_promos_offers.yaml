@@ -19,7 +19,6 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
-  x-responsible-team: PROMO
   operationId: getPromoOffers
   summary: Получение списка товаров, которые участвуют или могут участвовать в акции
   description: >

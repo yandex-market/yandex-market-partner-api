@@ -17,7 +17,6 @@ post:
     path: resp
     amount: 10000
     period: minutes
-  x-responsible-team: DATACAMP
   operationId: getCampaignOffers
   summary: Информация о товарах, которые размещены в заданном магазине
   description: >

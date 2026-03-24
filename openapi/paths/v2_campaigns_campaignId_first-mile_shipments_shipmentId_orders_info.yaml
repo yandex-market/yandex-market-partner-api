@@ -13,7 +13,6 @@ get:
     path: resp
     amount: 200
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getShipmentOrdersInfo
   summary: Получение информации о возможности печати ярлыков
   description: >

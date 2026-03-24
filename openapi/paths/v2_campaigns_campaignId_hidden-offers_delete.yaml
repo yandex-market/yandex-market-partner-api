@@ -14,7 +14,6 @@ post:
     path: req.hiddenOffers
     amount: 10000
     period: minutes
-  x-responsible-team: DATACAMP
   operationId: deleteHiddenOffers
   summary: Возобновление показа товаров
   description: >

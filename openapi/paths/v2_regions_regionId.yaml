@@ -27,7 +27,6 @@ get:
     path: resp
     amount: 50000
     period: hours
-  x-responsible-team: BASE_COMPONENTS
   operationId: searchRegionsById
   summary: Информация о регионе
   description: >

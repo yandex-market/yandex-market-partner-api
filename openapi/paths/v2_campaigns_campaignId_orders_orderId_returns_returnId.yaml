@@ -17,7 +17,6 @@ get:
     path: resp
     amount: 10000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getReturn
   summary: Информация о невыкупе или возврате
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getReturn.md) %}\n\nПолучает информацию по одному невыкупу или возврату.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый невыкуп или возврат.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getReturn.md) %}\n"

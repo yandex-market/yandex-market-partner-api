@@ -16,7 +16,6 @@ post:
     path: resp
     amount: 10000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getReturnAvailableDecisions
   summary: Получение возможных решений по возврату
   description: >

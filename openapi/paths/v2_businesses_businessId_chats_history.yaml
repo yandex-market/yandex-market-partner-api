@@ -15,7 +15,6 @@ post:
     path: resp
     amount: 10000
     period: hours
-  x-responsible-team: PLATFORM
   operationId: getChatHistory
   summary: Получение истории сообщений в чате
   description: >

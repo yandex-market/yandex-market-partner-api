@@ -12,7 +12,6 @@ get:
     path: resp
     amount: 100000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: getOutletLicenses
   summary: Информация о лицензиях для точек продаж
   description: >
@@ -71,7 +70,6 @@ delete:
     path: resp
     amount: 100000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: deleteOutletLicenses
   summary: Удаление лицензий для точек продаж
   description: >
@@ -126,7 +124,6 @@ post:
     path: resp
     amount: 100000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: updateOutletLicenses
   summary: Создание и изменение лицензий для точек продаж
   description: >

@@ -11,7 +11,6 @@ post:
     path: resp
     amount: 10000
     period: hours
-  x-responsible-team: FBS_DBS_PRODUCT
   operationId: setReturnDecision
   summary: Принятие или изменение решения по возврату
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/setReturnDecision.md) %}\n\n{% note warning \"Какой метод использовать вместо устаревшего\" %}\n\n[POST\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit](../../reference/orders/submitReturnDecision.md)\n\n{% endnote %}\n\n\nВыбирает решение по возврату от покупателя. После этого для подтверждения решения нужно выполнить запрос [POST\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit](../../reference/orders/submitReturnDecision.md).\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/setReturnDecision.md) %}\n"

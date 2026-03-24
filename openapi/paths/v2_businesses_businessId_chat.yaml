@@ -15,7 +15,6 @@ get:
     path: resp
     amount: 1000
     period: hours
-  x-responsible-team: PLATFORM
   operationId: getChat
   summary: Получение чата по идентификатору
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getChat.md) %}\n\nВозвращает чат по его идентификатору.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getChat.md) %}\n"
