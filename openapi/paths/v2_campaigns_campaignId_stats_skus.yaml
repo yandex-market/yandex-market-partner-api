@@ -16,6 +16,16 @@ post:
     path: resp.result.shopSkus
     amount: 5000
     period: minutes
+    tariff-path: resp
+    tariff-resource-limits:
+      none:
+        amount: 1
+        period: minutes
+        period-duration: 1
+      medium:
+        amount: 10
+        period: minutes
+        period-duration: 1
   operationId: getGoodsStats
   summary: Отчет по товарам
   description: >
