@@ -37,7 +37,7 @@ get:
     '200':
       description: Заявление на возврат.
       content:
-        application/octet-stream:
+        application/pdf:
           schema:
             type: string
             format: binary
