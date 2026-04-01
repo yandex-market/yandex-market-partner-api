@@ -12,6 +12,15 @@ get:
     path: resp
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 100000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100000
+        period: hours
+        period-duration: 1
   operationId: getOutletLicenses
   summary: Информация о лицензиях для точек продаж
   description: >
@@ -70,6 +79,15 @@ delete:
     path: resp
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 100000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100000
+        period: hours
+        period-duration: 1
   operationId: deleteOutletLicenses
   summary: Удаление лицензий для точек продаж
   description: >
@@ -124,6 +142,15 @@ post:
     path: resp
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 100000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100000
+        period: hours
+        period-duration: 1
   operationId: updateOutletLicenses
   summary: Создание и изменение лицензий для точек продаж
   description: >

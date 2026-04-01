@@ -17,6 +17,15 @@ post:
     path: resp
     amount: 100
     period: minutes
+    tariff-resource-limits:
+      none:
+        amount: 100
+        period: minutes
+        period-duration: 1
+      medium:
+        amount: 100
+        period: minutes
+        period-duration: 1
   operationId: calculateTariffs
   summary: Калькулятор стоимости услуг
   description: >

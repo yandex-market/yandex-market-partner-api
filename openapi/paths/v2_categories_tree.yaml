@@ -27,6 +27,15 @@ post:
     path: resp
     amount: 500
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 50
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100
+        period: hours
+        period-duration: 1
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: >

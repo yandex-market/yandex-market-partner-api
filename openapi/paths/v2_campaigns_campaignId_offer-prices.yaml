@@ -69,6 +69,15 @@ post:
     path: resp.result.offers
     amount: 150000
     period: minutes
+    tariff-resource-limits:
+      none:
+        amount: 10000
+        period: minutes
+        period-duration: 1
+      medium:
+        amount: 100000
+        period: minutes
+        period-duration: 1
   operationId: getPricesByOfferIds
   summary: Просмотр цен на указанные товары в конкретном магазине
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getPricesByOfferIds.md) %}\n"

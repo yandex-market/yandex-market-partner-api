@@ -14,6 +14,15 @@ post:
     amount: 1000
     period: minutes
     parallel-limit-value: 10
+    tariff-resource-limits:
+      none:
+        amount: 1000
+        period: minutes
+        period-duration: 1
+      medium:
+        amount: 1000
+        period: minutes
+        period-duration: 1
   x-restrictions:
     - market-yandex-go
     - urbanads

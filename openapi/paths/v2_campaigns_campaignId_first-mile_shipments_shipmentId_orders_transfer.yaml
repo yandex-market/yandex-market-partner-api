@@ -11,6 +11,15 @@ post:
     path: resp
     amount: 200
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 200
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 200
+        period: hours
+        period-duration: 1
   operationId: transferOrdersFromShipment
   summary: Перенос заказов в следующую отгрузку
   description: >

@@ -16,6 +16,15 @@ post:
     path: resp
     amount: 3000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 3000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 3000
+        period: hours
+        period-duration: 1
   operationId: getOrderBusinessDocumentsInfo
   summary: Информация о документах
   description: >

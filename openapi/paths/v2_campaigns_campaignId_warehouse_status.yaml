@@ -13,6 +13,15 @@ post:
     path: resp
     amount: 100
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 100
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100
+        period: hours
+        period-duration: 1
   operationId: updateWarehouseStatus
   summary: Изменение статуса склада
   description: >

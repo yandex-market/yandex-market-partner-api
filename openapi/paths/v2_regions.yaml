@@ -27,6 +27,15 @@ get:
     path: resp.regions
     amount: 50000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 50000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 50000
+        period: hours
+        period-duration: 1
   operationId: searchRegionsByName
   summary: Поиск регионов по их имени
   description: >

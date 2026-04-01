@@ -27,6 +27,15 @@ get:
     path: resp
     amount: 100
     period: minutes
+    tariff-resource-limits:
+      none:
+        amount: 1
+        period: minutes
+        period-duration: 1
+      medium:
+        amount: 2
+        period: minutes
+        period-duration: 1
   operationId: getReportInfo
   summary: Получение заданного отчета или документа
   description: >

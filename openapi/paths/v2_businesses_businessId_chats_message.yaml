@@ -14,6 +14,15 @@ post:
     path: resp
     amount: 1000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 1000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 1000
+        period: hours
+        period-duration: 1
   operationId: sendMessageToChat
   summary: Отправка сообщения в чат
   description: >
@@ -72,6 +81,15 @@ get:
     path: resp
     amount: 1000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 1000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 1000
+        period: hours
+        period-duration: 1
   operationId: getChatMessage
   summary: Получение сообщения в чате
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getChatMessage.md) %}\n\nВозвращает сообщение по его идентификатору.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getChatMessage.md) %}\n"

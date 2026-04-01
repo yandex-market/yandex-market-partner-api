@@ -24,6 +24,15 @@ get:
     path: resp
     amount: 100
     period: minutes
+    tariff-resource-limits:
+      none:
+        amount: 100
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100
+        period: hours
+        period-duration: 1
   operationId: getFulfillmentWarehouses
   summary: Идентификаторы фулфилмент-складов Маркета
   description: >

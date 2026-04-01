@@ -18,12 +18,12 @@ post:
     period: hours
     tariff-resource-limits:
       none:
-        amount: 1
-        period: minutes
+        amount: 1000
+        period: hours
         period-duration: 1
       medium:
-        amount: 15
-        period: minutes
+        amount: 1000
+        period: hours
         period-duration: 1
   operationId: generateClosureDocumentsReport
   summary: Закрывающие документы

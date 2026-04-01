@@ -17,6 +17,15 @@ post:
     path: resp
     amount: 10000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 500
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 500
+        period: hours
+        period-duration: 1
   operationId: getQualityRatings
   summary: Индекс качества магазинов
   description: >

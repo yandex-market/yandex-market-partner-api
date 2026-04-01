@@ -12,6 +12,15 @@ post:
     path: resp
     amount: 100
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 1
+        period: minutes
+        period-duration: 2
+      medium:
+        amount: 1
+        period: minutes
+        period-duration: 1
   operationId: generateGoodsTurnoverReport
   summary: Отчет по оборачиваемости
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateGoodsTurnoverReport.md) %}\n\nЗапускает генерацию отчета по оборачиваемости за заданную дату.  [Что это за отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#turnover)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/turnover/turnover.md) %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateGoodsTurnoverReport.md) %}\n"

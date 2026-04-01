@@ -14,6 +14,15 @@ post:
     path: resp
     amount: 10000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 5000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 5000
+        period: hours
+        period-duration: 1
   operationId: submitReturnDecision
   summary: Передача решения по возврату
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/submitReturnDecision.md) %}\n\nПозволяет передать список решений по возврату.\n\n{% note info \"Перед вызовом метода\" %}\n\nПолучите список доступных решений — [POST\_v1/businesses/{businessId}/returns/decisions](../../reference/orders/getReturnAvailableDecisions.md).\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/submitReturnDecision.md) %}\n"

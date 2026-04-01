@@ -14,6 +14,15 @@ post:
     path: req.hiddenOffers
     amount: 10000
     period: minutes
+    tariff-resource-limits:
+      none:
+        amount: 5000
+        period: minutes
+        period-duration: 1
+      medium:
+        amount: 10000
+        period: minutes
+        period-duration: 1
   operationId: deleteHiddenOffers
   summary: Возобновление показа товаров
   description: >

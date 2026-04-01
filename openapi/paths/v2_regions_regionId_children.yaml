@@ -27,6 +27,15 @@ get:
     path: resp.regions.children
     amount: 50000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 1000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 1000
+        period: hours
+        period-duration: 1
   operationId: searchRegionChildren
   summary: Информация о дочерних регионах
   description: >

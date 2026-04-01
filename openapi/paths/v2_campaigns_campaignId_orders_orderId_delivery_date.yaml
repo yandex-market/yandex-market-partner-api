@@ -11,6 +11,15 @@ put:
     path: resp
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 10000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 10000
+        period: hours
+        period-duration: 1
   operationId: setOrderDeliveryDate
   summary: Изменение даты доставки заказа
   description: >

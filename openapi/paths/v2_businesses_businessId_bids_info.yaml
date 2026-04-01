@@ -16,6 +16,15 @@ post:
     path: resp
     amount: 1000
     period: minutes
+    tariff-resource-limits:
+      none:
+        amount: 500
+        period: minutes
+        period-duration: 1
+      medium:
+        amount: 1000
+        period: minutes
+        period-duration: 1
   x-restrictions:
     - market-yandex-go
     - urbanads

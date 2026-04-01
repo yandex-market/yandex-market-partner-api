@@ -13,6 +13,15 @@ post:
     path: resp
     amount: 100
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 1
+        period: minutes
+        period-duration: 2
+      medium:
+        amount: 1
+        period: minutes
+        period-duration: 1
   x-restrictions:
     - market-yandex-go
   operationId: generateBoostConsolidatedReport

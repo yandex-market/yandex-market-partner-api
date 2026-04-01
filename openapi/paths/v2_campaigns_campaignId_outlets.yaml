@@ -11,6 +11,15 @@ post:
     path: resp
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 35000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100000
+        period: hours
+        period-duration: 1
   operationId: createOutlet
   summary: Создание точки продаж
   description: >
@@ -70,6 +79,15 @@ get:
     path: resp.outlets
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 100000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100000
+        period: hours
+        period-duration: 1
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
   description: >

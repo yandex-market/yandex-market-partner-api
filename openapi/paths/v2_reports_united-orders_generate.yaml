@@ -16,6 +16,15 @@ post:
     path: resp
     amount: 100
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 1
+        period: minutes
+        period-duration: 2
+      medium:
+        amount: 1
+        period: minutes
+        period-duration: 1
   operationId: generateUnitedOrdersReport
   summary: Отчет по заказам
   description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateUnitedOrdersReport.md) %}\n\nЗапускает генерацию отчета по заказам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#get-report)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/united/orders/generator/united_orders.md) %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateUnitedOrdersReport.md) %}\n"

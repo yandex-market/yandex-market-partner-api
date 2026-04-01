@@ -11,6 +11,15 @@ put:
     path: resp
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 35000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100000
+        period: hours
+        period-duration: 1
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
   description: >
@@ -71,6 +80,15 @@ get:
     path: resp
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 10000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 10000
+        period: hours
+        period-duration: 1
   operationId: getOutlet
   summary: Информация об одной точке продаж
   description: >
@@ -118,6 +136,15 @@ delete:
     path: resp
     amount: 100000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 35000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 100000
+        period: hours
+        period-duration: 1
   operationId: deleteOutlet
   summary: Удаление точки продаж
   description: >

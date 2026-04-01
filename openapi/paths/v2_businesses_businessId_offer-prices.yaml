@@ -17,6 +17,15 @@ post:
     path: resp.result.offers
     amount: 10000
     period: minutes
+    tariff-resource-limits:
+      none:
+        amount: 5000
+        period: minutes
+        period-duration: 1
+      medium:
+        amount: 10000
+        period: minutes
+        period-duration: 1
   operationId: getDefaultPrices
   summary: Просмотр цен на указанные товары во всех магазинах
   description: >

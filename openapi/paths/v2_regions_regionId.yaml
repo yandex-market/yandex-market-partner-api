@@ -27,6 +27,15 @@ get:
     path: resp
     amount: 50000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 10000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 10000
+        period: hours
+        period-duration: 1
   operationId: searchRegionsById
   summary: Информация о регионе
   description: >

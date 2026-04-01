@@ -16,6 +16,15 @@ get:
     path: resp
     amount: 10000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 5000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 5000
+        period: hours
+        period-duration: 1
   operationId: getReturnApplication
   summary: Получение заявления на возврат
   description: >

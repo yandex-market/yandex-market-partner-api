@@ -13,6 +13,15 @@ put:
     path: resp
     amount: 200
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 200
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 200
+        period: hours
+        period-duration: 1
   operationId: searchShipments
   summary: Получение информации о нескольких отгрузках
   description: >

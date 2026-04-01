@@ -27,6 +27,15 @@ get:
     path: resp
     amount: 5000
     period: hours
+    tariff-resource-limits:
+      none:
+        amount: 5000
+        period: hours
+        period-duration: 1
+      medium:
+        amount: 5000
+        period: hours
+        period-duration: 1
   operationId: getCampaign
   summary: Информация о магазине
   description: >
