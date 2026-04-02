@@ -26,6 +26,9 @@ post:
         amount: 5000
         period: hours
         period-duration: 1
+  x-deprecation-config:
+    degradation-start-date: '2027-01-18'
+    shutdown-date: '2027-04-05'
   operationId: getCategoriesMaxSaleQuantum
   summary: Лимит на установку кванта продажи и минимального количества товаров в заказе
   description: >
