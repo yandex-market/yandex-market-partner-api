@@ -18,6 +18,7 @@ post:
     path: resp
     amount: 10000
     period: hours
+    parallel-limit-value: 6
     tariff-resource-limits:
       none:
         amount: 10000
