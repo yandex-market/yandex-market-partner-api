@@ -9,11 +9,3 @@ properties:
   name:
     description: Название кабинета.
     type: string
-  traits:
-    description: Свойства кабинета.
-    type: array
-    nullable: true
-    uniqueItems: true
-    minItems: 1
-    items:
-      $ref: ./BusinessTraitType.yaml
