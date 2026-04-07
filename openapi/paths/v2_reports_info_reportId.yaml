@@ -29,11 +29,11 @@ get:
     period: minutes
     tariff-resource-limits:
       none:
-        amount: 1
+        amount: 100
         period: minutes
         period-duration: 1
       medium:
-        amount: 2
+        amount: 100
         period: minutes
         period-duration: 1
   operationId: getReportInfo
