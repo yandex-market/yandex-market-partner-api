@@ -12,7 +12,7 @@ properties:
     format: int64
     deprecated: true
   business:
-    $ref: ./BusinessCampaignDTO.yaml
+    $ref: ./BusinessDTO.yaml
   placementType:
     $ref: ./PlacementType.yaml
   apiAvailability:

@@ -1,7 +1,0 @@
-description: |
-  Свойства кабинета:
-
-  * `MARKET_YANDEX_GO` — продавец Market Yandex Go.
-type: string
-enum:
-  - MARKET_YANDEX_GO

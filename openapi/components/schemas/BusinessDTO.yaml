@@ -1,19 +1,8 @@
 description: Информация о кабинете.
 type: object
-required:
-  - id
-  - name
 properties:
   id:
     $ref: ./BusinessId.yaml
   name:
-    description: Название кабинета.
+    description: Название бизнеса.
     type: string
-  traits:
-    description: Свойства кабинета.
-    type: array
-    nullable: true
-    uniqueItems: true
-    minItems: 1
-    items:
-      $ref: ./BusinessTraitType.yaml
