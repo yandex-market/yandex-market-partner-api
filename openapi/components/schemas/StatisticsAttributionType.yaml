@@ -3,7 +3,7 @@ description: >
   Тип атрибуции:
     * `CLICKS` — по кликам.
     * `SHOWS` — по показам.
-  {% if audience == partner %}
+  {% if audience == "partner" %}
 
   <br><br>
 
