@@ -26,8 +26,7 @@ post:
   summary: Передача внешнего идентификатора заказа
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateExternalOrderId.md)
-    %}
+    [access](../../_auto/method_scopes/updateExternalOrderId.md) %}
 
 
     Передает Маркету идентификатор заказа в системе магазина.
@@ -56,8 +55,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateExternalOrderId.md)
-    %}
+    [limit](../../_auto/method_limits/updateExternalOrderId.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

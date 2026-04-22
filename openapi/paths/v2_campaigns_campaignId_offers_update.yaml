@@ -28,8 +28,7 @@ post:
   summary: Изменение условий продажи товаров в магазине
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateCampaignOffers.md)
-    %}
+    [access](../../_auto/method_scopes/updateCampaignOffers.md) %}
 
 
     Изменяет параметры размещения товаров в конкретном магазине: доступность
@@ -37,7 +36,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateCampaignOffers.md) %}
+    [limit](../../_auto/method_limits/updateCampaignOffers.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

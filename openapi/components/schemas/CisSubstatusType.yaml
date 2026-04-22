@@ -12,7 +12,7 @@ description: >
 
 
   * `CIS_GTIN_NOT_FOUND` — код маркировки не содержит
-  [:no-translate[GTIN]](:no-translate[*gtin]).
+  [GTIN](:no-translate[*gtin]).
 
 
   * `CIS_SERIAL_NUMBER_NOT_FOUND` — код маркировки не содержит серийный номер.

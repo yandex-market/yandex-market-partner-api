@@ -28,8 +28,7 @@ post:
   summary: Удаление товаров из ассортимента магазина
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/deleteCampaignOffers.md)
-    %}
+    [access](../../_auto/method_scopes/deleteCampaignOffers.md) %}
 
 
     Удаляет заданные товары из заданного магазина.
@@ -49,7 +48,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/deleteCampaignOffers.md) %}
+    [limit](../../_auto/method_limits/deleteCampaignOffers.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

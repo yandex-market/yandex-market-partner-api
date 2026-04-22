@@ -40,15 +40,15 @@ get:
   summary: Настройки магазина
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getCampaignSettings.md) %}
+    [access](../../_auto/method_scopes/getCampaignSettings.md) %}
 
 
     Возвращает информацию о настройках магазина, идентификатор которого указан в
     запросе.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getCampaignSettings.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getCampaignSettings.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   responses:

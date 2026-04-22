@@ -22,16 +22,12 @@ put:
         period-duration: 1
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateOutlet.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/updateOutlet.md) %}
 
     Изменяет информацию о точке продаж магазина на Маркете.
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateOutlet.md) %}
+    {% include notitle [limit](../../_auto/method_limits/updateOutlet.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletId.yaml
@@ -91,16 +87,12 @@ get:
         period-duration: 1
   operationId: getOutlet
   summary: Информация об одной точке продаж
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOutlet.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/getOutlet.md) %}
 
     Возвращает информацию о точках продаж магазина.
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getOutlet.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getOutlet.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletId.yaml
@@ -147,16 +139,12 @@ delete:
         period-duration: 1
   operationId: deleteOutlet
   summary: Удаление точки продаж
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/deleteOutlet.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/deleteOutlet.md) %}
 
     Удаляет точку продаж магазина на Маркете.
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/deleteOutlet.md) %}
+    {% include notitle [limit](../../_auto/method_limits/deleteOutlet.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletId.yaml

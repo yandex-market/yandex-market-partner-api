@@ -26,16 +26,12 @@ post:
         period-duration: 1
   operationId: deleteOffers
   summary: Удаление товаров из каталога
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/deleteOffers.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/deleteOffers.md) %}
 
     Удаляет товары из каталога.
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/deleteOffers.md) %}
+    {% include notitle [limit](../../_auto/method_limits/deleteOffers.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

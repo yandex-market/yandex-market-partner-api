@@ -24,8 +24,7 @@ post:
   operationId: updateOrder
   summary: Изменение заказа
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateOrder.md) %}
+    {% include notitle [access](../../_auto/method_scopes/updateOrder.md) %}
 
 
     Изменяет в заказе:
@@ -56,8 +55,7 @@ post:
     {% endnote %}
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateOrder.md) %}
+    {% include notitle [limit](../../_auto/method_limits/updateOrder.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

@@ -24,8 +24,7 @@ post:
   summary: Перенос заказов в следующую отгрузку
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/transferOrdersFromShipment.md)
-    %}
+    [access](../../_auto/method_scopes/transferOrdersFromShipment.md) %}
 
 
     Переносит указанные заказы из указанной отгрузки в следующую отгрузку. [Что
@@ -56,8 +55,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/transferOrdersFromShipment.md)
-    %}
+    [limit](../../_auto/method_limits/transferOrdersFromShipment.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

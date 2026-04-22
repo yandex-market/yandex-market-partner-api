@@ -24,8 +24,7 @@ post:
   summary: Передача трек‑номера посылки
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/setOrderDeliveryTrackCode.md)
-    %}
+    [access](../../_auto/method_scopes/setOrderDeliveryTrackCode.md) %}
 
 
     Передает Маркету трек‑номер, по которому покупатель может отследить посылку
@@ -39,8 +38,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/setOrderDeliveryTrackCode.md)
-    %}
+    [limit](../../_auto/method_limits/setOrderDeliveryTrackCode.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

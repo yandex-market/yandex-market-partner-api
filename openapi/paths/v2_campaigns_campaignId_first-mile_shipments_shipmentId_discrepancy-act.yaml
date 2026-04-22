@@ -24,16 +24,14 @@ get:
   summary: Получение акта расхождений
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/downloadShipmentDiscrepancyAct.md)
-    %}
+    [access](../../_auto/method_scopes/downloadShipmentDiscrepancyAct.md) %}
 
 
     Возвращает акт расхождений для заданной отгрузки.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/downloadShipmentDiscrepancyAct.md)
-    %}
+    [limit](../../_auto/method_limits/downloadShipmentDiscrepancyAct.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

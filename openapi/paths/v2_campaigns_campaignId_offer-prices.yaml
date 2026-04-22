@@ -32,8 +32,7 @@ get:
   operationId: getPrices
   summary: Список цен
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getPrices.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getPrices.md) %}
 
 
     Возвращает список цен, установленных вами на товары любым способом:
@@ -44,8 +43,7 @@ get:
     продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getPrices.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getPrices.md) %}
   deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
@@ -107,7 +105,7 @@ post:
         period-duration: 1
   operationId: getPricesByOfferIds
   summary: Просмотр цен на указанные товары в конкретном магазине
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n\n{% endnote %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getPricesByOfferIds.md) %}\n"
+  description: "{% include notitle [access](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getPricesByOfferIds.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

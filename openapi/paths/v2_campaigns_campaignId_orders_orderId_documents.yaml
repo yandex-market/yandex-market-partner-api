@@ -29,8 +29,7 @@ post:
   summary: Информация о документах
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOrderBusinessDocumentsInfo.md)
-    %}
+    [access](../../_auto/method_scopes/getOrderBusinessDocumentsInfo.md) %}
 
 
     Возвращает информацию о документах по идентификатору заказа.
@@ -40,8 +39,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getOrderBusinessDocumentsInfo.md)
-    %}
+    [limit](../../_auto/method_limits/getOrderBusinessDocumentsInfo.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

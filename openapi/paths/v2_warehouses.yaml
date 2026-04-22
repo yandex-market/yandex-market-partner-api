@@ -37,16 +37,14 @@ get:
   summary: Идентификаторы фулфилмент-складов Маркета
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getFulfillmentWarehouses.md)
-    %}
+    [access](../../_auto/method_scopes/getFulfillmentWarehouses.md) %}
 
 
     Возвращает список фулфилмент-складов Маркета с их идентификаторами.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getFulfillmentWarehouses.md)
-    %}
+    [limit](../../_auto/method_limits/getFulfillmentWarehouses.md) %}
   parameters:
     - $ref: ../components/parameters/GetFulfillmentWarehousesCampaignId.yaml
   responses:

@@ -35,16 +35,12 @@ post:
     - urbanads
   operationId: getOperations
   summary: Получение статусов операций
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOperations.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/getOperations.md) %}
 
     Возвращает статусы запущенных операций по их идентификаторам.
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getOperations.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getOperations.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

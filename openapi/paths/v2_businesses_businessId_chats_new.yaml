@@ -26,8 +26,7 @@ post:
   operationId: createChat
   summary: Создание нового чата с покупателем
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/createChat.md) %}
+    {% include notitle [access](../../_auto/method_scopes/createChat.md) %}
 
 
     Создает новый чат с покупателем и возвращает информацию о нем или созданном
@@ -42,8 +41,7 @@ post:
     * по возвратам (доступны только для FBY-, FBS- и Экспресс-магазинов).
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/createChat.md) %}
+    {% include notitle [limit](../../_auto/method_limits/createChat.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

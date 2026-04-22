@@ -27,8 +27,8 @@ post:
   operationId: getGoodsFeedbacks
   summary: Получение отзывов о товарах продавца
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getGoodsFeedbacks.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getGoodsFeedbacks.md)
+    %}
 
 
     Возвращает отзывы о товарах продавца по указанным фильтрам. **Исключение:**
@@ -59,8 +59,8 @@ post:
     ранее.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getGoodsFeedbacks.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getGoodsFeedbacks.md)
+    %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

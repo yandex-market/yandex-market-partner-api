@@ -32,8 +32,7 @@ post:
   summary: Рекомендованные ставки для заданных товаров
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getBidsRecommendations.md)
-    %}
+    [access](../../_auto/method_scopes/getBidsRecommendations.md) %}
 
 
     Возвращает рекомендованные ставки для заданных товаров, что обеспечивает
@@ -54,8 +53,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getBidsRecommendations.md)
-    %}
+    [limit](../../_auto/method_limits/getBidsRecommendations.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

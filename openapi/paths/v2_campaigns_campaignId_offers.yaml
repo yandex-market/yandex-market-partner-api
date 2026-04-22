@@ -29,16 +29,16 @@ post:
   operationId: getCampaignOffers
   summary: Информация о товарах, которые размещены в заданном магазине
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getCampaignOffers.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getCampaignOffers.md)
+    %}
 
 
     Возвращает список товаров, которые размещены в заданном магазине. Для
     каждого товара указываются параметры размещения.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getCampaignOffers.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getCampaignOffers.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

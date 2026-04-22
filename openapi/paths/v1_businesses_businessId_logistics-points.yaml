@@ -36,8 +36,8 @@ post:
   operationId: getLogisticPoints
   summary: Получение точек ПВЗ Маркета
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getLogisticPoints.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getLogisticPoints.md)
+    %}
 
 
     Возвращает список пунктов выдачи заказов Маркета.
@@ -47,8 +47,8 @@ post:
     актуальные данные. Например, раз в день.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getLogisticPoints.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getLogisticPoints.md)
+    %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

@@ -29,8 +29,7 @@ post:
   summary: Получение подходящих для возврата пунктов выдачи
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getReturnDeliveryOptions.md)
-    %}
+    [access](../../_auto/method_scopes/getReturnDeliveryOptions.md) %}
 
 
     Возвращает список идентификаторов пунктов выдачи, которые могут принять
@@ -38,8 +37,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getReturnDeliveryOptions.md)
-    %}
+    [limit](../../_auto/method_limits/getReturnDeliveryOptions.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

@@ -26,8 +26,7 @@ post:
   summary: Изменение статуса склада
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateWarehouseStatus.md)
-    %}
+    [access](../../_auto/method_scopes/updateWarehouseStatus.md) %}
 
 
     Отключает или включает склад.
@@ -39,8 +38,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateWarehouseStatus.md)
-    %}
+    [limit](../../_auto/method_limits/updateWarehouseStatus.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

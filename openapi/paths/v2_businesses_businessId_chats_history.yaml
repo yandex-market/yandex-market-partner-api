@@ -26,16 +26,12 @@ post:
         period-duration: 1
   operationId: getChatHistory
   summary: Получение истории сообщений в чате
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getChatHistory.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/getChatHistory.md) %}
 
     Возвращает историю сообщений в чате с покупателем.
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getChatHistory.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getChatHistory.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/ChatId.yaml

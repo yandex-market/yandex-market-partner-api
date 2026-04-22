@@ -24,26 +24,18 @@ put:
         period-duration: 1
   operationId: searchShipments
   summary: Получение информации о нескольких отгрузках
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/searchShipments.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/searchShipments.md) %}
 
     Возвращает информацию об отгрузках по заданным параметрам:
 
-
     * дате;
-
     * статусу;
-
     * идентификаторам заказов.
-
 
     Результаты возвращаются постранично.
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/searchShipments.md) %}
+    {% include notitle [limit](../../_auto/method_limits/searchShipments.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

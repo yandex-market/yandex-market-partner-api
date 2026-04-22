@@ -26,8 +26,8 @@ put:
   operationId: updateOrderStatus
   summary: Изменение статуса одного заказа
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateOrderStatus.md) %}
+    {% include notitle [access](../../_auto/method_scopes/updateOrderStatus.md)
+    %}
 
 
     Изменяет статус заказа. Возможные изменения статусов:
@@ -83,8 +83,8 @@ put:
     {% endcut %}
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateOrderStatus.md) %}
+    {% include notitle [limit](../../_auto/method_limits/updateOrderStatus.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

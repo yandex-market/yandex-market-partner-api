@@ -24,8 +24,7 @@ post:
   operationId: cancelReturn
   summary: Отмена возврата
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/cancelReturn.md) %}
+    {% include notitle [access](../../_auto/method_scopes/cancelReturn.md) %}
 
 
     Отменяет возврат.
@@ -56,8 +55,7 @@ post:
     {% endnote %}
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/cancelReturn.md) %}
+    {% include notitle [limit](../../_auto/method_limits/cancelReturn.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

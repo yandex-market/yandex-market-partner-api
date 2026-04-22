@@ -28,8 +28,7 @@ post:
   summary: Получение комментариев к отзыву
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getGoodsFeedbackComments.md)
-    %}
+    [access](../../_auto/method_scopes/getGoodsFeedbackComments.md) %}
 
 
     Возвращает комментарии к отзыву, кроме:
@@ -66,8 +65,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getGoodsFeedbackComments.md)
-    %}
+    [limit](../../_auto/method_limits/getGoodsFeedbackComments.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

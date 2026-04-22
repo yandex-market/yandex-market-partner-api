@@ -31,8 +31,7 @@ post:
   operationId: getPromos
   summary: Получение списка акций
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getPromos.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getPromos.md) %}
 
 
     Возвращает информацию об акциях Маркета. Не возвращает данные об акциях,
@@ -57,8 +56,7 @@ post:
     * скидка по промокоду.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getPromos.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getPromos.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

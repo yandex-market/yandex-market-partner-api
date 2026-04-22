@@ -33,8 +33,7 @@ post:
   summary: Лимит на установку кванта продажи и минимального количества товаров в заказе
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getCategoriesMaxSaleQuantum.md)
-    %}
+    [access](../../_auto/method_scopes/getCategoriesMaxSaleQuantum.md) %}
 
 
     Возвращает лимит на установку [кванта](*quantum) и минимального количества
@@ -51,8 +50,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getCategoriesMaxSaleQuantum.md)
-    %}
+    [limit](../../_auto/method_limits/getCategoriesMaxSaleQuantum.md) %}
   requestBody:
     required: true
     content:

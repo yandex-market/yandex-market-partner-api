@@ -27,8 +27,7 @@ post:
   summary: Добавление нового или изменение созданного комментария
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateGoodsFeedbackComment.md)
-    %}
+    [access](../../_auto/method_scopes/updateGoodsFeedbackComment.md) %}
 
 
     Добавляет новый комментарий магазина или изменяет комментарий, который
@@ -60,8 +59,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateGoodsFeedbackComment.md)
-    %}
+    [limit](../../_auto/method_limits/updateGoodsFeedbackComment.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

@@ -40,7 +40,7 @@ get:
   summary: Поиск регионов по их имени
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/searchRegionsByName.md) %}
+    [access](../../_auto/method_scopes/searchRegionsByName.md) %}
 
 
     Возвращает информацию о регионе, удовлетворяющем заданным в запросе условиям
@@ -53,8 +53,8 @@ get:
     регионам.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/searchRegionsByName.md) %}
+    {% include notitle [limit](../../_auto/method_limits/searchRegionsByName.md)
+    %}
   parameters:
     - $ref: ../components/parameters/RegionName.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

@@ -31,8 +31,7 @@ get:
   operationId: getWarehouses
   summary: Список складов и групп складов
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getWarehouses.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getWarehouses.md) %}
 
 
     Возвращает список складов и, если склады объединены, список групп складов.
@@ -44,8 +43,7 @@ get:
     использовать при передаче остатков для группы складов.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getWarehouses.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getWarehouses.md) %}
   deprecated: true
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
@@ -97,15 +95,15 @@ post:
   operationId: getPagedWarehouses
   summary: Список складов
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getPagedWarehouses.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getPagedWarehouses.md)
+    %}
 
 
     Возвращает список складов и информацию о них.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getPagedWarehouses.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getPagedWarehouses.md)
+    %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

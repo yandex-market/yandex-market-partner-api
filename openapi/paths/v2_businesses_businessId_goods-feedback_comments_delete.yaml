@@ -27,16 +27,14 @@ post:
   summary: Удаление комментария к отзыву
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/deleteGoodsFeedbackComment.md)
-    %}
+    [access](../../_auto/method_scopes/deleteGoodsFeedbackComment.md) %}
 
 
     Удаляет комментарий магазина.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/deleteGoodsFeedbackComment.md)
-    %}
+    [limit](../../_auto/method_limits/deleteGoodsFeedbackComment.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

@@ -29,16 +29,14 @@ post:
   summary: Получение возможных решений по возврату
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getReturnAvailableDecisions.md)
-    %}
+    [access](../../_auto/method_scopes/getReturnAvailableDecisions.md) %}
 
 
     Возвращает список доступных решений по возврату.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getReturnAvailableDecisions.md)
-    %}
+    [limit](../../_auto/method_limits/getReturnAvailableDecisions.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

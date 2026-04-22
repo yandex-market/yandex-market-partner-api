@@ -30,8 +30,7 @@ post:
   summary: Рекомендации Маркета, касающиеся цен
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOfferRecommendations.md)
-    %}
+    [access](../../_auto/method_scopes/getOfferRecommendations.md) %}
 
 
     Метод возвращает рекомендации нескольких типов.
@@ -50,8 +49,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getOfferRecommendations.md)
-    %}
+    [limit](../../_auto/method_limits/getOfferRecommendations.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

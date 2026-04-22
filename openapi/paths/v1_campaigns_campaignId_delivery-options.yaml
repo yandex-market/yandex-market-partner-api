@@ -29,8 +29,8 @@ post:
   operationId: getDeliveryOptions
   summary: Получение доступных вариантов доставки заказов
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getDeliveryOptions.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getDeliveryOptions.md)
+    %}
 
 
     Возвращает список вариантов для доставки заказов. Выберите подходящий
@@ -41,8 +41,8 @@ post:
     доставки в пункт выдачи. Не передавайте оба параметра одновременно.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getDeliveryOptions.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getDeliveryOptions.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

@@ -28,8 +28,7 @@ put:
   summary: Передача количества грузовых мест в заказе
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/setOrderShipmentBoxes.md)
-    %}
+    [access](../../_auto/method_scopes/setOrderShipmentBoxes.md) %}
 
 
     Отгружаемый Маркету заказ может не влезть в одну коробку или упаковку — в
@@ -133,8 +132,7 @@ put:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/setOrderShipmentBoxes.md)
-    %}
+    [limit](../../_auto/method_limits/setOrderShipmentBoxes.md) %}
   deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

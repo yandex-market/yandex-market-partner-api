@@ -27,16 +27,14 @@ post:
   summary: Создание, изменение и удаление ответа или комментария
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateGoodsQuestionTextEntity.md)
-    %}
+    [access](../../_auto/method_scopes/updateGoodsQuestionTextEntity.md) %}
 
 
     Создание, изменение и удаление ответа или комментария.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateGoodsQuestionTextEntity.md)
-    %}
+    [limit](../../_auto/method_limits/updateGoodsQuestionTextEntity.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

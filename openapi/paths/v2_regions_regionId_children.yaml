@@ -40,8 +40,7 @@ get:
   summary: Информация о дочерних регионах
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/searchRegionChildren.md)
-    %}
+    [access](../../_auto/method_scopes/searchRegionChildren.md) %}
 
 
     Возвращает информацию о регионах, являющихся дочерними по отношению к
@@ -49,7 +48,7 @@ get:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/searchRegionChildren.md) %}
+    [limit](../../_auto/method_limits/searchRegionChildren.md) %}
   parameters:
     - $ref: ../components/parameters/RegionId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

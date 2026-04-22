@@ -39,8 +39,7 @@ post:
   operationId: getRegionsCodes
   summary: Список допустимых кодов стран
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getRegionsCodes.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getRegionsCodes.md) %}
 
 
     Возвращает список стран с их кодами в формате :no-translate[ISO 3166-1
@@ -51,8 +50,7 @@ post:
     рубежа для бизнеса. [Инструкция](../../step-by-step/business-info.md)
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getRegionsCodes.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getRegionsCodes.md) %}
   responses:
     '200':
       description: Список стран с их кодами в формате :no-translate[ISO 3166-1 alpha-2].

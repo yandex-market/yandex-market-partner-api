@@ -24,15 +24,15 @@ get:
   operationId: getOutletLicenses
   summary: Информация о лицензиях для точек продаж
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOutletLicenses.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getOutletLicenses.md)
+    %}
 
 
     Возвращает информацию о лицензиях для точек продаж.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getOutletLicenses.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getOutletLicenses.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OutletIds.yaml
@@ -92,15 +92,14 @@ delete:
   summary: Удаление лицензий для точек продаж
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/deleteOutletLicenses.md)
-    %}
+    [access](../../_auto/method_scopes/deleteOutletLicenses.md) %}
 
 
     Удаляет информацию о лицензиях для точек продаж.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/deleteOutletLicenses.md) %}
+    [limit](../../_auto/method_limits/deleteOutletLicenses.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - description: >
@@ -155,8 +154,7 @@ post:
   summary: Создание и изменение лицензий для точек продаж
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateOutletLicenses.md)
-    %}
+    [access](../../_auto/method_scopes/updateOutletLicenses.md) %}
 
 
     Передает информацию о новых и существующих лицензиях для точек продаж.
@@ -169,7 +167,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateOutletLicenses.md) %}
+    [limit](../../_auto/method_limits/updateOutletLicenses.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

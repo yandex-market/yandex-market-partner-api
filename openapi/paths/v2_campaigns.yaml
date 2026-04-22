@@ -39,8 +39,7 @@ get:
   operationId: getCampaigns
   summary: Список магазинов пользователя
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getCampaigns.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getCampaigns.md) %}
 
 
     **Для Api-Key-токена:** возвращает список магазинов в кабинете, для которого
@@ -61,8 +60,7 @@ get:
     {% endnote %}
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getCampaigns.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getCampaigns.md) %}
   parameters:
     - $ref: ../components/parameters/AliasedPageToken.yaml
     - $ref: ../components/parameters/PageLimit100WithoutDefault.yaml

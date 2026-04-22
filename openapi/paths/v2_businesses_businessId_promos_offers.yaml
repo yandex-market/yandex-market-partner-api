@@ -30,28 +30,20 @@ post:
     - urbanads
   operationId: getPromoOffers
   summary: Получение списка товаров, которые участвуют или могут участвовать в акции
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getPromoOffers.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/getPromoOffers.md) %}
 
     Возвращает список товаров, которые участвуют или могут участвовать в акции.
 
-
     {% note warning "Условия участия в акциях могут меняться" %}
-
 
     Например, `maxPromoPrice`.
 
-
     Установленные цены меняться не будут — `price` и `promoPrice`.
-
 
     {% endnote %}
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getPromoOffers.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getPromoOffers.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

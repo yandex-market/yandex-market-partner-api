@@ -25,16 +25,14 @@ post:
   summary: Получение товаров в заявке на поставку, вывоз или утилизацию
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getSupplyRequestItems.md)
-    %}
+    [access](../../_auto/method_scopes/getSupplyRequestItems.md) %}
 
 
     Возвращает список товаров в заявке и информацию по ним.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getSupplyRequestItems.md)
-    %}
+    [limit](../../_auto/method_limits/getSupplyRequestItems.md) %}
   operationId: getSupplyRequestItems
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

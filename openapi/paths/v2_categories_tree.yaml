@@ -39,15 +39,15 @@ post:
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getCategoriesTree.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getCategoriesTree.md)
+    %}
 
 
     Возвращает дерево категорий Маркета.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getCategoriesTree.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getCategoriesTree.md)
+    %}
   requestBody:
     required: false
     content:

@@ -27,7 +27,7 @@ post:
   summary: Изменение статусов нескольких заказов
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/updateOrderStatuses.md) %}
+    [access](../../_auto/method_scopes/updateOrderStatuses.md) %}
 
 
     Изменяет статусы нескольких заказов.
@@ -86,8 +86,8 @@ post:
     {% endcut %}
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/updateOrderStatuses.md) %}
+    {% include notitle [limit](../../_auto/method_limits/updateOrderStatuses.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

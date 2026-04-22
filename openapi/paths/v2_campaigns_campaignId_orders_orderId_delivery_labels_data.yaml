@@ -28,15 +28,15 @@ get:
   operationId: getOrderLabelsData
   summary: Данные для самостоятельного изготовления ярлыков
   description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOrderLabelsData.md) %}
+    {% include notitle [access](../../_auto/method_scopes/getOrderLabelsData.md)
+    %}
 
 
     Возвращает информацию на ярлыках, которые клеятся на коробки в заказе.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getOrderLabelsData.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getOrderLabelsData.md)
+    %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

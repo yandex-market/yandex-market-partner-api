@@ -27,7 +27,7 @@ get:
         period-duration: 1
   operationId: getReturnPhoto
   summary: Получение фотографий товаров в возврате
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/getReturnPhoto.md) %}\n\nПолучает фотографии товаров, которые покупатель приложил к заявлению на возврат.\n\nХеш изображения (`imageHash`) можно получить из ответов методов [GET\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md) и [GET\_v2/campaigns/{campaignId}/returns](../../reference/orders/getReturns.md) — в поле `images` решения по товару.\n\nМаксимальный размер изображения — 50 МБ.\n\nТип изображения можно определить по заголовку `Content-Type` в ответе.\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/getReturnPhoto.md) %}\n"
+  description: "{% include notitle [access](../../_auto/method_scopes/getReturnPhoto.md) %}\n\nПолучает фотографии товаров, которые покупатель приложил к заявлению на возврат.\n\nХеш изображения (`imageHash`) можно получить из ответов методов [GET\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md) и [GET\_v2/campaigns/{campaignId}/returns](../../reference/orders/getReturns.md) — в поле `images` решения по товару.\n\nМаксимальный размер изображения — 50 МБ.\n\nТип изображения можно определить по заголовку `Content-Type` в ответе.\n\n{% include notitle [limit](../../_auto/method_limits/getReturnPhoto.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

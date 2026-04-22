@@ -29,15 +29,14 @@ get:
   summary: Получение заявления на возврат
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getReturnApplication.md)
-    %}
+    [access](../../_auto/method_scopes/getReturnApplication.md) %}
 
 
     Загружает заявление покупателя на возврат товара.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getReturnApplication.md) %}
+    [limit](../../_auto/method_limits/getReturnApplication.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/OrderId.yaml

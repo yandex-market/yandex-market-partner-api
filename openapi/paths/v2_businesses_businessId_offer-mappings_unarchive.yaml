@@ -27,16 +27,14 @@ post:
   summary: Удаление товаров из архива
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/deleteOffersFromArchive.md)
-    %}
+    [access](../../_auto/method_scopes/deleteOffersFromArchive.md) %}
 
 
     Восстанавливает товары из архива.
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/deleteOffersFromArchive.md)
-    %}
+    [limit](../../_auto/method_limits/deleteOffersFromArchive.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
   requestBody:

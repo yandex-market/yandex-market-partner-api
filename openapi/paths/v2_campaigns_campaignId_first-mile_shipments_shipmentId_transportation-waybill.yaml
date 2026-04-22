@@ -24,7 +24,7 @@ get:
   summary: Получение транспортной накладной
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/downloadShipmentTransportationWaybill.md)
+    [access](../../_auto/method_scopes/downloadShipmentTransportationWaybill.md)
     %}
 
 
@@ -39,7 +39,7 @@ get:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/downloadShipmentTransportationWaybill.md)
+    [limit](../../_auto/method_limits/downloadShipmentTransportationWaybill.md)
     %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

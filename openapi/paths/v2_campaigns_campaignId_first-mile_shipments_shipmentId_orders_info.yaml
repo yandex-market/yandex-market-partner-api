@@ -26,8 +26,7 @@ get:
   summary: Получение информации о возможности печати ярлыков
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getShipmentOrdersInfo.md)
-    %}
+    [access](../../_auto/method_scopes/getShipmentOrdersInfo.md) %}
 
 
     Возвращает информацию о возможности печати ярлыков-наклеек для заказов в
@@ -35,8 +34,7 @@ get:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getShipmentOrdersInfo.md)
-    %}
+    [limit](../../_auto/method_limits/getShipmentOrdersInfo.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

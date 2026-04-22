@@ -38,14 +38,14 @@ get:
   summary: Справочник служб доставки
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getDeliveryServices.md) %}
+    [access](../../_auto/method_scopes/getDeliveryServices.md) %}
 
 
     Возвращает справочник служб доставки: идентификаторы и наименования.
 
 
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getDeliveryServices.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getDeliveryServices.md)
+    %}
   responses:
     '200':
       description: Информация о службах доставки.

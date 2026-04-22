@@ -24,16 +24,12 @@ get:
         period-duration: 1
   operationId: getShipment
   summary: Получение информации об одной отгрузке
-  description: >
-    {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getShipment.md) %}
-
+  description: |
+    {% include notitle [access](../../_auto/method_scopes/getShipment.md) %}
 
     Возвращает информацию об отгрузке по ее идентификатору.
 
-
-    {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getShipment.md) %}
+    {% include notitle [limit](../../_auto/method_limits/getShipment.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml

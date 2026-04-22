@@ -25,8 +25,7 @@ post:
   summary: Получение временных интервалов для изменения заказа
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/getOrderUpdateOptions.md)
-    %}
+    [access](../../_auto/method_scopes/getOrderUpdateOptions.md) %}
 
 
     Возвращает список доступных интервалов для изменения даты и времени
@@ -34,8 +33,7 @@ post:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/getOrderUpdateOptions.md)
-    %}
+    [limit](../../_auto/method_limits/getOrderUpdateOptions.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

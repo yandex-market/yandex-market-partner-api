@@ -26,7 +26,7 @@ post:
         period-duration: 1
   operationId: generateJewelryFiscalReport
   summary: Отчет по заказам с ювелирными изделиями
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateJewelryFiscalReport.md) %}\n\nЗапускает генерацию отчета по заказам с ювелирными изделиями.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md) %}\n\n{% include notitle [:no-translate[tariff-period]](../../_includes/common/report-data-period-unchanged.md) %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateJewelryFiscalReport.md) %}\n"
+  description: "{% include notitle [access](../../_auto/method_scopes/generateJewelryFiscalReport.md) %}\n\nЗапускает генерацию отчета по заказам с ювелирными изделиями.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [reports](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md) %}\n\n{% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}\n\n{% include notitle [limit](../../_auto/method_limits/generateJewelryFiscalReport.md) %}\n"
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:

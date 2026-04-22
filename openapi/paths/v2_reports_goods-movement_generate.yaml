@@ -24,7 +24,7 @@ post:
         period-duration: 1
   operationId: generateGoodsMovementReport
   summary: Отчет по движению товаров
-  description: "{% include notitle [:no-translate[access]](../../_auto/method_scopes/generateGoodsMovementReport.md) %}\n\nЗапускает генерацию отчета по движению товаров. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#flow)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [:no-translate[reports]](../../_auto/reports/sku/movement/movement_config.md) %}\n\n{% include notitle [:no-translate[tariff-period]](../../_includes/common/report-data-period-unchanged.md) %}\n\n{% include notitle [:no-translate[limit]](../../_auto/method_limits/generateGoodsMovementReport.md) %}\n"
+  description: "{% include notitle [access](../../_auto/method_scopes/generateGoodsMovementReport.md) %}\n\nЗапускает генерацию отчета по движению товаров. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#flow)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [reports](../../_auto/reports/sku/movement/movement_config.md) %}\n\n{% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}\n\n{% include notitle [limit](../../_auto/method_limits/generateGoodsMovementReport.md) %}\n"
   parameters:
     - $ref: ../components/parameters/ReportFormat.yaml
   requestBody:

@@ -24,8 +24,7 @@ get:
   summary: Получение фактического акта приема-передачи
   description: >
     {% include notitle
-    [:no-translate[access]](../../_auto/method_scopes/downloadShipmentInboundAct.md)
-    %}
+    [access](../../_auto/method_scopes/downloadShipmentInboundAct.md) %}
 
 
     Возвращает фактический акт приема-передачи для заданной отгрузки.
@@ -37,8 +36,7 @@ get:
 
 
     {% include notitle
-    [:no-translate[limit]](../../_auto/method_limits/downloadShipmentInboundAct.md)
-    %}
+    [limit](../../_auto/method_limits/downloadShipmentInboundAct.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/params_ShipmentId.yaml
