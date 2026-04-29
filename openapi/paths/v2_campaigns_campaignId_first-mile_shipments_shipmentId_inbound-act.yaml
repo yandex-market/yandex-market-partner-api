@@ -39,7 +39,7 @@ get:
     [limit](../../_auto/method_limits/downloadShipmentInboundAct.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
-    - $ref: ../components/parameters/params_ShipmentId.yaml
+    - $ref: ../components/parameters/ShipmentId-3.yaml
   responses:
     '200':
       description: Акт в формате PDF.
