@@ -7,3 +7,9 @@ properties:
   settings:
     description: Настройки на уровне кабинета.
     $ref: ./BusinessSettingsDTO.yaml
+  subscriptionLevel:
+    description: >-
+      Уровень подписки кабинета. Подробнее о подписке для продавцов читайте [в
+      Справке Маркета для
+      продавцов](https://yandex.ru/support/marketplace/ru/marketing/subscription).
+    $ref: ./BusinessSubscriptionLevelType.yaml
