@@ -1,6 +1,7 @@
 description: |
   Способ денежного перевода:
   - `BUYER` — оплата или возврат деньгами.
+  - `MARKET_CESSION` — уступка задолженности покупателя.
 
   Устаревшие способы:
   - `CASHBACK`.
@@ -11,4 +12,5 @@ enum:
   - BUYER
   - CASHBACK
   - MARKETPLACE
+  - MARKET_CESSION
   - SPLIT
