@@ -28,6 +28,9 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-apphost:
+    domain: MONETIZATION
+    enabled: false
   operationId: getBidsInfoForBusiness
   summary: Информация об установленных ставках
   description: "{% include notitle [access](../../_auto/method_scopes/getBidsInfoForBusiness.md) %}\n\nВозвращает значения ставок для заданных товаров.\n\n{% note warning \"Получить информацию по кампаниям, созданным в кабинете, не получится\" %}\n\nВ ответе возвращаются значения только тех ставок, которые вы установили через запрос [PUT\_v2/businesses/{businessId}/bids](../../reference/bids/putBidsForBusiness.md).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getBidsInfoForBusiness.md) %}\n"

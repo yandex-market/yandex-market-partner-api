@@ -28,6 +28,9 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-apphost:
+    domain: MONETIZATION
+    enabled: false
   operationId: getBidsRecommendations
   summary: Рекомендованные ставки для заданных товаров
   description: >
