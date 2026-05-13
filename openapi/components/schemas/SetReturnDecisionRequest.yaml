@@ -11,6 +11,11 @@ properties:
     $ref: ./ReturnRequestDecisionType.yaml
   comment:
     $ref: ./ReturnItemDecisionComment.yaml
+  compensation:
+    description: |
+      Сумма добровольной компенсации по позиции возврата.
+      Указывайте только при `decisionType` = `PARTIAL_MONEY_REFUND`.
+    $ref: ./BasePriceDTO.yaml
 example:
   returnItemId: 1
   decisionType: REFUND_MONEY_INCLUDING_SHIPMENT

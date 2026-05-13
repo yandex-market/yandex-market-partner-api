@@ -24,6 +24,9 @@ description: >
   * `DECLINE_REFUND` — отказать в возврате.
 
 
+  * `PARTIAL_MONEY_REFUND` — частичный возврат денег.
+
+
   * `OTHER_DECISION` — другое решение.
 type: string
 enum:
@@ -34,4 +37,5 @@ enum:
   - REPLACE
   - SEND_TO_EXAMINATION
   - DECLINE_REFUND
+  - PARTIAL_MONEY_REFUND
   - OTHER_DECISION

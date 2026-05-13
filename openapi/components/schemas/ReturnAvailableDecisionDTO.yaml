@@ -13,3 +13,10 @@ properties:
     minItems: 1
     items:
       $ref: ./ReturnRequestDecisionReasonType.yaml
+  partialCompensationBounds:
+    description: >
+      Пределы суммы частичной компенсации. Заполнено только при `decisionType` =
+      `PARTIAL_MONEY_REFUND`;
+
+      для остальных типов решений поле отсутствует.
+    $ref: ./PartialCompensationBoundsDTO.yaml

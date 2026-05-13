@@ -1,0 +1,19 @@
+description: >
+  Пределы суммы частичной компенсации. Используется только в элементе с
+  `decisionType` = `PARTIAL_MONEY_REFUND`.
+type: object
+required:
+  - minAmount
+  - maxAmount
+  - maxPercent
+properties:
+  minAmount:
+    $ref: ./BasePriceDTO.yaml
+  maxAmount:
+    $ref: ./BasePriceDTO.yaml
+  maxPercent:
+    description: >-
+      Верхний предел доли суммы позиции, которую можно компенсировать (в
+      процентах).
+    type: integer
+    format: int64
