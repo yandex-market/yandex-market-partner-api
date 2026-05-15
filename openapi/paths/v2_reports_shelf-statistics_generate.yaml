@@ -22,6 +22,9 @@ post:
         amount: 1
         period: minutes
         period-duration: 1
+  x-apphost:
+    domain: MONETIZATION
+    enabled: false
   operationId: generateShelfsStatisticsReport
   summary: Отчет по полкам
   description: "{% include notitle [access](../../_auto/method_scopes/generateShelfsStatisticsReport.md) %}\n\nЗапускает генерацию сводного отчета по полкам — рекламным блокам с баннером или видео и набором товаров. {% if audience == \"partner\" %}Подробнее о них читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/marketing/shelf).{% endif %}\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [reports](../../_auto/reports/incuts/shelfs_statistics.md) %}\n\n{% if audience != \"advertiser\" %}\n\n{% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}\n\n{% endif %}\n\n{% include notitle [limit](../../_auto/method_limits/generateShelfsStatisticsReport.md) %}\n"

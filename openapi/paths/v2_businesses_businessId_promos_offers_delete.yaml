@@ -25,6 +25,9 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-apphost:
+    domain: PROMO
+    enabled: false
   operationId: deletePromoOffers
   summary: Удаление товаров из акции
   description: "{% include notitle [access](../../_auto/method_scopes/deletePromoOffers.md) %}\n\nУбирает товары из акции.\n\nИзменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST\_v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md).\n\n{% include notitle [limit](../../_auto/method_limits/deletePromoOffers.md) %}\n"

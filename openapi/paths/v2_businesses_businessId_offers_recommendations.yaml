@@ -26,6 +26,9 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-apphost:
+    domain: PROMO
+    enabled: false
   operationId: getOfferRecommendations
   summary: Рекомендации Маркета, касающиеся цен
   description: >
