@@ -13,3 +13,11 @@ properties:
       Справке Маркета для
       продавцов](https://yandex.ru/support/marketplace/ru/marketing/subscription).
     $ref: ./BusinessSubscriptionLevelType.yaml
+  traits:
+    description: Свойства кабинета.
+    type: array
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    items:
+      $ref: ./BusinessTraitType.yaml
