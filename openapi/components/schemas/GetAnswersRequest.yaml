@@ -4,3 +4,13 @@ type: object
 properties:
   questionId:
     $ref: ./QuestionId.yaml
+  answerIds:
+    description: |
+      Идентификаторы ответов.
+    type: array
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    maxItems: 50
+    items:
+      $ref: ./AnswerId.yaml

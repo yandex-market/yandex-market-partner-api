@@ -25,6 +25,9 @@ post:
         amount: 5000
         period: minutes
         period-duration: 1
+  x-apphost:
+    domain: FINANCE
+    enabled: false
   operationId: getGoodsStats
   summary: Отчет по товарам
   description: >

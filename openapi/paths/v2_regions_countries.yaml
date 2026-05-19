@@ -36,6 +36,9 @@ post:
         amount: 100
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: BASE
+    enabled: false
   operationId: getRegionsCodes
   summary: Список допустимых кодов стран
   description: >

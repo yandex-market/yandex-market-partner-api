@@ -36,6 +36,9 @@ get:
         amount: 10000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: BASE
+    enabled: false
   operationId: searchRegionsById
   summary: Информация о регионе
   description: >

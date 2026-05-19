@@ -63,3 +63,9 @@ properties:
 
       Штрихкод получения заказа на ПВЗ.
     type: string
+  receiveCode:
+    description: |
+      **Только для модели LaaS**
+
+      Код получения заказа на ПВЗ.
+    type: string

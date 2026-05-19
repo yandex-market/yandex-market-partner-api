@@ -36,6 +36,9 @@ get:
         amount: 1000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: BASE
+    enabled: false
   operationId: searchRegionChildren
   summary: Информация о дочерних регионах
   description: >

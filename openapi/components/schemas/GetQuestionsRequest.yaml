@@ -11,6 +11,15 @@ properties:
       type: integer
       format: int64
       minimum: 0
+  questionIds:
+    type: array
+    description: Идентификаторы вопросов.
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    maxItems: 50
+    items:
+      $ref: ./QuestionId.yaml
   dateFrom:
     description: >
       Дата начала периода создания вопроса.

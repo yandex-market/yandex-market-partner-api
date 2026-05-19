@@ -81,3 +81,9 @@ properties:
     description: |
       Код подтверждения ЭАПП (для типа `MERCHANT_TO_COURIER`).
     type: string
+  receiveCode:
+    description: |
+      **Только для модели LaaS**
+
+      Код получения заказа на ПВЗ.
+    type: string
