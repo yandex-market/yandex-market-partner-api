@@ -22,6 +22,9 @@ post:
         amount: 100
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: updateWarehouseStatus
   summary: Изменение статуса склада
   description: >

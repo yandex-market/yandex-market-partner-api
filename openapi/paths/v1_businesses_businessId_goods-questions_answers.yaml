@@ -24,6 +24,9 @@ post:
         amount: 5000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: UGC
+    enabled: false
   operationId: getGoodsQuestionAnswers
   summary: Получение ответов на вопрос
   description: >

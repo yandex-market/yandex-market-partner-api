@@ -22,6 +22,9 @@ post:
         amount: 1000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: ORDERS
+    enabled: false
   operationId: updateExternalOrderId
   summary: Передача внешнего идентификатора заказа
   description: >

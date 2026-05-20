@@ -20,6 +20,9 @@ put:
         amount: 10000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: updateOrderStorageLimit
   summary: Продление срока хранения заказа
   description: "{% include notitle [access](../../_auto/method_scopes/updateOrderStorageLimit.md) %}\n\nПродлевает срок хранения заказа в пункте выдачи продавца.\n\nЗаказ должен быть в статусе `PICKUP`. Продлить срок можно только один раз, не больше чем на 30 дней.\n\nНовый срок хранения можно получить в параметре `outletStorageLimitDate` в ответе метода [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).\n\n{% include notitle [limit](../../_auto/method_limits/updateOrderStorageLimit.md) %}\n"

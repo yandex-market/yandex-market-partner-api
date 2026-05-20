@@ -26,6 +26,9 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getDeliveryOptions
   summary: Получение доступных вариантов доставки заказов
   description: >

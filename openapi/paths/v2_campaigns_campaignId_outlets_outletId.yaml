@@ -20,6 +20,9 @@ put:
         amount: 100000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
   description: |
@@ -85,6 +88,9 @@ get:
         amount: 10000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getOutlet
   summary: Информация об одной точке продаж
   description: |
@@ -137,6 +143,9 @@ delete:
         amount: 100000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: deleteOutlet
   summary: Удаление точки продаж
   description: |

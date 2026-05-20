@@ -20,6 +20,9 @@ get:
         amount: 200
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: downloadShipmentInboundAct
   summary: Получение фактического акта приема-передачи
   description: >

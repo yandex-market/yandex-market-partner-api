@@ -24,6 +24,9 @@ post:
         amount: 10000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: BASE
+    enabled: false
   operationId: getChatHistory
   summary: Получение истории сообщений в чате
   description: |

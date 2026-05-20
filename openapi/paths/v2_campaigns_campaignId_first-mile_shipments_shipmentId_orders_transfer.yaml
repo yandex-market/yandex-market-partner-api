@@ -20,6 +20,9 @@ post:
         amount: 200
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: transferOrdersFromShipment
   summary: Перенос заказов в следующую отгрузку
   description: >

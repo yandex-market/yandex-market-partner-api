@@ -23,6 +23,9 @@ post:
         amount: 1000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: UGC
+    enabled: false
   operationId: skipGoodsFeedbacksReaction
   summary: Пропуск реакции на отзывы
   description: "{% include notitle [access](../../_auto/method_scopes/skipGoodsFeedbacksReaction.md) %}\n\nПропускает реакцию на отзыв — параметр `needReaction` принимает значение `false` в методе получения всех отзывов [POST\_v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).\n\n{% include notitle [limit](../../_auto/method_limits/skipGoodsFeedbacksReaction.md) %}\n"

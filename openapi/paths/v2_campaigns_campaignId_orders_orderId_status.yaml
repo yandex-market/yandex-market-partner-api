@@ -23,6 +23,9 @@ put:
         amount: 10000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: ORDERS
+    enabled: false
   operationId: updateOrderStatus
   summary: Изменение статуса одного заказа
   description: >

@@ -33,6 +33,9 @@ post:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getLogisticPoints
   summary: Получение точек ПВЗ Маркета
   description: >

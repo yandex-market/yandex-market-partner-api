@@ -24,6 +24,9 @@ post:
         amount: 5000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: BASE
+    enabled: false
   operationId: getChats
   summary: Получение доступных чатов
   description: "{% include notitle [access](../../_auto/method_scopes/getChats.md) %}\n\nВозвращает чаты с покупателями.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getChats.md) %}\n"

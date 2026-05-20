@@ -20,6 +20,9 @@ put:
         amount: 10000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: setOrderDeliveryDate
   summary: Изменение даты доставки заказа
   description: >

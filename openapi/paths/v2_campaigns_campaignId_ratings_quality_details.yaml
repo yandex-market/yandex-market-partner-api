@@ -25,6 +25,9 @@ post:
         amount: 5000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: ORDERS
+    enabled: false
   operationId: getQualityRatingDetails
   summary: Заказы, которые повлияли на индекс качества
   description: "{% include notitle [access](../../_auto/method_scopes/getQualityRatingDetails.md) %}\n\nВозвращает список заказов, которые повлияли на индекс качества магазина. Чтобы узнать значение индекса качества, выполните запрос [POST\_v2/businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).\n\n{% include notitle [limit](../../_auto/method_limits/getQualityRatingDetails.md) %}\n"

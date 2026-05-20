@@ -21,6 +21,9 @@ get:
         amount: 100000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getOutletLicenses
   summary: Информация о лицензиях для точек продаж
   description: >
@@ -88,6 +91,9 @@ delete:
         amount: 100000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: deleteOutletLicenses
   summary: Удаление лицензий для точек продаж
   description: >
@@ -150,6 +156,9 @@ post:
         amount: 100000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: updateOutletLicenses
   summary: Создание и изменение лицензий для точек продаж
   description: >

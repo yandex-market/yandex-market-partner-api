@@ -23,6 +23,9 @@ post:
         amount: 1
         period: minutes
         period-duration: 1
+  x-apphost:
+    domain: ORDERS
+    enabled: false
   operationId: generateSalesGeographyReport
   summary: Отчет по географии продаж
   description: "{% include notitle [access](../../_auto/method_scopes/generateSalesGeographyReport.md) %}\n\nЗапускает генерацию отчета по географии продаж. [Что это за отчет](https://yandex.ru/support/marketplace/ru/analytics/sales-geography)\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [reports](../../_auto/reports/locality/locality_offers_report_v2.md) %}\n\n{% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}\n\n{% include notitle [limit](../../_auto/method_limits/generateSalesGeographyReport.md) %}\n"

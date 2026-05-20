@@ -24,6 +24,9 @@ post:
         amount: 1
         period: minutes
         period-duration: 1
+  x-apphost:
+    domain: ORDERS
+    enabled: false
   operationId: generateJewelryFiscalReport
   summary: Отчет по заказам с ювелирными изделиями
   description: "{% include notitle [access](../../_auto/method_scopes/generateJewelryFiscalReport.md) %}\n\nЗапускает генерацию отчета по заказам с ювелирными изделиями.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% include notitle [reports](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md) %}\n\n{% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}\n\n{% include notitle [limit](../../_auto/method_limits/generateJewelryFiscalReport.md) %}\n"

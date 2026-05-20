@@ -20,6 +20,9 @@ post:
         amount: 100000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: createOutlet
   summary: Создание точки продаж
   description: |
@@ -84,6 +87,9 @@ get:
         amount: 100000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getOutlets
   summary: Информация о нескольких точках продаж
   description: |

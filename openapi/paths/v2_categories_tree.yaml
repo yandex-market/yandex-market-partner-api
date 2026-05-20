@@ -36,6 +36,9 @@ post:
         amount: 100
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: OFFERS_CATALOG
+    enabled: false
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: >

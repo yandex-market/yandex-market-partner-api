@@ -33,6 +33,9 @@ get:
         amount: 100
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getFulfillmentWarehouses
   summary: Идентификаторы фулфилмент-складов Маркета
   description: >

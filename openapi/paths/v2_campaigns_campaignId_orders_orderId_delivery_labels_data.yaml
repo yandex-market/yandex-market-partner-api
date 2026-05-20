@@ -25,6 +25,9 @@ get:
   x-restrictions:
     - market-yandex-go
     - urbanads
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getOrderLabelsData
   summary: Данные для самостоятельного изготовления ярлыков
   description: >

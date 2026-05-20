@@ -22,6 +22,9 @@ post:
         amount: 1000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getSupplyRequests
   summary: Получение информации о заявках на поставку, вывоз и утилизацию
   description: >

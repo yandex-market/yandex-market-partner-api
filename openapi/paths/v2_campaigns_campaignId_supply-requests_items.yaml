@@ -33,6 +33,9 @@ post:
 
     {% include notitle
     [limit](../../_auto/method_limits/getSupplyRequestItems.md) %}
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getSupplyRequestItems
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

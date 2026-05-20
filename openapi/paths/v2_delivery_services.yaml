@@ -34,6 +34,9 @@ get:
         amount: 5000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: LOGISTICS
+    enabled: false
   operationId: getDeliveryServices
   summary: Справочник служб доставки
   description: >

@@ -25,6 +25,9 @@ post:
         amount: 3000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: ORDERS
+    enabled: false
   operationId: getOrderBusinessDocumentsInfo
   summary: Информация о документах
   description: >

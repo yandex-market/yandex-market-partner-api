@@ -23,6 +23,9 @@ post:
         amount: 10000
         period: minutes
         period-duration: 1
+  x-apphost:
+    domain: OFFERS_CATALOG
+    enabled: false
   operationId: deleteOffersFromArchive
   summary: Удаление товаров из архива
   description: >

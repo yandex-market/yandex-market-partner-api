@@ -23,6 +23,9 @@ post:
         amount: 1000
         period: hours
         period-duration: 1
+  x-apphost:
+    domain: UGC
+    enabled: false
   operationId: deleteGoodsFeedbackComment
   summary: Удаление комментария к отзыву
   description: >
