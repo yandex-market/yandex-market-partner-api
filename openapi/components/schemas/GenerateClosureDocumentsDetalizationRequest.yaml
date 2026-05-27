@@ -2,6 +2,7 @@ description: |
   Данные, необходимые для генерации отчета.
 type: object
 required:
+  - campaignId
   - monthOfYear
   - contractType
 properties:
