@@ -8,6 +8,7 @@ post:
     - laas
   x-auth-scopes:
     - all-methods
+    - all-methods:read-only
     - finance-and-accounting
   x-restrictions:
     - urbanads

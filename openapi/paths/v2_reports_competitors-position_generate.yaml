@@ -7,7 +7,9 @@ post:
     - express
   x-auth-scopes:
     - all-methods
+    - all-methods:read-only
     - promotion
+    - promotion:read-only
     - finance-and-accounting
   x-restrictions:
     - urbanads

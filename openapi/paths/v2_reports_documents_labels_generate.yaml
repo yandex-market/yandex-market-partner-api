@@ -6,7 +6,9 @@ post:
     - express
   x-auth-scopes:
     - all-methods
+    - all-methods:read-only
     - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
   x-restrictions:
     - urbanads
   x-resource-limit-config:

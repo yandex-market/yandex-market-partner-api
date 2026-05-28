@@ -7,8 +7,10 @@ post:
     - express
   x-auth-scopes:
     - all-methods
+    - all-methods:read-only
     - finance-and-accounting
     - promotion
+    - promotion:read-only
   x-resource-limit-config:
     path: resp
     amount: 100
