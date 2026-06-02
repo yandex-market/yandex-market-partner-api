@@ -35,6 +35,8 @@ description: >
   * `ILLIQUID_GOODS_SALE` — вознаграждение за продажу невывезенных товаров.
 
   * `CROSSREGIONAL_DELIVERY` - доставка средней мили.
+
+  * `FULFILLMENT_WITHDRAW` - вывоз со склада.
 type: string
 enum:
   - FEE
@@ -52,3 +54,4 @@ enum:
   - RETURN_PROCESSING
   - ILLIQUID_GOODS_SALE
   - CROSSREGIONAL_DELIVERY
+  - FULFILLMENT_WITHDRAW
