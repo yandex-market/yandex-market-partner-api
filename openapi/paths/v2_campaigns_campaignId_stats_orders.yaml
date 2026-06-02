@@ -13,10 +13,9 @@ post:
   x-restrictions:
     - urbanads
   x-resource-limit-config:
-    path: resp.result.orders
+    path: resp
     amount: 1000000
     period: hours
-    tariff-path: resp
     tariff-resource-limits:
       none:
         amount: 10000
