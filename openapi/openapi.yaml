@@ -250,6 +250,9 @@ paths:
     $ref: paths/v2_reports_key-indicators_generate.yaml
   /v2/reports/closure-documents/detalization/generate:
     $ref: paths/v2_reports_closure-documents_detalization_generate.yaml
+  /v1/businesses/{businessId}/reports/marketing-detalization/generate:
+    $ref: >-
+      paths/v1_businesses_businessId_reports_marketing-detalization_generate.yaml
   /v1/reports/documents/barcodes/generate:
     $ref: paths/v1_reports_documents_barcodes_generate.yaml
   /v2/campaigns/{campaignId}/outlets:

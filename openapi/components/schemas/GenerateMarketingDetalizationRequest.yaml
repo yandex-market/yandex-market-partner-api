@@ -1,0 +1,9 @@
+description: |
+  Данные, необходимые для генерации отчета.
+type: object
+required:
+  - monthOfYear
+properties:
+  monthOfYear:
+    description: Период генерации отчета.
+    $ref: ./ClosureDocumentsMonthOfYearDTO.yaml
