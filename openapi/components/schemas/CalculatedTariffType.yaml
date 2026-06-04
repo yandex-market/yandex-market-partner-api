@@ -27,6 +27,9 @@ description: >
   * `MIDDLE_MILE` — средняя миля.
 
 
+  * `ITEM_BOOKING` — бронирование товара.
+
+
   Подробнее об услугах Маркета читайте [в Справке Маркета для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
@@ -39,3 +42,4 @@ enum:
   - EXPRESS_DELIVERY
   - SORTING
   - MIDDLE_MILE
+  - ITEM_BOOKING

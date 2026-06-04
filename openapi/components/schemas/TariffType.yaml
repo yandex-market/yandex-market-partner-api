@@ -97,6 +97,9 @@ description: >
   * `WITHDRAW_EXTERNAL` — отгрузка на внешний маркетплейс.
 
 
+  * `ITEM_BOOKING` — бронирование товара.
+
+
   Подробнее об услугах Маркета читайте [в Справке Маркета для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
@@ -131,3 +134,4 @@ enum:
   - CARGO_ACCEPTANCE
   - ORDER_PROCESSING
   - WITHDRAW_EXTERNAL
+  - ITEM_BOOKING
