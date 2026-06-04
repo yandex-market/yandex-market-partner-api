@@ -14,17 +14,14 @@ post:
     - urbanads
   x-resource-limit-config:
     path: resp
-    amount: 1000000
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 10000
-        period: hours
-        period-duration: 1
-      medium:
-        amount: 10000
-        period: hours
-        period-duration: 1
+    none:
+      amount: 10000
+      period: hours
+      period-duration: 1
+    medium:
+      amount: 10000
+      period: hours
+      period-duration: 1
   x-apphost:
     domain: FINANCE
     enabled: false

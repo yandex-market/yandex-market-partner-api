@@ -10,17 +10,14 @@ get:
     - urbanads
   x-resource-limit-config:
     path: resp
-    amount: 100000
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 100000
-        period: hours
-        period-duration: 1
-      medium:
-        amount: 100000
-        period: hours
-        period-duration: 1
+    none:
+      amount: 100000
+      period: hours
+      period-duration: 1
+    medium:
+      amount: 100000
+      period: hours
+      period-duration: 1
   x-apphost:
     domain: LOGISTICS
     enabled: false
@@ -80,17 +77,14 @@ delete:
     - urbanads
   x-resource-limit-config:
     path: resp
-    amount: 100000
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 100000
-        period: hours
-        period-duration: 1
-      medium:
-        amount: 100000
-        period: hours
-        period-duration: 1
+    none:
+      amount: 100000
+      period: hours
+      period-duration: 1
+    medium:
+      amount: 100000
+      period: hours
+      period-duration: 1
   x-apphost:
     domain: LOGISTICS
     enabled: false
@@ -145,17 +139,14 @@ post:
     - urbanads
   x-resource-limit-config:
     path: resp
-    amount: 100000
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 100000
-        period: hours
-        period-duration: 1
-      medium:
-        amount: 100000
-        period: hours
-        period-duration: 1
+    none:
+      amount: 100000
+      period: hours
+      period-duration: 1
+    medium:
+      amount: 100000
+      period: hours
+      period-duration: 1
   x-apphost:
     domain: LOGISTICS
     enabled: false

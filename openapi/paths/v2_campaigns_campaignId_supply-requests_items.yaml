@@ -11,17 +11,14 @@ post:
     - urbanads
   x-resource-limit-config:
     path: resp
-    amount: 1000
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 1000
-        period: hours
-        period-duration: 1
-      medium:
-        amount: 1000
-        period: hours
-        period-duration: 1
+    none:
+      amount: 1000
+      period: hours
+      period-duration: 1
+    medium:
+      amount: 1000
+      period: hours
+      period-duration: 1
   summary: Получение товаров в заявке на поставку, вывоз или утилизацию
   description: >
     {% include notitle

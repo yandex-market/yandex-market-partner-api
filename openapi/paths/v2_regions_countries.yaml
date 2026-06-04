@@ -25,17 +25,14 @@ post:
     - urbanads
   x-resource-limit-config:
     path: resp
-    amount: 100
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 100
-        period: hours
-        period-duration: 1
-      medium:
-        amount: 100
-        period: hours
-        period-duration: 1
+    none:
+      amount: 100
+      period: hours
+      period-duration: 1
+    medium:
+      amount: 100
+      period: hours
+      period-duration: 1
   x-apphost:
     domain: BASE
     enabled: false

@@ -12,17 +12,14 @@ post:
     - finance-and-accounting
   x-resource-limit-config:
     path: resp
-    amount: 100
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 1
-        period: minutes
-        period-duration: 2
-      medium:
-        amount: 1
-        period: minutes
-        period-duration: 1
+    none:
+      amount: 1
+      period: minutes
+      period-duration: 2
+    medium:
+      amount: 1
+      period: minutes
+      period-duration: 1
   x-apphost:
     domain: FINANCE
     enabled: false

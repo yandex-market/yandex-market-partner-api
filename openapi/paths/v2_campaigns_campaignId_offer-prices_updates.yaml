@@ -13,18 +13,15 @@ post:
     - urbanads
   x-resource-limit-config:
     path: req.offers
-    amount: 10000
-    period: minutes
     parallel-limit-value: 12
-    tariff-resource-limits:
-      none:
-        amount: 10000
-        period: minutes
-        period-duration: 1
-      medium:
-        amount: 10000
-        period: minutes
-        period-duration: 1
+    none:
+      amount: 10000
+      period: minutes
+      period-duration: 1
+    medium:
+      amount: 10000
+      period: minutes
+      period-duration: 1
   x-apphost:
     domain: PROMO
     enabled: false

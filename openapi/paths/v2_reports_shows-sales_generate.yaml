@@ -13,17 +13,14 @@ post:
     - urbanads
   x-resource-limit-config:
     path: resp
-    amount: 10
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 1
-        period: minutes
-        period-duration: 10
-      medium:
-        amount: 1
-        period: minutes
-        period-duration: 6
+    none:
+      amount: 1
+      period: minutes
+      period-duration: 10
+    medium:
+      amount: 1
+      period: minutes
+      period-duration: 6
   x-apphost:
     domain: MONETIZATION
     enabled: false

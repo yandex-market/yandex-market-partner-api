@@ -23,17 +23,14 @@ get:
     - supplies-management:read-only
   x-resource-limit-config:
     path: resp
-    amount: 100
-    period: minutes
-    tariff-resource-limits:
-      none:
-        amount: 100
-        period: minutes
-        period-duration: 1
-      medium:
-        amount: 100
-        period: minutes
-        period-duration: 1
+    none:
+      amount: 100
+      period: minutes
+      period-duration: 1
+    medium:
+      amount: 100
+      period: minutes
+      period-duration: 1
   x-apphost:
     domain: API
     enabled: false

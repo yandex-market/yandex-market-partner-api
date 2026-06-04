@@ -11,17 +11,14 @@ get:
     - urbanads
   x-resource-limit-config:
     path: resp
-    amount: 200
-    period: hours
-    tariff-resource-limits:
-      none:
-        amount: 200
-        period: hours
-        period-duration: 1
-      medium:
-        amount: 200
-        period: hours
-        period-duration: 1
+    none:
+      amount: 200
+      period: hours
+      period-duration: 1
+    medium:
+      amount: 200
+      period: hours
+      period-duration: 1
   x-apphost:
     domain: LOGISTICS
     enabled: false
