@@ -35,6 +35,8 @@ description: >
 
       * `USER_IDENTIFICATION_MISMATCH` — идентификационный документ покупателя не совпадает с данными в заказе.
 
+      * `PURCHASE_GROUP_THRESHOLD_NOT_REACHED_CANCELLED` — Отменили, потому что не набралась группа.
+
       * `REPLACING_ORDER` — покупатель решил заменить товар другим по собственной инициативе.
 
       * `PROCESSING_EXPIRED` — значение более не используется.
@@ -177,4 +179,5 @@ enum:
   - AWAIT_PAYMENT_AFTER_DELIVERY
   - AWAIT_USER_STEAM_FAST_URL
   - USER_IDENTIFICATION_MISMATCH
+  - PURCHASE_GROUP_THRESHOLD_NOT_REACHED_CANCELLED
   - UNKNOWN
