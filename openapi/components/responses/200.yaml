@@ -1,0 +1,5 @@
+description: Пустой ответ.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/EmptyApiResponse.yaml

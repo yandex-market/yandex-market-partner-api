@@ -59,19 +59,9 @@ put:
           $ref: ../components/schemas/UpdateStocksRequest.yaml
   responses:
     '200':
-      description: Пустой ответ.
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/EmptyApiResponse.yaml
+      $ref: ../components/responses/200.yaml
     '400':
-      description: >
-        Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
-        остатками](../../concepts/error-codes#stocks)
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
+      $ref: ../components/responses/400Stocks.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':
@@ -131,7 +121,7 @@ post:
           schema:
             $ref: ../components/schemas/GetWarehouseStocksResponse.yaml
     '400':
-      $ref: ../components/responses/400.yaml
+      $ref: ../components/responses/400Stocks.yaml
     '401':
       $ref: ../components/responses/401.yaml
     '403':

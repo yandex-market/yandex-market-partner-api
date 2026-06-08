@@ -1,0 +1,7 @@
+description: >
+  Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+  остатками](../../concepts/error-codes#stocks)
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiClientDataErrorResponse.yaml

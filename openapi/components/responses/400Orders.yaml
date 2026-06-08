@@ -1,0 +1,7 @@
+description: >
+  Запрос содержит неправильные данные. [Подробнее об ошибках при работе с
+  заказами](../../concepts/error-codes#orders)
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiClientDataErrorResponse.yaml
