@@ -27,7 +27,7 @@ post:
     - urbanads
   x-apphost:
     domain: MONETIZATION
-    enabled: false
+    enabled: true
   operationId: getBidsRecommendations
   summary: Рекомендованные ставки для заданных товаров
   description: >
