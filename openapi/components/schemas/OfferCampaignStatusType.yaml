@@ -20,6 +20,8 @@ description: >
 
   * `ARCHIVED` — В архиве.
 
+  * `READY_FOR_PUBLICATION` — Магазин в процессе подключения.
+
 
   [Что обозначает каждый из
   статусов](https://yandex.ru/support/marketplace/assortment/add/statuses.html)
@@ -34,3 +36,4 @@ enum:
   - NO_CARD
   - NO_STOCKS
   - ARCHIVED
+  - READY_FOR_PUBLICATION
