@@ -1,0 +1,9 @@
+description: |
+  Тип кабинета:
+
+  * `SELLER` — продавец.
+  * `ADVERTISER` — рекламодатель.
+type: string
+enum:
+  - SELLER
+  - ADVERTISER

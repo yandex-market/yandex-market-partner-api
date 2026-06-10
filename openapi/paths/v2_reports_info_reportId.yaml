@@ -51,6 +51,7 @@ get:
     {% include notitle [limit](../../_auto/method_limits/getReportInfo.md) %}
   parameters:
     - $ref: ../components/parameters/ReportId.yaml
+    - $ref: ../components/parameters/SourceType.yaml
   responses:
     '200':
       description: "Статус генерации отчета или документа и ссылка, если она уже есть.\n\n{% note tip \"Статус генерации `FAILED` или `NO_DATA`\" %}\n\nПроверьте корректность запроса на генерацию. Например, верно ли указан идентификатор кампании, период или номер платежного поручения.\n\n{% endnote %}\n\n\_\n"
