@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 59
   tags:
     - hidden-offers
     - fby
@@ -72,6 +73,7 @@ post:
     '500':
       $ref: ../components/responses/500.yaml
 get:
+  x-resource-id: 61
   tags:
     - hidden-offers
     - fby

@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 242
   tags:
     - hidden-offers
     - fby

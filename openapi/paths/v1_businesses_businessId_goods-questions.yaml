@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 285
   tags:
     - goods-questions
     - fby

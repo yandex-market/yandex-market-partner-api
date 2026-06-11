@@ -1,4 +1,5 @@
 get:
+  x-resource-id: 63
   tags:
     - prices
     - fby
@@ -76,6 +77,7 @@ get:
     '500':
       $ref: ../components/responses/500.yaml
 post:
+  x-resource-id: 176
   tags:
     - prices
     - fby

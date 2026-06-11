@@ -1,4 +1,5 @@
 put:
+  x-resource-id: 57
   tags:
     - orders
     - dbs

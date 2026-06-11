@@ -1,4 +1,5 @@
 put:
+  x-resource-id: 141
   tags:
     - stocks
     - fbs
@@ -73,6 +74,7 @@ put:
     '500':
       $ref: ../components/responses/500.yaml
 post:
+  x-resource-id: 201
   tags:
     - stocks
     - fby

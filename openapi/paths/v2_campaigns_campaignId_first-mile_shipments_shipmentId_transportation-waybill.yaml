@@ -1,4 +1,5 @@
 get:
+  x-resource-id: 140
   tags:
     - shipments
     - fbs

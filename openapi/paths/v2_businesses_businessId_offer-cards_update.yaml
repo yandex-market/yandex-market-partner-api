@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 199
   tags:
     - content
     - dbs

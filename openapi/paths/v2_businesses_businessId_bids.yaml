@@ -1,4 +1,5 @@
 put:
+  x-resource-id: 165
   tags:
     - bids
     - dbs

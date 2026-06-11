@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 253
   tags:
     - supply-requests
     - fby

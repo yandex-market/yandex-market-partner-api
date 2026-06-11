@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 175
   tags:
     - price-quarantine
     - dbs

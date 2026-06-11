@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 216
   tags:
     - tariffs
     - fbs

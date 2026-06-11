@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 256
   tags:
     - auth
     - fby

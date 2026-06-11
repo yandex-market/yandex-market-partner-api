@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 225
   deprecated: true
   tags:
     - categories

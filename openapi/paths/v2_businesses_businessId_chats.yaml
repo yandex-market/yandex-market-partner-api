@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 208
   tags:
     - chats
     - dbs

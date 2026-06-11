@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 235
   tags:
     - promos
     - fby

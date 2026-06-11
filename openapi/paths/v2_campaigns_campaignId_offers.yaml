@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 181
   tags:
     - offers
     - dbs

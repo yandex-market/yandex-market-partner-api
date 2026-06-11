@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 177
   tags:
     - prices
     - fby

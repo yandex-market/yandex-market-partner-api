@@ -1,4 +1,5 @@
 get:
+  x-resource-id: 113
   tags:
     - outlet-licenses
     - dbs
@@ -67,6 +68,7 @@ get:
     '500':
       $ref: ../components/responses/500.yaml
 delete:
+  x-resource-id: 112
   tags:
     - outlet-licenses
     - dbs
@@ -129,6 +131,7 @@ delete:
     '500':
       $ref: ../components/responses/500.yaml
 post:
+  x-resource-id: 114
   tags:
     - outlet-licenses
     - dbs

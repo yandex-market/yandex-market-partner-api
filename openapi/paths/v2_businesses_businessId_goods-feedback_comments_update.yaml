@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 232
   tags:
     - goods-feedback
     - fby

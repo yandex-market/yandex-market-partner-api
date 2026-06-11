@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 245
   tags:
     - warehouses
     - fbs

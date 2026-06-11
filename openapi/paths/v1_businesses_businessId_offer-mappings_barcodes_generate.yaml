@@ -1,4 +1,5 @@
 post:
+  x-resource-id: 281
   tags:
     - business-offer-mappings
     - dbs
