@@ -1,0 +1,12 @@
+description: Количество единиц товара с определенным статусом.
+type: object
+required:
+  - status
+  - count
+properties:
+  status:
+    $ref: ./OrderItemUnitStatusType.yaml
+  count:
+    description: Количество единиц товара.
+    type: integer
+    format: int64

@@ -41,6 +41,16 @@ properties:
     uniqueItems: true
     items:
       $ref: ./OrderItemInstanceType.yaml
+  itemStatuses:
+    description: |
+      Информация о статусах отдельных единиц товара в заказе.
+
+      Если данных о статусах отдельных единиц товара нет, поле отсутствует.
+    type: array
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./OrderItemUnitStatusDTO.yaml
   tags:
     description: Признаки товара.
     type: array

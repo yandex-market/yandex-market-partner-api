@@ -1,0 +1,25 @@
+description: |
+  Статус единицы товара в заказе.
+
+  * `CREATED` — создана.
+
+  * `SHIPPED` — передана в доставку.
+
+  * `CANCELLED` — отменена или удалена из заказа.
+
+  * `DELIVERED_TO_BUYER` — передана покупателю.
+
+  * `LOST` — утеряна.
+
+  * `REJECTED` — невыкупленная.
+
+  * `RETURNED` — возвращенная.
+type: string
+enum:
+  - CREATED
+  - SHIPPED
+  - CANCELLED
+  - DELIVERED_TO_BUYER
+  - LOST
+  - REJECTED
+  - RETURNED
