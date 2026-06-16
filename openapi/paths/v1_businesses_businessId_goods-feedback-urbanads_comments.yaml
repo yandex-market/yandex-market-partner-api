@@ -1,0 +1,102 @@
+post:
+  x-resource-id: 292
+  tags:
+    - goods-feedback
+    - fby
+    - fbs
+    - dbs
+    - express
+  x-auth-scopes:
+    - all-methods
+    - all-methods:read-only
+    - communication
+  x-resource-limit-config:
+    path: resp
+    none:
+      amount: 5000
+      period: hours
+      period-duration: 1
+    medium:
+      amount: 5000
+      period: hours
+      period-duration: 1
+  x-apphost:
+    domain: UGC
+    enabled: true
+  operationId: getGoodsFeedbackUrbanadsComments
+  summary: Получение комментариев к отзыву
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/getGoodsFeedbackUrbanadsComments.md) %}
+
+
+    Возвращает комментарии к отзыву, кроме:
+
+      * тех, которые удалили пользователи или Маркет;
+      * комментариев к удаленным отзывам.
+
+    Идентификатор родительского комментария `parentId` возвращается только для
+    ответов на другие комментарии, но не для ответов на отзывы.
+
+
+    {% if audience != "advertiser" %}
+
+
+    {% note tip "Вы также можете настроить API-уведомления" %}
+
+
+    Маркет отправит вам
+    [запрос](../../push-notifications/reference/sendNotification.md), когда
+    появится новый комментарий. А полную информацию о нем можно получить с
+    помощью этого метода.
+
+
+    [{#T}](../../push-notifications/index.md)
+
+
+    {% endnote %}
+
+
+    {% endif %}
+
+
+    Результаты возвращаются постранично.
+
+
+    Комментарии расположены в порядке публикации, поэтому вы можете передавать
+    определенный идентификатор страницы в `pageToken`, если вы получали его
+    ранее.
+
+
+    {% include notitle
+    [limit](../../_auto/method_limits/getGoodsFeedbackUrbanadsComments.md) %}
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/AliasedPageToken.yaml
+    - $ref: ../components/parameters/PageLimit50.yaml
+    - $ref: ../components/parameters/SourceType.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/GetGoodsFeedbackCommentsRequest.yaml
+  responses:
+    '200':
+      description: Дерево комментариев к отзыву.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/GetGoodsFeedbackCommentsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

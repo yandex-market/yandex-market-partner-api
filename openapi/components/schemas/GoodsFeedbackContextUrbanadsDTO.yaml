@@ -1,0 +1,21 @@
+description: Информация о товаре, бизнесе и бренде, которые связаны с отзывом.
+type: object
+properties:
+  offerName:
+    description: Название товара, под которым оставлен отзыв.
+    type: string
+  pictureUrl:
+    description: Ссылка на фотографию товара.
+    $ref: ./Url.yaml
+  businessId:
+    description: Идентификатор бизнеса, под товаром которого оставлен отзыв.
+    $ref: ./BusinessId.yaml
+  businessName:
+    description: Название бизнеса, под товаром которого оставлен отзыв.
+    type: string
+  brandId:
+    description: Идентификатор бренда товара.
+    type: string
+  brandName:
+    description: Название бренда товара.
+    type: string

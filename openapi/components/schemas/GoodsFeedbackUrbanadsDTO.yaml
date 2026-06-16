@@ -1,0 +1,29 @@
+description: Отзыв о товаре.
+type: object
+required:
+  - context
+  - statistics
+  - feedbackId
+  - needReaction
+  - createdAt
+properties:
+  feedbackId:
+    $ref: ./GoodsFeedbackId.yaml
+  createdAt:
+    description: Дата и время создания отзыва.
+    type: string
+    format: date-time
+  needReaction:
+    description: "Прочитан ли отзыв.\n\nПринимает значение `false`, если рекламодатель:\n\n* Прочитал отзыв в кабинете UrbanAds.\n* Пропустил реакцию на отзыв — метод [POST\_v1/businesses/{businessId}/goods-feedback-urbanads/skip-reaction](../../reference/goods-feedback/skipGoodsFeedbacksUrbanadsReaction.md).\n* Оставил комментарий к отзыву — метод [POST\_v1/businesses/{businessId}/goods-feedback-urbanads/comments/update](../../reference/goods-feedback/updateGoodsFeedbackUrbanadsComment.md).\n"
+    type: boolean
+  context:
+    $ref: ./GoodsFeedbackContextUrbanadsDTO.yaml
+  author:
+    description: Имя автора отзыва.
+    type: string
+  description:
+    $ref: ./GoodsFeedbackDescriptionDTO.yaml
+  media:
+    $ref: ./GoodsFeedbackMediaDTO.yaml
+  statistics:
+    $ref: ./GoodsFeedbackStatisticsDTO.yaml

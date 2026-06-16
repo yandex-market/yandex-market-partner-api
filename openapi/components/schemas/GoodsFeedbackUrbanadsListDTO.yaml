@@ -1,0 +1,13 @@
+description: |
+  Список отзывов о товарах.
+type: object
+required:
+  - feedbacks
+properties:
+  feedbacks:
+    description: Список отзывов.
+    type: array
+    items:
+      $ref: ./GoodsFeedbackUrbanadsDTO.yaml
+  paging:
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

@@ -273,6 +273,19 @@ paths:
     $ref: paths/v2_businesses_businessId_goods-feedback_comments_delete.yaml
   /v2/businesses/{businessId}/goods-feedback/comments:
     $ref: paths/v2_businesses_businessId_goods-feedback_comments.yaml
+  /v1/businesses/{businessId}/goods-feedback-urbanads:
+    $ref: paths/v1_businesses_businessId_goods-feedback-urbanads.yaml
+  /v1/businesses/{businessId}/goods-feedback-urbanads/skip-reaction:
+    $ref: >-
+      paths/v1_businesses_businessId_goods-feedback-urbanads_skip-reaction.yaml
+  /v1/businesses/{businessId}/goods-feedback-urbanads/comments/update:
+    $ref: >-
+      paths/v1_businesses_businessId_goods-feedback-urbanads_comments_update.yaml
+  /v1/businesses/{businessId}/goods-feedback-urbanads/comments/delete:
+    $ref: >-
+      paths/v1_businesses_businessId_goods-feedback-urbanads_comments_delete.yaml
+  /v1/businesses/{businessId}/goods-feedback-urbanads/comments:
+    $ref: paths/v1_businesses_businessId_goods-feedback-urbanads_comments.yaml
   /v1/businesses/{businessId}/goods-questions:
     $ref: paths/v1_businesses_businessId_goods-questions.yaml
   /v1/businesses/{businessId}/goods-questions/answers:

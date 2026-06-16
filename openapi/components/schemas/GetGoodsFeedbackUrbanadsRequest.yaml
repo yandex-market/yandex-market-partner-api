@@ -1,0 +1,62 @@
+description: |
+  Фильтр запроса отзывов в кабинете.
+type: object
+properties:
+  feedbackIds:
+    description: >
+      Идентификаторы отзывов.
+
+
+      ⚠️ Не используйте это поле одновременно с другими фильтрами. Если вы
+      хотите воспользоваться ими, оставьте поле пустым.
+    type: array
+    nullable: true
+    uniqueItems: true
+    minItems: 1
+    maxItems: 50
+    items:
+      $ref: ./GoodsFeedbackId.yaml
+  dateTimeFrom:
+    description: >
+      Начало периода. Не включительно.
+
+
+      Если параметр не указан, возвращается информация за 6 месяцев до указанной
+      в `dateTimeTo` даты.
+
+
+      Максимальный интервал 6 месяцев.
+    type: string
+    format: date-time
+    example: '2020-02-02T14:30:30+03:00'
+  dateTimeTo:
+    description: |
+      Конец периода. Не включительно.
+
+      Если параметр не указан, используется текущая дата.
+
+      Максимальный интервал 6 месяцев.
+    type: string
+    format: date-time
+    example: '2020-02-02T14:30:30+03:00'
+  reactionStatus:
+    description: >
+      Нужно ли вернуть только непрочитанные отзывы. Для этого передайте значение
+      `NEED_REACTION`.
+
+
+      По умолчанию возвращаются все отзывы.
+    $ref: ./FeedbackReactionStatusType.yaml
+  ratingValues:
+    description: Оценка товара.
+    type: array
+    uniqueItems: true
+    maxItems: 5
+    nullable: true
+    minItems: 1
+    items:
+      type: integer
+      format: int32
+  paid:
+    description: Фильтр отзывов за баллы Плюса.
+    type: boolean
