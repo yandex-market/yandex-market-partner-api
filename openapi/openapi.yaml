@@ -273,8 +273,8 @@ paths:
     $ref: paths/v2_businesses_businessId_goods-feedback_comments_delete.yaml
   /v2/businesses/{businessId}/goods-feedback/comments:
     $ref: paths/v2_businesses_businessId_goods-feedback_comments.yaml
-  /v1/businesses/{businessId}/goods-feedback-urbanads:
-    $ref: paths/v1_businesses_businessId_goods-feedback-urbanads.yaml
+  /v1/businesses/{businessId}/goods-feedback-advertiser:
+    $ref: paths/v1_businesses_businessId_goods-feedback-advertiser.yaml
   /v1/businesses/{businessId}/goods-feedback-urbanads/skip-reaction:
     $ref: >-
       paths/v1_businesses_businessId_goods-feedback-urbanads_skip-reaction.yaml

@@ -10,8 +10,6 @@ post:
     - all-methods
     - all-methods:read-only
     - communication
-  x-restrictions:
-    - urbanads
   x-resource-limit-config:
     path: resp
     none:
@@ -70,6 +68,7 @@ post:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml
     - $ref: ../components/parameters/PageLimit50.yaml
+    - $ref: ../components/parameters/SourceType.yaml
   requestBody:
     required: true
     content:

@@ -9,8 +9,6 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
-  x-restrictions:
-    - urbanads
   x-resource-limit-config:
     path: resp
     none:
@@ -29,6 +27,7 @@ post:
   description: "{% include notitle [access](../../_auto/method_scopes/skipGoodsFeedbacksReaction.md) %}\n\nПропускает реакцию на отзыв — параметр `needReaction` принимает значение `false` в методе получения всех отзывов [POST\_v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).\n\n{% include notitle [limit](../../_auto/method_limits/skipGoodsFeedbacksReaction.md) %}\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/SourceType.yaml
   requestBody:
     required: true
     content:

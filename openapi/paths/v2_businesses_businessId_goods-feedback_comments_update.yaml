@@ -9,8 +9,6 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
-  x-restrictions:
-    - urbanads
   x-resource-limit-config:
     path: resp
     none:
@@ -63,6 +61,7 @@ post:
     [limit](../../_auto/method_limits/updateGoodsFeedbackComment.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
+    - $ref: ../components/parameters/SourceType.yaml
   requestBody:
     required: true
     content:
