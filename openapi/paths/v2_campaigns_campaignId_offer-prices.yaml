@@ -107,7 +107,7 @@ post:
     enabled: false
   operationId: getPricesByOfferIds
   summary: Просмотр цен на указанные товары в конкретном магазине
-  description: "{% include notitle [access](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-assortment/getOfferMappings.md).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getPricesByOfferIds.md) %}\n"
+  description: "{% include notitle [access](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-offer-mappings/getOfferMappings.md).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getPricesByOfferIds.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

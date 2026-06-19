@@ -98,7 +98,7 @@ properties:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
     deprecated: true
-    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET\_v2/campaigns/{campaignId}/returns](../../reference/orders/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
+    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET\_v2/campaigns/{campaignId}/returns](../../reference/returns/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
     type: array
     nullable: true
     minItems: 1
