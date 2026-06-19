@@ -1,7 +1,7 @@
 name: sourceType
 in: query
 required: false
-description: "Признак типа кабинета, от имени которого вызывается метод:\n{% if audience == \"advertiser\" %}\n\n- `ADVERTISER` — рекламодатель.\n\n{% note info \"Обязательно указывайте sourceType=ADVERTISER в каждом запросе.\" %}\n\n\_\n\n{% endnote %}\n\n{% endif %}\n\n{% if audience == \"partner\" %}\n\n- `SELLER` — продавец.\n\n{% endif %}\n"
+description: "Признак типа кабинета, от имени которого вызывается метод:\n{% if audience == \"partner\" %}\n\n- `SELLER` — продавец.\n\n{% endif %}\n\n- `ADVERTISER` — рекламодатель.\n\n{% if audience == \"advertiser\" %}\n\n{% note info \"Обязательно указывайте sourceType=ADVERTISER в каждом запросе.\" %}\n\n\_\n\n{% endnote %}\n\n{% endif %}\n"
 schema:
   $ref: ../schemas/SourceType.yaml
   default: SELLER

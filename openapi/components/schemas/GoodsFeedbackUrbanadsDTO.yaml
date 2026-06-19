@@ -14,7 +14,7 @@ properties:
     type: string
     format: date-time
   needReaction:
-    description: "Прочитан ли отзыв.\n\nПринимает значение `false`, если рекламодатель:\n\n* Прочитал отзыв в кабинете UrbanAds.\n* Пропустил реакцию на отзыв — метод [POST\_v1/businesses/{businessId}/goods-feedback-urbanads/skip-reaction](../../reference/goods-feedback/skipGoodsFeedbacksUrbanadsReaction.md).\n* Оставил комментарий к отзыву — метод [POST\_v1/businesses/{businessId}/goods-feedback-urbanads/comments/update](../../reference/goods-feedback/updateGoodsFeedbackUrbanadsComment.md).\n"
+    description: "Прочитан ли отзыв.\n\nПринимает значение `false`, если рекламодатель:\n\n* Прочитал отзыв в кабинете UrbanAds.\n* Пропустил реакцию на отзыв — метод [POST\_v2/businesses/{businessId}/goods-feedback/skip-reaction](../../reference/goods-feedback/skipGoodsFeedbacksReaction.md).\n* Оставил комментарий к отзыву — метод [POST\_v2/businesses/{businessId}/goods-feedback/comments/update](../../reference/goods-feedback/updateGoodsFeedbackComment.md).\n"
     type: boolean
   context:
     $ref: ./GoodsFeedbackContextUrbanadsDTO.yaml
