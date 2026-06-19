@@ -1,0 +1,13 @@
+description: Информация о доставке цифрового товара.
+type: object
+required:
+  - type
+properties:
+  type:
+    description: Тип цифрового товара.
+    $ref: ./DigitalGoodsDeliveryType.yaml
+  steamLink:
+    description: >-
+      Ссылка на Steam-аккаунт покупателя. Передается только для типа
+      `STEAM_GIFT`.
+    type: string

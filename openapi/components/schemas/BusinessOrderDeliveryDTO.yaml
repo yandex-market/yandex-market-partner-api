@@ -69,3 +69,6 @@ properties:
 
       Код получения заказа на ПВЗ.
     type: string
+  digitalGoods:
+    description: Информация о доставке цифрового товара.
+    $ref: ./DigitalGoodsDeliveryDetailsDTO.yaml
