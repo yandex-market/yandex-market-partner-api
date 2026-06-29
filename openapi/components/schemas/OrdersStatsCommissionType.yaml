@@ -40,6 +40,8 @@ description: >
 
   * `ITEM_BOOKING` - бронирование товара (только для продавцов Market Yandex
   Go).
+
+  * `SHOP_SERVICE_PLACEMENT` - размещение услуг (DBS).
 type: string
 enum:
   - FEE
@@ -59,3 +61,4 @@ enum:
   - CROSSREGIONAL_DELIVERY
   - FULFILLMENT_WITHDRAW
   - ITEM_BOOKING
+  - SHOP_SERVICE_PLACEMENT
