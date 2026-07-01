@@ -10,6 +10,10 @@ post:
     - all-methods
     - all-methods:read-only
     - communication
+  x-allowed:
+    - seller
+    - urbanads
+    - market-yandex-go
   x-resource-limit-config:
     path: resp
     none:

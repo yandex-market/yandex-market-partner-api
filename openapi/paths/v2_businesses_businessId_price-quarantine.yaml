@@ -11,8 +11,9 @@ post:
     - all-methods:read-only
     - pricing
     - pricing:read-only
-  x-restrictions:
-    - urbanads
+  x-allowed:
+    - seller
+    - market-yandex-go
   x-resource-limit-config:
     path: resp
     none:

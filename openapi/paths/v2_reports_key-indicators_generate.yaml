@@ -12,8 +12,9 @@ post:
     - promotion
     - promotion:read-only
     - finance-and-accounting
-  x-restrictions:
-    - urbanads
+  x-allowed:
+    - seller
+    - market-yandex-go
   x-resource-limit-config:
     path: resp
     none:

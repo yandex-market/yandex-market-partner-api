@@ -9,8 +9,9 @@ post:
     - offers-and-cards-management
     - offers-and-cards-management:read-only
     - finance-and-accounting
-  x-restrictions:
-    - urbanads
+  x-allowed:
+    - seller
+    - market-yandex-go
   x-resource-limit-config:
     path: resp
     none:

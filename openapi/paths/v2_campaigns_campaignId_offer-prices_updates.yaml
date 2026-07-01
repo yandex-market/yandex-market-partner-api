@@ -10,8 +10,9 @@ post:
   x-auth-scopes:
     - all-methods
     - pricing
-  x-restrictions:
-    - urbanads
+  x-allowed:
+    - seller
+    - market-yandex-go
   x-resource-limit-config:
     path: req.offers
     parallel-limit-value: 12

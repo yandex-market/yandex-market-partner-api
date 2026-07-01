@@ -28,9 +28,8 @@ post:
       amount: 10000
       period: hours
       period-duration: 1
-  x-restrictions:
-    - market-yandex-go
-    - urbanads
+  x-allowed:
+    - seller
   x-apphost:
     domain: LOGISTICS
     enabled: false

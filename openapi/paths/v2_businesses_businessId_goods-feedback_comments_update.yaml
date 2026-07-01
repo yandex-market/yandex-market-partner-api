@@ -9,6 +9,10 @@ post:
   x-auth-scopes:
     - all-methods
     - communication
+  x-allowed:
+    - seller
+    - urbanads
+    - market-yandex-go
   x-resource-limit-config:
     path: resp
     none:

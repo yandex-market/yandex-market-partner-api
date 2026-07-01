@@ -7,8 +7,9 @@ get:
     - all-methods
     - all-methods:read-only
     - settings-management
-  x-restrictions:
-    - urbanads
+  x-allowed:
+    - seller
+    - market-yandex-go
   x-resource-limit-config:
     path: resp
     none:
@@ -75,8 +76,9 @@ delete:
   x-auth-scopes:
     - all-methods
     - settings-management
-  x-restrictions:
-    - urbanads
+  x-allowed:
+    - seller
+    - market-yandex-go
   x-resource-limit-config:
     path: resp
     none:
@@ -138,8 +140,9 @@ post:
   x-auth-scopes:
     - all-methods
     - settings-management
-  x-restrictions:
-    - urbanads
+  x-allowed:
+    - seller
+    - market-yandex-go
   x-resource-limit-config:
     path: resp
     none:
