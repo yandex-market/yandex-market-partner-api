@@ -1,5 +1,7 @@
 description: Настройки магазина.
 type: object
+required:
+  - taxation
 properties:
   countryRegion:
     description: Идентификатор региона, в котором находится магазин.
