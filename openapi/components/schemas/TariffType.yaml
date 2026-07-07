@@ -100,9 +100,6 @@ description: >
   * `ITEM_BOOKING` — бронирование товара.
 
 
-  * `SHOP_SERVICE_PLACEMENT` — размещение услуг магазина.
-
-
   Подробнее об услугах Маркета читайте [в Справке Маркета для
   продавцов](https://yandex.ru/support/marketplace/introduction/rates/index.html).
 type: string
@@ -138,4 +135,3 @@ enum:
   - ORDER_PROCESSING
   - WITHDRAW_EXTERNAL
   - ITEM_BOOKING
-  - SHOP_SERVICE_PLACEMENT
