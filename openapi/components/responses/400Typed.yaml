@@ -1,0 +1,7 @@
+description: >-
+  Запрос содержит неправильные данные. [Подробнее об
+  ошибке](../../concepts/error-codes.md#400)
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiTypedClientDataErrorResponse.yaml

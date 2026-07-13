@@ -108,17 +108,17 @@ get:
           schema:
             $ref: ../components/schemas/GetOutletResponse.yaml
     '400':
-      $ref: ../components/responses/400.yaml
+      $ref: ../components/responses/400Typed.yaml
     '401':
-      $ref: ../components/responses/401.yaml
+      $ref: ../components/responses/401Typed.yaml
     '403':
-      $ref: ../components/responses/403.yaml
+      $ref: ../components/responses/403Typed.yaml
     '404':
-      $ref: ../components/responses/404.yaml
+      $ref: ../components/responses/404Typed.yaml
     '420':
-      $ref: ../components/responses/420.yaml
+      $ref: ../components/responses/420Typed.yaml
     '500':
-      $ref: ../components/responses/500.yaml
+      $ref: ../components/responses/500Typed.yaml
 delete:
   x-resource-id: 47
   tags:

@@ -1,0 +1,11 @@
+type: object
+description: Общий формат типизированной ошибки.
+required:
+  - code
+properties:
+  code:
+    description: Код ошибки.
+    $ref: ./ApiErrorCodeType.yaml
+  message:
+    description: Описание ошибки.
+    type: string

@@ -1,0 +1,7 @@
+description: >-
+  Внутренняя ошибка Маркета. [Подробнее об
+  ошибке](../../concepts/error-codes.md#500)
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/ApiTypedServerErrorResponse.yaml

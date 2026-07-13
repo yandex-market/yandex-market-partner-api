@@ -1,0 +1,12 @@
+type: object
+description: Стандартная обертка для типизированных ошибок сервера.
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      errors:
+        description: Список ошибок.
+        type: array
+        nullable: true
+        minItems: 1
+        items:
+          $ref: ./ApiTypedErrorDTO.yaml
