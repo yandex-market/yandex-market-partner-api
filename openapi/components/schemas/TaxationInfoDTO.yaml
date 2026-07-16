@@ -1,0 +1,6 @@
+description: Информация о налогообложении.
+type: object
+properties:
+  vat:
+    nullable: true
+    $ref: ./VatRateType.yaml

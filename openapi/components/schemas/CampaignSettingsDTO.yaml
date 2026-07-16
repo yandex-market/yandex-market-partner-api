@@ -42,3 +42,5 @@ properties:
     deprecated: true
   localRegion:
     $ref: ./CampaignSettingsLocalRegionDTO.yaml
+  taxation:
+    $ref: ./TaxationInfoDTO.yaml
