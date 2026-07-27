@@ -25,6 +25,8 @@ description: >
 
     * `MICROCREDIT` - Сплит на основе МКК (Микрокредитной компании).
 
+    * `BNPL_TBC` - BNPL через внешний банк TBC.
+
 
   * Значения, если выбрана оплата при получении заказа (`"paymentType":
   "POSTPAID"`):
@@ -66,4 +68,5 @@ enum:
   - B2B_ACCOUNT_POSTPAYMENT
   - MICROCREDIT
   - BNPL_TBYB
+  - BNPL_TBC
   - UNKNOWN
