@@ -27,6 +27,8 @@ description: >
 
     * `BNPL_TBC` - BNPL через внешний банк TBC.
 
+    * `DIGITAL_RUBLE` - Цифровой рубль.
+
 
   * Значения, если выбрана оплата при получении заказа (`"paymentType":
   "POSTPAID"`):
@@ -69,4 +71,5 @@ enum:
   - MICROCREDIT
   - BNPL_TBYB
   - BNPL_TBC
+  - DIGITAL_RUBLE
   - UNKNOWN
