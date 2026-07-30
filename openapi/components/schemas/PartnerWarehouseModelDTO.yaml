@@ -1,0 +1,10 @@
+description: Информация о модели работы склада.
+type: object
+required:
+  - placementType
+  - apiAvailability
+properties:
+  placementType:
+    $ref: ./WarehouseProgramType.yaml
+  apiAvailability:
+    $ref: ./ApiAvailabilityStatusType.yaml

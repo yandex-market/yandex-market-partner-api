@@ -1,0 +1,7 @@
+description: |
+  Свойства складов, которые необходимо вернуть:
+
+  * `ADDRESS` — адрес склада.
+type: string
+enum:
+  - ADDRESS

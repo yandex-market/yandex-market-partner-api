@@ -1,0 +1,20 @@
+description: Информация об остатках товаров на складе.
+type: object
+required:
+  - partnerWarehouseId
+  - offers
+properties:
+  partnerWarehouseId:
+    description: |
+      Идентификатор склада.
+    type: integer
+    format: int64
+    minimum: 1
+  offers:
+    description: |
+      Страница списка товаров.
+    type: array
+    items:
+      $ref: ./PartnerWarehouseOfferDTO.yaml
+  paging:
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

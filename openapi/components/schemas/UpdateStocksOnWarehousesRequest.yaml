@@ -1,0 +1,18 @@
+description: Запрос на изменение информации по остаткам товаров.
+type: object
+required:
+  - skuItems
+properties:
+  skuItems:
+    description: >
+      Данные об остатках товаров.
+
+
+      В рамках одного запроса все пары `sku` и `partnerWarehouseId` должны быть
+      уникальными. Не допускается передача двух объектов с одинаковыми `sku` и
+      `partnerWarehouseId`.
+    type: array
+    minItems: 1
+    maxItems: 2000
+    items:
+      $ref: ./UpdateStockOnWarehouseItemDTO.yaml

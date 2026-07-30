@@ -192,6 +192,10 @@ paths:
     $ref: paths/v2_campaigns_campaignId_hidden-offers_delete.yaml
   /v2/campaigns/{campaignId}/offers/stocks:
     $ref: paths/v2_campaigns_campaignId_offers_stocks.yaml
+  /v3/businesses/{businessId}/offers/stocks/update:
+    $ref: paths/v3_businesses_businessId_offers_stocks_update.yaml
+  /v3/businesses/{businessId}/offers/stocks:
+    $ref: paths/v3_businesses_businessId_offers_stocks.yaml
   /v2/delivery/services:
     $ref: paths/v2_delivery_services.yaml
   /v1/campaigns/{campaignId}/delivery-options:
@@ -216,6 +220,8 @@ paths:
     $ref: paths/v2_reports_goods-realization_generate.yaml
   /v2/reports/stocks-on-warehouses/generate:
     $ref: paths/v2_reports_stocks-on-warehouses_generate.yaml
+  /v3/businesses/{businessId}/reports/stocks/generate:
+    $ref: paths/v3_businesses_businessId_reports_stocks_generate.yaml
   /v2/reports/goods-movement/generate:
     $ref: paths/v2_reports_goods-movement_generate.yaml
   /v2/reports/shows-sales/generate:
@@ -299,10 +305,14 @@ paths:
     $ref: paths/v2_businesses_businessId_bids_recommendations.yaml
   /v2/businesses/{businessId}/warehouses:
     $ref: paths/v2_businesses_businessId_warehouses.yaml
+  /v3/businesses/{businessId}/warehouses:
+    $ref: paths/v3_businesses_businessId_warehouses.yaml
   /v2/warehouses:
     $ref: paths/v2_warehouses.yaml
   /v2/campaigns/{campaignId}/warehouse/status:
     $ref: paths/v2_campaigns_campaignId_warehouse_status.yaml
+  /v3/businesses/{businessId}/warehouse/models/status:
+    $ref: paths/v3_businesses_businessId_warehouse_models_status.yaml
   /v2/category/{categoryId}/parameters:
     $ref: paths/v2_category_categoryId_parameters.yaml
   /v2/businesses/{businessId}/offer-cards:

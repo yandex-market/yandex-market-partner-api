@@ -1,0 +1,28 @@
+description: Информация о складе.
+type: object
+required:
+  - id
+  - name
+  - models
+properties:
+  id:
+    description: Идентификатор склада.
+    type: integer
+    format: int64
+    minimum: 1
+  name:
+    description: Название склада.
+    type: string
+  models:
+    description: Модели работы, доступные для склада.
+    type: array
+    items:
+      $ref: ./PartnerWarehouseModelDTO.yaml
+  address:
+    description: >
+      Адрес склада.
+
+
+      Возвращается, только если в запросе параметр `components` принимает
+      значение `ADDRESS`.
+    $ref: ./WarehouseAddressDTO.yaml

@@ -1,0 +1,11 @@
+description: |
+  Модель работы:
+
+  * `FBS` — FBS.
+  * `DBS` — DBS.
+  * `EXPRESS` — Экспресс.
+type: string
+enum:
+  - FBS
+  - DBS
+  - EXPRESS

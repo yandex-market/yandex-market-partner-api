@@ -1,0 +1,26 @@
+description: |
+  Данные, необходимые для генерации отчета.
+type: object
+properties:
+  categoryIds:
+    description: Фильтр по категориям на Маркете.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: integer
+      format: int64
+      minimum: 1
+  hasStocks:
+    description: Фильтр по наличию остатков.
+    type: boolean
+  partnerWarehouseIds:
+    description: "Фильтр по идентификаторам складов. Чтобы узнать идентификатор, воспользуйтесь запросом [POST\_v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md).\n"
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: integer
+      format: int64

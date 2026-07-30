@@ -1,0 +1,12 @@
+description: >
+  Статус модели склада:
+
+
+  * `DISABLED_MANUALLY` – отключен вами.
+
+  * `OTHER` – другой статус. Например, модель склада включена или отключена
+  Маркетом.
+type: string
+enum:
+  - DISABLED_MANUALLY
+  - OTHER

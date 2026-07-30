@@ -24,6 +24,10 @@ post:
   x-apphost:
     domain: LOGISTICS
     enabled: false
+  x-deprecation-config:
+    degradation-start-date: '2027-01-18'
+    shutdown-date: '2027-04-05'
+    replacement-operation-id: updateWarehouseModelStatus
   operationId: updateWarehouseStatus
   summary: Изменение статуса склада
   description: >
@@ -41,6 +45,7 @@ post:
 
     {% include notitle
     [limit](../../_auto/method_limits/updateWarehouseStatus.md) %}
+  deprecated: true
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

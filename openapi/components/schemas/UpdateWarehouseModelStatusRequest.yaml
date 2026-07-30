@@ -1,0 +1,32 @@
+description: >
+  Запрос на изменение статуса модели работы склада.
+
+
+  Позволяет выключить модель работы склада или включить ранее отключенную вами
+  модель.
+
+
+  Если модель была отключена Маркетом, то включить её вручную с помощью этого
+  метода не получится.
+type: object
+required:
+  - partnerWarehouseId
+  - model
+  - enabled
+properties:
+  partnerWarehouseId:
+    description: "Идентификатор склада.\n\nЧтобы узнать идентификатор склада, воспользуйтесь запросом [POST\_v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md).\n"
+    type: integer
+    format: int64
+    minimum: 1
+  model:
+    description: |
+      Модель работы склада.
+    $ref: ./WarehouseProgramType.yaml
+  enabled:
+    description: |
+      Статус модели работы склада:
+
+      * `true` — включена.
+      * `false` — отключена.
+    type: boolean

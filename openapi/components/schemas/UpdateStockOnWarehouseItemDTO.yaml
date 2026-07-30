@@ -1,0 +1,35 @@
+description: Информация об остатках одного товара на складах партнера.
+type: object
+required:
+  - sku
+  - partnerWarehouseId
+  - count
+properties:
+  sku:
+    $ref: ./ShopSku.yaml
+  partnerWarehouseId:
+    description: "Идентификатор склада, на котором требуется обновить остатки.\n\nЧтобы узнать идентификатор склада, воспользуйтесь запросом [POST\_v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md).\n"
+    type: integer
+    format: int64
+    minimum: 1
+  count:
+    description: |
+      Количество доступного товара.
+    format: int64
+    type: integer
+    minimum: 0
+    maximum: 2000000000
+  updatedAt:
+    description: >
+      Дата и время последнего обновления информации об остатках.
+
+      <br><br>
+
+      Если вы не передали параметр `updatedAt`, используется текущее время.
+
+      <br><br>
+
+      Формат даты и времени: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:42:42+03:00`.
+    type: string
+    format: date-time
