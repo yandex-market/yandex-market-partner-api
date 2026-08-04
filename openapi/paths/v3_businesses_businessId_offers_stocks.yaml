@@ -32,7 +32,7 @@ post:
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml
-    - $ref: ../components/parameters/PageLimit200.yaml
+    - $ref: ../components/parameters/PageLimit100Truncate.yaml
   requestBody:
     required: true
     content:
