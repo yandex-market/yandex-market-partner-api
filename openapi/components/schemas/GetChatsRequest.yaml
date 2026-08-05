@@ -12,6 +12,9 @@ properties:
       format: int64
     minItems: 1
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-19'
+      replacement-field: contexts
   contexts:
     description: Фильтр по контексту чата.
     type: array

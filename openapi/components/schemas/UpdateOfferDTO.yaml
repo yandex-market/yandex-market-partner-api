@@ -51,6 +51,8 @@ allOf:
         $ref: ./BasePriceDTO.yaml
       firstVideoAsCover:
         deprecated: true
+        x-deprecation-config:
+          shutdown-date: '2026-10-12'
         description: >
           Использовать первое видео в карточке как видеообложку.
 

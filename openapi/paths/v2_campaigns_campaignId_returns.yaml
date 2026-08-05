@@ -119,6 +119,9 @@ get:
         format: date
     - description: "{% note warning \"Вместо него используйте `fromDate`.\" %}\n\n\_\n\n{% endnote %}\n\nНачальная дата для фильтрации невыкупов или возвратов по дате обновления.\n"
       deprecated: true
+      x-deprecation-config:
+        shutdown-date: '2026-10-12'
+        replacement-field: fromDate
       in: query
       name: from_date
       required: false
@@ -128,6 +131,9 @@ get:
         format: date
     - description: "{% note warning \"Вместо него используйте `toDate`.\" %}\n\n\_\n\n{% endnote %}\n\nКонечная дата для фильтрации невыкупов или возвратов по дате обновления.\n"
       deprecated: true
+      x-deprecation-config:
+        shutdown-date: '2026-10-12'
+        replacement-field: toDate
       in: query
       name: to_date
       required: false

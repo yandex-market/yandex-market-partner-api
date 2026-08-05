@@ -17,10 +17,16 @@ allOf:
         description: "{% note warning \"Вместо него используйте `shopOutletCode`.\" %}\n\n\_\n\n{% endnote %}\n\nИдентификатор точки продаж, заданный магазином.\n"
         type: string
         deprecated: true
+        x-deprecation-config:
+          shutdown-date: '2026-10-19'
+          replacement-field: shopOutletCode
       workingTime:
         description: "{% note warning \"Вместо него используйте `workingSchedule`.\" %}\n\n\_\n\n{% endnote %}\n\nРабочее время.\n"
         type: string
         deprecated: true
+        x-deprecation-config:
+          shutdown-date: '2026-10-19'
+          replacement-field: workingSchedule
       moderationReason:
         description: Статус модерации.
         type: string

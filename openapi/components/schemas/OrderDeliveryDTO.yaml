@@ -15,6 +15,8 @@ properties:
       Указывается, только если магазин передал данный идентификатор в ответе на
       запрос методом `POST cart`.
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
     type: string
   type:
     description: |
@@ -25,6 +27,9 @@ properties:
     type: string
   price:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
+      replacement-field: deliveryTotal
     description: "{% note warning \"Стоимость доставки смотрите в параметре `deliveryTotal`.\" %}\n\n\_\n\n{% endnote %}\n\nСтоимость доставки в валюте заказа.\n"
     type: number
   deliveryPartnerType:

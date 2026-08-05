@@ -14,6 +14,9 @@ description: |
 in: query
 required: false
 deprecated: true
+x-deprecation-config:
+  shutdown-date: '2026-10-05'
+  replacement-field: limit
 schema:
   type: integer
   format: int32

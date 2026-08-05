@@ -9,6 +9,9 @@ properties:
     type: integer
     format: int64
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-12'
+      replacement-field: context
   context:
     description: Информация о заказе или возврате, по которому начат чат.
     $ref: ./ChatFullContextDTO.yaml

@@ -3,5 +3,8 @@ type: array
 nullable: true
 minItems: 1
 deprecated: true
+x-deprecation-config:
+  shutdown-date: '2026-10-12'
+  replacement-field: parameterValues
 items:
   $ref: ./OfferParamDTO.yaml

@@ -10,3 +10,5 @@ properties:
     type: string
     pattern: ^[[a-zA-Z0-9]- ]*$
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-19'

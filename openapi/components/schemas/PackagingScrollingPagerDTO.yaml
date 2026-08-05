@@ -9,4 +9,6 @@ properties:
     description: Идентификатор предыдущей страницы результатов.
     type: string
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-19'
     x-serialize-transform: token

@@ -6,10 +6,16 @@ properties:
   currentPrice:
     description: "{% note warning \"Вместо него используйте значение из `verdicts` → `params`.\" %}\n\n\_\n\n{% endnote %}\n\nНовая цена.\n"
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-19'
+      replacement-field: verdicts.params
     $ref: ./BasePriceDTO.yaml
   lastValidPrice:
     description: "{% note warning \"Вместо него используйте значение из `verdicts` → `params`.\" %}\n\n\_\n\n{% endnote %}\n\nПоследняя цена до попадания в карантин.\n"
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-19'
+      replacement-field: verdicts.params
     $ref: ./BasePriceDTO.yaml
   verdicts:
     description: Причины попадания товара в карантин.

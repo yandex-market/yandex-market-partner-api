@@ -19,6 +19,9 @@ properties:
     format: int64
     minimum: 1
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-19'
+      replacement-field: context
   context:
     $ref: ./ChatFullContextDTO.yaml
   type:

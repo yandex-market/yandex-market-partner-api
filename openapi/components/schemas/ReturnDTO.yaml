@@ -59,6 +59,9 @@ properties:
     type: integer
     format: int64
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-12'
+      replacement-field: amount
   amount:
     description: Сумма возврата.
     $ref: ./CurrencyValueDTO.yaml

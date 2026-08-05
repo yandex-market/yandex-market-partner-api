@@ -24,6 +24,8 @@ allOf:
           Может отсутствовать в ответе, если товар еще не привязан к карточке.
         type: string
         deprecated: true
+        x-deprecation-config:
+          shutdown-date: '2026-10-12'
       marketCategoryId:
         description: >
           Идентификатор категории на Маркете, в которую попал товар.

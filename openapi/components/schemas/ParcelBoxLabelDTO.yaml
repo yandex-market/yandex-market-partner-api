@@ -61,6 +61,8 @@ properties:
       Возвращается в формате `weight кг`.
     type: string
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-19'
   deliveryServiceId:
     description: "Идентификатор службы доставки. Информацию о службе доставки можно получить с помощью запроса [GET\_delivery/services](../../reference/delivery-services/getDeliveryServices.md)."
     type: string

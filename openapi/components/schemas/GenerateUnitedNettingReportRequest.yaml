@@ -12,11 +12,17 @@ properties:
     format: date-time
     type: string
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-12'
+      replacement-field: dateFrom
   dateTimeTo:
     description: Конец периода, включительно. Максимальный период — 3 месяца.
     format: date-time
     type: string
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-12'
+      replacement-field: dateTo
   dateFrom:
     $ref: ./PeriodDateFrom.yaml
   dateTo:

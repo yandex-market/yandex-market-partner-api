@@ -26,6 +26,8 @@ properties:
   priceRecommendations:
     description: Рекомендованные цены.
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-12'
     type: array
     nullable: true
     minItems: 1

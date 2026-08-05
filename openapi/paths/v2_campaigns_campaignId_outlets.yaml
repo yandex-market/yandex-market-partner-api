@@ -116,6 +116,9 @@ get:
     - description: "{% note warning \"Вместо него используйте `region_id`.\" %}\n\n\_\n\n{% endnote %}\n"
       name: regionId
       deprecated: true
+      x-deprecation-config:
+        shutdown-date: '2026-10-19'
+        replacement-field: region_id
       in: query
       required: false
       schema:

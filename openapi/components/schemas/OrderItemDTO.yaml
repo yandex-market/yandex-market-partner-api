@@ -58,6 +58,8 @@ properties:
     type: number
   priceBeforeDiscount:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
     description: Стоимость товара в валюте магазина до применения скидок.
     type: number
   count:
@@ -68,10 +70,16 @@ properties:
     $ref: ./OrderVatType.yaml
   shopSku:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
+      replacement-field: offerId
     description: "{% note warning \"Вместо него используйте `offerId`.\" %}\n\n\_\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
     $ref: ./ShopSku.yaml
   subsidy:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
+      replacement-field: subsidies
     description: "{% note warning \"Вместо него используйте `subsidies`.\" %}\n\n\_\n\n{% endnote %}\n\nОбщее вознаграждение продавцу за DBS-доставку и все скидки на товар:\n\n* по промокодам;\n* по купонам;\n* по баллам Плюса;\n* по акциям.\n"
     type: number
   partnerWarehouseId:
@@ -98,6 +106,8 @@ properties:
       $ref: ./OrderItemInstanceDTO.yaml
   details:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
     description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET\_v2/campaigns/{campaignId}/returns](../../reference/returns/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
     type: array
     nullable: true

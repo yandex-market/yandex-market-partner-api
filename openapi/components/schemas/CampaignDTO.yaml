@@ -11,6 +11,8 @@ properties:
     type: integer
     format: int64
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
   business:
     $ref: ./BusinessDTO.yaml
   placementType:

@@ -1,4 +1,6 @@
 deprecated: true
+x-deprecation-config:
+  shutdown-date: '2026-10-12'
 description: |
   { % note warning "Параметр больше не используется" % }
 

@@ -57,12 +57,17 @@ properties:
     type: number
   buyerItemsTotal:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
+      replacement-field: itemsTotal
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя после применения
       скидок и без учета стоимости доставки.
     type: number
   buyerTotal:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя после применения
       скидок и с учетом стоимости доставки.
@@ -81,6 +86,8 @@ properties:
     type: number
   buyerTotalBeforeDiscount:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
     description: >-
       Стоимость всех товаров в заказе в валюте покупателя до применения скидок и
       с учетом стоимости доставки (`buyerItemsTotalBeforeDiscount` + стоимость

@@ -9,6 +9,9 @@ properties:
   statusType:
     description: "{% note warning \"Вместо него используйте `statuses`.\" %}\n\n\_\n\n{% endnote %}\n\nФильтр для товаров, которые добавлены в акцию вручную.\n\nЕсли не передать параметр `statusType`, вернутся все товары.\n"
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-12'
+      replacement-field: statuses
     $ref: ./PromoOfferParticipationStatusFilterType.yaml
   statuses:
     description: >-

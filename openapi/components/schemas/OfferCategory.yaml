@@ -1,3 +1,6 @@
 description: "{% note warning \"Вместо него используйте `marketCategoryId`.\" %}\n\n\_\n\n{% endnote %}\n\nКатегория товара в вашем магазине.\n"
 type: string
 deprecated: true
+x-deprecation-config:
+  shutdown-date: '2026-10-12'
+  replacement-field: marketCategoryId

@@ -1,4 +1,7 @@
 description: "{% note warning \"Вместо него используйте `commodityCodes` с типом `CUSTOMS_COMMODITY_CODE`.\" %}\n\n\_\n\n{% endnote %}\n\nКод товара в единой Товарной номенклатуре внешнеэкономической деятельности (ТН ВЭД) — 10 или 14 цифр без пробелов.\n\nОбязательно укажите, если он есть.\n"
 deprecated: true
+x-deprecation-config:
+  shutdown-date: '2026-10-12'
+  replacement-field: commodityCodes
 example: '8517610008'
 type: string

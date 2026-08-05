@@ -6,6 +6,8 @@ type: object
 properties:
   id:
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-05'
     description: Идентификатор посылки, присвоенный Маркетом.
     type: integer
     format: int64

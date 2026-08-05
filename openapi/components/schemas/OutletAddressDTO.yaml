@@ -42,3 +42,6 @@ properties:
     maxLength: 200
     type: string
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-19'
+      replacement-field: regionId

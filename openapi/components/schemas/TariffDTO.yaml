@@ -12,6 +12,9 @@ properties:
   percent:
     description: Значение тарифа в процентах.
     deprecated: true
+    x-deprecation-config:
+      shutdown-date: '2026-10-12'
+      replacement-field: amount
     type: number
   amount:
     description: Значение тарифа.
