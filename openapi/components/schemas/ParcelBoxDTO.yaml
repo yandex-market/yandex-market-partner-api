@@ -6,7 +6,12 @@ properties:
     type: integer
     format: int64
   fulfilmentId:
-    description: "{% note warning \"Не используйте этот параметр.\" %}\n\n\_\n\n{% endnote %}\n"
+    description: |
+      {% note warning "Параметр устарел и будет отключен 19.10.2026." %}
+
+      Не используйте этот параметр.
+
+      {% endnote %}
     type: string
     pattern: ^[[a-zA-Z0-9]- ]*$
     deprecated: true

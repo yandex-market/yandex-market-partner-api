@@ -2,11 +2,11 @@ deprecated: true
 x-deprecation-config:
   shutdown-date: '2026-10-12'
 description: |
-  { % note warning "Параметр больше не используется" % }
+  {% note warning "Параметр устарел и будет отключен 12.10.2026." %}
 
   Передайте любое число, чтобы получился корректный URL.
 
-  { % endnote % }
+  {% endnote %}
 
   Идентификатор грузового места.
 name: shipmentId

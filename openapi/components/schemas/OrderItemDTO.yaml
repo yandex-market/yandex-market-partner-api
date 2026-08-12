@@ -60,7 +60,7 @@ properties:
     deprecated: true
     x-deprecation-config:
       shutdown-date: '2026-10-05'
-    description: Стоимость товара в валюте магазина до применения скидок.
+    description: "{% note warning \"Параметр устарел и будет отключен 05.10.2026.\" %}\n\n\_\n\n{% endnote %}\n\nСтоимость товара в валюте магазина до применения скидок.\n"
     type: number
   count:
     description: Количество единиц товара.
@@ -73,14 +73,26 @@ properties:
     x-deprecation-config:
       shutdown-date: '2026-10-05'
       replacement-field: offerId
-    description: "{% note warning \"Вместо него используйте `offerId`.\" %}\n\n\_\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
+    description: "{% note warning \"Параметр устарел и будет отключен 05.10.2026.\" %}\n\nВместо него используйте `offerId`.\n\n{% endnote %}\n\nВаш SKU —\_идентификатор товара в вашей системе.\n"
     $ref: ./ShopSku.yaml
   subsidy:
     deprecated: true
     x-deprecation-config:
       shutdown-date: '2026-10-05'
       replacement-field: subsidies
-    description: "{% note warning \"Вместо него используйте `subsidies`.\" %}\n\n\_\n\n{% endnote %}\n\nОбщее вознаграждение продавцу за DBS-доставку и все скидки на товар:\n\n* по промокодам;\n* по купонам;\n* по баллам Плюса;\n* по акциям.\n"
+    description: |
+      {% note warning "Параметр устарел и будет отключен 05.10.2026." %}
+
+      Вместо него используйте `subsidies`.
+
+      {% endnote %}
+
+      Общее вознаграждение продавцу за DBS-доставку и все скидки на товар:
+
+      * по промокодам;
+      * по купонам;
+      * по баллам Плюса;
+      * по акциям.
     type: number
   partnerWarehouseId:
     description: |
@@ -108,7 +120,7 @@ properties:
     deprecated: true
     x-deprecation-config:
       shutdown-date: '2026-10-05'
-    description: "{% note warning \"Для получения информации о невыкупах и возвратах используйте [GET\_v2/campaigns/{campaignId}/returns](../../reference/returns/getReturns.md).\" %}\n\n\_\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
+    description: "{% note warning \"Параметр устарел и будет отключен 05.10.2026.\" %}\n\nДля получения информации о невыкупах и возвратах используйте [GET\_v2/campaigns/{campaignId}/returns](../../reference/returns/getReturns.md).\n\n{% endnote %}\n\nИнформация о невыкупленных или возвращенных товарах в заказе.\n"
     type: array
     nullable: true
     minItems: 1

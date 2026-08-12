@@ -7,7 +7,7 @@ properties:
   id:
     $ref: ./CampaignId.yaml
   clientId:
-    description: Идентификатор плательщика в Яндекс Балансе.
+    description: "{% note warning \"Параметр устарел и будет отключен 05.10.2026.\" %}\n\n\_\n\n{% endnote %}\n\nИдентификатор плательщика в Яндекс Балансе.\n"
     type: integer
     format: int64
     deprecated: true

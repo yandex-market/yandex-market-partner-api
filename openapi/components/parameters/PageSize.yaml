@@ -1,6 +1,6 @@
 name: pageSize
 description: |
-  {% note warning "Устаревший параметр" %}
+  {% note warning "Параметр устарел и будет отключен 05.10.2026." %}
 
   Вместо `page` и `pageSize` используйте пагинацию по `pageToken` и `limit`.
 

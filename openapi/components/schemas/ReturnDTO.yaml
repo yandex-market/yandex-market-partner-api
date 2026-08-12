@@ -55,7 +55,14 @@ properties:
     description: Статус передачи возврата.
     $ref: ./ReturnShipmentStatusType.yaml
   refundAmount:
-    description: "{% note warning \"Вместо него используйте `amount`.\" %}\n\n\_\n\n{% endnote %}\n\nСумма возврата в копейках.\n"
+    description: |
+      {% note warning "Параметр устарел и будет отключен 12.10.2026." %}
+
+      Вместо него используйте `amount`.
+
+      {% endnote %}
+
+      Сумма возврата в копейках.
     type: integer
     format: int64
     deprecated: true

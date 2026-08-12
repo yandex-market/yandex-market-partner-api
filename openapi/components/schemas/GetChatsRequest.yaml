@@ -3,7 +3,14 @@ description: |
 type: object
 properties:
   orderIds:
-    description: Фильтр по идентификаторам заказов на Маркете.
+    description: |
+      {% note warning "Параметр устарел и будет отключен 19.10.2026." %}
+
+      Вместо него используйте `contexts`.
+
+      {% endnote %}
+
+      Фильтр по идентификаторам заказов на Маркете.
     type: array
     nullable: true
     uniqueItems: true

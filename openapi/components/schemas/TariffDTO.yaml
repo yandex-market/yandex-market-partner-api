@@ -10,7 +10,14 @@ properties:
     description: Услуга Маркета, за которую начисляется тариф.
     $ref: ./TariffType.yaml
   percent:
-    description: Значение тарифа в процентах.
+    description: |
+      {% note warning "Параметр устарел и будет отключен 12.10.2026." %}
+
+      Вместо него используйте `amount`.
+
+      {% endnote %}
+
+      Значение тарифа в процентах.
     deprecated: true
     x-deprecation-config:
       shutdown-date: '2026-10-12'

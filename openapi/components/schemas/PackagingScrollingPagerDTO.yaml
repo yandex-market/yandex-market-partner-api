@@ -6,7 +6,7 @@ properties:
     type: string
     x-serialize-transform: token
   prevPageToken:
-    description: Идентификатор предыдущей страницы результатов.
+    description: "{% note warning \"Параметр устарел и будет отключен 19.10.2026.\" %}\n\n\_\n\n{% endnote %}\n\nИдентификатор предыдущей страницы результатов.\n"
     type: string
     deprecated: true
     x-deprecation-config:

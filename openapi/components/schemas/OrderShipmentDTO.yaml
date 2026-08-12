@@ -8,7 +8,7 @@ properties:
     deprecated: true
     x-deprecation-config:
       shutdown-date: '2026-10-05'
-    description: Идентификатор посылки, присвоенный Маркетом.
+    description: "{% note warning \"Параметр устарел и будет отключен 05.10.2026.\" %}\n\n\_\n\n{% endnote %}\n\nИдентификатор посылки, присвоенный Маркетом.\n"
     type: integer
     format: int64
   shipmentDate:

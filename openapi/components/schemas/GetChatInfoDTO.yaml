@@ -14,7 +14,14 @@ properties:
     format: int64
     minimum: 1
   orderId:
-    description: Идентификатор заказа.
+    description: |
+      {% note warning "Параметр устарел и будет отключен 19.10.2026." %}
+
+      Вместо него используйте `context`.
+
+      {% endnote %}
+
+      Идентификатор заказа.
     type: integer
     format: int64
     minimum: 1

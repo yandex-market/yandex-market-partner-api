@@ -7,7 +7,16 @@ properties:
     description: Идентификатор акции.
     type: string
   statusType:
-    description: "{% note warning \"Вместо него используйте `statuses`.\" %}\n\n\_\n\n{% endnote %}\n\nФильтр для товаров, которые добавлены в акцию вручную.\n\nЕсли не передать параметр `statusType`, вернутся все товары.\n"
+    description: |
+      {% note warning "Параметр устарел и будет отключен 12.10.2026." %}
+
+      Вместо него используйте `statuses`.
+
+      {% endnote %}
+
+      Фильтр для товаров, которые добавлены в акцию вручную.
+
+      Если не передать параметр `statusType`, вернутся все товары.
     deprecated: true
     x-deprecation-config:
       shutdown-date: '2026-10-12'

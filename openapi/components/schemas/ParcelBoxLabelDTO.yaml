@@ -55,10 +55,7 @@ properties:
       количество мест`.
     type: string
   weight:
-    description: |
-      Общая масса всех товаров в заказе.
-
-      Возвращается в формате `weight кг`.
+    description: "{% note warning \"Параметр устарел и будет отключен 19.10.2026.\" %}\n\n\_\n\n{% endnote %}\n\nОбщая масса всех товаров в заказе.\n\nВозвращается в формате `weight кг`.\n"
     type: string
     deprecated: true
     x-deprecation-config:

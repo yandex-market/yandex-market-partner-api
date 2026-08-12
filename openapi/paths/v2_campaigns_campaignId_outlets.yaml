@@ -113,7 +113,12 @@ get:
       required: false
       schema:
         type: string
-    - description: "{% note warning \"Вместо него используйте `region_id`.\" %}\n\n\_\n\n{% endnote %}\n"
+    - description: |
+        {% note warning "Параметр устарел и будет отключен 19.10.2026." %}
+
+        Вместо него используйте `region_id`.
+
+        {% endnote %}
       name: regionId
       deprecated: true
       x-deprecation-config:

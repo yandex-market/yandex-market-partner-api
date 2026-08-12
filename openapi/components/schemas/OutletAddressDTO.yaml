@@ -38,7 +38,12 @@ properties:
     type: integer
     format: int32
   city:
-    description: "{% note warning \"В ответах города и населенные пункты возвращаются в параметре `regionId`.\" %}\n\n\_\n\n{% endnote %}\n"
+    description: |
+      {% note warning "Параметр устарел и будет отключен 19.10.2026." %}
+
+      В ответах города и населенные пункты возвращаются в параметре `regionId`.
+
+      {% endnote %}
     maxLength: 200
     type: string
     deprecated: true

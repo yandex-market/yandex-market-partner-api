@@ -8,12 +8,7 @@ required:
   - deliveryServiceId
 properties:
   id:
-    description: >
-      Идентификатор доставки, присвоенный магазином.
-
-
-      Указывается, только если магазин передал данный идентификатор в ответе на
-      запрос методом `POST cart`.
+    description: "{% note warning \"Параметр устарел и будет отключен 05.10.2026.\" %}\n\n\_\n\n{% endnote %}\n\nИдентификатор доставки, присвоенный магазином.\n\nУказывается, только если магазин передал данный идентификатор в ответе на запрос методом `POST cart`.\n"
     deprecated: true
     x-deprecation-config:
       shutdown-date: '2026-10-05'
@@ -30,7 +25,14 @@ properties:
     x-deprecation-config:
       shutdown-date: '2026-10-05'
       replacement-field: deliveryTotal
-    description: "{% note warning \"Стоимость доставки смотрите в параметре `deliveryTotal`.\" %}\n\n\_\n\n{% endnote %}\n\nСтоимость доставки в валюте заказа.\n"
+    description: |
+      {% note warning "Параметр устарел и будет отключен 05.10.2026." %}
+
+      Стоимость доставки смотрите в параметре `deliveryTotal`.
+
+      {% endnote %}
+
+      Стоимость доставки в валюте заказа.
     type: number
   deliveryPartnerType:
     description: Тип сотрудничества со службой доставки в рамках указанного заказа.

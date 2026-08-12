@@ -1,4 +1,11 @@
-description: "{% note warning \"Вместо него используйте `marketCategoryId`.\" %}\n\n\_\n\n{% endnote %}\n\nКатегория товара в вашем магазине.\n"
+description: |
+  {% note warning "Параметр устарел и будет отключен 12.10.2026." %}
+
+  Вместо него используйте `marketCategoryId`.
+
+  {% endnote %}
+
+  Категория товара в вашем магазине.
 type: string
 deprecated: true
 x-deprecation-config:
