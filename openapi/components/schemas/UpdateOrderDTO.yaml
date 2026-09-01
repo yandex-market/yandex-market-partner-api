@@ -16,3 +16,6 @@ properties:
   customer:
     description: Данные получателя заказа.
     $ref: ./CustomerDTO.yaml
+  extendStoragePeriod:
+    description: Продлить срок хранения заказа в пункте выдачи.
+    type: boolean
