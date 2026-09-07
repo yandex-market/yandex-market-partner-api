@@ -24,7 +24,7 @@ post:
       period: hours
       period-duration: 1
   x-apphost:
-    domain: BASE
+    domain: ONBOARDING
     enabled: false
   operationId: getChats
   summary: Получение доступных чатов

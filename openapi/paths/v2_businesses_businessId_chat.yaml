@@ -24,7 +24,7 @@ get:
       period: hours
       period-duration: 1
   x-apphost:
-    domain: BASE
+    domain: ONBOARDING
     enabled: false
   operationId: getChat
   summary: Получение чата по идентификатору

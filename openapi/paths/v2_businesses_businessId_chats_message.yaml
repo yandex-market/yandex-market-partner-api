@@ -23,7 +23,7 @@ post:
       period: hours
       period-duration: 1
   x-apphost:
-    domain: BASE
+    domain: ONBOARDING
     enabled: false
   operationId: sendMessageToChat
   summary: Отправка сообщения в чат
@@ -92,7 +92,7 @@ get:
       period: hours
       period-duration: 1
   x-apphost:
-    domain: BASE
+    domain: ONBOARDING
     enabled: false
   operationId: getChatMessage
   summary: Получение сообщения в чате
