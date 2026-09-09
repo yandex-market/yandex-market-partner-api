@@ -1,0 +1,15 @@
+type: object
+description: Ошибка обновления документа.
+required:
+  - id
+  - code
+properties:
+  id:
+    $ref: ./DocumentId.yaml
+  code:
+    $ref: ./DocumentErrorCodeType.yaml
+  message:
+    type: string
+    description: >-
+      Описание ошибки для человека. Для обработки ошибки используйте поле
+      `code`.

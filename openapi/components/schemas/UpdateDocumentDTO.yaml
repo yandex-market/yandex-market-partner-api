@@ -1,0 +1,10 @@
+type: object
+description: Полная модель документа для обновления.
+allOf:
+  - $ref: ./DocumentWriteDTO.yaml
+  - type: object
+    required:
+      - id
+    properties:
+      id:
+        $ref: ./DocumentId.yaml

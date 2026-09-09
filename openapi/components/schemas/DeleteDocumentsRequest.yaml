@@ -1,0 +1,14 @@
+type: object
+description: Документы для удаления.
+required:
+  - documentIds
+properties:
+  documentIds:
+    type: array
+    minItems: 1
+    maxItems: 100
+    uniqueItems: true
+    description: |
+      Идентификаторы документов. Значения не должны повторяться.
+    items:
+      $ref: ./DocumentId.yaml

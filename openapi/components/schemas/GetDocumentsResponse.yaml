@@ -1,0 +1,9 @@
+type: object
+description: Ответ со страницей документов.
+required:
+  - result
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GetDocumentsResultDTO.yaml

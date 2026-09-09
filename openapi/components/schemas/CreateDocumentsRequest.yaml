@@ -1,0 +1,16 @@
+type: object
+description: Документы для создания.
+required:
+  - documents
+properties:
+  documents:
+    type: array
+    minItems: 1
+    maxItems: 100
+    description: >
+      Документы для создания. Номера документов не должны повторяться в одном
+      запросе.
+
+      Если номера повторяются, запрос не обрабатывается.
+    items:
+      $ref: ./DocumentWriteDTO.yaml

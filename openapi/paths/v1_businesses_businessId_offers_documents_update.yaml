@@ -1,0 +1,80 @@
+post:
+  x-resource-id: 301
+  tags:
+    - documents
+    - dbs
+    - fby
+    - fbs
+    - express
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards-management
+  x-allowed:
+    - seller
+  x-resource-limit-config:
+    path: resp
+    none:
+      amount: 5
+      period: minutes
+      period-duration: 1
+    medium:
+      amount: 10
+      period: minutes
+      period-duration: 1
+  x-apphost:
+    domain: OFFERS_CATALOG
+    enabled: true
+  operationId: updateDocuments
+  summary: Обновление документов
+  description: >
+    {% include notitle [access](../../_auto/method_scopes/updateDocuments.md) %}
+
+
+    Полностью обновляет номер, тип и даты документов на товары. За один запрос
+    можно обновить не более 100 документов.
+
+
+    Для каждого документа передайте его идентификатор и актуальные значения
+    номера, типа и дат.
+
+    Если дата не указана, ранее сохраненная дата будет удалена.
+
+    Ошибка одного документа не мешает обработке остальных.
+
+
+    {% include notitle [limit](../../_auto/method_limits/updateDocuments.md) %}
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateDocumentsRequest.yaml
+  responses:
+    '200':
+      description: >
+        Если все документы обновлены, поле `status` принимает значение `OK`, а
+        поле `result` не возвращается.
+
+
+        Если хотя бы один документ не удалось обновить, поле `status` принимает
+        значение `ERROR`, а поле
+
+        `result` содержит только ошибки. Остальные документы при этом
+        обрабатываются.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdateDocumentsResponse.yaml
+    '400':
+      $ref: ../components/responses/400.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

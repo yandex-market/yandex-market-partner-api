@@ -1,0 +1,16 @@
+type: object
+description: Документы для полного обновления.
+required:
+  - documents
+properties:
+  documents:
+    type: array
+    minItems: 1
+    maxItems: 100
+    description: >
+      Документы для обновления. Идентификаторы документов не должны повторяться
+      в одном запросе.
+
+      Если идентификаторы повторяются, запрос не обрабатывается.
+    items:
+      $ref: ./UpdateDocumentDTO.yaml

@@ -170,6 +170,14 @@ paths:
     $ref: paths/v2_businesses_businessId_offer-mappings_unarchive.yaml
   /v1/businesses/{businessId}/offer-mappings/barcodes/generate:
     $ref: paths/v1_businesses_businessId_offer-mappings_barcodes_generate.yaml
+  /v1/businesses/{businessId}/offers/documents/create:
+    $ref: paths/v1_businesses_businessId_offers_documents_create.yaml
+  /v1/businesses/{businessId}/offers/documents/update:
+    $ref: paths/v1_businesses_businessId_offers_documents_update.yaml
+  /v1/businesses/{businessId}/offers/documents/delete:
+    $ref: paths/v1_businesses_businessId_offers_documents_delete.yaml
+  /v1/businesses/{businessId}/offers/documents:
+    $ref: paths/v1_businesses_businessId_offers_documents.yaml
   /v2/businesses/{businessId}/offer-prices/updates:
     $ref: paths/v2_businesses_businessId_offer-prices_updates.yaml
   /v2/campaigns/{campaignId}/offer-prices/updates:

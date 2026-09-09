@@ -1,0 +1,5 @@
+type: string
+minLength: 1
+maxLength: 100
+pattern: ^\S(?:.*\S)?$
+description: Номер, указанный в сертификате, декларации или другом документе.

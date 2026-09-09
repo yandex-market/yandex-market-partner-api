@@ -1,0 +1,30 @@
+type: string
+description: >
+  Тип документа:
+
+
+  * `CONFORMITY_DECLARATION` — Декларация о соответствии.
+
+  * `CONFORMITY_CERTIFICATE` — Сертификат соответствия.
+
+  * `STATE_REGISTRATION_CERTIFICATE` — Государственная регистрация продукции
+  (санэпид требования).
+
+  * `MEDICINAL_PRODUCT_CERTIFICATE` — Обязательные документы для аптеки.
+
+  * `BIOLOGICALLY_ACTIVE_ADDITIVE_CERTIFICATE` — Свидетельство о государственной
+  регистрации БАД.
+
+  * `MEDICAL_DEVICE_CERTIFICATE` — Регистрационное удостоверение медицинского
+  изделия.
+
+  * `AGROCHEMICAL_PESTICIDE_CERTIFICATE` — Государственная регистрация пестицида
+  и агрохимиката.
+enum:
+  - CONFORMITY_DECLARATION
+  - CONFORMITY_CERTIFICATE
+  - STATE_REGISTRATION_CERTIFICATE
+  - MEDICINAL_PRODUCT_CERTIFICATE
+  - BIOLOGICALLY_ACTIVE_ADDITIVE_CERTIFICATE
+  - MEDICAL_DEVICE_CERTIFICATE
+  - AGROCHEMICAL_PESTICIDE_CERTIFICATE

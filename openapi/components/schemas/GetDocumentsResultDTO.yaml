@@ -1,0 +1,13 @@
+type: object
+description: Страница документов.
+required:
+  - documents
+  - paging
+properties:
+  documents:
+    type: array
+    description: Документы на странице.
+    items:
+      $ref: ./BusinessDocumentDTO.yaml
+  paging:
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

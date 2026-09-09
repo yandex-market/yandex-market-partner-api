@@ -1,0 +1,9 @@
+type: object
+description: >-
+  Ответ на обновление документов. Если ошибок нет, поле `result` не
+  возвращается.
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./UpdateDocumentsResultDTO.yaml

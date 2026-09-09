@@ -1,0 +1,18 @@
+type: object
+description: Реквизиты документа.
+required:
+  - number
+  - type
+properties:
+  number:
+    $ref: ./DocumentNumber.yaml
+  type:
+    $ref: ./DocumentType.yaml
+  activeFromDate:
+    type: string
+    format: date
+    description: Дата начала действия документа.
+  activeToDate:
+    type: string
+    format: date
+    description: Дата окончания действия документа.

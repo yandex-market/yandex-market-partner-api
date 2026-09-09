@@ -1,0 +1,15 @@
+type: string
+description: |
+  Код ошибки документа:
+
+  * `DOCUMENT_VALIDATION_FAILED` — документ не прошел проверку.
+  * `DOCUMENT_ALREADY_EXISTS` — документ уже существует.
+  * `DOCUMENT_NOT_FOUND` — документ не найден.
+  * `DOCUMENT_UPDATE_NOT_ALLOWED` — изменение документа запрещено.
+  * `DOCUMENT_CONCURRENT_MODIFICATION` — документ был изменен параллельно.
+enum:
+  - DOCUMENT_VALIDATION_FAILED
+  - DOCUMENT_ALREADY_EXISTS
+  - DOCUMENT_NOT_FOUND
+  - DOCUMENT_UPDATE_NOT_ALLOWED
+  - DOCUMENT_CONCURRENT_MODIFICATION

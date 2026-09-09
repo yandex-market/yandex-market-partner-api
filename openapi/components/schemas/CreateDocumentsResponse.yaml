@@ -1,0 +1,9 @@
+type: object
+description: Ответ с результатами создания документов.
+required:
+  - result
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./CreateDocumentsResultDTO.yaml

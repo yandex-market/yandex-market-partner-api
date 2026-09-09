@@ -1,0 +1,17 @@
+type: string
+description: |
+  Статус документа:
+
+  * `ACTIVE` — действует.
+  * `NOT_FOUND` — не найден в реестре.
+  * `VALIDATING` — проверяется.
+  * `WAITING_FIXES` — ожидает исправлений.
+  * `EXPIRED` — срок действия истек.
+  * `REVOKED` — отозван.
+enum:
+  - ACTIVE
+  - NOT_FOUND
+  - VALIDATING
+  - WAITING_FIXES
+  - EXPIRED
+  - REVOKED

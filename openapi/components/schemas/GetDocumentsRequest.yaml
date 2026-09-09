@@ -1,0 +1,37 @@
+type: object
+description: Фильтры для получения документов.
+properties:
+  documentIds:
+    type: array
+    nullable: true
+    minItems: 0
+    maxItems: 100
+    uniqueItems: true
+    description: Идентификаторы документов.
+    items:
+      $ref: ./DocumentId.yaml
+  documentNumbers:
+    type: array
+    nullable: true
+    minItems: 0
+    maxItems: 100
+    uniqueItems: true
+    description: Номера документов.
+    items:
+      $ref: ./DocumentNumber.yaml
+  documentTypes:
+    type: array
+    nullable: true
+    minItems: 0
+    uniqueItems: true
+    description: Типы документов.
+    items:
+      $ref: ./DocumentType.yaml
+  documentStatuses:
+    type: array
+    nullable: true
+    minItems: 0
+    uniqueItems: true
+    description: Статусы документов.
+    items:
+      $ref: ./DocumentStatusType.yaml

@@ -1,0 +1,13 @@
+type: object
+description: Документ бизнеса.
+allOf:
+  - $ref: ./DocumentWriteDTO.yaml
+  - type: object
+    required:
+      - id
+      - status
+    properties:
+      id:
+        $ref: ./DocumentId.yaml
+      status:
+        $ref: ./DocumentStatusType.yaml

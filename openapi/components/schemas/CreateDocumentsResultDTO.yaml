@@ -1,0 +1,19 @@
+type: object
+description: Созданные документы и ошибки обработки.
+properties:
+  documents:
+    type: array
+    nullable: true
+    minItems: 1
+    maxItems: 100
+    description: Документы, созданные этим запросом.
+    items:
+      $ref: ./BusinessDocumentDTO.yaml
+  errors:
+    type: array
+    nullable: true
+    minItems: 1
+    maxItems: 100
+    description: Ошибки документов, которые не удалось создать.
+    items:
+      $ref: ./CreateDocumentErrorDTO.yaml

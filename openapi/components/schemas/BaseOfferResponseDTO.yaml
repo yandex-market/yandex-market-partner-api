@@ -230,13 +230,7 @@ properties:
   commodityCodes:
     $ref: ./BaseOfferCommodityCodes.yaml
   certificates:
-    description: >
-      Номера документов на товар: сертификата, декларации соответствия и т. п.
-
-
-      Передавать можно только номера документов, сканы которого загружены в
-      кабинете продавца по
-      [инструкции](https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html).
+    description: "Номера документов на товар: сертификата, декларации соответствия и т. п.\n\nДокументы можно создать с помощью [POST\_v1/businesses/{businessId}/offers/documents/create](../../reference/documents/createDocuments.md).\n"
     type: array
     nullable: true
     minItems: 1
