@@ -1,0 +1,20 @@
+type: object
+description: Идентификатор поставки для создания электронной транспортной накладной.
+required:
+  - identifier
+  - value
+properties:
+  identifier:
+    type: string
+    minLength: 7
+    maxLength: 7
+    pattern: ^YLOG_ID$
+    description: Наименование идентификатора.
+    example: YLOG_ID
+  value:
+    type: string
+    minLength: 5
+    maxLength: 23
+    pattern: ^SCM_[0-9]{1,19}$
+    description: Значение идентификатора.
+    example: SCM_123456

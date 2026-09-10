@@ -45,3 +45,8 @@ properties:
   transitLocation:
     description: Информация о транзитном складе или ПВЗ.
     $ref: ./SupplyRequestLocationDTO.yaml
+  etrnIdentifier:
+    description: >-
+      Идентификатор для [создания
+      ЭТрН](https://yandex.ru/support/marketplace/ru/storage/shipment/etrn).
+    $ref: ./EtrnIdentifierDTO.yaml
