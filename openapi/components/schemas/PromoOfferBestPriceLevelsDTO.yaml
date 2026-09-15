@@ -1,0 +1,55 @@
+description: >
+  Максимальные цены для участия в акции «Бестселлеры Маркета» по уровням:
+
+
+  * **Лайт-бестселлер** — `lightBestLevel`
+
+  * **Бестселлер** — `bestLevel`
+
+  * **Супербестселлер** — `superBestLevel`
+
+  * **Топ-бестселлер** — `topBestLevel`
+
+
+  Чтобы товар участвовал на определенном уровне, цена по акции должна быть не
+  выше порога этого уровня.
+
+
+  Параметр возвращается только для акций «Бестселлеры Маркета». Подробнее об
+  этой акции читайте [в Справке Маркета для
+  продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/bestsellers).
+type: object
+required:
+  - lightBestLevel
+  - bestLevel
+  - superBestLevel
+  - topBestLevel
+properties:
+  lightBestLevel:
+    description: |
+      Максимальная цена для участия на уровне **Лайт-бестселлер**.
+
+      Указывается в рублях.
+    type: integer
+    format: int64
+  bestLevel:
+    description: |
+      Максимальная цена для участия на уровне **Бестселлер**.
+
+      Указывается в рублях.
+    type: integer
+    format: int64
+  superBestLevel:
+    description: |
+      Максимальная цена для участия на уровне **Супербестселлер**.
+
+      Указывается в рублях.
+    type: integer
+    format: int64
+  topBestLevel:
+    description: |
+      Максимальная цена для участия на уровне **Топ-бестселлер**.
+
+      Указывается в рублях.
+    type: integer
+    format: int64

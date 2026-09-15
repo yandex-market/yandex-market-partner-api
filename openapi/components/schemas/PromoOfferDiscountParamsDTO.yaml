@@ -20,10 +20,18 @@ properties:
     type: integer
     format: int64
   maxPromoPrice:
-    description: |
+    description: >
       Максимально возможная цена для участия в акции.
+
       Если значение не заполнено, ограничение отсутствует.
 
+
       Указывается в рублях.
+
+
+      Для акции «Бестселлеры Маркета» пороги по уровням возвращаются в параметре
+      `bestPriceLevels`.
     type: integer
     format: int64
+  bestPriceLevels:
+    $ref: ./PromoOfferBestPriceLevelsDTO.yaml

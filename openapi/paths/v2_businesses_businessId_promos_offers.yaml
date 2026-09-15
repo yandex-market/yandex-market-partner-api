@@ -37,7 +37,7 @@ post:
 
     {% note warning "Условия участия в акциях могут меняться" %}
 
-    Например, `maxPromoPrice`.
+    Например, `maxPromoPrice` и `bestPriceLevels`.
 
     Установленные цены меняться не будут — `price` и `promoPrice`.
 
