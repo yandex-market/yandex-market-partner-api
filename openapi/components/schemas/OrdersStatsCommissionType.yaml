@@ -20,6 +20,8 @@ description: >
 
   * `AGENCY` — прием платежа покупателя.
 
+  * `AGENCY_COMMISSION_3PL` — услуги перевозки и ТЭО.
+
   * `PAYMENT_TRANSFER` — перевод платежа покупателя.
 
   * `RETURNED_ORDERS_STORAGE` — хранение невыкупов и возвратов (FBS). Для DBS и
@@ -50,6 +52,7 @@ enum:
   - DELIVERY_TO_CUSTOMER
   - EXPRESS_DELIVERY_TO_CUSTOMER
   - AGENCY
+  - AGENCY_COMMISSION_3PL
   - PAYMENT_TRANSFER
   - RETURNED_ORDERS_STORAGE
   - SORTING
