@@ -1,0 +1,7 @@
+type: string
+description: |
+  * `CAMPAIGN` - интерфейс складов на уровне магазинов.
+  * `WAREHOUSE` - интерфейс единых складов на уровне кабинета.
+enum:
+  - CAMPAIGN
+  - WAREHOUSE
