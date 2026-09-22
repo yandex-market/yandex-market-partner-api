@@ -23,7 +23,7 @@ post:
       period-duration: 1
   x-apphost:
     domain: LOGISTICS
-    enabled: false
+    enabled: true
   x-deprecation-config:
     degradation-start-date: '2027-01-18'
     shutdown-date: '2027-04-05'

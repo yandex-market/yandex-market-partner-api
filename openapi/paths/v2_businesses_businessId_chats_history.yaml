@@ -25,7 +25,7 @@ post:
       period-duration: 1
   x-apphost:
     domain: ONBOARDING
-    enabled: false
+    enabled: true
   operationId: getChatHistory
   summary: Получение истории сообщений в чате
   description: |

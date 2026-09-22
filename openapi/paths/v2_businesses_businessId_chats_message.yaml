@@ -24,7 +24,7 @@ post:
       period-duration: 1
   x-apphost:
     domain: ONBOARDING
-    enabled: false
+    enabled: true
   operationId: sendMessageToChat
   summary: Отправка сообщения в чат
   description: >
@@ -93,7 +93,7 @@ get:
       period-duration: 1
   x-apphost:
     domain: ONBOARDING
-    enabled: false
+    enabled: true
   operationId: getChatMessage
   summary: Получение сообщения в чате
   description: "{% include notitle [access](../../_auto/method_scopes/getChatMessage.md) %}\n\nВозвращает сообщение по его идентификатору.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getChatMessage.md) %}\n"

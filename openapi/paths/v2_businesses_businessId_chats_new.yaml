@@ -24,7 +24,7 @@ post:
       period-duration: 1
   x-apphost:
     domain: ONBOARDING
-    enabled: false
+    enabled: true
   operationId: createChat
   summary: Создание нового чата с покупателем
   description: >

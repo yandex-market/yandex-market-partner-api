@@ -37,7 +37,7 @@ post:
       period-duration: 1
   x-apphost:
     domain: BASE
-    enabled: false
+    enabled: true
   operationId: getRegionsCodes
   summary: Список допустимых кодов стран
   description: >

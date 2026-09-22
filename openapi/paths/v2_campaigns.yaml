@@ -37,7 +37,7 @@ get:
       period-duration: 1
   x-apphost:
     domain: BASE
-    enabled: false
+    enabled: true
   operationId: getCampaigns
   summary: Список магазинов пользователя
   description: >
