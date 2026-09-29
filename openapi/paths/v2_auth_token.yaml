@@ -1,5 +1,6 @@
 post:
   x-resource-id: 256
+  x-personal-cleanup-enabled: false
   tags:
     - auth
     - fby

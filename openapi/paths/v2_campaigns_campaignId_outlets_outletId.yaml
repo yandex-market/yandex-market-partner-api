@@ -1,5 +1,6 @@
 put:
   x-resource-id: 49
+  x-personal-cleanup-enabled: false
   tags:
     - outlets
     - dbs
@@ -66,6 +67,7 @@ put:
       $ref: ../components/responses/500.yaml
 get:
   x-resource-id: 33
+  x-personal-cleanup-enabled: false
   tags:
     - outlets
     - dbs
@@ -121,6 +123,7 @@ get:
       $ref: ../components/responses/500Typed.yaml
 delete:
   x-resource-id: 47
+  x-personal-cleanup-enabled: false
   tags:
     - outlets
     - dbs

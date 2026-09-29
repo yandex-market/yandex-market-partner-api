@@ -1,5 +1,6 @@
 put:
   x-resource-id: 154
+  x-personal-cleanup-enabled: false
   tags:
     - order-delivery
     - dbs

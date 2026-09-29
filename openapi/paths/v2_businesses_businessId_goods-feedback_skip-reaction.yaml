@@ -1,5 +1,6 @@
 post:
   x-resource-id: 234
+  x-personal-cleanup-enabled: false
   tags:
     - goods-feedback
     - fby

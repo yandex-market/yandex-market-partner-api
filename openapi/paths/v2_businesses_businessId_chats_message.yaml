@@ -1,5 +1,6 @@
 post:
   x-resource-id: 210
+  x-personal-cleanup-enabled: false
   tags:
     - chats
     - dbs
@@ -68,6 +69,7 @@ post:
       $ref: ../components/responses/500.yaml
 get:
   x-resource-id: 248
+  x-personal-cleanup-enabled: false
   tags:
     - chats
     - dbs

@@ -1,5 +1,6 @@
 get:
   x-resource-id: 2
+  x-personal-cleanup-enabled: false
   tags:
     - campaigns
     - dbs

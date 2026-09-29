@@ -1,5 +1,6 @@
 get:
   x-resource-id: 55
+  x-personal-cleanup-enabled: false
   tags:
     - delivery-services
     - fbs

@@ -1,5 +1,6 @@
 post:
   x-resource-id: 117
+  x-personal-cleanup-enabled: false
   tags:
     - orders
     - fbs

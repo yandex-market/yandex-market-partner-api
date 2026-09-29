@@ -1,5 +1,6 @@
 get:
   x-resource-id: 113
+  x-personal-cleanup-enabled: false
   tags:
     - outlet-licenses
     - dbs
@@ -70,6 +71,7 @@ get:
       $ref: ../components/responses/500.yaml
 delete:
   x-resource-id: 112
+  x-personal-cleanup-enabled: false
   tags:
     - outlet-licenses
     - dbs
@@ -134,6 +136,7 @@ delete:
       $ref: ../components/responses/500.yaml
 post:
   x-resource-id: 114
+  x-personal-cleanup-enabled: false
   tags:
     - outlet-licenses
     - dbs

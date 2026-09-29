@@ -1,5 +1,6 @@
 post:
   x-resource-id: 212
+  x-personal-cleanup-enabled: false
   tags:
     - reports
     - fby

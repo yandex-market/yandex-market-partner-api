@@ -1,5 +1,6 @@
 get:
   x-resource-id: 163
+  x-personal-cleanup-enabled: false
   tags:
     - returns
     - fbs

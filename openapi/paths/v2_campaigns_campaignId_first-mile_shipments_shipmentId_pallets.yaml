@@ -1,5 +1,6 @@
 put:
   x-resource-id: 178
+  x-personal-cleanup-enabled: false
   tags:
     - shipments
     - fbs

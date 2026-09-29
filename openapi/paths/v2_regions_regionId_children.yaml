@@ -1,5 +1,6 @@
 get:
   x-resource-id: 31
+  x-personal-cleanup-enabled: false
   tags:
     - regions
     - fby

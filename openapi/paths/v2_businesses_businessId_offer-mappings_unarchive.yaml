@@ -1,5 +1,6 @@
 post:
   x-resource-id: 204
+  x-personal-cleanup-enabled: false
   tags:
     - business-offer-mappings
     - dbs

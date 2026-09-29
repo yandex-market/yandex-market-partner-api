@@ -1,5 +1,6 @@
 post:
   x-resource-id: 64
+  x-personal-cleanup-enabled: false
   tags:
     - prices
     - fby
