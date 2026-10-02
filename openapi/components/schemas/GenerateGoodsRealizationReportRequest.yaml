@@ -13,3 +13,28 @@ properties:
     $ref: ./Year.yaml
   month:
     $ref: ./Month.yaml
+  inns:
+    description: Список ИНН (доступно продавцам-резидентам РФ).
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: string
+      pattern: ^([0-9]{10}|[0-9]{12})$
+  placementPrograms:
+    description: Список моделей размещения.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      $ref: ./PlacementType.yaml
+  placementContracts:
+    description: Список номеров договоров на размещение.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: string
