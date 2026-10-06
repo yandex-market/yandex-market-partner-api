@@ -43,6 +43,8 @@ description: >
 
     * `BNPL_TBYB` - Оплата после доставки на основе Сплита.
 
+    * `SBP_ON_DELIVERY` — постоплата через СБП.
+
     * `CASH_ON_DELIVERY` — наличными.
 
     * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
@@ -65,6 +67,7 @@ enum:
   - GOOGLE_PAY
   - TINKOFF_CREDIT
   - SBP
+  - SBP_ON_DELIVERY
   - TINKOFF_INSTALLMENTS
   - B2B_ACCOUNT_PREPAYMENT
   - B2B_ACCOUNT_POSTPAYMENT
