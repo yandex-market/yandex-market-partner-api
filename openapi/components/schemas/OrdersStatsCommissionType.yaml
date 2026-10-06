@@ -42,6 +42,11 @@ description: >
 
   * `ITEM_BOOKING` - бронирование товара (только для продавцов Market Yandex
   Go).
+
+  * `SHOP_SERVICE_PLACEMENT` — размещение услуг магазина (DBS). Начисления и
+  корректировки возвращаются отдельными элементами массива `commissions` с этим
+  типом: в одном заказе может быть несколько таких элементов. Корректировки
+  могут быть отрицательными.
 type: string
 enum:
   - FEE
@@ -62,3 +67,4 @@ enum:
   - CROSSREGIONAL_DELIVERY
   - FULFILLMENT_WITHDRAW
   - ITEM_BOOKING
+  - SHOP_SERVICE_PLACEMENT

@@ -1,0 +1,11 @@
+description: |
+  Тип услуги магазина:
+
+  * `INSTALLATION` — установка.
+  * `ASSEMBLY` — сборка.
+  * `UTILIZATION` — утилизация.
+type: string
+enum:
+  - INSTALLATION
+  - ASSEMBLY
+  - UTILIZATION
