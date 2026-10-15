@@ -1,6 +1,7 @@
 get:
   x-resource-id: 148
   x-personal-cleanup-enabled: false
+  x-analytical-group: RETURNS
   tags:
     - returns
     - fbs

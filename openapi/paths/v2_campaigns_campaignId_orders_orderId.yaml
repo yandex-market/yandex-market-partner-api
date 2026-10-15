@@ -1,6 +1,7 @@
 get:
   x-resource-id: 28
   x-personal-cleanup-enabled: true
+  x-analytical-group: ORDERS
   tags:
     - orders
     - fby

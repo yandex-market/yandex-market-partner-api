@@ -1,6 +1,7 @@
 post:
   x-resource-id: 48
   x-personal-cleanup-enabled: false
+  x-analytical-group: DBS
   tags:
     - outlets
     - dbs
@@ -67,6 +68,7 @@ post:
 get:
   x-resource-id: 32
   x-personal-cleanup-enabled: false
+  x-analytical-group: DBS
   tags:
     - outlets
     - dbs

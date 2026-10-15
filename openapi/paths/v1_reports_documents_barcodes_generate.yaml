@@ -1,6 +1,7 @@
 post:
   x-resource-id: 282
   x-personal-cleanup-enabled: false
+  x-analytical-group: CATALOG
   tags:
     - reports
     - fby

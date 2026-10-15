@@ -1,6 +1,7 @@
 post:
   x-resource-id: 192
   x-personal-cleanup-enabled: false
+  x-analytical-group: REPORTS
   tags:
     - reports
     - fby
@@ -39,8 +40,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: >-
-            ../components/schemas/GenerateUnitedMarketplaceServicesReportRequest.yaml
+          $ref: ../components/schemas/GenerateUnitedMarketplaceServicesReportRequest.yaml
   responses:
     '200':
       description: >-

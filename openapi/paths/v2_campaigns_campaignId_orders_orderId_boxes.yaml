@@ -1,6 +1,7 @@
 put:
   x-resource-id: 206
   x-personal-cleanup-enabled: false
+  x-analytical-group: ORDERS
   tags:
     - orders
     - fbs

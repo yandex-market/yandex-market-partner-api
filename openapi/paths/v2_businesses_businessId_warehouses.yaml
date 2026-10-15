@@ -1,6 +1,7 @@
 get:
   x-resource-id: 194
   x-personal-cleanup-enabled: false
+  x-analytical-group: WAREHOUSES
   tags:
     - warehouses
     - fbs
@@ -72,6 +73,7 @@ get:
 post:
   x-resource-id: 243
   x-personal-cleanup-enabled: false
+  x-analytical-group: WAREHOUSES
   tags:
     - warehouses
     - fbs

@@ -1,6 +1,7 @@
 get:
   x-resource-id: 113
   x-personal-cleanup-enabled: false
+  x-analytical-group: DBS
   tags:
     - outlet-licenses
     - dbs
@@ -72,6 +73,7 @@ get:
 delete:
   x-resource-id: 112
   x-personal-cleanup-enabled: false
+  x-analytical-group: DBS
   tags:
     - outlet-licenses
     - dbs
@@ -137,6 +139,7 @@ delete:
 post:
   x-resource-id: 114
   x-personal-cleanup-enabled: false
+  x-analytical-group: DBS
   tags:
     - outlet-licenses
     - dbs

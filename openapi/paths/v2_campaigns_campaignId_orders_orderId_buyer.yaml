@@ -1,6 +1,7 @@
 get:
   x-resource-id: 130
   x-personal-cleanup-enabled: true
+  x-analytical-group: ORDERS
   tags:
     - order-delivery
     - dbs

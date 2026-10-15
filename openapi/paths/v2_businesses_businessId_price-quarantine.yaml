@@ -1,6 +1,7 @@
 post:
   x-resource-id: 172
   x-personal-cleanup-enabled: false
+  x-analytical-group: PRICE
   tags:
     - price-quarantine
     - dbs

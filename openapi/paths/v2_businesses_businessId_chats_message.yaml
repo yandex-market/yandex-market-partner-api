@@ -1,6 +1,7 @@
 post:
   x-resource-id: 210
   x-personal-cleanup-enabled: false
+  x-analytical-group: CHATS
   tags:
     - chats
     - dbs
@@ -70,6 +71,7 @@ post:
 get:
   x-resource-id: 248
   x-personal-cleanup-enabled: false
+  x-analytical-group: CHATS
   tags:
     - chats
     - dbs

@@ -1,6 +1,7 @@
 post:
   x-resource-id: 59
   x-personal-cleanup-enabled: false
+  x-analytical-group: CATALOG
   tags:
     - hidden-offers
     - fby
@@ -77,6 +78,7 @@ post:
 get:
   x-resource-id: 61
   x-personal-cleanup-enabled: false
+  x-analytical-group: CATALOG
   tags:
     - hidden-offers
     - fby

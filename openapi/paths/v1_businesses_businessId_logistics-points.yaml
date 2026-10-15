@@ -1,6 +1,7 @@
 post:
   x-resource-id: 277
   x-personal-cleanup-enabled: false
+  x-analytical-group: INFORMATION
   tags:
     - logistic-points
     - laas

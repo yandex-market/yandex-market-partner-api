@@ -1,6 +1,7 @@
 post:
   x-resource-id: 218
   x-personal-cleanup-enabled: false
+  x-analytical-group: CAMPAIGNS
   tags:
     - businesses
     - dbs

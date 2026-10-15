@@ -1,6 +1,7 @@
 put:
   x-resource-id: 141
   x-personal-cleanup-enabled: false
+  x-analytical-group: STOCKS
   tags:
     - stocks
     - fbs
@@ -54,6 +55,7 @@ put:
 post:
   x-resource-id: 201
   x-personal-cleanup-enabled: false
+  x-analytical-group: STOCKS
   tags:
     - stocks
     - fby

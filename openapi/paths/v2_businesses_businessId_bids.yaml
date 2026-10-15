@@ -1,6 +1,7 @@
 put:
   x-resource-id: 165
   x-personal-cleanup-enabled: false
+  x-analytical-group: BIDS
   tags:
     - bids
     - dbs

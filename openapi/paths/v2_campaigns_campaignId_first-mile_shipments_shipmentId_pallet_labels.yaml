@@ -1,6 +1,7 @@
 get:
   x-resource-id: 180
   x-personal-cleanup-enabled: false
+  x-analytical-group: LABELS
   tags:
     - shipments
     - fbs

@@ -1,6 +1,7 @@
 get:
   x-resource-id: 249
   x-personal-cleanup-enabled: false
+  x-analytical-group: CHATS
   tags:
     - chats
     - dbs

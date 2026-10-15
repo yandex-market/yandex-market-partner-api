@@ -1,6 +1,7 @@
 put:
   x-resource-id: 49
   x-personal-cleanup-enabled: false
+  x-analytical-group: DBS
   tags:
     - outlets
     - dbs
@@ -68,6 +69,7 @@ put:
 get:
   x-resource-id: 33
   x-personal-cleanup-enabled: false
+  x-analytical-group: DBS
   tags:
     - outlets
     - dbs
@@ -124,6 +126,7 @@ get:
 delete:
   x-resource-id: 47
   x-personal-cleanup-enabled: false
+  x-analytical-group: DBS
   tags:
     - outlets
     - dbs

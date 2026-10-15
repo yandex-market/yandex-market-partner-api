@@ -1,6 +1,7 @@
 post:
   x-resource-id: 269
   x-personal-cleanup-enabled: true
+  x-analytical-group: ORDERS
   tags:
     - orders
     - laas

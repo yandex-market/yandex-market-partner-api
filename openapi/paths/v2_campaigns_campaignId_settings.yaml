@@ -1,6 +1,7 @@
 get:
   x-resource-id: 25
   x-personal-cleanup-enabled: false
+  x-analytical-group: CAMPAIGNS
   tags:
     - campaigns
     - dbs
