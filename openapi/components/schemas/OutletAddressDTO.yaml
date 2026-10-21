@@ -5,7 +5,7 @@ required:
   - regionId
 properties:
   regionId:
-    description: "Идентификатор региона.\n\nИдентификатор можно получить c помощью запроса [GET\_v2/regions](../../reference/regions/searchRegionsByName.md).\n\n{% note alert \"Типы регионов при создании и редактировании точек продаж\" %}\n\nУказывайте только регионы типов `TOWN` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных параметрах `type` запросов [GET\_v2/regions](../../reference/regions/searchRegionsByName.md) и [GET\_v2/regions/{regionId}](../../reference/regions/searchRegionsById.md).\n\n{% endnote %}\n"
+    description: "Идентификатор региона.\n\nИдентификатор можно получить c помощью запроса [GET\_v2/regions](../../reference/regions/searchRegionsByName.md).\n\n{% note alert \"Типы регионов при создании и редактировании точек продаж\" %}\n\nУказывайте только регионы типов `VILLAGE` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных параметрах `type` запросов [GET\_v2/regions](../../reference/regions/searchRegionsByName.md) и [GET\_v2/regions/{regionId}](../../reference/regions/searchRegionsById.md).\n\n{% endnote %}\n"
     type: integer
     format: int64
   street:
