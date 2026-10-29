@@ -6,5 +6,16 @@ required:
 properties:
   placementType:
     $ref: ./WarehouseProgramType.yaml
+  campaignId:
+    description: >
+      Идентификатор магазина, связанного с этой моделью работы склада.
+
+
+      Используется для вызова методов API с параметром `campaignId`, например
+      для получения цен и НДС товаров.
+
+
+      Возвращается, если связь с магазином однозначно определена.
+    $ref: ./CampaignId.yaml
   apiAvailability:
     $ref: ./ApiAvailabilityStatusType.yaml
