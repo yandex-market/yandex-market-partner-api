@@ -215,6 +215,8 @@ properties:
     $ref: ./BaseOfferDownloadable.yaml
   adult:
     $ref: ./BaseOfferAdult.yaml
+  markingDeclared:
+    $ref: ./BaseOfferMarkingDeclared.yaml
   age:
     description: >
       Если товар не предназначен для детей младше определенного возраста,
