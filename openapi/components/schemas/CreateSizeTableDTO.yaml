@@ -1,0 +1,32 @@
+description: Новая таблица размеров.
+type: object
+required:
+  - sizeParameterId
+  - sizeTableName
+  - rows
+properties:
+  sizeParameterId:
+    description: >
+      Идентификатор размерной характеристики, к которой относятся размеры из
+      таблицы.
+    type: integer
+    format: int64
+    minimum: 1
+  sizeTableName:
+    description: >
+      Название таблицы размеров. Пробелы в начале и в конце удаляются. Название
+      из одних пробелов —
+
+      ошибка `INVALID_REQUEST`.
+    type: string
+    minLength: 1
+    maxLength: 256
+  rows:
+    description: >
+      Строки таблицы: каждая описывает один размер. При сохранении порядок строк
+      может измениться.
+    type: array
+    minItems: 1
+    maxItems: 200
+    items:
+      $ref: ./SizeTableRowDTO.yaml

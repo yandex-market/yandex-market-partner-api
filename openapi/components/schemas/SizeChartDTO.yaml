@@ -1,0 +1,24 @@
+description: Колонка таблицы размеров — размерная сетка или обмер.
+type: object
+required:
+  - sizeChartId
+  - sizeChartName
+  - columnType
+  - sizes
+properties:
+  sizeChartId:
+    description: >-
+      Идентификатор размерной сетки или обмера. У сеток и обмеров общее
+      пространство идентификаторов.
+    type: integer
+    format: int64
+  sizeChartName:
+    description: Название размерной сетки или обмера.
+    type: string
+  columnType:
+    $ref: ./SizeTableColumnType.yaml
+  sizes:
+    description: Значения колонки в порядке строк таблицы. Пустые ячейки не возвращаются.
+    type: array
+    items:
+      $ref: ./SizeValueDTO.yaml

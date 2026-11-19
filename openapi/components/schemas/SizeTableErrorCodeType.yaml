@@ -1,0 +1,63 @@
+description: >
+  Код ошибки сохранения таблицы размеров:
+
+
+  * `INVALID_REQUEST` — нарушена структура таблицы: название из одних пробелов,
+  ячейка без `sizeChartId`
+    и `sizeChartName` (`rowIndex`), повтор колонки в строке, ячейка без `sizeValueId` и `sizeValue` или ячейка,
+    в которой `sizeChartName` не совпадает с названием колонки `sizeChartId` (`rowIndex`, `sizeChartId`).
+  * `UNKNOWN_SIZE_CHART` — размерных сеток или обмеров из `sizeChartIds` нет
+  среди доступных
+    для размерной характеристики таблицы, а названиям из `sizeChartNames` не нашлось ровно одной такой колонки.
+  * `INVALID_SIZE_VALUE` — значение не подходит колонке (`rowIndex`,
+  `sizeChartId`).
+
+  * `EMPTY_TABLE` — в таблице нет ни одной ячейки. Для запросов, которые
+  соответствуют схеме, не возвращается.
+    Если в колонке только «нет значения», возвращается `NONE_COLUMN`.
+  * `EMPTY_CELL` — не заполнена ячейка обязательной размерной сетки (`rowIndex`,
+  `sizeChartId`).
+
+  * `NONE_COLUMN` — в колонках из `sizeChartIds` нет ни одного значения, кроме
+  «нет значения».
+
+  * `DUPLICATE_ROWS` — строки из `rowIndices` совпадают.
+
+  * `DUPLICATE_SIZES` — значения повторяются в размерных сетках из
+  `sizeChartIds`. Зависит от размерной
+    характеристики: для одних характеристик ошибка возвращается при повторах в любой сетке, для других —
+    только если повторы есть во всех сетках таблицы.
+  * `DUPLICATE_MEASURES` — значения повторяются в обмерах из `sizeChartIds`.
+  Зависит от размерной
+    характеристики: для некоторых характеристик повторы в обмерах допускаются.
+  * `ABSENT_MANDATORY_SIZE_CHART` — в таблице нет обязательной размерной сетки.
+
+  * `LIMIT_TABLES` — у бизнеса уже максимальное количество таблиц. Только при
+  создании.
+
+  * `NOT_FOUND` — таблицы нет. Только при обновлении.
+
+  * `FORBIDDEN` — это таблица Маркета (`sizeTableType: STANDARD`), ее нельзя
+  изменить. Только при обновлении.
+
+  * `CONCURRENT_MODIFICATION` — таблицу изменили во время обработки запроса.
+  Повторите запрос. Только при обновлении.
+
+  * `INTERNAL_ERROR` — внутренняя ошибка, таблица не сохранена.
+type: string
+enum:
+  - INVALID_REQUEST
+  - UNKNOWN_SIZE_CHART
+  - INVALID_SIZE_VALUE
+  - EMPTY_TABLE
+  - EMPTY_CELL
+  - NONE_COLUMN
+  - DUPLICATE_ROWS
+  - DUPLICATE_SIZES
+  - DUPLICATE_MEASURES
+  - ABSENT_MANDATORY_SIZE_CHART
+  - LIMIT_TABLES
+  - NOT_FOUND
+  - FORBIDDEN
+  - CONCURRENT_MODIFICATION
+  - INTERNAL_ERROR

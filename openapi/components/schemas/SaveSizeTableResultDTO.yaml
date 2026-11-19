@@ -1,0 +1,31 @@
+description: >
+  Результат сохранения таблицы размеров. Если таблица сохранена, возвращаются
+  `sizeTableId` и `sizeTableName`,
+
+  если нет — только `errors`.
+type: object
+properties:
+  sizeTableId:
+    description: Идентификатор сохраненной таблицы размеров.
+    type: integer
+    format: int64
+  sizeTableName:
+    description: Название сохраненной таблицы размеров.
+    type: string
+  errors:
+    description: >
+      Ошибки, из-за которых таблица не сохранена.
+
+
+      Сначала проверяются структура таблицы, ее колонки и значения ячеек —
+      ошибки `INVALID_REQUEST`,
+
+      `UNKNOWN_SIZE_CHART` и `INVALID_SIZE_VALUE`. Если они есть, остальные
+      проверки не выполняются,
+
+      поэтому после исправления могут вернуться другие ошибки.
+    type: array
+    nullable: true
+    minItems: 1
+    items:
+      $ref: ./SizeTableErrorDTO.yaml

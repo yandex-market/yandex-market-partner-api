@@ -1,0 +1,17 @@
+description: Идентификаторы таблиц размеров.
+type: object
+properties:
+  sizeTableIds:
+    description: |
+      Идентификаторы таблиц размеров.
+
+      Если параметр не передан, возвращаются все таблицы, созданные бизнесом.
+    type: array
+    nullable: true
+    minItems: 1
+    maxItems: 100
+    uniqueItems: true
+    items:
+      type: integer
+      format: int64
+      minimum: 1

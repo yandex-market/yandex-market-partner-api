@@ -1,0 +1,42 @@
+description: Таблица размеров.
+type: object
+required:
+  - sizeTableId
+  - sizeTableName
+  - sizeTableType
+  - sizeParameterId
+  - editable
+  - sizeCharts
+properties:
+  sizeTableId:
+    description: Идентификатор таблицы размеров.
+    type: integer
+    format: int64
+  sizeTableName:
+    description: Название таблицы размеров.
+    type: string
+  sizeTableType:
+    $ref: ./SizeTableType.yaml
+  sizeParameterId:
+    description: >-
+      Идентификатор размерной характеристики, к которой относятся размеры из
+      таблицы.
+    type: integer
+    format: int64
+  editable:
+    description: >
+      Может ли бизнес редактировать таблицу: `true` — для таблиц, созданных
+      бизнесом, `false` — для таблиц Маркета.
+    type: boolean
+  key:
+    description: >-
+      Условия подбора таблицы. Возвращаются, только если таблица подобрана по
+      категории.
+    $ref: ./SizeTableKeyDTO.yaml
+  sizeCharts:
+    description: >
+      Колонки таблицы: размерные сетки и обмеры. Колонки без значений не
+      возвращаются.
+    type: array
+    items:
+      $ref: ./SizeChartDTO.yaml

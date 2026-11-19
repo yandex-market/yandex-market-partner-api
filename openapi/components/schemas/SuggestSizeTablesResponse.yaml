@@ -1,0 +1,7 @@
+description: Ответ с подходящими таблицами размеров.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./SuggestSizeTablesResultDTO.yaml

@@ -1,0 +1,10 @@
+description: Размерная характеристика, для которой нужны размерные сетки и обмеры.
+type: object
+required:
+  - sizeParameterId
+properties:
+  sizeParameterId:
+    description: Идентификатор размерной характеристики.
+    type: integer
+    format: int64
+    minimum: 1

@@ -1,0 +1,17 @@
+description: Параметры подбора таблиц размеров.
+type: object
+required:
+  - categoryId
+properties:
+  categoryId:
+    $ref: ./CategoryId.yaml
+  vendorId:
+    description: "Идентификатор бренда: значение характеристики **Бренд** (`id: 7893318`).\n\nЧтобы его узнать, воспользуйтесь запросом [POST\_v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md) — идентификатор придет в `parameters[].values[].id`.\n"
+    type: integer
+    format: int64
+    minimum: 1
+  genderId:
+    description: "Идентификатор пола: значение характеристики **Пол** (`id: 14805991`).\n\nЧтобы его узнать, воспользуйтесь запросом [POST\_v2/category/{categoryId}/parameters](../../reference/content/getCategoryContentParameters.md) — идентификатор придет в `parameters[].values[].id`.\n"
+    type: integer
+    format: int64
+    minimum: 1

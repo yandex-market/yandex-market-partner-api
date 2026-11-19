@@ -1,0 +1,176 @@
+post:
+  x-resource-id: 309
+  x-personal-cleanup-enabled: false
+  x-analytical-group: CATALOG
+  tags:
+    - content
+    - dbs
+    - fby
+    - fbs
+    - express
+    - laas
+  x-auth-scopes:
+    - all-methods
+    - offers-and-cards-management
+  x-allowed:
+    - seller
+    - market-yandex-go
+  x-resource-limit-config:
+    path: resp
+    none:
+      amount: 5
+      period: minutes
+      period-duration: 1
+    medium:
+      amount: 10
+      period: minutes
+      period-duration: 1
+  x-apphost:
+    domain: OFFERS_CATALOG
+    enabled: true
+  operationId: updateContentSizeTables
+  summary: Обновление таблиц размеров
+  description: >
+    {% include notitle
+    [access](../../_auto/method_scopes/updateContentSizeTables.md) %}
+
+
+    Полностью заменяет названия и содержимое таблиц размеров, созданных
+    бизнесом. За один запрос можно обновить
+
+    до 10 таблиц, в которых суммарно не больше 5000 ячеек. Если таблиц или ячеек
+    больше, запрос отклоняется
+
+    с ошибкой `BAD_REQUEST` и ни одна таблица не обновляется.
+
+
+    {% note warning "Передавайте полное содержимое таблицы" %}
+
+
+    Все отсутствующие строки и колонки будут удалены.
+
+
+    {% endnote %}
+
+
+    Изменить можно только таблицы, созданные бизнесом, — у них в ответе метода
+
+    `POST v2/businesses/{businessId}/size-tables` указано `editable: true`. Если
+    таблицы нет, для нее возвращается
+
+    ошибка `NOT_FOUND`, если это таблица Маркета (`sizeTableType: STANDARD`) —
+    ошибка `FORBIDDEN`.
+
+
+    Размерную характеристику таблицы изменить нельзя: колонки и значения
+    проверяются по характеристике, указанной
+
+    при создании таблицы. Размерные сетки и обмеры, которые можно использовать в
+    таблице, их значения и обязательные
+
+    сетки возвращает метод `POST v2/businesses/{businessId}/size-tables/charts`.
+
+
+    Идентификаторы таблиц не должны повторяться в одном запросе. Если они
+    повторяются, запрос отклоняется
+
+    с ошибкой `BAD_REQUEST` и ни одна таблица не обновляется.
+
+
+    {% cut "Как заполнить таблицу" %}
+
+
+    {% include notitle
+    [size-tables-filling](../../_includes/common/size-tables-filling.md) %}
+
+
+    {% endcut %}
+
+
+    {% cut "Чем сохраненная таблица отличается от переданной" %}
+
+
+    {% include notitle
+    [size-tables-saved-differences](../../_includes/common/size-tables-saved-differences.md)
+    %}
+
+
+    Значения из ответа можно без изменений передать в этот метод: поля
+    `columnType` и `rowIndex` в нем не учитываются.
+
+
+    {% endcut %}
+
+
+    {% note warning "Сохраняется содержимое из последнего запроса" %}
+
+
+    Версии таблицы не сравниваются. Если таблицу изменили в кабинете после того,
+    как вы ее получили,
+
+    эти изменения будут перезаписаны без предупреждения. Ошибка
+    `CONCURRENT_MODIFICATION` возвращается, только если
+
+    таблицу изменили во время обработки вашего запроса. В этом случае повторите
+    запрос.
+
+
+    {% endnote %}
+
+
+    Новое содержимое таблицы применяется к привязанным к ней товарам
+    автоматически через некоторое время.
+
+    Передавать товары повторно не нужно.
+
+
+    Если запрос завершился ошибкой с кодом 5xx, его можно повторить: таблицы
+    заменятся тем же содержимым.
+
+
+    {% include notitle
+    [limit](../../_auto/method_limits/updateContentSizeTables.md) %}
+  parameters:
+    - $ref: ../components/parameters/BusinessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/UpdateSizeTablesRequest.yaml
+  responses:
+    '200':
+      description: >
+        Результаты обновления таблиц в порядке запроса.
+
+
+        Если хотя бы одну таблицу не удалось обновить, поле `status` принимает
+        значение `ERROR`.
+
+        Остальные таблицы при этом обрабатываются и сохраняются.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/UpdateSizeTablesResponse.yaml
+    '400':
+      description: >
+        Запрос содержит неправильные данные, ни одна таблица не обновляется.
+        [Подробнее об ошибке](../../concepts/error-codes.md#400)
+
+
+        Код ошибки — `BAD_REQUEST`: запрос не соответствует описанию метода или
+        идентификаторы таблиц повторяются.
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ApiClientDataErrorResponse.yaml
+    '401':
+      $ref: ../components/responses/401.yaml
+    '403':
+      $ref: ../components/responses/403.yaml
+    '404':
+      $ref: ../components/responses/404.yaml
+    '420':
+      $ref: ../components/responses/420.yaml
+    '500':
+      $ref: ../components/responses/500.yaml

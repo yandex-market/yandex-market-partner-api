@@ -1,0 +1,9 @@
+description: Ответ с размерными сетками и обмерами.
+type: object
+required:
+  - result
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GetSizeChartsResultDTO.yaml

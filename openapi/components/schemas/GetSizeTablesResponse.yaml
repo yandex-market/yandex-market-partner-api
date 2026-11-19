@@ -1,0 +1,7 @@
+description: Ответ с таблицами размеров.
+type: object
+allOf:
+  - $ref: ./ApiResponse.yaml
+  - properties:
+      result:
+        $ref: ./GetSizeTablesResultDTO.yaml

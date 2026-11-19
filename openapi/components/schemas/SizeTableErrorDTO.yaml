@@ -1,0 +1,51 @@
+description: >
+  Ошибка сохранения таблицы размеров. Место ошибки указывают поля `rowIndex`,
+  `sizeChartId`, `sizeChartIds`,
+
+  `sizeChartNames` и `rowIndices`: какие из них возвращаются, зависит от кода
+  ошибки.
+type: object
+required:
+  - code
+properties:
+  code:
+    $ref: ./SizeTableErrorCodeType.yaml
+  rowIndex:
+    description: >
+      Номер строки с ошибкой в `rows` запроса, начиная с 0. Может не совпадать с
+      `rowIndex` сохраненной таблицы.
+    type: integer
+    format: int32
+    minimum: 0
+  sizeChartId:
+    description: Идентификатор размерной сетки или обмера, в колонке которого ошибка.
+    type: integer
+    format: int64
+  sizeChartIds:
+    description: Идентификаторы размерных сеток и обмеров, в колонках которых ошибка.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: integer
+      format: int64
+  sizeChartNames:
+    description: >
+      Названия колонок из `sizeChartName` запроса, которым не нашлось ровно
+      одной размерной сетки или обмера.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: string
+  rowIndices:
+    description: Номера совпадающих строк в `rows` запроса, начиная с 0.
+    type: array
+    nullable: true
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: integer
+      format: int32

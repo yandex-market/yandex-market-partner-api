@@ -1,0 +1,17 @@
+description: Условия, по которым подобрана таблица.
+type: object
+required:
+  - categoryId
+properties:
+  categoryId:
+    description: Идентификатор категории из запроса.
+    type: integer
+    format: int64
+  vendorId:
+    description: Идентификатор бренда на Маркете. Возвращается только для таблиц бренда.
+    type: integer
+    format: int64
+  genderId:
+    description: Идентификатор пола на Маркете.
+    type: integer
+    format: int64

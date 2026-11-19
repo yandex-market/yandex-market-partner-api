@@ -1,0 +1,33 @@
+description: Таблицы размеров.
+type: object
+required:
+  - sizeTables
+  - notFoundSizeTableIds
+  - paging
+properties:
+  sizeTables:
+    description: >
+      Таблицы размеров: сначала созданные бизнесом, затем брендовые, затем
+      стандартные;
+
+      внутри каждой группы — по убыванию идентификатора.
+    type: array
+    items:
+      $ref: ./SizeTableDTO.yaml
+  notFoundSizeTableIds:
+    description: >
+      Идентификаторы из запроса, по которым таблицу вернуть не удалось: такой
+      таблицы нет
+
+      или она принадлежит другому бизнесу.
+
+
+      Заполняется только на первой странице. На следующих страницах и в запросе
+      без `sizeTableIds` список пустой.
+    type: array
+    uniqueItems: true
+    items:
+      type: integer
+      format: int64
+  paging:
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

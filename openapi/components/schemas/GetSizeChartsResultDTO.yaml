@@ -1,0 +1,17 @@
+description: Размерные сетки и обмеры размерной характеристики.
+type: object
+required:
+  - sizeParameterId
+  - sizeCharts
+properties:
+  sizeParameterId:
+    description: Идентификатор размерной характеристики из запроса.
+    type: integer
+    format: int64
+  sizeCharts:
+    description: >
+      Размерные сетки и обмеры, которые можно использовать в таблицах размеров:
+      сначала сетки, затем обмеры.
+    type: array
+    items:
+      $ref: ./SizeChartInfoDTO.yaml

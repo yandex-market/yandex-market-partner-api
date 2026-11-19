@@ -1,0 +1,13 @@
+description: Значение из справочника размерной сетки.
+type: object
+required:
+  - sizeValueId
+  - sizeValue
+properties:
+  sizeValueId:
+    description: Идентификатор значения. Передавайте его в `sizeValueId` ячейки таблицы.
+    type: integer
+    format: int64
+  sizeValue:
+    description: Текст значения.
+    type: string

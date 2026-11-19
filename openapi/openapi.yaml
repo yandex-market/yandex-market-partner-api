@@ -311,6 +311,16 @@ paths:
     $ref: paths/v2_businesses_businessId_offer-cards.yaml
   /v2/businesses/{businessId}/offer-cards/update:
     $ref: paths/v2_businesses_businessId_offer-cards_update.yaml
+  /v2/businesses/{businessId}/size-tables/suggest:
+    $ref: paths/v2_businesses_businessId_size-tables_suggest.yaml
+  /v2/businesses/{businessId}/size-tables:
+    $ref: paths/v2_businesses_businessId_size-tables.yaml
+  /v2/businesses/{businessId}/size-tables/create:
+    $ref: paths/v2_businesses_businessId_size-tables_create.yaml
+  /v2/businesses/{businessId}/size-tables/update:
+    $ref: paths/v2_businesses_businessId_size-tables_update.yaml
+  /v2/businesses/{businessId}/size-tables/charts:
+    $ref: paths/v2_businesses_businessId_size-tables_charts.yaml
   /v2/businesses/{businessId}/chats/new:
     $ref: paths/v2_businesses_businessId_chats_new.yaml
   /v2/businesses/{businessId}/chats:

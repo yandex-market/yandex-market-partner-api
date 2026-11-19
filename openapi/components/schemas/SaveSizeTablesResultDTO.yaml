@@ -1,0 +1,12 @@
+description: Результаты сохранения таблиц размеров.
+type: object
+required:
+  - results
+properties:
+  results:
+    description: >
+      Результаты по таблицам из запроса в том же порядке: `results[i]` относится
+      к `sizeTables[i]`.
+    type: array
+    items:
+      $ref: ./SaveSizeTableResultDTO.yaml

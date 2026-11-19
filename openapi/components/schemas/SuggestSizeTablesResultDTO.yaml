@@ -1,0 +1,25 @@
+description: Подходящие таблицы размеров.
+type: object
+required:
+  - sizeTables
+  - paging
+properties:
+  sizeParameterId:
+    description: >
+      Идентификатор размерной характеристики категории.
+
+      Отсутствует, если у категории нет размерной характеристики — тогда и
+      таблиц нет.
+    type: integer
+    format: int64
+  sizeTables:
+    description: >
+      Подходящие таблицы размеров: сначала созданные бизнесом, затем брендовые,
+      затем
+
+      стандартные; внутри каждой группы — по убыванию идентификатора.
+    type: array
+    items:
+      $ref: ./SizeTableDTO.yaml
+  paging:
+    $ref: ./PackagingForwardScrollingPagerDTO.yaml

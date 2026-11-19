@@ -1,0 +1,42 @@
+description: >-
+  Размерная сетка или обмер, которые можно использовать как колонку таблицы
+  размеров.
+type: object
+required:
+  - sizeChartId
+  - sizeChartName
+  - columnType
+  - required
+  - sizeValues
+properties:
+  sizeChartId:
+    description: >-
+      Идентификатор размерной сетки или обмера. Передавайте его в `sizeChartId`
+      ячейки таблицы.
+    type: integer
+    format: int64
+  sizeChartName:
+    description: Название размерной сетки или обмера.
+    type: string
+  columnType:
+    $ref: ./SizeTableColumnType.yaml
+  required:
+    description: >
+      Обязательная ли размерная сетка. В таблице должна быть хотя бы одна
+      обязательная сетка,
+
+      а каждую обязательную сетку в таблице нужно заполнить во всех строках. У
+      обмеров всегда `false`.
+    type: boolean
+  sizeValues:
+    description: >
+      Справочник значений размерной сетки. Заполнен только у стандартных
+      размерных сеток Маркета: в ячейке
+
+      такой колонки передавайте значение из справочника.
+
+
+      Если список пустой, значение задается текстом.
+    type: array
+    items:
+      $ref: ./SizeChartValueDTO.yaml
