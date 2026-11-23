@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 232
-  x-personal-cleanup-enabled: false
-  x-analytical-group: GOODS_FEEDBACK
   tags:
     - goods-feedback
     - fby
@@ -25,9 +22,6 @@ post:
       amount: 1000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: UGC
-    enabled: false
   operationId: updateGoodsFeedbackComment
   summary: Добавление нового или изменение созданного комментария
   description: >

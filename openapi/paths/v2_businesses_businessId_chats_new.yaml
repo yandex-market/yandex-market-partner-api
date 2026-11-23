@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 207
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CHATS
   tags:
     - chats
     - dbs
@@ -24,9 +21,6 @@ post:
       amount: 1000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: ONBOARDING
-    enabled: true
   operationId: createChat
   summary: Создание нового чата с покупателем
   description: >

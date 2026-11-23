@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 288
-  x-personal-cleanup-enabled: false
-  x-analytical-group: GOODS_FEEDBACK
   tags:
     - goods-feedback
     - fby
@@ -24,9 +21,6 @@ post:
       amount: 10000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: UGC
-    enabled: true
   operationId: getGoodsFeedbacksUrbanads
   summary: Получение отзывов о товарах для рекламодателей
   description: >

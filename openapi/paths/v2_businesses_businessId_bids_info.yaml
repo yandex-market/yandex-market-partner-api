@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 184
-  x-personal-cleanup-enabled: false
-  x-analytical-group: BIDS
   tags:
     - bids
     - dbs
@@ -27,9 +24,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: MONETIZATION
-    enabled: true
   operationId: getBidsInfoForBusiness
   summary: Информация об установленных ставках
   description: "{% include notitle [access](../../_auto/method_scopes/getBidsInfoForBusiness.md) %}\n\nВозвращает значения ставок для заданных товаров.\n\n{% note warning \"Получить информацию по кампаниям, созданным в кабинете, не получится\" %}\n\nВ ответе возвращаются значения только тех ставок, которые вы установили через запрос [PUT\_v2/businesses/{businessId}/bids](../../reference/bids/putBidsForBusiness.md).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getBidsInfoForBusiness.md) %}\n"

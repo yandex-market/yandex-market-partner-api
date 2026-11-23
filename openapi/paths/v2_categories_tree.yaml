@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 222
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CATALOG
   tags:
     - categories
     - fby
@@ -37,9 +34,6 @@ post:
       amount: 100
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: OFFERS_CATALOG
-    enabled: false
   operationId: getCategoriesTree
   summary: Дерево категорий
   description: >

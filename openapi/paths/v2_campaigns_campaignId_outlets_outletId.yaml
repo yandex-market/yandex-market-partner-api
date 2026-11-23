@@ -1,7 +1,4 @@
 put:
-  x-resource-id: 49
-  x-personal-cleanup-enabled: false
-  x-analytical-group: DBS
   tags:
     - outlets
     - dbs
@@ -21,9 +18,6 @@ put:
       amount: 100000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: updateOutlet
   summary: Изменение информации о точке продаж
   description: |
@@ -67,9 +61,6 @@ put:
     '500':
       $ref: ../components/responses/500.yaml
 get:
-  x-resource-id: 33
-  x-personal-cleanup-enabled: false
-  x-analytical-group: DBS
   tags:
     - outlets
     - dbs
@@ -90,9 +81,6 @@ get:
       amount: 10000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: getOutlet
   summary: Информация об одной точке продаж
   description: |
@@ -124,9 +112,6 @@ get:
     '500':
       $ref: ../components/responses/500Typed.yaml
 delete:
-  x-resource-id: 47
-  x-personal-cleanup-enabled: false
-  x-analytical-group: DBS
   tags:
     - outlets
     - dbs
@@ -146,9 +131,6 @@ delete:
       amount: 100000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: deleteOutlet
   summary: Удаление точки продаж
   description: |

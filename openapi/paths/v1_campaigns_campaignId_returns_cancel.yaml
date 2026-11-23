@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 271
-  x-personal-cleanup-enabled: false
-  x-analytical-group: RETURNS
   tags:
     - returns
     - laas
@@ -20,9 +17,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: ORDERS
-    enabled: false
   operationId: cancelReturn
   summary: Отмена возврата
   description: >

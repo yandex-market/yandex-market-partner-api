@@ -1,7 +1,4 @@
 put:
-  x-resource-id: 30
-  x-personal-cleanup-enabled: true
-  x-analytical-group: ORDERS
   tags:
     - orders
     - fbs
@@ -24,9 +21,6 @@ put:
       amount: 10000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: ORDERS
-    enabled: false
   operationId: updateOrderStatus
   summary: Изменение статуса одного заказа
   description: >

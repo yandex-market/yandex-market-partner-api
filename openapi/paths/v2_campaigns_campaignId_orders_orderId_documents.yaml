@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 215
-  x-personal-cleanup-enabled: false
-  x-analytical-group: ORDERS
   tags:
     - order-business-information
     - fbs
@@ -26,9 +23,6 @@ post:
       amount: 3000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: ORDERS
-    enabled: false
   operationId: getOrderBusinessDocumentsInfo
   summary: Информация о документах
   description: >

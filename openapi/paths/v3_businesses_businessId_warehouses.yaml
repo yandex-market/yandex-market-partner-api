@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 299
-  x-personal-cleanup-enabled: false
-  x-analytical-group: WAREHOUSES
   tags:
     - warehouses
     - fbs
@@ -25,9 +22,6 @@ post:
       amount: 100
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: true
   operationId: getPartnerWarehouses
   summary: Список складов
   description: "{% include notitle [access](../../_auto/method_scopes/getPartnerWarehouses.md) %}\n\nВозвращает список складов кабинета и информацию о них.\n\nДля каждого склада возвращается список моделей работы (FBS, DBS, Экспресс) и доступность API для каждой модели.\n\n{% note warning \"Метод подходит, только если в кабинете нет групп складов\" %}\n\nМетод возвращает только отдельные склады и не возвращает группы складов. Если в кабинете есть группы складов, используйте метод [POST\_v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getPartnerWarehouses.md) %}\n"

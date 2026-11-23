@@ -1,7 +1,4 @@
 get:
-  x-resource-id: 63
-  x-personal-cleanup-enabled: false
-  x-analytical-group: PRICE
   tags:
     - prices
     - fby
@@ -26,9 +23,6 @@ get:
       amount: 150000
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: PROMO
-    enabled: false
   x-deprecation-config:
     degradation-start-date: '2027-01-18'
     shutdown-date: '2027-04-05'
@@ -80,9 +74,6 @@ get:
     '500':
       $ref: ../components/responses/500.yaml
 post:
-  x-resource-id: 176
-  x-personal-cleanup-enabled: false
-  x-analytical-group: PRICE
   tags:
     - prices
     - fby
@@ -108,9 +99,6 @@ post:
       amount: 100000
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: PROMO
-    enabled: false
   operationId: getPricesByOfferIds
   summary: Просмотр цен на указанные товары в конкретном магазине
   description: "{% include notitle [access](../../_auto/method_scopes/getPricesByOfferIds.md) %}\n\nВозвращает список цен на указанные товары в магазине.\n\n{% note warning \"Метод только для отдельных магазинов\" %}\n\nИспользуйте этот метод, только если в кабинете установлены уникальные цены в отдельных магазинах.\n\nДля просмотра цен, которые действуют во всех магазинах, используйте [POST\_v2/businesses/{businessId}/offer-mappings](../../reference/business-offer-mappings/getOfferMappings.md).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getPricesByOfferIds.md) %}\n"

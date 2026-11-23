@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 277
-  x-personal-cleanup-enabled: false
-  x-analytical-group: INFORMATION
   tags:
     - logistic-points
     - laas
@@ -32,9 +29,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: getLogisticPoints
   summary: Получение точек ПВЗ Маркета
   description: >

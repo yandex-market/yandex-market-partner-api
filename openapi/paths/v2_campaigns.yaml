@@ -1,7 +1,4 @@
 get:
-  x-resource-id: 1
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CAMPAIGNS
   tags:
     - campaigns
     - dbs
@@ -37,9 +34,6 @@ get:
       amount: 1000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: BASE
-    enabled: true
   operationId: getCampaigns
   summary: Список магазинов пользователя
   description: >

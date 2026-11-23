@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 279
-  x-personal-cleanup-enabled: false
-  x-analytical-group: ORDERS
   tags:
     - operations
     - laas
@@ -32,9 +29,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: API
-    enabled: false
   operationId: getOperations
   summary: Получение статусов операций
   description: |

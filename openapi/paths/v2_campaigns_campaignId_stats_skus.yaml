@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 125
-  x-personal-cleanup-enabled: false
-  x-analytical-group: REPORTS
   tags:
     - goods-stats
     - fby
@@ -26,9 +23,6 @@ post:
       amount: 5000
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: FINANCE
-    enabled: false
   operationId: getGoodsStats
   summary: Отчет по товарам
   description: >

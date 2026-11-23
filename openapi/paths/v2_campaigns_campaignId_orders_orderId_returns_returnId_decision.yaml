@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 160
-  x-personal-cleanup-enabled: false
-  x-analytical-group: RETURNS
   tags:
     - returns
     - dbs
@@ -21,9 +18,6 @@ post:
       amount: 1000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: ORDERS
-    enabled: false
   x-deprecation-config:
     degradation-start-date: '2027-01-18'
     shutdown-date: '2027-04-05'

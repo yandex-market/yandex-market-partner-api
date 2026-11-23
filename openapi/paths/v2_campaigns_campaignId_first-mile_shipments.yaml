@@ -1,7 +1,4 @@
 put:
-  x-resource-id: 135
-  x-personal-cleanup-enabled: false
-  x-analytical-group: FBS
   tags:
     - shipments
     - fbs
@@ -23,9 +20,6 @@ put:
       amount: 200
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: searchShipments
   summary: Получение информации о нескольких отгрузках
   description: |

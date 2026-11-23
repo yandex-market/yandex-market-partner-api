@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 199
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CATALOG
   tags:
     - content
     - dbs
@@ -25,9 +22,6 @@ post:
       amount: 10000
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: OFFERS_CATALOG
-    enabled: false
   operationId: updateOfferContent
   summary: Редактирование категорийных характеристик товара
   description: "{% include notitle [access](../../_auto/method_scopes/updateOfferContent.md) %}\n\nРедактирует характеристики товара, которые специфичны для категории, к которой он относится.\n\n{% note warning \"Здесь только то, что относится к конкретной категории\" %}\n\nЕсли вам нужно изменить основные параметры товара (название, описание, изображения, видео, производитель, штрихкод), воспользуйтесь запросом [POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md).\n\n{% endnote %}\n\nЧтобы удалить характеристики, которые заданы в параметрах с типом `string`, передайте пустое значение.\n\n{% note info \"Данные в каталоге обновляются не мгновенно\" %}\n\nЭто занимает до нескольких минут.\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/updateOfferContent.md) %}\n"

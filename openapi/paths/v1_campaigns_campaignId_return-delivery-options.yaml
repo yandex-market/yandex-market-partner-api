@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 276
-  x-personal-cleanup-enabled: false
-  x-analytical-group: RETURNS
   tags:
     - delivery-options
     - laas
@@ -24,9 +21,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: getReturnDeliveryOptions
   summary: Получение подходящих для возврата пунктов выдачи
   description: >

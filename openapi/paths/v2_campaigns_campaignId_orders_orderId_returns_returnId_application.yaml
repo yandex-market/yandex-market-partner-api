@@ -1,7 +1,4 @@
 get:
-  x-resource-id: 162
-  x-personal-cleanup-enabled: false
-  x-analytical-group: RETURNS
   tags:
     - returns
     - fbs
@@ -26,9 +23,6 @@ get:
       amount: 5000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: ORDERS
-    enabled: false
   operationId: getReturnApplication
   summary: Получение заявления на возврат
   description: >

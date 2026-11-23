@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 287
-  x-personal-cleanup-enabled: false
-  x-analytical-group: RETURNS
   tags:
     - returns
     - dbs
@@ -26,9 +23,6 @@ post:
       amount: 5000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: ORDERS
-    enabled: false
   operationId: getReturnAvailableDecisions
   summary: Получение возможных решений по возврату
   description: >

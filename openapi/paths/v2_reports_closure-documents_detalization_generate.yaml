@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 266
-  x-personal-cleanup-enabled: false
-  x-analytical-group: REPORTS
   tags:
     - reports
     - fby
@@ -26,9 +23,6 @@ post:
       amount: 1
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: FINANCE
-    enabled: false
   operationId: generateClosureDocumentsDetalizationReport
   summary: Отчет по схождению с закрывающими документами
   description: "{% include notitle [access](../../_auto/method_scopes/generateClosureDocumentsDetalizationReport.md) %}\n\nЗапускает генерацию отчета по схождению с закрывающими документами в зависимости от типа договора.\n\nУзнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET\_v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).\n\n{% list tabs %}\n\n- Договор на размещение\n\n  {% include notitle [reports](../../_auto/reports/period_closure/period_closure_income.md) %}\n\n- Договор на продвижение\n\n  {% include notitle [reports](../../_auto/reports/period_closure/period_closure_outcome.md) %}\n\n{% endlist %}\n\n{% include notitle [limit](../../_auto/method_limits/generateClosureDocumentsDetalizationReport.md) %}\n"

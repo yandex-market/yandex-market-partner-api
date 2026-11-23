@@ -1,13 +1,12 @@
 get:
-  x-resource-id: 140
-  x-personal-cleanup-enabled: false
-  x-analytical-group: FBS
   tags:
     - shipments
     - fbs
   x-auth-scopes:
     - all-methods
+    - all-methods:read-only
     - inventory-and-order-processing
+    - inventory-and-order-processing:read-only
   x-allowed:
     - seller
     - market-yandex-go
@@ -21,9 +20,6 @@ get:
       amount: 200
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: downloadShipmentTransportationWaybill
   summary: Получение транспортной накладной
   description: >

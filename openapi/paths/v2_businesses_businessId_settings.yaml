@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 218
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CAMPAIGNS
   tags:
     - businesses
     - dbs
@@ -37,9 +34,6 @@ post:
       amount: 100
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: BASE
-    enabled: true
   operationId: getBusinessSettings
   summary: Настройки кабинета
   description: >

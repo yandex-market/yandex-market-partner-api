@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 300
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CATALOG
   tags:
     - documents
     - dbs
@@ -24,9 +21,6 @@ post:
       amount: 10
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: OFFERS_CATALOG
-    enabled: true
   operationId: createDocuments
   summary: Создание документов
   description: "{% include notitle [access](../../_auto/method_scopes/createDocuments.md) %}\n\nСоздает для указанного бизнеса документы на товары. За один запрос можно создать не более 100 документов.\n\nДля привязки документа к товару передайте его номер в поле `certificates` метода\n[POST\_v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md).\n\nЕсли документ с таким номером уже существует, результат для документа содержит ошибку\n`DOCUMENT_ALREADY_EXISTS`. Существующий документ при этом не возвращается. Ошибка одного документа\nне мешает обработке остальных.\n\n{% include notitle [limit](../../_auto/method_limits/createDocuments.md) %}\n"

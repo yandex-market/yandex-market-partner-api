@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 59
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CATALOG
   tags:
     - hidden-offers
     - fby
@@ -24,9 +21,6 @@ post:
       amount: 10000
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: OFFERS_CATALOG
-    enabled: false
   operationId: addHiddenOffers
   summary: Скрытие товаров и настройки скрытия
   description: |
@@ -76,9 +70,6 @@ post:
     '500':
       $ref: ../components/responses/500.yaml
 get:
-  x-resource-id: 61
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CATALOG
   tags:
     - hidden-offers
     - fby
@@ -103,9 +94,6 @@ get:
       amount: 10000
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: OFFERS_CATALOG
-    enabled: false
   operationId: getHiddenOffers
   summary: Информация о скрытых вами товарах
   description: >

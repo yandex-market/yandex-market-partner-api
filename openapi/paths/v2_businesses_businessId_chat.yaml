@@ -1,7 +1,4 @@
 get:
-  x-resource-id: 249
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CHATS
   tags:
     - chats
     - dbs
@@ -25,9 +22,6 @@ get:
       amount: 1000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: ONBOARDING
-    enabled: true
   operationId: getChat
   summary: Получение чата по идентификатору
   description: "{% include notitle [access](../../_auto/method_scopes/getChat.md) %}\n\nВозвращает чат по его идентификатору.\n\n{% note tip \"Подключите API-уведомления\" %}\n\nМаркет отправит вам запрос [POST\_notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.\n\n[{#T}](../../push-notifications/index.md)\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getChat.md) %}\n"

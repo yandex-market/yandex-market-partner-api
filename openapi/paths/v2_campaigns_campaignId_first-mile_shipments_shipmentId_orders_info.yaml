@@ -1,7 +1,4 @@
 get:
-  x-resource-id: 139
-  x-personal-cleanup-enabled: false
-  x-analytical-group: LABELS
   tags:
     - shipments
     - fbs
@@ -23,9 +20,6 @@ get:
       amount: 200
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: getShipmentOrdersInfo
   summary: Получение информации о возможности печати ярлыков
   description: >

@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 303
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CATALOG
   tags:
     - documents
     - dbs
@@ -26,9 +23,6 @@ post:
       amount: 30
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: OFFERS_CATALOG
-    enabled: true
   operationId: getDocuments
   summary: Получение документов
   description: |

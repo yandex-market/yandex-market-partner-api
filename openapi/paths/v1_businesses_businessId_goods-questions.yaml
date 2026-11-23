@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 285
-  x-personal-cleanup-enabled: false
-  x-analytical-group: GOODS_QUESTIONS
   tags:
     - goods-questions
     - fby
@@ -25,9 +22,6 @@ post:
       amount: 5000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: UGC
-    enabled: false
   operationId: getGoodsQuestions
   summary: Получение вопросов о товарах продавца
   description: >

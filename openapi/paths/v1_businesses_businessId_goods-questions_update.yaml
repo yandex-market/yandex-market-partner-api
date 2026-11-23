@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 284
-  x-personal-cleanup-enabled: false
-  x-analytical-group: GOODS_QUESTIONS
   tags:
     - goods-questions
     - fby
@@ -24,9 +21,6 @@ post:
       amount: 1000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: UGC
-    enabled: false
   operationId: updateGoodsQuestionTextEntity
   summary: Создание, изменение и удаление ответа или комментария
   description: >

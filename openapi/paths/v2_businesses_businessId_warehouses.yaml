@@ -1,7 +1,4 @@
 get:
-  x-resource-id: 194
-  x-personal-cleanup-enabled: false
-  x-analytical-group: WAREHOUSES
   tags:
     - warehouses
     - fbs
@@ -25,9 +22,6 @@ get:
       amount: 100
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   x-deprecation-config:
     degradation-start-date: '2027-01-18'
     shutdown-date: '2027-04-05'
@@ -71,9 +65,6 @@ get:
     '500':
       $ref: ../components/responses/500.yaml
 post:
-  x-resource-id: 243
-  x-personal-cleanup-enabled: false
-  x-analytical-group: WAREHOUSES
   tags:
     - warehouses
     - fbs
@@ -97,9 +88,6 @@ post:
       amount: 100
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: getPagedWarehouses
   summary: Список складов
   description: "{% include notitle [access](../../_auto/method_scopes/getPagedWarehouses.md) %}\n\nВозвращает список складов и информацию о них.\n\n{% note warning \"Когда использовать этот метод\" %}\n\nМетод актуален для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST\_v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getPagedWarehouses.md) %}\n"

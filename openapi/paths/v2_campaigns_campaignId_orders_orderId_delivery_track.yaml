@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 136
-  x-personal-cleanup-enabled: false
-  x-analytical-group: ORDERS
   tags:
     - order-delivery
     - dbs
@@ -20,9 +17,6 @@ post:
       amount: 10000
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: setOrderDeliveryTrackCode
   summary: Передача трек‑номера посылки
   description: >

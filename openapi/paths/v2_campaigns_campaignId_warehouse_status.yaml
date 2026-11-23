@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 245
-  x-personal-cleanup-enabled: false
-  x-analytical-group: WAREHOUSES
   tags:
     - warehouses
     - fbs
@@ -23,9 +20,6 @@ post:
       amount: 100
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: true
   x-deprecation-config:
     degradation-start-date: '2027-01-18'
     shutdown-date: '2027-04-05'

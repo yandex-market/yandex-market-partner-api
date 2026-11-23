@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 181
-  x-personal-cleanup-enabled: false
-  x-analytical-group: CATALOG
   tags:
     - offers
     - dbs
@@ -27,9 +24,6 @@ post:
       amount: 10000
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: OFFERS_CATALOG
-    enabled: false
   operationId: getCampaignOffers
   summary: Информация о товарах, которые размещены в заданном магазине
   description: >

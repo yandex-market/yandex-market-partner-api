@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 235
-  x-personal-cleanup-enabled: false
-  x-analytical-group: PROMOS
   tags:
     - promos
     - fby
@@ -27,9 +24,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: PROMO
-    enabled: false
   operationId: getPromos
   summary: Получение списка акций
   description: >

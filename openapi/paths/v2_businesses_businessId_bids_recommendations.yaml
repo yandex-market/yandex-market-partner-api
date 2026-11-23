@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 187
-  x-personal-cleanup-enabled: false
-  x-analytical-group: BIDS
   tags:
     - bids
     - dbs
@@ -27,9 +24,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: MONETIZATION
-    enabled: true
   operationId: getBidsRecommendations
   summary: Рекомендованные ставки для заданных товаров
   description: >

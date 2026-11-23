@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 298
-  x-personal-cleanup-enabled: false
-  x-analytical-group: STOCKS
   tags:
     - stocks
     - fbs
@@ -25,9 +22,6 @@ post:
       amount: 500
       period: minutes
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: true
   operationId: getStocksOnPartnerWarehouses
   summary: Информация об остатках
   description: "{% include notitle [access](../../_auto/method_scopes/getStocksOnPartnerWarehouses.md) %}\n\nВозвращает данные об остатках товаров на складе кабинета.\n\n{% note warning \"Метод подходит, только если в кабинете нет групп складов\" %}\n\nЕсли в кабинете есть группы складов, используйте метод [POST\_v2/campaigns/{campaignId}/offers/stocks](../../reference/stocks/getStocks.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getStocksOnPartnerWarehouses.md) %}\n"

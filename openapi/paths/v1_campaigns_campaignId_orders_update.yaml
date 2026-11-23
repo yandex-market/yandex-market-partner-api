@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 273
-  x-personal-cleanup-enabled: true
-  x-analytical-group: ORDERS
   tags:
     - orders
     - laas
@@ -20,9 +17,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: ORDERS
-    enabled: false
   operationId: updateOrder
   summary: Изменение заказа
   description: >

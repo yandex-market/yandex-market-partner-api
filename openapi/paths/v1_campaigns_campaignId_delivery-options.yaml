@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 274
-  x-personal-cleanup-enabled: false
-  x-analytical-group: ORDERS
   tags:
     - delivery-options
     - laas
@@ -25,9 +22,6 @@ post:
       period-duration: 1
   x-allowed:
     - seller
-  x-apphost:
-    domain: LOGISTICS
-    enabled: false
   operationId: getDeliveryOptions
   summary: Получение доступных вариантов доставки заказов
   description: >

@@ -1,7 +1,4 @@
 post:
-  x-resource-id: 297
-  x-personal-cleanup-enabled: false
-  x-analytical-group: WAREHOUSES
   tags:
     - warehouses
     - fbs
@@ -23,9 +20,6 @@ post:
       amount: 100
       period: hours
       period-duration: 1
-  x-apphost:
-    domain: LOGISTICS
-    enabled: true
   operationId: updateWarehouseModelStatus
   summary: Включение/выключение модели работы склада
   description: >
