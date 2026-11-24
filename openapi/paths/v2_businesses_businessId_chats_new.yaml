@@ -39,6 +39,12 @@ post:
     * по возвратам (доступны только для FBY-, FBS- и Экспресс-магазинов).
 
 
+    **Пошаговые инструкции**
+
+
+    * [Начать чат с покупателем](../../step-by-step/chats.md#create)
+
+
     {% include notitle [limit](../../_auto/method_limits/createChat.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

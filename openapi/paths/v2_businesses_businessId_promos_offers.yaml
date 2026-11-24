@@ -39,6 +39,10 @@ post:
 
     {% endnote %}
 
+    **Пошаговые инструкции**
+
+    * [Управление акциями](../../step-by-step/promos.md)
+
     {% include notitle [limit](../../_auto/method_limits/getPromoOffers.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

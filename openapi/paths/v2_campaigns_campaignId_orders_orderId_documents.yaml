@@ -36,6 +36,13 @@ post:
     Получить данные можно после того, как заказ перейдет в статус `DELIVERED`.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Как получить информацию о
+    документах](../../step-by-step/business-info.md#documents-info)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getOrderBusinessDocumentsInfo.md) %}
   parameters:

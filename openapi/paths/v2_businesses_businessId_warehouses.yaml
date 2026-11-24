@@ -90,7 +90,7 @@ post:
       period-duration: 1
   operationId: getPagedWarehouses
   summary: Список складов
-  description: "{% include notitle [access](../../_auto/method_scopes/getPagedWarehouses.md) %}\n\nВозвращает список складов и информацию о них.\n\n{% note warning \"Когда использовать этот метод\" %}\n\nМетод актуален для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST\_v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/getPagedWarehouses.md) %}\n"
+  description: "{% include notitle [access](../../_auto/method_scopes/getPagedWarehouses.md) %}\n\nВозвращает список складов и информацию о них.\n\n{% note warning \"Когда использовать этот метод\" %}\n\nМетод актуален для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST\_v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).\n\n{% endnote %}\n\n**Пошаговые инструкции**\n\n* [Работа со складами](../../step-by-step/warehouses.md)\n\n{% include notitle [limit](../../_auto/method_limits/getPagedWarehouses.md) %}\n"
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml
     - $ref: ../components/parameters/AliasedPageToken.yaml

@@ -56,6 +56,12 @@ post:
     ранее.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Отзывы о товарах](../../step-by-step/goods-feedback.md)
+
+
     {% include notitle [limit](../../_auto/method_limits/getGoodsFeedbacks.md)
     %}
   parameters:

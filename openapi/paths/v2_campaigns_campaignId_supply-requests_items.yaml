@@ -29,6 +29,13 @@ post:
     Возвращает список товаров в заявке и информацию по ним.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Заявки на поставку товаров на склад, вывоз или
+    утилизацию](../../step-by-step/supplies.md)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getSupplyRequestItems.md) %}
   operationId: getSupplyRequestItems

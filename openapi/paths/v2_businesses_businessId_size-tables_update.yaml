@@ -122,6 +122,12 @@ post:
     заменятся тем же содержимым.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Создать свою таблицу](../../step-by-step/size-tables.md#create)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/updateContentSizeTables.md) %}
   parameters:

@@ -24,10 +24,19 @@ post:
       period-duration: 1
   operationId: deleteOffers
   summary: Удаление товаров из каталога
-  description: |
+  description: >
     {% include notitle [access](../../_auto/method_scopes/deleteOffers.md) %}
 
+
     Удаляет товары из каталога.
+
+
+    **Пошаговые инструкции**
+
+
+    * [Удаление товаров из
+    каталога](../../step-by-step/assortment-add-goods.md#deletion)
+
 
     {% include notitle [limit](../../_auto/method_limits/deleteOffers.md) %}
   parameters:

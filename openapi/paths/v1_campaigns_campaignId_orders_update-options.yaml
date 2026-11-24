@@ -30,6 +30,12 @@ post:
     курьерской доставки.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Изменить заказ](../../step-by-step/laas-order.md#change)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getOrderUpdateOptions.md) %}
   parameters:

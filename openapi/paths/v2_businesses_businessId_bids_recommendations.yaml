@@ -48,6 +48,13 @@ post:
     В одном запросе может быть максимум 1500 товаров.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Как получить рекомендованные
+    ставки](../../step-by-step/boost.md#recommendations)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getBidsRecommendations.md) %}
   parameters:

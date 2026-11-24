@@ -55,6 +55,12 @@ post:
     `pageToken` и `limit`.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Подобрать готовую таблицу](../../step-by-step/size-tables.md#suggest)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/suggestContentSizeTables.md) %}
   parameters:

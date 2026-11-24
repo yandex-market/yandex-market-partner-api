@@ -38,6 +38,12 @@ post:
     продавцов](https://yandex.ru/support2/marketplace/ru/quality/score/).
 
 
+    **Пошаговые инструкции**
+
+
+    * [Индекс качества](../../step-by-step/ratings.md)
+
+
     {% include notitle [limit](../../_auto/method_limits/getQualityRatings.md)
     %}
   parameters:

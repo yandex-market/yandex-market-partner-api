@@ -43,6 +43,14 @@ post:
     актуальные данные. Например, раз в день.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Создать заказ LaaS](../../step-by-step/laas-order.md#create)
+
+    * [Создать возврат LaaS](../../step-by-step/laas-return.md#create)
+
+
     {% include notitle [limit](../../_auto/method_limits/getLogisticPoints.md)
     %}
   parameters:

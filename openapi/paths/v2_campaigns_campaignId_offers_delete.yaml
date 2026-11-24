@@ -45,6 +45,13 @@ post:
     Товар не получится удалить, если он хранится на складах Маркета.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Удаление товаров из
+    каталога](../../step-by-step/assortment-add-goods.md#deletion)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/deleteCampaignOffers.md) %}
   parameters:

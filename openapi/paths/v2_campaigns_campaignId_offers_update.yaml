@@ -33,6 +33,13 @@ post:
     товара и применяемый НДС.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Добавить новые товары в
+    каталог](../../step-by-step/assortment-add-goods.md#add)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/updateCampaignOffers.md) %}
   parameters:

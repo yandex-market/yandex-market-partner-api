@@ -52,6 +52,16 @@ post:
     {% endnote %}
 
 
+    **Пошаговые инструкции**
+
+
+    * [Передать внешний идентификатор
+    FBS-заказа](../../step-by-step/fbs.md#fulfillment)
+
+    * [Передать внешний идентификатор
+    Экспресс-заказа](../../step-by-step/express.md#label)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/updateExternalOrderId.md) %}
   parameters:

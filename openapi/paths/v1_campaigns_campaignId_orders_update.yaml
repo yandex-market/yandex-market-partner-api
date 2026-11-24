@@ -52,6 +52,12 @@ post:
     {% endnote %}
 
 
+    **Пошаговые инструкции**
+
+
+    * [Изменить заказ](../../step-by-step/laas-order.md#change)
+
+
     {% include notitle [limit](../../_auto/method_limits/updateOrder.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

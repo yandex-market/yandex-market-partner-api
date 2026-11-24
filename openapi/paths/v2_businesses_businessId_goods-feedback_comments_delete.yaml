@@ -32,6 +32,12 @@ post:
     Удаляет комментарий магазина.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Удалить свой комментарий](../../step-by-step/goods-feedback.md#delete)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/deleteGoodsFeedbackComment.md) %}
   parameters:

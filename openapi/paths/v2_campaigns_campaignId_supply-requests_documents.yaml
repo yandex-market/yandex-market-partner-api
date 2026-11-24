@@ -29,6 +29,13 @@ post:
     Возвращает документы по заявке.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Заявки на поставку товаров на склад, вывоз или
+    утилизацию](../../step-by-step/supplies.md)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getSupplyRequestDocuments.md) %}
   operationId: getSupplyRequestDocuments

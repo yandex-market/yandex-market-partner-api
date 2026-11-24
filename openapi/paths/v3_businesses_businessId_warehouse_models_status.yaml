@@ -36,6 +36,13 @@ post:
     15 минут, а если модель была выключена 30 дней или дольше — через 4 часа.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Отключить или включить модель работы
+    склада](../../step-by-step/warehouses.md#update-model-status)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/updateWarehouseModelStatus.md) %}
   parameters:

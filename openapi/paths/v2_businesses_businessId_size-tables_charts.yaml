@@ -68,6 +68,12 @@ post:
     `UNKNOWN_SIZE_PARAMETER`.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Таблицы размеров](../../step-by-step/size-tables.md)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getContentSizeCharts.md) %}
   parameters:

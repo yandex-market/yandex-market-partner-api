@@ -29,6 +29,10 @@ post:
 
     Возвращает историю сообщений в чате с покупателем.
 
+    **Пошаговые инструкции**
+
+    * [Чаты с покупателями](../../step-by-step/chats.md)
+
     {% include notitle [limit](../../_auto/method_limits/getChatHistory.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

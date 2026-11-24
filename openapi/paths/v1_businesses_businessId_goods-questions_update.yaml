@@ -31,6 +31,12 @@ post:
     Создание, изменение и удаление ответа или комментария.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Вопросы и ответы о товарах](../../step-by-step/goods-questions.md)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/updateGoodsQuestionTextEntity.md) %}
   parameters:

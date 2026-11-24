@@ -33,6 +33,13 @@ get:
     Загружает заявление покупателя на возврат товара.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Как работать с невыкупами и
+    возвратами](../../step-by-step/returns.md#new-return)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getReturnApplication.md) %}
   parameters:

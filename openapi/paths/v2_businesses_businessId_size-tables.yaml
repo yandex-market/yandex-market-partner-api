@@ -65,6 +65,12 @@ post:
     первой странице.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Таблицы размеров](../../step-by-step/size-tables.md)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getContentSizeTables.md) %}
   parameters:

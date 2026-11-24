@@ -52,6 +52,12 @@ post:
     * скидка по промокоду.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Управление акциями](../../step-by-step/promos.md)
+
+
     {% include notitle [limit](../../_auto/method_limits/getPromos.md) %}
   parameters:
     - $ref: ../components/parameters/BusinessId.yaml

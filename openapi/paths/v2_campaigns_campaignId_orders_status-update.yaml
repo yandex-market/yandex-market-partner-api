@@ -52,10 +52,6 @@ post:
     отмены заказа `"substatus": "SHOP_FAILED"`.
 
 
-    Полная информация о статусной модели DBS-заказов: [Как изменяются статусы
-    заказов](../../concepts/dbs-order-status-model.md).
-
-
     {% cut "**Как подтвердить LaaS-заказ**" %}
 
 
@@ -82,6 +78,20 @@ post:
 
 
     {% endcut %}
+
+
+    **Пошаговые инструкции**
+
+
+    * [Печать ярлыков и передача статуса «Готов к
+    отгрузке»](../../step-by-step/fbs.md#fulfillment)
+
+    * [Допустимые переходы между статусами
+    DBS-заказов](../../concepts/dbs-order-status-model.md)
+
+    * [Обработка заказов с цифровыми товарами](../../step-by-step/digital.md)
+
+    * [Отменить заказ LaaS](../../step-by-step/laas-order.md#cancel)
 
 
     {% include notitle [limit](../../_auto/method_limits/updateOrderStatuses.md)

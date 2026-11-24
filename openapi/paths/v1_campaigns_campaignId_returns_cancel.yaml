@@ -51,6 +51,12 @@ post:
     {% endnote %}
 
 
+    **Пошаговые инструкции**
+
+
+    * [Отменить возврат LaaS](../../step-by-step/laas-return.md#cancel)
+
+
     {% include notitle [limit](../../_auto/method_limits/cancelReturn.md) %}
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml

@@ -51,6 +51,12 @@ post:
     ответов.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Вопросы и ответы о товарах](../../step-by-step/goods-questions.md)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getGoodsQuestionAnswers.md) %}
   parameters:

@@ -45,7 +45,14 @@ post:
 
 
     Страна производства `countryCode` понадобится при продаже товаров из-за
-    рубежа для бизнеса. [Инструкция](../../step-by-step/business-info.md)
+    рубежа для бизнеса.
+
+
+    **Пошаговые инструкции**
+
+
+    * [Обработка заказов от юридических
+    лиц](../../step-by-step/business-info.md)
 
 
     {% include notitle [limit](../../_auto/method_limits/getRegionsCodes.md) %}

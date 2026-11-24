@@ -37,6 +37,12 @@ post:
     доставки в пункт выдачи. Не передавайте оба параметра одновременно.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Создать заказ LaaS](../../step-by-step/laas-order.md#create)
+
+
     {% include notitle [limit](../../_auto/method_limits/getDeliveryOptions.md)
     %}
   parameters:

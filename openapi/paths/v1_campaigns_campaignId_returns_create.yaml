@@ -19,7 +19,7 @@ post:
     - seller
   operationId: createReturn
   summary: Создание возврата
-  description: "{% include notitle [access](../../_auto/method_scopes/createReturn.md) %}\n\nСоздает новый возврат.\n\nЭто можно сделать только для заказа в статусе `DELIVERED`.\n\n{% note warning \"Перед вызовом метода\" %}\n\nПроверьте, подходят ли пункты выдачи для возврата указанных товаров, — [POST\_v1/campaigns/{campaignId}/return-delivery-options](../../reference/delivery-options/getReturnDeliveryOptions.md).\n\n{% endnote %}\n\n{% include notitle [limit](../../_auto/method_limits/createReturn.md) %}\n"
+  description: "{% include notitle [access](../../_auto/method_scopes/createReturn.md) %}\n\nСоздает новый возврат.\n\nЭто можно сделать только для заказа в статусе `DELIVERED`.\n\n{% note warning \"Перед вызовом метода\" %}\n\nПроверьте, подходят ли пункты выдачи для возврата указанных товаров, — [POST\_v1/campaigns/{campaignId}/return-delivery-options](../../reference/delivery-options/getReturnDeliveryOptions.md).\n\n{% endnote %}\n\n**Пошаговые инструкции**\n\n* [Создать возврат LaaS](../../step-by-step/laas-return.md#create)\n\n{% include notitle [limit](../../_auto/method_limits/createReturn.md) %}\n"
   parameters:
     - $ref: ../components/parameters/CampaignId.yaml
   requestBody:

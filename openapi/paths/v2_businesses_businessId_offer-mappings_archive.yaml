@@ -42,6 +42,12 @@ post:
     {% endnote %}
 
 
+    **Пошаговые инструкции**
+
+
+    * [Управление товарами в архиве](../../step-by-step/assortment-archive.md)
+
+
     {% include notitle [limit](../../_auto/method_limits/addOffersToArchive.md)
     %}
   parameters:

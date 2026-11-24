@@ -32,6 +32,12 @@ post:
     возврат указанных товаров.
 
 
+    **Пошаговые инструкции**
+
+
+    * [Создать возврат LaaS](../../step-by-step/laas-return.md#create)
+
+
     {% include notitle
     [limit](../../_auto/method_limits/getReturnDeliveryOptions.md) %}
   parameters:
