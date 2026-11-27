@@ -13,6 +13,7 @@ post:
     - promotion:read-only
   x-resource-limit-config:
     path: resp
+    subject: business
     none:
       amount: 1
       period: minutes
